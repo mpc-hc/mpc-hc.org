@@ -1,0 +1,3 @@
+{% macro item(path, pagename, pathto, name) -%}
+  <li{% if pagename.replace("/index","") == path %} class="active"><a>{{ name }}</a> {% else %}><a href="{{ pathto }}">{{ name }}</a>{% endif %}</li>
+{%- endmacro %}
