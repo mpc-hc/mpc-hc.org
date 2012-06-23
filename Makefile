@@ -38,4 +38,3 @@ website:
 	@$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/website
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/website."
-	@echo "Check change at http://mpchc.omertabeyond.com/$(BUILDDIR)/website"
