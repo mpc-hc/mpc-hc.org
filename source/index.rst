@@ -12,20 +12,20 @@
 
     <div class="row screenshot">
       <div class="span4 screenshot">
-        <a id="one-screenshot" href="_static/mpc-hc.png" title="MPC-HC">
-          <img class="screenshot" src="_static/mpc-hc.thumb.png" alt="MPC-HC" width="182" height="137"/>
+        <a id="one-screenshot" href="_static/mpc-hc.original.png" title="MPC-HC">
+          <img class="screenshot" src="_static/mpc-hc.original.thumb.png" alt="MPC-HC" width="182" height="137"/>
         </a>
       </div>
 
       <div class="span4 screenshot">
-        <a id="two-screenshot" href="_static/mpc-hc.png" title="MPC-HC with custom toolbar">
-          <img class="screenshot" src="_static/mpc-hc.thumb.png" alt="MPC-HC with custom toolbar" width="182" height="137"/>
+        <a id="two-screenshot" href="_static/mpc-hc.toolbar.png" title="MPC-HC with custom toolbar">
+          <img class="screenshot" src="_static/mpc-hc.toolbar.thumb.png" alt="MPC-HC with custom toolbar" width="182" height="137"/>
         </a>
       </div>
 
       <div class="span4 screenshot">
-        <a id="three-screenshot" href="_static/mpc-hc.png" title="MPC-HC as DVB Player">
-          <img class="screenshot" src="_static/mpc-hc.thumb.png" alt="MPC-HC as DVB Player" width="182" height="137"/>
+        <a id="three-screenshot" href="_static/mpc-hc.dvb.png" title="MPC-HC as DVB Player">
+          <img class="screenshot" src="_static/mpc-hc.dvb.thumb.png" alt="MPC-HC as DVB Player" width="182" height="137"/>
         </a>
       </div>
     </div>
