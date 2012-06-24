@@ -5,9 +5,6 @@
     MPC-HC is an extremely light-weight media player for Windows.<br>
     The player supports all common video and audio file formats available for playback.</p>
 
-
-.. raw:: html
-
     <hr class="soften screenshot">
 
     <div class="row screenshot">
