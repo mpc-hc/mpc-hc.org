@@ -15,5 +15,7 @@ I slightly tweaked their template and updated dependencies to use the latest
 
 .. raw:: html
 
+		<span class="read-more">
+			<a href="/2012/06/21/welcome-to-the-new-website">(read more...)</a>
+		</span>
     </div>
-
