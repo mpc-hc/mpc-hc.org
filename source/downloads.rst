@@ -35,7 +35,6 @@ Source
     :widths: 20, 80
 
     "`Main SVN Repository <http://sourceforge.net/scm/?type=svn&group_id=170561>`_", "Official SourceForge Repository which is our main repository."
-    "`Google Code Mirror <http://code.google.com/p/mpc-hc/source/checkout>`_", "Official SVN Mirror on Google Code. **Usually faster than SourceForge**"
     "`git-svn mirror <https://github.com/mpc-hc/mpc-hc.git>`_", "Official GIT-SVN Mirror on GitHub"
 
 
