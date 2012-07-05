@@ -23,13 +23,15 @@ class Webblog(object):
         template = Template(tmpl_file.read())
         tmpl_file.close()
 
-        for key in self.posts_archive():
-            year = key.split("/")[0]
-            month = self.__months[int(key.split("/")[1])-1]
-            accu += template.render(title="%s %s" % (month, year))
-            for post_path in self.posts_archive()[key]:
-                post = Post(post_path)
-                accu += post.render("title-post")
+        monthkey = None
+        for post_path in self.posts():
+            post = Post(post_path)
+            if post.date_key != monthkey:
+                monthkey = post.date_key
+                year = monthkey.split("/")[0]
+                month = self.__months[int(monthkey.split("/")[1])-1]
+                accu += template.render(title="%s %s" % (month, year))
+            accu += post.render("title-post")
 
         output = open(os.path.join(
             self.__render_base_path, "archive.rst"), "w")
@@ -48,18 +50,9 @@ class Webblog(object):
         output.close()
 
     def posts(self):
-        return glob.glob(os.path.join(
-            os.path.realpath(self.__base_path), "*", "*", "*", "*.rst"))[::-1]
-
-    def posts_archive(self):
-        def reduce_fn(memo, n):
-            key = Post(n).date_key
-            if not key in memo:
-                memo[key] = []
-            memo[key].append(n)
-            return memo
-
-        return reduce(reduce_fn, self.posts(), {})
+        paths = glob.glob(os.path.join(
+            os.path.realpath(self.__base_path), "*", "*", "*", "*.rst"))
+        return sorted(paths, reverse=True)
 
     def latest_posts(self, limit):
         return self.posts()[:limit]
