@@ -18,9 +18,9 @@ People with SVN commit rights (sorted by name)
     :header: "Name", "Email", "Role"
     :widths: 20, 40, 40
 
+    "Armada", "armada651 ~AT~ users.sourceforge ~dot~ net", "Code"
     "bobdynlan", "bobdynlan ~AT~ users.sourceforge ~dot~ net", "Code"
     "clsid", "clsid2 ~AT~ users.sourceforge ~dot~ net", "Code"
-    "demi_alucard", "alysson87 ~AT~ gmail ~dot~ com", "Code, Portuguese (Brazil)"
     "janwillem32", "janwillem32 ~AT~ users.sourceforge ~dot~ net", "Code"
     "nevcairiel", "nevcairiel ~AT~ users.sourceforge ~dot~ net", "Code"
     "tetsuo55", "tetsuo55 ~AT~ users.sourceforge ~dot~ net", "Project Manager, Admin"
@@ -42,6 +42,7 @@ Inactive
     "Attila T. Afra", "attila.afra ~AT~ gmail ~dot~ com", "Code"
     "Beliyaal", "beliyaal ~AT~ users.sourceforge ~dot~ net", "Code"
     "Casimir666", "casimir666 ~AT~ users.sourceforge ~dot~ net", "Founder, Code, Admin, French"
+    "demi_alucard", "alysson87 ~AT~ gmail ~dot~ com", "Code, Portuguese (Brazil)"
     "Di Luo", "sansnom05 ~AT~ users.sourceforge ~dot~ net", "Code"
     "jonasno", "jonasno ~AT~ users.sourceforge ~dot~ net", "Code, Swedish"
     "KindDragon", "kinddragon ~AT~ users.sourceforge ~dot~ net", "Code"
