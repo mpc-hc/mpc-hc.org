@@ -1,10 +1,10 @@
-SPHINXOPTS    =
-SPHINXBUILD   = sphinx-build
-PAPER         =
-BUILDDIR      = build
-DOCS_FILES    =
-DOCS_URL      =
-DOCS_BRANCH   =
+SPHINXOPTS  =
+SPHINXBUILD = sphinx-build
+PAPER       =
+BUILDDIR    = build
+DOCS_FILES  =
+DOCS_URL    =
+DOCS_BRANCH =
 
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
@@ -18,11 +18,11 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
-	@echo "  server      to start the development webserver"
-	@echo "  website     to make the website"
-	@echo "  clean       to clean the website build product"
-	@echo "  help        to show this help message"
-	@echo "  test        to run the sphinxblog testsuite"
+	@echo "  server     to start the development webserver"
+	@echo "  website    to make the website"
+	@echo "  clean      to clean the website build product"
+	@echo "  help       to show this help message"
+	@echo "  test       to run the sphinxblog testsuite"
 
 server:
 	@echo "Starting webserver..."
