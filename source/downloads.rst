@@ -34,8 +34,7 @@ Source
     :header: "Repository", "Description"
     :widths: 20, 80
 
-    "`Main SVN Repository <http://sourceforge.net/scm/?type=svn&group_id=170561>`_", "Official SourceForge Repository which is our main repository."
-    "`git-svn mirror <https://github.com/mpc-hc/mpc-hc.git>`_", "Official GIT-SVN Mirror on GitHub"
+    "`GitHub <https://github.com/mpc-hc/mpc-hc.git>`_", "Official Git repository"
 
 
 Previous releases
