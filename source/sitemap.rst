@@ -5,7 +5,6 @@
    bug-reports
    changelog
    contact-us
-   differences
    downloads
    faq
    index
