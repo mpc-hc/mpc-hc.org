@@ -11,7 +11,7 @@ Media Player Classic - Home Cinema is an extremely light-weight media player for
 MPC-HC Team
 -----------
 
-People with SVN commit rights (sorted by name)
+People with Git commit rights (sorted by name)
 ###############################################
 
 .. csv-table::
@@ -25,7 +25,7 @@ People with SVN commit rights (sorted by name)
     "nevcairiel", "nevcairiel ~AT~ users.sourceforge ~dot~ net", "Code"
     "tetsuo55", "tetsuo55 ~AT~ users.sourceforge ~dot~ net", "Project Manager, Admin"
     "thevbm", "thevbm ~AT~ users.sourceforge ~dot~ net", "New website, Trac moderator, IRC"
-    "Underground78", "underground78 ~AT~ users.sourceforge ~dot~ net", "Code, French"
+    "Underground78", "underground78 ~AT~ users.sourceforge ~dot~ net", "Code, French, Admin"
     "v0lt", "v0lt ~AT~ users.sourceforge ~dot~ net", "Code, Russian"
     "XhmikosR", "xhmikosr ~AT~ users.sourceforge ~dot~ net", "Various stuff, Admin"
 
@@ -90,7 +90,7 @@ Translators
 Contributors
 #############
 
-    Alexx999, foxx1337, heksesang, judelaw, madshi, mtrz, nielsm, skaarj1, VSFilterMod Team, X-Dron
+    Alexx999, foxx1337, heksesang, judelaw, madshi, mtrz, kasper93, nielsm, skaarj1, VSFilterMod Team, X-Dron
 
 Trac moderators
 ################
@@ -107,30 +107,30 @@ Third party libs
 ----------------
 
 .. csv-table::
-    :header: "Project", "License", "Version", "Website"
-    :widths: 20, 20, 20, 40
+    :header: "Project", "License", "Website"
+    :widths: 20, 20, 40
 
-    "ATL Server", "Ms-LPL", "-", "http://atlserver.codeplex.com/"
-    "Bento4", "GPLv2", "1.2.3-387 (modified)", "http://zebulon.bok.net/trac/Bento4"
-    "CLineNumberEdit", "-", "12 May '04 (modified)", "http://www.codeproject.com/Articles/6385/Controls-in-controls-A-line-numbering-edit-box"
-    "CSizingControlBar", "GPLv2", "2.45", "http://www.datamekanix.com/sizecbar/"
-    "Detours", "MSR-SSLA", "3.0 build 316", "http://research.microsoft.com/en-us/projects/detours/"
-    "FFmpeg", "GPLv2", "72261fa git", "http://www.ffmpeg.org/"
-    "liba52", "GPLv2", "0.7.4 cvs", "http://liba52.sourceforge.net/"
-    "libdca", "GPLv2", "0.0.5 r90", "http://www.videolan.org/developers/libdca.html"
-    "libflac", "GPLv2 / New BSD License", "1.2.1", "http://flac.sourceforge.net/"
-    "libmpeg2", "GPLv2", "0.3.2 (modified)", "http://libmpeg2.sourceforge.net/"
-    "libogg", "New BSD License", "1.3.0", "http://www.xiph.org/"
-    "Little CMS", "MIT License", "v2.4 git 9e246ec", "http://www.littlecms.com/"
-    "Logitech SDK", "-", "2.02.101", "-"
-    "MediaInfoLib", "LGPLv3", "0.7.57", "http://mediainfo.sourceforge.net/"
-    "MultiMon", "CPOL", "28 Aug '03 (modified)", "http://www.codeproject.com/KB/GDI/multimon.aspx"
-    "QuickTime SDK", "-", "7.3", "http://developer.apple.com/quicktime/download/"
-    "RealMedia SDK", "-", "-", "-"
-    "ResizableLib", "Artistic License", "1.3", "http://sourceforge.net/projects/resizablelib/"
-    "SoundTouch", "LGPLv2.1", "1.7.0pre r142", "http://www.surina.net/soundtouch/"
-    "TreePropSheet", "-", "7 Mar '03 (modified)", "http://www.codeproject.com/Articles/3709/CTreePropSheet-A-Netscape-Visual-Studio-NET-like-P"
-    "UnRAR.dll", "freeware", "4.20b3", "http://www.rarlab.com/rar_add.htm"
-    "VirtualDub", "GPLv2", "1.10.2-test9", "http://www.virtualdub.org/"
-    "ZenLib", "Simplified BSD License", "0.4.26", "http://sourceforge.net/projects/zenlib/"
-    "zlib", "zlib License", "1.2.7", "http://zlib.net/"
+    "ATL Server", "Ms-LPL", "http://atlserver.codeplex.com/"
+    "Bento4", "GPLv2", "http://zebulon.bok.net/trac/Bento4"
+    "CLineNumberEdit", "-", "http://www.codeproject.com/Articles/6385/Controls-in-controls-A-line-numbering-edit-box"
+    "CSizingControlBar", "GPLv2", "http://www.datamekanix.com/sizecbar/"
+    "Detours", "MSR-SSLA", "http://research.microsoft.com/en-us/projects/detours/"
+    "FFmpeg", "GPLv2", "http://www.ffmpeg.org/"
+    "liba52", "GPLv2", "http://liba52.sourceforge.net/"
+    "libdca", "GPLv2", "http://www.videolan.org/developers/libdca.html"
+    "libflac", "GPLv2 / New BSD License", "http://flac.sourceforge.net/"
+    "libmpeg2", "GPLv2", "http://libmpeg2.sourceforge.net/"
+    "libogg", "New BSD License", "http://www.xiph.org/"
+    "Little CMS", "MIT License", "http://www.littlecms.com/"
+    "Logitech SDK", "-", "-"
+    "MediaInfoLib", "LGPLv3", "http://mediainfo.sourceforge.net/"
+    "MultiMon", "CPOL", "http://www.codeproject.com/KB/GDI/multimon.aspx"
+    "QuickTime SDK", "-", "http://developer.apple.com/quicktime/download/"
+    "RealMedia SDK", "-", "-"
+    "ResizableLib", "Artistic License", "http://sourceforge.net/projects/resizablelib/"
+    "SoundTouch", "LGPLv2.1", "http://www.surina.net/soundtouch/"
+    "TreePropSheet", "-", "http://www.codeproject.com/Articles/3709/CTreePropSheet-A-Netscape-Visual-Studio-NET-like-P"
+    "UnRAR.dll", "freeware", "http://www.rarlab.com/rar_add.htm"
+    "VirtualDub", "GPLv2", "http://www.virtualdub.org/"
+    "ZenLib", "Simplified BSD License", "http://sourceforge.net/projects/zenlib/"
+    "zlib", "zlib License", "http://zlib.net/"
