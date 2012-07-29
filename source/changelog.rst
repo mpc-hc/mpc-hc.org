@@ -110,4 +110,4 @@ All changelogs
     :widths: 20, 80
 
     "`Complete changelog <http://sourceforge.net/apps/trac/mpc-hc/wiki/Changelog>`_", "Complete changelog for each and every stable build."
-    "`Trunk log <https://sourceforge.net/apps/trac/mpc-hc/log/trunk/>`_", "Absolutely unmodified logs on every commit that got commited into trunk."
+    "`Git log <https://github.com/mpc-hc/mpc-hc/commits/master/>`_", "Absolutely unmodified logs on every commit that got committed into the master branch."
