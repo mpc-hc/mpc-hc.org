@@ -2,8 +2,8 @@ Changelog
 =========
 
 .. note::
-	This changelog only applies to current stable build.
-	For complete logs check `links below <#all-changelogs>`_.
+    This changelog only applies to current stable build.
+    For complete logs check `links below <#all-changelogs>`_.
 
 v1.6.2.4902 - 26 May 2012
 -------------------------

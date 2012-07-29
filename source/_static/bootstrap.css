@@ -2438,7 +2438,7 @@ input[type="submit"].btn.btn-mini {
 }
 .alert-heading, .admonition-title {
   color: inherit;
-	font-weight: bold;
+    font-weight: bold;
 }
 .alert .close {
   position: relative;
