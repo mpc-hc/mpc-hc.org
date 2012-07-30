@@ -46,7 +46,7 @@ Inactive
 	"Di Luo", "sansnom05 ~AT~ users.sourceforge ~dot~ net", "Code"
 	"jonasno", "jonasno ~AT~ users.sourceforge ~dot~ net", "Code, Swedish"
 	"KindDragon", "kinddragon ~AT~ users.sourceforge ~dot~ net", "Code"
-	"Martin Panayotov", "mvpsoft ~AT~ users.sourceforge ~dot~ net", "Website"
+	"Martin Panayotov", "mvpsoft ~AT~ users.sourceforge ~dot~ net", "Old Website"
 	"MatMaul", "matmaul ~AT~ users.sourceforge ~dot~ net", "Code"
 	"spec-chum", "spec-chum ~AT~ users.sourceforge ~dot~ net", "Code"
 	"Tomas Sen", "tomasen ~AT~ users.sourceforge ~dot~ net", "Code"
