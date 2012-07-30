@@ -3,7 +3,7 @@ Options +FollowSymLinks
 RewriteBase /
 
 RewriteRule /version.old.txt http://mpc-hc.sourceforge.net/version.txt [R=301,L]
-RewriteRule xhmikosr http://xhmikosr.1f0.de/mpc-hc [R=301,L]
+RewriteRule xhmikosr http://xhmikosr.1f0.de/mpc-hc/ [R=301,L]
 
 # ----------------------------------------------------------------------
 # ETag removal
