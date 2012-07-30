@@ -29,6 +29,7 @@ server:
 	@cd build/website && python -m SimpleHTTPServer
 
 clean:
+	-@echo cleaning...
 	-rm -rf $(BUILDDIR)/*
 
 website:
