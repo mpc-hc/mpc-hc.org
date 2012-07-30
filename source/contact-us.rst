@@ -11,11 +11,11 @@ ___________________
 You can find us on the following IRC channels:
 
 .. csv-table::
-    :header: "Channel", "Description"
-    :widths: 30, 70
+	:header: "Channel", "Description"
+	:widths: 30, 70
 
-    "`#mpc-hc @ freenode <irc://irc.freenode.net/mpc-hc/>`_", "Our chat / user help channel"
-    "`#mpc-hc-dev @ freenode <irc://irc.freenode.net/mpc-hc-dev/>`_", "Development channel"
+	"`#mpc-hc @ freenode <irc://irc.freenode.net/mpc-hc/>`_", "Our chat / user help channel"
+	"`#mpc-hc-dev @ freenode <irc://irc.freenode.net/mpc-hc-dev/>`_", "Development channel"
 
 Please follow these simple rules when joining our channel.
 
@@ -34,7 +34,7 @@ Social Networks
 _______________
 
 .. csv-table::
-    :widths: 100
+	:widths: 100
 
-    "`Google+ <https://plus.google.com/u/0/109957971189557916726>`_"
-    "`Twitter <https://twitter.com/mpc_hc/>`_"
+	"`Google+ <https://plus.google.com/u/0/109957971189557916726>`_"
+	"`Twitter <https://twitter.com/mpc_hc/>`_"
