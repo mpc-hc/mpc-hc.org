@@ -8,7 +8,7 @@
 Posted by XhmikosR on 09/08/2012
 
 After a lot of discussion, all the people involved with the development decided
-to move to Git and to GitHub in particular.
+to move to `Git <http://git-scm.com/>`_ and to `GitHub <https://github.com/mpc-hc/mpc-hc>`_ for hosting the source.
 
 .. raw:: html
 
