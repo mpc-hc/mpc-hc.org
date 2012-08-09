@@ -3,6 +3,18 @@ Archive
 
 .. raw:: html
 
+    <h2>August 2012</h2>
+
+.. raw:: html
+
+    <div class="news-title archive">
+        <h3>
+            <a href="/2012/08/09/source-code-moved-to-github">Source code moved to GitHub</a>
+        </h3>
+    </div>
+
+.. raw:: html
+
     <h2>June 2012</h2>
 
 .. raw:: html
