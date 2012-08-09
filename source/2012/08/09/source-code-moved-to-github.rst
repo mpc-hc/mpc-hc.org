@@ -1,6 +1,6 @@
 .. raw:: html
 
-    <div class="full-news">
+	<div class="full-news">
 
 Source code moved to GitHub
 ---------------------------
