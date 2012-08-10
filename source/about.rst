@@ -104,7 +104,7 @@ Based on the original version (C) 2002-2006 by Gabest (e-mail unknown)
 
 
 Third party libraries
-----------------
+---------------------
 
 .. csv-table::
 	:header: "Project", "License", "Website"
