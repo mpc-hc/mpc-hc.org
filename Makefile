@@ -26,7 +26,7 @@ help:
 
 server:
 	@echo "Starting webserver..."
-	@cd build/website && python -m SimpleHTTPServer
+	@cd $(BUILDDIR)/website && python -m SimpleHTTPServer
 
 clean:
 	-@echo cleaning...
@@ -37,5 +37,6 @@ website:
 	@python sphinxblog/gen.py
 	@echo "Building site..."
 	@$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/website
+	@cp source/.htaccess source/version.txt $(BUILDDIR)/website
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/website."
