@@ -103,7 +103,7 @@ Many thanks to everyone who supported development without having access to the s
 Based on the original version (C) 2002-2006 by Gabest (e-mail unknown)
 
 
-Third party libs
+Third party libraries
 ----------------
 
 .. csv-table::
