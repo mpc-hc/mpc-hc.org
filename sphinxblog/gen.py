@@ -6,5 +6,5 @@ from webblog import Webblog
 if __name__ == "__main__":
     wb = Webblog("_posts", "source")
     wb.render_posts()
-    wb.render_latest_posts(2)
+    wb.render_latest_posts(3)
     wb.render_archive()
