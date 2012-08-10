@@ -55,25 +55,24 @@
 		</div>
 
 		<p class="copyright">Copyright &copy; 2012 <a href="{{ pathto('index') }}">mpc-hc project</a>, based on <a href="http://www.mplayer2.org/" target="_blank">mplayer2.org</a></p>
-	<script type="text/javascript" src="{{ pathto('_static/fancybox/jquery-1.8.0.min.js', 1) }}"></script>
-	<!-- Bootstrap JS, the minified bundle -->
-	<script src="{{ pathto('_static/bootstrap.js', 1) }}"></script>
-	<script type="text/javascript" src="{{ pathto('_static/fancybox/jquery.fancybox.pack.js', 1) }}"></script>
-	<script>
-		$(document).ready(function(){
-			// Initialize tabs and pills
-			$('.note-tabs').tab();
-			$.each(["one", "two", "three"], function(index, number) {
-				$('#'+number+'-screenshot').fancybox({
-					'transitionIn' : 'elastic', 'transitionOut' : 'elastic'});
+		<script type="text/javascript" src="{{ pathto('_static/fancybox/jquery-1.8.0.min.js', 1) }}"></script>
+		<script src="{{ pathto('_static/bootstrap.js', 1) }}"></script>
+		<script type="text/javascript" src="{{ pathto('_static/fancybox/jquery.fancybox.pack.js', 1) }}"></script>
+		<script>
+			$(document).ready(function(){
+				// Initialize tabs and pills
+				$('.note-tabs').tab();
+				$.each(["one", "two", "three"], function(index, number) {
+					$('#'+number+'-screenshot').fancybox({
+						'transitionIn' : 'elastic', 'transitionOut' : 'elastic'});
+				});
 			});
-		});
-	</script>
-	<script>
-				var _gaq=[['_setAccount','UA-9335012-1'],['_trackPageview']];
-				(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-				g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-				s.parentNode.insertBefore(g,s)}(document,'script'));
-	</script>
+		</script>
+		<script>
+			var _gaq=[['_setAccount','UA-9335012-1'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
 	</body>
 </html>
