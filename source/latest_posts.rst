@@ -2,6 +2,24 @@
 
 	<div class="new">
 	<h2>
+		<a href="/2012/08/14/1.6.3-released">v1.6.3 is released</a>
+	</h2>
+
+Posted by XhmikosR on 14/08/2012
+
+After almost 3 months after the previous stable release, we decided to release 1.6.3.
+
+It's a maintance release with a couple of UI improvements and a few bugfixes.
+
+.. raw:: html
+
+		<span class="read-more">
+			<a href="/2012/08/14/1.6.3-released">(read more...)</a>
+		</span>
+	</div>.. raw:: html
+
+	<div class="new">
+	<h2>
 		<a href="/2012/08/09/source-code-moved-to-github">Source code moved to GitHub</a>
 	</h2>
 

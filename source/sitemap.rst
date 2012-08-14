@@ -7,5 +7,3 @@
 	contact-us
 	downloads
 	faq
-	index
-	latest_posts

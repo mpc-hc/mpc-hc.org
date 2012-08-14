@@ -5,192 +5,96 @@ Changelog
 	This changelog only applies to current stable build.
 	For complete logs check `links below <#all-changelogs>`_.
 
-v1.6.2.4902 - 26 May 2012
--------------------------
+1.6.3 - 14 August 2012
+----------------------------
 
 * New:
 
- * MatroskaSplitter: Support for QT video formats in Matroska v1 and MPEG-1
+ * New webpage (http://mpc-hc.sourceforge.net)
 
- * Added .tak extension
+ * Source code moved to GitHub (https://github.com/mpc-hc)
 
- * Added a new Zoom option "Auto Fit (large only)"
+ * The DirectX runtime dlls are included in the distribution packages so it's no longer needed to install the DirectX runtime
 
- * Ticket #1792, Show an OSD message and a status message when a favorite is created via the keyboard shortcut
+ * MpegSplitter: support for DVD-Audio LPCM and MLP in .aob files
 
- * Ticket #1866, Added suppport for MLP audio in MpaDecFilter and DTSAC3Source
+ * Use FFmpeg for AC3 and DTS decoding
 
- * Ticket #2134, Added an auto-update feature to periodically check for new update. This feature can be enabled on first launch or via the Miscellaneous options page. The delay between the checks is also customizable.
-
- * Ticket #2193, Add PNG support for custom toolbars
-
- * Added Basque translation
-
- * Include unrar.dll in the installer; rar'ed subtitles should be supported out of the box
+ * If the icon library is modified in a way that can break the icons associated to the extensions handled by MPC-HC, MPC-HC will automatically try to fix the registry so that each extension is associated to the correct icon
 
 * Changed:
 
- * Changed default settings
+ * Unrar is statically linked and so MPC-HC and VSFilter no longer need the unrar dll
 
-  * Global media keys are now activated by default
+ * The Icon Library was rewritten leading to smaller size
 
-  * Media volume keys will now change the system's volume when MPC-HC is the foreground application
+ * The Output Options page was redesigned for better usability
 
- * Ticket #734, A unicode encoding will now be used for the ini file. Old ASCII ini files will be automatically converted to unicode. Favorites with unicode filenames are now correctly handled when using an ini file
+ * Ticket #625, The translation dll's size was decreased by 2/3 (uncompressed)
 
- * Ticket #1693, [VSFilter] Remove the feature preventing the screensaver from running when VSFilter is active since that's a job for players not for filters
+ * Ticket #2227, Hide the seek bar in capture mode
 
- * Ticket #1733/#2029, Include subfolders when opening a folder using the command line or via the explorer context menu
+ * Ticket #2276, Use the new user interface on Vista and later for the Save dialogs
 
- * Ticket #2144/#2277, Improve the subtitles downloader dialog:
+ * Ticket #2342, MPC-HC will now use the Windows theme font for the Statusbar, OSD messages and a few other places on Windows Vista and newer
 
-  * the dialog's size and position are now saved
+ * Ticket #2378, Move the "Remember last playlist" option into the Options dialog
 
-  * the columns' sizes are saved
+* Updated:
 
-  * the subtitle list is now fetched from a worker thread (this way the player won't lock anymore when the dialog is being opened)
+ * Unrar to v4.20
 
-  * reduced flicker
+ * MediaInfoLib to v0.7.59
 
-  * tooltips will now be shown for clipped text
+ * ZenLib to v0.4.28
 
- * Ticket #2157, Show the [DXVA] indicator even when playback is paused
+ * FFmpeg (git 603221e)
 
- * Ticket #2163, Improve the "Save As" dialog: the dialog is updated more regularly and the units for the sizes and the speed are now automatically adapted to the values
+ * Little CMS to v2.4 (git eb67549)
 
- * Ticket #2165, Improve the "Organize Favorites" dialog:
+ * SoundTouch to v1.7.0pre r143
 
-  * the favorites can now be deleted using the delete key or the backspace key
-
-  * the buttons are disabled when they cannot be used
-
-  * pressing the "Enter" key after selecting a favorite will now start playback
-
-  * multiple selection is now allowed so that more than one favorite can be deleted or moved at the same time
-
-  * Ctrl + A will select all items and Ctrl + I inverts the selection.
-
-  * the size and position of the dialog are saved
-
- * Ticket #2216, Show seekbar in compact mode instead of the toolbar since all toolbar functions can be accessed easily with keyboard shortcuts
-
- * Ticket #2218, Improve the Go To dialog:
-
-  * use a masked edit for entering the timecode (hh:mm:ss.ms or mm:ss.ms depending on the file duration)
-
-  * show an error message when the entered timecode is greater than the file duration
-
- * Ticket #2234, Changed some UI fonts according to the OS; more modern fonts will be used on Vista and later
-
- * Reduced the maximum number of packets in the Queue, except for AVI. This will reduce the amount of memory consumed by the player
-
- * Improved the "Open directory" dialog:
-
-  * when using XP the checkbox will now use only one line when possible and the overall dialog will look better
-
-  * on Vista and later the dialog will use the new user interface
-
- * Use the new user interface for all open folder dialogs on Windows Vista and later
-
- * Avoid using negative option in the Tweaks page: change "Don't use 'search in folder' on commands 'Skip back/forward' when only one item in playlist" into "Open next/previous file in folder on 'Skip back/forward' when there is only one item in playlist"
-
- * The minidump feature is now enabled by default. The crash dialog has been updated to redirect the users to the bug tracker. The minidump feature can be turned off completely by using the /nominidump switch
-
- * Updated
-
-  * FFmpeg (git 72261fa)
-
-  * MediaInfoLib to v0.7.57
-
-  * ZenLib to v0.4.26
-
-  * SoundTouch to v1.7.0pre r142
-
-  * VirtualDub to v1.10.2-test9
-
-  * zlib to v1.2.7
-
-  * Detours to v3.0 build 316
-
-  * Little CMS to v2.4 (git 9e246ec 23/05/2012)
-
-  * French, Turkish, Czech, Russian, Ukrainian, Simplified Chinese, Japanese, Traditional Chinese, Italian, German, Polish and Portuguese (Brazil) translations
-
- * Removed
-
-  * GTSdll support since it's dead
-
-  * Option to disable XP theming since it's of no use for any OS >= Windows XP
-
-  * Option "Use the WM ASF Reader for Windows Media files" since it has no effect on any "modern" OS (>= Windows XP)
-
-  * SSF support
+ * Armenian, Basque, Belarusian, Catalan, Chinese Simplified and Traditional, Czech, French, German, Japanese, Polish, Russian, Slovak and Ukrainian translations
 
 * Fixed:
 
- * Broken playback and picture on H.264 and MPEG-2 interlaced with DXVA on integrated Intel adapter
+ * The hand cursor wasn't shown in the web links in Keys and WebServer options page
 
- * The settings location is now changed only when applying the changes in the options dialog instead of immediately after changing the state of the checkbox
+ * Toolbar code cleanup and background fix for Windows XP
 
- * Improve/Fix the "Open" dialog:
+ * The last textbox used in the Goto dialog was not remembered since r3964 and r3965
 
-  * the "OK" button will be disabled until a file has been selected (this avoids an error when clicking on "OK" while no file was selected)
+ * Always show an error message instead of crashing when the argument of a command line switch is missing
 
-  * when the selected file cannot be dubbed (for example when opening an rtsp stream) the wrong label was grayed out
+ * OggSplitter: Fix crash with some files
 
- * MatroskaSplitter: Better detection of fps for some webm files
+ * Logitech Keyboard support updated and made optional (Options -> Tweaks)
 
- * MPCVideoDec: Crash with some RV30/40 files when there are no input data from splitter
+ * WebServer: various bugfixes and improvements
 
- * MPCVideoDec: H.264 DXVA decoder skipped broken frames on interlaced material
+ * Ticket #504, Fixed rounding errors that prevented a properly centered image and caused unneeded resizing because the video size was off by one
 
- * MpegSplitter: Removed crackling from LPCM tracks when switching and seeking
+ * Ticket #2330, Fix the radio buttons in the Logo options page
 
- * MpegSplitter: Fix incorrect detection of MPEG Audio stream as AAC
+ * Ticket #2349, Recent Files: "Clear List" did not remove all files from the list
 
- * AviSplitter: Fix looping not working on short animations
+ * Ticket #2356, The "With icons" and "File(s)" options in the Formats options page were not applied if no association was previously modified
 
- * WebServer: Fix a few errors and typos
+ * Ticket #2362, [DVB] Fix the Electronic Program Guide (EPG):
 
- * MPCVideoDec: Fix MPEG-2 DXVA for some files
+  * Fix the parsing of the event's information
 
- * Fix the remember file/DVD position feature: the positions' cache was not cleared when disabling the feature
+  * Fix the parsing of the characters' encoding
 
- * The Windows 7 taskbar was sometimes not correctly updated (for example when opening another video without closing the previous one). The preview was incorrectly cropped when the menu was hidden.
+  * Fix the display of the start and end time when DST is observed
 
- * Ticket #869, The playlist visibility state was incorrectly restored when MPC-HC was quited in fullscreen mode while the option "Hide on fullscreen" was enabled
+ * Ticket #2365, The volume slider wasn't properly redrawn in some cases
 
- * Ticket #1182, Unable to playback MPEG-2 in AVI
+ * Ticket #2427, The command line was not parsed when using slave mode
 
- * Ticket #1290, Fix the reversed behavior of the playlist option "Hide on fullscreen" when the "Launch files in fullscreen" option is enabled
+ * Ticket #2470, API: Ensure that a 32-bit application can control MPC-HC 64-bit
 
- * Ticket #1589, Crash with "Null (uncompressed)"
-
- * Ticket #1706, CSS 2.1 and HTML 4.01 Validation for the WebServer files
-
- * Ticket #1946, Skipping bug with EVR custom output and .webm with vsync on
-
- * Ticket #2090, Better handling of font fallback in the MediaInfo dialog so that the font size is now correctly adapted to the font used
-
- * Ticket #2126, Fix DVBSub: the subtitles' color was incorrect
-
- * Ticket #2133, Javascript error in "player.html"
-
- * Ticket #2137, Disable animation when pressing the "Boss" key
-
- * Ticket #2155, Change the background color of the options pages caption so that it is readable with all Windows themes
-
- * Ticket #2156, MPCVideoDec: Incorrect number of frames at the end of playback with software decoding
-
- * Ticket #2161, Prevent the "Open" dialog from being opened multiple times (for example when double clicking on the tray icon)
-
- * Ticket #2172, MP4Splitter: skip video tracks with motionless frames
-
- * Ticket #2274, MPCVideoDec: the configured threads count was ignored when the decoder had to fallback in software mode because of a DXVA incompatible file, only one thread was used in this case
-
- * Ticket #2304, MpaDecFilter: PCM 32-bit output gives cracking sound
-
- * Ticket #2313, Fix crash related to the case sensitivity when using play next/previous file in folder
+ * Ticket #2493, Fix a crash when saving subtitles using the sub format
 
  * Numerous other bugfixes and improvements
 
