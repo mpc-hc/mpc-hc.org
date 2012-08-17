@@ -39,22 +39,24 @@ FileETag None
   # HTML, TXT, CSS, JavaScript, JSON, XML, HTC:
   <IfModule filter_module>
     FilterDeclare  COMPRESS
-    FilterProvider COMPRESS DEFLATE resp=Content-Type $text/html
-    FilterProvider COMPRESS DEFLATE resp=Content-Type $text/css
-    FilterProvider COMPRESS DEFLATE resp=Content-Type $text/plain
-    FilterProvider COMPRESS DEFLATE resp=Content-Type $text/xml
-    FilterProvider COMPRESS DEFLATE resp=Content-Type $text/x-component
+    FilterProvider COMPRESS DEFLATE resp=Content-Type $application/atom+xml
     FilterProvider COMPRESS DEFLATE resp=Content-Type $application/javascript
     FilterProvider COMPRESS DEFLATE resp=Content-Type $application/json
-    FilterProvider COMPRESS DEFLATE resp=Content-Type $application/xml
-    FilterProvider COMPRESS DEFLATE resp=Content-Type $application/xhtml+xml
     FilterProvider COMPRESS DEFLATE resp=Content-Type $application/rss+xml
-    FilterProvider COMPRESS DEFLATE resp=Content-Type $application/atom+xml
     FilterProvider COMPRESS DEFLATE resp=Content-Type $application/vnd.ms-fontobject
-    FilterProvider COMPRESS DEFLATE resp=Content-Type $image/svg+xml
-    FilterProvider COMPRESS DEFLATE resp=Content-Type $image/x-icon
     FilterProvider COMPRESS DEFLATE resp=Content-Type $application/x-font-ttf
+    FilterProvider COMPRESS DEFLATE resp=Content-Type $application/xhtml+xml
+    FilterProvider COMPRESS DEFLATE resp=Content-Type $application/x-javascript
+    FilterProvider COMPRESS DEFLATE resp=Content-Type $application/xml
     FilterProvider COMPRESS DEFLATE resp=Content-Type $font/opentype
+    FilterProvider COMPRESS DEFLATE resp=Content-Type $image/svg+xml
+    FilterProvider COMPRESS DEFLATE resp=Content-Type $image/vnd.microsoft.icon
+    FilterProvider COMPRESS DEFLATE resp=Content-Type $image/x-icon
+    FilterProvider COMPRESS DEFLATE resp=Content-Type $text/css
+    FilterProvider COMPRESS DEFLATE resp=Content-Type $text/html
+    FilterProvider COMPRESS DEFLATE resp=Content-Type $text/plain
+    FilterProvider COMPRESS DEFLATE resp=Content-Type $text/x-component
+    FilterProvider COMPRESS DEFLATE resp=Content-Type $text/xml
     FilterChain    COMPRESS
     FilterProtocol COMPRESS DEFLATE change=yes;byteranges=no
   </IfModule>
@@ -73,6 +75,7 @@ FileETag None
     AddOutputFilterByType DEFLATE font/opentype
     AddOutputFilterByType DEFLATE image/svg+xml
     AddOutputFilterByType DEFLATE image/x-icon
+    AddOutputFilterByType DEFLATE image/vnd.microsoft.icon
     AddOutputFilterByType DEFLATE text/css
     AddOutputFilterByType DEFLATE text/html
     AddOutputFilterByType DEFLATE text/plain
@@ -118,6 +121,7 @@ FileETag None
 
   # Favicon (cannot be renamed)
   ExpiresByType image/x-icon              "access plus 1 week"
+  ExpiresByType image/vnd.microsoft.icon  "access plus 1 week"
 
   # Media: images, video, audio
   ExpiresByType image/gif                 "access plus 1 month"
@@ -141,5 +145,6 @@ FileETag None
   # CSS and JavaScript
   ExpiresByType text/css                  "access plus 1 year"
   ExpiresByType application/javascript    "access plus 1 year"
+  ExpiresByType application/x-javascript  "access plus 1 year"
 
 </IfModule>
