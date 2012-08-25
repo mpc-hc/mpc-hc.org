@@ -62,9 +62,9 @@
 			$(document).ready(function() {
 				// Initialize tabs and pills
 				$('.note-tabs').tab();
-				$.each(["one", "two", "three"], function(index, number) {
-					$('#'+number+'-screenshot').fancybox({
-						'transitionIn' : 'elastic', 'transitionOut' : 'elastic'});
+				$(".fancybox").fancybox({
+					openEffect	: 'none',
+					closeEffect	: 'none'
 				});
 			});
 			var _gaq = [['_setAccount', 'UA-9335012-1'], ['_trackPageview']];
