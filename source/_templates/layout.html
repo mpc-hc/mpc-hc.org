@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		{%- if favicon %}
-		<link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
+		<link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}" />
 		{%- endif %}
 		<meta name="description" content="MPC-HC, the free, open source media player" />
 		<meta name="keywords" content="MPC, MPC-HC, Media Player Classic, Media Player Classic - Home Cinema, open source media player" />
@@ -66,7 +66,7 @@
 		<script type="text/javascript" src="{{ pathto('_static/fancybox/jquery.fancybox.pack.js', 1) }}"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				// Initialize tabs and pills
+				/*Initialize tabs and pills*/
 				$('.note-tabs').tab();
 				$(".fancybox").fancybox({
 					openEffect  : 'none',

@@ -4,7 +4,6 @@ Archive
 .. raw:: html
 
 	<h2>August 2012</h2>
-
 .. raw:: html
 
 	<div class="news-title archive">
@@ -22,7 +21,6 @@ Archive
 .. raw:: html
 
 	<h2>June 2012</h2>
-
 .. raw:: html
 
 	<div class="news-title archive">
