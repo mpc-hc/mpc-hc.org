@@ -1,3 +1,4 @@
+
 .. raw:: html
 
 	<div class="new">
@@ -16,7 +17,8 @@ It's a maintance release with a couple of UI improvements and a few bugfixes.
 		<span class="read-more">
 			<a href="/2012/08/14/1.6.3-released">(read more...)</a>
 		</span>
-	</div>.. raw:: html
+	</div>
+.. raw:: html
 
 	<div class="new">
 	<h2>
@@ -33,7 +35,8 @@ to move to `Git <http://git-scm.com/>`_ and to `GitHub <https://github.com/mpc-h
 		<span class="read-more">
 			<a href="/2012/08/09/source-code-moved-to-github">(read more...)</a>
 		</span>
-	</div>.. raw:: html
+	</div>
+.. raw:: html
 
 	<div class="new">
 	<h2>
