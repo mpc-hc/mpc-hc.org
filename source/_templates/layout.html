@@ -3,7 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-		<link rel="shortcut icon" href="{{ pathto('_static/favicon.ico', 1) }}">
+		{%- if favicon %}
+		<link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
+		{%- endif %}
 		<meta name="description" content="MPC-HC, the free, open source media player" />
 		<meta name="keywords" content="MPC, MPC-HC, Media Player Classic, Media Player Classic - Home Cinema, open source media player" />
 		<title>:: MPC-HC ::</title>

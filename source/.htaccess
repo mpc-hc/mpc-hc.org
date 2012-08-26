@@ -5,7 +5,6 @@ RewriteBase /
 RewriteRule /version.old.txt http://mpc-hc.sourceforge.net/version.txt [R=301,L]
 RewriteRule download-media-player-classic-hc.html http://mpc-hc.sourceforge.net/downloads/ [R=301,L]
 RewriteRule xhmikosr http://xhmikosr.1f0.de/mpc-hc/ [R=301,L]
-RewriteRule ^favicon.ico /_static/favicon.ico [L]
 
 Header set X-UA-Compatible "IE=edge"
 
