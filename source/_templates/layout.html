@@ -52,8 +52,13 @@
 				{% endblock %}
 			</div>
 		</div>
-
-		<p class="copyright">Copyright &copy; 2012 <a href="{{ pathto('index') }}">MPC-HC project</a>, based on <a href="http://www.mplayer2.org/" target="_blank">mplayer2.org</a></p>
+		{%- block footer %}
+		<div class="footer">
+			{%- if show_copyright %}
+				<p class="copyright">{% trans path=pathto('index'), copyright=copyright|e %}Copyright &copy; <a href="{{ path }}">{{ copyright }}</a>, based on <a href="http://www.mplayer2.org/" target="_blank">mplayer2.org</a>{% endtrans %}</p>
+			{%- endif %}
+		</div>
+		{%- endblock %}
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 		<script type="text/javascript" src="{{ pathto('_static/bootstrap.min.js', 1) }}"></script>
 		<script type="text/javascript" src="{{ pathto('_static/fancybox/jquery.fancybox.pack.js', 1) }}"></script>
