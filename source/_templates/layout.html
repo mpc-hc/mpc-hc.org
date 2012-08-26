@@ -55,7 +55,7 @@
 		{%- block footer %}
 		<div class="footer">
 			{%- if show_copyright %}
-				<p class="copyright">{% trans path=pathto('index'), copyright=copyright|e %}Copyright &copy; <a href="{{ path }}">{{ copyright }}</a>, based on <a href="http://www.mplayer2.org/" target="_blank">mplayer2.org</a>{% endtrans %}</p>
+			<p class="copyright">{% trans path=pathto('index'), copyright=copyright|e %}Copyright &copy; <a href="{{ path }}">{{ copyright }}</a>, based on <a href="http://www.mplayer2.org/" target="_blank">mplayer2.org</a>{% endtrans %}</p>
 			{%- endif %}
 		</div>
 		{%- endblock %}
@@ -74,6 +74,7 @@
 			var _gaq = [['_setAccount', 'UA-9335012-1'], ['_trackPageview']];
 			(function(d, t) {
 				var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+				g.async = true;
 				g.src = '//www.google-analytics.com/ga.js';
 				s.parentNode.insertBefore(g, s);
 			}(document, 'script'));
