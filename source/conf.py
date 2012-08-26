@@ -34,14 +34,14 @@ templates_path = ['_templates']
 source_suffix = '.rst'
 
 # The encoding of source files.
-#source_encoding = 'utf-8-sig'
+source_encoding = 'utf-8'
 
 # The master toctree document.
 master_doc = 'index'
 
 # General information about the project.
-project = u'mpc-hc'
-copyright = u'2012, The mpc-hc Team'
+project = u'MPC-HC'
+copyright = u'2012, MPC-HC Team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -103,7 +103,7 @@ html_theme = 'default'
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = 'mpc-hc project'
+html_title = 'MPC-HC project'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -115,7 +115,9 @@ html_title = 'mpc-hc project'
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
-#html_favicon =
+html_favicon = 'favicon.ico'
+
+html_add_permalinks = False
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -128,7 +130,7 @@ html_last_updated_fmt = '%b %d, %Y'
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
-#html_use_smartypants = True
+html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
 #html_sidebars = {}
@@ -191,8 +193,8 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'mpc-hc.tex', u'mpc-hc Documentation',
-   u'The mpc-hc Team', 'manual'),
+  ('index', 'mpc-hc.tex', u'MPC-HC Documentation',
+   u'MPC-HC Team', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -222,7 +224,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'mpc-hc', u'an advanced general-purpose video player',
-     [u'The mpc-hc Team'], 1)
+     [u'MPC-HC Team'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -235,9 +237,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'mpc-hc', u'mpc-hc Documentation',
-   u'The mpc-hc Team', 'mpc-hc', 'One line description of project.',
-   'Miscellaneous'),
+  ('index', 'mpc-hc', u'MPC-HC Documentation', u'The mpc-hc Team',
+   'mpc-hc', 'One line description of project.', 'Miscellaneous'),
 ]
 
 # Documents to append as an appendix to all manuals.
