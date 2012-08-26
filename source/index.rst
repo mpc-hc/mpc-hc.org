@@ -9,19 +9,19 @@
 
 	<div class="row screenshot">
 		<div class="span4 screenshot">
-			<a class="fancybox" rel="gallery" href="_static/mpc-hc.original.png" title="MPC-HC">
+			<a class="fancybox" data-fancybox-group="gallery" href="_static/mpc-hc.original.png" title="MPC-HC">
 				<img class="screenshot" src="_static/mpc-hc.original.thumb.png" alt="MPC-HC" width="182" height="137"/>
 			</a>
 		</div>
 
 		<div class="span4 screenshot">
-			<a class="fancybox" rel="gallery" href="_static/mpc-hc.toolbar.png" title="MPC-HC with custom toolbar">
+			<a class="fancybox" data-fancybox-group="gallery" href="_static/mpc-hc.toolbar.png" title="MPC-HC with custom toolbar">
 				<img class="screenshot" src="_static/mpc-hc.toolbar.thumb.png" alt="MPC-HC with custom toolbar" width="182" height="137"/>
 			</a>
 		</div>
 
 		<div class="span4 screenshot">
-			<a class="fancybox" rel="gallery" href="_static/mpc-hc.dvb.png" title="MPC-HC as DVB Player">
+			<a class="fancybox" data-fancybox-group="gallery" href="_static/mpc-hc.dvb.png" title="MPC-HC as DVB Player">
 				<img class="screenshot" src="_static/mpc-hc.dvb.thumb.png" alt="MPC-HC as DVB Player" width="182" height="137"/>
 			</a>
 		</div>

@@ -7,6 +7,8 @@ RewriteRule download-media-player-classic-hc.html http://mpc-hc.sourceforge.net/
 RewriteRule xhmikosr http://xhmikosr.1f0.de/mpc-hc/ [R=301,L]
 RewriteRule ^favicon.ico /_static/favicon.ico [L]
 
+Header set X-UA-Compatible "IE=edge"
+
 <filesMatch "\.(htm|html)$">
   AddDefaultCharset UTF-8
 </filesMatch>
