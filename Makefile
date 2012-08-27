@@ -37,6 +37,6 @@ website:
 	@python sphinxblog/gen.py
 	@echo "Building site..."
 	@$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/website
-	@cp source/.htaccess source/version.txt $(BUILDDIR)/website
+	@cp source/.htaccess source/version.txt source/robots.txt $(BUILDDIR)/website
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/website."
