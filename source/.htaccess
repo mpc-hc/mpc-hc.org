@@ -6,7 +6,13 @@ RewriteRule /version.old.txt http://mpc-hc.sourceforge.net/version.txt [R=301,L]
 RewriteRule download-media-player-classic-hc.html http://mpc-hc.sourceforge.net/downloads/ [R=301,L]
 RewriteRule xhmikosr http://xhmikosr.1f0.de/mpc-hc/ [R=301,L]
 
-Header set X-UA-Compatible "IE=edge"
+<IfModule mod_headers.c>
+  Header set X-UA-Compatible "IE=Edge,chrome=1"
+  # mod_headers can't match by content-type, but we don't want to send this header on *everything*...
+  <FilesMatch "\.(js|css|gif|png|jpe?g|pdf|xml|oga|ogg|m4a|ogv|mp4|m4v|webm|svg|svgz|eot|ttf|otf|woff|ico|webp|appcache|manifest|htc|crx|oex|xpi|safariextz|vcf)$" >
+    Header unset X-UA-Compatible
+  </FilesMatch>
+</IfModule>
 
 <filesMatch "\.(htm|html)$">
   AddDefaultCharset UTF-8
