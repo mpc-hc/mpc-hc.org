@@ -33,6 +33,12 @@ clean:
 	-rm -rf $(BUILDDIR)/*
 
 website:
+#	@cat source/_static/css/bootstrap.css source/_static/css/bootstrap-responsive.css \
+#		source/_static/css/website.css | cleancss -o source/_static/css/pack.css
+	@cleancss -o source/_static/css/bootstrap.min.css source/_static/css/bootstrap.css \
+		&& cleancss -o source/_static/css/bootstrap-responsive.min.css source/_static/css/bootstrap-responsive.css \
+		&& cleancss -o source/_static/css/website.min.css source/_static/css/website.css
+
 	@echo "Building posts..."
 	@python sphinxblog/gen.py
 	@echo "Building site..."
