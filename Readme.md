@@ -9,6 +9,6 @@ Getting started
 * ``SET PATH=C:\Python27;C:\Python27\Scripts;%PATH%``
 * Install Sphinx: ``easy_install -U Sphinx``
 * Install [node.js] (http://nodejs.org/download/)
-* Install [clean-css] `npm install -g clean-css`
+* Install [clean-css] (https://github.com/GoalSmashers/clean-css) by running: `npm install -g clean-css`
 * Run the make task to build the static site: ``make website``
 * Run the Python webserver to test your changes: ``make server``
