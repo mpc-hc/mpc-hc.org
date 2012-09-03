@@ -14,9 +14,9 @@ RewriteRule xhmikosr http://xhmikosr.1f0.de/mpc-hc/ [R=301,L]
   </FilesMatch>
 </IfModule>
 
-<filesMatch "\.(htm|html)$">
+<FilesMatch "\.(htm|html)$">
   AddDefaultCharset UTF-8
-</filesMatch>
+</FilesMatch>
 
 # ----------------------------------------------------------------------
 # ETag removal
@@ -27,9 +27,8 @@ RewriteRule xhmikosr http://xhmikosr.1f0.de/mpc-hc/ [R=301,L]
   Header unset ETag
 </IfModule>
 
-# Since we're sending far-future expires, we don't need ETags for
-# static content.
-#   developer.yahoo.com/performance/rules.html#etags
+# Since we're sending far-future expires, we don't need ETags for static content.
+# developer.yahoo.com/performance/rules.html#etags
 FileETag None
 
 
