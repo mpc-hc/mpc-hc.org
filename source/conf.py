@@ -86,6 +86,10 @@ pygments_style = 'sphinx'
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
 
+# Trim spaces before footnote references that are necessary for the reST
+# parser to recognize the footnote, but do not look too nice in the output.
+trim_footnote_reference_space = True
+
 
 # -- Options for HTML output ---------------------------------------------------
 
