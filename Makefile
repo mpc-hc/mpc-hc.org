@@ -1,10 +1,6 @@
-SPHINXOPTS  =
-SPHINXBUILD = sphinx-build
-PAPER       =
-BUILDDIR    = build
-DOCS_FILES  =
-DOCS_URL    =
-DOCS_BRANCH =
+SPHINXOPTS =
+PAPER      =
+BUILDDIR   = build
 
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
@@ -42,7 +38,7 @@ website:
 	@echo "Building posts..."
 	@python sphinxblog/gen.py
 	@echo "Building site..."
-	@$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/website
+	@sphinx-build -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/website
 	@cp source/.htaccess source/version.txt source/robots.txt $(BUILDDIR)/website
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/website."
