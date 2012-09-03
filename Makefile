@@ -29,11 +29,13 @@ clean:
 	-rm -rf $(BUILDDIR)/*
 
 website:
-#	@cat source/_static/css/bootstrap.css source/_static/css/bootstrap-responsive.css \
-#		source/_static/css/website.css | cleancss -o source/_static/css/pack.css
-	@cleancss -o source/_static/css/bootstrap.min.css source/_static/css/bootstrap.css \
-		&& cleancss -o source/_static/css/bootstrap-responsive.min.css source/_static/css/bootstrap-responsive.css \
-		&& cleancss -o source/_static/css/website.min.css source/_static/css/website.css
+	@echo "Combining css files..."
+	@cat source/_static/css/bootstrap.css source/_static/css/bootstrap-responsive.css \
+		 source/_static/css/jquery.fancybox.css source/_static/css/website.css | cssc > source/_static/css/pack.css
+
+	@echo "Combining js files..."
+	@cat source/_static/js/jquery.js source/_static/js/bootstrap.min.js source/_static/js/jquery.fancybox.js \
+		 | uglifyjs --no-copyright -o source/_static/js/pack.js
 
 	@echo "Building posts..."
 	@python sphinxblog/gen.py
