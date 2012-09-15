@@ -3,7 +3,7 @@
 
 	<div class="new">
 	<h2>
-		<a href="{{ post.url }}">{{ post.title }}</a>
+		<a href="{{ post.url }}/">{{ post.title }}</a>
 	</h2>
 
 Posted by {{ post.author }} on {{ post.date }}
@@ -13,6 +13,6 @@ Posted by {{ post.author }} on {{ post.date }}
 .. raw:: html
 
 		<span class="read-more">
-			<a href="{{ post.url }}">(read more...)</a>
+			<a href="{{ post.url }}/">(read more...)</a>
 		</span>
 	</div>
