@@ -1,6 +1,7 @@
 body {
     position:relative;
-    background:#fff url(../img/bg-pattern.png) repeat top right
+    background:#fff url(../img/bg-pattern.png) repeat top right;
+    padding-top: 80px
 }
 
 #content-container {
@@ -13,6 +14,12 @@ body {
 
 #content-container #page {
     margin:50px
+}
+
+@media screen and (max-width: 979px) {
+    body {
+        padding-top: 0px
+    }
 }
 
 @media (max-width:767px) {
@@ -276,12 +283,4 @@ div.full-news h1 {
 
 blockquote {
     border-left:0!important
-}
-
-.mail_at:before {
-    content:"@"
-}
-
-.mail_dot:before {
-    content:"."
 }
