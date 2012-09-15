@@ -4,6 +4,10 @@ body {
     padding-top: 80px
 }
 
+.container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    max-width: 940px;
+}
+
 #content-container {
     margin-bottom:20px;
     background-color:#FFF;
