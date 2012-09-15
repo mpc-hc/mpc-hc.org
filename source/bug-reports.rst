@@ -1,3 +1,5 @@
+.. title:: Bug reporting
+
 Bug Reporting / Patch Submission
 ================================
 

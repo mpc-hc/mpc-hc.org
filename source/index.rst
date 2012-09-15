@@ -1,3 +1,5 @@
+.. title:: Home
+
 .. unfortunately reST doesn't support nested inline markup: resort to raw html
 .. raw:: html
 

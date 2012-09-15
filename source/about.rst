@@ -1,3 +1,5 @@
+.. title:: About
+
 About MPC-HC
 ============
 
