@@ -18,7 +18,6 @@ help:
 	@echo "  website    to make the website"
 	@echo "  clean      to clean the website build product"
 	@echo "  help       to show this help message"
-	@echo "  test       to run the sphinxblog testsuite"
 
 server:
 	@echo "Starting webserver..."
@@ -43,4 +42,7 @@ website:
 	@sphinx-build -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/website
 	@cp source/.htaccess source/version.txt source/robots.txt $(BUILDDIR)/website
 	@echo
+	@echo "Removing files we don't need..."
+	@rm -rf $(BUILDDIR)/website/genindex $(BUILDDIR)/website/search
+	@rm $(BUILDDIR)/website/objects.inv $(BUILDDIR)/website/.buildinfo $(BUILDDIR)/website/searchindex.js
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/website."
