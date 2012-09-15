@@ -288,3 +288,8 @@ div.full-news h1 {
 blockquote {
     border-left:0!important
 }
+
+.centered {
+    text-align: center;
+    padding-bottom: 18px
+}

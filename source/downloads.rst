@@ -12,11 +12,10 @@ Downloads
 
 Binaries
 --------
-.. raw:: html
 
-	<div style="text-align: center">
-		<p>Currently, latest stable build is v1.6.3 which was compiled from source based on revision 5818</p>
-	</div><br>
+.. centered::
+	Currently, latest stable build is v1.6.3 which was compiled from source based on revision 5818
+
 
 .. csv-table::
 	:widths: 35, 20, 20, 20
