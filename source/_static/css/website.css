@@ -5,7 +5,7 @@ body {
 }
 
 .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
-    max-width: 940px;
+    max-width: 940px
 }
 
 #content-container {
