@@ -32,15 +32,15 @@ Changelog
 
  * The Output Options page was redesigned for better usability
 
- * Ticket #625, The translation dll's size was decreased by 2/3 (uncompressed)
+ * :issue:`625`, The translation dll's size was decreased by 2/3 (uncompressed)
 
- * Ticket #2227, Hide the seek bar in capture mode
+ * :issue:`2227`, Hide the seek bar in capture mode
 
- * Ticket #2276, Use the new user interface on Vista and later for the Save dialogs
+ * :issue:`2276`, Use the new user interface on Vista and later for the Save dialogs
 
- * Ticket #2342, MPC-HC will now use the Windows theme font for the Statusbar, OSD messages and a few other places on Windows Vista and newer
+ * :issue:`2342`, MPC-HC will now use the Windows theme font for the Statusbar, OSD messages and a few other places on Windows Vista and newer
 
- * Ticket #2378, Move the "Remember last playlist" option into the Options dialog
+ * :issue:`2378`, Move the "Remember last playlist" option into the Options dialog
 
 * Updated:
 
@@ -74,15 +74,15 @@ Changelog
 
  * WebServer: various bugfixes and improvements
 
- * Ticket #504, Fixed rounding errors that prevented a properly centered image and caused unneeded resizing because the video size was off by one
+ * :issue:`504`, Fixed rounding errors that prevented a properly centered image and caused unneeded resizing because the video size was off by one
 
- * Ticket #2330, Fix the radio buttons in the Logo options page
+ * :issue:`2330`, Fix the radio buttons in the Logo options page
 
- * Ticket #2349, Recent Files: "Clear List" did not remove all files from the list
+ * :issue:`2349`, Recent Files: "Clear List" did not remove all files from the list
 
- * Ticket #2356, The "With icons" and "File(s)" options in the Formats options page were not applied if no association was previously modified
+ * :issue:`2356`, The "With icons" and "File(s)" options in the Formats options page were not applied if no association was previously modified
 
- * Ticket #2362, [DVB] Fix the Electronic Program Guide (EPG):
+ * :issue:`2362`, [DVB] Fix the Electronic Program Guide (EPG):
 
   * Fix the parsing of the event's information
 
@@ -90,13 +90,13 @@ Changelog
 
   * Fix the display of the start and end time when DST is observed
 
- * Ticket #2365, The volume slider wasn't properly redrawn in some cases
+ * :issue:`2365`, The volume slider wasn't properly redrawn in some cases
 
- * Ticket #2427, The command line was not parsed when using slave mode
+ * :issue:`2427`, The command line was not parsed when using slave mode
 
- * Ticket #2470, API: Ensure that a 32-bit application can control MPC-HC 64-bit
+ * :issue:`2470`, API: Ensure that a 32-bit application can control MPC-HC 64-bit
 
- * Ticket #2493, Fix a crash when saving subtitles using the sub format
+ * :issue:`2493`, Fix a crash when saving subtitles using the sub format
 
  * Numerous other bugfixes and improvements
 
