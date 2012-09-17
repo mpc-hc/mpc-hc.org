@@ -47,7 +47,7 @@ website:
 		 | cssc > $(BUILDDIR_WEB)/_static/css/pack.css
 
 	@echo & echo "Combining js files..."
-	@cat source/_static/js/bootstrap.js source/_static/js/jquery.fancybox.js \
+	@cat source/_static/js/bootstrap.js source/_static/js/jquery.fancybox.js source/_static/js/ga.js \
 		 | uglifyjs --no-copyright -o $(BUILDDIR_WEB)/_static/js/pack.js
 
 	@echo & echo "Build finished. The HTML pages are in $(BUILDDIR_WEB)."
