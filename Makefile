@@ -33,7 +33,7 @@ website:
 		 source/_static/css/jquery.fancybox.css source/_static/css/website.css | cssc > source/_static/css/pack.css
 
 	@echo "Combining js files..."
-	@cat source/_static/js/bootstrap.min.js source/_static/js/jquery.fancybox.js \
+	@cat source/_static/js/bootstrap.js source/_static/js/jquery.fancybox.js \
 		 | uglifyjs --no-copyright -o source/_static/js/pack.js
 
 	@echo "Building posts..."
