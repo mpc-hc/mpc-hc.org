@@ -29,23 +29,25 @@ clean:
 	-rm -rf $(BUILDDIR)/*
 
 website:
-	@echo "Building posts..."
+	@echo & echo "Building posts..."
 	@python sphinxblog/gen.py
-	@echo "Building site..."
+
+	@echo & echo "Building site..."
 	@sphinx-build -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR_WEB)
 	@cp source/.htaccess source/version.txt source/robots.txt $(BUILDDIR_WEB)
-	@echo
 
-	@echo "Combining css files..."
+	@echo & echo "Removing files we don't need..."
+	@rm -rf $(BUILDDIR_WEB)/_static/js/*.js $(BUILDDIR_WEB)/_static/css/*.css
+	@rm -rf $(BUILDDIR_WEB)/genindex $(BUILDDIR_WEB)/search
+	@rm $(BUILDDIR_WEB)/objects.inv $(BUILDDIR_WEB)/.buildinfo $(BUILDDIR_WEB)/searchindex.js
+
+	@echo & echo "Combining css files..."
 	@cat source/_static/css/bootstrap.css source/_static/css/bootstrap-responsive.css \
 		 source/_static/css/jquery.fancybox.css source/_static/css/website.css \
 		 | cssc > $(BUILDDIR_WEB)/_static/css/pack.css
 
-	@echo "Combining js files..."
+	@echo & echo "Combining js files..."
 	@cat source/_static/js/bootstrap.js source/_static/js/jquery.fancybox.js \
 		 | uglifyjs --no-copyright -o $(BUILDDIR_WEB)/_static/js/pack.js
 
-	@echo "Removing files we don't need..."
-	@rm -rf $(BUILDDIR_WEB)/genindex $(BUILDDIR_WEB)/search
-	@rm $(BUILDDIR_WEB)/objects.inv $(BUILDDIR_WEB)/.buildinfo $(BUILDDIR_WEB)/searchindex.js
-	@echo "Build finished. The HTML pages are in $(BUILDDIR_WEB)."
+	@echo & echo "Build finished. The HTML pages are in $(BUILDDIR_WEB)."
