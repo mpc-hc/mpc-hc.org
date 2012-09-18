@@ -44,7 +44,7 @@ website:
 	@echo & echo "Combining css files..."
 	@cat source/_static/css/bootstrap.css source/_static/css/bootstrap-responsive.css \
 		 source/_static/css/jquery.fancybox.css source/_static/css/website.css \
-		 | cssc > $(BUILDDIR_WEB)/_static/css/pack.css
+		 | cleancss -o $(BUILDDIR_WEB)/_static/css/pack.css
 
 	@echo & echo "Combining js files..."
 	@cat source/_static/js/bootstrap.js source/_static/js/jquery.fancybox.js \
