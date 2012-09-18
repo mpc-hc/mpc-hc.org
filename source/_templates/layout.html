@@ -38,7 +38,6 @@
 				</div>
 			</div>
 		</div>
-
 		<div id="content-container" class="container">
 			<div id="page">
 				{%- block body %}
@@ -58,10 +57,12 @@
 			$(document).ready(function() {
 				/*Initialize tabs and pills*/
 				$('.note-tabs').tab();
+				{%- if pagename == 'index' %}
 				$(".fancybox").fancybox({
 					openEffect  : 'none',
 					closeEffect : 'none'
 				});
+				{%- endif %}
 			});
 			var _gaq = [['_setAccount', 'UA-9335012-1'], ['_trackPageview']];
 			(function(d, t) {
