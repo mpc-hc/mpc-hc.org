@@ -1,12 +1,11 @@
 .. title:: Home
 
-.. unfortunately reST doesn't support nested inline markup: resort to raw html
 .. raw:: html
 
 	<p class="lead">
-		MPC-HC is an extremely light-weight media player for Windows.<br>
-		The player supports all common video and audio file formats available for playback.<br>
-		Most important thing is that we're <em>completely free, 0 spyware, 0 ads and no user tracking.</em>
+	MPC-HC is an extremely light-weight media player for Windows.<br>
+	The player supports all common video and audio file formats available for playback.<br>
+	Most important thing is that we're <em>completely free, 0 spyware, 0 ads and no user tracking.</em>
 	</p>
 
 	<hr class="soften screenshot">

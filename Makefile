@@ -34,6 +34,8 @@ website:
 
 	@echo & echo "Building site..."
 	@sphinx-build -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR_WEB)
+
+	@echo & echo "Copying files..."
 	@cp source/.htaccess source/version.txt source/robots.txt $(BUILDDIR_WEB)
 
 	@echo & echo "Removing files we don't need..."
@@ -42,12 +44,15 @@ website:
 	@rm $(BUILDDIR_WEB)/objects.inv $(BUILDDIR_WEB)/.buildinfo $(BUILDDIR_WEB)/searchindex.js
 
 	@echo & echo "Combining css files..."
-	@cat source/_static/css/bootstrap.css source/_static/css/bootstrap-responsive.css \
-		 source/_static/css/jquery.fancybox.css source/_static/css/website.css \
+	@cat source/_static/css/bootstrap.css \
+		 source/_static/css/bootstrap-responsive.css \
+		 source/_static/css/jquery.fancybox.css \
+		 source/_static/css/website.css \
 		 | cleancss -o $(BUILDDIR_WEB)/_static/css/pack.css
 
 	@echo & echo "Combining js files..."
-	@cat source/_static/js/bootstrap.js source/_static/js/jquery.fancybox.js \
+	@cat source/_static/js/bootstrap.js \
+		 source/_static/js/jquery.fancybox.js \
 		 | uglifyjs --no-copyright -o $(BUILDDIR_WEB)/_static/js/pack.js
 
 	@echo & echo "Build finished. The HTML pages are in $(BUILDDIR_WEB)."
