@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<meta charset="utf-8" />
 		<title>{% block title -%} {{ title }} {%- endblock %} :: MPC-HC ::</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		{%- if favicon %}
@@ -9,7 +9,7 @@
 		{%- endif %}
 		<meta name="description" content="MPC-HC, the free, open source media player" />
 		<meta name="keywords" content="MPC, MPC-HC, Media Player Classic, Media Player Classic - Home Cinema, open source media player, video, audio, mkv, avi, xvid, x264, matroska" />
-		<link href="{{ pathto('_static/css/pack.css', 1) }}" media="screen" rel="stylesheet" type="text/css" />
+		<link href="{{ pathto('_static/css/pack.css', 1) }}" rel="stylesheet" type="text/css" />
 	</head>
 	<body data-spy="scroll" data-target=".subnav" data-offset="50">
 		<div class="navbar navbar-fixed-top">
@@ -53,16 +53,13 @@
 		{%- endblock %}
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 		<script type="text/javascript" src="{{ pathto('_static/js/pack.js', 1) }}"></script>
+		{%- if pagename == 'index' %}
 		<script type="text/javascript">
 			$(document).ready(function() {
-				/*Initialize tabs and pills*/
-				$('.note-tabs').tab();
-				{%- if pagename == 'index' %}
 				$(".fancybox").fancybox({
 					openEffect  : 'none',
 					closeEffect : 'none'
 				});
-				{%- endif %}
 			});
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-9335012-1']);
@@ -73,5 +70,6 @@
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
 		</script>
+		{%- endif %}
 	</body>
 </html>
