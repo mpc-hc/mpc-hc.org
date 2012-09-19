@@ -13,6 +13,6 @@ Posted by {{ post.author }} on {{ post.date }}
 .. raw:: html
 
 		<span class="read-more">
-			<a class="reference internal" href="{{ post.url }}/">(read more...)</a>
+			<a class="reference internal" href="{{ post.url }}/"><em>(read more...)</em></a>
 		</span>
 	</div>
