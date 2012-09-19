@@ -15,7 +15,7 @@ It's a maintance release with a couple of UI improvements and a few bugfixes.
 .. raw:: html
 
 		<span class="read-more">
-			<a href="/2012/08/14/1.6.3-released/">(read more...)</a>
+			<a class="reference internal" href="/2012/08/14/1.6.3-released/">(read more...)</a>
 		</span>
 	</div>
 .. raw:: html
@@ -33,7 +33,7 @@ to move to `Git <http://git-scm.com/>`_ and to `GitHub <https://github.com/mpc-h
 .. raw:: html
 
 		<span class="read-more">
-			<a href="/2012/08/09/source-code-moved-to-github/">(read more...)</a>
+			<a class="reference internal" href="/2012/08/09/source-code-moved-to-github/">(read more...)</a>
 		</span>
 	</div>
 .. raw:: html
@@ -54,6 +54,6 @@ I slightly tweaked their template and updated dependencies to use the latest
 .. raw:: html
 
 		<span class="read-more">
-			<a href="/2012/06/21/welcome-to-the-new-website/">(read more...)</a>
+			<a class="reference internal" href="/2012/06/21/welcome-to-the-new-website/">(read more...)</a>
 		</span>
 	</div>
