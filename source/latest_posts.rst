@@ -3,6 +3,24 @@
 
 	<div class="new">
 	<h2>
+		<a href="/2012/09/22/open-call/">Open call for developers</a>
+	</h2>
+
+Posted by vBm on 22/09/2012
+
+We are in dire need of new developers of any kind.
+If you can code a little, or you can create logos for the player and images for the file associations, or you can create/maintain the main website, please join our `IRC channel <webchat.freenode.net/?channels=mpc-hc,#mpc-hc-dev>`_ and talk to us. Any help is always appreciated.
+
+.. raw:: html
+
+		<span class="read-more">
+			<a class="reference internal" href="/2012/09/22/open-call/"><em>(read more...)</em></a>
+		</span>
+	</div>
+.. raw:: html
+
+	<div class="new">
+	<h2>
 		<a href="/2012/08/14/1.6.3-released/">v1.6.3 is released</a>
 	</h2>
 
@@ -34,26 +52,5 @@ to move to `Git <http://git-scm.com/>`_ and to `GitHub <https://github.com/mpc-h
 
 		<span class="read-more">
 			<a class="reference internal" href="/2012/08/09/source-code-moved-to-github/"><em>(read more...)</em></a>
-		</span>
-	</div>
-.. raw:: html
-
-	<div class="new">
-	<h2>
-		<a href="/2012/06/21/welcome-to-the-new-website/">Welcome to the new website</a>
-	</h2>
-
-Posted by vBm on 21/06/2012
-
-We would like to thank pigoz and the `mplayer2 project <http://www.mplayer2.org>`_
-for making their web site's template publicly available for usage.
-
-I slightly tweaked their template and updated dependencies to use the latest
-`FancyBox <http://fancyapps.com/fancybox/>`_.
-
-.. raw:: html
-
-		<span class="read-more">
-			<a class="reference internal" href="/2012/06/21/welcome-to-the-new-website/"><em>(read more...)</em></a>
 		</span>
 	</div>

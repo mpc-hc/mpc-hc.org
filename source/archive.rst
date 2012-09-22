@@ -3,6 +3,16 @@ Archive
 
 .. raw:: html
 
+	<h2>September 2012</h2>
+.. raw:: html
+
+	<div class="news-title archive">
+		<h3>
+			<a href="/2012/09/22/open-call/">Open call for developers</a>
+		</h3>
+	</div>
+.. raw:: html
+
 	<h2>August 2012</h2>
 .. raw:: html
 
