@@ -3,18 +3,17 @@
 
 	<div class="new">
 	<h2>
-		<a href="/2012/09/22/open-call/">Open call for developers</a>
+		<a href="/2012/09/24/open-call/">Open call for contributors</a>
 	</h2>
 
-Posted by vBm on 22/09/2012
+Posted by vBm on 24/09/2012
 
-We are in dire need of new developers of any kind.
-If you can code a little, or you can create logos for the player and images for the file associations, or you can create/maintain the main website, please join our `IRC channel <webchat.freenode.net/?channels=mpc-hc,#mpc-hc-dev>`_ and talk to us. Any help is always appreciated.
+We are always in need of people willing to help us make MPC-HC better.
 
 .. raw:: html
 
 		<span class="read-more">
-			<a class="reference internal" href="/2012/09/22/open-call/"><em>(read more...)</em></a>
+			<a class="reference internal" href="/2012/09/24/open-call/"><em>(read more...)</em></a>
 		</span>
 	</div>
 .. raw:: html
