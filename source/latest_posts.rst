@@ -3,7 +3,7 @@
 
 	<div class="new">
 	<h2>
-		<a href="/2012/09/24/open-call/">Open call for contributors</a>
+		<a href="/2012/09/24/open-call-for-contributors/">Open call for contributors</a>
 	</h2>
 
 Posted by vBm on 24/09/2012
@@ -13,7 +13,7 @@ We are always in need of people willing to help us make MPC-HC better.
 .. raw:: html
 
 		<span class="read-more">
-			<a class="reference internal" href="/2012/09/24/open-call/"><em>(read more...)</em></a>
+			<a class="reference internal" href="/2012/09/24/open-call-for-contributors/"><em>(read more...)</em></a>
 		</span>
 	</div>
 .. raw:: html

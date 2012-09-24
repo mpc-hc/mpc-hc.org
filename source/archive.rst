@@ -8,7 +8,7 @@ Archive
 
 	<div class="news-title archive">
 		<h3>
-			<a href="/2012/09/24/open-call/">Open call for contributors</a>
+			<a href="/2012/09/24/open-call-for-contributors/">Open call for contributors</a>
 		</h3>
 	</div>
 .. raw:: html
