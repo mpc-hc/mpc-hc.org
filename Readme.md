@@ -13,3 +13,4 @@ Getting started
 * Install [uglify-js] (https://github.com/mishoo/UglifyJS) by running: `npm install -g uglify-js`
 * Run the make task to build the static site: `make` or `make website`
 * Run the Python webserver to test your changes: `make server`
+  (http://localhost:8000/)
