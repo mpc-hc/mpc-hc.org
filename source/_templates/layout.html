@@ -53,14 +53,15 @@
 		{%- endblock %}
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script type="text/javascript" src="{{ pathto('_static/js/pack.js', 1) }}"></script>
-		{%- if pagename == 'index' %}
 		<script type="text/javascript">
+			{%- if pagename == 'index' %}
 			$(document).ready(function() {
 				$(".fancybox").fancybox({
 					openEffect  : 'none',
 					closeEffect : 'none'
 				});
 			});
+			{%- endif %}
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-9335012-1']);
 			_gaq.push(['_trackPageview']);
@@ -70,6 +71,5 @@
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
 		</script>
-		{%- endif %}
 	</body>
 </html>
