@@ -57,8 +57,7 @@
 			{%- if pagename == 'index' %}
 			$(document).ready(function() {
 				$(".fancybox").fancybox({
-					openEffect  : 'none',
-					closeEffect : 'none'
+					preload : 'false'
 				});
 			});
 			{%- endif %}
