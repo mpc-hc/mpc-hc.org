@@ -112,4 +112,3 @@ class Post(object):
         result = f.readlines()
         f.close()
         return result
-

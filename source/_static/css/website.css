@@ -1,11 +1,11 @@
 body {
     position: relative;
     background: #fff url(../img/bg-pattern.png) repeat top right;
-    padding-top: 80px
+    padding-top: 80px;
 }
 
 .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
-    max-width: 940px
+    max-width: 940px;
 }
 
 #content-container {
@@ -22,7 +22,7 @@ body {
 
 @media screen and (max-width: 979px) {
     body {
-        padding-top: 0px
+        padding-top: 0px;
     }
 }
 
@@ -292,5 +292,5 @@ blockquote {
 
 .centered {
     text-align: center;
-    padding-bottom: 18px
+    padding-bottom: 18px;
 }
