@@ -1,0 +1,21 @@
+.. raw:: html
+
+	<div class="full-news">
+
+v1.6.4 is released
+------------------
+
+Posted by XhmikosR on 01/10/2012
+
+After almost 6 weeks after the previous stable release, we decided to release 1.6.4.
+
+It's a maintance release with a couple of UI improvements, few bugfixes and better API.
+
+Highlights of this release:
+
+* Better UTF8 support for webui
+* Chapter indicators on seekbar
+* Improved DVD and PSG (BD) sub handling
+* Changed default maximum subtitle resolution to "Desktop"
+
+You can download the new version :doc:`here </downloads>`. For the complete changes see the :doc:`changelog </changelog>`

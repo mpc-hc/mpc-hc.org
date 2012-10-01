@@ -3,6 +3,16 @@ Archive
 
 .. raw:: html
 
+	<h2>October 2012</h2>
+.. raw:: html
+
+	<div class="news-title archive">
+		<h3>
+			<a href="/2012/10/01/1.6.4-released/">v1.6.4 is released</a>
+		</h3>
+	</div>
+.. raw:: html
+
 	<h2>September 2012</h2>
 .. raw:: html
 

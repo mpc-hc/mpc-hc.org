@@ -14,16 +14,16 @@ Binaries
 --------
 
 .. centered::
-	Currently, latest stable build is v1.6.3 which was compiled from source based on revision 5818
+	Currently, latest stable build is v1.6.4 which was compiled from source based on revision 6052 (32687bc)
 
 
 .. csv-table::
 	:widths: 35, 20, 20, 20
 
-	":abbr:`MPC-HC (Media Player Classic - Home Cinema)` 32bit (x86)", "`installer <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.6.3.5818_x86/MPC-HC.1.6.3.5818.x86.exe/download>`_", "`ZIP file <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.6.3.5818_x86/MPC-HC.1.6.3.5818.x86.zip/download>`_", "`7z file <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.6.3.5818_x86/MPC-HC.1.6.3.5818.x86.7z/download>`_"
-	":abbr:`MPC-HC (Media Player Classic - Home Cinema)` 64bit (x64)", "`installer <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20x64/MPC-HC_v1.6.3.5818_x64/MPC-HC.1.6.3.5818.x64.exe/download>`__", "`ZIP file <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20x64/MPC-HC_v1.6.3.5818_x64/MPC-HC.1.6.3.5818.x64.zip/download>`__", "`7z file <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20x64/MPC-HC_v1.6.3.5818_x64/MPC-HC.1.6.3.5818.x64.7z/download>`__"
-	"Standalone filters Win32 (x86)", "✘", "`ZIP File <http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20Win32/Filters_v1.6.3.5818_x86/MPC-HC_standalone_filters.1.6.3.5818.x86.zip/download>`__", "`7z file <http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20Win32/Filters_v1.6.3.5818_x86/MPC-HC_standalone_filters.1.6.3.5818.x86.7z/download>`__"
-	"Standalone filters 64bit (x64)", "✘", "`ZIP File <http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20x64/Filters_v1.6.3.5818_x64/MPC-HC_standalone_filters.1.6.3.5818.x64.zip/download>`__", "`7z file <http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20x64/Filters_v1.6.3.5818_x64/MPC-HC_standalone_filters.1.6.3.5818.x64.7z/download>`__"
+	":abbr:`MPC-HC (Media Player Classic - Home Cinema)` 32bit (x86)", "`installer <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.6.4.6052_x86/MPC-HC.1.6.4.6052.x86.exe/download>`_", "`ZIP file <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.6.4.6052_x86/MPC-HC.1.6.4.6052.x86.zip/download>`_", "`7z file <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.6.4.6052_x86/MPC-HC.1.6.4.6052.x86.7z/download>`_"
+	":abbr:`MPC-HC (Media Player Classic - Home Cinema)` 64bit (x64)", "`installer <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20x64/MPC-HC_v1.6.4.6052_x64/MPC-HC.1.6.4.6052.x64.exe/download>`__", "`ZIP file <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20x64/MPC-HC_v1.6.4.6052_x64/MPC-HC.1.6.4.6052.x64.zip/download>`__", "`7z file <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20x64/MPC-HC_v1.6.4.6052_x64/MPC-HC.1.6.4.6052.x64.7z/download>`__"
+	"Standalone filters Win32 (x86)", "✘", "`ZIP File <http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20Win32/Filters_v1.6.4.6052_x86/MPC-HC_standalone_filters.1.6.4.6052.x86.zip/download>`__", "`7z file <http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20Win32/Filters_v1.6.4.6052_x86/MPC-HC_standalone_filters.1.6.4.6052.x86.7z/download>`__"
+	"Standalone filters 64bit (x64)", "✘", "`ZIP File <http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20x64/Filters_v1.6.4.6052_x64/MPC-HC_standalone_filters.1.6.4.6052.x64.zip/download>`__", "`7z file <http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20x64/Filters_v1.6.4.6052_x64/MPC-HC_standalone_filters.1.6.4.6052.x64.7z/download>`__"
 
 
 Source code

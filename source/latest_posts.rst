@@ -3,6 +3,25 @@
 
 	<div class="new">
 	<h2>
+		<a href="/2012/10/01/1.6.4-released/">v1.6.4 is released</a>
+	</h2>
+
+Posted by XhmikosR on 01/10/2012
+
+After almost 6 weeks after the previous stable release, we decided to release 1.6.4.
+
+It's a maintance release with a couple of UI improvements, few bugfixes and better API.
+
+.. raw:: html
+
+		<span class="read-more">
+			<a class="reference internal" href="/2012/10/01/1.6.4-released/"><em>(read more...)</em></a>
+		</span>
+	</div>
+.. raw:: html
+
+	<div class="new">
+	<h2>
 		<a href="/2012/09/24/open-call-for-contributors/">Open call for contributors</a>
 	</h2>
 
