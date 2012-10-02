@@ -55,6 +55,7 @@ website:
 
 	@echo & echo "Combining js files..."
 	@cat source/_static/js/bootstrap.js \
+		 source/_static/js/jquery.mousewheel.js \
 		 source/_static/js/jquery.fancybox.js \
 		 | uglifyjs --no-copyright -o $(BUILDDIR_WEB)/_static/js/pack.js
 
