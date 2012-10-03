@@ -12,17 +12,17 @@
 
 	<div class="row screenshot">
 		<div class="span4 screenshot">
-			<a class="fancybox" data-fancybox-group="gallery" href="_static/img/mpc-hc.original.png" title="MPC-HC">
+			<a class="fancybox-thumb" rel="fancybox-thumb" data-fancybox-group="gallery" href="_static/img/mpc-hc.original.png" title="MPC-HC">
 				<img class="screenshot" src="_static/img/mpc-hc.original.thumb.jpg" alt="MPC-HC" width="182" height="137"/>
 			</a>
 		</div>
 		<div class="span4 screenshot">
-			<a class="fancybox" data-fancybox-group="gallery" href="_static/img/mpc-hc.toolbar.png" title="MPC-HC with custom toolbar">
+			<a class="fancybox-thumb" rel="fancybox-thumb" data-fancybox-group="gallery" href="_static/img/mpc-hc.toolbar.png" title="MPC-HC with custom toolbar">
 				<img class="screenshot" src="_static/img/mpc-hc.toolbar.thumb.jpg" alt="MPC-HC with custom toolbar" width="182" height="137"/>
 			</a>
 		</div>
 		<div class="span4 screenshot">
-			<a class="fancybox" data-fancybox-group="gallery" href="_static/img/mpc-hc.dvb.jpg" title="MPC-HC as DVB Player">
+			<a class="fancybox-thumb" rel="fancybox-thumb" data-fancybox-group="gallery" href="_static/img/mpc-hc.dvb.jpg" title="MPC-HC as DVB Player">
 				<img class="screenshot" src="_static/img/mpc-hc.dvb.thumb.jpg" alt="MPC-HC as DVB Player" width="182" height="137"/>
 			</a>
 		</div>

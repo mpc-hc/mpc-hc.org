@@ -50,6 +50,7 @@ website:
 	@cat source/_static/css/bootstrap.css \
 		 source/_static/css/bootstrap-responsive.css \
 		 source/_static/css/jquery.fancybox.css \
+		 source/_static/css/jquery.fancybox-thumbs.css \
 		 source/_static/css/website.css \
 		 | cleancss -o $(BUILDDIR_WEB)/_static/css/pack.css
 
@@ -57,6 +58,7 @@ website:
 	@cat source/_static/js/bootstrap.js \
 		 source/_static/js/jquery.mousewheel.js \
 		 source/_static/js/jquery.fancybox.js \
+		 source/_static/js/jquery.fancybox-thumbs.js \
 		 | uglifyjs --no-copyright -o $(BUILDDIR_WEB)/_static/js/pack.js
 
 	@echo & echo "Build finished. The HTML pages are in $(BUILDDIR_WEB)."
