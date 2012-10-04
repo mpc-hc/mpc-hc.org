@@ -57,19 +57,14 @@
 			{%- if pagename == 'index' %}
 			$(document).ready(function() {
 				$(".fancybox-thumb").fancybox({
-					padding : 0,
-					openEffect : 'elastic',
-					closeEffect : 'elastic',
-					prevEffect : 'none',
-					nextEffect : 'none',
-					helpers : {
-						title : {
-							type: 'float'
-						},
-						thumbs : {
-							width : 50,
-							height : 50
-						}
+					padding: 0,
+					openEffect: 'elastic',
+					closeEffect: 'elastic',
+					prevEffect: 'none',
+					nextEffect: 'none',
+					helpers: {
+						title: { type: 'float' },
+						thumbs: { width: 50, height: 50 }
 					}
 				});
 			});
