@@ -72,7 +72,7 @@ body {
     visibility: visible;
 }
 
-.copyright {
+.copyright, .lastupdated, .showsphinx {
     text-align: center;
     font-size: 85%;
     margin-top: -1em;
