@@ -3,7 +3,7 @@ BUILDDIR     = build
 BUILDDIR_WEB = $(BUILDDIR)/website
 
 # Internal variables.
-ALLSPHINXOPTS = -a -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) source
+ALLSPHINXOPTS = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) source
 
 .PHONY: server website clean help
 .DEFAULT_GOAL := website
