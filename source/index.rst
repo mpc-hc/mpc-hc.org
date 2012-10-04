@@ -12,13 +12,13 @@
 
 	<div class="row screenshot">
 		<div class="span4 screenshot">
-			<a class="fancybox-thumb" data-fancybox-group="gallery" href="_static/img/mpc-hc.original.png" title="MPC-HC">
-				<img class="screenshot" src="_static/img/mpc-hc.original.thumb.jpg" alt="MPC-HC" width="182" height="137"/>
+			<a class="fancybox-thumb" data-fancybox-group="gallery" href="_static/img/mpc-hc.original.jpg" title="MPC-HC">
+				<img class="screenshot" src="_static/img/mpc-hc.original.thumb.jpg" alt="MPC-HC" width="180" height="134"/>
 			</a>
 		</div>
 		<div class="span4 screenshot">
-			<a class="fancybox-thumb" data-fancybox-group="gallery" href="_static/img/mpc-hc.toolbar.png" title="MPC-HC with custom toolbar">
-				<img class="screenshot" src="_static/img/mpc-hc.toolbar.thumb.jpg" alt="MPC-HC with custom toolbar" width="182" height="137"/>
+			<a class="fancybox-thumb" data-fancybox-group="gallery" href="_static/img/mpc-hc.toolbar.jpg" title="MPC-HC with custom toolbar">
+				<img class="screenshot" src="_static/img/mpc-hc.toolbar.thumb.jpg" alt="MPC-HC with custom toolbar" width="180" height="134"/>
 			</a>
 		</div>
 		<div class="span4 screenshot">
