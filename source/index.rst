@@ -12,14 +12,17 @@
 
 	<div class="row screenshot">
 		<div class="span4 screenshot">
-			<a class="fancybox-thumb" data-fancybox-group="gallery" href="_static/img/mpc-hc.original.jpg" title="MPC-HC">
+			<a class="fancybox-thumb" data-fancybox-group="gallery" href="_static/img/mpc-hc.original.jpg" title="MPC-HC's main window">
 				<img class="screenshot" src="_static/img/mpc-hc.original.thumb.jpg" alt="MPC-HC" width="180" height="134"/>
 			</a>
 		</div>
 		<div class="span4 screenshot">
-			<a class="fancybox-thumb" data-fancybox-group="gallery" href="_static/img/mpc-hc.toolbar.jpg" title="MPC-HC with custom toolbar">
+			<a class="fancybox-thumb" data-fancybox-group="gallery" href="_static/img/mpc-hc.toolbar.jpg" data-title-id="title-toolbar">
 				<img class="screenshot" src="_static/img/mpc-hc.toolbar.thumb.jpg" alt="MPC-HC with custom toolbar" width="180" height="134"/>
 			</a>
+			<div id="title-toolbar" class="hidden">
+				MPC-HC with <a href="http://sourceforge.net/apps/trac/mpc-hc/wiki/Toolbar_images" target="_blank">custom toolbar</a>.
+			</div>
 		</div>
 		<div class="span4 screenshot">
 			<a class="fancybox-thumb" data-fancybox-group="gallery" href="_static/img/mpc-hc.dvb.jpg" title="MPC-HC as DVB Player">
