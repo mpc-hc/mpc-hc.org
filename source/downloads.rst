@@ -46,8 +46,6 @@ Nightly builds
 --------------
 
 .. warning::
-	Nightly builds are considered as unstable builds. They may contain untested extra functionality.
+	Nightly builds are considered as unstable builds. They may contain untested extra functionality. **Use at your own risk**.
 
-	Use at your own risk.
-
-	`Official builds uploaded by XhmikosR and hosted by nevcairiel. <http://xhmikosr.1f0.de/mpc-hc/>`__
+	`Download <http://xhmikosr.1f0.de/mpc-hc/>`_ (kindly hosted by `nevcairiel <http://1f0.de/>`_)

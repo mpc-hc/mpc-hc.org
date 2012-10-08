@@ -52,7 +52,7 @@
 	</div>
 
 Latest news
-===========
+-----------
 
 .. include:: latest_posts.rst
 
