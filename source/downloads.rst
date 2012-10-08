@@ -4,10 +4,12 @@ Downloads
 =========
 
 .. note::
-	Supported Operating Systems:
+	- Supported Operating Systems:
+
 	 Windows XP SP3, Vista, 7 both 32-bit and 64-bit
 
-	System Requirements:
+	- System Requirements:
+
 	 An SSE capable CPU
 
 Binaries
