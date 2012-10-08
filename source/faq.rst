@@ -5,6 +5,9 @@ FAQ
 
 .. _faq-1:
 
+.. hint::
+	`Help us add more info in this page <https://github.com/mpc-hc/website>`_
+
 #. **What are the minimum requirements for MPC-HC?**
 
 	In order to run MPC-HC with no problems you must have at least Windows XP SP3 operating system, SSE capable CPU and the latest DirectX 9.0c runtime (June 2010).
