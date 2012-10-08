@@ -41,7 +41,7 @@
 			</div>
 			<div class="span4">
 				<h2>Customizable</h2>
-				<p>With its wide array of options, mpc-hc can be customized to fit
+				<p>With its wide array of options, MPC-HC can be customized to fit
 				almost any needs. Among other things we added custom toolbars.</p>
 			</div>
 			<div class="span4">

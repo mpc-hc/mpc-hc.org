@@ -5,7 +5,7 @@ Contact us
 
 Here is a list of ways to contact us. If you want to report a bug or submit a
 patch, please also read our :doc:`bug reports page </bug-reports>` for more
-informations.
+information.
 
 Internet Relay Chat
 ___________________
