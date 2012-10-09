@@ -8,7 +8,7 @@ patch, please also read our :doc:`bug reports page </bug-reports>` for more
 information.
 
 Internet Relay Chat
-___________________
+-------------------
 
 You can find us on the following IRC channels:
 
@@ -19,7 +19,7 @@ You can find us on the following IRC channels:
 	"`#mpc-hc @ freenode <irc://irc.freenode.net/mpc-hc/>`_", "Our chat / user help channel"
 	"`#mpc-hc-dev @ freenode <irc://irc.freenode.net/mpc-hc-dev/>`_", "Development channel"
 
-Please follow these simple rules when joining our channel.
+Please follow these simple rules when joining our channel(s).
 
 #. Speak English, even if it's only a little don't be afraid to try.
 #. Be cordial, the channel is a public space.
@@ -33,10 +33,11 @@ Please follow these simple rules when joining our channel.
 
 
 Social Networks
-_______________
+---------------
 
 .. csv-table::
 	:widths: 100
 
+	"`Facebook <https://www.facebook.com/MediaPlayerClassicHomeCinema>`_"
 	"`Google+ <https://plus.google.com/u/0/109957971189557916726>`_"
 	"`Twitter <https://twitter.com/mpc_hc/>`_"
