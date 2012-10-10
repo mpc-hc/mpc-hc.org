@@ -4,7 +4,9 @@ body {
     padding-top: 80px;
 }
 
-.container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+.container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
     max-width: 940px;
 }
 
@@ -164,7 +166,8 @@ table, table * {
     margin-top: 4em;
 }
 
-#latest-news > div > h2 + p, div.full-news h1 + p {
+#latest-news > div > h2 + p,
+div.full-news h1 + p {
     font-size: 80%;
 }
 
