@@ -14,6 +14,19 @@
 			<br>
 			<span>1.6.4 x86</span> - <a href="/downloads/">Other systems &amp; versions</a>
 		</p>
+		<p>
+			<a class="aimg" href="http://facebook.com/MediaPlayerClassicHomeCinema">
+				<img class="social-facebook" src="_static/img/blank.gif" width="24" height="24" title="Like us on Facebook!" alt="Like us on Facebook!"/>
+			</a>
+			&nbsp;
+			<a class="aimg" href="https://twitter.com/mpc_hc/">
+				<img class="social-twitter" src="_static/img/blank.gif" width="24" height="24" title="Share on Twitter!" alt="Share on Twitter!"/>
+			</a>
+			&nbsp;
+			<a class="aimg" href="https://plus.google.com/u/0/109957971189557916726">
+				<img class="social-gplus" src="_static/img/blank.gif" width="24" height="24" title="g+" alt="g+"/>
+			</a>
+		</p>
 	</div>
 
 	<hr class="soften screenshot">
