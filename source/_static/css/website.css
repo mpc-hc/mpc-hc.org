@@ -1,6 +1,6 @@
 body {
     position: relative;
-    background: #fff url(../img/bg-pattern.png) repeat top right;
+    background: #fff url("../img/bg-pattern.png") repeat top right;
     padding-top: 80px;
 }
 
@@ -296,4 +296,29 @@ blockquote {
 .centered {
     text-align: center;
     padding-bottom: 18px;
+}
+
+/*social networks*/
+.social-facebook {
+    background: url("../img/social-buttons.png") no-repeat -60px -2px;
+    width: 24px;
+    height: 24px;
+}
+
+.social-gplus {
+    background: url("../img/social-buttons.png") no-repeat -88px -2px;
+    width: 24px;
+    height: 24px;
+}
+
+/*.social-rss {
+    background: url("../img/social-buttons.png") no-repeat -32px -2px;
+    width: 24px;
+    height: 24px;
+}*/
+
+.social-twitter {
+    background: url("../img/social-buttons.png") no-repeat -4px -2px;
+    width: 24px;
+    height: 24px;
 }
