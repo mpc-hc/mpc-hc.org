@@ -298,6 +298,16 @@ blockquote {
     padding-bottom: 18px;
 }
 
+/* hack so that we don't get an underline
+   when hovering on the social network images */
+.aimg:link {
+    text-decoration: none;
+}
+
+.aimg:hover {
+    border-bottom: none;
+}
+
 /*social networks*/
 .social-facebook {
     background: url("../img/social-buttons.png") no-repeat -60px -2px;
