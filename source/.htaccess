@@ -357,4 +357,3 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
   Deny from all
   Satisfy All
 </FilesMatch>
-

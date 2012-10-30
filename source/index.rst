@@ -15,7 +15,7 @@
 			<span>1.6.4 x86</span> - <a href="/downloads/">Other systems &amp; versions</a>
 		</p>
 		<p>
-			<a class="aimg" href="http://facebook.com/MediaPlayerClassicHomeCinema">
+			<a class="aimg" href="http://www.facebook.com/MediaPlayerClassicHomeCinema">
 				<img class="social-facebook" src="_static/img/blank.gif" width="24" height="24" title="Like us on Facebook!" alt="Facebook"/>
 			</a>
 			&nbsp;
