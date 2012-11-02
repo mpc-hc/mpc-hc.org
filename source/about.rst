@@ -7,7 +7,7 @@ Media Player Classic - Home Cinema is an extremely light-weight media player for
 
 * It is written in C++.
 * Supports GPU assisted decoding.
-* Translated in 23 languages.
+* Translated in 24 languages.
 
 
 MPC-HC Team
@@ -123,7 +123,7 @@ Third party libraries
 	"libogg", "New BSD License", "http://www.xiph.org/"
 	"Little CMS", "MIT License", "http://www.littlecms.com/"
 	"Logitech SDK", "-", "-"
-	"MediaInfoLib", "LGPLv3", "http://mediainfo.sourceforge.net/"
+	"MediaInfoLib", "LGPLv2+", "http://mediainfo.sourceforge.net/"
 	"MultiMon", "CPOL", "http://www.codeproject.com/KB/GDI/multimon.aspx"
 	"QuickTime SDK", "-", "http://developer.apple.com/quicktime/download/"
 	"RealMedia SDK", "-", "-"
@@ -133,5 +133,5 @@ Third party libraries
 	"TreePropSheet", "-", "http://www.codeproject.com/Articles/3709/CTreePropSheet-A-Netscape-Visual-Studio-NET-like-P"
 	"UnRAR", "freeware", "http://www.rarlab.com/rar_add.htm"
 	"VirtualDub", "GPLv2", "http://www.virtualdub.org/"
-	"ZenLib", "Simplified BSD License", "http://sourceforge.net/projects/zenlib/"
+	"ZenLib", "zlib License", "http://sourceforge.net/projects/zenlib/"
 	"zlib", "zlib License", "http://zlib.net/"
