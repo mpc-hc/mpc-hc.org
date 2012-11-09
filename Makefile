@@ -29,9 +29,6 @@ website:
 	@echo ; echo "Building site..."; echo
 	@sphinx-build -b dirhtml $(SPHINXOPTS) $(BLDDIR_WEB)
 
-	@echo ; echo "Copying files..."
-	@cp $(SRC)/.htaccess $(SRC)/version.txt $(SRC)/robots.txt $(BLDDIR_WEB)
-
 	@echo ; echo "Removing files we don't need..."
 	-@rm -rf $(BLDDIR_WEB)/.buildinfo			\
 			 $(BLDDIR_WEB)/_static/*.css		\
@@ -44,6 +41,10 @@ website:
 			 $(BLDDIR_WEB)/objects.inv			\
 			 $(BLDDIR_WEB)/search				\
 			 $(BLDDIR_WEB)/searchindex.js
+
+	@echo ; echo "Copying files..."
+	@cp $(SRC)/.htaccess $(SRC)/version.txt $(SRC)/robots.txt $(BLDDIR_WEB)
+	@cp $(SRC)/_static/js/jquery-1.8.2.min.js $(BLDDIR_WEB)/_static/js
 
 	@echo ; echo "Combining css files..."
 	@cat $(SRC)/_static/css/bootstrap.css				\
