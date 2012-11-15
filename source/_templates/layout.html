@@ -47,13 +47,13 @@
 		{%- block footer %}
 		<footer>
 			{%- if show_copyright %}
-			<p class="copyright">{% trans path=pathto('about'), copyright=copyright|e %}Copyright &copy; 2012 <a href="{{ path }}">{{ copyright }}</a>, website based on <a href="http://www.mplayer2.org/" target="_blank">mplayer2.org</a>{% endtrans %}</p>
+			<p>{% trans path=pathto('about'), copyright=copyright|e %}Copyright &copy; 2012 <a href="{{ path }}">{{ copyright }}</a>, website based on <a href="http://www.mplayer2.org/" target="_blank">mplayer2.org</a>{% endtrans %}</p>
 			{%- endif %}
 			{%- if last_updated %}
-			<p class="lastupdated">{% trans last_updated=last_updated|e %}Page last updated on {{ last_updated }}.{% endtrans %}</p>
+			<p>{% trans last_updated=last_updated|e %}Page last updated on {{ last_updated }}.{% endtrans %}</p>
 			{%- endif %}
 			{%- if show_sphinx %}
-			<p class="showsphinx">{% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> {{ sphinx_version }}.{% endtrans %}</p>
+			<p>{% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> {{ sphinx_version }}.{% endtrans %}</p>
 			{%- endif %}
 		</footer>
 		{%- endblock %}
