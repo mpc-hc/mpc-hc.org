@@ -14,9 +14,7 @@ It's a maintance release with a couple of UI improvements, few bugfixes and bett
 
 .. raw:: html
 
-		<span class="read-more">
-			<a class="reference internal" href="/2012/10/01/1.6.4-released/"><em>(read more...)</em></a>
-		</span>
+		<a class="read-more reference internal" href="/2012/10/01/1.6.4-released/">(read more...)</a>
 	</div>
 .. raw:: html
 
@@ -31,9 +29,7 @@ We are always in need of people willing to help us make MPC-HC better.
 
 .. raw:: html
 
-		<span class="read-more">
-			<a class="reference internal" href="/2012/09/24/open-call-for-contributors/"><em>(read more...)</em></a>
-		</span>
+		<a class="read-more reference internal" href="/2012/09/24/open-call-for-contributors/">(read more...)</a>
 	</div>
 .. raw:: html
 
@@ -50,9 +46,7 @@ It's a maintance release with a couple of UI improvements and a few bugfixes.
 
 .. raw:: html
 
-		<span class="read-more">
-			<a class="reference internal" href="/2012/08/14/1.6.3-released/"><em>(read more...)</em></a>
-		</span>
+		<a class="read-more reference internal" href="/2012/08/14/1.6.3-released/">(read more...)</a>
 	</div>
 .. raw:: html
 
@@ -68,7 +62,5 @@ to move to `Git <http://git-scm.com/>`_ and to `GitHub <https://github.com/mpc-h
 
 .. raw:: html
 
-		<span class="read-more">
-			<a class="reference internal" href="/2012/08/09/source-code-moved-to-github/"><em>(read more...)</em></a>
-		</span>
+		<a class="read-more reference internal" href="/2012/08/09/source-code-moved-to-github/">(read more...)</a>
 	</div>

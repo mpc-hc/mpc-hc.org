@@ -29,7 +29,7 @@
 		</p>
 	</div>
 
-	<hr class="soften screenshot">
+	<hr class="screenshot">
 
 	<div class="row screenshot">
 		<div class="span4 screenshot">
@@ -52,7 +52,7 @@
 		</div>
 	</div>
 
-	<hr class="soften">
+	<hr>
 
 	<div class="marketing">
 		<div class="row">

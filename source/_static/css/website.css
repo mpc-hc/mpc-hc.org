@@ -53,6 +53,7 @@ body {
 .read-more {
     float: right;
     font-size: 85%;
+    font-style: italic;
 }
 
 .container a.headerlink {
@@ -205,10 +206,6 @@ div.full-news h1 {
     border-bottom: 0;
 }
 
-.span4 {
-    width: 220px;
-}
-
 @media (min-width: 980px) {
     #page .span4 {
         width: 250px;
@@ -262,19 +259,6 @@ div.full-news h1 {
     #page hr.screenshot {
         display: none;
     }
-}
-
-.section > dl > dt {
-    font-size: 15px;
-    line-height: 20px;
-}
-
-.section > dl > dd {
-    margin-left: 25px;
-}
-
-.section > dl > dd + dt {
-    margin-top: 1em;
 }
 
 blockquote {
