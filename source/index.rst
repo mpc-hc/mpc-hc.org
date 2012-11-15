@@ -16,15 +16,15 @@
 		</p>
 		<p>
 			<a class="aimg" href="http://www.facebook.com/MediaPlayerClassicHomeCinema">
-				<img class="social facebook" src="_static/img/blank.gif" width="24" height="24" title="Like us on Facebook!" alt="Facebook"/>
+				<img class="social facebook" src="/_static/img/blank.gif" width="24" height="24" title="Like us on Facebook!" alt="Facebook"/>
 			</a>
 			&nbsp;
 			<a class="aimg" href="https://twitter.com/mpc_hc/">
-				<img class="social twitter" src="_static/img/blank.gif" width="24" height="24" title="Share on Twitter!" alt="Twitter"/>
+				<img class="social twitter" src="/_static/img/blank.gif" width="24" height="24" title="Share on Twitter!" alt="Twitter"/>
 			</a>
 			&nbsp;
 			<a class="aimg" href="https://plus.google.com/u/0/109957971189557916726">
-				<img class="social gplus" src="_static/img/blank.gif" width="24" height="24" title="Google+" alt="Google+"/>
+				<img class="social gplus" src="/_static/img/blank.gif" width="24" height="24" title="Google+" alt="Google+"/>
 			</a>
 		</p>
 	</div>
@@ -33,21 +33,21 @@
 
 	<div class="row screenshot">
 		<div class="span4 screenshot">
-			<a class="fancybox-thumb" data-fancybox-group="gallery" href="_static/img/mpc-hc.original.jpg" title="MPC-HC's main window">
-				<img class="screenshot" src="_static/img/mpc-hc.original.thumb.jpg" alt="MPC-HC" width="180" height="134"/>
+			<a class="fancybox-thumb" data-fancybox-group="gallery" href="/_static/img/mpc-hc.original.jpg" title="MPC-HC's main window">
+				<img class="screenshot" src="/_static/img/mpc-hc.original.thumb.jpg" alt="MPC-HC" width="180" height="134"/>
 			</a>
 		</div>
 		<div class="span4 screenshot">
-			<a class="fancybox-thumb" data-fancybox-group="gallery" href="_static/img/mpc-hc.toolbar.jpg" data-title-id="title-toolbar">
-				<img class="screenshot" src="_static/img/mpc-hc.toolbar.thumb.jpg" alt="MPC-HC with custom toolbar" width="180" height="134"/>
+			<a class="fancybox-thumb" data-fancybox-group="gallery" href="/_static/img/mpc-hc.toolbar.jpg" data-title-id="title-toolbar">
+				<img class="screenshot" src="/_static/img/mpc-hc.toolbar.thumb.jpg" alt="MPC-HC with custom toolbar" width="180" height="134"/>
 			</a>
 			<div id="title-toolbar" class="hidden">
 				MPC-HC with <a href="http://sourceforge.net/apps/trac/mpc-hc/wiki/Toolbar_images" target="_blank">custom toolbar</a>.
 			</div>
 		</div>
 		<div class="span4 screenshot">
-			<a class="fancybox-thumb" data-fancybox-group="gallery" href="_static/img/mpc-hc.dvb.jpg" title="MPC-HC as DVB Player">
-				<img class="screenshot" src="_static/img/mpc-hc.dvb.thumb.jpg" alt="MPC-HC as DVB Player" width="182" height="137"/>
+			<a class="fancybox-thumb" data-fancybox-group="gallery" href="/_static/img/mpc-hc.dvb.jpg" title="MPC-HC as DVB Player">
+				<img class="screenshot" src="/_static/img/mpc-hc.dvb.thumb.jpg" alt="MPC-HC as DVB Player" width="182" height="137"/>
 			</a>
 		</div>
 	</div>
