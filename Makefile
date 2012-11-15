@@ -51,7 +51,7 @@ website:
 		 $(SRC)/_static/css/bootstrap-responsive.css	\
 		 $(SRC)/_static/css/jquery.fancybox.css			\
 		 $(SRC)/_static/css/jquery.fancybox-thumbs.css	\
-		 $(SRC)/_static/css/website.css					\
+		 $(SRC)/_static/css/style.css					\
 		 | cleancss --s0 -o $(BLDDIR_WEB)/_static/css/pack.css
 
 	@echo ; echo "Combining js files..."
