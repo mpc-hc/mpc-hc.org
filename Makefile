@@ -44,7 +44,7 @@ website:
 
 	@echo ; echo "Copying files..."
 	@cp $(SRC)/.htaccess $(SRC)/version.txt $(SRC)/robots.txt $(BLDDIR_WEB)
-	@cp $(SRC)/_static/js/jquery-1.8.2.min.js $(BLDDIR_WEB)/_static/js
+	@cp $(SRC)/_static/js/jquery-*.min.js $(BLDDIR_WEB)/_static/js
 
 	@echo ; echo "Combining css files..."
 	@cat $(SRC)/_static/css/bootstrap.css				\
