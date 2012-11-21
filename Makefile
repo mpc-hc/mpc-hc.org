@@ -55,11 +55,11 @@ website:
 		 | cleancss --s0 -o $(BLDDIR_WEB)/_static/css/pack.css
 
 	@echo ; echo "Combining js files..."
-	@cat $(SRC)/_static/js/bootstrap.js					\
-		 $(SRC)/_static/js/jquery.mousewheel.js			\
-		 $(SRC)/_static/js/jquery.fancybox.js			\
-		 $(SRC)/_static/js/jquery.fancybox-thumbs.js	\
-		 | uglifyjs --no-copyright -o $(BLDDIR_WEB)/_static/js/pack.js
+	@uglifyjs $(SRC)/_static/js/bootstrap.js			\
+		$(SRC)/_static/js/jquery.mousewheel.js			\
+		$(SRC)/_static/js/jquery.fancybox.js			\
+		$(SRC)/_static/js/jquery.fancybox-thumbs.js		\
+		-o $(BLDDIR_WEB)/_static/js/pack.js --compress --mangle
 
 	@echo ; echo "Build finished. The HTML pages are in $(BLDDIR_WEB)."
 
