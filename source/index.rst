@@ -16,15 +16,15 @@
 		</p>
 		<p>
 			<a class="aimg" href="http://www.facebook.com/MediaPlayerClassicHomeCinema" target="_blank">
-				<img class="social facebook" src="/_static/img/blank.gif" width="24" height="24" title="Like us on Facebook!" alt="Facebook"/>
+				<img id="facebook" src="/_static/img/blank.gif" width="24" height="24" title="Like us on Facebook!" alt="Facebook"/>
 			</a>
 			&nbsp;
 			<a class="aimg" href="https://twitter.com/mpc_hc/" target="_blank">
-				<img class="social twitter" src="/_static/img/blank.gif" width="24" height="24" title="Share on Twitter!" alt="Twitter"/>
+				<img id="twitter" src="/_static/img/blank.gif" width="24" height="24" title="Share on Twitter!" alt="Twitter"/>
 			</a>
 			&nbsp;
 			<a class="aimg" href="https://plus.google.com/u/0/109957971189557916726" target="_blank">
-				<img class="social gplus" src="/_static/img/blank.gif" width="24" height="24" title="Google+" alt="Google+"/>
+				<img id="gplus" src="/_static/img/blank.gif" width="24" height="24" title="Google+" alt="Google+"/>
 			</a>
 		</p>
 	</div>

@@ -281,13 +281,7 @@ blockquote {
 }
 
 /* social networks */
-.social {
-    background: url("../img/social-buttons.png") no-repeat;
-    width: 24px;
-    height: 24px;
-}
-
-.facebook { background-position:-60px -2px; }
-.gplus    { background-position: -88px -2px; }
-/*.rss      { background-position: -32px -2px; }*/
-.twitter  { background-position: -4px -2px; }
+#facebook { background: -60px -2px no-repeat url("../img/social-buttons.png"); }
+#gplus    { background: -88px -2px no-repeat url("../img/social-buttons.png"); }
+/*#rss      { background: -32px -2px no-repeat url("../img/social-buttons.png"); }*/
+#twitter  { background:  -4px -2px no-repeat url("../img/social-buttons.png"); }
