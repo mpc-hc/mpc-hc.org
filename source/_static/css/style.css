@@ -73,7 +73,8 @@ footer > p {
     text-align: center;
 }
 
-table, table * {
+table,
+table * {
     border: 0;
 }
 
@@ -99,13 +100,13 @@ table, table * {
 .navbar-inner {
     padding-left: 20px;
     padding-right: 20px;
-    background-color: rgb(230,230,230);
-    background-image: -webkit-linear-gradient(top, #FFFFFF, rgb(230,230,230));
-    background-image:    -moz-linear-gradient(top, #FFFFFF, rgb(230,230,230));
-    background-image:     -ms-linear-gradient(top, #FFFFFF, rgb(230,230,230));
-    background-image:      -o-linear-gradient(top, #FFFFFF, rgb(230,230,230));
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(rgb(230,230,230)));
-    background-image: linear-gradient(top, #FFFFFF, rgb(230,230,230));
+    background-color: rgb(230, 230, 230);
+    background-image: -webkit-linear-gradient(top, #FFFFFF, rgb(230, 230, 230));
+    background-image:    -moz-linear-gradient(top, #FFFFFF, rgb(230, 230, 230));
+    background-image:     -ms-linear-gradient(top, #FFFFFF, rgb(230, 230, 230));
+    background-image:      -o-linear-gradient(top, #FFFFFF, rgb(230, 230, 230));
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(rgb(230, 230, 230)));
+    background-image: linear-gradient(top, #FFFFFF, rgb(230, 230, 230));
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E6E6E6', GradientType=0);
     -webkit-border-radius: 4px;
@@ -142,7 +143,7 @@ table, table * {
 }
 
 .navbar .divider-vertical {
-    background-color: rgb(210,210,210);
+    background-color: rgb(210, 210, 210);
     border-right: 1px solid #FFF;
 }
 
@@ -175,19 +176,20 @@ div.full-news h1 {
     padding-bottom: 0;
 }
 
-#page h1, #page h2 {
+#page h1,
+#page h2 {
     font-weight: 500;
 }
 
 .marketing h2 {
     border-bottom: none;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 22px;
     font-weight: 300;
     margin-bottom: 0;
 }
 
-#archive h3, #archive h2 {
+#archive h2,
+#archive h3 {
     border-bottom: none;
 }
 
