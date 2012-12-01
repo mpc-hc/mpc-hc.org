@@ -1,7 +1,7 @@
 body {
-    position: relative;
     background: #fff url("../img/bg-pattern.png") repeat top right;
     padding-top: 80px;
+    position: relative;
 }
 
 .container,
@@ -11,11 +11,11 @@ body {
 }
 
 #content-container {
-    margin-bottom: 20px;
     background-color: #FFF;
+    margin-bottom: 20px;
     -webkit-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25), inset 0 0px 0 rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25), inset 0 0px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25), inset 0 0px 0 rgba(0, 0, 0, 0.1);
+       -moz-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25), inset 0 0px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25), inset 0 0px 0 rgba(0, 0, 0, 0.1);
 }
 
 #content-container #page {
@@ -37,8 +37,8 @@ body {
 @media (max-width: 480px) {
     #content-container {
         -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
+           -moz-box-shadow: none;
+                box-shadow: none;
     }
 
     #content-container #page {
@@ -68,9 +68,9 @@ body {
 }
 
 footer > p {
-    text-align: center;
     font-size: 85%;
     margin-top: -1em;
+    text-align: center;
 }
 
 table, table * {
@@ -78,17 +78,17 @@ table, table * {
 }
 
 .navbar-fixed-top .brand {
-    padding-right: 0;
-    padding-left: 0;
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
     margin-left: 20px;
     margin-right: 30px;
-    font-weight: bold;
-    font-size: 22px;
-    color: #333;
+    padding-left: 0;
+    padding-right: 0;
     text-shadow: 1px 1px 1px #FFFFFF;
     -webkit-transition: all .1s linear;
-    -moz-transition: all .1s linear;
-    transition: all .1s linear;
+       -moz-transition: all .1s linear;
+            transition: all .1s linear;
 }
 
 .navbar-fixed-top .brand:hover {
@@ -100,31 +100,31 @@ table, table * {
     padding-left: 20px;
     padding-right: 20px;
     background-color: rgb(230,230,230);
-    background-image: -moz-linear-gradient(top, #FFFFFF, rgb(230,230,230));
-    background-image: -ms-linear-gradient(top, #FFFFFF, rgb(230,230,230));
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(rgb(230,230,230)));
     background-image: -webkit-linear-gradient(top, #FFFFFF, rgb(230,230,230));
-    background-image: -o-linear-gradient(top, #FFFFFF, rgb(230,230,230));
+    background-image:    -moz-linear-gradient(top, #FFFFFF, rgb(230,230,230));
+    background-image:     -ms-linear-gradient(top, #FFFFFF, rgb(230,230,230));
+    background-image:      -o-linear-gradient(top, #FFFFFF, rgb(230,230,230));
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(rgb(230,230,230)));
     background-image: linear-gradient(top, #FFFFFF, rgb(230,230,230));
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E6E6E6', GradientType=0);
     -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+       -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .navbar .nav > li > a {
-    font-weight: bold;
-    color: #333;
-    text-shadow: 1px 1px 1px #FFF;
     -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    color: #333;
+    font-weight: bold;
     margin: 7px 2px 0px 2px;
     padding: 5px 11px 5px;
+    text-shadow: 1px 1px 1px #FFF;
 }
 
 .navbar .nav > li > a:hover {
@@ -132,13 +132,13 @@ table, table * {
 }
 
 .navbar .nav > li.active > a {
-    color: #08C;
     background-color: #FFF;
+    color: #08C;
 }
 
 .navbar .nav > li.active > a:hover {
-    color: #08C;
     background-color: #FFF;
+    color: #08C;
 }
 
 .navbar .divider-vertical {
@@ -161,16 +161,16 @@ div.full-news h1 + p {
 }
 
 #latest-news > div > h2 {
+    border-bottom: none;
     font-size: 20px;
     line-height: 20px;
-    border-bottom: none;
     margin-bottom: 0;
 }
 
 div.full-news h1 {
+    border-bottom: none;
     font-size: 24px;
     line-height: 24px;
-    border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -200,10 +200,10 @@ div.full-news h1 {
 }
 
 .marketing {
-    font-family: inherit;
-    text-rendering: optimizelegibility;
-    margin: 0;
     border-bottom: 0;
+    font-family: inherit;
+    margin: 0;
+    text-rendering: optimizelegibility;
 }
 
 @media (min-width: 980px) {
@@ -266,8 +266,8 @@ blockquote {
 }
 
 .centered {
-    text-align: center;
     padding-bottom: 18px;
+    text-align: center;
 }
 
 /* hack so that we don't get an underline
