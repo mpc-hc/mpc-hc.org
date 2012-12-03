@@ -202,7 +202,7 @@ blockquote {
 /* social networks */
 #facebook { background: -60px -2px no-repeat url("../img/social-buttons.png"); }
 #gplus    { background: -88px -2px no-repeat url("../img/social-buttons.png"); }
-/*#rss      { background: -32px -2px no-repeat url("../img/social-buttons.png"); }*/
+#rss      { background: -32px -2px no-repeat url("../img/social-buttons.png"); }
 #twitter  { background:  -4px -2px no-repeat url("../img/social-buttons.png"); }
 
 

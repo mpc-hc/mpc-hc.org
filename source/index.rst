@@ -26,6 +26,10 @@
 			<a class="aimg" href="https://plus.google.com/u/0/109957971189557916726" target="_blank">
 				<img id="gplus" src="/_static/img/blank.gif" width="24" height="24" title="Google+" alt="Google+"/>
 			</a>
+			&nbsp;
+			<a class="aimg" href="/rss.xml">
+				<img id="rss" src="/_static/img/blank.gif" width="24" height="24" title="RSS Feed" alt="RSS Feed"/>
+			</a>
 		</p>
 	</div>
 
