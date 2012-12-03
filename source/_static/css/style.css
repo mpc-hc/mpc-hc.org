@@ -189,6 +189,15 @@ blockquote {
     text-align: center;
 }
 
+.social-li {
+    display: inline;
+    padding: 4px;
+}
+
+#social-ul {
+    margin: 0;
+}
+
 /* hack so that we don't get an underline
    when hovering on the social network images */
 .aimg:link {
