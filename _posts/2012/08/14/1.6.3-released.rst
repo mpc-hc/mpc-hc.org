@@ -9,4 +9,4 @@ It's a maintance release with a couple of UI improvements and a few bugfixes.
 
 .. body
 
-You can download the new version :doc:`here </downloads>`. For the complete changes see the :doc:`changelog </changelog>`
+You can download the new version :doc:`here </downloads>`. For the complete changes see the :doc:`changelog </changelog>`.

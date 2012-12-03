@@ -18,4 +18,4 @@ Highlights of this release:
 * Improved DVD and PSG (BD) sub handling
 * Changed default maximum subtitle resolution to "Desktop"
 
-You can download the new version :doc:`here </downloads>`. For the complete changes see the :doc:`changelog </changelog>`
+You can download the new version :doc:`here </downloads>`. For the complete changes see the :doc:`changelog </changelog>`.
