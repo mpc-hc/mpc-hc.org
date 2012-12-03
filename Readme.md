@@ -8,6 +8,7 @@ Getting started
 * Install [Python setuptools](http://pypi.python.org/pypi/setuptools#files)
 * On Windows: `SET PATH=C:\Python27;C:\Python27\Scripts;%PATH%`
 * Install Sphinx: `easy_install -U Sphinx`
+* Install dateutil: `easy_install -U python-dateutil`
 * Install [node.js](http://nodejs.org/download/)
 * Install [clean-css](https://github.com/GoalSmashers/clean-css) by running: `npm install -g clean-css`
 * Install [uglify-js](https://github.com/mishoo/UglifyJS) by running: `npm install -g uglify-js`
