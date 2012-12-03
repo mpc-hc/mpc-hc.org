@@ -26,7 +26,7 @@ needs_sphinx = '1.0'
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 sys.path.append(os.path.abspath('../ext'))
-extensions = ['sphinx.ext.ifconfig', 'traclinks']
+extensions = ['sphinx.ext.ifconfig', 'traclinks', 'feed']
 
 traclinks_base_url = 'http://sourceforge.net/apps/trac/mpc-hc'
 
@@ -194,3 +194,12 @@ html_show_sphinx = False
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'mpchcdoc'
+
+# Feed configuration
+
+base_uri = "http://mpc-hc.sourceforge.net"
+feed_title = project
+feed_description = "Latest information about the project."
+feed_link = '%s/rss.xml' % (base_uri,)
+feed_maxitems = 10
+feed_ignorepagenames = ['index_*', 'search', 'about', 'archive', 'bug-reports', 'changelog', 'contact-us', 'downloads', 'faq', 'latest_posts', 'sitemap']
