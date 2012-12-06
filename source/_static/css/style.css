@@ -148,8 +148,8 @@ div.full-news h1 {
     padding-bottom: 0;
 }
 
-#page h1,
-#page h2 {
+h1,
+h2 {
     font-weight: 500;
 }
 
@@ -189,6 +189,7 @@ blockquote {
     text-align: center;
 }
 
+/* social networks */
 .social-li {
     display: inline;
     padding: 4px;
@@ -198,9 +199,8 @@ blockquote {
     margin: 0;
 }
 
-/* hack so that we don't get an underline
-   when hovering on the social network images */
 .aimg:link {
+    outline: none;
     text-decoration: none;
 }
 
@@ -208,7 +208,6 @@ blockquote {
     border-bottom: none;
 }
 
-/* social networks */
 #facebook { background: -60px -2px no-repeat url("../img/social-buttons.png"); }
 #gplus    { background: -88px -2px no-repeat url("../img/social-buttons.png"); }
 #rss      { background: -32px -2px no-repeat url("../img/social-buttons.png"); }
