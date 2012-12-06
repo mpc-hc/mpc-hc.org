@@ -17,17 +17,17 @@
 		<ul id="social-ul">
 			<li class="social-li">
 				<a class="aimg" href="http://www.facebook.com/MediaPlayerClassicHomeCinema" target="_blank">
-					<img id="facebook" src="/_static/img/blank.gif" width="24" height="24" title="Like us on Facebook!" alt="Facebook"/>
+					<img id="facebook" src="/_static/img/blank.gif" width="24" height="24" title="Like our page on Facebook!" alt="Facebook"/>
 				</a>
 			</li>
 			<li class="social-li">
 				<a class="aimg" href="https://twitter.com/mpc_hc/" target="_blank">
-					<img id="twitter" src="/_static/img/blank.gif" width="24" height="24" title="Share on Twitter!" alt="Twitter"/>
+					<img id="twitter" src="/_static/img/blank.gif" width="24" height="24" title="Follow us on Twitter!" alt="Twitter"/>
 				</a>
 			</li>
 			<li class="social-li">
 				<a class="aimg" href="https://plus.google.com/u/0/109957971189557916726" target="_blank">
-					<img id="gplus" src="/_static/img/blank.gif" width="24" height="24" title="Google+" alt="Google+"/>
+					<img id="gplus" src="/_static/img/blank.gif" width="24" height="24" title="Follow us on Google+" alt="Google+"/>
 				</a>
 			</li>
 			<li class="social-li">
