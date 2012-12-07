@@ -65,8 +65,8 @@ def create_feed(app):
    etree.SubElement(image, 'url').text = app.config.base_uri + '/_static/img/logo.png'
    etree.SubElement(image, 'title').text = 'Media Player Classic - Home Cinema'
    etree.SubElement(image, 'link').text = app.config.base_uri
-   #etree.SubElement(image, 'width').text = ''
-   #etree.SubElement(image, 'height').text = ''
+   etree.SubElement(image, 'width').text = '128'
+   etree.SubElement(image, 'height').text = '128'
 
    app.builder.env.feed = etree.tostring(feed)
 
