@@ -63,8 +63,8 @@ def create_feed(app):
    image = etree.SubElement(channel, 'image')
    etree.SubElement(image, 'description').text = app.config.feed_description
    etree.SubElement(image, 'url').text = app.config.base_uri + '/_static/img/logo.png'
-   etree.SubElement(image, 'title').text = 'Media Player Classic - Home Cinema'
-   etree.SubElement(image, 'link').text = app.config.base_uri
+   etree.SubElement(image, 'title').text = app.config.feed_title
+   etree.SubElement(image, 'link').text = app.config.feed_link
    etree.SubElement(image, 'width').text = '128'
    etree.SubElement(image, 'height').text = '128'
 

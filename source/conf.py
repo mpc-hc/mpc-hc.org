@@ -198,7 +198,7 @@ htmlhelp_basename = 'mpchcdoc'
 # Feed configuration
 
 base_uri = "http://mpc-hc.sourceforge.net"
-feed_title = project
+feed_title = "Media Player Classic - Home Cinema"
 feed_description = "Latest information about the project."
 feed_link = '%s/rss.xml' % (base_uri,)
 feed_maxitems = 10
