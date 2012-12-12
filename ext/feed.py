@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Hooks to generate RSS feeds for pages."""
 
+import io
 import hashlib
 import os
 import re
@@ -116,7 +117,7 @@ def write_feed(app, exc):
     if app.config.feed_maxitems:
         container[:] = container[:app.config.feed_maxitems]
 
-    with open(os.path.join(app.builder.outdir, 'rss.xml'), 'w') as f:
+    with io.open(os.path.join(app.builder.outdir, 'rss.xml'), 'w') as f:
         feed.write(f, 'utf-8')
 
 
