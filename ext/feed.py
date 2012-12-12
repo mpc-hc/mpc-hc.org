@@ -117,7 +117,7 @@ def write_feed(app, exc):
     if app.config.feed_maxitems:
         container[:] = container[:app.config.feed_maxitems]
 
-    with io.open(os.path.join(app.builder.outdir, 'rss.xml'), 'w') as f:
+    with io.open(os.path.join(app.builder.outdir, 'rss.xml'), 'wb') as f:
         feed.write(f, 'utf-8')
 
 
