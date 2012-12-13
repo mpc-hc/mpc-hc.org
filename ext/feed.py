@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 """Hooks to generate RSS feeds for pages."""
 
+from calendar import weekday, month_abbr, day_abbr
 import io
 import hashlib
 import os
 import re
-
 from xml.etree import ElementTree as etree
 
 
@@ -36,7 +36,6 @@ def indent(elem, level=0):
 def formatpubdate(date):
     # http://effbot.org/zone/generating-rfc822-dates.htm
     # convert a yyyymmdd (UTC) string to RSS pubDate format
-    from calendar import weekday, month_abbr, day_abbr
     year, month, day = date[:4], date[4:6], date[6:8]
     hour, minute, second = date[8:10], date[10:12], date[12:14]
     if not hour:
