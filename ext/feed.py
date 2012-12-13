@@ -109,9 +109,14 @@ def write_feed(app, exc):
 
     # Sort the entries by date
     # http://effbot.org/zone/element-sort.htm
+    # Sort list of items only in new list, then create a new list
+    # with everything but the items and then merge these entries
+    # with the freshly ordened items.
     container = feed.find('channel')
-    container[:] = sorted(container, key=lambda i: i.findtext('date'),
-        reverse=True)
+    items = sorted([e for e in container if e.tag == 'item'],
+        key=lambda i: i.findtext('date'), reverse=True)
+    container[:] = [e for e in container if e.tag != 'item']
+    container.extend(items)
 
     # Truncate feed by maxitems
     if app.config.feed_maxitems:
