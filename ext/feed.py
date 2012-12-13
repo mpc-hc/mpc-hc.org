@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 """Hooks to generate RSS feeds for pages."""
 
+from calendar import weekday, month_abbr, day_abbr
+import io
 import hashlib
 import os
 import re
-
 from xml.etree import ElementTree as etree
 
 
@@ -35,7 +36,6 @@ def indent(elem, level=0):
 def formatpubdate(date):
     # http://effbot.org/zone/generating-rfc822-dates.htm
     # convert a yyyymmdd (UTC) string to RSS pubDate format
-    from calendar import weekday, month_abbr, day_abbr
     year, month, day = date[:4], date[4:6], date[6:8]
     hour, minute, second = date[8:10], date[10:12], date[12:14]
     if not hour:
@@ -108,15 +108,20 @@ def write_feed(app, exc):
 
     # Sort the entries by date
     # http://effbot.org/zone/element-sort.htm
+    # Sort list of items only in new list, then create a new list
+    # with everything but the items and then merge these entries
+    # with the freshly ordened items.
     container = feed.find('channel')
-    container[:] = sorted(container, key=lambda i: i.findtext('date'),
-        reverse=True)
+    items = sorted([e for e in container if e.tag == 'item'],
+        key=lambda i: i.findtext('date'), reverse=True)
+    container[:] = [e for e in container if e.tag != 'item']
+    container.extend(items)
 
     # Truncate feed by maxitems
     if app.config.feed_maxitems:
         container[:] = container[:app.config.feed_maxitems]
 
-    with open(os.path.join(app.builder.outdir, 'rss.xml'), 'w') as f:
+    with io.open(os.path.join(app.builder.outdir, 'rss.xml'), 'wb') as f:
         feed.write(f, 'utf-8')
 
 
