@@ -6,6 +6,7 @@ Getting started
 
 * Install [Python](http://www.python.org/) (tested with 2.7.3)
 * Install [Python setuptools](http://pypi.python.org/pypi/setuptools#files)
+* Install [Python pip](http://www.pip-installer.org/en/latest/installing.html#alternative-installation-procedures)
 * Install Sphinx: `pip install Sphinx`
 * Install [node.js](http://nodejs.org/download/)
 * Install [clean-css](https://github.com/GoalSmashers/clean-css) by running: `npm install -g clean-css`
