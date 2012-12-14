@@ -1,5 +1,5 @@
 body {
-    background: #fff url("../img/bg-pattern.png") repeat top right;
+    background: #FFFFFF url("../img/bg-pattern.png") repeat top right;
     padding-top: 80px;
     position: relative;
 }
@@ -11,11 +11,11 @@ body {
 }
 
 #content-container {
-    background-color: #FFF;
+    background-color: #FFFFFF;
     margin-bottom: 20px;
-    -webkit-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25), inset 0 0px 0 rgba(0, 0, 0, 0.1);
-       -moz-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25), inset 0 0px 0 rgba(0, 0, 0, 0.1);
-            box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25), inset 0 0px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.25), inset 0 0 0 rgba(0, 0, 0, 0.1);
+       -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.25), inset 0 0 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.25), inset 0 0 0 rgba(0, 0, 0, 0.1);
 }
 
 #content-container #page {
@@ -30,7 +30,7 @@ body {
 
 .container a.headerlink {
     font-size: 0.8em;
-    padding: 0 4px 0 4px;
+    padding: 0 4px;
     text-decoration: none;
     visibility: hidden;
 }
@@ -65,8 +65,15 @@ table * {
 }
 
 .navbar-fixed-top .brand:hover {
-    color: #FFF;
+    color: #FFFFFF;
     text-shadow: 1px 1px 3px #08C, -1px -1px 3px #08C;
+}
+
+.navbar-inner,
+.navbar .nav > li > a {
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
 }
 
 .navbar-inner {
@@ -77,27 +84,21 @@ table * {
     background-image:    -moz-linear-gradient(top, #FFFFFF, rgb(230, 230, 230));
     background-image:     -ms-linear-gradient(top, #FFFFFF, rgb(230, 230, 230));
     background-image:      -o-linear-gradient(top, #FFFFFF, rgb(230, 230, 230));
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(rgb(230, 230, 230)));
-    background-image: linear-gradient(top, #FFFFFF, rgb(230, 230, 230));
+    background-image:        -webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(rgb(230, 230, 230)));
+    background-image:         linear-gradient(top, #FFFFFF, rgb(230, 230, 230));
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E6E6E6', GradientType=0);
-    -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
        -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .navbar .nav > li > a {
-    -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
     color: #333;
     font-weight: bold;
-    margin: 7px 2px 0px 2px;
+    margin: 7px 2px 0 2px;
     padding: 5px 11px 5px;
-    text-shadow: 1px 1px 1px #FFF;
+    text-shadow: 1px 1px 1px #FFFFFF;
 }
 
 .navbar .nav > li > a:hover {
@@ -105,23 +106,23 @@ table * {
 }
 
 .navbar .nav > li.active > a {
-    background-color: #FFF;
+    background-color: #FFFFFF;
     color: #08C;
 }
 
 .navbar .nav > li.active > a:hover {
-    background-color: #FFF;
+    background-color: #FFFFFF;
     color: #08C;
 }
 
 .navbar .divider-vertical {
-    background-color: rgb(210, 210, 210);
-    border-right: 1px solid #FFF;
+    background-color: rgb(210, 210, 210); /*#D2D2D2*/
+    border-right: 1px solid #FFFFFF;
 }
 
 .navbar .nav > li > a:hover,
 .navbar .dropdown-menu a:hover {
-    background-color: #FFF;
+    background-color: #FFFFFF;
 }
 
 #latest-posts {
@@ -181,7 +182,7 @@ h2 {
 }
 
 blockquote {
-    border-left: 0px !important;
+    border-left: 0 !important;
 }
 
 .centered {
@@ -216,7 +217,7 @@ blockquote {
 
 @media screen and (max-width: 979px) {
     body {
-        padding-top: 0px;
+        padding-top: 0;
     }
 }
 
@@ -236,10 +237,9 @@ blockquote {
                 box-shadow: none;
     }
     #content-container #page {
-        margin: 0px;
+        margin: 0;
     }
 }
-
 
 @media (min-width: 980px) {
     #page .span4 {
