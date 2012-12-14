@@ -15,26 +15,10 @@
 			<span>1.6.4 x86</span> - <a href="/downloads/">Other systems &amp; versions</a>
 		</p>
 		<ul id="social-ul">
-			<li class="social-li">
-				<a class="aimg" href="http://www.facebook.com/MediaPlayerClassicHomeCinema" target="_blank">
-					<img id="facebook" src="/_static/img/blank.gif" width="24" height="24" title="Like our page on Facebook!" alt="Facebook"/>
-				</a>
-			</li>
-			<li class="social-li">
-				<a class="aimg" href="https://twitter.com/mpc_hc/" target="_blank">
-					<img id="twitter" src="/_static/img/blank.gif" width="24" height="24" title="Follow us on Twitter!" alt="Twitter"/>
-				</a>
-			</li>
-			<li class="social-li">
-				<a class="aimg" href="https://plus.google.com/u/0/109957971189557916726" target="_blank">
-					<img id="gplus" src="/_static/img/blank.gif" width="24" height="24" title="Follow us on Google+" alt="Google+"/>
-				</a>
-			</li>
-			<li class="social-li">
-				<a class="aimg" href="/rss.xml">
-					<img id="rss" src="/_static/img/blank.gif" width="24" height="24" title="RSS Feed" alt="RSS Feed"/>
-				</a>
-			</li>
+			<li id="facebook"><a href="http://www.facebook.com/MediaPlayerClassicHomeCinema" title="Like our page on Facebook!" target="_blank"></a></li>
+			<li id="twitter"><a href="https://twitter.com/mpc_hc/" title="Follow us on Twitter!" target="_blank"></a></li>
+			<li id="gplus"><a href="https://plus.google.com/u/0/109957971189557916726" title="Follow us on Google+" target="_blank"></a></li>
+			<li id="rss"><a href="/rss.xml" title="RSS Feed"></a></li>
 		</ul>
 	</div>
 

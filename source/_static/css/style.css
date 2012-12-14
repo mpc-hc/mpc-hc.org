@@ -191,28 +191,33 @@ blockquote {
 }
 
 /* social networks */
-.social-li {
-    display: inline;
-    padding: 4px;
+#social-ul a {
+    display: block;
+    height: 24px;
+}
+
+#social-ul a:link {
+    outline: none;
+    text-decoration: none;
 }
 
 #social-ul {
     margin: 0;
 }
 
-.aimg:link {
-    outline: none;
-    text-decoration: none;
+#social-ul li {
+    display: inline-block;
+    width: 24px;
+    height: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0 4px 6px;
 }
 
-.aimg:hover {
-    border-bottom: none;
-}
-
-#facebook { background: -60px -2px no-repeat url("../img/social-buttons.png"); }
-#gplus    { background: -88px -2px no-repeat url("../img/social-buttons.png"); }
-#rss      { background: -32px -2px no-repeat url("../img/social-buttons.png"); }
-#twitter  { background:  -4px -2px no-repeat url("../img/social-buttons.png"); }
+#facebook { background: -56px -2px no-repeat url("../img/social-buttons.png"); }
+#gplus    { background: -84px -2px no-repeat url("../img/social-buttons.png"); }
+#rss      { background: -28px -2px no-repeat url("../img/social-buttons.png"); }
+#twitter  { background:   0 -2px no-repeat url("../img/social-buttons.png"); }
 
 
 @media screen and (max-width: 979px) {
