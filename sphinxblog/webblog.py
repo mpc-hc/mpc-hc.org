@@ -1,14 +1,16 @@
-import os, glob
+import glob
+import os
 from post import Post
 from jinja2 import Template
+
 
 class Webblog(object):
     def __init__(self, base_path, render_base_path):
         self.__base_path = base_path
         self.__render_base_path = render_base_path
-        self.__months = ["January", "February", "March", "April",
-                         "May", "June", "July", "August","September",
-                         "October", "November", "December"]
+        self.__months = ['January', 'February', 'March', 'April',
+                         'May', 'June', 'July', 'August', 'September',
+                         'October', 'November', 'December']
 
     def render_posts(self):
         for post_path in self.posts():
@@ -28,13 +30,13 @@ class Webblog(object):
             post = Post(post_path)
             if post.date_key != monthkey:
                 monthkey = post.date_key
-                year = monthkey.split("/")[0]
-                month = self.__months[int(monthkey.split("/")[1])-1]
+                year = monthkey.split('/')[0]
+                month = self.__months[int(monthkey.split('/')[1]) - 1]
                 accu += template.render(title="%s %s" % (month, year))
-            accu += post.render("title-post")
+            accu += post.render('title-post')
 
         output = open(os.path.join(
-            self.__render_base_path, "archive.rst"), "w")
+            self.__render_base_path, 'archive.rst'), 'w')
         output.write(accu)
         output.close()
 
@@ -42,16 +44,16 @@ class Webblog(object):
         accu = ''
         for post_path in self.latest_posts(limit):
             post = Post(post_path)
-            accu += post.render("short-post")
+            accu += post.render('short-post')
 
         output = open(os.path.join(
-            self.__render_base_path, "latest_posts.rst"), "w")
+            self.__render_base_path, 'latest_posts.rst'), 'w')
         output.write(accu)
         output.close()
 
     def posts(self):
         paths = glob.glob(os.path.join(
-            os.path.realpath(self.__base_path), "*", "*", "*", "*.rst"))
+            os.path.realpath(self.__base_path), '*', '*', '*', '*.rst'))
         return sorted(paths, reverse=True)
 
     def latest_posts(self, limit):
