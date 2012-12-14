@@ -1,5 +1,7 @@
-import os, re
+import os
+import re
 from jinja2 import Template
+
 
 class Post(object):
     def __init__(self, path):
@@ -18,22 +20,22 @@ class Post(object):
 
     @property
     def date(self):
-        return "/".join(self.__date_array())
+        return '/'.join(self.__date_array())
 
     @property
     def url(self):
-        return "/%s" % os.path.splitext(self.path_component)[0]
+        return '/%s' % os.path.splitext(self.path_component)[0]
 
     @property
     def path_component(self):
         path_ary = self.__date_array()[::-1]
         path_ary.append(os.path.basename(self.__path))
-        return "/".join(path_ary)
+        return '/'.join(path_ary)
 
     @property
     def date_key(self):
         path_ary = self.__date_array()[::-1][:-1]
-        return "/".join(path_ary)
+        return '/'.join(path_ary)
 
     @property
     def abstract(self):
@@ -58,14 +60,14 @@ class Post(object):
         if not os.path.exists(os.path.dirname(output_path)):
             os.makedirs(os.path.dirname(output_path))
 
-        output = open(output_path, "w")
+        output = open(output_path, 'w')
         output.write(self.render())
         output.close()
 
     def __date_array(self):
-        day_p   = os.path.dirname(self.__path)
+        day_p = os.path.dirname(self.__path)
         month_p = os.path.dirname(day_p)
-        year_p  = os.path.dirname(month_p)
+        year_p = os.path.dirname(month_p)
         return [os.path.basename(x) for x in [day_p, month_p, year_p]]
 
     def __parse_data(self):
@@ -75,22 +77,22 @@ class Post(object):
         _in_abstract, _in_body = False, False
         _abstract_ary, _body_ary = [], []
         for line in self.__get_file_data():
-            g = re.search("^\.\. title: (.*)$", line)
+            g = re.search('^\.\. title: (.*)$', line)
             if g:
                 self.__title = g.group(1)
                 continue
 
-            g = re.search("^\.\. author: (.*)$", line)
+            g = re.search('^\.\. author: (.*)$', line)
             if g:
                 self.__author = g.group(1)
                 continue
 
-            g = re.search("^\.\. abstract$", line)
+            g = re.search('^\.\. abstract$', line)
             if g:
                 _in_abstract = True
                 continue
 
-            g = re.search("^\.\. body$", line)
+            g = re.search('^\.\. body$', line)
             if g:
                 _in_abstract = False
                 _in_body = True
@@ -104,11 +106,11 @@ class Post(object):
                 _body_ary.append(line)
                 continue
 
-        self.__abstract = "".join(_abstract_ary).strip()
-        self.__body = "".join(_body_ary).strip()
+        self.__abstract = ''.join(_abstract_ary).strip()
+        self.__body = ''.join(_body_ary).strip()
 
     def __get_file_data(self):
-        f = open(self.__path, "r")
+        f = open(self.__path, 'r')
         result = f.readlines()
         f.close()
         return result
