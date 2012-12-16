@@ -10,7 +10,7 @@ Posted by XhmikosR on 01/10/2012
 
 After almost 6 weeks after the previous stable release, we decided to release 1.6.4.
 
-It's a maintance release with a couple of UI improvements, few bugfixes and better API.
+It's a maintenance release with a couple of UI improvements, few bugfixes and better API.
 
 .. raw:: html
 
@@ -42,7 +42,7 @@ Posted by XhmikosR on 14/08/2012
 
 After almost 3 months after the previous stable release, we decided to release 1.6.3.
 
-It's a maintance release with a couple of UI improvements and a few bugfixes.
+It's a maintenance release with a couple of UI improvements and a few bugfixes.
 
 .. raw:: html
 
