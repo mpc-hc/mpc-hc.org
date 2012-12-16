@@ -10,7 +10,7 @@ Posted by Armada,Underground78,XhmikosR on 16/12/2012
 
 After 2 and a half months since the last stable build, we decided to release 1.6.5.
 
-This release has many bugfixes and some new features.
+This release has many bugfixes and a few new features.
 
 .. raw:: html
 

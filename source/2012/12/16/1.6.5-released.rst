@@ -9,7 +9,7 @@ Posted by Armada,Underground78,XhmikosR on 16/12/2012
 
 After 2 and a half months since the last stable build, we decided to release 1.6.5.
 
-This release has many bugfixes and some new features.
+This release has many bugfixes and a few new features.
 
 Highlights of this release:
 
@@ -23,5 +23,8 @@ Some long standing issues for the Internal Subtitle Renderer/VSFilter have been 
 Windows 8 is now officially supported and the file association problem has
 been solved. Windows 8 users should click the "Set Default Programs" button
 after selecting new formats.
+
+The DVB support has been improved with a better handling of DVB subtitles and a clearer
+display of the Electronic Program Guide (EPG) information when using live capture.
 
 You can download the new version :doc:`here </downloads>`. For the complete changes see the :doc:`changelog </changelog>`.
