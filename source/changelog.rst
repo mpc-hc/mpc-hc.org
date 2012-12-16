@@ -24,7 +24,7 @@ Changelog
 
  * The volume steps can now be changed on the playback options page
 
- * Ticket :trac:`#4391`, External subtitles: support UTF-8 without BOM
+ * Ticket :trac:`#439`, External subtitles: support UTF-8 without BOM
 
  * Ticket :trac:`#728`, Show tooltips in the information panel so that truncated lines can be read completely
 
