@@ -1,0 +1,25 @@
+.. title: v1.6.5 is released
+.. author: Armada,Underground78,XhmikosR
+
+.. abstract
+
+After 2 and a half months since the last stable build, we decided to release 1.6.5.
+
+This release has many bugfixes and some new features.
+
+.. body
+
+Highlights of this release:
+
+Some long standing issues for the Internal Subtitle Renderer/VSFilter have been fixed:
+
+* Support UTF-8 subtitles without BOM
+* Fix high memory usage with complex subtitles (mostly ASS)
+* Fix most cases where subtitles are not correctly positioned
+* Allow floating-point values for \\fscx and \\fscy in ASS subtitles
+
+Windows 8 is now officially supported and the file association problem has
+been solved. Windows 8 users should click the "Set Default Programs" button
+after selecting new formats.
+
+You can download the new version :doc:`here </downloads>`. For the complete changes see the :doc:`changelog </changelog>`.
