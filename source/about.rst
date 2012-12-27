@@ -72,6 +72,8 @@ Translators
 	"Dutch", "Paul Tjepkema", "pietpuk123 ~AT~ users.sourceforge ~dot~ net"
 	"French", "Sebastiii", "sebastiii ~AT~ users.sourceforge ~dot~ net"
 	"German", "Markus Gaugg", "markusgaugg ~AT~ users.sourceforge ~dot~ net"
+	"Greek", "geogeo.gr", "geogeo64 ~AT~ users.sourceforge ~dot~ net"
+	"Greek", "Zouloumis", "zouloumis ~AT~ users.sourceforge ~dot~ net"
 	"Hebrew", "Superb", "superbsubs ~AT~ users.sourceforge ~dot~ net"
 	"Hungarian", "Tamas Kleiber", "klei ~AT~ users.sourceforge ~dot~ net"
 	"Italian", "SigiTM", "sigitm ~AT~ users.sourceforge.net"
