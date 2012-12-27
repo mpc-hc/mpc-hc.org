@@ -23,7 +23,7 @@ People with Git commit rights (sorted by name)
 	"Armada", "armada651 ~AT~ users.sourceforge ~dot~ net", "Code"
 	"janwillem32", "janwillem32 ~AT~ users.sourceforge ~dot~ net", "Code"
 	"nevcairiel", "nevcairiel ~AT~ users.sourceforge ~dot~ net", "Code"
-	"thevbm", "thevbm ~AT~ users.sourceforge ~dot~ net", "New website, Trac moderator, IRC"
+	"Goran (vBm) Džaferi", "thevbm ~AT~ users.sourceforge ~dot~ net", "New website, Trac moderator, IRC"
 	"Underground78", "underground78 ~AT~ users.sourceforge ~dot~ net", "Code, French, Admin"
 	"v0lt", "v0lt ~AT~ users.sourceforge ~dot~ net", "Code, Russian"
 	"XhmikosR", "xhmikosr ~AT~ users.sourceforge ~dot~ net", "Various stuff, Admin"
