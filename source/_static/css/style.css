@@ -130,7 +130,7 @@ table * {
 }
 
 #latest-news > div > h2 + p,
-div.full-news h1 + p {
+.full-news h1 + p {
     font-size: 80%;
 }
 
@@ -141,7 +141,7 @@ div.full-news h1 + p {
     margin-bottom: 0;
 }
 
-div.full-news h1 {
+.full-news h1 {
     border-bottom: none;
     font-size: 24px;
     line-height: 24px;
