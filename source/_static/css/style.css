@@ -4,6 +4,10 @@ body {
     position: relative;
 }
 
+a.brand {
+    outline: none;
+}
+
 .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
@@ -97,6 +101,7 @@ table * {
     color: #333;
     font-weight: bold;
     margin: 7px 2px 0 2px;
+    outline: none;
     padding: 5px 11px 5px;
     text-shadow: 1px 1px 1px #FFFFFF;
 }
