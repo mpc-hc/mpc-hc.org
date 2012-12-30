@@ -1,5 +1,5 @@
 body {
-    background: #FFFFFF url("../img/bg-pattern.png") repeat top right;
+    background: white url("../img/bg-pattern.png") repeat top right;
     padding-top: 80px;
     position: relative;
 }
@@ -15,7 +15,7 @@ a.brand {
 }
 
 #content-container {
-    background-color: #FFFFFF;
+    background-color: white;
     margin-bottom: 20px;
     -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.25), inset 0 0 0 rgba(0, 0, 0, 0.1);
        -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.25), inset 0 0 0 rgba(0, 0, 0, 0.1);
@@ -62,14 +62,14 @@ table * {
     margin-right: 30px;
     padding-left: 0;
     padding-right: 0;
-    text-shadow: 1px 1px 1px #FFFFFF;
+    text-shadow: 1px 1px 1px white;
     -webkit-transition: all .1s linear;
        -moz-transition: all .1s linear;
             transition: all .1s linear;
 }
 
 .navbar-fixed-top .brand:hover {
-    color: #FFFFFF;
+    color: white;
     text-shadow: 1px 1px 3px #08C, -1px -1px 3px #08C;
 }
 
@@ -83,15 +83,15 @@ table * {
 .navbar-inner {
     padding-left: 20px;
     padding-right: 20px;
-    background-color: rgb(230, 230, 230);
-    background-image: -webkit-linear-gradient(top, #FFFFFF, rgb(230, 230, 230));
-    background-image:    -moz-linear-gradient(top, #FFFFFF, rgb(230, 230, 230));
-    background-image:     -ms-linear-gradient(top, #FFFFFF, rgb(230, 230, 230));
-    background-image:      -o-linear-gradient(top, #FFFFFF, rgb(230, 230, 230));
-    background-image:        -webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(rgb(230, 230, 230)));
-    background-image:         linear-gradient(top, #FFFFFF, rgb(230, 230, 230));
+    background-color: #E6E6E6;
+    background-image: -webkit-linear-gradient(top, white, #E6E6E6);
+    background-image:    -moz-linear-gradient(top, white, #E6E6E6);
+    background-image:     -ms-linear-gradient(top, white, #E6E6E6);
+    background-image:      -o-linear-gradient(top, white, #E6E6E6);
+    background-image:        -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#E6E6E6));
+    background-image:         linear-gradient(top, white, #E6E6E6);
     background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E6E6E6', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#E6E6E6', GradientType=0);
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
        -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
@@ -102,8 +102,8 @@ table * {
     font-weight: bold;
     margin: 7px 2px 0 2px;
     outline: none;
-    padding: 5px 11px 5px;
-    text-shadow: 1px 1px 1px #FFFFFF;
+    padding: 5px 11px 5px 11px;
+    text-shadow: 1px 1px 1px white;
 }
 
 .navbar .nav > li > a:hover {
@@ -111,23 +111,23 @@ table * {
 }
 
 .navbar .nav > li.active > a {
-    background-color: #FFFFFF;
+    background-color: white;
     color: #08C;
 }
 
 .navbar .nav > li.active > a:hover {
-    background-color: #FFFFFF;
+    background-color: white;
     color: #08C;
 }
 
 .navbar .divider-vertical {
-    background-color: rgb(210, 210, 210); /*#D2D2D2*/
-    border-right: 1px solid #FFFFFF;
+    background-color: #D2D2D2;
+    border-right: 1px solid white;
 }
 
 .navbar .nav > li > a:hover,
 .navbar .dropdown-menu a:hover {
-    background-color: #FFFFFF;
+    background-color: white;
 }
 
 #latest-posts {
@@ -222,9 +222,7 @@ blockquote {
 #facebook { background: -56px -2px no-repeat url("../img/social-buttons.png"); }
 #gplus    { background: -84px -2px no-repeat url("../img/social-buttons.png"); }
 #rss      { background: -28px -2px no-repeat url("../img/social-buttons.png"); }
-#twitter  { background:   0 -2px no-repeat url("../img/social-buttons.png"); }
-
-
+#twitter  { background:     0 -2px no-repeat url("../img/social-buttons.png"); }
 
 #facebook,
 #gplus,
@@ -241,6 +239,17 @@ blockquote {
     opacity: 1.0;
     filter: alpha(opacity=100); /* For IE8 and earlier */
 }
+
+::-moz-selection {
+    background-color: #B3D4FC;
+    text-shadow: none;
+}
+
+::selection {
+    background-color: #B3D4FC;
+    text-shadow: none;
+}
+
 
 @media screen and (max-width: 979px) {
     body {
