@@ -6,7 +6,7 @@ FAQ
 .. _faq-1:
 
 .. hint::
-	`Help us add more info in this page <https://github.com/mpc-hc/website>`_
+	`Help us add more info to this page <https://github.com/mpc-hc/website>`_
 
 #. **What are the requirements for MPC-HC?**
 
