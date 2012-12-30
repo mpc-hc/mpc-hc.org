@@ -278,7 +278,7 @@ blockquote {
 }
 
 @media (min-width: 980px) {
-    #page .span4 {
+    .span4 {
         width: 250px;
     }
     .row {
@@ -287,14 +287,12 @@ blockquote {
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-    #page .span4 {
+    .span4,
+    img.screenshot {
         width: 180px;
     }
     .row {
         margin-left: auto;
-    }
-    img.screenshot {
-        width: 180px;
     }
 }
 
@@ -302,25 +300,23 @@ blockquote {
     img.screenshot {
         width: 32%;
     }
-    #page div.screenshot {
+    div.screenshot {
         display: inline;
         margin: 20px auto;
     }
-    #page div.screenshot.last {
+    div.screenshot.last {
         display: inline;
         margin: 20px auto;
         width: 100%;
     }
-    #page div.screenshot.last img {
+    div.screenshot.last img {
         margin: auto;
     }
 }
 
 @media (max-width: 565px) {
-    #page div.screenshot {
-        display: none;
-    }
-    #page hr.screenshot {
+    div.screenshot,
+    hr.screenshot {
         display: none;
     }
 }
