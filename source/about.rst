@@ -115,7 +115,7 @@ Third party libraries
 	:widths: 20, 20, 40
 
 	"ATL Server", "Ms-LPL", "http://atlserver.codeplex.com/"
-	"Bento4", "GPLv2", "http://zebulon.bok.net/trac/Bento4"
+	"Bento4", "GPLv2", "http://www.bok.net/trac/bento4/"
 	"CLineNumberEdit", "-", "http://www.codeproject.com/Articles/6385/Controls-in-controls-A-line-numbering-edit-box"
 	"CSizingControlBar", "GPLv2", "http://www.datamekanix.com/sizecbar/"
 	"Detours", "MSR-SSLA", "http://research.microsoft.com/en-us/projects/detours/"
