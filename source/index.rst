@@ -31,7 +31,7 @@
 			</a>
 		</div>
 		<div class="span4 screenshot">
-			<a class="fancybox-thumb" data-fancybox-group="gallery" href="/_static/img/mpc-hc.toolbar.jpg" data-title-id="title-toolbar">
+			<a class="fancybox-thumb" data-fancybox-group="gallery" href="/_static/img/mpc-hc.toolbar.jpg" title="MPC-HC with custom toolbar" data-title-id="title-toolbar">
 				<img class="screenshot" src="/_static/img/mpc-hc.toolbar.thumb.jpg" alt="MPC-HC with custom toolbar" width="180" height="134"/>
 			</a>
 			<div id="title-toolbar" class="hidden">
