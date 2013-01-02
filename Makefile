@@ -55,7 +55,8 @@ website:
 		 | cleancss --s0 -o $(BLDDIR_WEB)/_static/css/pack.css
 
 	@echo ; echo "Combining js files..."
-	@uglifyjs $(SRC)/_static/js/bootstrap.js			\
+	@uglifyjs $(SRC)/_static/js/plugins.js				\
+		$(SRC)/_static/js/bootstrap.js					\
 		$(SRC)/_static/js/jquery.mousewheel.js			\
 		$(SRC)/_static/js/jquery.fancybox.js			\
 		$(SRC)/_static/js/jquery.fancybox-thumbs.js		\
