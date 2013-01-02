@@ -45,6 +45,7 @@ website:
 	@echo ; echo "Copying files..."
 	@cp $(SRC)/.htaccess $(SRC)/version.txt $(SRC)/robots.txt $(BLDDIR_WEB)
 	@cp $(SRC)/_static/js/jquery-*.min.js $(BLDDIR_WEB)/_static/js
+	@cp $(SRC)/_static/apple-touch-icon*.png $(BLDDIR_WEB)
 
 	@echo ; echo "Combining css files..."
 	@cat $(SRC)/_static/css/bootstrap.css				\
