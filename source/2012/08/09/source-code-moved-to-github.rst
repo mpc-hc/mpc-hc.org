@@ -16,3 +16,7 @@ in the future and we might sync it.
 Things are easier now for people who want to contribute.
 Fork the repository, do your changes and then create
 a `pull request <https://github.com/mpc-hc/mpc-hc/pulls>`_.
+
+.. raw:: html
+
+	</div>

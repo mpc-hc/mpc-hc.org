@@ -19,3 +19,7 @@ Highlights of this release:
 * Changed default maximum subtitle resolution to "Desktop"
 
 You can download the new version :doc:`here </downloads>`. For the complete changes see the :doc:`changelog </changelog>`.
+
+.. raw:: html
+
+	</div>

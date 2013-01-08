@@ -17,3 +17,7 @@ This website is now powered by `Sphinx <http://sphinx.pocoo.org/>`_ and
 is open source: the code is available over at
 `GitHub <https://github.com/mpc-hc/website>`_—contributions
 in the form of pull requests are really welcome!
+
+.. raw:: html
+
+	</div>
