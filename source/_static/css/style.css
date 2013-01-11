@@ -169,9 +169,7 @@ a.brand {
 
 .marketing {
     border-bottom: 0;
-    font-family: inherit;
     margin: 0;
-    text-rendering: optimizelegibility;
 }
 
 .marketing h2 {
