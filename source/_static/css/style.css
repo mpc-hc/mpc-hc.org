@@ -210,13 +210,13 @@ a.brand {
     padding: 0 3px 6px;
 }
 
-#facebook { background: -56px -2px no-repeat url("../img/social-buttons.png"); }
-#gplus    { background: -84px -2px no-repeat url("../img/social-buttons.png"); }
-#rss      { background: -28px -2px no-repeat url("../img/social-buttons.png"); }
-#twitter  { background:     0 -2px no-repeat url("../img/social-buttons.png"); }
+#facebook   { background: -56px -2px no-repeat url("../img/social-buttons.png"); }
+#googleplus { background: -84px -2px no-repeat url("../img/social-buttons.png"); }
+#rss        { background: -28px -2px no-repeat url("../img/social-buttons.png"); }
+#twitter    { background:     0 -2px no-repeat url("../img/social-buttons.png"); }
 
 #facebook,
-#gplus,
+#googleplus,
 #rss,
 #twitter {
     opacity: 0.7;
@@ -224,7 +224,7 @@ a.brand {
 }
 
 #facebook:hover,
-#gplus:hover,
+#googleplus:hover,
 #rss:hover,
 #twitter:hover {
     opacity: 1.0;
