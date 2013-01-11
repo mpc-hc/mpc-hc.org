@@ -189,6 +189,7 @@ a.brand {
 /* social networks */
 #social-ul a {
     display: block;
+    width: 24px;
     height: 24px;
 }
 
@@ -203,11 +204,9 @@ a.brand {
 
 #social-ul li {
     display: inline-block;
-    width: 24px;
-    height: 18px;
     list-style: none;
     margin: 0;
-    padding: 0 3px 6px;
+    padding: 0 3px;
 }
 
 #facebook { background: -56px -2px no-repeat url("../img/social-buttons.png"); }
