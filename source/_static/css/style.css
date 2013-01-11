@@ -53,9 +53,6 @@ a.brand {
     padding-left: 0;
     padding-right: 0;
     text-shadow: 1px 1px 1px white;
-    -webkit-transition: all .1s linear;
-       -moz-transition: all .1s linear;
-            transition: all .1s linear;
 }
 
 .navbar-fixed-top .brand:hover {
@@ -63,11 +60,20 @@ a.brand {
     text-shadow: 1px 1px 3px #08C, -1px -1px 3px #08C;
 }
 
+.navbar-fixed-top .brand,
 .navbar-inner,
-.navbar .nav > li > a {
+.navbar .nav > li > a,
+#facebook,
+#googleplus,
+#rss,
+#twitter {
     -webkit-border-radius: 4px;
        -moz-border-radius: 4px;
             border-radius: 4px;
+    -webkit-transition: all 0.15s linear;
+       -moz-transition: all 0.15s linear;
+         -o-transition: all 0.15s linear;
+            transition: all 0.15s linear;
 }
 
 .navbar-inner {
@@ -228,6 +234,12 @@ a.brand {
 #twitter:hover {
     opacity: 1.0;
     filter: alpha(opacity=100); /* For IE8 and earlier */
+/*    -webkit-transform: scale(1.25);
+       -moz-transform: scale(1.25);
+        -ms-transform: scale(1.25);
+         -o-transform: scale(1.25);
+            transform: scale(1.25);
+    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1.25, M12=-0, M21=0, M22=1.25);*/
 }
 
 ::-moz-selection {
