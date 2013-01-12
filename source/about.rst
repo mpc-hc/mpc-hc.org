@@ -104,7 +104,7 @@ Trac moderators
 
 Many thanks to everyone who supported development without having access to the source repository.
 
-Based on the original version (C) 2002-2006 by Gabest (e-mail unknown)
+Based on the original version © 2002-2006 by Gabest (e-mail unknown)
 
 
 Third party libraries
