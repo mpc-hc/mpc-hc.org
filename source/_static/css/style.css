@@ -74,14 +74,14 @@ a.brand {
     padding-left: 20px;
     padding-right: 20px;
     background-color: #E6E6E6;
-    background-image: -webkit-linear-gradient(top, white, #E6E6E6);
-    background-image:    -moz-linear-gradient(top, white, #E6E6E6);
-    background-image:     -ms-linear-gradient(top, white, #E6E6E6);
-    background-image:      -o-linear-gradient(top, white, #E6E6E6);
-    background-image:        -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#E6E6E6));
-    background-image:         linear-gradient(top, white, #E6E6E6);
+    background-image: -webkit-linear-gradient(top, #FFFFFF, #E6E6E6);
+    background-image:    -moz-linear-gradient(top, #FFFFFF, #E6E6E6);
+    background-image:     -ms-linear-gradient(top, #FFFFFF, #E6E6E6);
+    background-image:      -o-linear-gradient(top, #FFFFFF, #E6E6E6);
+    background-image:        -webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(#E6E6E6));
+    background-image:         linear-gradient(top, #FFFFFF, #E6E6E6);
     background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#E6E6E6', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E6E6E6', GradientType=0);
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
        -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
@@ -169,9 +169,7 @@ a.brand {
 
 .marketing {
     border-bottom: 0;
-    font-family: inherit;
     margin: 0;
-    text-rendering: optimizelegibility;
 }
 
 .marketing h2 {
@@ -210,13 +208,13 @@ a.brand {
     padding: 0 3px 6px;
 }
 
-#facebook { background: -56px -2px no-repeat url("../img/social-buttons.png"); }
-#gplus    { background: -84px -2px no-repeat url("../img/social-buttons.png"); }
-#rss      { background: -28px -2px no-repeat url("../img/social-buttons.png"); }
-#twitter  { background:     0 -2px no-repeat url("../img/social-buttons.png"); }
+#facebook   { background: -56px -2px no-repeat url("../img/social-buttons.png"); }
+#googleplus { background: -84px -2px no-repeat url("../img/social-buttons.png"); }
+#rss        { background: -28px -2px no-repeat url("../img/social-buttons.png"); }
+#twitter    { background:     0 -2px no-repeat url("../img/social-buttons.png"); }
 
 #facebook,
-#gplus,
+#googleplus,
 #rss,
 #twitter {
     opacity: 0.7;
@@ -224,7 +222,7 @@ a.brand {
 }
 
 #facebook:hover,
-#gplus:hover,
+#googleplus:hover,
 #rss:hover,
 #twitter:hover {
     opacity: 1.0;
