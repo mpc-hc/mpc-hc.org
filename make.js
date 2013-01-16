@@ -106,6 +106,7 @@
 
         var inJs = ['_static/js/plugins.js',
                     '_static/js/bootstrap.js',
+                    '_static/js/jquery-migrate.js',
                     '_static/js/jquery.mousewheel.js',
                     '_static/js/jquery.fancybox.js',
                     '_static/js/jquery.fancybox-thumbs.js'];
