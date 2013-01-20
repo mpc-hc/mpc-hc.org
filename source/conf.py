@@ -28,7 +28,7 @@ needs_sphinx = '1.0'
 sys.path.append(os.path.abspath('../ext'))
 extensions = ['sphinx.ext.ifconfig', 'traclinks', 'feed']
 
-traclinks_base_url = 'http://sourceforge.net/apps/trac/mpc-hc'
+traclinks_base_url = 'http://trac.mpc-hc.org'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

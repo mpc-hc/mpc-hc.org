@@ -3,7 +3,7 @@
 Bug Reporting / Patch Submission
 ================================
 
-Please see our `Bugs <http://sourceforge.net/apps/trac/mpc-hc/wiki/Bugs_-_Reporting>`_ page
+Please see our `Bugs <http://trac.mpc-hc.org/wiki/Bugs_-_Reporting>`_ page
 located on our development site for submitting bugs.
 
 Patches should be submitted as tickets or `pull requests <https://github.com/mpc-hc/mpc-hc/pulls>`_.
