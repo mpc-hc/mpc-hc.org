@@ -3,6 +3,22 @@
 
 	<div class="new">
 	<h2>
+		<a href="/2013/01/21/trac-was-moved/">Trac was moved to our own server</a>
+	</h2>
+
+Posted by XhmikosR on 21/01/2013
+
+After all these years, one of the most wanted things in our to-do list can be
+finally crossed out!
+
+.. raw:: html
+
+		<a class="read-more reference internal" href="/2013/01/21/trac-was-moved/">(read more...)</a>
+	</div>
+.. raw:: html
+
+	<div class="new">
+	<h2>
 		<a href="/2012/12/16/1.6.5-released/">v1.6.5 is released</a>
 	</h2>
 
@@ -47,21 +63,4 @@ We are always in need of people willing to help us make MPC-HC better.
 .. raw:: html
 
 		<a class="read-more reference internal" href="/2012/09/24/open-call-for-contributors/">(read more...)</a>
-	</div>
-.. raw:: html
-
-	<div class="new">
-	<h2>
-		<a href="/2012/08/14/1.6.3-released/">v1.6.3 is released</a>
-	</h2>
-
-Posted by XhmikosR on 14/08/2012
-
-After almost 3 months after the previous stable release, we decided to release 1.6.3.
-
-It's a maintenance release with a couple of UI improvements and a few bugfixes.
-
-.. raw:: html
-
-		<a class="read-more reference internal" href="/2012/08/14/1.6.3-released/">(read more...)</a>
 	</div>

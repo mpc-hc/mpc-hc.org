@@ -3,6 +3,16 @@ Archive
 
 .. raw:: html
 
+	<h2>January 2013</h2>
+.. raw:: html
+
+	<div class="news-title archive">
+		<h3>
+			<a href="/2013/01/21/trac-was-moved/">Trac was moved to our own server</a>
+		</h3>
+	</div>
+.. raw:: html
+
 	<h2>December 2012</h2>
 .. raw:: html
 
