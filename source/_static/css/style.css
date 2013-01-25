@@ -24,6 +24,10 @@ table * {
     border: 0;
 }
 
+table span.pre {
+    font-size: 90%;
+}
+
 .container {
     max-width: 940px;
 }
