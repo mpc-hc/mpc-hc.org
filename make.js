@@ -76,12 +76,15 @@
 
         pushd(SRC_DIR);
 
-        cp('-f', '.htaccess', BUILD_TARGET);
-        cp('-f', '_static/apple-touch-icon*.png', BUILD_TARGET);
-        cp('-f', '_static/favicon.ico', BUILD_TARGET);
+        var filesToCopyToDist = [
+            '.htaccess',
+            'robots.txt',
+            'version.txt',
+            '_static/apple-touch-icon*.png',
+            '_static/favicon.ico'];
+
+        cp('-f', filesToCopyToDist, BUILD_TARGET);
         cp('-f', '_static/js/jquery-*.min.js', BUILD_TARGET + '_static/js');
-        cp('-f', 'robots.txt', BUILD_TARGET);
-        cp('-f', 'version.txt', BUILD_TARGET);
 
         echo();
         echo("### Combining css files...");
