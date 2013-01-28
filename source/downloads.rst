@@ -71,4 +71,4 @@ Nightly builds
 .. warning::
 	Nightly builds are considered as unstable builds. They may contain untested extra functionality. **Use at your own risk**.
 
-	`Download <http://xhmikosr.1f0.de/mpc-hc/>`_ (kindly hosted by `nevcairiel <http://1f0.de/>`_)
+`Download <http://xhmikosr.1f0.de/mpc-hc/>`_ (kindly hosted by `nevcairiel <http://1f0.de/>`_)
