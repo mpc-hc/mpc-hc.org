@@ -84,6 +84,7 @@
             '_static/favicon.ico'];
 
         cp('-f', filesToCopyToDist, BUILD_TARGET);
+        cp('-f', '_static/js/html5shiv.js', BUILD_TARGET + '_static/js');
         cp('-f', '_static/js/jquery-*.min.js', BUILD_TARGET + '_static/js');
 
         echo();
