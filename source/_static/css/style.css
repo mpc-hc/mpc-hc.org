@@ -1,11 +1,35 @@
 body {
     background: white url("../img/bg-pattern.png") repeat top right;
+    font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding-top: 80px;
     position: relative;
 }
 
 blockquote {
     border-left: 0 !important;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 1;
+    padding-bottom: 17px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 18px 0px;
+    border-bottom: 1px solid rgb(238, 238, 238);
 }
 
 h1,
@@ -101,6 +125,20 @@ a.btn.btn-inverse.btn-large {
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 
+.navbar .divider-vertical{
+	height: 40px;
+	width: 1px;
+	margin: 0 9px;
+	overflow: hidden;
+	background-color: #222;
+	border-right: 1px solid #333
+}
+
+.navbar .divider-vertical{
+	background-color: #D2D2D2;
+	border-right: 1px solid #fff
+}
+
 .navbar .nav > li > a {
     color: #333;
     font-weight: bold;
@@ -116,18 +154,12 @@ a.btn.btn-inverse.btn-large {
 
 .navbar .nav > li.active > a,
 .navbar .nav > li.active > a:hover {
-    background-color: white;
     color: #08C;
-}
-
-.navbar .divider-vertical {
-    background-color: #D2D2D2;
-    border-right: 1px solid white;
 }
 
 .navbar .nav > li > a:hover,
 .navbar .dropdown-menu a:hover {
-    background-color: white;
+    background-color: #E5E5E5;
 }
 
 .full-news h1 {
@@ -193,10 +225,102 @@ a.btn.btn-inverse.btn-large {
     margin-bottom: 0;
 }
 
+.lead {
+    font-size: 20px;
+    line-height: 27px;
+}
+
 .centered {
     padding-bottom: 18px;
     text-align: center;
 }
+
+
+/* bootstrap overrides */
+.admonition ul {
+    margin: 4px 0px 10px 25px;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+table th,
+table td {
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+table th {
+  font-weight: bold;
+}
+
+table thead th {
+  vertical-align: bottom;
+}
+
+table caption + thead tr:first-child th,
+table caption + thead tr:first-child td,
+table colgroup + thead tr:first-child th,
+table colgroup + thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+
+table tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+
+table table {
+  background-color: #ffffff;
+}
+
+table tbody tr:hover td,
+table tbody tr:hover th {
+  background-color: #f5f5f5;
+}
+
+.alert, .admonition {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.alert,
+.admonition,
+.alert h4 {
+  color: #c09853;
+}
+
+.alert h4,
+.admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  line-height: 20px;
+}
+
+.alert-success, .note {
+  color: #468847;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
 
 /* social networks */
 #social-ul a {

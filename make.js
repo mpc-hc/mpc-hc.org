@@ -90,8 +90,8 @@
         echo();
         echo("### Combining css files...");
 
-        var inCss = cat(['_static/css/bootstrap.css',
-                         '_static/css/bootstrap-responsive.css',
+        var inCss = cat(['_static/css/normalize.css',
+                         '_static/css/bootstrap.css',
                          '_static/css/jquery.fancybox.css',
                          '_static/css/jquery.fancybox-thumbs.css',
                          '_static/css/style.css']);
@@ -110,7 +110,6 @@
 
         var inJs = ['_static/js/plugins.js',
                     '_static/js/bootstrap.js',
-                    '_static/js/jquery-migrate.js',
                     '_static/js/jquery.mousewheel.js',
                     '_static/js/jquery.fancybox.js',
                     '_static/js/jquery.fancybox-thumbs.js'];
