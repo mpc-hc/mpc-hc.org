@@ -90,8 +90,8 @@
         echo();
         echo("### Combining css files...");
 
-        var inCss = cat(['_static/css/bootstrap.css',
-                         '_static/css/bootstrap-responsive.css',
+        var inCss = cat(['_static/css/normalize.css',
+                         '_static/css/bootstrap.css',
                          '_static/css/jquery.fancybox.css',
                          '_static/css/jquery.fancybox-thumbs.css',
                          '_static/css/style.css']);
