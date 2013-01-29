@@ -47,7 +47,8 @@ table span.pre {
     margin: 50px;
 }
 
-a.brand {
+a.brand,
+a.btn.btn-inverse.btn-large {
     outline: none;
 }
 
