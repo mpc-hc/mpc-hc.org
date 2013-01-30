@@ -8,7 +8,6 @@ Scaffolding
   Layouts
 
 Components
-  Button groups and dropdowns
   Navs, tabs, and pills
   Navbar
   Pagination
@@ -34,8 +33,6 @@ Responsive (all of them)
   Large desktops (>1200px)
   Responsive navbar
 
-
 jQuery plugins
   Transitions
-  Buttons
   Collapse
