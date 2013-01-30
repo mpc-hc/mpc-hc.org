@@ -53,8 +53,8 @@ PDB files
 .. csv-table::
 	:widths: 25, 40
 
-	"MPC-HC 32-bit (x86)", "`7z <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.6.5.6366_x86/MPC-HC.1.6.5.6366.x86.pdb.7z/download>`__"
-	"MPC-HC 64-bit (x64)", "`7z <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20x64/MPC-HC_v1.6.5.6366_x64/MPC-HC.1.6.5.6366.x64.pdb.7z/download>`__"
+	":abbr:`MPC-HC (Media Player Classic - Home Cinema)` 32-bit (x86)", "`7z <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.6.5.6366_x86/MPC-HC.1.6.5.6366.x86.pdb.7z/download>`__"
+	":abbr:`MPC-HC (Media Player Classic - Home Cinema)` 64-bit (x64)", "`7z <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20x64/MPC-HC_v1.6.5.6366_x64/MPC-HC.1.6.5.6366.x64.pdb.7z/download>`__"
 	"Standalone filters 32-bit (x86)", "`7z <http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20Win32/Filters_v1.6.5.6366_x86/MPC-HC_standalone_filters.1.6.5.6366.x86.pdb.7z/download>`__"
 	"Standalone filters 64-bit (x64)", "`7z <http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20x64/Filters_v1.6.5.6366_x64/MPC-HC_standalone_filters.1.6.5.6366.x64.pdb.7z/download>`__"
 
