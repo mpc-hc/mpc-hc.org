@@ -11,7 +11,6 @@ Components
   Navs, tabs, and pills
   Navbar
   Pagination
-  Pager
   Alerts
 
 Miscellaneous
