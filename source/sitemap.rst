@@ -1,3 +1,5 @@
+:orphan:
+
 .. title:: Sitemap
 
 .. toctree::
