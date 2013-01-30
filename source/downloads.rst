@@ -38,11 +38,11 @@ Source code
 	:header: "Clone URL", "Browse URL", "Snapshot", "Description"
 	:widths: 65, 50, 20, 40
 
-	"``https://github.com/mpc-hc/mpc-hc.git``", "https://github.com/mpc-hc/mpc-hc", "`zip <https://github.com/mpc-hc/mpc-hc/zipball/master>`_, `tgz <https://github.com/mpc-hc/mpc-hc/tarball/master>`_", "Official Git repository"
+	"``https://github.com/mpc-hc/mpc-hc.git``", "https://github.com/mpc-hc/mpc-hc", "`zip <https://github.com/mpc-hc/mpc-hc/zipball/master>`__, `tgz <https://github.com/mpc-hc/mpc-hc/tarball/master>`__", "Official Git repository"
 	**Developer Trees**
-	"``https://github.com/Armada651/mpc-hc.git``", "https://github.com/Armada651/mpc-hc", "`zip <https://github.com/Armada651/mpc-hc/zipball/master>`_, `tgz <https://github.com/Armada651/mpc-hc/tarball/master>`_", "Personal repository with work in progress"
-	"``https://github.com/Underground78/mpc-hc.git``", "https://github.com/Underground78/mpc-hc", "`zip <https://github.com/Underground78/mpc-hc/zipball/master>`_, `tgz <https://github.com/Underground78/mpc-hc/tarball/master>`_", "Personal repository with work in progress"
-	"``https://github.com/XhmikosR/mpc-hc.git``", "https://github.com/XhmikosR/mpc-hc", "`zip <https://github.com/XhmikosR/mpc-hc/zipball/master>`_, `tgz <https://github.com/XhmikosR/mpc-hc/tarball/master>`_", "Personal repository with work in progress"
+	"``https://github.com/Armada651/mpc-hc.git``", "https://github.com/Armada651/mpc-hc", "`zip <https://github.com/Armada651/mpc-hc/zipball/master>`__, `tgz <https://github.com/Armada651/mpc-hc/tarball/master>`__", "Personal repository with work in progress"
+	"``https://github.com/Underground78/mpc-hc.git``", "https://github.com/Underground78/mpc-hc", "`zip <https://github.com/Underground78/mpc-hc/zipball/master>`__, `tgz <https://github.com/Underground78/mpc-hc/tarball/master>`__", "Personal repository with work in progress"
+	"``https://github.com/XhmikosR/mpc-hc.git``", "https://github.com/XhmikosR/mpc-hc", "`zip <https://github.com/XhmikosR/mpc-hc/zipball/master>`__, `tgz <https://github.com/XhmikosR/mpc-hc/tarball/master>`__", "Personal repository with work in progress"
 
 
 PDB files
@@ -53,10 +53,10 @@ PDB files
 .. csv-table::
 	:widths: 25, 40
 
-	"MPC-HC 32-bit (x86)", "`7z <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.6.5.6366_x86/MPC-HC.1.6.5.6366.x86.pdb.7z/download>`_"
-	"MPC-HC 64-bit (x64)", "`7z <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20x64/MPC-HC_v1.6.5.6366_x64/MPC-HC.1.6.5.6366.x64.pdb.7z/download>`_"
-	"Standalone filters 32-bit (x86)", "`7z <http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20Win32/Filters_v1.6.5.6366_x86/MPC-HC_standalone_filters.1.6.5.6366.x86.pdb.7z/download>`_"
-	"Standalone filters 64-bit (x64)", "`7z <http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20x64/Filters_v1.6.5.6366_x64/MPC-HC_standalone_filters.1.6.5.6366.x64.pdb.7z/download>`_"
+	"MPC-HC 32-bit (x86)", "`7z <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.6.5.6366_x86/MPC-HC.1.6.5.6366.x86.pdb.7z/download>`__"
+	"MPC-HC 64-bit (x64)", "`7z <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20x64/MPC-HC_v1.6.5.6366_x64/MPC-HC.1.6.5.6366.x64.pdb.7z/download>`__"
+	"Standalone filters 32-bit (x86)", "`7z <http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20Win32/Filters_v1.6.5.6366_x86/MPC-HC_standalone_filters.1.6.5.6366.x86.pdb.7z/download>`__"
+	"Standalone filters 64-bit (x64)", "`7z <http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20x64/Filters_v1.6.5.6366_x64/MPC-HC_standalone_filters.1.6.5.6366.x64.pdb.7z/download>`__"
 
 
 Previous releases
