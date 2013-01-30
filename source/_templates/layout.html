@@ -8,7 +8,9 @@
 		{%- if favicon %}
 		<link rel="shortcut icon" href="{{ pathto( favicon, 1) }}"/>
 		{%- endif %}
-		{% block feed %}<link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS 2.0">{% endblock %}
+		{%- block feed %}
+		<link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS 2.0">
+		{%- endblock %}
 		<meta name="description" content="MPC-HC, the free, open source media player"/>
 		<meta name="keywords" content="MPC, MPC-HC, Media Player Classic, Media Player Classic - Home Cinema, open source media player, video, audio, mkv, avi, xvid, x264, matroska"/>
 		<!--[if lt IE 9]>
