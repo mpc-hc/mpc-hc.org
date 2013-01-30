@@ -25,7 +25,6 @@ Base CSS
   Icons
 
 JS Components
-  Dropdowns
   Collapse
 
 Responsive (all of them)
@@ -38,7 +37,5 @@ Responsive (all of them)
 
 jQuery plugins
   Transitions
-  Dropdowns
-  Alert messages
   Buttons
   Collapse
