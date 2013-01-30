@@ -126,17 +126,17 @@ a.btn.btn-inverse.btn-large {
 }
 
 .navbar .divider-vertical{
-	height: 40px;
-	width: 1px;
-	margin: 0 9px;
-	overflow: hidden;
-	background-color: #222;
-	border-right: 1px solid #333
+    height: 40px;
+    width: 1px;
+    margin: 0 9px;
+    overflow: hidden;
+    background-color: #222;
+    border-right: 1px solid #333
 }
 
 .navbar .divider-vertical{
-	background-color: #D2D2D2;
-	border-right: 1px solid #fff
+    background-color: #D2D2D2;
+    border-right: 1px solid #fff
 }
 
 .navbar .nav > li > a {
