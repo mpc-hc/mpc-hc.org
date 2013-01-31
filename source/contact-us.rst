@@ -4,8 +4,8 @@ Contact us
 ==========
 
 Here is a list of ways to contact us. If you want to report a bug or submit a
-patch, please also read our :doc:`bug reports page </bug-reports>` for more
-information.
+patch, please also read our `bug reports page <https://trac.mpc-hc.org/wiki/How_to_Report_Issues>`_
+for more information.
 
 
 Internet Relay Chat

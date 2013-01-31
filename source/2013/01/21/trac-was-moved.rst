@@ -27,7 +27,7 @@ finally crossed out!
 	for setting up the new Trac.
 	</p>
 	<p>
-	Please read <strong><a href="http://trac.mpc-hc.org/wiki/Reclaim_Account">this</a></strong>
+	Please read <strong><a href="https://trac.mpc-hc.org/wiki/Reclaim_Account">this</a></strong>
 	to learn how to reclaim your old Trac account on the new Trac.
 	</p>
 	<p>

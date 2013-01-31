@@ -35,7 +35,7 @@
 				<img class="screenshot" src="/_static/img/mpc-hc.toolbar.thumb.jpg" alt="MPC-HC with custom toolbar" width="180" height="134"/>
 			</a>
 			<div id="title-toolbar" class="hidden">
-				MPC-HC with <a href="http://trac.mpc-hc.org/wiki/Toolbar_images" target="_blank">custom toolbar</a>.
+				MPC-HC with <a href="https://trac.mpc-hc.org/wiki/Toolbar_images" target="_blank">custom toolbar</a>.
 			</div>
 		</div>
 		<div class="span4 screenshot">

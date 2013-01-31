@@ -122,5 +122,5 @@ All changelogs
 	:header: "Link", "Description"
 	:widths: 20, 80
 
-	"`Complete changelog <http://trac.mpc-hc.org/wiki/Changelog>`_", "Complete changelog for each and every stable build."
+	"`Complete changelog <https://trac.mpc-hc.org/wiki/Changelog>`_", "Complete changelog for each and every stable build."
 	"`Git log <https://github.com/mpc-hc/mpc-hc/commits/master/>`_", "Absolutely unmodified logs on every commit that got committed into the master branch."
