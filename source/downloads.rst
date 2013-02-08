@@ -17,7 +17,7 @@ Binaries
 
 .. raw:: html
 
-	<div class="centered">
+	<div class="text-center downloads-version">
 		<strong>Currently, the latest stable build is v1.6.5 which was compiled from <a href="https://github.com/mpc-hc/mpc-hc/commit/744df1c">744df1c</a> (revision 6366)</strong>
 	</div>
 

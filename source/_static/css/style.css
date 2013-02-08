@@ -38,7 +38,6 @@ footer {
 footer > p {
     font-size: 85%;
     margin-top: -1em;
-    text-align: center;
 }
 
 table,
@@ -230,9 +229,8 @@ table .pre {
     line-height: 27px;
 }
 
-.centered {
+.downloads-version {
     padding-bottom: 18px;
-    text-align: center;
 }
 
 
@@ -258,7 +256,6 @@ table th,
 table td {
   padding: 8px;
   line-height: 20px;
-  text-align: left;
   vertical-align: top;
   border-top: 1px solid #dddddd;
 }
