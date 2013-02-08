@@ -10,7 +10,10 @@
 
 	<div class="pagination-centered">
 		<p>
-			<a href="http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.6.5.6366_x86/MPC-HC.1.6.5.6366.x86.exe/download" class="btn btn-inverse btn-large"><i class="icon-white icon-download-alt"></i> MPC-HC - Download now!</a>
+			<a href="http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.6.5.6366_x86/MPC-HC.1.6.5.6366.x86.exe/download"
+				class="btn btn-inverse btn-large sourceforge_accelerator_link">
+				<i class="icon-white icon-download-alt"></i> MPC-HC - Download now!
+			</a>
 			<br>
 			<span>1.6.5 x86</span> - <a href="/downloads/">Other systems &amp; versions</a>
 		</p>
