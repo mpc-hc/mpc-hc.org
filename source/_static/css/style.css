@@ -5,18 +5,16 @@ body {
     position: relative;
 }
 
-blockquote {
-    border-left: 0 !important;
-}
-
 h1 {
     font-size: 30px;
+    font-weight: 500;
     line-height: 1;
     padding-bottom: 17px;
 }
 
 h2 {
     font-size: 24px;
+    font-weight: 500;
     line-height: 36px;
 }
 
@@ -32,11 +30,6 @@ h3 {
     border-bottom: 1px solid rgb(238, 238, 238);
 }
 
-h1,
-h2 {
-    font-weight: 500;
-}
-
 footer {
     margin: 30px 0 20px 0;
 }
@@ -48,7 +41,9 @@ footer > p {
 }
 
 table,
-table * {
+table td,
+table th,
+table tr {
     border: 0;
 }
 
@@ -75,8 +70,8 @@ table .pre {
     margin: 50px;
 }
 
-a.brand:focus,
-a.btn-large:focus {
+.brand:focus,
+.btn-large:focus {
     outline: none;
 }
 
@@ -241,6 +236,14 @@ a.btn-large:focus {
 
 
 /* bootstrap overrides */
+blockquote {
+    border-left: 0 !important;
+}
+
+blockquote p {
+    font-size: inherit;
+}
+
 .admonition ul {
     margin: 4px 0 10px 25px;
 }
