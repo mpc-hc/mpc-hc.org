@@ -1,6 +1,6 @@
 http://twitter.github.com/bootstrap/customize.html
 
-Enabled components in v2.2.2:
+Enabled components in v2.3.0:
 
 Scaffolding
   Body type and links
