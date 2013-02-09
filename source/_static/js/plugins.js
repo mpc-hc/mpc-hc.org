@@ -35,3 +35,9 @@ _gaq.push(['_trackPageview']);
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(ga, s);
 })();
+
+// Add custom class to our download links
+
+$('#binaries, #pdb-files').find('.external').each(function() {
+    $(this).addClass("sourceforge_accelerator_link");
+});
