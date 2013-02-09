@@ -76,7 +76,6 @@ table .pre {
 }
 
 .navbar-fixed-top .brand {
-    color: #333;
     font-size: 22px;
     font-weight: bold;
     margin-left: 20px;
@@ -139,16 +138,11 @@ table .pre {
 }
 
 .navbar .nav > li > a {
-    color: #333;
     font-weight: bold;
     margin: 7px 2px 0 2px;
     outline: none;
     padding: 5px 11px 5px 11px;
     text-shadow: 1px 1px 1px white;
-}
-
-.navbar .nav > li > a:hover {
-    color: #333;
 }
 
 .navbar .nav > li.active > a,
