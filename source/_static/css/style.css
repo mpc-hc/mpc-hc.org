@@ -51,10 +51,6 @@ table .pre {
     font-size: 90%;
 }
 
-.container {
-    max-width: 940px;
-}
-
 #content-container {
     background-color: white;
     margin-bottom: 30px;
@@ -73,86 +69,6 @@ table .pre {
 .brand:focus,
 .btn-large:focus {
     outline: none;
-}
-
-.navbar-fixed-top .brand {
-    font-size: 22px;
-    font-weight: bold;
-    margin-left: 20px;
-    margin-right: 30px;
-    padding-left: 0;
-    padding-right: 0;
-    text-shadow: 1px 1px 1px white;
-}
-
-.navbar-fixed-top .brand:hover {
-    color: white;
-    text-shadow: 1px 1px 3px #08C, -1px -1px 3px #08C;
-}
-
-.navbar-fixed-top .brand,
-.navbar-inner,
-.navbar .nav > li > a,
-#facebook,
-#googleplus,
-#rss,
-#twitter {
-    -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
-    -webkit-transition: all 0.15s linear;
-       -moz-transition: all 0.15s linear;
-         -o-transition: all 0.15s linear;
-            transition: all 0.15s linear;
-}
-
-.navbar-inner {
-    background-color: #E6E6E6;
-    background-image: -webkit-linear-gradient(top, #FFFFFF, #E6E6E6);
-    background-image:    -moz-linear-gradient(top, #FFFFFF, #E6E6E6);
-    background-image:     -ms-linear-gradient(top, #FFFFFF, #E6E6E6);
-    background-image:      -o-linear-gradient(top, #FFFFFF, #E6E6E6);
-    background-image:        -webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(#E6E6E6));
-    background-image:         linear-gradient(top, #FFFFFF, #E6E6E6);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E6E6E6', GradientType=0);
-    padding-left: 20px;
-    padding-right: 20px;
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-       -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-}
-
-.navbar .divider-vertical{
-    height: 40px;
-    width: 1px;
-    margin: 0 9px;
-    overflow: hidden;
-    background-color: #222;
-    border-right: 1px solid #333
-}
-
-.navbar .divider-vertical{
-    background-color: #D2D2D2;
-    border-right: 1px solid #fff
-}
-
-.navbar .nav > li > a {
-    font-weight: bold;
-    margin: 7px 2px 0 2px;
-    outline: none;
-    padding: 5px 11px 5px 11px;
-    text-shadow: 1px 1px 1px white;
-}
-
-.navbar .nav > li.active > a,
-.navbar .nav > li.active > a:hover {
-    color: #08C;
-}
-
-.navbar .nav > li > a:hover,
-.navbar .dropdown-menu a:hover {
-    background-color: #E5E5E5;
 }
 
 .full-news h1 {
@@ -217,17 +133,78 @@ table .pre {
     margin-bottom: 0;
 }
 
-.lead {
-    font-size: 20px;
-    line-height: 27px;
-}
-
 .downloads-version {
     padding-bottom: 18px;
 }
 
 
-/* bootstrap overrides */
+/* Bootstrap overrides */
+.container {
+    max-width: 940px;
+}
+
+.navbar-fixed-top .brand,
+.navbar .nav > li > a {
+    -webkit-transition: all 0.15s linear;
+       -moz-transition: all 0.15s linear;
+         -o-transition: all 0.15s linear;
+            transition: all 0.15s linear;
+}
+
+.navbar .nav > li > a,
+#facebook,
+#googleplus,
+#rss,
+#twitter {
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+
+.navbar .divider-vertical {
+    width: 1px;
+    background-color: #D2D2D2;
+    border-right: 1px solid white;
+}
+
+.navbar-fixed-top .brand {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 30px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-fixed-top .brand:hover {
+    color: white;
+    filter: progid:DXImageTransform.Microsoft.Shadow(Color='#00008c', Direction=315, Strength=4); /* IE DIE ALREADY */
+    text-shadow: 1px 1px 3px #08C, -1px -1px 3px #08C;
+}
+
+.navbar .nav > li > a {
+    font-weight: bold;
+    margin: 7px 2px 0 2px;
+    outline: none;
+    padding: 5px 11px 5px 11px;
+}
+
+.navbar .nav > li.active > a,
+.navbar .nav > li.active > a:hover {
+    color: #08C;
+}
+
+.navbar .nav > li > a:hover,
+.navbar .dropdown-menu a:hover {
+    background-color: #E5E5E5;
+}
+
+.lead {
+    font-size: 20px;
+    line-height: 27px;
+}
+
+
 blockquote {
     border-left: 0 !important;
 }
@@ -275,7 +252,7 @@ table tbody + tbody {
 }
 
 table table {
-  background-color: #ffffff;
+  background-color: white;
 }
 
 table tbody tr:hover td,
@@ -354,6 +331,10 @@ table tbody tr:hover th {
 #twitter {
     opacity: 0.7;
     filter: alpha(opacity=70);
+    -webkit-transition: all 0.15s linear;
+       -moz-transition: all 0.15s linear;
+         -o-transition: all 0.15s linear;
+            transition: all 0.15s linear;
 }
 
 #facebook:hover,
