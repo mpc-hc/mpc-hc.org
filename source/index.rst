@@ -15,7 +15,7 @@
 				<i class="icon-white icon-download-alt"></i> MPC-HC - Download now!
 			</a>
 			<br>
-			<span>1.6.5 x86</span> - <a href="/downloads/">Other systems &amp; versions</a>
+			<span>1.6.5 32-bit</span> - <a href="/downloads/">Other systems &amp; versions</a>
 		</p>
 		<ul id="social-ul">
 			<li id="facebook"><a href="http://www.facebook.com/MediaPlayerClassicHomeCinema" title="Like our page on Facebook!" target="_blank"></a></li>
