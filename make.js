@@ -77,7 +77,6 @@
         pushd(SRC_DIR);
 
         var filesToCopyToDist = [
-            '.htaccess',
             'robots.txt',
             'version.txt',
             '_static/apple-touch-icon*.png',
