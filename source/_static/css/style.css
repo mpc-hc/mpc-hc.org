@@ -275,7 +275,7 @@ table tbody tr:hover th {
     margin: 0 10px 5px 0;
 }
 
-.admonition.warning {
+.warning {
     background-color: #fcf8e3;
     border: 2px solid #fbeed5;
     color: #c09853;
@@ -284,9 +284,9 @@ table tbody tr:hover th {
 .hint,
 .note {
     /*color: #3A87AD;*/
-    color: #468847;
     background-color: #dff0d8;
-    border-color: #d6e9c6;
+    border: 2px solid #d6e9c6;
+    color: #468847;
 }
 /* -- admonitions END -- */
 
