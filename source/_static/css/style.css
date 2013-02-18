@@ -324,12 +324,12 @@ table tbody tr:hover th {
 #googleplus,
 #rss,
 #twitter {
-    opacity: 0.7;
-    filter: alpha(opacity=70);
-    -webkit-transition: all 0.15s linear;
-       -moz-transition: all 0.15s linear;
-         -o-transition: all 0.15s linear;
-            transition: all 0.15s linear;
+    opacity: 0.80;
+    filter: alpha(opacity=80);
+    -webkit-transition: opacity 0.15s linear;
+       -moz-transition: opacity 0.15s linear;
+         -o-transition: opacity 0.15s linear;
+            transition: opacity 0.15s linear;
 }
 
 #facebook:hover,
