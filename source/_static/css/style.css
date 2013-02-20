@@ -289,22 +289,22 @@ table tbody tr:hover th {
 
 
 /* -- social networks -- */
-#social-ul a {
+.social-ul a {
     display: block;
     width: 24px;
     height: 24px;
 }
 
-#social-ul a:focus {
+.social-ul a:focus {
     outline: none;
     text-decoration: none;
 }
 
-#social-ul {
+.social-ul {
     margin: 0;
 }
 
-#social-ul li {
+.social-ul li {
     display: inline-block;
     list-style: none;
     margin: 0;

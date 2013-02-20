@@ -17,7 +17,7 @@
 			<br>
 			<span>1.6.5 32-bit</span> - <a href="/downloads/">Other systems &amp; versions</a>
 		</p>
-		<ul id="social-ul">
+		<ul class="social-ul">
 			<li class="social-sprite facebook"><a href="http://www.facebook.com/MediaPlayerClassicHomeCinema" title="Like our page on Facebook!" target="_blank"></a></li>
 			<li class="social-sprite twitter"><a href="https://twitter.com/mpc_hc/" title="Follow us on Twitter!" target="_blank"></a></li>
 			<li class="social-sprite googleplus"><a href="https://plus.google.com/u/0/109957971189557916726" title="Follow us on Google+" target="_blank"></a></li>
