@@ -151,11 +151,7 @@ table .pre {
             transition: all 0.15s linear;
 }
 
-.navbar .nav > li > a,
-#facebook,
-#googleplus,
-#rss,
-#twitter {
+.navbar .nav > li > a {
     -webkit-border-radius: 4px;
        -moz-border-radius: 4px;
             border-radius: 4px;
@@ -315,27 +311,34 @@ table tbody tr:hover th {
     padding: 0 3px;
 }
 
-#facebook   { background: -56px -2px no-repeat url("../img/social-buttons.png"); }
-#googleplus { background: -84px -2px no-repeat url("../img/social-buttons.png"); }
-#rss        { background: -28px -2px no-repeat url("../img/social-buttons.png"); }
-#twitter    { background:     0 -2px no-repeat url("../img/social-buttons.png"); }
+.social-sprite {
+    background-image: url("../img/social-buttons.png");
+}
 
-#facebook,
-#googleplus,
-#rss,
-#twitter {
+.facebook   { background-position: -56px -2px; }
+.googleplus { background-position: -84px -2px; }
+.rss        { background-position: -28px -2px; }
+.twitter    { background-position:     0 -2px; }
+
+.facebook,
+.googleplus,
+.rss,
+.twitter {
     opacity: 0.80;
     filter: alpha(opacity=80);
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
     -webkit-transition: opacity 0.15s linear;
        -moz-transition: opacity 0.15s linear;
          -o-transition: opacity 0.15s linear;
             transition: opacity 0.15s linear;
 }
 
-#facebook:hover,
-#googleplus:hover,
-#rss:hover,
-#twitter:hover {
+.facebook:hover,
+.googleplus:hover,
+.rss:hover,
+.twitter:hover {
     opacity: 1.0;
     filter: alpha(opacity=100);
 }
