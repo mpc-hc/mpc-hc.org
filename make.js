@@ -26,12 +26,6 @@
         SRC_DIR = ROOT_DIR + 'source/',
         SPHINXOPTS = '-d' + ' ' + BUILD_DIR + '/doctrees' + ' ' + SRC_DIR + ' ' + BUILD_TARGET;
 
-    //
-    // make all
-    //
-    target.all = function () {
-        target.website();
-    };
 
     //
     // make website
@@ -137,6 +131,13 @@
     };
 
     //
+    // make all
+    //
+    target.all = function () {
+        target.website();
+    };
+
+    //
     // make rebuild
     //
     target.rebuild = function () {
@@ -148,7 +149,6 @@
     // make server
     //
     target.server = function () {
-        cd(ROOT_DIR);
         echo();
         echo('### Starting webserver...');
         cd(BUILD_TARGET);
