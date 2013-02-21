@@ -24,7 +24,7 @@
         BUILD_DIR = ROOT_DIR + 'build/',
         BUILD_TARGET = BUILD_DIR + 'website/',
         SRC_DIR = ROOT_DIR + 'source/',
-        SPHINXOPTS = '-d' + ' ' + BUILD_DIR + '/doctrees' + ' ' + SRC_DIR + ' ' + BUILD_TARGET;
+        SPHINXOPTS = '-d' + ' ' + BUILD_DIR + 'doctrees/' + ' ' + SRC_DIR + ' ' + BUILD_TARGET;
 
 
     //
@@ -58,7 +58,8 @@
             'genindex',
             'objects.inv',
             'search',
-            'searchindex.js'];
+            'searchindex.js'
+        ];
 
         rm('-rf', filesToRemoveFromDist);
 
@@ -74,7 +75,8 @@
             'robots.txt',
             'version.txt',
             '_static/apple-touch-icon*.png',
-            '_static/favicon.ico'];
+            '_static/favicon.ico'
+        ];
 
         cp('-f', filesToCopyToDist, BUILD_TARGET);
         cp('-f', '_static/js/html5shiv.js', BUILD_TARGET + '_static/js');
@@ -87,12 +89,14 @@
                          '_static/css/bootstrap.css',
                          '_static/css/jquery.fancybox.css',
                          '_static/css/jquery.fancybox-thumbs.css',
-                         '_static/css/style.css']);
+                         '_static/css/style.css'
+        ]);
 
         var outCss = BUILD_TARGET + '_static/css/pack.css';
         var minifiedCss = cleanCSS.process(inCss, {
-                            removeEmpty: true,
-                            keepSpecialComments: 0});
+            removeEmpty: true,
+            keepSpecialComments: 0
+        });
 
         fs.writeFileSync(outCss, minifiedCss, 'utf8');
 
@@ -107,10 +111,11 @@
 
         var outJs = BUILD_TARGET + '_static/js/pack.js';
         var minifiedJs = UglifyJS.minify(inJs, {
-                            compress: true,
-                            fromString: true, // this is needed to pass JS source code instead of filenames
-                            mangle: true,
-                            warnings: false});
+            compress: true,
+            fromString: true, // this is needed to pass JS source code instead of filenames
+            mangle: true,
+            warnings: false
+        });
 
         fs.writeFileSync(outJs, minifiedJs.code, 'utf8');
 
