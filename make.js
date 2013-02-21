@@ -102,25 +102,23 @@
 
         fs.writeFileSync(outCss, minifiedCss, 'utf8');
 
-        //exec('cleancss -o' + ' ' + outCss + ' ' + inCss + ' ' + '--s0');
-
         echo();
         echo("### Combining js files...");
 
-        var inJs = ['_static/js/plugins.js',
-                    '_static/js/bootstrap.js',
-                    '_static/js/jquery.mousewheel.js',
-                    '_static/js/jquery.fancybox.js',
-                    '_static/js/jquery.fancybox-thumbs.js'];
+        var inJs = cat(['_static/js/plugins.js',
+                        '_static/js/bootstrap.js',
+                        '_static/js/jquery.mousewheel.js',
+                        '_static/js/jquery.fancybox.js',
+                        '_static/js/jquery.fancybox-thumbs.js']);
 
         var outJs = BUILD_TARGET + '_static/js/pack.js';
         var minifiedJs = UglifyJS.minify(inJs, {
-                            warnings: false,
-                            mangle: true});
+                            compress: true,
+                            fromString: true, // this is needed to pass JS source code instead of filenames
+                            mangle: true,
+                            warnings: false});
 
         fs.writeFileSync(outJs, minifiedJs.code, 'utf8');
-        //exec('uglifyjs' + ' ' + inJs.join(' ') + ' -o' + ' ' + outJs + --compress --mangle');
-
 
         echo();
         echo('### Build finished. The HTML pages are in' + ' ' + BUILD_TARGET + '.');
