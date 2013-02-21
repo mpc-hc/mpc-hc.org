@@ -5,7 +5,7 @@ Changelog
 
 .. note::
 	This changelog only applies to current stable build.
-	For complete logs check `links below <#all-changelogs>`_.
+	For complete logs check the `links below <#all-changelogs>`_.
 
 1.6.5 - 16 December 2012
 ------------------------
