@@ -24,7 +24,7 @@ def make_trac_link(name, rawtext, text, lineno, inliner,
     trac_url = env.config.traclinks_base_url
     ref = trac_url + '/intertrac/' + urllib.quote(text, safe='')
     node = nodes.reference(rawtext, utils.unescape(text),
-        refuri=ref, **options)
+                           refuri=ref, **options)
     return [node], []
 
 
