@@ -10,8 +10,8 @@ from xml.etree import ElementTree as etree
 
 
 VERSION = '0.1.2.1'
-# butchered by vBm to suit mpc-hc needs :x
-# if you know how to do it properly please do a Pull Request. Thanks.
+# Butchered by vBm to suit mpc-hc needs :x
+# If you know how to do it properly please create a pull request. Thanks.
 AUTHOR = 'vBm <the.vbm@gmail.com>'
 AUTHOR = 'Seth House <seth@eseth.com>'
 
@@ -113,7 +113,7 @@ def write_feed(app, exc):
     # with the freshly ordened items.
     container = feed.find('channel')
     items = sorted([e for e in container if e.tag == 'item'],
-        key=lambda i: i.findtext('date'), reverse=True)
+                   key=lambda i: i.findtext('date'), reverse=True)
     container[:] = [e for e in container if e.tag != 'item']
     container.extend(items)
 
