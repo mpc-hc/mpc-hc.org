@@ -6,7 +6,7 @@ Downloads
 .. note::
 	- Supported Operating Systems:
 
-	 Windows XP SP3, Vista, 7, 8 both 32-bit and 64-bit
+	 Windows\ :sup:`®` XP SP3, Vista, 7, 8 both 32-bit and 64-bit
 
 	- System Requirements:
 

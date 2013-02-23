@@ -197,6 +197,7 @@ table .pre {
 
 .lead {
     font-size: 20px;
+    font-weight: lighter;
     line-height: 27px;
     text-align: justify;
 }
