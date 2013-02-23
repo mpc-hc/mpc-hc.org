@@ -16,11 +16,11 @@
     'use strict';
 
     require('shelljs/make');
-    var fs = require('fs');
-    var cleanCSS = require('clean-css');
-    var UglifyJS = require('uglify-js');
+    var fs = require('fs'),
+        cleanCSS = require('clean-css'),
+        UglifyJS = require('uglify-js'),
 
-    var ROOT_DIR = __dirname + '/',         // absolute path to project's root
+        ROOT_DIR = __dirname + '/',         // absolute path to project's root
         BUILD_DIR = ROOT_DIR + 'build/',
         BUILD_TARGET = BUILD_DIR + 'website/',
         SRC_DIR = ROOT_DIR + 'source/',
@@ -125,6 +125,7 @@
         popd();
     };
 
+
     //
     // make clean
     //
@@ -135,12 +136,14 @@
         rm('-rf', BUILD_DIR);
     };
 
+
     //
     // make all
     //
     target.all = function () {
         target.website();
     };
+
 
     //
     // make rebuild
@@ -149,6 +152,7 @@
         target.clean();
         target.website();
     };
+
 
     //
     // make server
@@ -159,6 +163,7 @@
         cd(BUILD_TARGET);
         exec('python -u -m SimpleHTTPServer', {async: true});
     };
+
 
     //
     // make help
