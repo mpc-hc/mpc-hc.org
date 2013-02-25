@@ -390,6 +390,7 @@ table tbody tr:hover th {
     .span4,
     img.screenshot {
         width: 180px;
+        height: 130px;
     }
     .row {
         margin-left: auto;
@@ -399,6 +400,7 @@ table tbody tr:hover th {
 @media (max-width: 767px) {
     img.screenshot {
         width: 32%;
+        height: 24%;
     }
     div.screenshot {
         display: inline;
