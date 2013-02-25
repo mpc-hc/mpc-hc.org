@@ -3,6 +3,23 @@ Archive
 
 .. raw:: html
 
+	<h2>February 2013</h2>
+.. raw:: html
+
+	<div class="archive">
+		<h3>
+			<a href="/2013/02/25/binaries-are-signed/">Binaries are signed</a>
+		</h3>
+	</div>
+.. raw:: html
+
+	<div class="archive">
+		<h3>
+			<a href="/2013/02/24/website-was-moved/">Website was moved to our own server</a>
+		</h3>
+	</div>
+.. raw:: html
+
 	<h2>January 2013</h2>
 .. raw:: html
 

@@ -3,6 +3,42 @@
 
 	<div class="new">
 	<h2>
+		<a href="/2013/02/25/binaries-are-signed/">Binaries are signed</a>
+	</h2>
+
+Posted by XhmikosR on 25/02/2013
+
+.. raw:: html
+
+	<p>
+	Thanks to <strong><a href="http://www.certum.eu/certum/cert,eindex_en.xml">Certum</a></strong>,
+	binaries will be digitally signed!
+	</p>
+
+.. raw:: html
+
+		<a class="read-more reference internal" href="/2013/02/25/binaries-are-signed/">(read more...)</a>
+	</div>
+.. raw:: html
+
+	<div class="new">
+	<h2>
+		<a href="/2013/02/24/website-was-moved/">Website was moved to our own server</a>
+	</h2>
+
+Posted by XhmikosR on 24/02/2013
+
+As most of the people who visit our website may have noticed, we have moved
+the website to our own server and domain.
+
+.. raw:: html
+
+		<a class="read-more reference internal" href="/2013/02/24/website-was-moved/">(read more...)</a>
+	</div>
+.. raw:: html
+
+	<div class="new">
+	<h2>
 		<a href="/2013/01/21/trac-was-moved/">Trac was moved to our own server</a>
 	</h2>
 
@@ -31,36 +67,4 @@ This release has many bugfixes and a few new features.
 .. raw:: html
 
 		<a class="read-more reference internal" href="/2012/12/16/1.6.5-released/">(read more...)</a>
-	</div>
-.. raw:: html
-
-	<div class="new">
-	<h2>
-		<a href="/2012/10/01/1.6.4-released/">v1.6.4 is released</a>
-	</h2>
-
-Posted by XhmikosR on 01/10/2012
-
-After almost 6 weeks after the previous stable release, we decided to release 1.6.4.
-
-It's a maintenance release with a couple of UI improvements, few bugfixes and better API.
-
-.. raw:: html
-
-		<a class="read-more reference internal" href="/2012/10/01/1.6.4-released/">(read more...)</a>
-	</div>
-.. raw:: html
-
-	<div class="new">
-	<h2>
-		<a href="/2012/09/24/open-call-for-contributors/">Open call for contributors</a>
-	</h2>
-
-Posted by vBm on 24/09/2012
-
-We are always in need of people willing to help us make MPC-HC better.
-
-.. raw:: html
-
-		<a class="read-more reference internal" href="/2012/09/24/open-call-for-contributors/">(read more...)</a>
 	</div>
