@@ -74,7 +74,6 @@ table .pre {
 .full-news h1 {
     border-bottom: 0;
     font-size: 24px;
-    line-height: 24px;
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -197,7 +196,6 @@ table .pre {
     line-height: 27px;
     text-align: justify;
 }
-
 
 blockquote {
     border-left: 0 !important;
