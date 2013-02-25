@@ -11,7 +11,7 @@ the website to our own server and domain.
 .. raw:: html
 
 	<p>
-	As of <em>22/01/2013</em>, we moved the website to our server using our
+	As of <em>13/02/2013</em>, we moved the website to our server using our
 	<strong>mpc-hc.org</strong> domain.
 	</p>
 	<p>
