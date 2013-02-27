@@ -402,15 +402,6 @@ table tbody tr:hover th {
     }
     div.screenshot {
         display: inline;
-        margin: 20px auto;
-    }
-    div.screenshot.last {
-        display: inline;
-        margin: 20px auto;
-        width: 100%;
-    }
-    div.screenshot.last img {
-        margin: auto;
     }
 }
 
