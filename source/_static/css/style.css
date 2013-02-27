@@ -307,7 +307,7 @@ table tbody tr:hover th {
 }
 
 .social-sprite {
-    background-image: url("../img/social-buttons.png");
+    background: url("../img/social-buttons.png") no-repeat;
 }
 
 .facebook   { background-position: -56px -2px; }
