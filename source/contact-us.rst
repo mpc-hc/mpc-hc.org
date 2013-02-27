@@ -18,6 +18,8 @@ commit rights have operator status, contributors have voice in the channels.
 * `#mpc-hc-dev @ freenode <irc://irc.freenode.net/mpc-hc-dev/>`_ is strictly
   dedicated to MPC-HC development. This means development of MPC-HC itself.
 
+Rules
+^^^^^
 Please follow these simple rules when joining our channels.
 
 #. Speak English, even if it's only a little don't be afraid to try.
