@@ -153,7 +153,10 @@ table .pre {
 }
 
 .navbar .divider-vertical {
-    width: 1px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 3px;
     background-color: #D2D2D2;
     border-right: 1px solid white;
 }
