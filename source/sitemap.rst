@@ -4,9 +4,9 @@
 
 .. toctree::
 
-	about
-	archive
-	changelog
-	contact-us
-	downloads
-	faq
+    about
+    archive
+    changelog
+    contact-us
+    downloads
+    faq

@@ -4,8 +4,8 @@ Changelog
 =========
 
 .. note::
-	This changelog only applies to current stable build.
-	For complete logs check the `links below <#all-changelogs>`_.
+    This changelog only applies to current stable build.
+    For complete logs check the `links below <#all-changelogs>`_.
 
 1.6.5 - 16 December 2012
 ------------------------
@@ -119,8 +119,8 @@ All changelogs
 --------------
 
 .. csv-table::
-	:header: "Link", "Description"
-	:widths: 20, 80
+    :header: "Link", "Description"
+    :widths: 20, 80
 
-	"`Complete changelog <https://trac.mpc-hc.org/wiki/Changelog>`_", "Complete changelog for each and every stable build."
-	"`Git log <https://github.com/mpc-hc/mpc-hc/commits/master/>`_", "Absolutely unmodified logs on every commit that got committed into the master branch."
+    "`Complete changelog <https://trac.mpc-hc.org/wiki/Changelog>`_", "Complete changelog for each and every stable build."
+    "`Git log <https://github.com/mpc-hc/mpc-hc/commits/master/>`_", "Absolutely unmodified logs on every commit that got committed into the master branch."

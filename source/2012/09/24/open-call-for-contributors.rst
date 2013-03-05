@@ -2,7 +2,7 @@
 
 .. raw:: html
 
-	<div class="full-news">
+    <div class="full-news">
 
 Open call for contributors
 --------------------------
@@ -21,4 +21,4 @@ If you want to help, please join our :doc:`IRC channel </contact-us>` and talk t
 
 .. raw:: html
 
-	</div>
+    </div>

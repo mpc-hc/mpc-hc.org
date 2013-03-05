@@ -2,7 +2,7 @@
 
 .. raw:: html
 
-	<div class="full-news">
+    <div class="full-news">
 
 Source code moved to GitHub
 ---------------------------
@@ -21,4 +21,4 @@ a `pull request <https://github.com/mpc-hc/mpc-hc/pulls>`_.
 
 .. raw:: html
 
-	</div>
+    </div>

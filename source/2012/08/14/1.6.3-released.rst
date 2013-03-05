@@ -2,7 +2,7 @@
 
 .. raw:: html
 
-	<div class="full-news">
+    <div class="full-news">
 
 v1.6.3 is released
 ------------------
@@ -17,4 +17,4 @@ You can download the new version :doc:`here </downloads>`. For the complete chan
 
 .. raw:: html
 
-	</div>
+    </div>

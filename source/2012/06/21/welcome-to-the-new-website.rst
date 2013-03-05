@@ -2,7 +2,7 @@
 
 .. raw:: html
 
-	<div class="full-news">
+    <div class="full-news">
 
 Welcome to the new website
 --------------------------
@@ -22,4 +22,4 @@ in the form of pull requests are really welcome!
 
 .. raw:: html
 
-	</div>
+    </div>

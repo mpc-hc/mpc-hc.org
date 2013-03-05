@@ -1,107 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8"/>
-		<title>{% block title -%} {{ title }} {%- endblock %} :: MPC-HC ::</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:300,400,400italic,700">
-		<link rel="stylesheet" href="{{ pathto('_static/css/pack.css', 1) }}"/>
-		{%- if favicon %}
-		<link rel="shortcut icon" href="{{ pathto( favicon, 1) }}"/>
-		{%- endif %}
-		{%- block feed %}
-		<link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS 2.0">
-		{%- endblock %}
-		<meta name="description" content="MPC-HC, the free, open source media player"/>
-		<meta name="keywords" content="MPC, MPC-HC, Media Player Classic, Media Player Classic - Home Cinema, open source media player, video, audio, mkv, avi, xvid, x264, matroska"/>
-		<!--[if lt IE 9]>
-		<script src="{{ pathto('_static/js/html5shiv.js', 1) }}"></script>
-		<![endif]-->
-	</head>
-	<body>
-		<div class="navbar navbar-fixed-top">
-			<div class="navbar-inner">
-				<div class="container">
-					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</a>
-					<a class="brand" href="{{ pathto('index') }}">MPC-HC</a>
-					<div class="nav-collapse collapse" style="height:0px">
-						<ul class="nav">{% import 'nav.html' as nav %}
-							{{ nav.item('downloads', pagename, pathto('downloads'), "Downloads") }}
-							{{ nav.item('changelog', pagename, pathto('changelog'), "Changelog") }}
-							{{ nav.item('faq', pagename, pathto('faq'), "FAQ") }}
-							<li><a href="https://trac.mpc-hc.org/wiki/How_to_Report_Issues">Bug reports</a></li>
-							{{ nav.item('contact-us', pagename, pathto('contact-us'), "Contact us") }}
-							{{ nav.item('about', pagename, pathto('about'), "About") }}
-							<li class="divider-vertical"></li>
-							<li><a href="https://trac.mpc-hc.org/">Development wiki</a></li>
-							<li class="divider-vertical"></li>
-							<li><a href="http://sourceforge.net/donate/index.php?group_id=170561"><img src="{{ pathto('_static/img/paypal.png', 1) }}" width="74" height="21" title="Donate" alt="Paypal logo"/></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="content-container container">
-			<div class="page">
-				{%- block body %}
-				{%- endblock -%}
-			</div>
-		</div>
-		{%- block footer %}
-		<footer class="text-center">
-			{%- if show_copyright %}
-			<p>{% trans path=pathto('about'), copyright=copyright|e %}Copyright &copy; 2012-2013 <a href="{{ path }}">{{ copyright }}</a>, website based on <a href="http://www.mplayer2.org/" target="_blank">mplayer2.org</a>{% endtrans %}</p>
-			{%- endif %}
-			{%- if last_updated %}
-			<p>{% trans last_updated=last_updated|e %}Page last updated on {{ last_updated }}.{% endtrans %}</p>
-			{%- endif %}
-			{%- if show_sphinx %}
-			<p>{% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> {{ sphinx_version }}.{% endtrans %}</p>
-			{%- endif %}
-			<p>
-				<em><a href="http://cloudvps.com/">CloudVPS</a> - Private Cloud, Clusters &amp; VPS</em>
-				<br>
-				<a href="http://cloudvps.com/"><img src="{{ pathto('_static/img/cloudvps_small.png', 1) }}" width="100" height="70" title="CloudVPS - Private Cloud, Clusters &amp; VPS" alt="CloudVPS logo"/></a>
-			</p>
-		</footer>
-		{%- endblock %}
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="{{ pathto('_static/js/jquery-1.9.1.min.js', 1) }}"><\/script>')</script>
-		<script src="{{ pathto('_static/js/pack.js', 1) }}"></script>
-		{%- if pagename == 'downloads' or pagename == 'index' %}
-		<script>
-			(function() {
-				var el = document.createElement('script');
-				el.src = '//sourceforge.net/accelerator/js?partner_id=72';
-				el.defer = true;
-				var s = document.getElementsByTagName('script')[0];
-				s.parentNode.insertBefore(el, s);
-			})();
-		</script>
-		{%- endif %}
-		{%- if pagename == 'index' or pagename == '2013/02/25/binaries-are-signed' %}
-		<script>
-			$(document).ready(function() {
-				$(".fancybox-thumb").fancybox({
-					padding: 0,
-					helpers: {
-						title: { type: 'float' },
-						thumbs: { width: 100, height: 74 }
-					},
-					beforeLoad: function() {
-						var el, id = $(this.element).data('title-id');
-						if (id) {
-							el = $('#' + id);
-							if (el.length) this.title = el.html();
-						}
-					}
-				});
-			});
-		</script>
-		{%- endif %}
-	</body>
+    <head>
+        <meta charset="utf-8"/>
+        <title>{% block title -%} {{ title }} {%- endblock %} :: MPC-HC ::</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:300,400,400italic,700">
+        <link rel="stylesheet" href="{{ pathto('_static/css/pack.css', 1) }}"/>
+        {%- if favicon %}
+        <link rel="shortcut icon" href="{{ pathto( favicon, 1) }}"/>
+        {%- endif %}
+        {%- block feed %}
+        <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS 2.0">
+        {%- endblock %}
+        <meta name="description" content="MPC-HC, the free, open source media player"/>
+        <meta name="keywords" content="MPC, MPC-HC, Media Player Classic, Media Player Classic - Home Cinema, open source media player, video, audio, mkv, avi, xvid, x264, matroska"/>
+        <!--[if lt IE 9]>
+        <script src="{{ pathto('_static/js/html5shiv.js', 1) }}"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="{{ pathto('index') }}">MPC-HC</a>
+                    <div class="nav-collapse collapse" style="height:0px">
+                        <ul class="nav">{% import 'nav.html' as nav %}
+                            {{ nav.item('downloads', pagename, pathto('downloads'), "Downloads") }}
+                            {{ nav.item('changelog', pagename, pathto('changelog'), "Changelog") }}
+                            {{ nav.item('faq', pagename, pathto('faq'), "FAQ") }}
+                            <li><a href="https://trac.mpc-hc.org/wiki/How_to_Report_Issues">Bug reports</a></li>
+                            {{ nav.item('contact-us', pagename, pathto('contact-us'), "Contact us") }}
+                            {{ nav.item('about', pagename, pathto('about'), "About") }}
+                            <li class="divider-vertical"></li>
+                            <li><a href="https://trac.mpc-hc.org/">Development wiki</a></li>
+                            <li class="divider-vertical"></li>
+                            <li><a href="http://sourceforge.net/donate/index.php?group_id=170561"><img src="{{ pathto('_static/img/paypal.png', 1) }}" width="74" height="21" title="Donate" alt="Paypal logo"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-container container">
+            <div class="page">
+                {%- block body %}
+                {%- endblock -%}
+            </div>
+        </div>
+        {%- block footer %}
+        <footer class="text-center">
+            {%- if show_copyright %}
+            <p>{% trans path=pathto('about'), copyright=copyright|e %}Copyright &copy; 2012-2013 <a href="{{ path }}">{{ copyright }}</a>, website based on <a href="http://www.mplayer2.org/" target="_blank">mplayer2.org</a>{% endtrans %}</p>
+            {%- endif %}
+            {%- if last_updated %}
+            <p>{% trans last_updated=last_updated|e %}Page last updated on {{ last_updated }}.{% endtrans %}</p>
+            {%- endif %}
+            {%- if show_sphinx %}
+            <p>{% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> {{ sphinx_version }}.{% endtrans %}</p>
+            {%- endif %}
+            <p>
+                <em><a href="http://cloudvps.com/">CloudVPS</a> - Private Cloud, Clusters &amp; VPS</em>
+                <br>
+                <a href="http://cloudvps.com/"><img src="{{ pathto('_static/img/cloudvps_small.png', 1) }}" width="100" height="70" title="CloudVPS - Private Cloud, Clusters &amp; VPS" alt="CloudVPS logo"/></a>
+            </p>
+        </footer>
+        {%- endblock %}
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="{{ pathto('_static/js/jquery-1.9.1.min.js', 1) }}"><\/script>')</script>
+        <script src="{{ pathto('_static/js/pack.js', 1) }}"></script>
+        {%- if pagename == 'downloads' or pagename == 'index' %}
+        <script>
+            (function() {
+                var el = document.createElement('script');
+                el.src = '//sourceforge.net/accelerator/js?partner_id=72';
+                el.defer = true;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(el, s);
+            })();
+        </script>
+        {%- endif %}
+        {%- if pagename == 'index' or pagename == '2013/02/25/binaries-are-signed' %}
+        <script>
+            $(document).ready(function() {
+                $(".fancybox-thumb").fancybox({
+                    padding: 0,
+                    helpers: {
+                        title: { type: 'float' },
+                        thumbs: { width: 100, height: 74 }
+                    },
+                    beforeLoad: function() {
+                        var el, id = $(this.element).data('title-id');
+                        if (id) {
+                            el = $('#' + id);
+                            if (el.length) this.title = el.html();
+                        }
+                    }
+                });
+            });
+        </script>
+        {%- endif %}
+    </body>
 </html>
