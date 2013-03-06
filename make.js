@@ -177,6 +177,10 @@
                            'source/_static/js/plugins.js'];
 
         exec('jshint' + ' ' + jshintFiles.join(' '));
+
+        echo();
+        echo('### Running csslint...');
+        exec('csslint source/_static/css/style.css');
     };
 
 
