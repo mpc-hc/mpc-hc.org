@@ -166,43 +166,15 @@
 
 
     //
-    // make check
-    //
-    target.check = function () {
-        cd(ROOT_DIR);
-        echo();
-        echo('### Running JSHint...');
-
-        var jshintFiles = ['make.js',
-                           'source/_static/js/plugins.js'];
-
-        exec('jshint' + ' ' + jshintFiles.join(' '));
-
-        echo();
-        echo('### Running csslint...');
-        exec('csslint source/_static/css/style.css');
-    };
-
-
-    //
-    // make lint
-    //
-    target.lint = function () {
-        target.check();
-    };
-
-
-    //
     // make help
     //
     target.help = function () {
         echo("Available targets:");
-        echo("  website       builds the website");
-        echo("  server        starts the webserver");
-        echo("  clean         cleans the built website");
-        echo("  rebuild       rebuilds the website");
-        echo("  check / lint  runs JSHint for our js files");
-        echo("  help          shows this help message");
+        echo("  website  builds the website");
+        echo("  server   starts the webserver");
+        echo("  clean    cleans the built website");
+        echo("  rebuild  rebuilds the website");
+        echo("  help     shows this help message");
     };
 
 }());
