@@ -35,14 +35,10 @@ Source code
 -----------
 
 .. csv-table::
-    :header: "Clone URL", "Browse URL", "Snapshot", "Description"
-    :widths: 65, 50, 20, 40
+    :header: "Clone URL", "Browse URL", "Description"
+    :widths: 36, 32, 32
 
-    "``https://github.com/mpc-hc/mpc-hc.git``", "https://github.com/mpc-hc/mpc-hc", "`zip <https://github.com/mpc-hc/mpc-hc/zipball/master>`__, `tgz <https://github.com/mpc-hc/mpc-hc/tarball/master>`__", "Official Git repository"
-    **Developer Trees**
-    "``https://github.com/Armada651/mpc-hc.git``", "https://github.com/Armada651/mpc-hc", "`zip <https://github.com/Armada651/mpc-hc/zipball/master>`__, `tgz <https://github.com/Armada651/mpc-hc/tarball/master>`__", "Personal repository with work in progress"
-    "``https://github.com/Underground78/mpc-hc.git``", "https://github.com/Underground78/mpc-hc", "`zip <https://github.com/Underground78/mpc-hc/zipball/master>`__, `tgz <https://github.com/Underground78/mpc-hc/tarball/master>`__", "Personal repository with work in progress"
-    "``https://github.com/XhmikosR/mpc-hc.git``", "https://github.com/XhmikosR/mpc-hc", "`zip <https://github.com/XhmikosR/mpc-hc/zipball/master>`__, `tgz <https://github.com/XhmikosR/mpc-hc/tarball/master>`__", "Personal repository with work in progress"
+    "``https://github.com/mpc-hc/mpc-hc.git``", "https://github.com/mpc-hc/mpc-hc", "Official Git repository"
 
 
 PDB files
