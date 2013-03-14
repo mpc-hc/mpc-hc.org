@@ -36,6 +36,7 @@ Source code
 
 .. csv-table::
     :header: "Clone URL", "Browse URL", "Description"
+    :class: "text-left"
     :widths: 36, 32, 32
 
     "``https://github.com/mpc-hc/mpc-hc.git``", "https://github.com/mpc-hc/mpc-hc", "Official Git repository"
