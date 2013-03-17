@@ -10,7 +10,8 @@ Posted by Armada,Underground78,XhmikosR on 17/03/2013
 
 After 3 months since the last stable build, we decided to release 1.6.6.
 
-This release has many bugfixes and a few new features.
+This release has many bugfixes and a few new features. Also, the binaries :doc:`are digitally signed </2013/02/25/binaries-are-signed>`
+so you can easily verify their integrity.
 
 .. raw:: html
 
