@@ -3,6 +3,16 @@ Archive
 
 .. raw:: html
 
+    <h2>March 2013</h2>
+.. raw:: html
+
+    <div class="archive">
+        <h3>
+            <a href="/2013/03/17/1.6.6-released/">v1.6.6 is released</a>
+        </h3>
+    </div>
+.. raw:: html
+
     <h2>February 2013</h2>
 .. raw:: html
 

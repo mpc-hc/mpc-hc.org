@@ -10,12 +10,12 @@
 
     <div class="pagination-centered">
         <p>
-            <a href="http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.6.5.6366_x86/MPC-HC.1.6.5.6366.x86.exe/download"
+            <a href="http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.6.6.6957_x86/MPC-HC.1.6.6.6957.x86.exe/download"
                 class="btn btn-inverse btn-large sourceforge_accelerator_link">
                 <i class="icon-white icon-download-alt"></i> MPC-HC - Download now!
             </a>
             <br>
-            <span>1.6.5 32-bit</span> - <a href="/downloads/">Other systems &amp; versions</a>
+            <span>1.6.6 32-bit</span> - <a href="/downloads/">Other systems &amp; versions</a>
         </p>
         <ul class="social-ul">
             <li class="social-sprite facebook"><a href="http://www.facebook.com/MediaPlayerClassicHomeCinema" title="Like our page on Facebook!" target="_blank"></a></li>

@@ -1,0 +1,27 @@
+:orphan:
+
+.. raw:: html
+
+    <div class="full-news">
+
+v1.6.6 is released
+------------------
+
+Posted by Armada,Underground78,XhmikosR on 17/03/2013
+
+After 3 months since the last stable build, we decided to release 1.6.6.
+
+This release has many bugfixes and a few new features.
+
+Highlights of this release:
+
+* Uncompressed RAR files can now be played directly in MPC-HC (thanks to RARFileSource)
+* The Subtitle menu now shows all available subtitle tracks
+* "Now playing" information can now be sent to Skype's mood message, MSN support has been removed
+* VSync is now turned off by default due to playback issues
+
+You can download the new version :doc:`here </downloads>`. For the complete changes see the :doc:`changelog </changelog>`.
+
+.. raw:: html
+
+    </div>

@@ -3,6 +3,23 @@
 
     <div class="new">
     <h2>
+        <a href="/2013/03/17/1.6.6-released/">v1.6.6 is released</a>
+    </h2>
+
+Posted by Armada,Underground78,XhmikosR on 17/03/2013
+
+After 3 months since the last stable build, we decided to release 1.6.6.
+
+This release has many bugfixes and a few new features.
+
+.. raw:: html
+
+        <a class="read-more reference internal" href="/2013/03/17/1.6.6-released/">(read more...)</a>
+    </div>
+.. raw:: html
+
+    <div class="new">
+    <h2>
         <a href="/2013/02/25/binaries-are-signed/">Binaries are signed</a>
     </h2>
 
@@ -50,21 +67,4 @@ finally crossed out!
 .. raw:: html
 
         <a class="read-more reference internal" href="/2013/01/21/trac-was-moved/">(read more...)</a>
-    </div>
-.. raw:: html
-
-    <div class="new">
-    <h2>
-        <a href="/2012/12/16/1.6.5-released/">v1.6.5 is released</a>
-    </h2>
-
-Posted by Armada,Underground78,XhmikosR on 16/12/2012
-
-After 2 and a half months since the last stable build, we decided to release 1.6.5.
-
-This release has many bugfixes and a few new features.
-
-.. raw:: html
-
-        <a class="read-more reference internal" href="/2012/12/16/1.6.5-released/">(read more...)</a>
     </div>
