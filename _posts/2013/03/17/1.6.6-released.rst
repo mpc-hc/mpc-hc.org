@@ -11,9 +11,13 @@ This release has many bugfixes and a few new features.
 
 Highlights of this release:
 
-* Uncompressed RAR files can now be played directly in MPC-HC (thanks to RARFileSource)
-* The Subtitle menu now shows all available subtitle tracks
+* Uncompressed RAR files can now be played directly in MPC-HC, drag any .rar or part file (.r00, .r01, etc.) into the player to play it (thanks to RARFileSource)
+* The Subtitle menu now shows all available subtitle tracks including the tracks offered by the splitter
 * "Now playing" information can now be sent to Skype's mood message, MSN support has been removed
-* VSync is now turned off by default due to playback issues
+* VSync is now turned off by default due to playback issues, if you have Aero on you already have VSync and will not notice the difference
+* The hotkeys related to D3D Fullscreen and Frame Time Correction have changed to avoid accidental activation
+* The external filter list has been split for the 32-bit and 64-bit versions of the player, your current filter list will automatically be corrected
+
+Also besides the usual localization updates a new **Romanian** localization has been added. We thank our translators for keeping MPC-HC accessible to our non-English users.
 
 You can download the new version :doc:`here </downloads>`. For the complete changes see the :doc:`changelog </changelog>`.
