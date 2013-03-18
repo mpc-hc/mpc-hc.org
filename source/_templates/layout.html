@@ -65,20 +65,45 @@
         </div>
         {%- block footer %}
         <footer class="text-center">
+            <div class="row-fluid">
+                <div class="container clearfix">
+                    <div class="span4">
+                        <p>
+                            <strong>Social Networks</strong>
+                        </p>
+                        <ul class="social-ul">
+                            <li class="social-sprite facebook"><a href="http://www.facebook.com/MediaPlayerClassicHomeCinema" title="Like our page on Facebook!" target="_blank"></a></li>
+                            <li class="social-sprite twitter"><a href="https://twitter.com/mpc_hc/" title="Follow us on Twitter!" target="_blank"></a></li>
+                            <li class="social-sprite googleplus"><a href="https://plus.google.com/u/0/109957971189557916726" title="Follow us on Google+" target="_blank"></a></li>
+                            <li class="social-sprite rss"><a href="/rss.xml" title="RSS Feed"></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="{{ pathto('acknowledgements') }}"></a>Acknowledgements</li>
+                            <li><a href="{{ pathto('sitemap') }}"></a>Sitemap</li>
+                        </ul>
+                    </div>
+                    <div class="span4">
+                        <p>
+                            <span class="clearfix">Hosting sponsored by:</span>
+                            <span class="clearfix"><em><a href="http://cloudvps.com/">CloudVPS</a> - Private Cloud, Clusters &amp; VPS</em></span>
+                            <a href="http://cloudvps.com/"><img src="{{ pathto('_static/img/cloudvps_small.png', 1) }}" width="100" height="70" title="CloudVPS - Private Cloud, Clusters &amp; VPS" alt="CloudVPS logo"/></a>
+                        </p>
+                    </div>
+                    <div class="span4 footer-col-right">
+                        {%- if last_updated %}
+                        <p>{% trans last_updated=last_updated|e %}Page last updated on {{ last_updated }}.{% endtrans %}</p>
+                        {%- endif %}
+                        {%- if show_sphinx %}
+                        <p>{% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> {{ sphinx_version }}.{% endtrans %}</p>
+                        {%- endif %}
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer id="copyright" class="text-center">
             {%- if show_copyright %}
             <p>{% trans path=pathto('about'), copyright=copyright|e %}Copyright &copy; 2012-2013 <a href="{{ path }}">{{ copyright }}</a>, website based on <a href="http://www.mplayer2.org/" target="_blank">mplayer2.org</a>{% endtrans %}</p>
             {%- endif %}
-            {%- if last_updated %}
-            <p>{% trans last_updated=last_updated|e %}Page last updated on {{ last_updated }}.{% endtrans %}</p>
-            {%- endif %}
-            {%- if show_sphinx %}
-            <p>{% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> {{ sphinx_version }}.{% endtrans %}</p>
-            {%- endif %}
-            <p>
-                <em><a href="http://cloudvps.com/">CloudVPS</a> - Private Cloud, Clusters &amp; VPS</em>
-                <br>
-                <a href="http://cloudvps.com/"><img src="{{ pathto('_static/img/cloudvps_small.png', 1) }}" width="100" height="70" title="CloudVPS - Private Cloud, Clusters &amp; VPS" alt="CloudVPS logo"/></a>
-            </p>
         </footer>
         {%- endblock %}
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

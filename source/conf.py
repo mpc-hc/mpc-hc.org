@@ -193,7 +193,7 @@ html_file_suffix = '.html'
 html_show_copyright = True
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
-html_show_sphinx = False
+html_show_sphinx = True
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'mpchcdoc'
