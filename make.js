@@ -24,7 +24,7 @@
         BUILD_DIR = ROOT_DIR + 'build/',
         BUILD_TARGET = BUILD_DIR + 'website/',
         SRC_DIR = ROOT_DIR + 'source/',
-        SPHINXOPTS = '-d' + ' ' + BUILD_DIR + 'doctrees/' + ' ' + SRC_DIR + ' ' + BUILD_TARGET;
+        SPHINXOPTS = '-d' + ' "' + BUILD_DIR + 'doctrees/' + '" "' + SRC_DIR + '" "' + BUILD_TARGET + '"';
 
 
     //
