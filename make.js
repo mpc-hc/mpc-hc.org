@@ -7,11 +7,6 @@
  * Copyright (C) 2013 MPC-HC Team
  */
 
-/* jshint forin:true, noarg:true, noempty:true, eqeqeq:true, bitwise:true,
-   camelcase:true, trailing:true, strict:true, boss:true, unused:true,
-   curly:true, indent:4, maxerr:100 */
-/*global cd, cp, target, echo, cat, exec, pushd, popd, rm, require, __dirname */
-
 (function () {
     'use strict';
 

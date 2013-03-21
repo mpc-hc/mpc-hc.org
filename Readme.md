@@ -11,3 +11,5 @@ Getting started
 * Run `node make` or `node make website` to build the static site
 * Run the Python webserver to test your changes: `node make server`
   (http://localhost:8000/)
+
+You can run `npm run check` or `npm run lint` to run JSHint and csslint for our files.

@@ -12,8 +12,14 @@
     "type": "git",
     "url": "https://github.com/mpc-hc/website.git"
   },
+  "scripts": {
+    "check": "node run-tests",
+    "lint": "node run-tests"
+  },
   "devDependencies": {
     "clean-css": "~0.10.2",
+    "csslint": "~0.9.10",
+    "jshint": "~1.1.0",
     "shelljs": "~0.1.2",
     "uglify-js": "~2.2.5"
   },
