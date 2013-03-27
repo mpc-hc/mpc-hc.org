@@ -69,12 +69,6 @@ table .pre {
     margin: 50px;
 }
 
-.navbar .brand:focus,
-.navbar .nav > li > a:focus,
-.btn-large:focus {
-    outline: none;
-}
-
 .full-news h1 {
     border-bottom: 0;
     font-size: 24px;
