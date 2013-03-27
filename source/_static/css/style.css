@@ -93,6 +93,22 @@ table .pre {
     margin-top: 3em;
 }
 
+#latest-news > h1 {
+    padding-left: 28px;
+}
+
+.rss-before {
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+    display: inline-block;
+    margin: 4px 0 0 -6px;
+    padding-left: 6px;
+    position: absolute;
+    width: 24px;
+    height: 26px;
+}
+
 .new h2 {
     border-bottom: 0;
     font-size: 20px;

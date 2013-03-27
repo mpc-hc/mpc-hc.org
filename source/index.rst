@@ -69,10 +69,15 @@
         </div>
     </div>
 
-Latest news
------------
+    <div id="latest-news">
+    <a class="social-sprite rss rss-before" href="/rss.xml" title="RSS Feed"></a>
+    <h1>Latest news</h1>
 
 .. include:: latest_posts.rst
 
 
 :doc:`Browse the archive </archive>`
+
+.. raw:: html
+
+    </div>
