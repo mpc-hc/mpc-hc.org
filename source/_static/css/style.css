@@ -302,7 +302,6 @@ table tbody tr:hover th {
 }
 
 .social-ul a:focus {
-    outline: none;
     text-decoration: none;
 }
 
