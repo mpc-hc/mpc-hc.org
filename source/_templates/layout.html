@@ -17,6 +17,18 @@
         <!--[if lt IE 9]>
         <script src="{{ pathto('_static/js/html5shiv.js', 1) }}"></script>
         <![endif]-->
+        {%- if pagename == 'donate' %}
+        <script>
+            (function() {
+                var s = document.createElement('script');
+                var t = document.getElementsByTagName('script')[0];
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = '//api.flattr.com/js/0.6/load.js?mode=auto';
+                t.parentNode.insertBefore(s, t);
+            })();
+        </script>
+        {%- endif %}
     </head>
     <body>
         <div class="navbar navbar-fixed-top">
@@ -39,7 +51,7 @@
                             <li class="divider-vertical"></li>
                             <li><a href="https://trac.mpc-hc.org/">Development wiki</a></li>
                             <li class="divider-vertical"></li>
-                            <li><a href="http://sourceforge.net/donate/index.php?group_id=170561"><img src="{{ pathto('_static/img/paypal.png', 1) }}" width="74" height="21" title="Donate" alt="Paypal logo"/></a></li>
+                            <li><a href="{{ pathto('donate') }}"><img src="{{ pathto('_static/img/paypal.png', 1) }}" width="74" height="21" title="Donate" alt="Paypal logo"/></a></li>
                         </ul>
                     </div>
                 </div>

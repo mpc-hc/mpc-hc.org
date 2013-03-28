@@ -206,5 +206,5 @@ feed_description = "Latest information about the project."
 feed_link = '%s/rss.xml' % (base_uri,)
 feed_maxitems = 10
 feed_ignorepagenames = ['index_*', 'search', 'about', 'archive', 'changelog',
-                        'contact-us', 'downloads', 'faq', 'latest_posts',
-                        'sitemap']
+                        'contact-us', 'donate', 'downloads', 'faq',
+                        'latest_posts', 'sitemap']
