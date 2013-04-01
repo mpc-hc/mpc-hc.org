@@ -42,7 +42,7 @@ Posted by XhmikosR on 25/02/2013
     <p>
     Windows verifies the signature during installation, if UAC is enabled.
     If the prompt dialog does not say that the signature is valid, cancel the
-    installation and download the file again from our <a href="/downloads">downloads</a>.
+    installation and download the file again from our <a class="reference internal" href="/downloads"><em>downloads</em></a>.
     </p>
     <div class="screenshot">
         <a class="fancybox-thumb" data-fancybox-group="gallery" href="/_static/img/news/install-uac.png" title="Install UAC prompt">
