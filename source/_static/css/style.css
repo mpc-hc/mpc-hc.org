@@ -293,9 +293,22 @@ table tbody tr:hover th {
 
 /* footer */
 footer {
-    font-size: 85%;
+    font-size: 90%;
     margin: 30px 0 20px 0;
     padding: 30px 0;
+}
+
+footer h3 {
+    border-bottom: 0;
+    margin-top: 0;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer ul {
+    margin: 0;
 }
 
 footer .span4 {
@@ -328,7 +341,7 @@ footer .span4 {
 
 .social-ul li {
     display: inline-block;
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 0 3px;
 }
@@ -432,6 +445,7 @@ footer .span4 {
     }
     footer .span4 {
         border-right: none;
+        padding: 10px 0;
     }
 }
 
@@ -440,7 +454,7 @@ footer .span4 {
     hr.screenshot {
         display: none;
     }
-    footer {
+    footer .span4 {
         padding: 10px 0;
     }
     #copyright {

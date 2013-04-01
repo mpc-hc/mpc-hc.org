@@ -64,13 +64,11 @@
             </div>
         </div>
         {%- block footer %}
-        <footer class="text-center">
+        <footer>
             <div class="row-fluid">
                 <div class="container clearfix">
                     <div class="span4">
-                        <p>
-                            <strong>Social Networks</strong>
-                        </p>
+                        <h3>Follow us on</h3>
                         <ul class="social-ul">
                             <li class="social-sprite facebook"><a href="http://www.facebook.com/MediaPlayerClassicHomeCinema" title="Like our page on Facebook!" target="_blank"></a></li>
                             <li class="social-sprite twitter"><a href="https://twitter.com/mpc_hc/" title="Follow us on Twitter!" target="_blank"></a></li>
@@ -86,8 +84,8 @@
                         <p>
                             <span class="clearfix">Hosting sponsored by:</span>
                             <span class="clearfix"><em><a href="http://cloudvps.com/">CloudVPS</a> - Private Cloud, Clusters &amp; VPS</em></span>
-                            <a href="http://cloudvps.com/"><img src="{{ pathto('_static/img/cloudvps_small.png', 1) }}" width="100" height="70" title="CloudVPS - Private Cloud, Clusters &amp; VPS" alt="CloudVPS logo"/></a>
                         </p>
+                        <a href="http://cloudvps.com/"><img src="{{ pathto('_static/img/cloudvps_small.png', 1) }}" width="100" height="70" title="CloudVPS - Private Cloud, Clusters &amp; VPS" alt="CloudVPS logo"/></a>
                     </div>
                     <div class="span4 footer-col-right">
                         {%- if last_updated %}
