@@ -92,7 +92,7 @@ table .pre {
 }
 
 .latest-news > h1 {
-    padding-left: 28px;
+    padding-left: 30px;
 }
 
 .rss-before {
@@ -101,10 +101,9 @@ table .pre {
             box-sizing: content-box;
     display: inline-block;
     margin: 4px 0 0 -6px;
-    padding-left: 6px;
+    padding-left: 8px;
     position: absolute;
-    width: 24px;
-    height: 26px;
+    width: 26px;
 }
 
 .new h2 {
@@ -341,56 +340,42 @@ footer .span4 {
 
 
 /* -- social networks -- */
-.social-ul a {
+.social-ul a,
+.rss-before,
+.rss-before:active {
+    color: lightgray;
     display: block;
-    width: 24px;
-    height: 24px;
+    min-width: 26px;
 }
 
-.social-ul a:focus {
+.social-ul a:hover,
+.rss-before:hover,
+.rss-before:focus {
+    color: gray;
+    text-decoration: none;
+}
+
+.social-ul a:focus,
+.rss-before:focus {
     text-decoration: none;
 }
 
 .social-ul {
     margin: 0;
+    padding-top: 6px;
+    margin-bottom: 6px;
 }
 
 .social-ul li {
     display: inline-block;
-    margin: 0;
+    margin: 0 5px;
     padding: 0 3px;
 }
 
-.social-sprite {
-    background: url("../img/social-buttons.png") no-repeat;
-}
-
-.facebook   { background-position: -56px -2px; }
-.googleplus { background-position: -84px -2px; }
-.rss        { background-position: -28px -2px; }
-.twitter    { background-position:     0 -2px; }
-
-.facebook,
-.googleplus,
-.rss,
-.twitter {
-    opacity: 0.80;
-    filter: alpha(opacity=80);
-    -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
-    -webkit-transition: opacity 0.15s linear;
-       -moz-transition: opacity 0.15s linear;
-         -o-transition: opacity 0.15s linear;
-            transition: opacity 0.15s linear;
-}
-
-.facebook:hover,
-.googleplus:hover,
-.rss:hover,
-.twitter:hover {
-    opacity: 1.0;
-    filter: alpha(opacity=100);
+/* zocial */
+[class*="zocial-"]:before {
+    font-family: zocial, sans-serif;
+    font-size: 26px;
 }
 
 ::-moz-selection {
