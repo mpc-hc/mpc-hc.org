@@ -67,7 +67,7 @@
         <footer>
             <div class="row-fluid">
                 <div class="container clearfix">
-                    <div class="span4">
+                    <div class="span4 footer-left">
                         <h3>Follow us on</h3>
                         <ul class="social-ul">
                             <li class="social-sprite facebook"><a href="http://www.facebook.com/MediaPlayerClassicHomeCinema" title="Like our page on Facebook!" target="_blank"></a></li>
@@ -80,14 +80,14 @@
                             <li><a href="{{ pathto('sitemap') }}">Sitemap</a></li>
                         </ul>
                     </div>
-                    <div class="span4">
+                    <div class="span4 footer-center">
                         <p>
                             <span class="clearfix">Hosting sponsored by:</span>
                             <span class="clearfix"><em><a href="http://cloudvps.com/">CloudVPS</a> - Private Cloud, Clusters &amp; VPS</em></span>
                         </p>
                         <a href="http://cloudvps.com/"><img src="{{ pathto('_static/img/cloudvps_small.png', 1) }}" width="100" height="70" title="CloudVPS - Private Cloud, Clusters &amp; VPS" alt="CloudVPS logo"/></a>
                     </div>
-                    <div class="span4 footer-col-right">
+                    <div class="span4 footer-right">
                         {%- if last_updated %}
                         <p>{% trans last_updated=last_updated|e %}Page last updated on {{ last_updated }}.{% endtrans %}</p>
                         {%- endif %}

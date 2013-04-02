@@ -315,8 +315,18 @@ footer .span4 {
     border-right: 1px solid #D2D2D2;
 }
 
-.footer-col-right {
+.footer-left {
+    text-align: left;
+}
+
+.footer-center {
+    margin-left: 0 !important;
+    text-align: center;
+}
+
+.footer-right {
     border-right: none !important;
+    text-align: right;
 }
 
 #copyright {
@@ -447,6 +457,11 @@ footer .span4 {
         border-right: none;
         padding: 10px 0;
     }
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        text-align: left;
+    }
 }
 
 @media (max-width: 565px) {
@@ -456,6 +471,11 @@ footer .span4 {
     }
     footer .span4 {
         padding: 10px 0;
+    }
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        text-align: left;
     }
     #copyright {
         padding: 2px 0;
