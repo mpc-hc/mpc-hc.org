@@ -5,6 +5,7 @@
 .. toctree::
 
     about
+    acknowledgments
     archive
     changelog
     contact-us

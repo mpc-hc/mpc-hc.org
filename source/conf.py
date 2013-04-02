@@ -205,6 +205,6 @@ feed_title = "Media Player Classic - Home Cinema"
 feed_description = "Latest information about the project."
 feed_link = '%s/rss.xml' % (base_uri,)
 feed_maxitems = 10
-feed_ignorepagenames = ['index_*', 'search', 'about', 'archive', 'changelog',
-                        'contact-us', 'donate', 'downloads', 'faq',
-                        'latest_posts', 'sitemap']
+feed_ignorepagenames = ['index_*', 'search', 'about', 'acknowledgments',
+                        'archive', 'changelog', 'contact-us', 'donate',
+                        'downloads', 'faq', 'latest_posts', 'sitemap']
