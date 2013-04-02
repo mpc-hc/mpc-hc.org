@@ -3,20 +3,18 @@
 .. raw:: html
 
     <p class="lead">
-    <abbr title="Media Player Classic - Home Cinema">MPC-HC</abbr> is an extremely
-    light-weight, open source media player for Windows<sup>&reg;</sup>. It supports
-    all common video and audio file formats available for playback.
-    We are 100% <em>spyware free, there are no advertisements or toolbars</em>.
+        <abbr title="Media Player Classic - Home Cinema">MPC-HC</abbr> is an extremely
+        light-weight, open source media player for Windows<sup>&reg;</sup>. It supports
+        all common video and audio file formats available for playback.
+        We are 100% <em>spyware free, there are no advertisements or toolbars</em>.
     </p>
 
     <div class="pagination-centered">
-        <p>
-            <a href="http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.6.6.6957_x86/MPC-HC.1.6.6.6957.x86.exe/download"
-                class="btn btn-inverse btn-large sourceforge_accelerator_link">
-                <i class="icon-white icon-download-alt"></i> MPC-HC - Download now!
-            </a>
-            <p class="clearfix">1.6.6 32-bit - <a href="/downloads/">Other systems &amp; versions</a></p>
-        </p>
+        <a href="http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.6.6.6957_x86/MPC-HC.1.6.6.6957.x86.exe/download"
+            class="btn btn-inverse btn-large sourceforge_accelerator_link">
+            <i class="icon-white icon-download-alt"></i> MPC-HC - Download now!
+        </a>
+        <p class="clearfix">1.6.6 32-bit - <a href="/downloads/">Other systems &amp; versions</a></p>
     </div>
 
     <hr class="screenshot">
