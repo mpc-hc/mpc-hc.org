@@ -135,6 +135,10 @@ table .pre {
     margin-bottom: 0;
 }
 
+.marketing p {
+    text-align: justify;
+}
+
 .downloads-version {
     padding-bottom: 18px;
 }
@@ -301,6 +305,7 @@ footer {
 
 footer h3 {
     border-bottom: 0;
+    margin-bottom: 10px;
     margin-top: 0;
 }
 
@@ -352,7 +357,6 @@ footer .span4 {
 
 .social-ul li {
     display: inline-block;
-    list-style-type: none;
     margin: 0;
     padding: 0 3px;
 }
