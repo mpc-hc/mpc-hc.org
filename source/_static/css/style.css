@@ -1,4 +1,4 @@
-/*csslint box-sizing: false, font-sizes: false, ids: false, important: false,
+/*csslint box-sizing: false, font-sizes: false, important: false,
   qualified-headings: false, unique-headings: false*/
 
 body {
@@ -96,11 +96,11 @@ table .pre {
     font-size: 80%;
 }
 
-#latest-news {
+.latest-news {
     margin-top: 3em;
 }
 
-#latest-news > h1 {
+.latest-news > h1 {
     padding-left: 28px;
 }
 
