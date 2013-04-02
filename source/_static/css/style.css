@@ -227,12 +227,12 @@ table {
     margin-bottom: 20px;
 }
 
-table th,
-table td {
-    padding: 8px;
-    line-height: 20px;
-    vertical-align: top;
+table td,
+table th {
     border-top: 1px solid #dddddd;
+    line-height: 20px;
+    padding: 8px;
+    vertical-align: top;
 }
 
 table th {
