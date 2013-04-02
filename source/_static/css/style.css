@@ -335,7 +335,7 @@ footer .span4 {
     text-align: right;
 }
 
-#copyright {
+.copyright {
     padding: 10px 0;
 }
 
@@ -482,7 +482,7 @@ footer .span4 {
     .footer-right {
         text-align: left;
     }
-    #copyright {
+    .copyright {
         padding: 2px 0;
     }
 }
