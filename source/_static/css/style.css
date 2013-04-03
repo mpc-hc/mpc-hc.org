@@ -92,15 +92,11 @@ table .pre {
 }
 
 .latest-news > h1 {
-    padding-left: 34px;
+    padding-left: 36px;
 }
 
 .rss-before {
-    -webkit-box-sizing: content-box;
-       -moz-box-sizing: content-box;
-            box-sizing: content-box;
-    margin: 4px 0 0 -6px;
-    padding-left: 8px;
+    margin: 4px 0 0 2px;
     position: absolute;
 }
 
@@ -296,8 +292,7 @@ table tbody tr:hover th {
 /* footer */
 footer {
     font-size: 90%;
-    margin: 30px 0 20px 0;
-    padding: 30px 0;
+    margin: 50px 0 30px 0;
 }
 
 footer h3 {
@@ -314,7 +309,8 @@ footer ul {
     margin: 0;
 }
 
-footer .span4 {
+.footer-left,
+.footer-center {
     border-right: 1px solid #D2D2D2;
 }
 
@@ -323,17 +319,17 @@ footer .span4 {
 }
 
 .footer-center {
-    margin-left: 0 !important;
+    margin-left: 0;
     text-align: center;
 }
 
 .footer-right {
-    border-right: none !important;
+    border-right: none;
     text-align: right;
 }
 
 .copyright {
-    padding: 10px 0;
+    margin: 40px 0 30px 0;
 }
 
 
@@ -456,13 +452,11 @@ footer .span4 {
     div.screenshot {
         display: inline;
     }
-    footer .span4 {
-        border-right: none;
-        padding: 10px 0;
-    }
     .footer-left,
     .footer-center,
     .footer-right {
+        border-right: none;
+        margin: 10px 0;
         text-align: left;
     }
 }
@@ -472,15 +466,13 @@ footer .span4 {
     hr.screenshot {
         display: none;
     }
-    footer .span4 {
-        padding: 10px 0;
-    }
     .footer-left,
     .footer-center,
     .footer-right {
+        margin: 10px 0;
         text-align: left;
     }
     .copyright {
-        padding: 2px 0;
+        margin: 8px 0;
     }
 }
