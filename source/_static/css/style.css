@@ -92,7 +92,7 @@ table .pre {
 }
 
 .latest-news > h1 {
-    padding-left: 30px;
+    padding-left: 34px;
 }
 
 .rss-before {
@@ -361,9 +361,8 @@ footer .span4 {
 }
 
 .social-ul {
-    margin: 0;
+    margin: 0 0 8px -12px;
     padding-top: 6px;
-    margin-bottom: 6px;
 }
 
 .social-ul li {
@@ -373,6 +372,13 @@ footer .span4 {
 }
 
 /* zocial */
+[class*="zocial-"] {
+    -webkit-transition: color 0.15s linear;
+       -moz-transition: color 0.15s linear;
+         -o-transition: color 0.15s linear;
+            transition: color 0.15s linear;
+}
+
 [class*="zocial-"]:before {
     font-family: zocial, sans-serif;
     font-size: 26px;
