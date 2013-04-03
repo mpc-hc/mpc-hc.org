@@ -1,8 +1,9 @@
 http://twitter.github.com/bootstrap/customize.html
 
-Enabled components in v2.3.0:
+Enabled components in v2.3.1:
 
 Scaffolding
+  Normalize and reset
   Body type and links
   Grid system
   Layouts
