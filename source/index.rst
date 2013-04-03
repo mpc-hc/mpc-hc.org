@@ -14,7 +14,7 @@
             class="btn btn-inverse btn-large sourceforge_accelerator_link">
             <i class="icon-white icon-download-alt"></i> MPC-HC - Download now!
         </a>
-        <p class="clearfix">1.6.6 32-bit - <a href="/downloads/">Other systems &amp; versions</a></p>
+        <p>1.6.6 32-bit - <a href="/downloads/">Other systems &amp; versions</a></p>
     </div>
 
     <hr class="screenshot">
