@@ -372,14 +372,20 @@ footer .span4 {
 }
 
 /* zocial */
-[class*="zocial-"] {
+.zocial-facebook,
+.zocial-twitter,
+.zocial-googleplus,
+.zocial-rss {
     -webkit-transition: color 0.15s linear;
        -moz-transition: color 0.15s linear;
          -o-transition: color 0.15s linear;
             transition: color 0.15s linear;
 }
 
-[class*="zocial-"]:before {
+.zocial-facebook:before,
+.zocial-twitter:before,
+.zocial-googleplus:before,
+.zocial-rss:before {
     font-family: zocial, sans-serif;
     font-size: 26px;
 }
