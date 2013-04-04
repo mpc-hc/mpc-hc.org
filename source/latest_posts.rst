@@ -6,7 +6,7 @@
         <a href="/2013/03/17/1.6.6-released/">v1.6.6 is released</a>
     </h2>
 
-Posted by Armada,Underground78,XhmikosR on 17/03/2013
+Posted by XhmikosR on 17/03/2013
 
 After 3 months since the last stable build, we decided to release 1.6.6.
 

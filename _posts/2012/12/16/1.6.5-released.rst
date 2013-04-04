@@ -1,5 +1,5 @@
 .. title: v1.6.5 is released
-.. author: Armada,Underground78,XhmikosR
+.. author: XhmikosR
 
 .. abstract
 
