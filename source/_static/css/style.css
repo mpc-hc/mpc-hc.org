@@ -4,7 +4,6 @@
 body {
     background: white url("../img/bg-pattern.png") repeat top right;
     font: 13px/18px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin: 0;
     padding-top: 80px;
     position: relative;
 }
@@ -113,7 +112,7 @@ table .pre {
 
 .read-more {
     float: right;
-    font-size: 85%;
+    font-size: 90%;
     font-style: italic;
 }
 
@@ -152,10 +151,10 @@ table .pre {
 }
 
 .navbar .divider-vertical {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 3px;
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+    width: 1px;
     background-color: #D2D2D2;
     border-right: 1px solid white;
 }
@@ -401,6 +400,9 @@ a.zocial-rss:focus {
 @media screen and (max-width: 979px) {
     body {
         padding-top: 0;
+    }
+    .navbar .brand {
+        margin-left: 8px;
     }
 }
 
