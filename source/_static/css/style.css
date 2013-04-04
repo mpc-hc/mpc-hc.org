@@ -323,7 +323,7 @@ footer ul {
 }
 
 .copyright {
-    margin: 40px 0 30px 0;
+    margin: 40px auto 30px auto;
 }
 
 
@@ -415,6 +415,9 @@ a.zocial-rss:focus {
     .row {
         margin-left: auto;
     }
+    .copyright {
+        margin: 40px auto 30px -14px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -435,6 +438,9 @@ a.zocial-rss:focus {
         margin: 10px 0;
         text-align: left;
     }
+    .copyright {
+        margin: 30px auto 20px auto;
+    }
 }
 
 @media (max-width: 565px) {
@@ -449,7 +455,7 @@ a.zocial-rss:focus {
         text-align: left;
     }
     .copyright {
-        margin: 8px 0;
+        margin: 8px auto;
     }
 }
 
