@@ -47,6 +47,7 @@
             '_static/*.gif',
             '_static/*.js',
             '_static/*.png',
+            '_static/img/cloudvps.png',
             '_static/css/*.css',
             '_static/favicon.ico',
             '_static/js/*.js',
