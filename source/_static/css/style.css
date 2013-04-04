@@ -388,44 +388,25 @@ a.zocial-rss:focus {
 }
 
 
+/* -- media queries -- */
+@media (min-width: 980px) {
+    .row {
+        margin-left: -10px;
+    }
+    .span4 {
+        width: 250px;
+    }
+}
+
 @media screen and (max-width: 979px) {
     body {
         padding-top: 0;
     }
 }
 
-@media (max-width: 767px) {
-    .page {
-        margin: 30px;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        background-image: none;
-    }
-    .content-container {
-        -webkit-box-shadow: none;
-           -moz-box-shadow: none;
-                box-shadow: none;
-    }
-    .page {
-        margin: 0;
-    }
-}
-
-@media (min-width: 980px) {
-    .span4 {
-        width: 250px;
-    }
-    .row {
-        margin-left: -10px;
-    }
-}
-
 @media (min-width: 768px) and (max-width: 979px) {
-    .span4,
-    img.screenshot {
+    img.screenshot,
+    .span4 {
         width: 180px;
         height: 130px;
     }
@@ -435,12 +416,15 @@ a.zocial-rss:focus {
 }
 
 @media (max-width: 767px) {
-    img.screenshot {
-        width: 32%;
-        height: 24%;
+    .page {
+        margin: 30px;
     }
     div.screenshot {
         display: inline;
+    }
+    img.screenshot {
+        width: 32%;
+        height: 24%;
     }
     .footer-left,
     .footer-center,
@@ -464,5 +448,19 @@ a.zocial-rss:focus {
     }
     .copyright {
         margin: 8px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-image: none;
+    }
+    .page {
+        margin: 0;
+    }
+    .content-container {
+        -webkit-box-shadow: none;
+           -moz-box-shadow: none;
+                box-shadow: none;
     }
 }
