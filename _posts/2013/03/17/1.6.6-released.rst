@@ -19,6 +19,7 @@ Highlights of this release:
 * The hotkeys related to D3D Fullscreen and Frame Time Correction have changed to avoid accidental activation
 * The external filter list has been split for the 32-bit and 64-bit versions of the player, your current filter list will automatically be corrected
 
-Also besides the usual localization updates a new **Romanian** localization has been added. We thank our translators for keeping MPC-HC accessible to our non-English users.
+Also besides the usual localization updates a new **Romanian** localization has been added.
+We'd like to thank our translators for keeping MPC-HC accessible to our non-English users.
 
 You can download the new version :doc:`here </downloads>`. For the complete changes see the :doc:`changelog </changelog>`.
