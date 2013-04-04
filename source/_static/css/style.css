@@ -95,11 +95,6 @@ table .pre {
     padding-left: 36px;
 }
 
-.rss-before {
-    margin: 4px 0 0 2px;
-    position: absolute;
-}
-
 .new h2 {
     border-bottom: 0;
     font-size: 20px;
@@ -334,6 +329,11 @@ footer ul {
 
 
 /* -- social networks -- */
+.rss-before {
+    margin-top: 8px;
+    position: absolute;
+}
+
 .social-ul {
     margin: 0 0 8px -12px;
     padding-top: 6px;
@@ -347,11 +347,12 @@ footer ul {
 
 .rss-before,
 .rss-before:active,
+.rss-before:focus,
 .zocial-facebook,
 .zocial-twitter,
 .zocial-googleplus,
 .zocial-rss {
-    color: lightgray;
+    color: lightgray !important;
     display: inline-block;
     min-width: 26px;
     -webkit-transition: color 0.15s linear;
@@ -364,17 +365,15 @@ footer ul {
 .zocial-twitter:before,
 .zocial-googleplus:before,
 .zocial-rss:before {
-    font-family: zocial, sans-serif;
-    font-size: 26px;
+    font: 26px/1px zocial, sans-serif;
 }
 
+.rss-before:hover,
 .zocial-facebook:hover,
 .zocial-twitter:hover,
 .zocial-googleplus:hover,
-.zocial-rss:hover,
-.rss-before:hover,
-.rss-before:focus {
-    color: gray;
+.zocial-rss:hover {
+    color: gray !important;
     text-decoration: none;
 }
 
