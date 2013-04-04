@@ -87,13 +87,13 @@
                          '_static/css/style.css'
         ]);
 
-        var outCss = BUILD_TARGET + '_static/css/pack.css';
+        var destCss = BUILD_TARGET + '_static/css/pack.css';
         var minifiedCss = cleanCSS.process(inCss, {
             removeEmpty: true,
             keepSpecialComments: 0
         });
 
-        fs.writeFileSync(outCss, minifiedCss, 'utf8');
+        fs.writeFileSync(destCss, minifiedCss, 'utf8');
 
         echo();
         echo("### Combining js files...");
@@ -104,7 +104,7 @@
                         '_static/js/jquery.fancybox.js',
                         '_static/js/jquery.fancybox-thumbs.js']);
 
-        var outJs = BUILD_TARGET + '_static/js/pack.js';
+        var destJs = BUILD_TARGET + '_static/js/pack.js';
         var minifiedJs = UglifyJS.minify(inJs, {
             compress: true,
             fromString: true, // this is needed to pass JS source code instead of filenames
@@ -112,7 +112,7 @@
             warnings: false
         });
 
-        fs.writeFileSync(outJs, minifiedJs.code, 'utf8');
+        fs.writeFileSync(destJs, minifiedJs.code, 'utf8');
 
         echo();
         echo('### Build finished. The HTML pages are in' + ' ' + BUILD_TARGET + '.');
