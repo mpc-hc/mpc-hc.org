@@ -157,10 +157,6 @@ table .pre {
 .navbar .brand {
     font-size: 21px;
     font-weight: bold;
-    margin-left: 20px;
-    margin-right: 30px;
-    padding-left: 0;
-    padding-right: 0;
 }
 
 .navbar .brand:hover {
@@ -397,7 +393,7 @@ a.zocial-rss:focus {
         padding-top: 0;
     }
     .navbar .brand {
-        margin-left: 8px;
+        margin-left: 2px;
     }
 }
 
