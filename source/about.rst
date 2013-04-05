@@ -82,12 +82,14 @@ Translators
     "Hebrew", "Superb", "superbsubs ~AT~ users.sourceforge ~dot~ net"
     "Hungarian", "Tamas Kleiber", "klei ~AT~ users.sourceforge ~dot~ net"
     "Italian", "SigiTM", "sigitm ~AT~ users.sourceforge.net"
-    "Japanese, Chinese, Simplified/Traditional", "roytam", "roytam1 ~AT~ users.sourceforge ~dot~ net"
+    "Japanese, Chinese Simplified/Traditional", "roytam", "roytam1 ~AT~ users.sourceforge ~dot~ net"
     "Korean", "XNeo", "xneokr ~AT~ users.sourceforge ~dot~ net"
     "Polish", "arch__stanton", "arch__stanton ~AT~ users.sourceforge ~dot~ net"
     "Polish", "Haix", "haix ~AT~ users.sourceforge ~dot~ net"
     "Polish", "kasper93", "kasper93 ~AT~ users.sourceforge ~dot~ net"
     "Portuguese (Brazil)", "Roger Felipe", "rfrfrfrf ~AT~ users.sourceforge ~dot~ net"
+    "Romanian", "Daniel Alămiță", "—"
+    "Romanian", "lordkag", "lordkag ~AT~ users.sourceforge ~dot~ net"
     "Russian", "YDY", "ydy ~AT~ users.sourceforge ~dot~ net"
     "Slovak", "Marian Hikanik", "mhikanik ~AT~ users.sourceforge ~dot~ net"
     "Spanish", "SquallMX", "squallmx ~AT~ users.sourceforge ~dot~ net"
@@ -99,7 +101,7 @@ Translators
 Contributors
 ############
 
-    Alexx999, foxx1337, heksesang, judelaw, madshi, mtrz, kasper93, nielsm, skaarj1, VSFilterMod Team, X-Dron
+    Alexx999, alexmarsev, foxx1337, heksesang, judelaw, madshi, mtrz, kasper93, nielsm, skaarj1, VSFilterMod Team, X-Dron
 
 Trac moderators
 ###############
