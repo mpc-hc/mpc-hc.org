@@ -18,8 +18,8 @@ MPC-HC Team
     use the `bug tracker <https://trac.mpc-hc.org/wiki/How_to_Report_Issues>`_ instead.
 
 
-People with Git commit rights (sorted by name)
-##############################################
+Active (sorted by name):
+########################
 
 .. csv-table::
     :header: "Name", "Email", "Role"
@@ -28,10 +28,13 @@ People with Git commit rights (sorted by name)
     "Armada", "armada651 ~AT~ users.sourceforge ~dot~ net", "Code"
     "Goran (vBm) Džaferi", "thevbm ~AT~ users.sourceforge ~dot~ net", "New website, Trac moderator, IRC"
     "janwillem32", "janwillem32 ~AT~ users.sourceforge ~dot~ net", "Code"
+    "JellyFrog", "—", "Server admin, Trac admin, Swedish"
+    "kasper93", "kasper93 ~AT~ users.sourceforge ~dot~ net", "Trac moderator, Polish, Code"
+    "namaiki", "namaiki ~AT~ users.sourceforge ~dot~ net", "Trac moderator"
     "nevcairiel", "nevcairiel ~AT~ users.sourceforge ~dot~ net", "Code"
-    "Underground78", "underground78 ~AT~ users.sourceforge ~dot~ net", "Code, French, Admin"
+    "Underground78", "underground78 ~AT~ users.sourceforge ~dot~ net", "Code, French, Project manager"
     "v0lt", "v0lt ~AT~ users.sourceforge ~dot~ net", "Code, Russian"
-    "XhmikosR", "xhmikosr ~AT~ users.sourceforge ~dot~ net", "Various stuff, Admin"
+    "XhmikosR", "xhmikosr ~AT~ users.sourceforge ~dot~ net", "Various stuff, Project manager"
 
 Inactive
 ########
@@ -46,16 +49,16 @@ Inactive
     "Attila T. Afra", "attila.afra ~AT~ gmail ~dot~ com", "Code"
     "Beliyaal", "beliyaal ~AT~ users.sourceforge ~dot~ net", "Code"
     "bobdynlan", "bobdynlan ~AT~ users.sourceforge ~dot~ net", "Code"
+    "Casimir666", "casimir666 ~AT~ users.sourceforge ~dot~ net", "Project founder, Code, French"
     "clsid", "clsid2 ~AT~ users.sourceforge ~dot~ net", "Code"
-    "Casimir666", "casimir666 ~AT~ users.sourceforge ~dot~ net", "Founder, Code, Admin, French"
     "demi_alucard", "alysson87 ~AT~ gmail ~dot~ com", "Code, Portuguese (Brazil)"
     "Di Luo", "sansnom05 ~AT~ users.sourceforge ~dot~ net", "Code"
     "jonasno", "jonasno ~AT~ users.sourceforge ~dot~ net", "Code, Swedish"
     "KindDragon", "kinddragon ~AT~ users.sourceforge ~dot~ net", "Code"
-    "Martin Panayotov", "mvpsoft ~AT~ users.sourceforge ~dot~ net", "Old Website"
+    "Martin Panayotov", "mvpsoft ~AT~ users.sourceforge ~dot~ net", "Old website"
     "MatMaul", "matmaul ~AT~ users.sourceforge ~dot~ net", "Code"
     "spec-chum", "spec-chum ~AT~ users.sourceforge ~dot~ net", "Code"
-    "tetsuo55", "tetsuo55 ~AT~ users.sourceforge ~dot~ net", "Project Manager, Admin"
+    "tetsuo55", "tetsuo55 ~AT~ users.sourceforge ~dot~ net", "Project manager, Admin"
     "Tomas Sen", "tomasen ~AT~ users.sourceforge ~dot~ net", "Code"
     "Vodyannikov Aleksandr", "aleksoid ~AT~ users.sourceforge ~dot~ net", "Code, Russian"
     "xpc1000", "xpc1000 ~AT~ users.sourceforge ~dot~ net", "Code"
@@ -65,6 +68,7 @@ Translators
 
 .. csv-table::
     :header: "Language", "Translator", "Email"
+    :class: "text-left"
     :widths: 35, 20, 45
 
     "Armenian", "hrant77", "hrant77 ~AT~ users.sourceforge ~dot~ net"
@@ -77,6 +81,7 @@ Translators
     "Dutch", "Paul Tjepkema", "pietpuk123 ~AT~ users.sourceforge ~dot~ net"
     "French", "Sebastiii", "sebastiii ~AT~ users.sourceforge ~dot~ net"
     "German", "Markus Gaugg", "markusgaugg ~AT~ users.sourceforge ~dot~ net"
+    "German", "Luan", "—"
     "Greek", "geogeo.gr", "geogeo64 ~AT~ users.sourceforge ~dot~ net"
     "Greek", "Zouloumis", "zouloumis ~AT~ users.sourceforge ~dot~ net"
     "Hebrew", "Superb", "superbsubs ~AT~ users.sourceforge ~dot~ net"
@@ -86,7 +91,6 @@ Translators
     "Korean", "XNeo", "xneokr ~AT~ users.sourceforge ~dot~ net"
     "Polish", "arch__stanton", "arch__stanton ~AT~ users.sourceforge ~dot~ net"
     "Polish", "Haix", "haix ~AT~ users.sourceforge ~dot~ net"
-    "Polish", "kasper93", "kasper93 ~AT~ users.sourceforge ~dot~ net"
     "Portuguese (Brazil)", "Roger Felipe", "rfrfrfrf ~AT~ users.sourceforge ~dot~ net"
     "Romanian", "Daniel Alămiță", "—"
     "Romanian", "lordkag", "lordkag ~AT~ users.sourceforge ~dot~ net"
@@ -101,24 +105,21 @@ Translators
 Contributors
 ############
 
-    Alexx999, alexmarsev, foxx1337, heksesang, judelaw, madshi, mtrz, kasper93, nielsm, skaarj1, VSFilterMod Team, X-Dron
+    Alexx999, alexmarsev, foxx1337, heksesang, judelaw, madshi, mtrz, nielsm, skaarj1, VSFilterMod Team, X-Dron
 
-Trac moderators
-###############
-
-    namaiki
-
+If you think you should be listed in this document and we don't do it already, please, contact us.
 
 Many thanks to everyone who supported development without having access to the source repository.
 
-Based on the original version © 2002-2006 by Gabest (e-mail unknown)
+Based on the original version © 2002-2006 by Gabest (e-mail unknown).
 
 
-Third party libraries
+Third-party libraries
 ---------------------
 
 .. csv-table::
     :header: "Project", "License", "Website"
+    :class: "text-left"
     :widths: 20, 20, 40
 
     "ATL Server", "Ms-LPL", "http://atlserver.codeplex.com/"
