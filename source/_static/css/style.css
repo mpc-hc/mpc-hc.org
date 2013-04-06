@@ -167,17 +167,21 @@ table .pre {
 
 .navbar .nav > li > a {
     font-weight: bold;
-    margin: 7px 2px 0 2px;
-    padding: 5px 11px 5px 11px;
+    margin: 7px 0 0 8px;
+    padding: 5px 10px 5px 8px;
+}
+
+.navbar .nav > li > a:focus {
+    color: black;
+}
+
+.navbar .nav > li > a:hover {
+    background-color: #E5E5E5;
 }
 
 .navbar .nav > li.active > a,
 .navbar .nav > li.active > a:hover {
     color: #08C;
-}
-
-.navbar .nav > li > a:hover {
-    background-color: #E5E5E5;
 }
 
 .lead {
