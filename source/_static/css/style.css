@@ -107,7 +107,7 @@ table .pre {
 
 .read-more {
     float: right;
-    font-size: 90%;
+    font-size: 85%;
     font-style: italic;
 }
 
@@ -176,8 +176,7 @@ table .pre {
     color: #08C;
 }
 
-.navbar .nav > li > a:hover,
-.navbar .dropdown-menu a:hover {
+.navbar .nav > li > a:hover {
     background-color: #E5E5E5;
 }
 
@@ -421,6 +420,10 @@ a.zocial-rss:focus {
     img.screenshot {
         width: 32%;
         height: 24%;
+    }
+    .read-more {
+        position: relative;
+        top: -8px;
     }
     .footer-left,
     .footer-center,
