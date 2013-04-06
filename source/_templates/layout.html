@@ -103,6 +103,13 @@
                 {% trans path=pathto('about'), copyright=copyright|e %}Copyright &copy; 2012-2013 <a href="{{ path }}">{{ copyright }}</a>{% endtrans %}
                 {%- endif %}
             </div>
+            <noscript>
+                <div class="alert alert-danger noscript-warning">
+                    <h4>Warning!</h4>
+                    You have JavaScript disabled or your browser doesn't support it.
+                    Some features, like the navigation button, won't be available.
+                </div>
+            </noscript>
         </footer>
         {%- endblock %}
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

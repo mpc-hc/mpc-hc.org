@@ -320,6 +320,9 @@ footer ul {
     margin: 40px auto 30px auto;
 }
 
+.noscript-warning {
+    display: none;
+}
 
 /* -- social networks -- */
 .social-ul {
@@ -397,6 +400,13 @@ a.zocial-rss:focus {
     }
     .navbar .brand {
         margin-left: 2px;
+    }
+    .noscript-warning {
+        bottom: 0;
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
     }
 }
 
