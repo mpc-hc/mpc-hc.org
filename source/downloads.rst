@@ -45,7 +45,7 @@ Source code
 PDB files
 ---------
 
-    Program Database files, which contain the debug symbols, needed to debug the builds
+Program Database files, which contain the debug symbols, needed to debug the builds
 
 .. csv-table::
     :widths: 25, 40
