@@ -1,4 +1,4 @@
-/*csslint box-sizing: false, font-sizes: false, important: false,
+/*csslint box-sizing: false, font-sizes: false,
   qualified-headings: false, unique-headings: false*/
 
 body {
@@ -191,8 +191,9 @@ table .pre {
     text-align: justify;
 }
 
-blockquote {
-    border-left: 0 !important;
+.simple + blockquote,
+.first + blockquote {
+    border-left: 0;
 }
 
 blockquote p {
