@@ -159,10 +159,9 @@ table .pre {
     font-weight: bold;
 }
 
-.navbar .brand:hover {
-    color: white;
-    filter: progid:DXImageTransform.Microsoft.Shadow(Color='#00008c', Direction=315, Strength=4); /* IE DIE ALREADY */
-    text-shadow: 0 2px 4px #08C, 0 -2px 4px #08C;
+.navbar .brand:hover,
+.navbar .brand:focus {
+    text-shadow: 0 0 20px #08C;
 }
 
 .navbar .nav > li > a {
