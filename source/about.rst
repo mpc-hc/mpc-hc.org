@@ -105,13 +105,17 @@ Translators
 Contributors
 ############
 
-    Alexx999, alexmarsev, foxx1337, heksesang, judelaw, madshi, mtrz, nielsm, skaarj1, VSFilterMod Team, X-Dron
+Alexx999, alexmarsev, foxx1337, heksesang, judelaw, madshi, mtrz, nielsm, skaarj1, VSFilterMod Team, X-Dron
+
+
+Notes
+############
 
 If you think you should be listed in this document and we don't do it already, please, contact us.
 
 Many thanks to everyone who supported development without having access to the source repository.
 
-Based on the original version © 2002-2006 by Gabest (e-mail unknown).
+MPC-HC is based on the original MPC version © 2002-2006 by Gabest (e-mail unknown).
 
 
 Third-party libraries
