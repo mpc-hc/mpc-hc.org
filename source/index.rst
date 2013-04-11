@@ -9,7 +9,7 @@
         We are 100% <em>spyware free, there are no advertisements or toolbars</em>.
     </p>
 
-    <div class="pagination-centered">
+    <div class="text-center">
         <a href="http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.6.6.6957_x86/MPC-HC.1.6.6.6957.x86.exe/download"
             class="btn btn-inverse btn-large sourceforge_accelerator_link">
             <i class="icon-white icon-download-alt"></i> MPC-HC - Download now!
