@@ -164,7 +164,7 @@ table .pre {
             border-radius: 4px;
     font-weight: bold;
     margin-top: 7px;
-    padding: 5px 8px;
+    padding: 5px 6px;
 }
 
 .navbar .nav > li > a:focus {
@@ -383,6 +383,9 @@ a.zocial-rss:focus {
 
 /* -- media queries -- */
 @media (min-width: 980px) {
+    .navbar .nav > li > a:first-child {
+        margin-left: 10px;
+    }
     .row {
         margin-left: -10px;
     }
