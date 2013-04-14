@@ -82,6 +82,7 @@
         echo("### Combining css files...");
 
         var inCss = cat(['_static/css/bootstrap.css',
+                         '_static/css/font-awesome.css',
                          '_static/css/jquery.fancybox.css',
                          '_static/css/jquery.fancybox-thumbs.css',
                          '_static/css/style.css'
@@ -89,7 +90,7 @@
 
         var destCss = BUILD_TARGET + '_static/css/pack.css';
         var minifiedCss = cleanCSS.process(inCss, {
-            removeEmpty: true,
+            removeEmpty: false,
             keepSpecialComments: 0
         });
 

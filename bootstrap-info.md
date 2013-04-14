@@ -20,7 +20,6 @@ Base CSS
   Headings, body, etc
   Tables
   Buttons
-  Icons
 
 JS Components
   Collapse

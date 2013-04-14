@@ -1,4 +1,4 @@
-/*csslint box-sizing: false, font-sizes: false,
+/*csslint box-sizing: false, font-sizes: false, important: false,
   qualified-headings: false, unique-headings: false*/
 
 body {
@@ -324,7 +324,6 @@ footer ul {
 /* -- social networks -- */
 .social-ul {
     margin: 0 0 8px -12px;
-    padding-top: 6px;
 }
 
 .social-ul li {
@@ -334,14 +333,14 @@ footer ul {
 }
 
 .rss-before {
-    margin-top: 8px;
+    margin-top: 3px !important;
     position: absolute;
 }
 
-a.zocial-facebook,
-a.zocial-twitter,
-a.zocial-googleplus,
-a.zocial-rss {
+a.icon-facebook,
+a.icon-twitter,
+a.icon-google-plus,
+a.icon-rss {
     color: lightgray;
     display: inline-block;
     min-width: 26px;
@@ -351,21 +350,14 @@ a.zocial-rss {
             transition: color 0.15s linear;
 }
 
-a.zocial-facebook:before,
-a.zocial-twitter:before,
-a.zocial-googleplus:before,
-a.zocial-rss:before {
-    font: 26px/1px zocial, sans-serif;
-}
-
-a.zocial-facebook:hover,
-a.zocial-twitter:hover,
-a.zocial-googleplus:hover,
-a.zocial-rss:hover,
-a.zocial-facebook:focus,
-a.zocial-twitter:focus,
-a.zocial-googleplus:focus,
-a.zocial-rss:focus {
+a.icon-facebook:hover,
+a.icon-twitter:hover,
+a.icon-google-plus:hover,
+a.icon-rss:hover,
+a.icon-facebook:focus,
+a.icon-twitter:focus,
+a.icon-google-plus:focus,
+a.icon-rss:focus {
     color: gray;
     text-decoration: none;
 }

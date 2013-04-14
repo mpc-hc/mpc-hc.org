@@ -9,6 +9,7 @@ We would like to thank the following projects:
 * `Bootstrap <http://twitter.github.com/bootstrap/>`_
 * `Coverity Scan <http://scan.coverity.com/>`_
 * `Cppcheck <http://cppcheck.sourceforge.net/>`_
+* `Font Awesome <http://fortawesome.github.com/Font-Awesome>`_ by Dave Gandy
 * `GCC <http://gcc.gnu.org/>`_
 * `HTML5 Boilerplate <http://html5boilerplate.com/>`_
 * `Inno Setup <http://www.jrsoftware.org/isinfo.php>`_
