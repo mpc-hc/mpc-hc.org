@@ -82,7 +82,7 @@
         echo("### Combining css files...");
 
         var inCss = cat(['_static/css/bootstrap.css',
-                         '_static/css/font-awesome.css',
+                         '_static/css/fontawesome.css',
                          '_static/css/jquery.fancybox.css',
                          '_static/css/jquery.fancybox-thumbs.css',
                          '_static/css/style.css'

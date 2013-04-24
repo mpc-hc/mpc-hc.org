@@ -22,10 +22,10 @@
  */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../font/fontawesome-webfont-3.0.1.eot');
-  src: url('../font/fontawesome-webfont-3.0.1.eot?#iefix') format('embedded-opentype'),
-    url('../font/fontawesome-webfont-3.0.1.woff') format('woff'),
-    url('../font/fontawesome-webfont-3.0.1.ttf') format('truetype');
+  src: url('../font/fontawesome-webfont-3.0.2.eot');
+  src: url('../font/fontawesome-webfont-3.0.2.eot?#iefix') format('embedded-opentype'),
+    url('../font/fontawesome-webfont-3.0.2.woff') format('woff'),
+    url('../font/fontawesome-webfont-3.0.2.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -268,8 +268,8 @@ ul.icons li [class*=" icon-"] {
   .btn .icon-spin.icon-large {
     height: .75em;
   }
-}.icon-download-alt:before        { content: "\f021"; }
-.icon-twitter:before              { content: "\f022"; }
-.icon-facebook:before             { content: "\f023"; }
-.icon-rss:before                  { content: "\f024"; }
-.icon-google-plus:before          { content: "\f025"; }
+}.icon-download-alt:before		{ content: "\f021"; }
+.icon-twitter:before		{ content: "\f022"; }
+.icon-facebook:before		{ content: "\f023"; }
+.icon-rss:before		{ content: "\f024"; }
+.icon-google-plus:before		{ content: "\f025"; }
