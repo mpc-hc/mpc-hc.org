@@ -47,8 +47,8 @@ Posted by XhmikosR on 25/02/2013
 .. raw:: html
 
     <p>
-    Thanks to <strong><a href="http://www.certum.eu/certum/cert,eindex_en.xml">Certum</a></strong>,
-    binaries will be digitally signed!
+        Thanks to <strong><a href="http://www.certum.eu/certum/cert,eindex_en.xml">Certum</a></strong>,
+        binaries will be digitally signed!
     </p>
 
 .. raw:: html
