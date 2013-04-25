@@ -3,6 +3,24 @@
 
     <div class="new">
     <h2>
+        <a href="/2013/04/25/1.6.7-released/">v1.6.7 is released</a>
+    </h2>
+
+Posted by XhmikosR on 25/04/2013
+
+After almost 1 and a half month since the last stable build, we decided to release 1.6.7.
+
+This release is mainly a bugfix release. It also has a big performance improvement
+when using an INI file to store the settings.
+
+.. raw:: html
+
+        <a class="read-more reference internal" href="/2013/04/25/1.6.7-released/">(read more...)</a>
+    </div>
+.. raw:: html
+
+    <div class="new">
+    <h2>
         <a href="/2013/03/17/1.6.6-released/">v1.6.6 is released</a>
     </h2>
 
@@ -52,20 +70,4 @@ the website to our own server and domain.
 .. raw:: html
 
         <a class="read-more reference internal" href="/2013/02/24/website-was-moved/">(read more...)</a>
-    </div>
-.. raw:: html
-
-    <div class="new">
-    <h2>
-        <a href="/2013/01/21/trac-was-moved/">Trac was moved to our own server</a>
-    </h2>
-
-Posted by XhmikosR on 21/01/2013
-
-After all these years, one of the most wanted things in our to-do list can be
-finally crossed out!
-
-.. raw:: html
-
-        <a class="read-more reference internal" href="/2013/01/21/trac-was-moved/">(read more...)</a>
     </div>

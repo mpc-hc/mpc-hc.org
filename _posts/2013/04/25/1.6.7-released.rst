@@ -1,0 +1,13 @@
+.. title: v1.6.7 is released
+.. author: XhmikosR
+
+.. abstract
+
+After almost 1 and a half month since the last stable build, we decided to release 1.6.7.
+
+This release is mainly a bugfix release. It also has a big performance improvement
+when using an INI file to store the settings.
+
+.. body
+
+You can download the new version :doc:`here </downloads>`. For the complete changes see the :doc:`changelog </changelog>`.
