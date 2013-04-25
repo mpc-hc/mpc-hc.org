@@ -328,8 +328,11 @@ footer ul {
 
 .social-ul li {
     display: inline-block;
-    margin: 0 5px;
-    padding: 0 3px;
+    margin: 0 10px 0 0;
+}
+
+.social-ul li:first-of-type {
+    margin-left: 3px;
 }
 
 .rss-before {
@@ -343,7 +346,6 @@ a.icon-google-plus,
 a.icon-rss {
     color: lightgray;
     display: inline-block;
-    min-width: 26px;
     -webkit-transition: color 0.15s linear;
        -moz-transition: color 0.15s linear;
          -o-transition: color 0.15s linear;
