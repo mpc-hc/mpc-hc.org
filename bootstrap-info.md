@@ -11,6 +11,7 @@ Scaffolding
 Components
   Navs, tabs, and pills
   Navbar
+  Thumbnails
   Alerts
 
 Miscellaneous

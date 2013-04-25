@@ -34,21 +34,25 @@ Posted by XhmikosR on 25/02/2013
         compiled by us since it's not signed, and thus you downloaded a custom build
         or a potential <em>scam</em> file.
     </p>
-    <div class="screenshot">
-        <a class="fancybox-thumb" data-fancybox-group="gallery" href="/_static/img/news/properties-signature.png" title="Explorer Properties Signature tab">
-            <img class="screenshot" src="/_static/img/news/properties-signature-thumb.png" alt="Properties Signature" width="300" height="241"/>
-        </a>
-    </div>
+    <ul class="thumbnails">
+        <li>
+            <a class="fancybox-thumb thumbnail" data-fancybox-group="gallery" href="/_static/img/news/properties-signature.png" title="Explorer Properties Signature tab">
+                <img class="screenshot" src="/_static/img/news/properties-signature-thumb.png" alt="Properties Signature" width="300" height="241"/>
+            </a>
+        </li>
+    </ul>
     <p>
         Windows verifies the signature during installation, if UAC is enabled.
         If the prompt dialog does not say that the signature is valid, cancel the
         installation and download the file again from our <a class="reference internal" href="/downloads"><em>downloads</em></a>.
     </p>
-    <div class="screenshot">
-        <a class="fancybox-thumb" data-fancybox-group="gallery" href="/_static/img/news/install-uac.png" title="Install UAC prompt">
-            <img class="screenshot" src="/_static/img/news/install-uac-thumb.png" alt="Install UAC prompt" width="300" height="183"/>
-        </a>
-    </div>
+    <ul class="thumbnails">
+        <li>
+            <a class="fancybox-thumb thumbnail" data-fancybox-group="gallery" href="/_static/img/news/install-uac.png" title="Install UAC prompt">
+                <img class="screenshot" src="/_static/img/news/install-uac-thumb.png" alt="Install UAC prompt" width="300" height="183"/>
+            </a>
+        </li>
+    </ul>
 
 .. raw:: html
 

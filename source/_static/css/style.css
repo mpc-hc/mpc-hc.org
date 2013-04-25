@@ -187,6 +187,19 @@ table .pre {
     text-align: justify;
 }
 
+.thumbnails > li > a {
+    display: inline-block;
+}
+
+.thumbnails {
+    margin: 14px 0 0 0;
+}
+
+.thumbnail,
+.thumbnail:hover {
+    border: none;
+}
+
 .simple + blockquote,
 .first + blockquote {
     border-left: 0;
@@ -380,17 +393,14 @@ a.icon-rss:focus {
     .navbar .nav > li > a:first-child {
         margin-left: 10px;
     }
-    .row {
-        margin-left: -10px;
-    }
-    .span4 {
-        width: 250px;
-    }
 }
 
 @media screen and (max-width: 979px) {
     body {
         padding-top: 0;
+    }
+    .thumbnails {
+        text-align: center;
     }
     .noscript-warning {
         bottom: 0;
@@ -402,14 +412,6 @@ a.icon-rss:focus {
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-    img.screenshot,
-    .span4 {
-        width: 180px;
-        height: 130px;
-    }
-    .row {
-        margin-left: auto;
-    }
     .copyright {
         margin: 40px auto 30px -14px;
     }
@@ -418,13 +420,6 @@ a.icon-rss:focus {
 @media (max-width: 767px) {
     .page {
         margin: 30px;
-    }
-    div.screenshot {
-        display: inline;
-    }
-    img.screenshot {
-        width: 32%;
-        height: 24%;
     }
     .read-more {
         position: relative;
@@ -443,8 +438,8 @@ a.icon-rss:focus {
 }
 
 @media (max-width: 565px) {
-    div.screenshot,
-    hr.screenshot {
+    div.thumbs,
+    hr.thumbs {
         display: none;
     }
     .footer-left,
