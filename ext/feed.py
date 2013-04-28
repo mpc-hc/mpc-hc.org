@@ -62,7 +62,7 @@ def create_feed(app):
     etree.SubElement(image, 'url').text = app.config.base_uri + \
         '/_static/img/logo-128x128.png'
     etree.SubElement(image, 'title').text = app.config.feed_title
-    etree.SubElement(image, 'link').text = app.config.feed_link
+    etree.SubElement(image, 'link').text = app.config.base_uri
     etree.SubElement(image, 'width').text = '128'
     etree.SubElement(image, 'height').text = '128'
 
