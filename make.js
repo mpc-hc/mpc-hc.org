@@ -90,7 +90,7 @@
 
         var destCss = BUILD_TARGET + '_static/css/pack.css';
         var minifiedCss = cleanCSS.process(inCss, {
-            removeEmpty: false,
+            removeEmpty: true,
             keepSpecialComments: 0
         });
 
