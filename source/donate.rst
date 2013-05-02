@@ -41,10 +41,4 @@ Donations
 
 
     <h2>Donate via Flattr</h2>
-    <a class="FlattrButton" style="display:none" title="MPC-HC"
-       data-flattr-uid="MPC-HC"
-       data-flattr-tags="software, opensource"
-       data-flattr-category="software"
-       data-flattr-language="en_US"
-       href="http://mpc-hc.org">
-    </a>
+    <a class="FlattrButton" style="display:none" href="http://mpc-hc.org/"></a>
