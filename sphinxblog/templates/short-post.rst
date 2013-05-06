@@ -6,7 +6,9 @@
         <a href="{{ post.url }}/">{{ post.title }}</a>
     </h2>
 
-Posted by {{ post.author }} on {{ post.date }}
+    <div class="post-meta">
+    <p><i class="icon-calendar"></i> {{ post.date }} <i class="icon-user"></i> {{ post.author }}</p>
+    </div>
 
 {{ post.abstract }}
 

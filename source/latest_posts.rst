@@ -6,7 +6,9 @@
         <a href="/2013/04/25/1.6.7-released/">v1.6.7 is released</a>
     </h2>
 
-Posted by XhmikosR on 25/04/2013
+    <div class="post-meta">
+    <p><i class="icon-calendar"></i> 25/04/2013 <i class="icon-user"></i> XhmikosR</p>
+    </div>
 
 After almost 1 and a half month since the last stable build, we decided to release 1.6.7.
 
@@ -24,7 +26,9 @@ when using an INI file to store the settings.
         <a href="/2013/03/17/1.6.6-released/">v1.6.6 is released</a>
     </h2>
 
-Posted by XhmikosR on 17/03/2013
+    <div class="post-meta">
+    <p><i class="icon-calendar"></i> 17/03/2013 <i class="icon-user"></i> XhmikosR</p>
+    </div>
 
 After 3 months since the last stable build, we decided to release 1.6.6.
 
@@ -42,7 +46,9 @@ so you can easily verify their integrity.
         <a href="/2013/02/25/binaries-are-signed/">Binaries are signed</a>
     </h2>
 
-Posted by XhmikosR on 25/02/2013
+    <div class="post-meta">
+    <p><i class="icon-calendar"></i> 25/02/2013 <i class="icon-user"></i> XhmikosR</p>
+    </div>
 
 .. raw:: html
 
@@ -62,7 +68,9 @@ Posted by XhmikosR on 25/02/2013
         <a href="/2013/02/24/website-was-moved/">Website was moved to our own server</a>
     </h2>
 
-Posted by XhmikosR on 24/02/2013
+    <div class="post-meta">
+    <p><i class="icon-calendar"></i> 24/02/2013 <i class="icon-user"></i> XhmikosR</p>
+    </div>
 
 As most of the people who visit our website may have noticed, we have moved
 the website to our own server and domain.

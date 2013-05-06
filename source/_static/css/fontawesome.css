@@ -268,8 +268,10 @@ ul.icons li [class*=" icon-"] {
   .btn .icon-spin.icon-large {
     height: .75em;
   }
-}.icon-download-alt:before		{ content: "\f021"; }
-.icon-twitter:before		{ content: "\f022"; }
-.icon-facebook:before		{ content: "\f023"; }
-.icon-rss:before		{ content: "\f024"; }
-.icon-google-plus:before		{ content: "\f025"; }
+}.icon-user:before		{ content: "\f021"; }
+.icon-download-alt:before		{ content: "\f022"; }
+.icon-calendar:before		{ content: "\f023"; }
+.icon-twitter:before		{ content: "\f024"; }
+.icon-facebook:before		{ content: "\f025"; }
+.icon-rss:before		{ content: "\f026"; }
+.icon-google-plus:before		{ content: "\f027"; }
