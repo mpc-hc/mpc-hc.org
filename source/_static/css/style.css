@@ -81,8 +81,7 @@ table .pre {
     margin-bottom: 6px;
 }
 
-.full-news h1 + p,
-.new h2 + p {
+.full-news h1 + p {
     font-size: 80%;
 }
 
@@ -92,6 +91,11 @@ table .pre {
 
 .latest-news > h1 {
     padding-left: 36px;
+}
+
+.post-meta {
+    color: #777777;
+    font-size: 85%;
 }
 
 .new h2 {
