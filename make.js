@@ -81,8 +81,9 @@
         echo();
         echo("### Combining css files...");
 
+        // pack.css
         var inCss = cat(['_static/css/bootstrap.css',
-                         '_static/css/fontawesome.css',
+                         '_static/css/font-awesome.css',
                          '_static/css/jquery.fancybox.css',
                          '_static/css/jquery.fancybox-thumbs.css',
                          '_static/css/style.css'
@@ -95,6 +96,15 @@
         });
 
         fs.writeFileSync(destCss, minifiedCss, 'utf8');
+
+        // font-awesome-ie7.min.css
+
+        var fontAwesomeIE7 = cleanCSS.process(cat('_static/css/font-awesome-ie7.css'), {
+            removeEmpty: true,
+            keepSpecialComments: 1
+        });
+
+        fs.writeFileSync(BUILD_TARGET + '_static/css/font-awesome-ie7.min.css', fontAwesomeIE7, 'utf8');
 
         echo();
         echo("### Combining js files...");

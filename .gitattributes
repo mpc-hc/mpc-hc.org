@@ -1,3 +1,5 @@
-source/_static/css/bootstrap.css    eol=lf
-source/_static/css/fontawesome.css  eol=lf
-source/_static/js/bootstrap.js      eol=lf
+source/_static/css/bootstrap.css                eol=lf
+source/_static/css/font-awesome.css             eol=lf
+source/_static/css/font-awesome-ie7.css         eol=lf
+source/_static/font/fontawesome-webfont*.svg    eol=lf
+source/_static/js/bootstrap.js                  eol=lf

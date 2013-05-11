@@ -1,5 +1,4 @@
 http://twitter.github.io/bootstrap/customize.html
-http://www.icnfnt.com/
 
 Enabled components in v2.3.1:
 
@@ -36,3 +35,14 @@ Responsive (all of them)
 jQuery plugins
   Transitions
   Collapse
+
+
+http://www.icnfnt.com/
+
+.icon-calendar
+.icon-download-alt
+.icon-facebook
+.icon-google-plus
+.icon-rss
+.icon-twitter
+.icon-user
