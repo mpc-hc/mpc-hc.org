@@ -6,7 +6,7 @@ Getting started
 * Install [Python pip](http://www.pip-installer.org/en/latest/installing.html#alternative-installation-procedures)
 * Install Sphinx: `pip install Sphinx`
 * Install [node.js](http://nodejs.org/download/)
-* Install the dependencies: `npm install`
+* Install the node.js dependencies: `npm install`
 * On Windows: `SET PATH=C:\Python27;C:\Python27\Scripts;%PATH%`
 * Run `node make` or `node make website` to build the static site
 * Run the Python webserver to test your changes: `node make server`
