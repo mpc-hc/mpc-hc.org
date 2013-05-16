@@ -3,6 +3,24 @@
 
     <div class="new">
     <h2>
+        <a href="/2013/05/16/fake-apps/">Fake apps on Windows App Store</a>
+    </h2>
+
+    <div class="post-meta">
+    <p><i class="icon-calendar"></i> 16/05/2013 <i class="icon-user"></i> XhmikosR</p>
+    </div>
+
+It has come to our attention that there are several fake apps on the Windows App Store
+that use our program's name.
+
+.. raw:: html
+
+        <a class="read-more reference internal" href="/2013/05/16/fake-apps/">(read more...)</a>
+    </div>
+.. raw:: html
+
+    <div class="new">
+    <h2>
         <a href="/2013/04/25/1.6.7-released/">v1.6.7 is released</a>
     </h2>
 
@@ -60,22 +78,4 @@ so you can easily verify their integrity.
 .. raw:: html
 
         <a class="read-more reference internal" href="/2013/02/25/binaries-are-signed/">(read more...)</a>
-    </div>
-.. raw:: html
-
-    <div class="new">
-    <h2>
-        <a href="/2013/02/24/website-was-moved/">Website was moved to our own server</a>
-    </h2>
-
-    <div class="post-meta">
-    <p><i class="icon-calendar"></i> 24/02/2013 <i class="icon-user"></i> XhmikosR</p>
-    </div>
-
-As most of the people who visit our website may have noticed, we have moved
-the website to our own server and domain.
-
-.. raw:: html
-
-        <a class="read-more reference internal" href="/2013/02/24/website-was-moved/">(read more...)</a>
     </div>

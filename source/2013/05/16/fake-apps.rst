@@ -1,0 +1,23 @@
+:orphan:
+
+.. raw:: html
+
+    <div class="full-news">
+
+Fake apps on Windows App Store
+------------------------------
+
+Posted by XhmikosR on 16/05/2013
+
+It has come to our attention that there are several fake apps on the Windows App Store
+that use our program's name.
+
+We are not publishing MPC-HC on Windows App Store yet, so any programs you find there
+should be considered **fake** and should be **reported** as they violate the license.
+
+Don't forget, that our official builds, both the stable and the beta builds,
+:doc:`are digitally signed </2013/02/25/binaries-are-signed>`.
+
+.. raw:: html
+
+    </div>
