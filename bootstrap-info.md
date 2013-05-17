@@ -1,4 +1,4 @@
-http://twitter.github.com/bootstrap/customize.html
+http://twitter.github.io/bootstrap/customize.html
 http://www.icnfnt.com/
 
 Enabled components in v2.3.1:
