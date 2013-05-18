@@ -8,6 +8,12 @@
     "type": "git",
     "url": "https://github.com/mpc-hc/website.git"
   },
+  "bugs": {
+    "url": "https://github.com/mpc-hc/website/issues"
+  },
+  "license": "MIT",
+  "main": "make.js",
+  "readmeFilename": "Readme.md",
   "scripts": {
     "check": "node run-tests",
     "lint": "node run-tests"
@@ -21,8 +27,5 @@
   },
   "engines": {
     "node": "~0.8.0"
-  },
-  "license": "MIT",
-  "readmeFilename": "Readme.md",
-  "main": "make.js"
+  }
 }
