@@ -1,6 +1,6 @@
 {
   "name": "mpc-hc-website",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "MPC-HC Team (https://github.com/mpc-hc/website)",
   "description": "The dependencies to build MPC-HC's website",
   "homepage": "https://github.com/mpc-hc/website",
@@ -19,11 +19,11 @@
     "lint": "node run-tests"
   },
   "dependencies": {
-    "clean-css": "~1.0.2",
+    "clean-css": "~1.0.3",
     "csslint": "~0.9.10",
-    "jshint": "~2.0.1",
+    "jshint": "~2.1.2",
     "shelljs": "~0.1.4",
-    "uglify-js": "~2.3.4"
+    "uglify-js": "~2.3.5"
   },
   "engines": {
     "node": "~0.8.0"
