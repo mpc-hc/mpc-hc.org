@@ -3,13 +3,15 @@
 Acknowledgments
 ===============
 
+*(Work In Progress)*
+
 We would like to thank the following projects:
 
 * `7-Zip <http://www.7-zip.org/>`_
 * `Bootstrap <http://twitter.github.io/bootstrap/>`_
 * `Coverity Scan <http://scan.coverity.com/>`_
 * `Cppcheck <http://cppcheck.sourceforge.net/>`_
-* `Font Awesome <http://fortawesome.github.io/Font-Awesome/>`_ by Dave Gandy
+* `Font Awesome <http://fontawesome.io/>`_ by Dave Gandy
 * `GCC <http://gcc.gnu.org/>`_
 * `HTML5 Boilerplate <http://html5boilerplate.com/>`_
 * `Inno Setup <http://www.jrsoftware.org/isinfo.php>`_
