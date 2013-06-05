@@ -1,8 +1,7 @@
-*.log
 *.pyc
-build
-node_modules
-npm-debug.log
+/build
+/node_modules
+/npm-debug.log
 
 # gedit backup files
 *.*~
