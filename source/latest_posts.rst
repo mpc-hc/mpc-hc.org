@@ -12,7 +12,7 @@
 
 After almost 1 and a half month since the last stable build, we decided to release 1.6.8.
 
-This release is mainly a bugfix release.
+This release focuses mainly on improving DVB-T support alongside with the usual bugfixes.
 
 .. raw:: html
 
