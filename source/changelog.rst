@@ -7,7 +7,7 @@ Changelog
     This changelog only applies to current stable build.
     For complete logs check the `links below <#all-changelogs>`_.
 
-1.6.7 - 15 June 2013
+1.6.8 - 15 June 2013
 ---------------------
 
 * New:
