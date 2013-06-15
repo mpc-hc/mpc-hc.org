@@ -3,6 +3,25 @@
 
     <div class="new">
     <h2>
+        <a href="/2013/06/15/1.6.8-released/">v1.6.8 is released</a>
+    </h2>
+
+    <div class="post-meta">
+    <p><i class="icon-calendar"></i> 15/06/2013 <i class="icon-user"></i> XhmikosR</p>
+    </div>
+
+After almost 1 and a half month since the last stable build, we decided to release 1.6.8.
+
+This release is mainly a bugfix release.
+
+.. raw:: html
+
+        <a class="read-more reference internal" href="/2013/06/15/1.6.8-released/">(read more...)</a>
+    </div>
+.. raw:: html
+
+    <div class="new">
+    <h2>
         <a href="/2013/05/16/fake-apps/">Fake apps on Windows App Store</a>
     </h2>
 
@@ -56,26 +75,4 @@ so you can easily verify their integrity.
 .. raw:: html
 
         <a class="read-more reference internal" href="/2013/03/17/1.6.6-released/">(read more...)</a>
-    </div>
-.. raw:: html
-
-    <div class="new">
-    <h2>
-        <a href="/2013/02/25/binaries-are-signed/">Binaries are signed</a>
-    </h2>
-
-    <div class="post-meta">
-    <p><i class="icon-calendar"></i> 25/02/2013 <i class="icon-user"></i> XhmikosR</p>
-    </div>
-
-.. raw:: html
-
-    <p>
-        Thanks to <strong><a href="http://www.certum.eu/certum/cert,eindex_en.xml">Certum</a></strong>,
-        binaries will be digitally signed!
-    </p>
-
-.. raw:: html
-
-        <a class="read-more reference internal" href="/2013/02/25/binaries-are-signed/">(read more...)</a>
     </div>

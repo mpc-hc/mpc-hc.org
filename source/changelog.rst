@@ -7,57 +7,64 @@ Changelog
     This changelog only applies to current stable build.
     For complete logs check the `links below <#all-changelogs>`_.
 
-1.6.7 - 25 April 2013
+1.6.7 - 15 June 2013
 ---------------------
 
 * New:
 
- * DVB capture: Improve channel switching
+ * DVB: Show the parental rating and the content type within the EPG information when available
 
- * Subtitle downloader improvements:
+ * Ticket :trac:`#2872`, Add support for DVB-T2 and improve channel switching
+   (new options are available to have a finer control on switching process)
 
-   * Ticket :trac:`#2144`, Sort by language and then by filename by default. Subtitles matching a language set as preferred in the options are now displayed first in the result list
-
-   * Ticket :trac:`#2926`, Double-clicking or pressing the "Enter" key will download the selected subtitle(s)
-
- * Ticket :trac:`#2837`, New INI parser: the accesses are now cached for faster settings loading/saving. Using the INI file should now be as fast as using the registry
-
- * Ticket :trac:`#2987`, Playlist improvements:
-
-   * Scroll and select the first newly added item
-
-   * Put MPC-HC on top and give the focus to the playlist after a drag and drop
+ * Ticket :trac:`#3179`, DVB: Support EPG information for Freeview broadcast (UK DVB-T2)
 
 * Changed:
 
- * Ticket :trac:`#2689`, Replace "On top -> Never" by "On top -> Default". In most of the cases "On top -> Default" will have the exact same behavior than "On top -> Never"
-   but it won't try to override the "On top" flag if an external tool sets it
+ * Audio Switcher improvements:
 
- * Ticket :trac:`#3049`, Re-enable VSync by default for Windows XP users
+   * Ticket :trac:`#1936`, Improve the normalization algorithm to avoid huge volume variations
+
+   * Use percentage for the boost setting since it is easier to understand for most people
+
+   * Add a setting to change the max normalization factor and use a default max normalization factor of 4 instead of 10
+
+ * Ticket :trac:`#2567`, New About dialog with more detailed information and a "Copy to clipboard" feature to ease support
 
 * Updated:
 
- * Little CMS to v2.5 (git cde00fd)
+ * Little CMS to v2.5-rc1
 
- * VirtualDub to v1.10.4-test6
+ * zlib to v1.2.8
 
- * Basque, Catalan, Czech, French, German, Greek, Simplified Chinese, Slovak, Turkish and Ukrainian translations
+ * Unrar to v5.0.6
+
+ * MediaInfoLib to v0.7.63
+
+ * ZenLib to v0.4.29
+
+ * Basque, Czech, French, German, Greek, Japanese, Romanian, Russian, Simplified / Traditional Chinese,
+   Turkish and Ukrainian translations
 
 * Fixed:
 
- * Fix a crash when VMR-7 (renderless) renderer failed to load
+ * PGS and DVB subtitles: Fix missing subtitles after resizing the window when using the subpicture queue
 
- * SSA subtitles rendering: Improve error checking to avoid possible crashes when the SSA script was using obviously wrong values
+ * Open dialog: if a URL was previously enterer in the "Open" or "Dub" fields an error message was shown when clicking the "Browse" button
 
- * Ticket :trac:`#1392`, DVD subtitles: Improve rendering in case of overlapping. Ensure that both subtitles will be shown.
+ * Vobsub files with language/title in their filenames weren't auto-loaded
 
- * Ticket :trac:`#2991`, Fix loading of MicroDVD subtitles
+ * Fix a memory leak: the memory consumption would increase noticeably until the file was closed when the file had chapters and the chapter marks on seekbar were enabled
 
- * Ticket :trac:`#3001`, "After Playback": Always give "Once" events a higher priority than "Always" events
+ * Capture mode: Fix reseting the renderer. When reseting the renderer in capture mode playback was stopped and never restarted
 
- * Ticket :trac:`#3023`, "File -> Load Subtitle" didn't work anymore for DVD
+ * Ticket :trac:`#3110`, DVB: Improve compatibility with some drivers for which MPC-HC failed to find any channel during the channel scan
 
- * Ticket :trac:`#3045`, Go to dialog: Fix frame rate detection for DVDs
+ * Ticket :trac:`#3113`, MPC-HC was sometimes slow to close (audio kept playing for a few seconds)
+
+ * Ticket :trac:`#3175`, DVB: Changing the channel was exiting fullscreen or maximized mode
+
+ * Ticket :trac:`#3176`, EVR renderers: Fix high CPU and memory usage when switching the user account
 
 
 All changelogs

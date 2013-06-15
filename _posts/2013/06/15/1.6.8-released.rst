@@ -1,0 +1,12 @@
+.. title: v1.6.8 is released
+.. author: XhmikosR
+
+.. abstract
+
+After almost 1 and a half month since the last stable build, we decided to release 1.6.8.
+
+This release is mainly a bugfix release.
+
+.. body
+
+You can download the new version :doc:`here </downloads>`. For the complete changes see the :doc:`changelog </changelog>`.
