@@ -7,20 +7,85 @@
  * Copyright (C) 2013 MPC-HC Team
  */
 
+
+require('shelljs/make');
+var fs = require('fs');
+var ROOT_DIR = __dirname + '/';         // absolute path to project's root
+var BUILD_DIR = ROOT_DIR + 'build/';
+var BUILD_TARGET = BUILD_DIR + 'website/';
+var SRC_DIR = ROOT_DIR + 'source/';
+
+
+function writeText(file, text) {
+    'use strict';
+    var content = fs.writeFileSync(file, text, 'utf-8');
+    return content;
+}
+
+
+function minify() {
+    'use strict';
+
+    cd(SRC_DIR);
+    var cleanCSS = require('clean-css');
+    var UglifyJS = require('uglify-js');
+
+    echo();
+    echo("### Combining css files...");
+
+    // pack.css
+    var inCss = cat(['_static/css/bootstrap.css',
+                     '_static/css/font-awesome.css',
+                     '_static/css/jquery.fancybox.css',
+                     '_static/css/jquery.fancybox-thumbs.css',
+                     '_static/css/style.css'
+    ]);
+
+    var destCss = BUILD_TARGET + '_static/css/pack.css';
+    var minifiedCss = cleanCSS.process(inCss, {
+        removeEmpty: true,
+        keepSpecialComments: 0
+    });
+
+    writeText(destCss, minifiedCss);
+
+    // font-awesome-ie7.min.css
+
+    var fontAwesomeIE7 = cleanCSS.process(cat('_static/css/font-awesome-ie7.css'), {
+        removeEmpty: true,
+        keepSpecialComments: 1
+    });
+
+    writeText(BUILD_TARGET + '_static/css/font-awesome-ie7.min.css', fontAwesomeIE7);
+
+    echo();
+    echo("### Combining js files...");
+
+    var inJs = cat(['_static/js/plugins.js',
+                    '_static/js/bootstrap.js',
+                    '_static/js/jquery.mousewheel.js',
+                    '_static/js/jquery.fancybox.js',
+                    '_static/js/jquery.fancybox-thumbs.js']);
+
+    var destJs = BUILD_TARGET + '_static/js/pack.js';
+    var minifiedJs = UglifyJS.minify(inJs, {
+        compress: true,
+        fromString: true, // this is needed to pass JS source code instead of filenames
+        mangle: true,
+        warnings: false
+    });
+
+    writeText(destJs, minifiedJs.code);
+
+    echo();
+    echo('### Build finished. The HTML pages are in' + ' ' + BUILD_TARGET + '.');
+}
+
+
 (function () {
     'use strict';
 
-    require('shelljs/make');
-    var fs = require('fs'),
-        cleanCSS = require('clean-css'),
-        UglifyJS = require('uglify-js'),
-
-        ROOT_DIR = __dirname + '/',         // absolute path to project's root
-        BUILD_DIR = ROOT_DIR + 'build/',
-        BUILD_TARGET = BUILD_DIR + 'website/',
-        SRC_DIR = ROOT_DIR + 'source/',
-        SPHINXOPTS = '-d' + ' "' + BUILD_DIR + 'doctrees/' + '" "' + SRC_DIR + '" "' + BUILD_TARGET + '"';
-
+    var SPHINXOPTS = '-d' + ' "' + BUILD_DIR + 'doctrees/' + '" "' + SRC_DIR + '" "' + BUILD_TARGET + '"';
 
     //
     // make website
@@ -35,11 +100,10 @@
         echo("### Building site...");
         exec('sphinx-build -b dirhtml' + ' ' + SPHINXOPTS);
 
-
         echo();
         echo("### Removing files we don't need...");
 
-        pushd(BUILD_TARGET);
+        cd(BUILD_TARGET);
 
         var filesToRemoveFromDist = [
             '.buildinfo',
@@ -59,13 +123,11 @@
 
         rm('-rf', filesToRemoveFromDist);
 
-        popd();
-
 
         echo();
         echo("### Copying files...");
 
-        pushd(SRC_DIR);
+        cd(SRC_DIR);
 
         var filesToCopyToDist = [
             'robots.txt',
@@ -78,57 +140,8 @@
         cp('-f', '_static/js/html5shiv.js', BUILD_TARGET + '_static/js');
         cp('-f', '_static/js/jquery-*.min.js', BUILD_TARGET + '_static/js');
 
-        echo();
-        echo("### Combining css files...");
+        minify();
 
-        // pack.css
-        var inCss = cat(['_static/css/bootstrap.css',
-                         '_static/css/font-awesome.css',
-                         '_static/css/jquery.fancybox.css',
-                         '_static/css/jquery.fancybox-thumbs.css',
-                         '_static/css/style.css'
-        ]);
-
-        var destCss = BUILD_TARGET + '_static/css/pack.css';
-        var minifiedCss = cleanCSS.process(inCss, {
-            removeEmpty: true,
-            keepSpecialComments: 0
-        });
-
-        fs.writeFileSync(destCss, minifiedCss, 'utf8');
-
-        // font-awesome-ie7.min.css
-
-        var fontAwesomeIE7 = cleanCSS.process(cat('_static/css/font-awesome-ie7.css'), {
-            removeEmpty: true,
-            keepSpecialComments: 1
-        });
-
-        fs.writeFileSync(BUILD_TARGET + '_static/css/font-awesome-ie7.min.css', fontAwesomeIE7, 'utf8');
-
-        echo();
-        echo("### Combining js files...");
-
-        var inJs = cat(['_static/js/plugins.js',
-                        '_static/js/bootstrap.js',
-                        '_static/js/jquery.mousewheel.js',
-                        '_static/js/jquery.fancybox.js',
-                        '_static/js/jquery.fancybox-thumbs.js']);
-
-        var destJs = BUILD_TARGET + '_static/js/pack.js';
-        var minifiedJs = UglifyJS.minify(inJs, {
-            compress: true,
-            fromString: true, // this is needed to pass JS source code instead of filenames
-            mangle: true,
-            warnings: false
-        });
-
-        fs.writeFileSync(destJs, minifiedJs.code, 'utf8');
-
-        echo();
-        echo('### Build finished. The HTML pages are in' + ' ' + BUILD_TARGET + '.');
-
-        popd();
     };
 
 

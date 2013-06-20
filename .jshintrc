@@ -23,8 +23,6 @@
     "cp": true,
     "echo": true,
     "exec": true,
-    "popd": true,
-    "pushd": true,
     "require": true,
     "rm": true,
     "target": true
