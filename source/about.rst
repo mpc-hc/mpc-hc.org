@@ -25,6 +25,7 @@ Active (sorted by name):
     :header: "Name", "Email", "Role"
     :widths: 20, 40, 40
 
+    "alexmarsev", "alexmarsev ~AT~ users.sourceforge ~dot~ net", "Code"
     "Armada", "armada651 ~AT~ users.sourceforge ~dot~ net", "Code"
     "Goran (vBm) Džaferi", "thevbm ~AT~ users.sourceforge ~dot~ net", "New website, Trac moderator, IRC"
     "janwillem32", "janwillem32 ~AT~ users.sourceforge ~dot~ net", "Code"
@@ -105,7 +106,7 @@ Translators
 Contributors
 ############
 
-Alexx999, alexmarsev, foxx1337, heksesang, judelaw, madshi, mtrz, nielsm, skaarj1, VSFilterMod Team, X-Dron
+Alexx999, foxx1337, heksesang, judelaw, madshi, mtrz, nielsm, skaarj1, VSFilterMod Team, X-Dron
 
 
 Notes
@@ -137,7 +138,7 @@ Third-party libraries
     "libogg", "New BSD License", "http://www.xiph.org/"
     "Little CMS", "MIT License", "http://www.littlecms.com/"
     "Logitech SDK", "—", "—"
-    "MediaInfoLib", "BSD", "http://mediainfo.sourceforge.net/"
+    "MediaInfoLib", "Simplified BSD License", "http://mediainfo.sourceforge.net/"
     "MultiMon", "CPOL", "http://www.codeproject.com/KB/GDI/multimon.aspx"
     "QuickTime SDK", "—", "http://developer.apple.com/quicktime/download/"
     "RARFileSource", "GPLv2", "http://www.v12pwr.com/RARFileSource/"
