@@ -8,40 +8,40 @@
  */
 
 
-require('shelljs/make');
-var fs = require('fs');
-var ROOT_DIR = __dirname + '/';         // absolute path to project's root
-var BUILD_DIR = ROOT_DIR + 'build/';
-var BUILD_TARGET = BUILD_DIR + 'website/';
-var SRC_DIR = ROOT_DIR + 'source/';
+require("shelljs/make");
+var fs = require("fs");
+var rootDir = __dirname + "/";         // absolute path to project's root
+var buildDir = rootDir + "build/";
+var buildTarget = buildDir + "website/";
+var srcDir = rootDir + "source/";
 
 
 function writeText(file, text) {
-    'use strict';
-    var content = fs.writeFileSync(file, text, 'utf-8');
+    "use strict";
+    var content = fs.writeFileSync(file, text, "utf-8");
     return content;
 }
 
 
 function minify() {
-    'use strict';
+    "use strict";
 
-    cd(SRC_DIR);
-    var cleanCSS = require('clean-css');
-    var UglifyJS = require('uglify-js');
+    cd(srcDir);
+    var cleanCSS = require("clean-css");
+    var uglifyJS = require("uglify-js");
 
     echo();
     echo("### Combining css files...");
 
     // pack.css
-    var inCss = cat(['_static/css/bootstrap.css',
-                     '_static/css/font-awesome.css',
-                     '_static/css/jquery.fancybox.css',
-                     '_static/css/jquery.fancybox-thumbs.css',
-                     '_static/css/style.css'
+    var inCss = cat(["_static/css/bootstrap.css",
+                     "_static/css/font-awesome.css",
+                     "_static/css/jquery.fancybox.css",
+                     "_static/css/jquery.fancybox-thumbs.css",
+                     "_static/css/style.css"
     ]);
 
-    var destCss = BUILD_TARGET + '_static/css/pack.css';
+    var destCss = buildTarget + "_static/css/pack.css";
     var minifiedCss = cleanCSS.process(inCss, {
         removeEmpty: true,
         keepSpecialComments: 0
@@ -51,24 +51,24 @@ function minify() {
 
     // font-awesome-ie7.min.css
 
-    var fontAwesomeIE7 = cleanCSS.process(cat('_static/css/font-awesome-ie7.css'), {
+    var fontAwesomeIE7 = cleanCSS.process(cat("_static/css/font-awesome-ie7.css"), {
         removeEmpty: true,
         keepSpecialComments: 1
     });
 
-    writeText(BUILD_TARGET + '_static/css/font-awesome-ie7.min.css', fontAwesomeIE7);
+    writeText(buildTarget + "_static/css/font-awesome-ie7.min.css", fontAwesomeIE7);
 
     echo();
     echo("### Combining js files...");
 
-    var inJs = cat(['_static/js/plugins.js',
-                    '_static/js/bootstrap.js',
-                    '_static/js/jquery.mousewheel.js',
-                    '_static/js/jquery.fancybox.js',
-                    '_static/js/jquery.fancybox-thumbs.js']);
+    var inJs = cat(["_static/js/plugins.js",
+                    "_static/js/bootstrap.js",
+                    "_static/js/jquery.mousewheel.js",
+                    "_static/js/jquery.fancybox.js",
+                    "_static/js/jquery.fancybox-thumbs.js"]);
 
-    var destJs = BUILD_TARGET + '_static/js/pack.js';
-    var minifiedJs = UglifyJS.minify(inJs, {
+    var destJs = buildTarget + "_static/js/pack.js";
+    var minifiedJs = uglifyJS.minify(inJs, {
         compress: true,
         fromString: true, // this is needed to pass JS source code instead of filenames
         mangle: true,
@@ -78,67 +78,68 @@ function minify() {
     writeText(destJs, minifiedJs.code);
 
     echo();
-    echo('### Build finished. The HTML pages are in' + ' ' + BUILD_TARGET + '.');
+    echo("### Build finished. The HTML pages are in" + " " + buildTarget + ".");
 }
 
 
 (function () {
-    'use strict';
+    "use strict";
 
-    var SPHINXOPTS = '-d' + ' "' + BUILD_DIR + 'doctrees/' + '" "' + SRC_DIR + '" "' + BUILD_TARGET + '"';
+    /*jshint -W108*/
+    var SPHINXOPTS = '-d' + ' "' + buildDir + 'doctrees/' + '" "' + srcDir + '" "' + buildTarget + '"';
+    /*jshint -W108*/
 
     //
     // make website
     //
     target.website = function () {
-        cd(ROOT_DIR);
+        cd(rootDir);
         echo();
         echo("### Building posts...");
-        exec('python -u sphinxblog/gen.py');
+        exec("python -u sphinxblog/gen.py");
 
         echo();
         echo("### Building site...");
-        exec('sphinx-build -b dirhtml' + ' ' + SPHINXOPTS);
+        exec("sphinx-build -b dirhtml" + " " + SPHINXOPTS);
 
         echo();
         echo("### Removing files we don't need...");
 
-        cd(BUILD_TARGET);
+        cd(buildTarget);
 
         var filesToRemoveFromDist = [
-            '.buildinfo',
-            '_static/*.css',
-            '_static/*.gif',
-            '_static/*.js',
-            '_static/*.png',
-            '_static/img/cloudvps.png',
-            '_static/css/*.css',
-            '_static/favicon.ico',
-            '_static/js/*.js',
-            'genindex',
-            'objects.inv',
-            'search',
-            'searchindex.js'
+            ".buildinfo",
+            "_static/*.css",
+            "_static/*.gif",
+            "_static/*.js",
+            "_static/*.png",
+            "_static/img/cloudvps.png",
+            "_static/css/*.css",
+            "_static/favicon.ico",
+            "_static/js/*.js",
+            "genindex",
+            "objects.inv",
+            "search",
+            "searchindex.js"
         ];
 
-        rm('-rf', filesToRemoveFromDist);
+        rm("-rf", filesToRemoveFromDist);
 
 
         echo();
         echo("### Copying files...");
 
-        cd(SRC_DIR);
+        cd(srcDir);
 
         var filesToCopyToDist = [
-            'robots.txt',
-            'version.txt',
-            '_static/apple-touch-icon*.png',
-            '_static/favicon.ico'
+            "robots.txt",
+            "version.txt",
+            "_static/apple-touch-icon*.png",
+            "_static/favicon.ico"
         ];
 
-        cp('-f', filesToCopyToDist, BUILD_TARGET);
-        cp('-f', '_static/js/html5shiv.js', BUILD_TARGET + '_static/js');
-        cp('-f', '_static/js/jquery-*.min.js', BUILD_TARGET + '_static/js');
+        cp("-f", filesToCopyToDist, buildTarget);
+        cp("-f", ["_static/js/html5shiv.js", "_static/js/jquery-*.min.js"], buildTarget + "_static/js");
 
         minify();
 
@@ -149,10 +150,10 @@ function minify() {
     // make clean
     //
     target.clean = function () {
-        cd(ROOT_DIR);
+        cd(rootDir);
         echo();
-        echo('### Cleaning build...');
-        rm('-rf', BUILD_DIR);
+        echo("### Cleaning build...");
+        rm("-rf", buildDir);
     };
 
 
@@ -178,9 +179,9 @@ function minify() {
     //
     target.server = function () {
         echo();
-        echo('### Starting webserver...');
-        cd(BUILD_TARGET);
-        exec('python -u -m SimpleHTTPServer', {async: true});
+        echo("### Starting webserver...");
+        cd(buildTarget);
+        exec("python -u -m SimpleHTTPServer", {async: true});
     };
 
 

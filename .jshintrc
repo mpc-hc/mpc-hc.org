@@ -12,6 +12,7 @@
   "node": true,
   "noempty": true,
   "plusplus": false,
+  "quotmark": "double",
   "regexp": true,
   "strict": false,
   "trailing": true,

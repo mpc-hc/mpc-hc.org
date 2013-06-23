@@ -1,3 +1,5 @@
+/*jshint quotmark:true*/
+
 // Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;
@@ -26,7 +28,7 @@
 // Add custom class to our download links
 
 $('#binaries, #pdb-files').find('.external').each(function() {
-    $(this).addClass("sourceforge_accelerator_link");
+    $(this).addClass('sourceforge_accelerator_link');
 });
 
 // Google analytics
