@@ -14,18 +14,8 @@
   "plusplus": false,
   "quotmark": "double",
   "regexp": true,
+  "shelljs": true,
   "strict": false,
   "trailing": true,
-  "unused": true,
-  "globals": {
-    "__dirname": true,
-    "cat": true,
-    "cd": true,
-    "cp": true,
-    "echo": true,
-    "exec": true,
-    "require": true,
-    "rm": true,
-    "target": true
-  }
+  "unused": true
 }
