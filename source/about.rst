@@ -138,7 +138,7 @@ Third-party libraries
     "libogg", "New BSD License", "http://www.xiph.org/"
     "Little CMS", "MIT License", "http://www.littlecms.com/"
     "Logitech SDK", "—", "—"
-    "MediaInfoLib", "Simplified BSD License", "http://mediainfo.sourceforge.net/"
+    "MediaInfoLib", "Simplified BSD License", "http://mediaarea.net/MediaInfo"
     "MultiMon", "CPOL", "http://www.codeproject.com/KB/GDI/multimon.aspx"
     "QuickTime SDK", "—", "http://developer.apple.com/quicktime/download/"
     "RARFileSource", "GPLv2", "http://www.v12pwr.com/RARFileSource/"
