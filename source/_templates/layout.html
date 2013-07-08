@@ -12,6 +12,8 @@
         {%- if favicon %}
         <link rel="shortcut icon" href="{{ pathto( favicon, 1) }}">
         {%- endif %}
+        <meta name="msapplication-TileColor" content="#D83434">
+        <meta name="msapplication-TileImage" content="{{ pathto('_static/img/TileImage.png', 1) }}">
         {%- block feed %}
         <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS 2.0">
         {%- endblock %}
