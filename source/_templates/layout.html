@@ -55,7 +55,9 @@
                             {{ nav.item('about', pagename, pathto('about'), "About") }}
                             <li><a href="https://trac.mpc-hc.org/">Wiki</a></li>
                             <li class="divider-vertical"></li>
-                            <li><a href="{{ pathto('donate') }}"><img src="{{ pathto('_static/img/paypal.png', 1) }}" width="74" height="21" title="Donate" alt="Paypal logo"/></a></li>
+                            <li {%- if pagename == 'donate' %} class="active"{% endif %}>
+                                <a {%- if pagename != 'donate' %} href="{{ pathto('donate') }}"{% endif %}><img src="{{ pathto('_static/img/paypal.png', 1) }}" width="74" height="21" title="Donate" alt="Paypal logo"/></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
