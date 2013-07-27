@@ -203,6 +203,11 @@ table .pre {
     border: none;
 }
 
+.btn > .icon-download-alt {
+    margin-right: 6px;
+    margin-top: 2px !important;
+}
+
 .simple + blockquote,
 .first + blockquote {
     border-left: 0;
