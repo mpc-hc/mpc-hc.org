@@ -16,7 +16,7 @@ cd(__dirname);
 //
 // JSHint
 //
-jshintBin = "./node_modules/jshint/bin/jshint";
+var jshintBin = "./node_modules/jshint/bin/jshint";
 
 if (!test("-f", jshintBin)) {
     echo("JSHint not found. Run `npm install` in the root dir first.");
@@ -35,7 +35,7 @@ if (exec("node" + " " + jshintBin + " " + "make.js run-tests.js source/_static/j
 //
 // csslint
 //
-csslintBin = "./node_modules/csslint/cli.js";
+var csslintBin = "./node_modules/csslint/cli.js";
 
 if (!test("-f", csslintBin)) {
     echo("csslint not found. Run `npm install` in the root dir first.");
