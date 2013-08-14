@@ -1,3 +1,5 @@
+[![Dependency Status](https://gemnasium.com/mpc-hc/website.png)](https://gemnasium.com/mpc-hc/website)
+
 Getting started
 ---------------
 
