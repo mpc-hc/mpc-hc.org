@@ -1,4 +1,4 @@
-/* jshint quotmark:true, browser:true, jquery:true */
+/* jshint quotmark:true, browser:true, jquery:true, strict:false */
 
 // Avoid `console` errors in browsers that lack a console.
 (function() {

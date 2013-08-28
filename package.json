@@ -42,7 +42,7 @@
     "quotmark": "double",
     "regexp": true,
     "shelljs": true,
-    "strict": false,
+    "strict": true,
     "trailing": true,
     "unused": true
   },

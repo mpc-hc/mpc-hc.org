@@ -7,6 +7,7 @@
  * Copyright (C) 2013 MPC-HC Team
  */
 
+"use strict";
 
 require("shelljs/make");
 var fs = require("fs");
@@ -17,18 +18,16 @@ var srcDir = rootDir + "source/";
 
 
 function writeText(file, text) {
-    "use strict";
     var content = fs.writeFileSync(file, text, "utf-8");
     return content;
 }
 
 
 function minify() {
-    "use strict";
-
-    cd(srcDir);
     var cleanCSS = require("clean-css");
     var uglifyJS = require("uglify-js");
+
+    cd(srcDir);
 
     echo();
     echo("### Combining css files...");
@@ -38,16 +37,14 @@ function minify() {
                      "_static/css/font-awesome.css",
                      "_static/css/jquery.fancybox.css",
                      "_static/css/jquery.fancybox-thumbs.css",
-                     "_static/css/style.css"
-    ]);
+                     "_static/css/style.css"]);
 
-    var destCss = buildTarget + "_static/css/pack.css";
     var minifiedCss = cleanCSS.process(inCss, {
         removeEmpty: true,
         keepSpecialComments: 0
     });
 
-    writeText(destCss, minifiedCss);
+    writeText(buildTarget + "_static/css/pack.css", minifiedCss);
 
     echo();
     echo("### Combining js files...");
@@ -58,7 +55,6 @@ function minify() {
                     "_static/js/jquery.fancybox.js",
                     "_static/js/jquery.fancybox-thumbs.js"]);
 
-    var destJs = buildTarget + "_static/js/pack.js";
     var minifiedJs = uglifyJS.minify(inJs, {
         compress: true,
         fromString: true, // this is needed to pass JS source code instead of filenames
@@ -66,7 +62,7 @@ function minify() {
         warnings: false
     });
 
-    writeText(destJs, minifiedJs.code);
+    writeText(buildTarget + "_static/js/pack.js", minifiedJs.code);
 
     echo();
     echo("### Build finished. The HTML pages are in" + " " + buildTarget + ".");
@@ -74,8 +70,6 @@ function minify() {
 
 
 (function () {
-    "use strict";
-
     /*jshint -W108*/
     var SPHINXOPTS = '-d' + ' "' + buildDir + 'doctrees/' + '" "' + srcDir + '" "' + buildTarget + '"';
     /*jshint -W108*/
