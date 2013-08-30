@@ -64,6 +64,19 @@ function minify() {
 
     writeText(buildTarget + "_static/js/pack.js", minifiedJs.code);
 
+    // JS for IE < 9
+    var inJsIE = cat(["_static/js/html5shiv.js",
+                      "_static/js/respond.js"]);
+
+    var minifiedJsIE = uglifyJS.minify(inJsIE, {
+        compress: true,
+        fromString: true, // this is needed to pass JS source code instead of filenames
+        mangle: true,
+        warnings: false
+    });
+
+    writeText(buildTarget + "_static/js/html5shiv-respond.min.js", minifiedJsIE.code);
+
     echo();
     echo("### Build finished. The HTML pages are in" + " " + buildTarget + ".");
 }
@@ -124,7 +137,7 @@ function minify() {
         ];
 
         cp("-f", filesToCopyToDist, buildTarget);
-        cp("-f", ["_static/js/html5shiv.js", "_static/js/respond.min.js", "_static/js/selectivizr-min.js", "_static/js/jquery-*.min.js"], buildTarget + "_static/js");
+        cp("-f", ["_static/js/selectivizr-min.js", "_static/js/jquery-*.min.js"], buildTarget + "_static/js");
         cp("-f", ["_static/css/font-awesome-ie7.min.css"], buildTarget + "_static/css");
 
         minify();
