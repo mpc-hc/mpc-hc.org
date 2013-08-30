@@ -50,7 +50,7 @@ table .pre {
     font-size: 85%;
 }
 
-.content-container {
+body > .container {
     background-color: white;
     margin-bottom: 30px;
     -webkit-border-radius: 4px;
@@ -134,53 +134,14 @@ table .pre {
     max-width: 940px;
 }
 
-.navbar .brand,
-.navbar .nav > li > a {
-    -webkit-transition: all 0.15s linear;
-       -moz-transition: all 0.15s linear;
-         -o-transition: all 0.15s linear;
-            transition: all 0.15s linear;
-}
-
-.navbar .divider-vertical {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 3px;
-    background-color: #D2D2D2;
-    border-right: 1px solid white;
-}
-
-.navbar .brand {
+.navbar-brand {
     font-size: 21px;
     font-weight: bold;
 }
 
-.navbar .brand:hover,
-.navbar .brand:focus {
+.navbar-brand:focus,
+.navbar-brand:hover {
     text-shadow: 0 0 20px #08C;
-}
-
-.navbar .nav > li > a {
-    -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
-    font-weight: bold;
-    margin-top: 7px;
-    padding: 5px 6px;
-}
-
-.navbar .nav > li > a:focus {
-    color: black;
-}
-
-.navbar .nav > li > a:hover {
-    background-color: #E5E5E5;
-}
-
-.navbar .nav > li.active > a,
-.navbar .nav > li.active > a:hover {
-    color: #08C;
 }
 
 .lead {
@@ -188,19 +149,6 @@ table .pre {
     font-weight: normal;
     line-height: 27px;
     text-align: justify;
-}
-
-.thumbnails > li > a {
-    display: inline-block;
-}
-
-.thumbnails {
-    margin: 14px 0 0 0;
-}
-
-.thumbnail,
-.thumbnail:hover {
-    border: none;
 }
 
 .btn > .icon-download-alt {
@@ -211,6 +159,9 @@ table .pre {
 .simple + blockquote,
 .first + blockquote {
     border-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 blockquote p {
@@ -303,39 +254,11 @@ footer {
 
 footer h3 {
     border-bottom: 0;
-    margin-bottom: 10px;
-    margin-top: 0;
-}
-
-footer li {
-    list-style-type: none;
+    margin: 0 0 10px 0;
 }
 
 footer ul {
     margin: 0;
-}
-
-.footer-left,
-.footer-center {
-    border-right: 1px solid #D2D2D2;
-}
-
-.footer-left {
-    text-align: left;
-}
-
-.footer-center {
-    margin-left: 0;
-    text-align: center;
-}
-
-.footer-right {
-    border-right: none;
-    text-align: right;
-}
-
-.copyright {
-    margin: 40px auto 30px auto;
 }
 
 .noscript-warning {
@@ -393,19 +316,27 @@ a.icon-rss:focus {
 
 
 /* -- media queries -- */
-@media (min-width: 980px) {
+@media (min-width: 992px) {
     .navbar .nav > li > a:first-child {
         margin-left: 10px;
     }
 }
 
-@media screen and (max-width: 979px) {
+@media (max-width: 768px) {
     body {
-        padding-top: 0;
+        background-image: none;
     }
-    .thumbnails {
-        text-align: center;
+
+    .page {
+        margin: 0;
     }
+
+    body > .container {
+        -webkit-box-shadow: none;
+           -moz-box-shadow: none;
+                box-shadow: none;
+    }
+
     .noscript-warning {
         bottom: 0;
         display: block;
@@ -413,60 +344,54 @@ a.icon-rss:focus {
         width: 100%;
         z-index: 100;
     }
-}
 
-@media (min-width: 768px) and (max-width: 979px) {
-    .copyright {
-        margin: 40px auto 30px -14px;
-    }
-}
-
-@media (max-width: 767px) {
     .page {
         margin: 30px;
     }
+
     .read-more {
         position: relative;
         top: -8px;
     }
+
     .footer-left,
     .footer-center,
     .footer-right {
         border-right: none;
-        margin: 10px 0;
-        text-align: left;
-    }
-    .copyright {
-        margin: 30px auto 20px auto;
     }
 }
 
-@media (max-width: 565px) {
-    div.thumbs,
-    hr.thumbs {
-        display: none;
+@media (min-width: 768px) {
+    .navbar-toggle + .nav-collapse {
+        margin-top: 0;
     }
-    .footer-left,
-    .footer-center,
+
+    .footer-left {
+        text-align: left;
+    }
+
+    .footer-center {
+        margin-left: 0 !important;
+        text-align: center;
+    }
+
     .footer-right {
-        margin: 10px 0;
-        text-align: left;
+        border-right: none;
+        text-align: right;
     }
+
+    .footer-left,
+    .footer-center {
+        border-right: 1px solid #D2D2D2;
+    }
+
     .copyright {
-        margin: 8px auto;
+        margin: 40px auto 30px auto;
     }
 }
 
-@media (max-width: 480px) {
-    body {
-        background-image: none;
-    }
-    .page {
-        margin: 0;
-    }
-    .content-container {
-        -webkit-box-shadow: none;
-           -moz-box-shadow: none;
-                box-shadow: none;
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-nav > li > a {
+        padding: 15px 8px 8px 8px
     }
 }
