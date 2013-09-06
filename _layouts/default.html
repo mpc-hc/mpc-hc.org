@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }} &ndash; MPC-HC</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700">
+        <link rel="stylesheet" href="/assets/css/pack.css">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <meta name="msapplication-TileColor" content="#D83434">
+        <meta name="msapplication-TileImage" content="/assets/img/TileImage.png">
+        <meta property="og:title" content="{{ title }} &ndash; MPC-HC">
+        <meta property="og:description" content="MPC-HC, the free, open source media player">
+        {% if page.name == "home" %}
+        <meta property="og:url" content="{{ site.url }}/">
+        {% else %}
+        <meta property="og:url" content="{{ site.url }}/{{ pagename }}">
+        {% endif %}
+        <meta property="og:image" content="{{ site.url }}/assets/img/logo-256x256.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="128">
+        <meta property="og:image:height" content="128">
+        <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS 2.0">
+        <meta name="description" content="MPC-HC, the free, open source media player">
+        <meta name="keywords" content="MPC, MPC-HC, Media Player Classic, Media Player Classic - Home Cinema, open source media player, video, audio, mkv, avi, xvid, x264, matroska">
+        <!--[if lt IE 9]>
+        <script src="/assets/js/html5shiv-respond.min.js"></script>
+        <![endif]-->
+        {% if page.name == "donate" %}
+        <script>
+            (function() {
+                var s = document.createElement('script');
+                var t = document.getElementsByTagName('script')[0];
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = '//api.flattr.com/js/0.6/load.js?mode=auto';
+                t.parentNode.insertBefore(s, t);
+            })();
+        </script>
+        {% endif %}
+    </head>
+    <body{% if page.name == "downloads" %} class="{{ page.name }}"{% endif %}>
+        <!--[if lt IE 8]>
+            <div class="alert alert-warning"><strong>Warning!</strong> You are using an <strong>outdated</strong> browser. Please <a class="alert-link" href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+        <![endif]-->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">MPC-HC</a>
+                    <button type="button" class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <i class="icon-bar"></i>
+                        <i class="icon-bar"></i>
+                        <i class="icon-bar"></i>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li{% if page.name == "downloads" %} class="active"{% endif %}><a href="/downloads">Downloads</a></li>
+                        <li{% if page.name == "changelog" %} class="active"{% endif %}><a href="/changelog">Changelog</a></li>
+                        <li{% if page.name == "faq" %} class="active"{% endif %}><a href="/faq">FAQ</a></li>
+                        <li><a href="https://trac.mpc-hc.org/wiki/How_to_Report_Issues">Bug reports</a></li>
+                        <li{% if page.name == "contact-us" %} class="active"{% endif %}><a href="/contact-us">Contact us</a></li>
+                        <li{% if page.name == "about" %} class="active"{% endif %}><a href="/about">About</a></li>
+                        <li><a href="https://trac.mpc-hc.org/">Wiki</a></li>
+                        <li {% if page.name == "donate" %} class="active"{% endif %}>
+                            <a {% if page.name != "donate" %} href="/donate"{% endif %}><img src="/assets/img/paypal.png" width="74" height="21" title="Donate" alt="Paypal logo"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="page">
+                {{ content }}
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-4 footer-left">
+                        <h3>Follow us on</h3>
+                        <ul class="social-ul list-inline">
+                            <li><a class="fa fa-facebook fa-2x" href="http://www.facebook.com/MediaPlayerClassicHomeCinema" title="Like our page on Facebook!" target="_blank"></a></li>
+                            <li><a class="fa fa-twitter fa-2x" href="https://twitter.com/mpc_hc/" title="Follow us on Twitter!" target="_blank"></a></li>
+                            <li><a class="fa fa-google-plus fa-2x" href="https://plus.google.com/u/0/109957971189557916726" title="Follow us on Google+" target="_blank"></a></li>
+                            <li><a class="fa fa-rss fa-2x" href="/rss.xml" title="RSS Feed"></a></li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li><a href="/acknowledgments">Acknowledgments</a></li>
+                        </ul>
+                    </div>
+                    <!--googleoff: all-->
+                    <div class="col-lg-4 col-sm-4 footer-center">
+                        <p>
+                            <span class="clearfix">Hosting sponsored by:</span>
+                            <span class="clearfix"><em><a href="http://cloudvps.com/">CloudVPS</a> - Private Cloud, Clusters &amp; VPS</em></span>
+                        </p>
+                        <a href="http://cloudvps.com/"><img src="/assets/img/cloudvps_small.png" width="100" height="70" title="CloudVPS - Private Cloud, Clusters &amp; VPS" alt="CloudVPS logo"></a>
+                    </div>
+                    <!--googleon: all-->
+                    <div class="col-lg-4 col-sm-4 footer-right">
+                        <p>Page last updated on {{ site.time | date_to_rfc822 }}.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="copyright text-center">
+                        Copyright &copy; 2012-2014 <a href="/about">MPC-HC Team</a>
+                    </p>
+                </div>
+                <noscript>
+                    <div class="alert alert-danger noscript-warning">
+                        <h4>Warning!</h4>
+                        <p>You have JavaScript disabled or your browser doesn't support it.
+                        Some features, like the navigation button, won't be available.</p>
+                    </div>
+                </noscript>
+            </div>
+        </footer>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/assets/js/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="/assets/js/pack.js"></script>
+        {% if page.name == "downloads" or page.name == "home" %}
+        <script>
+            (function() {
+                var el = document.createElement('script');
+                el.src = '//sourceforge.net/accelerator/js?partner_id=72';
+                el.defer = true;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(el, s);
+            })();
+        </script>
+        {% endif %}
+        {% if page.name == "home" or page.name == "binaries-are-signed" %}
+        <script>
+            $(document).ready(function() {
+                $(".fancybox-thumb").fancybox({
+                    padding: 0,
+                    helpers: {
+                        title: { type: 'float' },
+                        thumbs: { width: 100, height: 74 }
+                    },
+                    beforeLoad: function() {
+                        var el, id = $(this.element).data('title-id');
+                        if (id) {
+                            el = $('#' + id);
+                            if (el.length) this.title = el.html();
+                        }
+                    }
+                });
+            });
+        </script>
+        {% endif %}
+    </body>
+</html>
