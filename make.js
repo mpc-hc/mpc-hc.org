@@ -47,6 +47,15 @@ function minify() {
 
     writeText(buildTarget + "_static/css/pack.css", minifiedCss);
 
+    // font-awesome-ie7.min.css
+
+    var fontAwesomeIE7 = cleanCSS.process(cat("_static/css/font-awesome-ie7.css"), {
+        removeEmpty: true,
+        keepSpecialComments: 0
+    });
+
+    writeText(buildTarget + "_static/css/font-awesome-ie7.min.css", fontAwesomeIE7);
+
     echo();
     echo("### Combining js files...");
 
@@ -139,7 +148,6 @@ function minify() {
 
         cp("-f", filesToCopyToDist, buildTarget);
         cp("-f", ["_static/js/selectivizr-min.js", "_static/js/jquery-*.min.js"], buildTarget + "_static/js");
-        cp("-f", ["_static/css/font-awesome-ie7.min.css"], buildTarget + "_static/css");
 
         minify();
 
