@@ -41,8 +41,7 @@ function minify() {
 
     var minifiedCss = cleanCSS.process(inCss, {
         removeEmpty: true,
-        keepSpecialComments: 0,
-        root: buildTarget
+        keepSpecialComments: 0
     });
 
     writeText(buildTarget + "_static/css/pack.css", minifiedCss);
