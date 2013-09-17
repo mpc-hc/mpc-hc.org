@@ -2,6 +2,10 @@
 /build
 /node_modules
 /npm-debug.log
+/source/2012
+/source/2013
+/source/archive.rst
+/source/latest_posts.rst
 
 # gedit backup files
 *.*~
