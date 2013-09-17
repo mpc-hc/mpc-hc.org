@@ -39,34 +39,33 @@
         {%- endif %}
     </head>
     <body>
-        <div class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse" type="button">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="{{ pathto('index') }}">MPC-HC</a>
+                    <button type="button" class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <i class="icon-bar"></i>
                         <i class="icon-bar"></i>
                         <i class="icon-bar"></i>
                     </button>
-                    <a class="brand" href="{{ pathto('index') }}">MPC-HC</a>
-                    <div class="nav-collapse collapse">
-                        <ul class="nav">{% import 'nav.html' as nav %}
-                            {{ nav.item('downloads', pagename, pathto('downloads'), "Downloads") }}
-                            {{ nav.item('changelog', pagename, pathto('changelog'), "Changelog") }}
-                            {{ nav.item('faq', pagename, pathto('faq'), "FAQ") }}
-                            <li><a href="https://trac.mpc-hc.org/wiki/How_to_Report_Issues">Bug reports</a></li>
-                            {{ nav.item('contact-us', pagename, pathto('contact-us'), "Contact us") }}
-                            {{ nav.item('about', pagename, pathto('about'), "About") }}
-                            <li><a href="https://trac.mpc-hc.org/">Wiki</a></li>
-                            <li class="divider-vertical"></li>
-                            <li {%- if pagename == 'donate' %} class="active"{% endif %}>
-                                <a {%- if pagename != 'donate' %} href="{{ pathto('donate') }}"{% endif %}><img src="{{ pathto('_static/img/paypal.png', 1) }}" width="74" height="21" title="Donate" alt="Paypal logo"/></a>
-                            </li>
-                        </ul>
-                    </div>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">{% import 'nav.html' as nav %}
+                        {{ nav.item('downloads', pagename, pathto('downloads'), "Downloads") }}
+                        {{ nav.item('changelog', pagename, pathto('changelog'), "Changelog") }}
+                        {{ nav.item('faq', pagename, pathto('faq'), "FAQ") }}
+                        <li><a href="https://trac.mpc-hc.org/wiki/How_to_Report_Issues">Bug reports</a></li>
+                        {{ nav.item('contact-us', pagename, pathto('contact-us'), "Contact us") }}
+                        {{ nav.item('about', pagename, pathto('about'), "About") }}
+                        <li><a href="https://trac.mpc-hc.org/">Wiki</a></li>
+                        <li {%- if pagename == 'donate' %} class="active"{% endif %}>
+                            <a {%- if pagename != 'donate' %} href="{{ pathto('donate') }}"{% endif %}><img src="{{ pathto('_static/img/paypal.png', 1) }}" width="74" height="21" title="Donate" alt="Paypal logo"/></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <div class="content-container container">
+        </nav>
+        <div class="container">
             <div class="page">
                 {%- block body %}
                 {%- endblock -%}
@@ -74,22 +73,22 @@
         </div>
         {%- block footer %}
         <footer>
-            <div class="row-fluid">
-                <div class="container">
-                    <div class="span4 footer-left">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4 footer-left">
                         <h3>Follow us on</h3>
-                        <ul class="social-ul">
+                        <ul class="social-ul list-inline">
                             <li><a class="icon-facebook icon-2x" href="http://www.facebook.com/MediaPlayerClassicHomeCinema" title="Like our page on Facebook!" target="_blank"></a></li>
                             <li><a class="icon-twitter icon-2x" href="https://twitter.com/mpc_hc/" title="Follow us on Twitter!" target="_blank"></a></li>
                             <li><a class="icon-google-plus icon-2x" href="https://plus.google.com/u/0/109957971189557916726" title="Follow us on Google+" target="_blank"></a></li>
                             <li><a class="icon-rss icon-2x" href="/rss.xml" title="RSS Feed"></a></li>
                         </ul>
-                        <ul>
+                        <ul class="list-unstyled">
                             <li><a href="{{ pathto('acknowledgments') }}">Acknowledgments</a></li>
                             <li><a href="{{ pathto('sitemap') }}">Sitemap</a></li>
                         </ul>
                     </div>
-                    <div class="span4 footer-center">
+                    <div class="col-xs-12 col-sm-4 col-md-4 footer-center">
                     <!--googleoff: all-->
                         <p>
                             <span class="clearfix">Hosting sponsored by:</span>
@@ -98,7 +97,7 @@
                         <a href="http://cloudvps.com/"><img src="{{ pathto('_static/img/cloudvps_small.png', 1) }}" width="100" height="70" title="CloudVPS - Private Cloud, Clusters &amp; VPS" alt="CloudVPS logo"/></a>
                     <!--googleon: all-->
                     </div>
-                    <div class="span4 footer-right">
+                    <div class="col-xs-12 col-sm-4 col-md-4 footer-right">
                         {%- if last_updated %}
                         <p>{% trans last_updated=last_updated|e %}Page last updated on {{ last_updated }}.{% endtrans %}</p>
                         {%- endif %}
@@ -107,19 +106,21 @@
                         {%- endif %}
                     </div>
                 </div>
-            </div>
-            <div class="copyright text-center">
-                {%- if show_copyright %}
-                {% trans path=pathto('about'), copyright=copyright|e %}Copyright &copy; 2012-2013 <a href="{{ path }}">{{ copyright }}</a>{% endtrans %}
-                {%- endif %}
-            </div>
-            <noscript>
-                <div class="alert alert-danger noscript-warning">
-                    <h4>Warning!</h4>
-                    You have JavaScript disabled or your browser doesn't support it.
-                    Some features, like the navigation button, won't be available.
+                <div class="row">
+                    <div class="copyright text-center">
+                        {%- if show_copyright %}
+                        {% trans path=pathto('about'), copyright=copyright|e %}Copyright &copy; 2012-2013 <a href="{{ path }}">{{ copyright }}</a>{% endtrans %}
+                        {%- endif %}
+                    </div>
                 </div>
-            </noscript>
+                <noscript>
+                    <div class="alert alert-danger noscript-warning">
+                        <h4>Warning!</h4>
+                        You have JavaScript disabled or your browser doesn't support it.
+                        Some features, like the navigation button, won't be available.
+                    </div>
+                </noscript>
+            </div>
         </footer>
         {%- endblock %}
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

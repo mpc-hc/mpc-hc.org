@@ -1,40 +1,30 @@
-http://getbootstrap.com/2.3.2/customize.html
+http://getbootstrap.com/customize/
 
-Enabled components in v2.3.2:
+Enabled components in v3.0.0:
 
-Scaffolding
-  Normalize and reset
-  Body type and links
+
+Common CSS
+  Print media styles
+  Typography
   Grid system
-  Layouts
+  Tables
+  Forms
+  Buttons
 
 Components
-  Navs, tabs, and pills
+  Navs
   Navbar
   Thumbnails
   Alerts
 
-Miscellaneous
+Utilities
+  Basic utilities
+  Responsive utilities
   Component animations
 
-Base CSS
-  Headings, body, etc
-  Tables
-  Buttons
-
-JS Components
-  Collapse
-
-Responsive (all of them)
-  Visible/hidden classes
-  Narrow tablets and below (<767px)
-  Tablets to desktops (767-979px)
-  Large desktops (>1200px)
-  Responsive navbar
-
 jQuery plugins
-  Transitions
   Collapse
+  Transitions
 
 
 http://www.icnfnt.com/
