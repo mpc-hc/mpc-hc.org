@@ -21,8 +21,8 @@
   "dependencies": {
     "clean-css": "~1.1.1",
     "csslint": "~0.9.10",
-    "jshint": "~2.1.9",
-    "shelljs": "~0.2.0",
+    "jshint": "~2.1.10",
+    "shelljs": "~0.2.5",
     "uglify-js": "~2.4.0"
   },
   "jshintConfig": {
