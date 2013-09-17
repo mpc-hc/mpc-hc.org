@@ -3,7 +3,7 @@
 
 .. abstract
 
-After almost 1 and a half month since the last stable build, we decided to release 1.6.7.
+After almost 1 and a half months since the last stable build, we decided to release 1.6.7.
 
 This release is mainly a bugfix release. It also has a big performance improvement
 when using an INI file to store the settings.
