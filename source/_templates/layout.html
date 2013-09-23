@@ -9,9 +9,7 @@
         <!--[if IE 7]>
         <link rel="stylesheet" href="{{ pathto('_static/css/font-awesome-ie7.min.css', 1) }}">
         <![endif]-->
-        {%- if favicon %}
-        <link rel="shortcut icon" href="{{ pathto( favicon, 1) }}">
-        {%- endif %}
+        <link rel="shortcut icon" href="{{ pathto('favicon.ico', 1) }}">
         <meta name="msapplication-TileColor" content="#D83434">
         <meta name="msapplication-TileImage" content="{{ pathto('_static/img/TileImage.png', 1) }}">
         <meta property="og:title" content="{{ title }} &ndash; MPC-HC">
@@ -21,12 +19,12 @@
         {%- else %}
         <meta property="og:url" content="{{ http_url }}{{ pagename }}">
         {%- endif %}
-        <meta property="og:image" content="http://mpc-hc.org/_static/img/logo-256x256.png">
+        <meta property="og:image" content="{{ http_url }}_static/img/logo-256x256.png">
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="128">
         <meta property="og:image:height" content="128">
         {%- block feed %}
-        <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS 2.0">
+        <link rel="alternate" type="application/rss+xml" href="{{ pathto('rss.xml', 1) }}" title="RSS 2.0">
         {%- endblock %}
         <meta name="description" content="MPC-HC, the free, open source media player">
         <meta name="keywords" content="MPC, MPC-HC, Media Player Classic, Media Player Classic - Home Cinema, open source media player, video, audio, mkv, avi, xvid, x264, matroska">
@@ -108,6 +106,7 @@
                         <a href="http://cloudvps.com/"><img src="{{ pathto('_static/img/cloudvps_small.png', 1) }}" width="100" height="70" title="CloudVPS - Private Cloud, Clusters &amp; VPS" alt="CloudVPS logo"/></a>
                     </div>
                     <!--googleon: all-->
+                    {%- if last_updated or show_sphinx %}
                     <div class="col-xs-12 col-sm-4 col-md-4 footer-right">
                         {%- if last_updated %}
                         <p>{% trans last_updated=last_updated|e %}Page last updated on {{ last_updated }}.{% endtrans %}</p>
@@ -116,14 +115,15 @@
                         <p>{% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a> {{ sphinx_version }}.{% endtrans %}</p>
                         {%- endif %}
                     </div>
+                    {%- endif %}
                 </div>
+                {%- if show_copyright %}
                 <div class="row">
                     <p class="copyright text-center">
-                        {%- if show_copyright %}
                         {% trans path=pathto('about'), copyright=copyright|e %}Copyright &copy; 2012-2013 <a href="{{ path }}">{{ copyright }}</a>{% endtrans %}
-                        {%- endif %}
                     </p>
                 </div>
+                {%- endif %}
                 <noscript>
                     <div class="alert alert-danger noscript-warning">
                         <h4>Warning!</h4>
