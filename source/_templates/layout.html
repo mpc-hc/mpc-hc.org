@@ -28,11 +28,8 @@
         {%- endblock %}
         <meta name="description" content="MPC-HC, the free, open source media player">
         <meta name="keywords" content="MPC, MPC-HC, Media Player Classic, Media Player Classic - Home Cinema, open source media player, video, audio, mkv, avi, xvid, x264, matroska">
-        <!--[if (gte IE 6)&(lte IE 8)]>
-        <script src="{{ pathto('_static/js/selectivizr-min.js', 1) }}"></script>
-        <![endif]-->
-        <!--[if lt IE 9]>
-        <script src="{{ pathto('_static/js/html5shiv-respond.min.js', 1) }}"></script>
+        <!--[if (gte IE 6)&(lte IE 9)]>
+        <script src="{{ pathto('_static/js/ie.min.js', 1) }}"></script>
         <![endif]-->
         {%- if pagename == 'donate' %}
         <script>

@@ -75,7 +75,8 @@ function minify() {
 
     // JS for IE < 9
     var inJsIE = cat(["_static/js/html5shiv.js",
-                      "_static/js/respond.js"]);
+                      "_static/js/respond.js",
+                      "_static/js/selectivizr.js"]);
 
     var minifiedJsIE = uglifyJS.minify(inJsIE, {
         compress: true,
@@ -84,7 +85,7 @@ function minify() {
         warnings: false
     });
 
-    writeText(buildTarget + "_static/js/html5shiv-respond.min.js", minifiedJsIE.code);
+    writeText(buildTarget + "_static/js/ie.min.js", minifiedJsIE.code);
 
     echo();
     echo("### Build finished. The HTML pages are in" + " " + buildTarget + ".");
@@ -145,7 +146,7 @@ function minify() {
         ];
 
         cp("-f", filesToCopyToDist, buildTarget);
-        cp("-f", ["_static/js/selectivizr-min.js", "_static/js/jquery-*.min.js"], buildTarget + "_static/js");
+        cp("-f", ["_static/js/jquery-*.min.js"], buildTarget + "_static/js");
 
         minify();
 
