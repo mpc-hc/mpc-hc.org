@@ -117,6 +117,11 @@ html_theme = 'default'
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
 
+# A dictionary of values to pass into the template engine’s context for all
+# pages. Single values can also be put in this dictionary using the -A command-line
+# option of sphinx-build.
+html_context = { 'http_url': 'http://mpc-hc.org/' }
+
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
 #html_logo = 'logo.png'

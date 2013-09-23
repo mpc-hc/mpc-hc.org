@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
     <head>
         <meta charset="utf-8">
         <title>{% block title -%} {{ title }} {%- endblock %} &ndash; MPC-HC</title>
@@ -14,6 +14,17 @@
         {%- endif %}
         <meta name="msapplication-TileColor" content="#D83434">
         <meta name="msapplication-TileImage" content="{{ pathto('_static/img/TileImage.png', 1) }}">
+        <meta property="og:title" content="{{ title }} &ndash; MPC-HC">
+        <meta property="og:description" content="MPC-HC, the free, open source media player">
+        {%- if pagename == 'index' %}
+        <meta property="og:url" content="{{ http_url }}">
+        {%- else %}
+        <meta property="og:url" content="{{ http_url }}{{ pagename }}">
+        {%- endif %}
+        <meta property="og:image" content="http://mpc-hc.org/_static/img/logo-256x256.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="128">
+        <meta property="og:image:height" content="128">
         {%- block feed %}
         <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS 2.0">
         {%- endblock %}
