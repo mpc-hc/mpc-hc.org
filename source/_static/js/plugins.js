@@ -35,6 +35,7 @@ $('#binaries, #pdb-files').find('.external').each(function() {
 
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-9335012-2']);
+_gaq.push(['_gat._anonymizeIp']);
 _gaq.push(['_trackPageview']);
 
 (function() {
