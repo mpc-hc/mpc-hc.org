@@ -13,5 +13,5 @@ I slightly tweaked their template and updated dependencies to use the latest
 
 This website is now powered by `Sphinx <http://sphinx.pocoo.org/>`_ and
 is open source: the code is available over at
-`GitHub <https://github.com/mpc-hc/website>`_—contributions
+`GitHub <https://github.com/mpc-hc/mpc-hc.org>`_—contributions
 in the form of pull requests are really welcome!

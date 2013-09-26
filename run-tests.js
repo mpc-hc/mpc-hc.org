@@ -4,7 +4,7 @@
  * run-tests.js, script to run JSHint and csslint for our files
  * Released under the terms of MIT license
  *
- * https://github.com/mpc-hc/website
+ * https://github.com/mpc-hc/mpc-hc.org
  *
  * Copyright (C) 2013 MPC-HC Team
  */
