@@ -1,4 +1,4 @@
-[![Dependency Status](https://gemnasium.com/mpc-hc/website.png)](https://gemnasium.com/mpc-hc/website)
+[![Dependency Status](https://gemnasium.com/mpc-hc/mpc-hc.org.png)](https://gemnasium.com/mpc-hc/mpc-hc.org)
 
 Getting started
 ---------------

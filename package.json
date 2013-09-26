@@ -1,15 +1,15 @@
 {
   "name": "mpc-hc-website",
   "version": "0.1.5",
-  "author": "MPC-HC Team (https://github.com/mpc-hc/website)",
+  "author": "MPC-HC Team (https://github.com/mpc-hc/mpc-hc.org)",
   "description": "The dependencies to build MPC-HC's website",
-  "homepage": "https://github.com/mpc-hc/website",
+  "homepage": "https://github.com/mpc-hc/mpc-hc.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mpc-hc/website.git"
+    "url": "https://github.com/mpc-hc/mpc-hc.org.git"
   },
   "bugs": {
-    "url": "https://github.com/mpc-hc/website/issues"
+    "url": "https://github.com/mpc-hc/mpc-hc.org/issues"
   },
   "license": "MIT",
   "main": "make.js",
