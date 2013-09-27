@@ -15,5 +15,5 @@ Getting started
 * Run the Python webserver to test your changes: `node make server`
   (http://localhost:8000/)
 
-You can run `npm run check` or `npm run test` to run [JSHint](https://github.com/jshint/jshint)
+You can run `npm run lint` or `npm run test` to run [JSHint](https://github.com/jshint/jshint)
 and [csslint](https://github.com/stubbornella/csslint) for our files.
