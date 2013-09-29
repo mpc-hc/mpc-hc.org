@@ -28,13 +28,10 @@ Active (sorted by name):
     "alexmarsev", "alexmarsev ~AT~ users.sourceforge ~dot~ net", "Code"
     "Armada", "armada651 ~AT~ users.sourceforge ~dot~ net", "Code"
     "Goran (vBm) Džaferi", "thevbm ~AT~ users.sourceforge ~dot~ net", "New website, Trac moderator, IRC"
-    "janwillem32", "janwillem32 ~AT~ users.sourceforge ~dot~ net", "Code"
-    "JellyFrog", "—", "Server admin, Trac admin, Swedish"
+    "JellyFrog", "—", "Server and Trac admin, Swedish"
     "kasper93", "kasper93 ~AT~ users.sourceforge ~dot~ net", "Trac moderator, Polish, Code"
-    "namaiki", "namaiki ~AT~ users.sourceforge ~dot~ net", "Trac moderator"
-    "nevcairiel", "nevcairiel ~AT~ users.sourceforge ~dot~ net", "Code"
+    "nevcairiel", "nevcairiel ~AT~ users.sourceforge ~dot~ net", "Code, LAVFilters maintainer"
     "Underground78", "underground78 ~AT~ users.sourceforge ~dot~ net", "Code, French, Project manager"
-    "v0lt", "v0lt ~AT~ users.sourceforge ~dot~ net", "Code, Russian"
     "XhmikosR", "xhmikosr ~AT~ users.sourceforge ~dot~ net", "Various stuff, Project manager"
 
 Inactive
@@ -54,13 +51,16 @@ Inactive
     "clsid", "clsid2 ~AT~ users.sourceforge ~dot~ net", "Code"
     "demi_alucard", "alysson87 ~AT~ gmail ~dot~ com", "Code, Portuguese (Brazil)"
     "Di Luo", "sansnom05 ~AT~ users.sourceforge ~dot~ net", "Code"
+    "janwillem32", "janwillem32 ~AT~ users.sourceforge ~dot~ net", "Code"
     "jonasno", "jonasno ~AT~ users.sourceforge ~dot~ net", "Code, Swedish"
     "KindDragon", "kinddragon ~AT~ users.sourceforge ~dot~ net", "Code"
     "Martin Panayotov", "mvpsoft ~AT~ users.sourceforge ~dot~ net", "Old website"
     "MatMaul", "matmaul ~AT~ users.sourceforge ~dot~ net", "Code"
+    "namaiki", "namaiki ~AT~ users.sourceforge ~dot~ net", "Trac moderator"
     "spec-chum", "spec-chum ~AT~ users.sourceforge ~dot~ net", "Code"
     "tetsuo55", "tetsuo55 ~AT~ users.sourceforge ~dot~ net", "Project manager, Admin"
     "Tomas Sen", "tomasen ~AT~ users.sourceforge ~dot~ net", "Code"
+    "v0lt", "v0lt ~AT~ users.sourceforge ~dot~ net", "Code, Russian"
     "Vodyannikov Aleksandr", "aleksoid ~AT~ users.sourceforge ~dot~ net", "Code, Russian"
     "xpc1000", "xpc1000 ~AT~ users.sourceforge ~dot~ net", "Code"
 
@@ -82,7 +82,7 @@ Translators
     "Dutch", "Paul Tjepkema", "pietpuk123 ~AT~ users.sourceforge ~dot~ net"
     "French", "Sebastiii", "sebastiii ~AT~ users.sourceforge ~dot~ net"
     "German", "Markus Gaugg", "markusgaugg ~AT~ users.sourceforge ~dot~ net"
-    "German", "Luan", "—"
+    "German", "Luan", "luanmail ~AT~ users.sourceforge ~dot~ net"
     "Greek", "geogeo.gr", "geogeo64 ~AT~ users.sourceforge ~dot~ net"
     "Greek", "Zouloumis", "zouloumis ~AT~ users.sourceforge ~dot~ net"
     "Hebrew", "Superb", "superbsubs ~AT~ users.sourceforge ~dot~ net"
@@ -99,14 +99,14 @@ Translators
     "Slovak", "Marian Hikanik", "mhikanik ~AT~ users.sourceforge ~dot~ net"
     "Spanish", "SquallMX", "squallmx ~AT~ users.sourceforge ~dot~ net"
     "Turkish", "Bosluk", "bosluk ~AT~ users.sourceforge ~dot~ net"
-    "Ukrainian", "Ihor Bobalo", "ibobalo ~AT~ users.sourceforge ~dot~ net"
     "Ukrainian", "arestarh", "arestarh1986 ~AT~ users.sourceforge ~dot~ net"
+    "Ukrainian", "Ihor Bobalo", "ibobalo ~AT~ users.sourceforge ~dot~ net (`http://www.eleks.com)`"
 
 
 Contributors
 ############
 
-Alexx999, foxx1337, heksesang, judelaw, madshi, mtrz, nielsm, skaarj1, VSFilterMod Team, X-Dron
+Alexx999, foxx1337, heksesang, judelaw, m0viefreak, madshi, mtrz, nielsm, skaarj1, VSFilterMod Team, X-Dron
 
 
 Notes
@@ -128,20 +128,16 @@ Third-party libraries
     :widths: 20, 20, 40
 
     "ATL Server", "Ms-LPL", "http://atlserver.codeplex.com/"
-    "Bento4", "GPLv2", "http://www.bok.net/trac/bento4/"
     "CLineNumberEdit", "—", "http://www.codeproject.com/Articles/6385/Controls-in-controls-A-line-numbering-edit-box"
     "CSizingControlBar", "GPLv2", "http://www.datamekanix.com/sizecbar/"
-    "Detours", "MSR-SSLA", "http://research.microsoft.com/en-us/projects/detours/"
-    "FFmpeg", "GPLv2", "http://www.ffmpeg.org/"
-    "libflac", "GPLv2 / New BSD License", "http://flac.sourceforge.net/"
-    "libmpeg2", "GPLv2", "http://libmpeg2.sourceforge.net/"
-    "libogg", "New BSD License", "http://www.xiph.org/"
+    "LAV Filters", "GPLv2", "http://code.google.com/p/lavfilters/"
     "Little CMS", "MIT License", "http://www.littlecms.com/"
     "Logitech SDK", "—", "—"
     "MediaInfoLib", "Simplified BSD License", "http://mediaarea.net/MediaInfo"
+    "Mhook", "MIT License", "http://codefromthe70s.org/mhook23.aspx"
     "MultiMon", "CPOL", "http://www.codeproject.com/KB/GDI/multimon.aspx"
     "QuickTime SDK", "—", "http://developer.apple.com/quicktime/download/"
-    "RARFileSource", "GPLv2", "http://www.v12pwr.com/RARFileSource/"
+    "RARFileSource", "GPLv2+", "http://www.v12pwr.com/RARFileSource/"
     "RealMedia SDK", "—", "—"
     "ResizableLib", "Artistic License", "http://sourceforge.net/projects/resizablelib/"
     "Silk Icons", "CC Attribution 2.5", "http://www.famfamfam.com/lab/icons/silk/"
