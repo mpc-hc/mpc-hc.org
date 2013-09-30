@@ -15,7 +15,7 @@ Changelog
  * Replace the internal filters with LAV Filters. LAV Filters are modern open source DirectShow filters based on FFmpeg. They are known to be reliable and fast and overall should be more stable than the old filters. MPC-HC integrates LAV Filters directly and no extra installation steps are required. The embedded version of LAV Filters doesn't interfere at all with other installed DirectShow filters (including the standalone versions of LAV Filters).
 
   .. warning::
-   Note to XP users: hardware decoding is only supported on nVidia graphic adapters. If you
+   Note to XP users: hardware decoding is only supported on Nvidia graphic adapters. If you
    really need a DXVA decoder, you can use a standalone version of MPC Video Decoder.
 
  * Support loading HTTP/RTSP/UDP/RTP streams using embedded source filters

@@ -20,7 +20,7 @@ Highlights of this release:
 * Many more bugfixes and improvements, check the changelog for details.
 
 Due to the switch to LAV Filters, DXVA1 support for Windows XP has been dropped.
-Windows XP users can use LAV Filter's Nvidia CUVID or Intel QuickSync decoder
+Windows XP users can use LAV Filters' Nvidia CUVID or Intel QuickSync decoder
 if they still require hardware acceleration.
 If you can't use any of the available hardware acceleration methods, you can use
 our old standalone MPCVideoDecoder from v1.6.8, **at your own risk**.
