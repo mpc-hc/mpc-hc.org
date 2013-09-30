@@ -18,7 +18,7 @@ AUTHOR = 'Seth House <seth@eseth.com>'
 
 def indent(elem, level=0):
     """Make the output XML pretty."""
-    i = "\n" + level * '  '
+    i = '\n' + level * '  '
     if len(elem):
         if not elem.text or not elem.text.strip():
             elem.text = i + '   '
@@ -83,14 +83,14 @@ def create_items(app, pagename, templatename, ctx, doctree):
 
     item = etree.SubElement(channel, 'item')
     etree.SubElement(item, 'title').text = ctx.get('title')
-    m = re.findall("\d+", ctx.get('body').split('\n')[2].split(' ')[4])
+    m = re.findall('\d+', ctx.get('body').split('\n')[2].split(' ')[4])
     pubdateString = m[2] + m[1] + m[0]
     etree.SubElement(item, 'date').text = pubdateString
     etree.SubElement(item, 'pubDate').text = formatpubdate(pubdateString)
     postAuthor = ctx.get('body').split('\n')[2].split(' ')[2]
     etree.SubElement(item, 'author').text = postAuthor + '@mpc-hc.org (' + \
         postAuthor + ')'
-    etree.SubElement(item, 'link').text = "%s/%s" % (app.config.base_uri,
+    etree.SubElement(item, 'link').text = '%s/%s' % (app.config.base_uri,
         app.builder.get_target_uri(pagename))
     guid = etree.SubElement(item, 'guid')
     guid.text = hashlib.sha1(ctx.get('body').encode('utf-8')).hexdigest()

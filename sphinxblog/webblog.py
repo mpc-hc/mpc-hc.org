@@ -32,7 +32,7 @@ class Webblog(object):
                 monthkey = post.date_key
                 year = monthkey.split('/')[0]
                 month = self.__months[int(monthkey.split('/')[1]) - 1]
-                accu += template.render(title="%s %s" % (month, year))
+                accu += template.render(title='%s %s' % (month, year))
             accu += post.render('title-post')
 
         output = open(os.path.join(
