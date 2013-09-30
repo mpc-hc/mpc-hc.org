@@ -15,11 +15,9 @@ Downloads
 Binaries
 --------
 
-.. raw:: html
+.. rst-class:: text-center downloads-version
 
-    <div class="text-center downloads-version">
-        <strong>Currently, the latest stable build is v1.7.0 which was compiled from <a href="https://github.com/mpc-hc/mpc-hc/commit/a1ef5bd">a1ef5bd</a></strong>
-    </div>
+Currently, the latest stable build is v1.7.0 which was compiled from `a1ef5bd <https://github.com/mpc-hc/mpc-hc/commit/a1ef5bd>`_
 
 
 .. csv-table::

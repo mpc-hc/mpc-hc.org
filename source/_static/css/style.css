@@ -125,7 +125,8 @@ body > .container {
 }
 
 .downloads-version {
-    padding-bottom: 18px;
+    font-weight: bold;
+    padding-bottom: 8px;
 }
 
 
