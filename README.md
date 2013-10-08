@@ -4,7 +4,7 @@
 Getting started
 ---------------
 
-* Install [Python](http://www.python.org/) (tested with 2.7.3)
+* Install [Python](http://www.python.org/) (tested with 2.7.5)
 * Install [Python setuptools](http://pypi.python.org/pypi/setuptools#files)
 * Install [Python pip](http://www.pip-installer.org/en/latest/installing.html#alternative-installation-procedures)
 * Install Sphinx: `pip install Sphinx`

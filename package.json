@@ -13,7 +13,7 @@
   },
   "license": "MIT",
   "main": "make.js",
-  "readmeFilename": "Readme.md",
+  "readmeFilename": "README.md",
   "scripts": {
     "lint": "node run-tests",
     "test": "node run-tests"
