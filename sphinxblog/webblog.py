@@ -5,6 +5,7 @@ from jinja2 import Template
 
 
 class Webblog(object):
+
     def __init__(self, base_path, render_base_path):
         self.__base_path = base_path
         self.__render_base_path = render_base_path

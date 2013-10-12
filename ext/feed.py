@@ -91,7 +91,7 @@ def create_items(app, pagename, templatename, ctx, doctree):
     etree.SubElement(item, 'author').text = postAuthor + '@mpc-hc.org (' + \
         postAuthor + ')'
     etree.SubElement(item, 'link').text = '%s/%s' % (app.config.base_uri,
-        app.builder.get_target_uri(pagename))
+                                                     app.builder.get_target_uri(pagename))
     guid = etree.SubElement(item, 'guid')
     guid.text = hashlib.sha1(ctx.get('body').encode('utf-8')).hexdigest()
     guid.set('isPermaLink', 'false')

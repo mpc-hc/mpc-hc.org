@@ -120,7 +120,7 @@ html_theme = 'default'
 # A dictionary of values to pass into the template engine’s context for all
 # pages. Single values can also be put in this dictionary using the -A command-line
 # option of sphinx-build.
-html_context = { 'http_url': 'http://mpc-hc.org/' }
+html_context = {'http_url': 'http://mpc-hc.org/'}
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.

@@ -4,6 +4,7 @@ from jinja2 import Template
 
 
 class Post(object):
+
     def __init__(self, path):
         self.__path = path
         self.__empty = True
