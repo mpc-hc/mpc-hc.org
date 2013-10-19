@@ -1,6 +1,6 @@
 {
-  "name": "mpc-hc-website",
-  "version": "0.1.5",
+  "name": "mpc-hc.org",
+  "version": "0.2.0",
   "author": "MPC-HC Team (https://github.com/mpc-hc/mpc-hc.org)",
   "description": "The dependencies to build MPC-HC's website",
   "homepage": "https://github.com/mpc-hc/mpc-hc.org",
@@ -13,7 +13,6 @@
   },
   "license": "MIT",
   "main": "make.js",
-  "readmeFilename": "README.md",
   "scripts": {
     "lint": "node run-tests",
     "test": "node run-tests"
@@ -47,6 +46,6 @@
     "unused": true
   },
   "engines": {
-    "node": "~0.8.0"
+    "node": ">=0.10.1"
   }
 }
