@@ -152,9 +152,9 @@ body > .container {
     text-align: justify;
 }
 
-.btn > .icon-download-alt {
+.btn > .fa-download {
     margin-right: 6px;
-    margin-top: 2px !important;
+    margin-top: 2px;
 }
 
 .simple + blockquote,
@@ -278,26 +278,25 @@ footer ul {
     position: absolute;
 }
 
-a.icon-facebook,
-a.icon-twitter,
-a.icon-google-plus,
-a.icon-rss {
+a.fa-facebook,
+a.fa-twitter,
+a.fa-google-plus,
+a.fa-rss {
     color: lightgray;
-    display: inline-block;
     -webkit-transition: color 0.15s linear;
        -moz-transition: color 0.15s linear;
          -o-transition: color 0.15s linear;
             transition: color 0.15s linear;
 }
 
-a.icon-facebook:hover,
-a.icon-twitter:hover,
-a.icon-google-plus:hover,
-a.icon-rss:hover,
-a.icon-facebook:focus,
-a.icon-twitter:focus,
-a.icon-google-plus:focus,
-a.icon-rss:focus {
+a.fa-facebook:hover,
+a.fa-twitter:hover,
+a.fa-google-plus:hover,
+a.fa-rss:hover,
+a.fa-facebook:focus,
+a.fa-twitter:focus,
+a.fa-google-plus:focus,
+a.fa-rss:focus {
     color: gray;
     text-decoration: none;
 }

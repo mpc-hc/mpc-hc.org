@@ -12,7 +12,7 @@
     <div class="text-center">
         <a href="http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.7.0_x86/MPC-HC.1.7.0.x86.exe/download"
             class="btn btn-default btn-lg sourceforge_accelerator_link">
-            <i class="icon-white icon-download-alt pull-left"></i>MPC-HC - Download now!
+            <i class="fa fa-download pull-left"></i>MPC-HC - Download now!
         </a>
         <p>1.7.0 32-bit - <a href="/downloads/">Other systems &amp; versions</a></p>
     </div>
@@ -61,7 +61,7 @@
     </div>
 
     <div class="latest-news">
-    <a class="icon-rss icon-2x rss-before" href="/rss.xml" title="RSS Feed"></a>
+    <a class="fa fa-rss fa-2x rss-before" href="/rss.xml" title="RSS Feed"></a>
     <h1>Latest news</h1>
 
 .. include:: latest_posts.rst

@@ -46,15 +46,6 @@ function minify() {
 
     writeText(buildTarget + "_static/css/pack.css", minifiedCss);
 
-    // font-awesome-ie7.min.css
-
-    var fontAwesomeIE7 = cleanCSS.process(cat("_static/css/font-awesome-ie7.css"), {
-        removeEmpty: true,
-        keepSpecialComments: 0
-    });
-
-    writeText(buildTarget + "_static/css/font-awesome-ie7.min.css", fontAwesomeIE7);
-
     echo();
     echo("### Combining js files...");
 

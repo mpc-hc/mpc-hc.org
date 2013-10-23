@@ -7,7 +7,7 @@
     </h2>
 
     <div class="post-meta">
-        <p><i class="icon-calendar"></i> {{ post.date }} <i class="icon-user"></i> {{ post.author }}</p>
+        <p><i class="fa fa-calendar"></i> {{ post.date }} <i class="fa fa-user"></i> {{ post.author }}</p>
     </div>
 
 {{ post.abstract }}
