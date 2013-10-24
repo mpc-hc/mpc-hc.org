@@ -8,7 +8,7 @@ Acknowledgments
 We would like to thank the following projects:
 
 * `7-Zip <http://www.7-zip.org/>`_
-* `Bootstrap <http://twitter.github.io/bootstrap/>`_
+* `Bootstrap <http://getbootstrap.com/>`_
 * `Coverity Scan <http://scan.coverity.com/>`_
 * `Cppcheck <http://cppcheck.sourceforge.net/>`_
 * `Font Awesome <http://fontawesome.io/>`_ by Dave Gandy
