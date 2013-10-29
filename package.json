@@ -18,7 +18,7 @@
     "test": "node run-tests"
   },
   "dependencies": {
-    "clean-css": "~1.1.6",
+    "clean-css": "~1.1.7",
     "csslint": "~0.9.10",
     "jshint": "~2.3.0",
     "shelljs": "~0.2.6",
