@@ -1,6 +1,6 @@
 http://getbootstrap.com/customize/
 
-Enabled components in v3.0.0:
+Enabled components in v3.0.1:
 
 
 Common CSS
@@ -8,8 +8,8 @@ Common CSS
   Typography
   Grid system
   Tables
-  Forms
   Buttons
+  Forms
 
 Components
   Navs

@@ -8,12 +8,6 @@ body {
     position: relative;
 }
 
-/* IE 10: Remove grey background on active links
-   https://github.com/necolas/normalize.css/commit/37b483c */
-a:active {
-    background-color: transparent;
-}
-
 h1 {
     font-size: 30px;
     font-weight: normal;
@@ -268,7 +262,6 @@ footer ul {
 }
 
 .social-ul li {
-    display: inline-block;
     margin: 0 20px 0 0;
 }
 
