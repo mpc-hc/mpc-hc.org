@@ -139,13 +139,6 @@ body > .container {
     text-shadow: 0 0 20px #08C;
 }
 
-.lead {
-    font-size: 20px;
-    font-weight: normal;
-    line-height: 27px;
-    text-align: justify;
-}
-
 .btn > .fa-download {
     margin-top: 4px;
 }
@@ -163,14 +156,16 @@ blockquote p {
 }
 
 table {
-    width: 100%;
+    background-color: transparent;
     margin-bottom: 20px;
+    max-width: 100%;
+    width: 100%;
 }
 
 table td,
 table th {
     border-top: 1px solid #DDDDDD;
-    line-height: 20px;
+    line-height: 1.428571429;
     padding: 8px;
     vertical-align: top;
 }
@@ -180,6 +175,7 @@ table th {
 }
 
 table thead th {
+    border-bottom: 2px solid #dddddd;
     vertical-align: bottom;
 }
 
@@ -194,10 +190,6 @@ table thead:first-child tr:first-child td {
 
 table tbody + tbody {
     border-top: 2px solid #DDDDDD;
-}
-
-table table {
-    background-color: white;
 }
 
 table tbody tr:hover td,
@@ -353,6 +345,11 @@ a.fa-rss:focus {
 @media (min-width: 768px) {
     .navbar-toggle + .nav-collapse {
         margin-top: 0;
+    }
+
+    .lead {
+        font-size: 20px;
+        text-align: justify;
     }
 
     .footer-left {
