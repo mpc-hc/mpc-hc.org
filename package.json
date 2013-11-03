@@ -22,7 +22,7 @@
     "csslint": "~0.9.10",
     "jshint": "~2.3.0",
     "shelljs": "~0.2.6",
-    "uglify-js": "~2.4.1"
+    "uglify-js": "~2.4.2"
   },
   "jshintConfig": {
     "bitwise": true,
