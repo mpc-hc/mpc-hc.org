@@ -24,7 +24,7 @@ function writeText(file, text) {
 
 
 function minify() {
-    var cleanCSS = require("clean-css");
+    var CleanCSS = require("clean-css");
     var uglifyJS = require("uglify-js");
 
     cd(srcDir);
@@ -33,18 +33,29 @@ function minify() {
     echo("### Combining css files...");
 
     // pack.css
-    var inCss = cat(["_static/css/bootstrap.css",
-                     "_static/css/font-awesome.css",
-                     "_static/css/jquery.fancybox.css",
-                     "_static/css/jquery.fancybox-thumbs.css",
-                     "_static/css/style.css"]);
+    var inCss = cat([
+            "_static/css/bootstrap.css",
+            "_static/css/font-awesome.css",
+            "_static/css/jquery.fancybox.css",
+            "_static/css/jquery.fancybox-thumbs.css",
+            "_static/css/style.css"
+        ]);
 
-    var minifiedCss = cleanCSS.process(inCss, {
-        removeEmpty: true,
-        keepSpecialComments: 0
-    });
+    var minifier = new CleanCSS({
+            debug: true,
+            keepSpecialComments: 0,
+            selectorsMergeMode: "ie8"
+        });
 
-    writeText(buildTarget + "_static/css/pack.css", minifiedCss);
+    writeText(buildTarget + "_static/css/pack.css", minifier.minify(inCss));
+
+    echo();
+    echo("Original: " + minifier.stats.originalSize + " bytes");
+    echo("Minified: " + minifier.stats.minifiedSize + " bytes");
+    /*jshint -W052*/
+    echo("Efficiency: " + ~~(minifier.stats.efficiency * 10000) / 100.0 + "%");
+    /*jshint +W052*/
+    echo("Time spent: " + minifier.stats.timeSpent + "ms");
 
     echo();
     echo("### Combining js files...");
