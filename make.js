@@ -49,31 +49,34 @@ function minify() {
     echo();
     echo("### Combining js files...");
 
-    var inJs = cat(["_static/js/plugins.js",
-                    "_static/js/bootstrap.js",
-                    "_static/js/jquery.mousewheel.js",
-                    "_static/js/jquery.fancybox.js",
-                    "_static/js/jquery.fancybox-thumbs.js"]);
+    var inJs = cat([
+            "_static/js/plugins.js",
+            "_static/js/bootstrap.js",
+            "_static/js/jquery.mousewheel.js",
+            "_static/js/jquery.fancybox.js",
+            "_static/js/jquery.fancybox-thumbs.js"
+        ]);
 
     var minifiedJs = uglifyJS.minify(inJs, {
-        compress: true,
-        fromString: true, // this is needed to pass JS source code instead of filenames
-        mangle: true,
-        warnings: false
-    });
+            compress: true,
+            fromString: true, // this is needed to pass JS source code instead of filenames
+            mangle: true,
+            warnings: false
+        });
 
     writeText(buildTarget + "_static/js/pack.js", minifiedJs.code);
 
-    // JS for IE < 9
-    var inJsIE = cat(["_static/js/html5shiv.js",
-                      "_static/js/respond.js"]);
+    var inJsIE = cat([
+            "_static/js/html5shiv.js",
+            "_static/js/respond.js"
+        ]);
 
     var minifiedJsIE = uglifyJS.minify(inJsIE, {
-        compress: true,
-        fromString: true, // this is needed to pass JS source code instead of filenames
-        mangle: true,
-        warnings: false
-    });
+            compress: true,
+            fromString: true, // this is needed to pass JS source code instead of filenames
+            mangle: true,
+            warnings: false
+        });
 
     writeText(buildTarget + "_static/js/html5shiv-respond.min.js", minifiedJsIE.code);
 
@@ -85,7 +88,7 @@ function minify() {
 (function () {
     /*jshint -W108*/
     var SPHINXOPTS = '-d' + ' "' + buildDir + 'doctrees/' + '" "' + srcDir + '" "' + buildTarget + '"';
-    /*jshint -W108*/
+    /*jshint +W108*/
 
     //
     // make website
@@ -106,19 +109,19 @@ function minify() {
         cd(buildTarget);
 
         var filesToRemoveFromDist = [
-            ".buildinfo",
-            "_static/*.css",
-            "_static/*.gif",
-            "_static/*.js",
-            "_static/*.png",
-            "_static/css/*.css",
-            "_static/favicon.ico",
-            "_static/js/*.js",
-            "genindex",
-            "objects.inv",
-            "search",
-            "searchindex.js"
-        ];
+                ".buildinfo",
+                "_static/*.css",
+                "_static/*.gif",
+                "_static/*.js",
+                "_static/*.png",
+                "_static/css/*.css",
+                "_static/favicon.ico",
+                "_static/js/*.js",
+                "genindex",
+                "objects.inv",
+                "search",
+                "searchindex.js"
+            ];
 
         rm("-rf", filesToRemoveFromDist);
 
@@ -129,11 +132,11 @@ function minify() {
         cd(srcDir);
 
         var filesToCopyToDist = [
-            "robots.txt",
-            "version.txt",
-            "_static/apple-touch-icon*.png",
-            "_static/favicon.ico"
-        ];
+                "robots.txt",
+                "version.txt",
+                "_static/apple-touch-icon*.png",
+                "_static/favicon.ico"
+            ];
 
         cp("-f", filesToCopyToDist, buildTarget);
 
@@ -177,7 +180,7 @@ function minify() {
         echo();
         echo("### Starting webserver...");
         cd(buildTarget);
-        exec("python -u -m SimpleHTTPServer", {async: true});
+        exec("python -u -m SimpleHTTPServer", { async: true });
     };
 
 

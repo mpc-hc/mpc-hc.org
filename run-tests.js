@@ -50,4 +50,4 @@ if (!test("-f", csslintBin)) {
     echo("csslint completed successfully");
     echo();
 }*/
-exec("node" +" " + csslintBin + " " + "source/_static/css/style.css");
+exec("node" + " " + csslintBin + " " + "source/_static/css/style.css");
