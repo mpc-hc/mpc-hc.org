@@ -1,5 +1,5 @@
 /* ========================================================================
- * Bootstrap: collapse.js v3.0.0
+ * Bootstrap: collapse.js v3.0.2
  * http://getbootstrap.com/javascript/#collapse
  * ========================================================================
  * Copyright 2013 Twitter, Inc.
@@ -176,10 +176,10 @@
     $target.collapse(option)
   })
 
-}(window.jQuery);
+}(jQuery);
 
 /* ========================================================================
- * Bootstrap: transition.js v3.0.0
+ * Bootstrap: transition.js v3.0.2
  * http://getbootstrap.com/javascript/#transitions
  * ========================================================================
  * Copyright 2013 Twitter, Inc.
@@ -233,4 +233,4 @@
     $.support.transition = transitionEnd()
   })
 
-}(window.jQuery);
+}(jQuery);
