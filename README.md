@@ -1,5 +1,5 @@
-[![Dependency Status](https://david-dm.org/mpc-hc/mpc-hc.org.png)](https://david-dm.org/mpc-hc/mpc-hc.org)
 [![Build Status](https://travis-ci.org/mpc-hc/mpc-hc.org.png)](https://travis-ci.org/mpc-hc/mpc-hc.org)
+[![Dependency Status](https://david-dm.org/mpc-hc/mpc-hc.org.png)](https://david-dm.org/mpc-hc/mpc-hc.org)
 
 Getting started
 ---------------
