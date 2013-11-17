@@ -16,7 +16,7 @@ Highlights of this release:
   system tend to crash the player on startup. Now this crash will only happen if/when
   you enter capture mode. One common cause is **ffdshow x64**. Check if you have it installed and uninstall it.
 
-- Many LAV Filters fixes including a crash on AMD cards with DXVA when stopping playback
+- Many LAV Filters fixes and improvements, including support for HEVC and VP9, and a crash fix on AMD cards with DXVA when stopping playback
 
 - Fixed subtitle selection settings of the internal LAV splitter
 
