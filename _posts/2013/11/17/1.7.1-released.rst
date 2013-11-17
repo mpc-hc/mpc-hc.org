@@ -1,0 +1,25 @@
+.. title: v1.7.1 is released
+.. author: XhmikosR
+
+.. abstract
+
+After almost 1 and a half months since our last stable build, we decided to release v1.7.1.
+
+This release is mostly a bugfix release, with a few new features.
+
+.. body
+
+
+Highlights of this release:
+
+- Fixed MPC-HC crashing on startup on >= Windows 8. Broken codecs installed on the
+  system tend to crash the player on startup. Now this crash will only happen if/when
+  you enter capture mode. One common cause is **ffdshow x64**. Check if you have it installed and uninstall it.
+
+- Many LAV Filters fixes including a crash on AMD cards with DXVA when stopping playback
+
+- Fixed subtitle selection settings of the internal LAV splitter
+
+
+You can download the new version :doc:`here </downloads>`.
+For the complete changes see the :doc:`changelog </changelog>`.
