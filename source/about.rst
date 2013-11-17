@@ -7,7 +7,7 @@ Media Player Classic - Home Cinema is an extremely light-weight media player for
 
 * It is written in C++.
 * Supports GPU assisted decoding.
-* Translated in 25 languages.
+* Translated in 27 languages.
 
 
 MPC-HC Team
@@ -80,6 +80,7 @@ Translators
     "Chinese Traditional", "Kene Lin", "kenelin ~AT~ users.sourceforge ~dot~ net"
     "Czech", "khagaroth", "khagaroth ~AT~ users.sourceforge ~dot~ net"
     "Dutch", "Paul Tjepkema", "pietpuk123 ~AT~ users.sourceforge ~dot~ net"
+    "English (British)", "Boris Kotov", "doctor.z01db3rg ~AT~ gmail ~dot~ com"
     "French", "Sebastiii", "sebastiii ~AT~ users.sourceforge ~dot~ net"
     "German", "Markus Gaugg", "markusgaugg ~AT~ users.sourceforge ~dot~ net"
     "German", "Luan", "luanmail ~AT~ users.sourceforge ~dot~ net"
@@ -97,6 +98,7 @@ Translators
     "Romanian", "lordkag", "lordkag ~AT~ users.sourceforge ~dot~ net"
     "Russian", "YDY", "ydy ~AT~ users.sourceforge ~dot~ net"
     "Slovak", "Marian Hikanik", "mhikanik ~AT~ users.sourceforge ~dot~ net"
+    "Slovenian", "shvala", "simon.hvala ~AT~ hotmail ~dot~ com"
     "Spanish", "SquallMX", "squallmx ~AT~ users.sourceforge ~dot~ net"
     "Turkish", "Bosluk", "bosluk ~AT~ users.sourceforge ~dot~ net"
     "Ukrainian", "arestarh", "arestarh1986 ~AT~ users.sourceforge ~dot~ net"
