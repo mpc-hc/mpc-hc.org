@@ -118,6 +118,10 @@ body > .container {
     text-align: justify;
 }
 
+.copyright {
+    margin: 40px auto 30px auto;
+}
+
 .downloads-version {
     font-weight: bold;
     padding-bottom: 8px;
@@ -308,10 +312,6 @@ a.fa-rss:focus {
         background-image: none;
     }
 
-    .page {
-        margin: 0;
-    }
-
     body > .container {
         -webkit-box-shadow: none;
            -moz-box-shadow: none;
@@ -326,7 +326,8 @@ a.fa-rss:focus {
         z-index: 100;
     }
 
-    .page {
+    .page,
+    footer {
         margin: 30px;
     }
 
@@ -369,10 +370,6 @@ a.fa-rss:focus {
     .footer-left,
     .footer-center {
         border-right: 1px solid #D2D2D2;
-    }
-
-    .copyright {
-        margin: 40px auto 30px auto;
     }
 }
 
