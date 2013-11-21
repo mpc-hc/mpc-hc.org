@@ -147,6 +147,11 @@ body > .container {
     margin-top: 4px;
 }
 
+blockquote blockquote {
+    padding: 0;
+    margin-top: -10px;
+}
+
 .simple + blockquote,
 .first + blockquote {
     border-left: 0;
