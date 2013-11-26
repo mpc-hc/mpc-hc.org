@@ -27,11 +27,49 @@
   var respond = {};
   w.respond = respond;
   respond.update = function() {};
+  var requestQueue = [], xmlHttp = function() {
+    var xmlhttpmethod = false;
+    try {
+      xmlhttpmethod = new w.XMLHttpRequest();
+    } catch (e) {
+      xmlhttpmethod = new w.ActiveXObject("Microsoft.XMLHTTP");
+    }
+    return function() {
+      return xmlhttpmethod;
+    };
+  }(), ajax = function(url, callback) {
+    var req = xmlHttp();
+    if (!req) {
+      return;
+    }
+    req.open("GET", url, true);
+    req.onreadystatechange = function() {
+      if (req.readyState !== 4 || req.status !== 200 && req.status !== 304) {
+        return;
+      }
+      callback(req.responseText);
+    };
+    if (req.readyState === 4) {
+      return;
+    }
+    req.send(null);
+  };
+  respond.ajax = ajax;
+  respond.queue = requestQueue;
+  respond.regex = {
+    media: /@media[^\{]+\{([^\{\}]*\{[^\}\{]*\})+/gi,
+    keyframes: /@.*keyframes[^\{]+\{(?:[^\{\}]*\{[^\}\{]*\})+[^\}]+\}/gi,
+    urls: /(url\()['"]?([^\/\)'"][^:\)'"]+)['"]?(\))/g,
+    findStyles: /@media *([^\{]+)\{([\S\s]+?)$/,
+    only: /(only\s+)?([a-zA-Z]+)\s?/,
+    minw: /\([\s]*min\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/,
+    maxw: /\([\s]*max\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/
+  };
   respond.mediaQueriesSupported = w.matchMedia && w.matchMedia("only all") !== null && w.matchMedia("only all").matches;
   if (respond.mediaQueriesSupported) {
     return;
   }
-  var doc = w.document, docElem = doc.documentElement, mediastyles = [], rules = [], appendedEls = [], parsedSheets = {}, resizeThrottle = 30, head = doc.getElementsByTagName("head")[0] || docElem, base = doc.getElementsByTagName("base")[0], links = head.getElementsByTagName("link"), requestQueue = [], lastCall, resizeDefer, eminpx, getEmValue = function() {
+  var doc = w.document, docElem = doc.documentElement, mediastyles = [], rules = [], appendedEls = [], parsedSheets = {}, resizeThrottle = 30, head = doc.getElementsByTagName("head")[0] || docElem, base = doc.getElementsByTagName("base")[0], links = head.getElementsByTagName("link"), lastCall, resizeDefer, eminpx, getEmValue = function() {
     var ret, div = doc.createElement("div"), body = doc.body, originalHTMLFontSize = docElem.style.fontSize, originalBodyFontSize = body && body.style.fontSize, fakeUsed = false;
     div.style.cssText = "position:absolute;font-size:1em;width:1em";
     if (!body) {
@@ -49,7 +87,9 @@
       body.removeChild(div);
     }
     docElem.style.fontSize = originalHTMLFontSize;
-    body.style.fontSize = originalBodyFontSize;
+    if (originalBodyFontSize) {
+      body.style.fontSize = originalBodyFontSize;
+    }
     ret = eminpx = parseFloat(ret);
     return ret;
   }, applyMedia = function(fromResize) {
@@ -100,10 +140,10 @@
       }
     }
   }, translate = function(styles, href, media) {
-    var qs = styles.match(/@media[^\{]+\{([^\{\}]*\{[^\}\{]*\})+/gi), ql = qs && qs.length || 0;
+    var qs = styles.replace(respond.regex.keyframes, "").match(respond.regex.media), ql = qs && qs.length || 0;
     href = href.substring(0, href.lastIndexOf("/"));
     var repUrls = function(css) {
-      return css.replace(/(url\()['"]?([^\/\)'"][^:\)'"]+)['"]?(\))/g, "$1" + href + "$2$3");
+      return css.replace(respond.regex.urls, "$1" + href + "$2$3");
     }, useMedia = !ql && media;
     if (href.length) {
       href += "/";
@@ -117,7 +157,7 @@
         fullq = media;
         rules.push(repUrls(styles));
       } else {
-        fullq = qs[i].match(/@media *([^\{]+)\{([\S\s]+?)$/) && RegExp.$1;
+        fullq = qs[i].match(respond.regex.findStyles) && RegExp.$1;
         rules.push(RegExp.$2 && repUrls(RegExp.$2));
       }
       eachq = fullq.split(",");
@@ -125,41 +165,15 @@
       for (var j = 0; j < eql; j++) {
         thisq = eachq[j];
         mediastyles.push({
-          media: thisq.split("(")[0].match(/(only\s+)?([a-zA-Z]+)\s?/) && RegExp.$2 || "all",
+          media: thisq.split("(")[0].match(respond.regex.only) && RegExp.$2 || "all",
           rules: rules.length - 1,
           hasquery: thisq.indexOf("(") > -1,
-          minw: thisq.match(/\(min\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/) && parseFloat(RegExp.$1) + (RegExp.$2 || ""),
-          maxw: thisq.match(/\(max\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/) && parseFloat(RegExp.$1) + (RegExp.$2 || "")
+          minw: thisq.match(respond.regex.minw) && parseFloat(RegExp.$1) + (RegExp.$2 || ""),
+          maxw: thisq.match(respond.regex.maxw) && parseFloat(RegExp.$1) + (RegExp.$2 || "")
         });
       }
     }
     applyMedia();
-  }, xmlHttp = function() {
-    var xmlhttpmethod = false;
-    try {
-      xmlhttpmethod = new w.XMLHttpRequest();
-    } catch (e) {
-      xmlhttpmethod = new w.ActiveXObject("Microsoft.XMLHTTP");
-    }
-    return function() {
-      return xmlhttpmethod;
-    };
-  }(), ajax = function(url, callback) {
-    var req = xmlHttp();
-    if (!req) {
-      return;
-    }
-    req.open("GET", url, true);
-    req.onreadystatechange = function() {
-      if (req.readyState !== 4 || req.status !== 200 && req.status !== 304) {
-        return;
-      }
-      callback(req.responseText);
-    };
-    if (req.readyState === 4) {
-      return;
-    }
-    req.send(null);
   }, makeRequests = function() {
     if (requestQueue.length) {
       var thisRequest = requestQueue.shift();
@@ -195,6 +209,7 @@
   };
   ripCSS();
   respond.update = ripCSS;
+  respond.getEmValue = getEmValue;
   function callMedia() {
     applyMedia(true);
   }
