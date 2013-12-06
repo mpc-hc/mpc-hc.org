@@ -307,12 +307,6 @@ a.fa-rss:focus {
 
 
 /* -- media queries -- */
-@media (min-width: 992px) {
-    .navbar .nav > li > a:first-child {
-        margin-left: 10px;
-    }
-}
-
 @media (max-width: 768px) {
     body {
         background-image: none;
@@ -350,6 +344,10 @@ a.fa-rss:focus {
 }
 
 @media (min-width: 768px) {
+    .navbar-nav > li:nth-of-type(1) {
+        margin-left: 16px;
+    }
+
     .navbar-toggle + .nav-collapse {
         margin-top: 0;
     }
