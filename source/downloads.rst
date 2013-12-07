@@ -4,6 +4,8 @@ Downloads
 =========
 
 .. note::
+    :class: "alert alert-success"
+
     - Supported Operating Systems:
 
      Windows\ :sup:`®` XP SP3, Vista, 7, 8, 8.1 both 32-bit and 64-bit
@@ -19,8 +21,12 @@ Binaries
 
 Currently, the latest stable build is v1.7.1 which was compiled from `9ae7b7c <https://github.com/mpc-hc/mpc-hc/commit/9ae7b7c>`_
 
+.. raw:: html
+
+    <div class="table-responsive">
 
 .. csv-table::
+    :class: "table table-hover table-striped"
     :widths: 35, 20, 20, 20
 
     ":abbr:`MPC-HC (Media Player Classic - Home Cinema)` 32-bit (x86)", "`installer <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.7.1_x86/MPC-HC.1.7.1.x86.exe/download>`_", "`zip <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.7.1_x86/MPC-HC.1.7.1.x86.zip/download>`_", "`7z <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.7.1_x86/MPC-HC.1.7.1.x86.7z/download>`_"
@@ -28,16 +34,28 @@ Currently, the latest stable build is v1.7.1 which was compiled from `9ae7b7c <h
     "Standalone filters 32-bit (x86)", "—", "`zip <http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20Win32/Filters_v1.7.1_x86/MPC-HC_standalone_filters.1.7.1.x86.zip/download>`__", "`7z <http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20Win32/Filters_v1.7.1_x86/MPC-HC_standalone_filters.1.7.1.x86.7z/download>`__"
     "Standalone filters 64-bit (x64)", "—", "`zip <http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20x64/Filters_v1.7.1_x64/MPC-HC_standalone_filters.1.7.1.x64.zip/download>`__", "`7z <http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20x64/Filters_v1.7.1_x64/MPC-HC_standalone_filters.1.7.1.x64.7z/download>`__"
 
+.. raw:: html
+
+    </div>
+
 
 Source code
 -----------
 
+.. raw:: html
+
+    <div class="table-responsive">
+
 .. csv-table::
     :header: "Clone URL", "Browse URL", "Description"
-    :class: "text-left"
+    :class: "table table-hover table-striped"
     :widths: 36, 32, 32
 
     "``https://github.com/mpc-hc/mpc-hc.git``", "https://github.com/mpc-hc/mpc-hc", "Official Git repository"
+
+.. raw:: html
+
+    </div>
 
 
 PDB files
@@ -45,7 +63,12 @@ PDB files
 
 Program Database files, which contain the debug symbols, needed to debug the builds
 
+.. raw:: html
+
+    <div class="table-responsive">
+
 .. csv-table::
+    :class: "table table-hover table-striped"
     :widths: 25, 40
 
     ":abbr:`MPC-HC (Media Player Classic - Home Cinema)` 32-bit (x86)", "`7z <http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v1.7.1_x86/MPC-HC.1.7.1.x86.pdb.7z/download>`__"
@@ -53,6 +76,9 @@ Program Database files, which contain the debug symbols, needed to debug the bui
     "Standalone filters 32-bit (x86)", "`7z <http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20Win32/Filters_v1.7.1_x86/MPC-HC_standalone_filters.1.7.1.x86.pdb.7z/download>`__"
     "Standalone filters 64-bit (x64)", "`7z <http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20x64/Filters_v1.7.1_x64/MPC-HC_standalone_filters.1.7.1.x64.pdb.7z/download>`__"
 
+.. raw:: html
+
+    </div>
 
 Previous releases
 -----------------
@@ -64,6 +90,8 @@ Nightly builds
 --------------
 
 .. warning::
+    :class: "alert alert-warning"
+
     Nightly builds are considered as unstable builds. They may contain untested extra functionality. **Use at your own risk**.
 
 `Download <http://nightly.mpc-hc.org/>`_

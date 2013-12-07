@@ -14,6 +14,8 @@ MPC-HC Team
 -----------
 
 .. warning::
+    :class: "alert alert-warning"
+
     Please, do not contact team members directly for support,
     use the `bug tracker <https://trac.mpc-hc.org/wiki/How_to_Report_Issues>`_ instead.
 
@@ -21,8 +23,13 @@ MPC-HC Team
 Active (sorted by name):
 ########################
 
+.. raw:: html
+
+    <div class="table-responsive">
+
 .. csv-table::
     :header: "Name", "Email", "Role"
+    :class: "table table-hover table-striped"
     :widths: 20, 40, 40
 
     "alexmarsev", "alexmarsev ~AT~ users.sourceforge ~dot~ net", "Code"
@@ -34,11 +41,20 @@ Active (sorted by name):
     "Underground78", "underground78 ~AT~ users.sourceforge ~dot~ net", "Code, French, Project manager"
     "XhmikosR", "xhmikosr ~AT~ users.sourceforge ~dot~ net", "Various stuff, Project manager"
 
+.. raw:: html
+
+    </div>
+
 Inactive
 ########
 
+.. raw:: html
+
+    <div class="table-responsive">
+
 .. csv-table::
     :header: "Name", "Email", "Role"
+    :class: "table table-hover table-striped"
     :widths: 20, 40, 40
 
     "_xxl", "drevil_xxl ~AT~ users.sourceforge ~dot~ net", "FFmpeg"
@@ -64,12 +80,20 @@ Inactive
     "Vodyannikov Aleksandr", "aleksoid ~AT~ users.sourceforge ~dot~ net", "Code, Russian"
     "xpc1000", "xpc1000 ~AT~ users.sourceforge ~dot~ net", "Code"
 
+.. raw:: html
+
+    </div>
+
 Translators
 ###########
 
+.. raw:: html
+
+    <div class="table-responsive">
+
 .. csv-table::
     :header: "Language", "Translator", "Email"
-    :class: "text-left"
+    :class: "table table-hover table-striped"
     :widths: 35, 20, 45
 
     "Armenian", "hrant77", "hrant77 ~AT~ users.sourceforge ~dot~ net"
@@ -104,6 +128,9 @@ Translators
     "Ukrainian", "arestarh", "arestarh1986 ~AT~ users.sourceforge ~dot~ net"
     "Ukrainian", "Ihor Bobalo", "ibobalo ~AT~ users.sourceforge ~dot~ net (`http://www.eleks.com)`"
 
+.. raw:: html
+
+    </div>
 
 Contributors
 ############
@@ -124,9 +151,13 @@ MPC-HC is based on the original MPC version © 2002-2006 by Gabest (e-mail unkno
 Third-party libraries
 ---------------------
 
+.. raw:: html
+
+    <div class="table-responsive">
+
 .. csv-table::
     :header: "Project", "License", "Website"
-    :class: "text-left"
+    :class: "table table-hover table-striped"
     :widths: 20, 20, 40
 
     "ATL Server", "Ms-LPL", "http://atlserver.codeplex.com/"
@@ -149,3 +180,7 @@ Third-party libraries
     "VirtualDub", "GPLv2", "http://www.virtualdub.org/"
     "ZenLib", "zlib License", "http://sourceforge.net/projects/zenlib/"
     "zlib", "zlib License", "http://zlib.net/"
+
+.. raw:: html
+
+    </div>
