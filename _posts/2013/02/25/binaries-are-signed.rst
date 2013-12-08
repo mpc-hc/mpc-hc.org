@@ -32,7 +32,7 @@
     </p>
     <div class="col-sm-12 hidden-xs">
         <a class="fancybox-thumb" data-fancybox-group="gallery" href="/_static/img/news/properties-signature.png" title="Explorer Properties Signature tab">
-            <img src="/_static/img/news/properties-signature-thumb.png" alt="Properties Signature" width="300" height="241"/>
+            <img src="/_static/img/news/properties-signature-thumb.png" alt="Properties Signature" width="300" height="241">
         </a>
     </div>
     <p>
@@ -42,6 +42,6 @@
     </p>
     <div class="col-sm-12 hidden-xs">
         <a class="fancybox-thumb" data-fancybox-group="gallery" href="/_static/img/news/install-uac.png" title="Install UAC prompt">
-            <img src="/_static/img/news/install-uac-thumb.png" alt="Install UAC prompt" width="300" height="183"/>
+            <img src="/_static/img/news/install-uac-thumb.png" alt="Install UAC prompt" width="300" height="183">
         </a>
     </div>

@@ -65,7 +65,7 @@
                         {{ nav.item('about', pagename, pathto('about'), "About") }}
                         <li><a href="https://trac.mpc-hc.org/">Wiki</a></li>
                         <li {%- if pagename == 'donate' %} class="active"{% endif %}>
-                            <a {%- if pagename != 'donate' %} href="{{ pathto('donate') }}"{% endif %}><img src="{{ pathto('_static/img/paypal.png', 1) }}" width="74" height="21" title="Donate" alt="Paypal logo"/></a>
+                            <a {%- if pagename != 'donate' %} href="{{ pathto('donate') }}"{% endif %}><img src="{{ pathto('_static/img/paypal.png', 1) }}" width="74" height="21" title="Donate" alt="Paypal logo"></a>
                         </li>
                     </ul>
                 </div>
@@ -100,7 +100,7 @@
                             <span class="clearfix">Hosting sponsored by:</span>
                             <span class="clearfix"><em><a href="http://cloudvps.com/">CloudVPS</a> - Private Cloud, Clusters &amp; VPS</em></span>
                         </p>
-                        <a href="http://cloudvps.com/"><img src="{{ pathto('_static/img/cloudvps_small.png', 1) }}" width="100" height="70" title="CloudVPS - Private Cloud, Clusters &amp; VPS" alt="CloudVPS logo"/></a>
+                        <a href="http://cloudvps.com/"><img src="{{ pathto('_static/img/cloudvps_small.png', 1) }}" width="100" height="70" title="CloudVPS - Private Cloud, Clusters &amp; VPS" alt="CloudVPS logo"></a>
                     </div>
                     <!--googleon: all-->
                     {%- if last_updated or show_sphinx %}

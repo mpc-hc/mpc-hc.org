@@ -22,12 +22,12 @@
     <div class="row hidden-xs">
         <div class="col-sm-4 col-md-4">
             <a class="fancybox-thumb" data-fancybox-group="gallery" href="/_static/img/mpc-hc.original.jpg" title="MPC-HC's main window">
-                <img src="/_static/img/mpc-hc.original.thumb.jpg" alt="MPC-HC" width="180" height="134"/>
+                <img src="/_static/img/mpc-hc.original.thumb.jpg" alt="MPC-HC" width="180" height="134">
             </a>
         </div>
         <div class="col-sm-4 col-md-4">
             <a class="fancybox-thumb" data-fancybox-group="gallery" href="/_static/img/mpc-hc.toolbar.jpg" title="MPC-HC with custom toolbar" data-title-id="title-toolbar">
-                <img src="/_static/img/mpc-hc.toolbar.thumb.jpg" alt="MPC-HC with custom toolbar" width="180" height="134"/>
+                <img src="/_static/img/mpc-hc.toolbar.thumb.jpg" alt="MPC-HC with custom toolbar" width="180" height="134">
             </a>
             <div id="title-toolbar" class="hidden">
                 MPC-HC with <a href="https://trac.mpc-hc.org/wiki/Toolbar_images" target="_blank">custom toolbar</a>.
@@ -35,7 +35,7 @@
         </div>
         <div class="col-sm-4 col-md-4">
             <a class="fancybox-thumb" data-fancybox-group="gallery" href="/_static/img/mpc-hc.dvb.jpg" title="MPC-HC as DVB Player">
-                <img src="/_static/img/mpc-hc.dvb.thumb.jpg" alt="MPC-HC as DVB Player" width="182" height="137"/>
+                <img src="/_static/img/mpc-hc.dvb.thumb.jpg" alt="MPC-HC as DVB Player" width="182" height="137">
             </a>
         </div>
     </div>
