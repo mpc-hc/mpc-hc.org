@@ -150,6 +150,7 @@ function minify() {
             ];
 
         cp("-f", filesToCopyToDist, buildTarget);
+        cp("-f", ["_static/js/jquery-*.min.js"], buildTarget + "_static/js");
 
         minify();
 
