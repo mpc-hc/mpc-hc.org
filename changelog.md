@@ -9,7 +9,8 @@ Changelog
 =========
 
 {: .alert .alert-success }
-This changelog only applies to current stable build.
+Note
+: This changelog only applies to current stable build.
 For complete logs check the [links below](#all-changelogs).
 
 1.7.1 - 17 November 2013
@@ -77,18 +78,8 @@ For complete logs check the [links below](#all-changelogs).
 All changelogs
 --------------
 
-.. raw:: html
-
-    <div class="table-responsive">
-
-.. csv-table::
-    :header: "Link", "Description"
-    :class: "table table-hover table-striped"
-    :widths: 20, 80
-
-    "`Complete changelog <https://trac.mpc-hc.org/wiki/Changelog>`_", "Complete changelog for each and every stable build."
-    "`Git log <https://github.com/mpc-hc/mpc-hc/commits/master/>`_", "Absolutely unmodified logs on every commit that got committed into the master branch."
-
-.. raw:: html
-
-    </div>
+{: .table-responsive .table .table-hover .table-striped }
+| Link | Description |
+|:-|:-|
+| [Complete changelog](https://trac.mpc-hc.org/wiki/Changelog) | Complete changelog for each and every stable build. |
+| [Git log](https://github.com/mpc-hc/mpc-hc/commits/master/) | Absolutely unmodified logs on every commit that got committed into the master branch. |
