@@ -34,10 +34,6 @@ h3 {
     border-bottom: 1px solid #EEEEEE;
 }
 
-.table .pre {
-    font-size: 85%;
-}
-
 body > .container {
     background-color: white;
     margin-bottom: 30px;
@@ -56,21 +52,8 @@ body > .container {
 
 .full-news h1 {
     border-bottom: 0;
-    font-size: 24px;
     margin-bottom: 0;
     padding-bottom: 0;
-}
-
-.full-news blockquote {
-    margin: 0;
-}
-
-.full-news .simple {
-    margin-bottom: 6px;
-}
-
-.full-news h1 + p {
-    font-size: 80%;
 }
 
 .latest-news {
@@ -84,9 +67,10 @@ body > .container {
 .post-meta {
     color: #777777;
     font-size: 85%;
+    margin-bottom: 10px;
 }
 
-.new h2 {
+.new > h2 {
     border-bottom: 0;
     font-size: 20px;
     line-height: 20px;
@@ -95,12 +79,6 @@ body > .container {
 
 .new + p {
     margin-top: 2.5em;
-}
-
-.read-more {
-    float: right;
-    font-size: 85%;
-    font-style: italic;
 }
 
 .marketing h2 {
@@ -120,6 +98,11 @@ body > .container {
 .downloads-version {
     font-weight: bold;
     padding-bottom: 8px;
+}
+
+.permalink {
+    display: inline-block;
+    font-weight: bold;
 }
 
 
@@ -186,7 +169,8 @@ footer ul {
 a.fa-facebook,
 a.fa-twitter,
 a.fa-google-plus,
-a.fa-rss {
+a.fa-rss,
+a.permalink {
     color: lightgray;
     -webkit-transition: color 0.15s linear;
        -moz-transition: color 0.15s linear;
@@ -198,10 +182,12 @@ a.fa-facebook:hover,
 a.fa-twitter:hover,
 a.fa-google-plus:hover,
 a.fa-rss:hover,
+a.permalink:hover,
 a.fa-facebook:focus,
 a.fa-twitter:focus,
 a.fa-google-plus:focus,
-a.fa-rss:focus {
+a.fa-rss:focus,
+a.permalink:focus {
     color: gray;
     text-decoration: none;
 }
@@ -241,11 +227,6 @@ a.fa-rss:focus {
     .page,
     footer {
         margin: 10px;
-    }
-
-    .read-more {
-        position: relative;
-        top: -8px;
     }
 
     .footer-left,

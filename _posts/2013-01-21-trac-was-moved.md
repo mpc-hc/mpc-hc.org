@@ -1,6 +1,6 @@
 ---
 author: XhmikosR
-layout: default
+layout: news
 title: Trac was moved to our own server
 ---
 

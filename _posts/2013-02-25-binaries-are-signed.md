@@ -1,6 +1,6 @@
 ---
 author: XhmikosR
-layout: default
+layout: news
 title: Binaries are signed
 name: binaries-are-signed
 ---
