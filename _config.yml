@@ -2,7 +2,7 @@ markdown:       kramdown
 pygments:       false
 safe:           true
 
-exclude:        [bootstrap-info.md, LICENSE.md, node_modules, make.js, package.json, README.md, run-tests.js]
+exclude:        [bootstrap-info.md, LICENSE.md, node_modules, Gruntfile.js, package.json, README.md]
 
 # permalinks
 permalink:      pretty

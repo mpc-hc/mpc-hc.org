@@ -5,12 +5,12 @@ Getting started
 ---------------
 
 * Install [node.js](http://nodejs.org/download/)
+* Install grunt: `npm install -g grunt-cli`
 * Install the node.js dependencies: `npm install`
 * Install RailsInstaller with Ruby 1.9.3 <http://railsinstaller.org/en>
-* On Windows `set LANG=en_EN.UTF-8` before calling Jekyll otherwise Jekyll **will fail**
-* Run `node make` or `node make website` to build the static site
-* Run the webserver to test your changes: `node make server`
+* On Windows do `@CHCP 65001` before calling Jekyll otherwise Jekyll **will fail**.
+  Hint: you can add this line in `jekyll.cmd` so that you don't have to call it
+  every time yourself.
+* Run `grunt` to build the static site
+* Run the webserver to test your changes: `grunt connect`
   (http://localhost:8000/)
-
-You can run `npm run lint` or `npm run test` to run [JSHint](https://github.com/jshint/jshint)
-and [csslint](https://github.com/stubbornella/csslint) for our files.
