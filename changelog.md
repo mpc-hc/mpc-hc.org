@@ -5,16 +5,14 @@ permalink: /changelog/
 name: changelog
 ---
 
-Changelog
-=========
+# Changelog
 
 {: .alert .alert-success }
 Note
 : This changelog only applies to current stable build.
 For complete logs check the [links below](#all-changelogs).
 
-1.7.1 - 17 November 2013
-------------------------
+## 1.7.1 - 17 November 2013
 
 * New:
 
@@ -75,8 +73,7 @@ For complete logs check the [links below](#all-changelogs).
   * Ticket [#3720]({{ site.intertrac}}3720), DVB: Obey the Auto-zoom option when opening a channel
 
 
-All changelogs
---------------
+## All changelogs
 
 {: .table-responsive .table .table-hover .table-striped }
 | Link | Description |

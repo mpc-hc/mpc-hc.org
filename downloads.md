@@ -11,8 +11,7 @@ This is an abbreviation definition
 
 *[MPC-HC]: Media Player Classic - Home Cinema
 
-Downloads
-=========
+# Downloads
 
 {: .alert .alert-success }
 Note
@@ -21,8 +20,7 @@ Note
  : - System Requirements:
    : An SSE capable CPU
 
-Binaries
---------
+## Binaries
 
 {: .text-center .downloads-version }
 Currently, the latest stable build of is v{{ site.version.short }} which was compiled from [{{ site.version.hash }}](https://github.com/mpc-hc/mpc-hc/commit/{{ site.version.hash }})
@@ -34,8 +32,7 @@ Currently, the latest stable build of is v{{ site.version.short }} which was com
 | Standalone filters 64-bit (x64) | — | [zip](ttp://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20x64/Filters_v{{ site.version.short }}_x64/MPC-HC_standalone_filters.{{ site.version.short }}.x64.zip/download) | [7z](http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20x64/Filters_v{{ site.version.short }}_x64/MPC-HC_standalone_filters.{{ site.version.short }}.x64.7z/download) |
 
 
-Source code
------------
+## Source code
 
 {: .table-responsive .table .table-hover .table-striped }
 | Clone URL | Browse URL | Description |
@@ -43,8 +40,7 @@ Source code
 | https://github.com/mpc-hc/mpc-hc.git | <https://github.com/mpc-hc/mpc-hc> | Official Git repository |
 
 
-PDB files
----------
+## PDB files
 
 Program Database files, which contain the debug symbols, needed to debug the builds
 
@@ -54,14 +50,13 @@ Program Database files, which contain the debug symbols, needed to debug the bui
 | Standalone filters 32-bit (x86) | [7z](http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20Win32/Filters_v{{ site.version.short }}_x86/MPC-HC_standalone_filters.{{ site.version.short }}.x86.pdb.7z/download) |
 | Standalone filters 64-bit (x64) | [7z](http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20x64/Filters_v{{ site.version.short }}_x64/MPC-HC_standalone_filters.{{ site.version.short }}.x64.pdb.7z/download) |
 
-Previous releases
------------------
+
+## Previous releases
 
 You can find an archive of our releases via [HTTP](http://sourceforge.net/projects/mpc-hc/files/).
 
 
-Nightly builds
---------------
+## Nightly builds
 
 {: .alert .alert-warning }
 Warning
