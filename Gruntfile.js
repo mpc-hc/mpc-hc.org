@@ -1,11 +1,18 @@
-/*global module:false*/
+/*global module*/
+
 module.exports = function(grunt) {
 
+  var crypto = require('crypto');
+  var currentDate = (new Date()).valueOf().toString();
+  var random = Math.random().toString();
+  var id = crypto.createHash('sha1').update(currentDate + random).digest('hex');
+  var globalConfig = {
+    id: id
+  };
+  
   // Project configuration.
   grunt.initConfig({
-    // Metadata.
-    pkg: grunt.file.readJSON('package.json'),
-    // Task configuration.
+    globalConfig: globalConfig,
 
     jekyll: {
       site: {}
@@ -17,10 +24,12 @@ module.exports = function(grunt) {
           globals: {
             MPC_HC_VERSION_LONG: '1.7.1.0',
             MPC_HC_VERSION_SHORT: '1.7.1',
-            WEBSITE_URL: 'http://mpc-hc.org'
+            WEBSITE_URL: 'http://mpc-hc.org',
+            HASH: id
           }
         },
         files: [
+          {src: '**/*.html', dest: '_site/', expand: true, cwd: '_site/'},
           {src: '*.txt', dest: '_site/', expand: true, cwd: '_site/'}
         ]
       }
@@ -39,7 +48,7 @@ module.exports = function(grunt) {
           selectorsMergeMode: 'ie8'
         },
         files: {
-          '_site/assets/css/pack.css': ['assets/css/bootstrap.css',
+          '_site/assets/css/pack-<%= globalConfig.id %>.css': ['assets/css/bootstrap.css',
                                         'assets/css/font-awesome.css',
                                         'assets/css/jquery.fancybox.css',
                                         'assets/css/jquery.fancybox-thumbs.css',
@@ -57,11 +66,11 @@ module.exports = function(grunt) {
       },
       minify: {
         files: {
-          '_site/assets/js/pack.js': ['assets/js/plugins.js',
-                                       'assets/js/bootstrap.js',
-                                       'assets/js/jquery.mousewheel.js',
-                                       'assets/js/jquery.fancybox.js',
-                                       'assets/js/jquery.fancybox-thumbs.js']
+          '_site/assets/js/pack-<%= globalConfig.id %>.js': ['assets/js/plugins.js',
+                                      'assets/js/bootstrap.js',
+                                      'assets/js/jquery.mousewheel.js',
+                                      'assets/js/jquery.fancybox.js',
+                                      'assets/js/jquery.fancybox-thumbs.js']
         }
       },
       minifyIE: {
@@ -98,6 +107,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-jekyll');
 
   // Default task.
-  grunt.registerTask('default', ['jekyll', 'csslint', 'includereplace', 'cssmin', 'uglify']);
+  grunt.registerTask('default', ['jekyll', 'includereplace', 'cssmin', 'uglify']);
+  grunt.registerTask('test', ['csslint']);
 
 };
