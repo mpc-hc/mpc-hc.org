@@ -2,13 +2,16 @@ markdown:       kramdown
 pygments:       false
 safe:           true
 
-exclude:        [bootstrap-info.md, LICENSE.md, node_modules, Gruntfile.js, "*.json", README.md]
+exclude:
+- "*.css"
+- "*.js"
 
 # permalinks
 permalink:      pretty
 
 # server
-destination:    _site
+source:         ./source
+destination:    ./_site
 port:           8000
 baseurl:        /
 
