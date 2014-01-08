@@ -13,7 +13,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "test": "grunt csslint"
+    "test": "grunt test"
   },
   "dependencies": {
     "grunt": "~0.4.2",
