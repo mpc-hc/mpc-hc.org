@@ -8,15 +8,18 @@ name: archive
 <h1 id="archive">Archive</h1>
 
 {% for post in site.posts %}
-  {% capture current_year %}{{post.date | date: "%B %Y"}}{% endcapture %}
+  {% capture current_year %}{{ post.date | date: "%B %Y" }}{% endcapture %}
   {% if current_year != year %}
     {% unless forloop.first %}
     </ul>
     {% endunless %}
 
-    <h2 id="current_year">{{ current_year }}</h2>
+    <h2 id="{{ current_year | downcase | replace: ' ','_' }}">{{ current_year }}</h2>
     <ul class="list-unstyled">
     {% capture year %}{{current_year}}{% endcapture %}
   {% endif %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% if forloop.last %}
+    </ul>
+    {% endif %}
 {% endfor %}
