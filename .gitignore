@@ -3,3 +3,5 @@
 /_site
 /node_modules
 /npm-debug.log
+/validation-status.json
+/validation-report.json

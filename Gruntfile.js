@@ -9,7 +9,7 @@ module.exports = function(grunt) {
   var globalConfig = {
     id: id
   };
-  
+
   // Project configuration.
   grunt.initConfig({
     globalConfig: globalConfig,
@@ -91,6 +91,17 @@ module.exports = function(grunt) {
       }
     },
 
+    validation: {
+      options: {
+        charset: 'utf-8',
+        doctype: 'HTML5',
+        reset: true
+      },
+      files: {
+        src: ['_site/**/*.html']
+      }
+    },
+
     clean: {
       dist: '_site/'
     }
@@ -103,11 +114,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-html-validation');
   grunt.loadNpmTasks('grunt-include-replace');
   grunt.loadNpmTasks('grunt-jekyll');
 
   // Default task.
   grunt.registerTask('default', ['jekyll', 'includereplace', 'cssmin', 'uglify']);
-  grunt.registerTask('test', ['csslint']);
+  grunt.registerTask('test', ['csslint', 'validate-html']);
+  grunt.registerTask('validate-html', ['jekyll', 'validation']);
 
 };
