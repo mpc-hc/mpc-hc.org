@@ -1,1 +1,4 @@
-@@MPC_HC_VERSION_LONG
+---
+layout: nil
+---
+{{ site.version.long }}

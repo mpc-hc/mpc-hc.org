@@ -22,15 +22,11 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     globals: {
-                        MPC_HC_VERSION_LONG: "1.7.1.0",
-                        MPC_HC_VERSION_SHORT: "1.7.1",
-                        WEBSITE_URL: "http://mpc-hc.org",
                         HASH: id
                     }
                 },
                 files: [
-                    {src: "**/*.html", dest: "_site/", expand: true, cwd: "_site/"},
-                    {src: "*.txt", dest: "_site/", expand: true, cwd: "_site/"}
+                    {src: "**/*.html", dest: "_site/", expand: true, cwd: "_site/"}
                 ]
             }
         },

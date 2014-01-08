@@ -1,4 +1,8 @@
+---
+layout: nil
+---
+
 # robotstxt.org
 User-agent: *
 Disallow:
-Sitemap: @@WEBSITE_URL/sitemap.xml
+Sitemap: {{ site.url }}/sitemap.xml

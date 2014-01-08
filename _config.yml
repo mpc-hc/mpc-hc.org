@@ -17,6 +17,7 @@ version:
   short:        1.7.1
   long:         1.7.1.0
   hash:         "9ae7b7c"
+
 url:            "http://mpc-hc.org"
 trac_url:       "https://trac.mpc-hc.org/"
 intertrac:      "https://trac.mpc-hc.org/intertrac/%23"
