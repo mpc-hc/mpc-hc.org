@@ -148,9 +148,6 @@ footer ul {
     margin: 0;
 }
 
-.noscript-warning {
-    display: none;
-}
 
 /* -- social networks -- */
 .social-ul {
@@ -218,7 +215,6 @@ a.permalink:focus {
 
     .noscript-warning {
         bottom: 0;
-        display: block;
         position: fixed;
         width: 100%;
         z-index: 100;
