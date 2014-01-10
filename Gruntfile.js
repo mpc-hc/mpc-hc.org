@@ -138,7 +138,7 @@ module.exports = function(grunt) {
     });
 
     // These plugins provide necessary tasks.
-    require("load-grunt-tasks")(grunt, {scope: "dependencies"});
+    require("load-grunt-tasks")(grunt, {scope: "devDependencies"});
 
     // Default task.
     grunt.registerTask("default", ["jekyll", "copy", "includereplace", "cssmin", "uglify"]);
