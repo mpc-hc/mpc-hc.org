@@ -37,7 +37,7 @@ module.exports = function(grunt) {
         },
 
         watch: {
-            files: ["source/**/*", "_config.yml", "Gruntfile.js"],
+            files: ["source/**/*", ".jshintrc", "_config.yml", "Gruntfile.js"],
             tasks: ["build"],
             options: {
                 livereload: true
@@ -59,22 +59,7 @@ module.exports = function(grunt) {
 
         jshint: {
             options: {
-                "bitwise": true,
-                "boss": true,
-                "browser": false,
-                "camelcase": true,
-                "curly": true,
-                "eqeqeq": true,
-                "indent": 4,
-                "latedef": true,
-                "multistr": true,
-                "noarg": true,
-                "node": true,
-                "noempty": true,
-                "quotmark": "double",
-                "strict": true,
-                "trailing": true,
-                "unused": true
+                jshintrc: ".jshintrc"
             },
             files: {
                 src: ["Gruntfile.js", "source/assets/js/plugins.js"]
