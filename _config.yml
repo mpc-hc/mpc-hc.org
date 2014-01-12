@@ -3,6 +3,7 @@ pygments:       false
 safe:           true
 
 exclude:
+# we generate those files ourselves
 - "*.css"
 - "*.js"
 
@@ -10,8 +11,8 @@ exclude:
 permalink:      pretty
 
 # server
-source:         ./source
-destination:    ./_site
+source:         ./source/
+destination:    ./_site/
 port:           8000
 baseurl:        /
 

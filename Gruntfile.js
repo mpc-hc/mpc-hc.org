@@ -18,7 +18,6 @@ module.exports = function(grunt) {
         copy: {
             dist: {
                 files: [
-                    // Copy any JavaScript libs
                     {dest: "_site/", src: "assets/js/jquery*.min.js", expand: true, cwd: "source/"},
                 ]
             }
@@ -26,6 +25,23 @@ module.exports = function(grunt) {
 
         jekyll: {
             site: {}
+        },
+
+        connect: {
+            server: {
+                options: {
+                    base: "_site/",
+                    port: 8000
+                }
+            }
+        },
+
+        watch: {
+            files: ["source/**/*", "_config.yml", "Gruntfile.js"],
+            tasks: ["build"],
+            options: {
+                livereload: true
+            }
         },
 
         includereplace: {
@@ -110,16 +126,6 @@ module.exports = function(grunt) {
             }
         },
 
-        connect: {
-            server: {
-                options: {
-                    port: 8000,
-                    base: "_site/",
-                    keepalive: true
-                }
-            }
-        },
-
         validation: {
             options: {
                 charset: "utf-8",
@@ -137,12 +143,12 @@ module.exports = function(grunt) {
 
     });
 
-    // These plugins provide necessary tasks.
+    // Load any grunt plugins found in package.json.
     require("load-grunt-tasks")(grunt, {scope: "devDependencies"});
 
-    // Default task.
-    grunt.registerTask("default", ["jekyll", "copy", "includereplace", "cssmin", "uglify"]);
-    grunt.registerTask("test", ["csslint", "jshint", "validate-html"]);
-    grunt.registerTask("validate-html", ["jekyll", "validation"]);
+    grunt.registerTask("build", ["jekyll", "copy", "includereplace", "cssmin", "uglify"]);
+    grunt.registerTask("default", ["build", "connect", "watch"]);
+    grunt.registerTask("test", ["build", "csslint", "jshint", "validate-html"]);
+    grunt.registerTask("validate-html", ["validation"]);
 
 };
