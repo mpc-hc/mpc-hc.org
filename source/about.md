@@ -24,7 +24,7 @@ use the [bug tracker](https://trac.mpc-hc.org/wiki/How_to_Report_Issues) instead
 
 ### Active (sorted by name):
 
-{: .table-responsive .table .table-hover .table-striped }
+{: .table .table-hover .table-responsive .table-striped }
 | Name | Email | Role |
 |:-|:-|:-|
 | alexmarsev | alexmarsev ~AT~ users.sourceforge ~dot~ net | Code |
@@ -68,7 +68,7 @@ use the [bug tracker](https://trac.mpc-hc.org/wiki/How_to_Report_Issues) instead
 
 ### Translators
 
-{: .table-responsive .table .table-hover .table-striped }
+{: .table .table-hover .table-responsive .table-striped }
 | Language | Translator | Email |
 |:-|:-|:-|
 | Armenian | hrant77 | hrant77 ~AT~ users.sourceforge ~dot~ net |
@@ -120,7 +120,7 @@ MPC-HC is based on the original MPC version © 2002-2006 by Gabest (e-mail unkno
 
 ## Third-party libraries
 
-{: .table-responsive .table .table-hover .table-striped }
+{: .table .table-hover .table-responsive .table-striped }
 | Project | License | Website |
 |:-|:-|:-|
 | ATL Server | Ms-LPL | <http://atlserver.codeplex.com/> |

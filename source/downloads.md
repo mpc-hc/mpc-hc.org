@@ -25,7 +25,7 @@ Note
 {: .text-center .downloads-version }
 Currently, the latest stable build of is v{{ site.version.short }} which was compiled from [{{ site.version.hash }}](https://github.com/mpc-hc/mpc-hc/commit/{{ site.version.hash }})
 
-{: .table-responsive .table .table-hover .table-striped }
+{: .table .table-hover .table-responsive .table-striped }
 | MPC-HC 32-bit (x86) | [installer](http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v{{ site.version.short }}_x86/MPC-HC.{{ site.version.short }}.x86.exe/download) | [zip](http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v{{ site.version.short }}_x86/MPC-HC.{{ site.version.short }}.x86.zip/download) | [7z](http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v{{ site.version.short }}_x86/MPC-HC.{{ site.version.short }}.x86.7z/download) |
 | MPC-HC 64-bit (x64) | [installer](http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20x64/MPC-HC_v{{ site.version.short }}_x64/MPC-HC.{{ site.version.short }}.x64.exe/download) | [zip](http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20x64/MPC-HC_v{{ site.version.short }}_x64/MPC-HC.{{ site.version.short }}.x64.zip/download) | [7z](http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20x64/MPC-HC_v{{ site.version.short }}_x64/MPC-HC.{{ site.version.short }}.x64.7z/download) |
 | Standalone filters 32-bit (x86) | — | [zip](http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20Win32/Filters_v{{ site.version.short }}_x86/MPC-HC_standalone_filters.{{ site.version.short }}.x86.zip/download) | [7z](http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20Win32/Filters_v{{ site.version.short }}_x86/MPC-HC_standalone_filters.{{ site.version.short }}.x86.7z/download) |
@@ -34,7 +34,7 @@ Currently, the latest stable build of is v{{ site.version.short }} which was com
 
 ## Source code
 
-{: .table-responsive .table .table-hover .table-striped }
+{: .table .table-hover .table-responsive }
 | Clone URL | Browse URL | Description |
 |:-:|:-:|:-:|
 | https://github.com/mpc-hc/mpc-hc.git | <https://github.com/mpc-hc/mpc-hc> | Official Git repository |
@@ -44,7 +44,7 @@ Currently, the latest stable build of is v{{ site.version.short }} which was com
 
 Program Database files, which contain the debug symbols, needed to debug the builds
 
-{: .table-responsive .table .table-hover .table-striped }
+{: .table .table-hover .table-responsive .table-striped }
 | MPC-HC 32-bit (x86) | [7z](http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v{{ site.version.short }}_x86/MPC-HC.{{ site.version.short }}.x86.pdb.7z/download) |
 | MPC-HC 64-bit (x64) | [7z](http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20x64/MPC-HC_v{{ site.version.short }}_x64/MPC-HC.{{ site.version.short }}.x64.pdb.7z/download) |
 | Standalone filters 32-bit (x86) | [7z](http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20Win32/Filters_v{{ site.version.short }}_x86/MPC-HC_standalone_filters.{{ site.version.short }}.x86.pdb.7z/download) |

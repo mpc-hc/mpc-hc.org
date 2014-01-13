@@ -75,7 +75,7 @@ For complete logs check the [links below](#all-changelogs).
 
 ## All changelogs
 
-{: .table-responsive .table .table-hover .table-striped }
+{: .table .table-hover .table-responsive .table-striped }
 | Link | Description |
 |:-|:-|
 | [Complete changelog](https://trac.mpc-hc.org/wiki/Changelog) | Complete changelog for each and every stable build. |
