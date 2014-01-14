@@ -30,7 +30,7 @@ or a potential *scam* file.
 
 Windows verifies the signature during installation, if UAC is enabled.
 If the prompt dialog does not say that the signature is valid, cancel the
-installation and download the file again from our [*downloads*](/downloads).
+installation and download the file again from our [*downloads*](/downloads/).
 
 <div class="col-sm-12 hidden-xs">
     <a class="fancybox-thumb" data-fancybox-group="gallery" href="/assets/img/news/install-uac.png" title="Install UAC prompt">
