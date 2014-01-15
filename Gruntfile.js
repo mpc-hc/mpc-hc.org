@@ -133,7 +133,6 @@ module.exports = function(grunt) {
 
     grunt.registerTask("build", ["jekyll", "copy", "includereplace", "cssmin", "uglify"]);
     grunt.registerTask("default", ["build", "connect", "watch"]);
-    grunt.registerTask("test", ["build", "csslint", "jshint", "validate-html"]);
-    grunt.registerTask("validate-html", ["validation"]);
+    grunt.registerTask("test", ["build", "csslint", "jshint", "validation"]);
 
 };
