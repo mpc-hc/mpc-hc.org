@@ -105,6 +105,15 @@ body > .container {
     font-weight: bold;
 }
 
+.navbar-brand:before {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAABaFBMVEUAAAADAwP//v5AQEDi4uIAAABKSkrZ2NoDAwMZGRkJCQklc84AAAAGBgb49/ZXV1cNDQ2QkJAeHh4AAABra2v8+vkAAAAeHh7v8fA4ODioqKhaWloAAACEhIP++f4QkwUXFxcDAwMsLCzm6u8AAAACAgIAAADaq5LPQQPy+fwgICCenp7a2tpKSkrOzs69vb11dXUvLy+3zbT17vbA0+e8Xy+dnJvXfE4mJibo+PtNi9H4//9ws2g4ecbJzM/IfFTZuKcAAABHg8fM4MSXmJjU2+Sxx+FSUlLKcESRkZFDQ0NWVlaDg4O1tbXGxsYKCgq2tra7y+lTU1Pt7e1qamqamppesFXo6OgjIyMviCbd5vCysrLw5vE+dbY5nivj8OFEoTgsnR15fH6YsMtxnMzG0+OBoMP26+QpKSmx1azpzbzby8KPxYjIRATPhVvQWhu/vr7KmYH///8BAQHDwsMICAh5eXm4trM9Ww2fAAAAcnRSTlMAVv38/gz+/SUBE/w5vf0h/vr+P/z8baD8/fn6BP38/N3P3PyIG6L8/P1Ve9eawMv+/Pz+/Pz+/PD8/P78/P78/H38/Pz8/P78yDCMlN+5Q378QuV8Yvzgs/z8/Pz8/Pz8/Pz8/Pz8/Oz8/Pz8/Pz8/fwafUAtAAABSklEQVQYGV3BZVuDYBgG0JuHemHAinW6nq0ru7u7uzvYpn9f5YPXpefgH2crwx9OLrBsCQH8YlxHu+GuR1baFmBzti61CyFXuLPNK8LGFufNJi93bmkKfkRVBVjtlpq6V42Kzo3ttY69rl03A7IelycV6NoMuz4sq1mXRyQvIPJ8j6feaMzWIzFTMt1TPRygtLhCs93u6qEsCEH6FvYDyMTI5jswiOJDp40MAP+UL1/L0/XE8EA6uJOYlHMAuIvbymjhoXwz4lif3E/cl3QAWoT6x54ficqOad9R4imeAsB4KlUKY2QMXBHFz4coFQXUO2Owf+6VZhyXM0E6OSNJBZRk+qVWGC1OOIaPBertJZMB0OX83HuRptMGkUUlmdcA6G/WYFFufFZjphTqS+o5EcC4R+pLtui5jJ/TmKrAxsb9nFdj2awoRmH7Am9CMO6Tm9eKAAAAAElFTkSuQmCC");
+    content: "";
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+}
 
 /* -- Bootstrap overrides -- */
 .container {
@@ -267,7 +276,10 @@ a.permalink:focus {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .navbar-nav > li > a:first-child {
+        padding-left: 0;
+    }
     .navbar-nav > li > a {
-        padding: 15px 8px 8px 8px
+        padding: 15px 8px 8px 8px;
     }
 }
