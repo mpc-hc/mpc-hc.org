@@ -135,13 +135,6 @@ body > .container {
 }
 
 
-
-@media (max-width: 767px) {
-    .table-responsive {
-        border: 0;
-    }
-}
-
 /* footer */
 footer {
     font-size: 90%;
@@ -210,7 +203,7 @@ a.permalink:focus {
 
 
 /* -- media queries -- */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     body {
         background-image: none;
     }
@@ -238,6 +231,9 @@ a.permalink:focus {
     .footer-center,
     .footer-right {
         border-right: none;
+    }
+    .table-responsive {
+        border: 0;
     }
 }
 
