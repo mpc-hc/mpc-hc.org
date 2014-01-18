@@ -2,14 +2,7 @@
 
 module.exports = function(grunt) {
 
-    var crypto = require("crypto");
-    var currentDate = (new Date()).valueOf().toString();
-    var random = Math.random().toString();
-    var hash = crypto.createHash("sha1").update(currentDate + random).digest("hex");
-
-    // Project configuration.
     grunt.initConfig({
-        hash: hash,
         dirs: {
             dest: "_site",
             src: "source"
@@ -26,19 +19,6 @@ module.exports = function(grunt) {
 
         jekyll: {
             site: {}
-        },
-
-        includereplace: {
-            dist: {
-                options: {
-                    globals: {
-                        HASH: hash
-                    }
-                },
-                files: [
-                    {src: "**/*.html", dest: "<%= dirs.dest %>/", expand: true, cwd: "<%= dirs.dest %>/"}
-                ]
-            }
         },
 
         htmlmin: {
@@ -64,7 +44,7 @@ module.exports = function(grunt) {
                       "<%= dirs.src %>/assets/css/jquery.fancybox.css",
                       "<%= dirs.src %>/assets/css/jquery.fancybox-thumbs.css",
                       "<%= dirs.src %>/assets/css/style.css"],
-                dest: "<%= dirs.dest %>/assets/css/pack-<%= hash %>.css"
+                dest: "<%= dirs.dest %>/assets/css/pack.css"
             },
             js: {
                 src: ["<%= dirs.src %>/assets/js/plugins.js",
@@ -72,7 +52,7 @@ module.exports = function(grunt) {
                       "<%= dirs.src %>/assets/js/jquery.mousewheel.js",
                       "<%= dirs.src %>/assets/js/jquery.fancybox.js",
                       "<%= dirs.src %>/assets/js/jquery.fancybox-thumbs.js"],
-                dest: "<%= dirs.dest %>/assets/js/pack-<%= hash %>.js"
+                dest: "<%= dirs.dest %>/assets/js/pack.js"
             },
             jsIE: {
                 src: ["<%= dirs.src %>/assets/js/html5shiv.js",
@@ -137,6 +117,42 @@ module.exports = function(grunt) {
             }
         },
 
+        filerev: {
+            css: {
+                src: "<%= dirs.dest %>/assets/css/**/{,*/}*.css"
+             },
+            js: {
+                src: [
+                    "<%= dirs.dest %>/assets/js/**/{,*/}*.js",
+                    "!<%= dirs.dest %>/assets/js/jquery*.min.js"
+                ]
+            },
+            images: {
+                src: [
+                    "<%= dirs.dest %>/assets/img/**/*.{jpg,jpeg,gif,png}",
+                    "!<%= dirs.dest %>/assets/img/logo-144x144.png",
+                    "!<%= dirs.dest %>/assets/img/logo-256x256.png",
+                    "!<%= dirs.dest %>/assets/img/TileImage.png"
+                ]
+            }
+        },
+
+        useminPrepare: {
+            html: "<%= dirs.dest %>/index.html",
+            options: {
+                dest: "<%= dirs.dest %>",
+                root: "<%= dirs.dest %>"
+            }
+        },
+
+        usemin: {
+            css: "<%= dirs.dest %>/assets/css/pack*.css",
+            html: "<%= dirs.dest %>/**/*.html",
+            options: {
+                assetsDirs: ["<%= dirs.dest %>/", "<%= dirs.dest %>/assets/img/"]
+            }
+        },
+
         connect: {
             server: {
                 options: {
@@ -193,14 +209,17 @@ module.exports = function(grunt) {
     require("time-grunt")(grunt);
 
     grunt.registerTask("build", [
+        "clean",
         "jekyll",
+        "useminPrepare",
         "copy",
-        "includereplace",
-        "htmlmin",
         "concat",
         "uncss",
         "cssmin",
-        "uglify"
+        "uglify",
+        "filerev",
+        "usemin",
+        "htmlmin"
     ]);
 
     grunt.registerTask("test", [
@@ -212,9 +231,11 @@ module.exports = function(grunt) {
 
     grunt.registerTask("dev", [
         "jekyll",
+        "useminPrepare",
         "copy",
-        "includereplace",
-        "concat"
+        "concat",
+        "filerev",
+        "usemin"
     ]);
 
     grunt.registerTask("default", [
