@@ -1,1 +1,4 @@
-1.7.1.0
+---
+layout: nil
+---
+{{ site.version.long }}

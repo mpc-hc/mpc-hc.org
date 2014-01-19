@@ -1,0 +1,80 @@
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-4 footer-left">
+                        <h3>Follow us on</h3>
+                        <ul class="social-ul list-inline">
+                            <li><a class="fa fa-facebook fa-2x" href="http://www.facebook.com/MediaPlayerClassicHomeCinema" title="Like our page on Facebook!" target="_blank"></a></li>
+                            <li><a class="fa fa-twitter fa-2x" href="https://twitter.com/mpc_hc/" title="Follow us on Twitter!" target="_blank"></a></li>
+                            <li><a class="fa fa-google-plus fa-2x" href="https://plus.google.com/u/0/109957971189557916726" title="Follow us on Google+" target="_blank"></a></li>
+                            <li><a class="fa fa-rss fa-2x" href="/rss.xml" title="RSS Feed"></a></li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li><a href="/acknowledgments/">Acknowledgments</a></li>
+                        </ul>
+                    </div>
+                    <!--googleoff: all-->
+                    <div class="col-lg-4 col-sm-4 footer-center">
+                        <p class="clearfix">
+                            Hosting sponsored by:<br>
+                            <em><a href="http://cloudvps.com/">CloudVPS</a> - Private Cloud, Clusters &amp; VPS</em>
+                        </p>
+                        <a href="http://cloudvps.com/"><img src="/assets/img/cloudvps_small.png" width="100" height="70" title="CloudVPS - Private Cloud, Clusters &amp; VPS" alt="CloudVPS logo"></a>
+                    </div>
+                    <!--googleon: all-->
+                    <div class="col-lg-4 col-sm-4 footer-right">
+                        <p>Page last updated on {{ site.time | date_to_rfc822 }}.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="copyright text-center">
+                        Copyright &copy; 2012-2014 <a href="/about/">MPC-HC Team</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <noscript>
+            <div class="alert alert-danger visible-xs noscript-warning">
+                <h4>Warning!</h4>
+                <p>You have JavaScript disabled or your browser doesn't support it.
+                Some features, like the navigation button, won't be available.</p>
+            </div>
+        </noscript>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/assets/js/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="/assets/js/pack-@@HASH.js"></script>
+        {% if page.name == "downloads" or page.name == "home" %}
+        <script>
+            (function() {
+                var el = document.createElement('script');
+                el.src = '//sourceforge.net/accelerator/js?partner_id=72';
+                el.defer = true;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(el, s);
+            })();
+        </script>
+        {% endif %}
+        {% if page.name == "home" or page.name == "binaries-are-signed" %}
+        <script>
+            $(document).ready(function() {
+                $(".fancybox-thumb").fancybox({
+                    padding: 0,
+                    helpers: {
+                        title: { type: 'float' },
+                        thumbs: { width: 100, height: 74 }
+                    },
+                    beforeLoad: function() {
+                        var el, id = $(this.element).data('title-id');
+                        if (id) {
+                            el = $('#' + id);
+                            if (el.length) this.title = el.html();
+                        }
+                    }
+                });
+            });
+        </script>
+        {% endif %}
+    </body>
+</html>

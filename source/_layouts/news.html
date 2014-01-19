@@ -1,0 +1,18 @@
+{% include header.html %}
+
+<div class="full-news">
+
+    <h1>{{ page.title }}
+        <a href="{{ post.url }}" class="permalink" title="Permalink">&infin;</a>
+    </h1>
+    <div class="post-meta">
+        <span>
+            <i class="fa fa-calendar"></i> {{ page.date | date: "%B %d, %Y" }} <i class="fa fa-user"></i> {{ page.author }}
+        </span>
+    </div>
+
+</div>
+
+{{ content }}
+
+{% include footer.html %}
