@@ -64,7 +64,7 @@ name: home
 </div>
 
 <div class="latest-news">
-    <a class="fa fa-rss fa-2x rss-before" href="/rss.xml" title="RSS Feed"></a>
+    <a class="rss-before" href="/rss.xml" title="RSS Feed"><i class="fa fa-rss fa-2x fa-2x"></i></a>
     <h1>Latest news</h1>
 
     {% for post in site.posts limit:site.news_limit %}

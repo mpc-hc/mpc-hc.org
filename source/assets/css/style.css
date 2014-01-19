@@ -165,11 +165,11 @@ footer ul {
     position: absolute;
 }
 
-a.fa-facebook,
-a.fa-twitter,
-a.fa-google-plus,
-a.fa-rss,
-a.permalink {
+.fa-facebook,
+.fa-twitter,
+.fa-google-plus,
+.fa-rss,
+.permalink {
     color: lightgray;
     -webkit-transition: color 0.15s linear;
        -moz-transition: color 0.15s linear;
@@ -177,16 +177,16 @@ a.permalink {
             transition: color 0.15s linear;
 }
 
-a.fa-facebook:hover,
-a.fa-twitter:hover,
-a.fa-google-plus:hover,
-a.fa-rss:hover,
-a.permalink:hover,
-a.fa-facebook:focus,
-a.fa-twitter:focus,
-a.fa-google-plus:focus,
-a.fa-rss:focus,
-a.permalink:focus {
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-google-plus:hover,
+.fa-rss:hover,
+.permalink:hover,
+.fa-facebook:focus,
+.fa-twitter:focus,
+.fa-google-plus:focus,
+.fa-rss:focus,
+.permalink:focus {
     color: gray;
     text-decoration: none;
 }
