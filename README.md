@@ -10,5 +10,5 @@
 * On Windows do `@CHCP 65001` before calling Jekyll otherwise Jekyll **will fail**.
   Hint: you can add this line in `jekyll.cmd` so that you don't have to call it
   every time yourself.
-* Run `gem install jekyll kramdown` (Note that Jekyll v1.4.3 is broken on Windows, use `gem install jekyll -v "=1.4.2")
+* Run `gem install jekyll kramdown` (Note that Jekyll v1.4.3 is broken on Windows, use `gem install jekyll -v "=1.4.2"`)
 * Run `grunt build` to build the static site, `grunt` to build and watch for changes (http://localhost:8000/)
