@@ -14,7 +14,7 @@
         {% if page.name == "home" %}
         <meta property="og:url" content="{{ site.url }}/">
         {% else %}
-        <meta property="og:url" content="{{ site.url }}/{{ page.name }}/">
+        <meta property="og:url" content="{{ site.url }}{{ page.url }}">
         {% endif %}
         <meta property="og:image" content="{{ site.url }}/assets/img/logo-256x256.png">
         <meta property="og:image:type" content="image/png">
