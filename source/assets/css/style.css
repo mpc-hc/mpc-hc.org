@@ -106,7 +106,7 @@ body > .container {
 }
 
 .navbar-brand-logo {
-    background-position: -74px -70px;
+    background-position: -10px -141px;
     display: inline-block;
     margin-right: 8px;
     vertical-align: top;
@@ -120,14 +120,14 @@ body > .container {
 }
 
 .sprite-cloudvps {
-    background-position: 0 0;
+    background-position: -10px -10px;
     display: inline-block;
     width: 100px;
     height: 70px;
 }
 
 .sprite-paypal {
-    background-position: 0 -70px;
+    background-position: -10px -100px;
     display: block;
     width: 74px;
     height: 21px;
