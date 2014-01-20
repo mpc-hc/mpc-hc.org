@@ -1,5 +1,5 @@
 class Trac < Liquid::Tag
-  Syntax = /^\s*([^\s]+)?/
+  Syntax = /(\d+)/
 
   def initialize(tagName, markup, tokens)
     super
@@ -15,5 +15,5 @@ class Trac < Liquid::Tag
     "<a href=\"https://trac.mpc-hc.org/intertrac/%23#{@ticket}\">##{@ticket}</a>"
   end
 
-  Liquid::Template.register_tag "trac", self
+  Liquid::Template.register_tag("trac", self)
 end
