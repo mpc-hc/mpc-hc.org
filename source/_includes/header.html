@@ -2,6 +2,12 @@
 <html lang="en" prefix="og: http://ogp.me/ns#">
     <head>
         <meta charset="utf-8">
+        <link rel="dns-prefetch" href="//ajax.googleapis.com">
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link rel="dns-prefetch" href="//themes.googleusercontent.com">
+        {% if page.name == "downloads" or page.name == "home" %}
+        <link rel="dns-prefetch" href="//sourceforge.net">
+        {% endif %}
         <title>{{ page.title }} &ndash; MPC-HC</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700">
