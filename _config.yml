@@ -5,6 +5,7 @@ exclude:
 # we generate those files ourselves
 - "*.css"
 - "*.js"
+- "_old"
 
 # permalinks
 permalink:      pretty

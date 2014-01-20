@@ -46,7 +46,7 @@
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="/">MPC-HC</a>
+                    <a class="navbar-brand" href="/"><span class="sprite navbar-brand-logo"></span>MPC-HC</a>
                     <button type="button" class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <i class="icon-bar"></i>
                         <i class="icon-bar"></i>
@@ -63,7 +63,7 @@
                         <li{% if page.name == "about" %} class="active"{% endif %}><a href="/about/">About</a></li>
                         <li><a href="https://trac.mpc-hc.org/">Wiki</a></li>
                         <li {% if page.name == "donate" %} class="active"{% endif %}>
-                            <a {% if page.name != "donate" %} href="/donate/"{% endif %}><img src="/assets/img/paypal.png" width="74" height="21" title="Donate" alt="Paypal logo"></a>
+                            <a {% if page.name != "donate" %} href="/donate/"{% endif %} title="Donate"><span class="sprite sprite-paypal"></span></a>
                         </li>
                     </ul>
                 </div>
