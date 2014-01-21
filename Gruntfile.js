@@ -1,6 +1,6 @@
-"use strict";
-
 module.exports = function(grunt) {
+    "use strict";
+
     var crypto = require("crypto");
     var currentDate = (new Date()).valueOf().toString();
     var random = Math.random().toString();
@@ -27,23 +27,6 @@ module.exports = function(grunt) {
             site: {}
         },
 
-        connect: {
-            server: {
-                options: {
-                    base: "<%= dirs.dest %>/",
-                    port: 8000
-                }
-            }
-        },
-
-        watch: {
-            files: ["<%= dirs.src %>/**/*", ".jshintrc", "_config.yml", "Gruntfile.js"],
-            tasks: "build",
-            options: {
-                livereload: true
-            }
-        },
-
         includereplace: {
             dist: {
                 options: {
@@ -55,19 +38,6 @@ module.exports = function(grunt) {
                     {src: "**/*.html", dest: "<%= dirs.dest %>/", expand: true, cwd: "<%= dirs.dest %>/"}
                 ]
             }
-        },
-
-        jshint: {
-            options: {
-                jshintrc: ".jshintrc"
-            },
-            files: {
-                src: ["Gruntfile.js"]
-            }
-        },
-
-        csslint: {
-            src: "<%= dirs.src %>/assets/css/style.css"
         },
 
         htmlmin: {
@@ -86,6 +56,27 @@ module.exports = function(grunt) {
             }
         },
 
+        concat: {
+            dist: {
+                src: ["<%= dirs.src %>/assets/css/bootstrap.css",
+                      "<%= dirs.src %>/assets/css/font-awesome.css",
+                      "<%= dirs.src %>/assets/css/jquery.fancybox.css",
+                      "<%= dirs.src %>/assets/css/jquery.fancybox-thumbs.css",
+                      "<%= dirs.src %>/assets/css/style.css"],
+                dest: "<%= dirs.dest %>/assets/css/pack-<%= hash %>.css"
+            }
+        },
+
+        uncss: {
+            options: {
+                stylesheets: ["../../../../../<%= concat.dist.dest %>"]
+            },
+            dist: {
+                src: "<%= dirs.dest %>/**/*.html",
+                dest: "<%= concat.dist.dest %>"
+            }
+        },
+
         cssmin: {
             minify: {
                 options: {
@@ -94,18 +85,14 @@ module.exports = function(grunt) {
                     selectorsMergeMode: "ie8"
                 },
                 files: {
-                    "<%= dirs.dest %>/assets/css/pack-<%= hash %>.css": ["<%= dirs.src %>/assets/css/bootstrap.css",
-                                                                         "<%= dirs.src %>/assets/css/font-awesome.css",
-                                                                         "<%= dirs.src %>/assets/css/jquery.fancybox.css",
-                                                                         "<%= dirs.src %>/assets/css/jquery.fancybox-thumbs.css",
-                                                                         "<%= dirs.src %>/assets/css/style.css"]
+                    "<%= uncss.dist.dest %>": "<%= concat.dist.dest %>"
                 }
             }
         },
 
         uglify: {
             options: {
-                /*compress: true,*/
+                /*compress: true,*/     //this is enabled by default; commented out so that the warnings don't show up
                 mangle: true,
                 preserveComments: false,
                 report: "min"
@@ -124,6 +111,36 @@ module.exports = function(grunt) {
                     "<%= dirs.dest %>/assets/js/html5shiv-respond.min.js": ["<%= dirs.src %>/assets/js/html5shiv.js",
                                                                             "<%= dirs.src %>/assets/js/respond.js"]
                 }
+            }
+        },
+
+        connect: {
+            server: {
+                options: {
+                    base: "<%= dirs.dest %>/",
+                    port: 8000
+                }
+            }
+        },
+
+        watch: {
+            files: ["<%= dirs.src %>/**/*", ".jshintrc", "_config.yml", "Gruntfile.js"],
+            tasks: "build",
+            options: {
+                livereload: true
+            }
+        },
+
+        csslint: {
+            src: "<%= dirs.src %>/assets/css/style.css"
+        },
+
+        jshint: {
+            options: {
+                jshintrc: ".jshintrc"
+            },
+            files: {
+                src: "Gruntfile.js"
             }
         },
 
@@ -153,6 +170,8 @@ module.exports = function(grunt) {
         "copy",
         "includereplace",
         "htmlmin",
+        "concat",
+        "uncss",
         "cssmin",
         "uglify"
     ]);
