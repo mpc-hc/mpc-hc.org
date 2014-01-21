@@ -70,6 +70,19 @@ module.exports = function(grunt) {
             src: ["source/assets/css/style.css"]
         },
 
+        htmlmin: {
+            dist: {
+                options: {
+                    /*removeComments: true,*/
+                    collapseWhitespace: true
+                },
+                expand: true,
+                cwd: "_site",
+                src: ["**/*.html"],
+                dest: "_site"
+            }
+        },
+
         cssmin: {
             minify: {
                 options: {
@@ -131,7 +144,7 @@ module.exports = function(grunt) {
     // Load any grunt plugins found in package.json.
     require("load-grunt-tasks")(grunt, {scope: "devDependencies"});
 
-    grunt.registerTask("build", ["jekyll", "copy", "includereplace", "cssmin", "uglify"]);
+    grunt.registerTask("build", ["jekyll", "copy", "includereplace", "htmlmin", "cssmin", "uglify"]);
     grunt.registerTask("default", ["build", "connect", "watch"]);
     grunt.registerTask("test", ["build", "csslint", "jshint", "validation"]);
 
