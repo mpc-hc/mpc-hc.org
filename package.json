@@ -1,9 +1,9 @@
 {
   "name": "mpc-hc.org",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "MPC-HC Team (https://github.com/mpc-hc/mpc-hc.org)",
   "description": "The mpc-hc.org source code",
-  "homepage": "https://github.com/mpc-hc/mpc-hc.org",
+  "homepage": "http://mpc-hc.org",
   "repository": {
     "type": "git",
     "url": "https://github.com/mpc-hc/mpc-hc.org.git"
