@@ -4,20 +4,21 @@ module.exports = function(grunt) {
     var crypto = require("crypto");
     var currentDate = (new Date()).valueOf().toString();
     var random = Math.random().toString();
-    var id = crypto.createHash("sha1").update(currentDate + random).digest("hex");
-    var globalConfig = {
-        id: id
-    };
+    var hash = crypto.createHash("sha1").update(currentDate + random).digest("hex");
 
     // Project configuration.
     grunt.initConfig({
-        globalConfig: globalConfig,
+        hash: hash,
+        dirs: {
+            dest: "_site",
+            src: "source"
+        },
 
         // Copy files that don't need compilation to dist/
         copy: {
             dist: {
                 files: [
-                    {dest: "_site/", src: "assets/js/jquery*.min.js", expand: true, cwd: "source/"},
+                    {dest: "<%= dirs.dest %>/", src: "assets/js/jquery*.min.js", expand: true, cwd: "<%= dirs.src %>/"},
                 ]
             }
         },
@@ -29,15 +30,15 @@ module.exports = function(grunt) {
         connect: {
             server: {
                 options: {
-                    base: "_site/",
+                    base: "<%= dirs.dest %>/",
                     port: 8000
                 }
             }
         },
 
         watch: {
-            files: ["source/**/*", ".jshintrc", "_config.yml", "Gruntfile.js"],
-            tasks: ["build"],
+            files: ["<%= dirs.src %>/**/*", ".jshintrc", "_config.yml", "Gruntfile.js"],
+            tasks: "build",
             options: {
                 livereload: true
             }
@@ -47,11 +48,11 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     globals: {
-                        HASH: id
+                        HASH: hash
                     }
                 },
                 files: [
-                    {src: "**/*.html", dest: "_site/", expand: true, cwd: "_site/"}
+                    {src: "**/*.html", dest: "<%= dirs.dest %>/", expand: true, cwd: "<%= dirs.dest %>/"}
                 ]
             }
         },
@@ -61,12 +62,12 @@ module.exports = function(grunt) {
                 jshintrc: ".jshintrc"
             },
             files: {
-                src: ["Gruntfile.js", "source/assets/js/plugins.js"]
+                src: ["Gruntfile.js", "<%= dirs.src %>/assets/js/plugins.js"]
             }
         },
 
         csslint: {
-            src: ["source/assets/css/style.css"]
+            src: "<%= dirs.src %>/assets/css/style.css"
         },
 
         htmlmin: {
@@ -76,9 +77,9 @@ module.exports = function(grunt) {
                     collapseWhitespace: true
                 },
                 expand: true,
-                cwd: "_site",
-                src: ["**/*.html"],
-                dest: "_site"
+                cwd: "<%= dirs.dest %>",
+                src: "**/*.html",
+                dest: "<%= dirs.dest %>"
             }
         },
 
@@ -90,11 +91,11 @@ module.exports = function(grunt) {
                     selectorsMergeMode: "ie8"
                 },
                 files: {
-                    "_site/assets/css/pack-<%= globalConfig.id %>.css": ["source/assets/css/bootstrap.css",
-                                                                         "source/assets/css/font-awesome.css",
-                                                                         "source/assets/css/jquery.fancybox.css",
-                                                                         "source/assets/css/jquery.fancybox-thumbs.css",
-                                                                         "source/assets/css/style.css"]
+                    "<%= dirs.dest %>/assets/css/pack-<%= hash %>.css": ["<%= dirs.src %>/assets/css/bootstrap.css",
+                                                                         "<%= dirs.src %>/assets/css/font-awesome.css",
+                                                                         "<%= dirs.src %>/assets/css/jquery.fancybox.css",
+                                                                         "<%= dirs.src %>/assets/css/jquery.fancybox-thumbs.css",
+                                                                         "<%= dirs.src %>/assets/css/style.css"]
                 }
             }
         },
@@ -108,17 +109,17 @@ module.exports = function(grunt) {
             },
             minify: {
                 files: {
-                    "_site/assets/js/pack-<%= globalConfig.id %>.js": ["source/assets/js/plugins.js",
-                                                                       "source/assets/js/bootstrap.js",
-                                                                       "source/assets/js/jquery.mousewheel.js",
-                                                                       "source/assets/js/jquery.fancybox.js",
-                                                                       "source/assets/js/jquery.fancybox-thumbs.js"]
+                    "<%= dirs.dest %>/assets/js/pack-<%= hash %>.js": ["<%= dirs.src %>/assets/js/plugins.js",
+                                                                       "<%= dirs.src %>/assets/js/bootstrap.js",
+                                                                       "<%= dirs.src %>/assets/js/jquery.mousewheel.js",
+                                                                       "<%= dirs.src %>/assets/js/jquery.fancybox.js",
+                                                                       "<%= dirs.src %>/assets/js/jquery.fancybox-thumbs.js"]
                 }
             },
             minifyIE: {
                 files: {
-                    "_site/assets/js/html5shiv-respond.min.js": ["source/assets/js/html5shiv.js",
-                                                                 "source/assets/js/respond.js"]
+                    "<%= dirs.dest %>/assets/js/html5shiv-respond.min.js": ["<%= dirs.src %>/assets/js/html5shiv.js",
+                                                                            "<%= dirs.src %>/assets/js/respond.js"]
                 }
             }
         },
@@ -130,12 +131,12 @@ module.exports = function(grunt) {
                 reset: true
             },
             files: {
-                src: ["_site/**/*.html"]
+                src: "<%= dirs.dest %>/**/*.html"
             }
         },
 
         clean: {
-            dist: "_site/"
+            dist: "<%= dirs.dest %>/"
         }
 
     });
@@ -144,8 +145,26 @@ module.exports = function(grunt) {
     require("load-grunt-tasks")(grunt, {scope: "devDependencies"});
     require("time-grunt")(grunt);
 
-    grunt.registerTask("build", ["jekyll", "copy", "includereplace", "htmlmin", "cssmin", "uglify"]);
-    grunt.registerTask("default", ["build", "connect", "watch"]);
-    grunt.registerTask("test", ["build", "csslint", "jshint", "validation"]);
+    grunt.registerTask("build", [
+        "jekyll",
+        "copy",
+        "includereplace",
+        "htmlmin",
+        "cssmin",
+        "uglify"
+    ]);
+
+    grunt.registerTask("test", [
+        "build",
+        "csslint",
+        "jshint",
+        "validation"
+    ]);
+
+    grunt.registerTask("default", [
+        "build",
+        "connect",
+        "watch"
+    ]);
 
 };
