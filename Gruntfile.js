@@ -1,7 +1,6 @@
 "use strict";
 
 module.exports = function(grunt) {
-
     var crypto = require("crypto");
     var currentDate = (new Date()).valueOf().toString();
     var random = Math.random().toString();
@@ -143,6 +142,7 @@ module.exports = function(grunt) {
 
     // Load any grunt plugins found in package.json.
     require("load-grunt-tasks")(grunt, {scope: "devDependencies"});
+    require("time-grunt")(grunt);
 
     grunt.registerTask("build", ["jekyll", "copy", "includereplace", "htmlmin", "cssmin", "uglify"]);
     grunt.registerTask("default", ["build", "connect", "watch"]);
