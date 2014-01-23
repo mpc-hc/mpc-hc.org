@@ -12,7 +12,7 @@ name: acknowledgments
 We would like to thank the following projects:
 
 * [7-Zip](http://www.7-zip.org/)
-* [Bootstrap](http://twitter.github.io/bootstrap/)
+* [Bootstrap](http://getbootstrap.com/)
 * [Coverity Scan](http://scan.coverity.com/)
 * [Cppcheck](http://cppcheck.sourceforge.net/)
 * [Font Awesome](http://fontawesome.io/) by Dave Gandy
@@ -21,5 +21,5 @@ We would like to thank the following projects:
 * [Inno Setup](http://www.jrsoftware.org/isinfo.php)
 * [MinGW](http://www.mingw.org/)
 * [MinGW-w64](http://mingw-w64.sourceforge.net/)
-* [mplayer2](http://www.mplayer2.org/) for the Website template
+* [mplayer2](http://www.mplayer2.org/) for the initial website template
 * [Node.js](http://nodejs.org/)
