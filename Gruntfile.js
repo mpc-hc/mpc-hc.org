@@ -62,7 +62,7 @@ module.exports = function(grunt) {
                 jshintrc: ".jshintrc"
             },
             files: {
-                src: ["Gruntfile.js", "<%= dirs.src %>/assets/js/plugins.js"]
+                src: ["Gruntfile.js"]
             }
         },
 
