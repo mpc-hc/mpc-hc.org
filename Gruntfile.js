@@ -69,7 +69,19 @@ module.exports = function(grunt) {
 
         uncss: {
             options: {
-                ignore: [/(#|\.)fancybox(\-[a-zA-Z]+)?/, ".fade", ".fade.in", ".collapse", ".collapse.in", ".collapsing"],
+                ignore: [
+                    /(#|\.)fancybox(\-[a-zA-Z]+)?/,
+                    // needed for Bootstrap's transitions
+                    ".fade",
+                    ".fade.in",
+                    ".collapse",
+                    ".collapse.in",
+                    ".collapsing",
+                    // needed for the <noscript> warning; remove when fixed in uncss
+                    ".alert-danger",
+                    ".visible-xs",
+                    ".noscript-warning"
+                ],
                 stylesheets: ["../../../../../<%= concat.dist.dest %>"]
             },
             dist: {
