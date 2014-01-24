@@ -69,7 +69,7 @@ module.exports = function(grunt) {
 
         uncss: {
             options: {
-                ignore: [/(#|\.)fancybox(\-[a-zA-Z]+)?/],
+                ignore: [/(#|\.)fancybox(\-[a-zA-Z]+)?/, ".fade", ".fade.in", ".collapse", ".collapse.in", ".collapsing"],
                 stylesheets: ["../../../../../<%= concat.dist.dest %>"]
             },
             dist: {
