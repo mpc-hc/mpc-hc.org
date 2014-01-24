@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: nil
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
@@ -10,13 +10,15 @@ layout: none
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  {% for post in site.pages %}
+  {% for page in site.pages %}
+  {% if page.layout != "nil" %}
   <url>
-    <loc>{{ site.url }}{{ post.url }}</loc>
+    <loc>{{ site.url }}{{ page.url }}</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  {% endif %}
   {% endfor %}
   {% for post in site.posts %}
   <url>
