@@ -3,9 +3,10 @@ http://getbootstrap.com/customize/
 Enabled components in v3.0.3:
 
 
-Common CSS
+Common CSS (all)
   Print media styles
   Typography
+  Code
   Grid system
   Tables
   Forms
@@ -17,7 +18,7 @@ Components
   Thumbnails
   Alerts
 
-Utilities
+Utilities (all)
   Basic utilities
   Responsive utilities
   Component animations
@@ -27,6 +28,7 @@ jQuery plugins
   Transitions
 
 
+(obsolete)
 http://www.icnfnt.com/
 
 .icon-calendar
