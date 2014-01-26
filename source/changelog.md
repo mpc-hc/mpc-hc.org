@@ -12,37 +12,68 @@ Note
 : This changelog only applies to current stable build.
 For complete logs check the [links below](#all-changelogs).
 
-## 1.7.1 - 17 November 2013
+## 1.7.2 - 26 January 2014
 
 * New:
-  * Ticket {% trac 2655 %}, Internal filters: Support WMV/ASF/DVR-MS splitting
-  * Ticket {% trac 3548 %}, Add British English translation
-  * Ticket {% trac 3590 %}, Internal filters: Support for HEVC and VP9
-  * Ticket {% trac 3605 %}, Support playlists using UTF8 encoding without BOM
-  * Ticket {% trac 3643 %}, Add Slovenian translation
+  * Added support for XySubFilter, only compatible with embedded subtitles for now
+  * New option to auto-hide docked panels together with toolbars
+  * Support pixel shader presets (with shortcuts and command line options)
+  * Show more descriptive window title in capture mode
+  * Ability to add all media files in folder from playlist panel context menu
+  * New Croatian and Malay translations
+  * Ticket {% trac 1556 %}, Ability to move the player window by dragging the video area during DVD playback
+  * Ticket {% trac 2251 %}, Show hidden main menu with Alt key
+  * Ticket {% trac 3235 %}, Option to delay playback when auto-change fullscreen monitor mode feature is used
+  * Ticket {% trac 3284 %}, Option to auto-hide mouse pointer in windowed mode during playback
+  * Ticket {% trac 3379 %}, "Left Up" mouse keybinding now allows to move the player window by dragging the video area
+  * Ticket {% trac 3614 %}, Do medium jumps when pressing mouse navigation buttons on the seekbar
 * Changed:
-  * Ticket {% trac 3569 %}/{% trac 3679 %}/{% trac 3680 %}, Disable internal WMV/ASF/DVR-MS splitting and WMV decoding by default since Microsoft filters are generally more stable
+  * Optimized subtitle renderer:
+      * performance has been greatly improved both for subtitle parsing and rendering (often 5 times faster or more)
+      * some subtitles which might have been missing before will now be displayed
+  * The storing mechanism of pixel shaders was redesigned:
+      * each pixel shader is now stored in its own file with .hlsl extension
+      * shader files are reloaded automatically when MPC-HC detects changes in them
+      * internal pixel shader editor was removed, you're supposed to use specialized external
+        editors from now on, but can still view compilation output in "Debug Shaders" window
+      * internal video renderers now always use the latest supported shader profile to compile
+        pixel shaders
+  * More flexible auto-hide controls in fullscreen configuration options
+  * Multiple high DPI scaling interface improvements
 * Updated:
-  * LAV Filters to 0.59.1.26:
-      * Ticket {% trac 3576 %}, LAV Video: Support H264 Annex B format in MP4 files
-      * Ticket {% trac 3601 %}, LAV Video: Fix a crash with DXVA on AMD cards when stopping playback
-      * Ticket {% trac 3676 %}, LAV Audio: Fix a crash when using old versions of the ArcSoft DTS Decoder to handle DTS decoding internally
-      * Ticket {% trac 3688 %}, LAV Audio: Fix a freeze when changing the bitstreaming settings when paused
-  * VirtualDub to v1.10.4
-  * Unrar to v5.0.0.12
-  * Little CMS to v2.6b (git 69ecafd)
-  * French, German, Polish, Portuguese (Brazil) and Simplified Chinese translations
+  * LAV Filters to v0.60.1.5:
+      * Ticket {% trac 3540 %}, LAV Splitter: The current/average bitrate is now shown in the Information panel
+      * Ticket {% trac 3760 %}, LAV Video: Fix a crash when opening some DVDs on 64-bit
+      * Ticket {% trac 3793 %}, LAV Video: Fix a decoding issue with some H264 files
+      * Ticket {% trac 3849 %}, LAV Video: DXVA VC1/WMV3 decoding now works on Intel cards
+      * Ticket {% trac 3862 %}, LAV Splitter: Fix a crash when opening MKV files with big attachments
+      * Ticket {% trac 3929 %}, LAV Video: Fix a crash when trying to decode WMV-3/VC1 with the DMO decoder unavailable
+  * MediaInfoLib to v0.7.67
+  * ZenLib to v0.4.29 r453
+  * Little CMS to v2.6b (git 579b3aa)
+  * Unrar to v5.0.0.14
+  * Armenian, Basque, Belarusian, British English, Catalan, Czech, Simplified and Traditional Chinese,
+    Dutch, French, German, Hebrew, Hungarian, Italian, Greek, Japanese, Korean, Polish, Portuguese (Brazil),
+    Romanian, Russian, Slovak, Slovenian, Spanish, Swedish, Turkish and Ukrainian translations
 * Fixed:
-  * DVD: The chapter marks could be wrong for some titles
-  * Ticket {% trac 1478 %}, Slightly improve the precision of the frame number in the "Go To" dialog. The frame number was sometimes off by 1. This was easily noticeable when doing frame-stepping
-  * Ticket {% trac 1555 %}, Use elapsed/remaining time for the chapter change OSD depending on what is selected for the time display. Also prevent the OSD from blinking when changing the chapter
-  * Ticket {% trac 3518 %}, Improve the reliability of the [DXVA] indicator in the status bar. Sometimes the indicator wasn't shown when hardware acceleration was used
-  * Ticket {% trac 3523 %}/{% trac 3533 %}/{% trac 3551 %}, Improve the stability of MPC-HC on buggy systems
-  * Ticket {% trac 3530 %}, Internal LAV Splitter: the advanced subtitle selection modes were ignored
-  * Ticket {% trac 3564 %}, If "Keep history of recently opened file" option was enabled, MPC-HC crashed when opening very long URLs
-  * Ticket {% trac 3672 %}, "Output" property page: "Shader" and "Rotation" were sometimes wrongly displayed as unavailable for "Sync renderer"
-  * Ticket {% trac 3702 %}, External audio was not synced on open if restarting from the last remembered position
-  * Ticket {% trac 3720 %}, DVB: Obey the Auto-zoom option when opening a channel
+  * Internal subtitles renderer: Vobsub/PGS/DVB subtitles are now rendered relative to the video frame
+  * Warnings were not displayed in pixel shader compilation output
+  * DVB: It was sometimes impossible to restart playback after it was stopped
+  * Output property page: Fix VMR-9 renderless settings (some controls were disabled when they shouldn't have been)
+  * Ticket {% trac 720 %}/{% trac 1807 %}/{% trac 2625 %}/{% trac 3161 %} Improve stability in analog capture mode when using EVR-CP/Sync renderer
+  * Ticket {% trac 1300 %}/{% trac 2081 %}, Toolbars auto-hiding now always works properly in multi-display configurations
+  * Ticket {% trac 2460 %}, Some subtitle entries were rendered twice depending on how entries overlapped. This led
+    to incorrect transparency
+  * Ticket {% trac 2461 %}, ASS reset style tag (`\r`) broke "Position subtitle relative to the video frame"
+  * Ticket {% trac 3243 %}, Fix a crash when starting MPC-HC with the WebUI enabled and certain regional settings
+  * Ticket {% trac 3479 %}, Improve the behavior of MPC-HC when some security tools prevent it
+    from initializing correctly
+  * Ticket {% trac 3650 %}, Improve the speed of subtitles toggling (on/off) and switching
+  * Ticket {% trac 3668 %}, MPC-HC could crash when reloading subtitles
+  * Ticket {% trac 3922 %}, "Play -> Subtitles" menu actions were off by one when playing a DVD
+    and only external subtitles were available
+  * Ticket {% trac 3963 %}, Update the chapter marks on the seekbar when the media length changes.
+    The bug was most often seen for MKV with multiple editions
 
 
 ## All changelogs

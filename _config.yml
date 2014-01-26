@@ -18,8 +18,8 @@ baseurl:        /
 
 # custom variables
 version:
-  short:        1.7.1
-  long:         1.7.1.0
+  short:        1.7.2
+  long:         1.7.2.0
   hash:         "9ae7b7c"
 
 url:            "http://mpc-hc.org"
