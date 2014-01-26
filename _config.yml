@@ -20,7 +20,7 @@ baseurl:        /
 version:
   short:        1.7.2
   long:         1.7.2.0
-  hash:         "9ae7b7c"
+  hash:         "4ec65a5"
 
 url:            "http://mpc-hc.org"
 rss_limit:      10
