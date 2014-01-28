@@ -78,8 +78,11 @@ module.exports = function(grunt) {
                 },
                 expand: true,
                 cwd: "<%= dirs.dest %>",
-                src: "**/*.html",
-                dest: "<%= dirs.dest %>"
+                dest: "<%= dirs.dest %>",
+                src: [
+                    "**/*.html",
+                    "!404.html"
+                ]
             }
         },
 
