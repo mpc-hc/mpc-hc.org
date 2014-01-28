@@ -57,13 +57,26 @@ module.exports = function(grunt) {
         },
 
         concat: {
-            dist: {
+            css: {
                 src: ["<%= dirs.src %>/assets/css/bootstrap.css",
                       "<%= dirs.src %>/assets/css/font-awesome.css",
                       "<%= dirs.src %>/assets/css/jquery.fancybox.css",
                       "<%= dirs.src %>/assets/css/jquery.fancybox-thumbs.css",
                       "<%= dirs.src %>/assets/css/style.css"],
                 dest: "<%= dirs.dest %>/assets/css/pack-<%= hash %>.css"
+            },
+            js: {
+                src: ["<%= dirs.src %>/assets/js/plugins.js",
+                      "<%= dirs.src %>/assets/js/bootstrap.js",
+                      "<%= dirs.src %>/assets/js/jquery.mousewheel.js",
+                      "<%= dirs.src %>/assets/js/jquery.fancybox.js",
+                      "<%= dirs.src %>/assets/js/jquery.fancybox-thumbs.js"],
+                dest: "<%= dirs.dest %>/assets/js/pack-<%= hash %>.js"
+            },
+            jsIE: {
+                src: ["<%= dirs.src %>/assets/js/html5shiv.js",
+                      "<%= dirs.src %>/assets/js/respond.js"],
+                dest: "<%= dirs.dest %>/assets/js/html5shiv-respond.min.js"
             }
         },
 
@@ -82,11 +95,12 @@ module.exports = function(grunt) {
                     ".visible-xs",
                     ".noscript-warning"
                 ],
-                stylesheets: ["../../../../../<%= concat.dist.dest %>"]
+                htmlroot: "<%= dirs.dest %>",
+                ignoreSheets: [/fonts.googleapis/]
             },
             dist: {
                 src: "<%= dirs.dest %>/**/*.html",
-                dest: "<%= concat.dist.dest %>"
+                dest: "<%= concat.css.dest %>"
             }
         },
 
@@ -98,7 +112,7 @@ module.exports = function(grunt) {
                     selectorsMergeMode: "ie8"
                 },
                 files: {
-                    "<%= uncss.dist.dest %>": "<%= concat.dist.dest %>"
+                    "<%= uncss.dist.dest %>": "<%= concat.css.dest %>"
                 }
             }
         },
@@ -112,17 +126,12 @@ module.exports = function(grunt) {
             },
             minify: {
                 files: {
-                    "<%= dirs.dest %>/assets/js/pack-<%= hash %>.js": ["<%= dirs.src %>/assets/js/plugins.js",
-                                                                       "<%= dirs.src %>/assets/js/bootstrap.js",
-                                                                       "<%= dirs.src %>/assets/js/jquery.mousewheel.js",
-                                                                       "<%= dirs.src %>/assets/js/jquery.fancybox.js",
-                                                                       "<%= dirs.src %>/assets/js/jquery.fancybox-thumbs.js"]
+                    "<%= concat.js.dest %>": "<%= concat.js.dest %>"
                 }
             },
             minifyIE: {
                 files: {
-                    "<%= dirs.dest %>/assets/js/html5shiv-respond.min.js": ["<%= dirs.src %>/assets/js/html5shiv.js",
-                                                                            "<%= dirs.src %>/assets/js/respond.js"]
+                    "<%= concat.jsIE.dest %>": "<%= concat.jsIE.dest %>"
                 }
             }
         },
@@ -138,7 +147,7 @@ module.exports = function(grunt) {
 
         watch: {
             files: ["<%= dirs.src %>/**/*", ".jshintrc", "_config.yml", "Gruntfile.js"],
-            tasks: "build",
+            tasks: "dev",
             options: {
                 livereload: true
             }
@@ -196,8 +205,15 @@ module.exports = function(grunt) {
         "validation"
     ]);
 
+    grunt.registerTask("dev", [
+        "jekyll",
+        "copy",
+        "includereplace",
+        "concat"
+    ]);
+
     grunt.registerTask("default", [
-        "build",
+        "dev",
         "connect",
         "watch"
     ]);
