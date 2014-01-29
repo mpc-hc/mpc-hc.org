@@ -35,7 +35,7 @@ h3 {
 body > .container {
     background-color: white;
     margin-bottom: 30px;
-    padding-bottom: 20px;
+    padding: 30px 65px 60px 65px;
     -webkit-border-radius: 4px;
        -moz-border-radius: 4px;
             border-radius: 4px;
@@ -44,8 +44,8 @@ body > .container {
             box-shadow: 0 0 4px rgba(0, 0, 0, 0.25), inset 0 0 0 rgba(0, 0, 0, 0.1);
 }
 
-.page {
-    margin: 50px;
+.lead {
+    margin-top: 20px;
 }
 
 .full-news h1 {
@@ -227,7 +227,7 @@ footer ul {
     }
 
     body > .container {
-        padding-bottom: 0;
+        padding: 10px 25px 0 25px;
         -webkit-box-shadow: none;
            -moz-box-shadow: none;
                 box-shadow: none;
@@ -240,7 +240,6 @@ footer ul {
         z-index: 100;
     }
 
-    .page,
     footer {
         margin: 10px;
     }
