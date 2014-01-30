@@ -1,6 +1,6 @@
 http://getbootstrap.com/customize/
 
-Enabled components in v3.0.3:
+Enabled components in v3.1.0:
 
 
 Common CSS (all)
@@ -18,10 +18,12 @@ Components
   Thumbnails
   Alerts
 
+JavaScript components
+  Component animations (for JS)
+
 Utilities (all)
   Basic utilities
   Responsive utilities
-  Component animations
 
 jQuery plugins
   Collapse
