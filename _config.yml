@@ -18,9 +18,9 @@ baseurl:        /
 
 # custom variables
 version:
-  short:        1.7.2
-  long:         1.7.2.0
-  hash:         "4ec65a5"
+  short:        1.7.3
+  long:         1.7.3.0
+  hash:         "cb22afa"
 
 url:            "http://mpc-hc.org"
 rss_limit:      10
