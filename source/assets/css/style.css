@@ -208,6 +208,11 @@ footer ul {
     text-decoration: none;
 }
 
+.last-updated {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
 ::-moz-selection {
     background-color: #B3D4FC;
     text-shadow: none;

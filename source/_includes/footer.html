@@ -25,7 +25,7 @@
                     </div>
                     <!--googleon: all-->
                     <div class="col-lg-4 col-sm-4 footer-right">
-                        <p>Page last updated on {{ site.time | date_to_rfc822 }}.</p>
+                        <p>Site last updated on <time class="last-updated" datetime="{{ site.time | date_to_xmlschema }}" title="{{ site.time | date_to_rfc822 }}">{{ site.time | date_to_long_string }}</time>.</p>
                     </div>
                 </div>
                 <div class="row">
