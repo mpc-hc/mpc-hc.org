@@ -9,8 +9,8 @@ layout: nil
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  {% for page in site.pages %}
-  {% if page.layout != "nil" %}
+  {% for page in site.html_pages %}
+  {% if page.name != "home" %}
   <url>
     <loc>{{ site.url }}{{ page.url }}</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
