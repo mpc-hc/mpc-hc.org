@@ -75,10 +75,6 @@ body > .container {
     margin-bottom: 0;
 }
 
-.new + p {
-    margin-top: 2.5em;
-}
-
 .marketing h2 {
     border-bottom: 0;
     font-size: 22px;
