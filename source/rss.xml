@@ -40,7 +40,7 @@ layout: nil
       <category>{{ cat | xml_escape }}</category>
       {% endfor %}
       <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-      <description>{{ post.content | xml_escape }}</description>
+      <description>{{ post.content | fix_relative_links | xml_escape }}</description>
     </item>
     {% endfor %}
 </channel>
