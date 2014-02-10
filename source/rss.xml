@@ -19,6 +19,14 @@ layout: nil
     <language>en-US</language>
     <generator>Jekyll v{{ jekyll.version }}</generator>
     <description>{{ site.feed_description }}</description>
+    <image>
+      <description>>{{ site.feed_description }}</description>
+      <url>{{ site.url }}/assets/img/logo-144x144.png</url>
+      <title>{{ site.name}}</title>
+      <link>{{ site.url }}/</link>
+      <width>144</width>
+      <height>144</height>
+    </image>
     {% for post in site.posts limit:site.rss_limit %}
     <item>
       <title>{{ post.title }}</title>
