@@ -7,6 +7,7 @@ module Jekyll
       input.gsub(/(?<href>href=('|"))\//, '\k<href>' + @context.registers[:site].config["url"] + '/')
            .gsub(/(?<src>src=('|"))\//, '\k<src>' + @context.registers[:site].config["url"] + '/')
            .gsub(/\sclass=['"][^'"]*['"]/, '')
+           .gsub(/\sdata[-a-zA-Z]*=['"][^'"]*['"]/, '')
     end
 
   end
