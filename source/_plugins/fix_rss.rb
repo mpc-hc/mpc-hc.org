@@ -6,6 +6,7 @@ module Jekyll
     def fix_rss(input)
       input.gsub(/(?<href>href=('|"))\//, '\k<href>' + @context.registers[:site].config["url"] + '/')
            .gsub(/(?<src>src=('|"))\//, '\k<src>' + @context.registers[:site].config["url"] + '/')
+           .gsub(/\sclass=['"][^'"]*['"]/, '')
     end
 
   end
