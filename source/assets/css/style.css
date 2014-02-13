@@ -268,6 +268,12 @@ footer ul {
         text-align: justify;
     }
 
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        min-height: 125px;
+    }
+
     .footer-left {
         text-align: left;
     }
