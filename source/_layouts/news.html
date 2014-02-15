@@ -6,8 +6,11 @@
         <a href="{{ post.url }}" class="permalink" title="Permalink">&infin;</a>
     </h1>
     <div class="post-meta">
-        <span>
-            <i class="fa fa-calendar"></i> {{ page.date | date: "%B %d, %Y" }} <i class="fa fa-user"></i> {{ page.author }}
+        <span class="date">
+            <i class="fa fa-calendar"></i> {{ page.date | date: "%B %d, %Y" }}
+        </span>
+        <span class="user">
+            <i class="fa fa-user"></i> {{ page.author }}
         </span>
     </div>
 

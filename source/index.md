@@ -74,8 +74,11 @@ name: home
         </h2>
 
         <div class="post-meta">
-            <span>
-                <i class="fa fa-calendar"></i> {{ post.date | date: "%B %d, %Y" }} <i class="fa fa-user"></i> {{ post.author }}
+            <span class="date">
+                <i class="fa fa-calendar"></i> {{ post.date | date: "%B %d, %Y" }}
+            </span>
+            <span class="user">
+                <i class="fa fa-user"></i> {{ post.author }}
             </span>
         </div>
 

@@ -67,6 +67,10 @@ body > .container {
     margin-bottom: 10px;
 }
 
+.post-meta .date {
+    margin-right: 6px;
+}
+
 .new > h2 {
     border-bottom: 0;
     font-size: 20px;
