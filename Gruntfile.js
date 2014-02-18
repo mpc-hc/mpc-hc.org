@@ -109,7 +109,7 @@ module.exports = function(grunt) {
                 options: {
                     keepSpecialComments: 0,
                     report: "min",
-                    selectorsMergeMode: "ie8"
+                    compatibility: "ie8"
                 },
                 files: {
                     "<%= uncss.dist.dest %>": "<%= concat.css.dest %>"
