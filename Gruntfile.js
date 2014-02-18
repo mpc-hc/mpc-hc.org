@@ -119,7 +119,9 @@ module.exports = function(grunt) {
 
         uglify: {
             options: {
-                /*compress: true,*/     //this is enabled by default; commented out so that the warnings don't show up
+                compress: {
+                    warnings: false
+                },
                 mangle: true,
                 preserveComments: false,
                 report: "min"
