@@ -233,6 +233,10 @@ footer ul {
                 box-shadow: none;
     }
 
+    .button-sub {
+        margin-top: 0.5em;
+    }
+
     .noscript-warning {
         bottom: 0;
         position: fixed;
@@ -249,6 +253,16 @@ footer ul {
     .footer-right {
         border-right: none;
     }
+
+    .social-ul > li:first-child {
+        padding-left: 0;
+    }
+
+    .social-ul > li > a {
+        display: inline-block;
+        padding: 0.5em;
+    }
+
     .table-responsive {
         border: 0;
     }
@@ -297,6 +311,7 @@ footer ul {
     .navbar-nav > li > a:first-child {
         padding-left: 0;
     }
+
     .navbar-nav > li > a {
         padding: 15px 8px 8px 8px;
     }

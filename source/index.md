@@ -17,7 +17,7 @@ name: home
         class="btn btn-default btn-lg sourceforge_accelerator_link">
         <i class="fa fa-download pull-left"></i>MPC-HC - Download now!
     </a>
-    <p>{{ site.version.short }} 32-bit - <a href="/downloads/">Other systems &amp; versions</a></p>
+    <p class="button-sub">{{ site.version.short }} 32-bit - <a href="/downloads/">Other systems &amp; versions</a></p>
 </div>
 
 <hr class="hidden-xs">
