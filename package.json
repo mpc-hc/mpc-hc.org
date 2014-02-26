@@ -31,7 +31,7 @@
     "grunt-include-replace": "~1.2.0",
     "grunt-jekyll": "~0.4.1",
     "grunt-uncss": "~0.2.0",
-    "load-grunt-tasks": "~0.3.0",
+    "load-grunt-tasks": "~0.4.0",
     "time-grunt": "~0.2.9"
   },
   "engines": {
