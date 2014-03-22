@@ -156,6 +156,9 @@ module.exports = function(grunt) {
         },
 
         csslint: {
+            options: {
+                csslintrc: ".csslintrc"
+            },
             src: "<%= dirs.src %>/assets/css/style.css"
         },
 
