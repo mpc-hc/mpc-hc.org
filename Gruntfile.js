@@ -96,7 +96,8 @@ module.exports = function(grunt) {
                     ".noscript-warning"
                 ],
                 htmlroot: "<%= dirs.dest %>",
-                ignoreSheets: [/fonts.googleapis/]
+                ignoreSheets: [/fonts.googleapis/],
+                report: "min"
             },
             dist: {
                 src: "<%= dirs.dest %>/**/*.html",
