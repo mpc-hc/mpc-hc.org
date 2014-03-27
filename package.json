@@ -30,7 +30,7 @@
     "grunt-html-validation": "~0.1.14",
     "grunt-include-replace": "~1.2.0",
     "grunt-jekyll": "~0.4.1",
-    "grunt-uncss": "~0.3.0",
+    "grunt-uncss": "~0.3.2",
     "load-grunt-tasks": "~0.4.0",
     "time-grunt": "~0.3.1"
   },

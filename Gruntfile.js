@@ -96,8 +96,7 @@ module.exports = function(grunt) {
                     ".noscript-warning"
                 ],
                 htmlroot: "<%= dirs.dest %>",
-                ignoreSheets: [/fonts.googleapis/],
-                report: "min"
+                ignoreSheets: [/fonts.googleapis/]
             },
             dist: {
                 src: "<%= dirs.dest %>/**/*.html",
@@ -109,7 +108,6 @@ module.exports = function(grunt) {
             minify: {
                 options: {
                     keepSpecialComments: 0,
-                    report: "min",
                     compatibility: "ie8"
                 },
                 files: {
@@ -124,8 +122,7 @@ module.exports = function(grunt) {
                     warnings: false
                 },
                 mangle: true,
-                preserveComments: false,
-                report: "min"
+                preserveComments: false
             },
             minify: {
                 files: {
