@@ -1,6 +1,7 @@
 ---
 layout: nil
 ---
+
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +30,7 @@ layout: nil
     </image>
     {% for post in site.posts limit:site.rss_limit %}
     <item>
-      <title>{{ post.title }}</title>
+      <title>{{ post.title | xml_escape }}</title>
       <link>{{ site.url }}{{ post.url }}</link>
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
       <dc:creator>{{ post.author }}</dc:creator>
