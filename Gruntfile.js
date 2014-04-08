@@ -1,5 +1,6 @@
+"use strict";
+
 module.exports = function(grunt) {
-    "use strict";
 
     var crypto = require("crypto");
     var currentDate = (new Date()).valueOf().toString();
