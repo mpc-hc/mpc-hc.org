@@ -219,6 +219,9 @@ footer ul {
     text-shadow: none;
 }
 
+.fancybox-thumb {
+    display: inline-block;
+}
 
 /* -- media queries -- */
 @media (max-width: 767px) {
