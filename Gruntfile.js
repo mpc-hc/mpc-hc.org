@@ -24,8 +24,10 @@ module.exports = function(grunt) {
         htmlmin: {
             dist: {
                 options: {
-                    /*removeComments: true,*/
-                    collapseWhitespace: true
+                    collapseWhitespace: true,
+                    ignoreCustomComments: [/^\s*google(off|on):\s/],
+                    minifyJS: true,
+                    removeComments: true
                 },
                 expand: true,
                 cwd: "<%= dirs.dest %>",
