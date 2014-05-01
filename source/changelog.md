@@ -12,6 +12,15 @@ Note
 : This changelog only applies to current stable build.
 For complete logs check the [links below](#all-changelogs).
 
+## 1.7.5 - 01 May 2014
+* Fixed:
+ * Ticket {% trac 3691 %}, PGS subtitles: Some lines stayed visible for too long when using the queue
+ * Ticket {% trac 4231 %}, Don't prevent the users from using the ISR if they choose not to block VSFilter like filters
+ * Ticket {% trac 4240 %}, Crashes could randomly occur when playing files with PGS subtitles (mostly when seeking quickly)
+* Updated:
+  * Catalan, Croatian, Dutch, German, Japanese, Slovenian, Spanish, Ukrainian and Vietnamese translations
+
+
 ## 1.7.4 - 16 April 2014
 * New:
   * New Bengali and Tatar translations
