@@ -18,9 +18,9 @@ baseurl:            /
 
 # custom variables
 version:
-  short:            1.7.4
-  long:             1.7.4.0
-  hash:             "9923603"
+  short:            1.7.5
+  long:             1.7.5.0
+  hash:             "537b5a3"
 
 name:               MPC-HC
 feed_description:   Latest information about the MPC-HC project.
