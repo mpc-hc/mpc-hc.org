@@ -154,19 +154,24 @@ module.exports = function(grunt) {
         },
 
         connect: {
-            server: {
+            options: {
+                hostname: "localhost",
+                livereload: 35729,
+                port: 8000
+            },
+            livereload: {
                 options: {
                     base: "<%= dirs.dest %>/",
-                    port: 8000
+                    open: true  // Automatically open the webpage in the default browser
                 }
             }
         },
 
         watch: {
-            files: ["<%= dirs.src %>/**/*", ".jshintrc", "_config.yml", "Gruntfile.js"],
+            files: ["<%= dirs.src %>/**", ".jshintrc", "_config.yml", "Gruntfile.js"],
             tasks: "dev",
             options: {
-                livereload: true
+                livereload: "<%= connect.options.livereload %>"
             }
         },
 
