@@ -13,7 +13,7 @@ We would like to thank the following projects:
 
 * [7-Zip](http://www.7-zip.org/)
 * [Bootstrap](http://getbootstrap.com/)
-* [Coverity Scan](http://scan.coverity.com/)
+* [Coverity Scan](https://scan.coverity.com/)
 * [Cppcheck](http://cppcheck.sourceforge.net/)
 * [Font Awesome](http://fontawesome.io/) by Dave Gandy
 * [GCC](http://gcc.gnu.org/)
