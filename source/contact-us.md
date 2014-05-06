@@ -38,6 +38,11 @@ Please follow these simple rules when joining our channels.
 
 ## Social Networks
 
+{: .alert .alert-warning }
+Warning
+: Please, do not use social networks as a way to report bugs, feature requests etc.
+Use the [bug tracker](https://trac.mpc-hc.org/wiki/How_to_Report_Issues) instead.
+
 * [Facebook](https://www.facebook.com/MediaPlayerClassicHomeCinema)
 * [Google+](https://plus.google.com/u/0/109957971189557916726)
 * [Twitter](https://twitter.com/mpc_hc/)
