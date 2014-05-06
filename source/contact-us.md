@@ -44,5 +44,5 @@ Warning
 Use the [bug tracker](https://trac.mpc-hc.org/wiki/How_to_Report_Issues) instead.
 
 * [Facebook](https://www.facebook.com/MediaPlayerClassicHomeCinema)
-* [Google+](https://plus.google.com/u/0/109957971189557916726)
+* [Google+](https://plus.google.com/+Mpc-hcOrg/) (not updated at the moment since there's no automated way to use RSS feeds)
 * [Twitter](https://twitter.com/mpc_hc/)
