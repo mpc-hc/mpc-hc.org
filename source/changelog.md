@@ -2,7 +2,7 @@
 layout: default
 title: Changelog
 permalink: /changelog/
-name: changelog
+slug: changelog
 ---
 
 # Changelog

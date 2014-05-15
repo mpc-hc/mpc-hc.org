@@ -2,7 +2,7 @@
 layout: default
 title: Home
 permalink: /
-name: home
+slug: home
 ---
 
 <p class="lead">

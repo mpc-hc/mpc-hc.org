@@ -5,7 +5,7 @@
         <link rel="dns-prefetch" href="//ajax.googleapis.com">
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="dns-prefetch" href="//themes.googleusercontent.com">
-        {% if page.name == "downloads" or page.name == "home" %}
+        {% if page.slug == "downloads" or page.slug == "home" %}
         <link rel="dns-prefetch" href="//sourceforge.net">
         {% endif %}
         <title>{{ page.title }} &ndash; MPC-HC</title>
@@ -18,7 +18,7 @@
         <meta name="msapplication-TileImage" content="/assets/img/TileImage.png">
         <meta property="og:title" content="{{ page.title }} &ndash; MPC-HC">
         <meta property="og:description" content="MPC-HC, the free, open source media player">
-        {% if page.name == "home" %}
+        {% if page.slug == "home" %}
         <meta property="og:url" content="{{ site.url }}/">
         {% else %}
         <meta property="og:url" content="{{ site.url }}{{ page.url }}">
@@ -33,7 +33,7 @@
         <!--[if lt IE 9]>
         <script src="/assets/js/html5shiv-respond.min.js"></script>
         <![endif]-->
-        {% if page.name == "donate" %}
+        {% if page.slug == "donate" %}
         <script>
             (function() {
                 var s = document.createElement('script');
@@ -46,7 +46,7 @@
         </script>
         {% endif %}
     </head>
-    <body{% if page.name == "downloads" %} class="{{ page.name }}"{% endif %}>
+    <body{% if page.slug == "downloads" %} class="{{ page.slug }}"{% endif %}>
         <!--[if lt IE 8]>
             <div class="alert alert-warning text-center"><strong>Warning!</strong> You are using an <strong>outdated</strong> browser. Please <a class="alert-link" href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
         <![endif]-->
@@ -62,15 +62,15 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li{% if page.name == "downloads" %} class="active"{% endif %}><a href="/downloads/">Downloads</a></li>
-                        <li{% if page.name == "changelog" %} class="active"{% endif %}><a href="/changelog/">Changelog</a></li>
-                        <li{% if page.name == "faq" %} class="active"{% endif %}><a href="/faq/">FAQ</a></li>
+                        <li{% if page.slug == "downloads" %} class="active"{% endif %}><a href="/downloads/">Downloads</a></li>
+                        <li{% if page.slug == "changelog" %} class="active"{% endif %}><a href="/changelog/">Changelog</a></li>
+                        <li{% if page.slug == "faq" %} class="active"{% endif %}><a href="/faq/">FAQ</a></li>
                         <li><a href="https://trac.mpc-hc.org/wiki/How_to_Report_Issues">Bug reports</a></li>
-                        <li{% if page.name == "contact-us" %} class="active"{% endif %}><a href="/contact-us/">Contact us</a></li>
-                        <li{% if page.name == "about" %} class="active"{% endif %}><a href="/about/">About</a></li>
+                        <li{% if page.slug == "contact-us" %} class="active"{% endif %}><a href="/contact-us/">Contact us</a></li>
+                        <li{% if page.slug == "about" %} class="active"{% endif %}><a href="/about/">About</a></li>
                         <li><a href="https://trac.mpc-hc.org/">Wiki</a></li>
-                        <li {% if page.name == "donate" %} class="active"{% endif %}>
-                            <a {% if page.name != "donate" %} href="/donate/"{% endif %} title="Donate"><span class="sprite sprite-paypal"></span></a>
+                        <li {% if page.slug == "donate" %} class="active"{% endif %}>
+                            <a {% if page.slug != "donate" %} href="/donate/"{% endif %} title="Donate"><span class="sprite sprite-paypal"></span></a>
                         </li>
                     </ul>
                 </div>

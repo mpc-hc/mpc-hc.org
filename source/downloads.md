@@ -2,7 +2,7 @@
 layout: default
 title: Downloads
 permalink: /downloads/
-name: downloads
+slug: downloads
 ---
 
 {::comment}

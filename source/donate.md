@@ -2,7 +2,7 @@
 layout: default
 title: Donations
 permalink: /donate/
-name: donate
+slug: donate
 ---
 
 Donations

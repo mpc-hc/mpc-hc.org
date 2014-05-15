@@ -2,7 +2,7 @@
 author: XhmikosR
 layout: news
 title: Binaries are signed
-name: binaries-are-signed
+slug: binaries-are-signed
 ---
 
 Thanks to **[Certum](http://www.certum.eu/certum/cert,eindex_en.xml)** binaries will be digitally signed!

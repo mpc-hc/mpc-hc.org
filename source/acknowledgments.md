@@ -2,7 +2,7 @@
 layout: default
 title: Acknowledgments
 permalink: /acknowledgments/
-name: acknowledgments
+slug: acknowledgments
 ---
 
 # Acknowledgments

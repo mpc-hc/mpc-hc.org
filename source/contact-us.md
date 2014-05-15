@@ -2,7 +2,7 @@
 layout: default
 title: Contact us
 permalink: /contact-us/
-name: contact-us
+slug: contact-us
 ---
 
 # Contact us

@@ -10,7 +10,7 @@ layout: nil
     <priority>1.0</priority>
   </url>
   {% for page in site.html_pages %}
-  {% if page.name != "home" %}
+  {% if page.slug != "home" %}
   <url>
     <loc>{{ site.url }}{{ page.url }}</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>

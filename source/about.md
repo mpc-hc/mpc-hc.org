@@ -2,7 +2,7 @@
 layout: default
 title: About
 permalink: /about/
-name: about
+slug: about
 ---
 
 # About MPC-HC

@@ -2,7 +2,7 @@
 layout: default
 title: FAQ
 permalink: /faq/
-name: faq
+slug: faq
 ---
 
 FAQ
