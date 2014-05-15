@@ -1,5 +1,5 @@
 markdown:           kramdown
-highlighter:        false
+pygments:           false
 
 exclude:
 # we generate those files ourselves
