@@ -83,11 +83,16 @@ module.exports = function(grunt) {
                     // needed for Bootstrap's transitions
                     ".fade",
                     ".fade.in",
+                    ".navbar-collapse.in",
                     ".collapse",
                     ".collapse.in",
                     ".navbar-collapse",
                     ".navbar-collapse.in",
                     ".collapsing",
+                    /(#|\.)navbar(\-[a-zA-Z]+)?/,
+                    /(#|\.)dropdown(\-[a-zA-Z]+)?/,
+                    ".open > .dropdown-menu",
+                    ".open > a",
                     // needed for the `<noscript>` warning; remove them when fixed in uncss
                     ".alert-danger",
                     ".visible-xs",
