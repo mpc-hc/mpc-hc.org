@@ -26,6 +26,7 @@ module.exports = function(grunt) {
                 options: {
                     collapseWhitespace: true,
                     ignoreCustomComments: [/^\s*google(off|on):\s/],
+                    minifyCSS: true,
                     minifyJS: true,
                     removeAttributeQuotes: true,
                     removeComments: true
