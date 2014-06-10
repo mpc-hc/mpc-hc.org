@@ -53,7 +53,7 @@ Program Database files, which contain the debug symbols, needed to debug the bui
 
 ## Previous releases
 
-You can find an archive of our releases via [HTTP](http://sourceforge.net/projects/mpc-hc/files/).
+You can find an archive of our releases via [HTTP](http://sourceforge.net/projects/mpc-hc/files).
 
 
 ## Nightly builds
