@@ -26,7 +26,9 @@
 // Add custom class to our download links
 
 (function() {
-    $('body.downloads').find('a[href^="http://sourceforge.net/projects/mpc-hc/files/"]').each(function() {
+    $('body.downloads')
+      .find('a[href^="http://sourceforge.net/projects/mpc-hc/files/"]')
+      .each(function() {
         $(this).addClass('sourceforge_accelerator_link');
     });
 }());
