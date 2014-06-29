@@ -7,5 +7,5 @@
 * Install grunt: `npm install -g grunt-cli`
 * Install the Node.js dependencies via npm: `npm install`
 * Install RailsInstaller with Ruby 1.9.3 <http://railsinstaller.org/en>
-* Run `gem install jekyll kramdown` (Note that Jekyll v2.0.x should be used)
+* Run `gem install jekyll` (Note that Jekyll v2.1.x should be used)
 * Run `grunt build` to build the static site, `grunt` to build and watch for changes (http://localhost:8000/)
