@@ -74,6 +74,8 @@ module.exports = function(grunt) {
                     ".fade.in",
                     ".collapse",
                     ".collapse.in",
+                    ".navbar-collapse",
+                    ".navbar-collapse.in",
                     ".collapsing",
                     // needed for the <noscript> warning; remove when fixed in uncss
                     ".alert-danger",
