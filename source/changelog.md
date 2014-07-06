@@ -23,7 +23,7 @@ For complete logs check the [links below](#all-changelogs).
   * Ticket {% trac 1411 %}, Internal Subtitle Renderer/VSFilter: Support loading external PGS subtitles
 * Changed:
   * Don't use auto-zoom feature when the window was positioned using the Aero Snap
-  * Don't exit fullscreen when loosing focus to a window on the same monitor
+  * Don't exit fullscreen when losing focus to a window on the same monitor
   * Text subtitles: When rendering to the video frame, clip subtitles that go out of the frame
   * Text subtitles: Faster subtitle parsing (around 20%)
   * Ticket {% trac 4144 %}, Move the user interface language selection to the Options dialog and remove the "Language" menu.
