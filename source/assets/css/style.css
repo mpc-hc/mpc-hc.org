@@ -45,6 +45,10 @@ body > .container {
     margin-top: 20px;
 }
 
+.button-sub {
+    margin-top: 0.5em;
+}
+
 .latest-news {
     margin-top: 3em;
 }
@@ -234,10 +238,6 @@ footer ul {
         -webkit-box-shadow: none;
            -moz-box-shadow: none;
                 box-shadow: none;
-    }
-
-    .button-sub {
-        margin-top: 0.5em;
     }
 
     .noscript-warning {
