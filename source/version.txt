@@ -1,4 +1,3 @@
 ---
-layout: nil
 ---
 {{ site.version.long }}
