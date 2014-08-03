@@ -14,10 +14,10 @@ slug: home
 
 <div class="text-center">
     <a href="http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v{{ site.version.short }}_x86/MPC-HC.{{ site.version.short }}.x86.exe/download"
-        class="btn btn-default btn-lg sourceforge_accelerator_link">
+        id="downloadButton" class="btn btn-default btn-lg sourceforge_accelerator_link">
         <i class="fa fa-download pull-left"></i>MPC-HC - Download now!
     </a>
-    <p class="button-sub">{{ site.version.short }} 32-bit - <a href="/downloads/">Other systems &amp; versions</a></p>
+    <p class="button-sub">{{ site.version.short }} <span>32-bit</span> - <a href="/downloads/">Other systems &amp; versions</a></p>
 </div>
 
 <hr class="hidden-xs">
