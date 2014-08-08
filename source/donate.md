@@ -41,7 +41,3 @@ Donations
     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
     <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
-
-
-<h2>Donate via Flattr</h2>
-<a class="FlattrButton" style="display:none" href="http://mpc-hc.org/"></a>
