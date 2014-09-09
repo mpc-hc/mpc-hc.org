@@ -104,25 +104,6 @@ body > .container {
     height: 20px;
 }
 
-.sprite {
-    background-image: url("../img/sprite.png");
-    background-repeat: no-repeat;
-}
-
-.sprite-cloudvps {
-    background-position: -10px -10px;
-    display: inline-block;
-    width: 100px;
-    height: 70px;
-}
-
-.sprite-paypal {
-    background-position: -10px -100px;
-    display: block;
-    width: 74px;
-    height: 21px;
-}
-
 .full-news a[href*="//"]:not([href^="mpc-hc.org"]):not([href*="trac.mpc-hc.org"]):after,
 .new a[href*="//"]:not([href^="mpc-hc.org"]):not([href*="trac.mpc-hc.org"]):after {
     content: "\f08e";   /* fa-external-link */
@@ -274,6 +255,11 @@ footer ul {
 @media (min-width: 768px) {
     .navbar-nav > li:nth-of-type(1) {
         margin-left: 16px;
+    }
+
+    .navbar-nav > li:last-of-type > a {
+        padding-bottom: 11px;
+        padding-top: 11px;
     }
 
     .navbar-toggle + .nav-collapse {
