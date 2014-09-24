@@ -169,10 +169,10 @@ footer ul {
 .fa-rss,
 .permalink {
     color: lightgray;
-    -webkit-transition: color 0.15s linear;
-       -moz-transition: color 0.15s linear;
-         -o-transition: color 0.15s linear;
-            transition: color 0.15s linear;
+    -webkit-transition: all 0.5s ease 0s;
+       -moz-transition: all 0.5s ease 0s;
+         -o-transition: all 0.5s ease 0s;
+            transition: all 0.5s ease 0s;
 }
 
 .fa-facebook:hover,
@@ -187,6 +187,10 @@ footer ul {
 .permalink:focus {
     color: gray;
     text-decoration: none;
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
 }
 
 .last-updated {
