@@ -24,7 +24,9 @@ use the [bug tracker](https://trac.mpc-hc.org/wiki/How_to_Report_Issues) instead
 
 ### Active (sorted by name):
 
-{: .table .table-hover .table-responsive .table-striped }
+<div markdown="1" class="table-responsive">
+
+{: .table .table-hover .table-striped }
 | Name | Email | Role |
 |:-|:-|:-|
 | alexmarsev | alexmarsev ~AT~ users.sourceforge ~dot~ net | Code |
@@ -36,10 +38,13 @@ use the [bug tracker](https://trac.mpc-hc.org/wiki/How_to_Report_Issues) instead
 | Underground78 | underground78 ~AT~ users.sourceforge ~dot~ net | Code, French, Project manager |
 | XhmikosR | xhmikosr ~AT~ users.sourceforge ~dot~ net | Various stuff, Project manager |
 
+</div>
 
 ### Inactive
 
-{: .table-responsive .table .table-hover .table-striped }
+<div markdown="1" class="table-responsive">
+
+{: .table .table-hover .table-striped }
 | Name | Email | Role |
 |:-|:-|:-|
 | _xxl | drevil_xxl ~AT~ users.sourceforge ~dot~ net | FFmpeg |
@@ -65,6 +70,7 @@ use the [bug tracker](https://trac.mpc-hc.org/wiki/How_to_Report_Issues) instead
 | Vodyannikov Aleksandr | aleksoid ~AT~ users.sourceforge ~dot~ net | Code, Russian |
 | xpc1000 | xpc1000 ~AT~ users.sourceforge ~dot~ net | Code |
 
+</div>
 
 ### Translators:
 Translations are now handled using [Transifex](https://www.transifex.com), a web-based translation platform.
@@ -73,7 +79,9 @@ An up-to-date list of translators involved for each language can be found on <ht
 
 ### Translators (pre-Transifex era)
 
-{: .table .table-hover .table-responsive .table-striped }
+<div markdown="1" class="table-responsive">
+
+{: .table .table-hover .table-striped }
 | Language | Translator | Email |
 |:-|:-|:-|
 | Armenian | hrant77 | hrant77 ~AT~ users.sourceforge ~dot~ net |
@@ -108,6 +116,8 @@ An up-to-date list of translators involved for each language can be found on <ht
 | Ukrainian | arestarh | arestarh1986 ~AT~ users.sourceforge ~dot~ net |
 | Ukrainian | Ihor Bobalo | ibobalo ~AT~ users.sourceforge ~dot~ net (http://www.eleks.com) |
 
+</div>
+
 
 ### Contributors
 
@@ -125,7 +135,9 @@ MPC-HC is based on the original MPC version © 2002-2006 by Gabest (e-mail unkno
 
 ## Third-party libraries
 
-{: .table .table-hover .table-responsive .table-striped }
+<div markdown="1" class="table-responsive">
+
+{: .table .table-hover .table-striped }
 | Project | License | Website |
 |:-|:-|:-|
 | CSizingControlBar | - | <http://www.datamekanix.com/sizecbar/> |
@@ -147,3 +159,5 @@ MPC-HC is based on the original MPC version © 2002-2006 by Gabest (e-mail unkno
 | VirtualDub | GPLv2+ | <http://www.virtualdub.org/> |
 | ZenLib | zlib License | <http://sourceforge.net/projects/zenlib/> |
 | zlib | zlib License | <http://zlib.net/> |
+
+</div>

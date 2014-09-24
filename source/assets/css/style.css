@@ -246,10 +246,6 @@ footer ul {
         display: inline-block;
         padding: 0.5em;
     }
-
-    .table-responsive {
-        border: 0;
-    }
 }
 
 @media (min-width: 768px) {
