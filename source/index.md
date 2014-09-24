@@ -45,21 +45,19 @@ slug: home
 
 <hr>
 
-<div class="row">
-    <div class="marketing">
-        <div class="col-xs-12 col-sm-4 col-md-4">
-            <h2>Lightweight</h2>
-            <p>Watch movies on any SSE CPU, even on your old computer back from '99</p>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-4">
-            <h2>Customizable</h2>
-            <p>With its wide array of options, MPC-HC can be customized to fit
-            almost any needs. Among other things we added custom toolbars.</p>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-4">
-            <h2>All around player</h2>
-            <p>MPC-HC can also be used as DVB player.</p>
-        </div>
+<div class="row marketing">
+    <div class="col-xs-12 col-sm-4 col-md-4">
+        <h2>Lightweight</h2>
+        <p>Watch movies on any SSE CPU, even on your old computer back from '99</p>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4">
+        <h2>Customizable</h2>
+        <p>With its wide array of options, MPC-HC can be customized to fit
+        almost any needs. Among other things we added custom toolbars.</p>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4">
+        <h2>All around player</h2>
+        <p>MPC-HC can also be used as DVB player.</p>
     </div>
 </div>
 
