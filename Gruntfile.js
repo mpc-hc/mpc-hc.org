@@ -188,6 +188,13 @@ module.exports = function(grunt) {
             src: "<%= dirs.src %>/assets/css/style.css"
         },
 
+        bootlint: {
+            options: {
+                relaxerror: "<head> is missing X-UA-Compatible <meta> tag that disables old IE compatibility modes"
+            },
+            files: ["<%= dirs.dest %>/**/*.html", "!<%= dirs.dest %>/404.html"]
+        },
+
         jshint: {
             options: {
                 jshintrc: ".jshintrc"
@@ -236,6 +243,7 @@ module.exports = function(grunt) {
     grunt.registerTask("test", [
         "build",
         "csslint",
+        "bootlint",
         "jshint",
         "validation"
     ]);
