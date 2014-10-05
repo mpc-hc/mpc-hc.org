@@ -13,7 +13,7 @@ Note
 For complete logs check the [links below](#all-changelogs).
 
 
-## 1.7.7 - 05 October 2014
+## {{ site.version.short }} - {{ site.version.date }}
 * New:
   * Accept loading more than one subtitle file at a time using the "Load subtitle" dialog or drag-and-drop
   * Add advanced settings page
