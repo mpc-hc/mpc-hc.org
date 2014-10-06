@@ -5,6 +5,10 @@ permalink: /
 slug: home
 ---
 
+{% if paginator.page > 1 %}
+  {% include pagination.html %}
+{% else %}
+
 <p class="lead">
     <abbr title="Media Player Classic - Home Cinema">MPC-HC</abbr> is an extremely
     light-weight, open source media player for Windows<sup>&reg;</sup>. It supports
@@ -84,6 +88,8 @@ slug: home
     </div>
     {% endfor %}
 
-    <p><a href="archive/"><em>Browse the archive</em></a></p>
+    <p><a href="/archive/"><em>Browse the archive</em></a></p>
 
 </div>
+
+{% endif %}

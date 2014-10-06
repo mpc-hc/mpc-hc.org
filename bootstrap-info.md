@@ -1,4 +1,4 @@
-http://getbootstrap.com/customize/?id=b351fd8b06a98e3d5904
+http://getbootstrap.com/customize/?id=c0a73235c13995799ab0
 
 
 Enabled components in v3.2.0:
@@ -17,6 +17,8 @@ Enabled components in v3.2.0:
 * Components
  * Navs
  * Navbar
+ * Pagination
+ * Pager
  * Thumbnails
  * Alerts
 

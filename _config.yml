@@ -7,6 +7,10 @@ exclude:
 - "*.js"
 - "_old"
 
+# paginate
+paginate:           10
+paginate_path:      archive/page:num
+
 # permalinks
 permalink:          pretty
 
