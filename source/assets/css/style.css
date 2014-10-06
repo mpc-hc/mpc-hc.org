@@ -189,6 +189,10 @@ footer ul {
             transform: rotate(360deg);
 }
 
+.pager li > a > i {
+    vertical-align: middle;
+}
+
 .last-updated {
     border-bottom: 1px dotted;
     cursor: help;

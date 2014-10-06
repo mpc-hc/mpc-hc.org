@@ -18,4 +18,18 @@
 
 </div>
 
+<ul class="pager">
+  {% if page.previous %}
+    <li class="previous"><a href="{{ page.previous.url }}" title="{{ page.previous.title }}"><i class="fa fa-chevron-left"></i> Older</a></li>
+  {% else %}
+    <li class="previous disabled"><a><i class="fa fa-chevron-left"></i> Older</a></li>
+  {% endif %}
+    <!--<li><a href="/archive/">Archive</a></li>-->
+  {% if page.next %}
+    <li class="next"><a href="{{ page.next.url }}" title="{{ page.next.title }}">Newer <i class="fa fa-chevron-right"></i></a></li>
+  {% else %}
+    <li class="next disabled"><a>Newer <i class="fa fa-chevron-right"></i></a></li>
+  {% endif %}
+</ul>
+
 {% include footer.html %}
