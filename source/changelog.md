@@ -27,27 +27,27 @@ For complete logs check the [links below](#all-changelogs).
     * Add the ability to control the rate of the animation (in percentage of the movie frame rate)
     * Add the ability to control whether the subtitle queue is allowed to drop some subpictures in case
       subtitle rendering is too slow
-  * Add option to set jpg quality when saving images (default quality is increased from 75% to 90%)
+  * Add an option to set JPEG quality when saving images (**default** quality is **increased** from 75% to 90%)
   * Ticket {% trac 353 %}, Allow to control minimum file duration for remember position feature
-  * Ticket {% trac 1287 %}, Add after playback command to turn off the monitor.
+  * Ticket {% trac 1287 %}, Add after playback command to turn off the monitor
   * Ticket {% trac 1407 %}/{% trac 2425 %}, Add an advanced option to control the number of recent files. Those files are shown
-  *   in the "Recent Files" menu. It is also the files for which a position is potentially saved
+    in the "Recent Files" menu. It is also the files for which a position is potentially saved
   * Ticket {% trac 1531 %}, Show cover-art while playing audio files
   * Ticket {% trac 2194 %}, Show drive label when playing DVD
   * Ticket {% trac 3393 %}, Allow to disable remember position feature for audio files
   * Ticket {% trac 4345 %}, Text subtitles: Add a mode that automatically chooses the rendering target based on the
-  *   subtitle type, ASS/SSA subtitles will be rendered on the video frame while other text subtitles will
-  *   be rendered on the full window
+    subtitle type, ASS/SSA subtitles will be rendered on the video frame while other text subtitles will
+    be rendered on the full window
   * Ticket {% trac 4690 %}, Internal filters: Support v210/v410 raw video formats
 * Changed:
   * Text subtitles: Faster subtitle parsing (up to 4 times faster for ASS/SSA subtitles)
-  * Text subtitles: Improved subtitle renderer for faster rendering of complex subtitle scripts (often twice faster or more)
+  * Text subtitles: Improved subtitle renderer for faster rendering of complex subtitle scripts (often **twice faster or more**)
   * Text subtitles: Much faster subtitle opening in the Subresync bar
-  * Ticket {% trac 325 %}, Move after playback commands to options and add an option to close and restore logo.
+  * Ticket {% trac 325 %}, Move after playback commands to options and add an option to close and restore logo
   * Ticket {% trac 1663 %}, Improved command line help dialog
-  * Ticket {% trac 2834 %}, Increase limit on subtitles override placement feature.
+  * Ticket {% trac 2834 %}, Increase limit on subtitles override placement feature
   * Ticket {% trac 4428 %}, Improve the clarity of the error message when opening a subtitle file fails
-  * Ticket {% trac 4687 %}, Reworked "Formats" option page. It is now possible to clear all associations
+  * Ticket {% trac 4687 %}, Reworked "Formats" option page. It is now possible to clear all file associations
   * Ticket {% trac 4865 %}, Subtitles option page: Clarify the "Delay interval" setting
 * Updated:
   * Updated Little CMS to v2.6 (git 9c075b3)
@@ -65,7 +65,8 @@ For complete logs check the [links below](#all-changelogs).
       * Ticket {% trac 4639 %}, LAV Splitter: Fix incorrect colors for VobSub tracks in MP4
       * Ticket {% trac 4783 %}, LAV Video: Experimental support for hardware (CUVID and DXVA2) assisted decoding of HEVC streams (disabled by default)
       * Ticket {% trac 4879 %}, LAV Audio and LAV Splitter: Fix TrueHD streams with a Dolby Atmos sub-stream
-    The full changelog can be found at https://raw.githubusercontent.com/Nevcairiel/LAVFilters/0.63/CHANGELOG.txt
+
+    The full changelog can be found at <https://raw.githubusercontent.com/Nevcairiel/LAVFilters/0.63/CHANGELOG.txt>
   * Updated Armenian, Basque, Belarusian, Bengali, British English, Catalan, Chinese (Simplified and Traditional),
     Croatian, Czech, Dutch, French, Galician, German, Greek, Hebrew, Hungarian, Italian, Japanese, Korean, Malay,
     Polish, Portuguese (Brazil), Romanian, Russian, Slovak, Slovenian, Spanish, Swedish, Tatar, Turkish, Ukrainian
@@ -88,7 +89,7 @@ For complete logs check the [links below](#all-changelogs).
   * Ticket {% trac 4744 %}, Some subtitles could cause a crash or produce artifacts
   * Ticket {% trac 4752 %}, Monitors connected to secondary graphic card were not detected
   * Ticket {% trac 4758 %}, Adjust width of the groupbox headers to avoid empty space
-  * Ticket {% trac 4778 %}, Fix optical drive detection when its letter is A or B.
+  * Ticket {% trac 4778 %}, Fix optical drive detection when its letter is A or B
   * Ticket {% trac 4782 %}, Backward frame step led to jumping to the wrong position in certain situations
   * Ticket {% trac 4825 %}, Tracks matching a preferred language weren't always selected correctly
   * Ticket {% trac 4827 %}, Initial window size could be wrong for anamorphic video
