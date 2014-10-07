@@ -18,30 +18,41 @@
 {% endfor %}
 
     <nav>
-        <ul class="pager">
-          {% if paginator.next_page %}
-            <li class="next">
-                <a href="/archive/page{{paginator.next_page}}">Next Page <span class="fa fa-chevron-right"></span></a>
-            </li>
-          {% else %}
-            <li class="next disabled">
-                <span>Next Page <span class="fa fa-chevron-right"></span></span>
-            </li>
-          {% endif %}
-          {% if paginator.previous_page %}
-            {% if paginator.page == 2 %}
-            <li class="previous">
-                <a href="/archive/"><span class="fa fa-chevron-left"></span> Previous Page</a>
-            </li>
-            {% else %}
-            <li class="previous">
-                <a href="/archive/page{{paginator.previous_page}}"><span class="fa fa-chevron-left"></span> Previous Page</a>
-            </li>
-            {% endif %}
-          {% else %}
-            <li class="previous disabled">
-                <span><span class="fa fa-chevron-left"></span> Previous Page</span>
-            </li>
-          {% endif %}
-        </ul>
+        {% if paginator.total_pages > 1 %}
+        <div class="paginate-container text-center">
+            <ul class="pagination">
+              {% if paginator.previous_page %}
+                <li {% if page == paginator.page %}class="active"{% endif %}>
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="fa fa-chevron-left"></span> Previous Page</a>
+                </li>
+              {% else %}
+                <li class="disabled">
+                    <span><span class="fa fa-chevron-left"></span> Previous Page</span>
+                </li>
+              {% endif %}
+
+              {% for page in (1..paginator.total_pages) %}
+                {% if page == 1 %}
+                  <li {% if page == paginator.page %}class="active"{% endif %}>
+                    <a href="{{ '/archive/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                  </li>
+                {% else %}
+                  <li {% if page == paginator.page %}class="active"{% endif %}>
+                    <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+
+              {% if paginator.next_page %}
+                <li {% if page == paginator.page %}class="active"{% endif %}>
+                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next Page <span class="fa fa-chevron-right"></span></a>
+                </li>
+              {% else %}
+                <li class="disabled">
+                    <span>Next Page <span class="fa fa-chevron-right"></span></span>
+                </li>
+              {% endif %}
+            </ul>
+        </div>
+        {% endif %}
     </nav>
