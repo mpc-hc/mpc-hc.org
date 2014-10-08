@@ -17,7 +17,7 @@
         <meta name="msapplication-TileColor" content="#D83434">
         <meta name="msapplication-TileImage" content="/assets/img/TileImage.png">
         <meta property="og:title" content="{{ page.title }} &ndash; MPC-HC">
-        <meta property="og:description" content="MPC-HC, the free, open source media player">
+        <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}MPC-HC, the free, open source media player{% endif %}">
         {% if page.slug == "home" %}
         <meta property="og:url" content="{{ site.url }}/">
         {% else %}
@@ -28,7 +28,7 @@
         <meta property="og:image:width" content="128">
         <meta property="og:image:height" content="128">
         <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS 2.0">
-        <meta name="description" content="MPC-HC, the free, open source media player">
+        <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}MPC-HC, the free, open source media player{% endif %}">
         <meta name="keywords" content="MPC, MPC-HC, Media Player Classic, Media Player Classic - Home Cinema, open source media player, video, audio, mkv, avi, xvid, x264, matroska">
         <!--[if lt IE 9]>
         <script src="/assets/js/html5shiv-respond.min.js"></script>
