@@ -18,7 +18,11 @@ module.exports = function(grunt) {
         },
 
         jekyll: {
-            site: {}
+            site: {
+                options: {
+                    bundleExec: true
+                }
+            }
         },
 
         htmlmin: {
