@@ -190,7 +190,7 @@ module.exports = function(grunt) {
 
         bootlint: {
             options: {
-                relaxerror: "<head> is missing X-UA-Compatible <meta> tag that disables old IE compatibility modes"
+                relaxerror: ["W002"]
             },
             files: ["<%= dirs.dest %>/**/*.html", "!<%= dirs.dest %>/404.html"]
         },
