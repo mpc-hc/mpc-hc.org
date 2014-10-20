@@ -5,8 +5,8 @@
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=c0a73235c13995799ab0)
- * Config saved to config.json and https://gist.github.com/c0a73235c13995799ab0
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=45f12d49bc7b66f3015e)
+ * Config saved to config.json and https://gist.github.com/45f12d49bc7b66f3015e
  */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
@@ -3424,6 +3424,31 @@ a.thumbnail.active {
 }
 .alert-danger .alert-link {
   color: #843534;
+}
+.close {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
 }
 .clearfix:before,
 .clearfix:after,

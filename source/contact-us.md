@@ -38,10 +38,13 @@ Please follow these simple rules when joining our channels.
 
 ## Social Networks
 
-{: .alert .alert-warning }
-Warning
-: Please, do not use social networks as a way to report bugs, feature requests etc.
-Use the [bug tracker](https://trac.mpc-hc.org/wiki/How_to_Report_Issues) instead.
+<div class="alert alert-warning" role="alert">
+    <h4><i class="fa fa-exclamation-circle"></i> Warning</h4>
+    <p>
+        Please, do not use social networks as a way to report bugs, feature requests etc.
+        Use the <a href="https://trac.mpc-hc.org/wiki/How_to_Report_Issues" class="alert-link">bug tracker</a> instead.
+   </p>
+</div>
 
 * [Facebook](https://www.facebook.com/MediaPlayerClassicHomeCinema)
 * [Google+](https://plus.google.com/+Mpc-hcOrg/) (not updated at the moment since there's no automated way to use RSS feeds)

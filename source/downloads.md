@@ -13,12 +13,20 @@ This is an abbreviation definition
 
 # Downloads
 
-{: .alert .alert-success }
-Note
- : - Supported Operating Systems:
-   : Windows® XP SP3, Vista, 7, 8, 8.1 both 32-bit and 64-bit
- : - System Requirements:
-   : An SSE capable CPU
+<div class="alert alert-info" role="alert">
+    <h4><i class="fa fa-info-circle"></i> Note</h4>
+    <ul>
+        <li>
+            <strong>Supported Operating Systems:</strong>
+            <p>Windows® XP SP3, Vista, 7, 8, 8.1 both 32-bit and 64-bit</p>
+        </li>
+        <li>
+            <strong>System Requirements:</strong>
+            <p>An SSE capable CPU</p>
+        </li>
+   </ul>
+</div>
+
 
 ## Binaries
 
@@ -68,8 +76,14 @@ You can find an archive of our releases via [HTTP](http://sourceforge.net/projec
 
 ## Nightly builds
 
-{: .alert .alert-warning }
-Warning
-: Nightly builds are considered as unstable builds. They may contain untested extra functionality. **Use at your own risk**.
+<div class="alert alert-warning" role="alert">
+    <h4><i class="fa fa-exclamation-circle"></i> Warning</h4>
+    <p>
+        Nightly builds are considered as unstable builds. They may contain untested extra functionality.
+        <strong>Use at your own risk</strong>.
+   </p>
+</div>
 
-[Download](http://nightly.mpc-hc.org/)
+<a href="http://nightly.mpc-hc.org/" class="btn btn-danger btn-lg">
+    <i class="fa fa-download pull-left"></i>Get nightly builds
+</a>

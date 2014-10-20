@@ -1,6 +1,6 @@
 body {
     background: white url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKIAAAAPBAMAAACVXgkYAAAAKlBMVEXx8fHy8vLz8/P09PT19fX29vb39/f4+Pj5+fn6+vr7+/v8/Pz9/f3///8eCkN/AAACqklEQVR4AV3TwW1bVxBG4deAS0gDjtmAEBUQg68BW7cBktMArbsNAlqzjyXNOsB7/PcO5VkHkDQN0Dy9BKGFBNDXwH8wwAwA3XXfPUsdjmbvrQEPHvMNrilXc3e13TbvA+DoSBZSFFQcWvsUhHvvSmCAF8vQwlYOVxV+pCDrefbLQ3bGvrISQJXiAfqmATzelHrPr35nvMjhc64X3VNAaD4ywrGddkrxShHW28e3W+snAN/kG6sWag5QSZmaD/9HAyhCBoeIkl2XsgCyMoKP7nm6XN+0nwVM8WDf9+PWOXvazeE1TW0x2G2YSdqNUcD1e18IyAjzCsnfaLk/Lo+hsLGqGQCjubZ9vOQsFwpdE2jS3VCBzG/8gI4B1Oc6fixgtI2Ns9wyFlcpP/W0DqB9w39pNleCetspUG3z0UyoBhAAkvLWMsC7dQl4ppt0vz+MHs9NARD7Pv3qGzwTyGmnGENjRvFiuPAo2RrgZHuToDy9rYvX2P7VY7ExtyZAYZcWX+/kBcB3mek2Bn9e+rY3/Rhtqb2DNW9GZclIgMJ2X3p+4Vlbc6DMpFP+fiUKIFh6bxZ8G3YyXSz25rnvghjHPgN+ulJ009tS/W02eRohzZ4A6au+0P26AGq7WcV3T4+nW98eBoCuksbAJtC7x9wsgOfatLKwtc+lT6v9xnI0AFarJlcaBbX3sIvp0/S2haIQA8VZGdbTi1MzyQVwf59//PiA+CBxtrxZTucPAKosw6SxPHnB4ErLBkD+OzY7qXXXsnde+5bd2mZc7DwBNgd5NxKA6impehvG6LHCAgH7o+xBMFr4fu4eBQLEKX31ZIVd24cScLxW/sRWnQLoT49dHriG/66SLRMUdiGIFufQ63H+s35b1mQ3ylG05gB+Do1+CIBz6ClU8+U76R+M+SNx6aw8NQAAAABJRU5ErkJggg==") repeat top right;
-    font: 14px/20px "Open Sans";
+    font: 14px/20px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding-top: 80px;
     position: relative;
 }
@@ -125,6 +125,16 @@ body > .container {
 
 .btn > .fa-download {
     margin-top: 4px;
+}
+
+.alert h4 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.alert p:last-child {
+    margin-bottom: 0;
 }
 
 

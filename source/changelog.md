@@ -7,10 +7,13 @@ slug: changelog
 
 # Changelog
 
-{: .alert .alert-success }
-Note
-: This changelog only applies to current stable build.
-For complete logs check the [links below](#all-changelogs).
+<div class="alert alert-info" role="alert">
+    <h4><i class="fa fa-info-circle"></i> Note</h4>
+    <p>
+        This changelog only applies to current stable build.
+        For complete logs check the <a href="#all-changelogs" class="alert-link">links below</a>.
+   </p>
+</div>
 
 
 ## {{ site.version.short }} - {{ site.version.date }}
