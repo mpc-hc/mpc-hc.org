@@ -45,5 +45,5 @@ FAQ
 
 6. **Will MPC-HC support Windows RT or Metro?**
 
-    Supporting these new platforms require a lot of changes and this is simply
+    Supporting these new platforms require many changes and this is simply
     not possible for us in the near future, with the current manpower.

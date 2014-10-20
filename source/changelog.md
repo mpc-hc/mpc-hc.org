@@ -18,11 +18,11 @@ slug: changelog
 
 ## {{ site.version.short }} - {{ site.version.date }}
 * New:
-  * Accept loading more than one subtitle file at a time using the "Load subtitle" dialog or drag-and-drop
+  * Allow loading more than one subtitle file at a time using the "Load subtitle" dialog or drag-and-drop
   * Add advanced settings page
   * Add Arabic and Thai translations
   * Completely reworked subtitle queue:
-    * The queue should be quite faster than the older one for a similar number of buffered subpictures.
+    * The queue should be much faster than the older one for a similar number of buffered subpictures.
       It should also work much better when the number of subpictures becomes important
     * Subtitle animation can now be disabled even when using no buffering
     * Add the ability to choose at which state (in percentage of the full animation) an animated subtitle
