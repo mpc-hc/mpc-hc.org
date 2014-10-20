@@ -34,6 +34,20 @@
 }());
 
 
+$('.alert-dismissible').each(function() {
+    var $alert = $(this);
+    var alertNameLSProp = $alert.attr('data-alert-id');
+
+    if (localStorage.getItem(alertNameLSProp) === 'true') {
+        $alert.remove();
+    } else {
+        $alert.on('close.bs.alert', function() {
+            localStorage.setItem(alertNameLSProp, true);
+        });
+    }
+});
+
+
 // Google analytics
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -16,10 +16,13 @@ Media Player Classic - Home Cinema is an extremely light-weight media player for
 
 ## MPC-HC Team
 
-{: .alert .alert-warning }
-Warning
-: Please, do not contact team members directly for support,
-use the [bug tracker](https://trac.mpc-hc.org/wiki/How_to_Report_Issues) instead.
+<div class="alert alert-warning" role="alert">
+    <h4><i class="fa fa-exclamation-circle"></i> Warning</h4>
+    <p>
+        Please, do not contact team members directly for support,
+        use the <a href="https://trac.mpc-hc.org/wiki/How_to_Report_Issues" class="alert-link">bug tracker</a> instead.
+   </p>
+</div>
 
 
 ### Active (sorted by name):

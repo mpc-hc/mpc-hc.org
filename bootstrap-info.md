@@ -1,4 +1,4 @@
-http://getbootstrap.com/customize/?id=c0a73235c13995799ab0
+http://getbootstrap.com/customize/?id=45f12d49bc7b66f3015e
 
 
 Enabled components in v3.2.0:
@@ -21,11 +21,13 @@ Enabled components in v3.2.0:
  * Pager
  * Thumbnails
  * Alerts
+ * Close icon
 
 * JavaScript components
  * Component animations (for JS)
 
 * jQuery plugins
+ * Alert dismissal
  * Collapse
  * Transitions
 
