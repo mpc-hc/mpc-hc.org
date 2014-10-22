@@ -1,5 +1,6 @@
 {
   "name": "mpc-hc.org",
+  "private": true,
   "version": "0.3.0",
   "author": "MPC-HC Team (https://github.com/mpc-hc/mpc-hc.org)",
   "description": "The mpc-hc.org source code",
