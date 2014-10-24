@@ -2,6 +2,38 @@
 
 <div class="full-news">
 
+    <nav>
+        <ul class="pager">
+          {% if page.previous %}
+            <li class="previous">
+                <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">
+                    <span class="fa fa-chevron-left"></span> Older
+                </a>
+            </li>
+          {% else %}
+            <li class="previous disabled">
+                <span>
+                    <span class="fa fa-chevron-left"></span> Older
+                </span>
+            </li>
+          {% endif %}
+            <!--<li><a href="/archive/">Archive</a></li>-->
+          {% if page.next %}
+            <li class="next">
+                <a href="{{ page.next.url }}" title="{{ page.next.title }}">
+                    Newer <span class="fa fa-chevron-right"></span>
+                </a>
+            </li>
+          {% else %}
+            <li class="next disabled">
+                <span>
+                    Newer <span class="fa fa-chevron-right"></span>
+                </span>
+            </li>
+          {% endif %}
+        </ul>
+    </nav>
+
     <h1>{{ page.title }}
         <a href="{{ page.url }}" title="Permalink">
             <span class="fa fa-link"></span>
@@ -20,37 +52,5 @@
     {{ content }}
 
 </div>
-
-<nav>
-    <ul class="pager">
-      {% if page.previous %}
-        <li class="previous">
-            <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">
-                <span class="fa fa-chevron-left"></span> Older
-            </a>
-        </li>
-      {% else %}
-        <li class="previous disabled">
-            <span>
-                <span class="fa fa-chevron-left"></span> Older
-            </span>
-        </li>
-      {% endif %}
-        <!--<li><a href="/archive/">Archive</a></li>-->
-      {% if page.next %}
-        <li class="next">
-            <a href="{{ page.next.url }}" title="{{ page.next.title }}">
-                Newer <span class="fa fa-chevron-right"></span>
-            </a>
-        </li>
-      {% else %}
-        <li class="next disabled">
-            <span>
-                Newer <span class="fa fa-chevron-right"></span>
-            </span>
-        </li>
-      {% endif %}
-    </ul>
-</nav>
 
 {% include footer.html %}
