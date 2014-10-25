@@ -17,30 +17,31 @@
     {% endif %}
 {% endfor %}
 
-    <ul class="pager">
-      {% if paginator.next_page %}
-        <li class="next">
-            <a href="/archive/page{{paginator.next_page}}" title="{{ page.next.title }}">Next Page <i class="fa fa-chevron-right"></i></a>
-        </li>
-      {% else %}
-        <li class="next disabled">
-            <span>Next Page <i class="fa fa-chevron-right"></i></span>
-        </li>
-      {% endif %}
-        <!--<li><a href="/archive/">Archive</a></li>-->
-      {% if paginator.previous_page %}
-        {% if paginator.page == 2 %}
-        <li class="previous">
-            <a href="/archive/" title="{{ page.previous.title }}"><i class="fa fa-chevron-left"></i> Previous Page</a>
-        </li>
-        {% else %}
-        <li class="previous">
-            <a href="/archive/page{{paginator.previous_page}}" title="{{ page.previous.title }}"><i class="fa fa-chevron-left"></i> Previous Page</a>
-        </li>
-        {% endif %}
-      {% else %}
-        <li class="previous disabled">
-            <span><i class="fa fa-chevron-left"></i> Previous Page</span>
-        </li>
-      {% endif %}
-    </ul>
+    <nav>
+        <ul class="pager">
+          {% if paginator.next_page %}
+            <li class="next">
+                <a href="/archive/page{{paginator.next_page}}">Next Page <i class="fa fa-chevron-right"></i></a>
+            </li>
+          {% else %}
+            <li class="next disabled">
+                <span>Next Page <i class="fa fa-chevron-right"></i></span>
+            </li>
+          {% endif %}
+          {% if paginator.previous_page %}
+            {% if paginator.page == 2 %}
+            <li class="previous">
+                <a href="/archive/"><i class="fa fa-chevron-left"></i> Previous Page</a>
+            </li>
+            {% else %}
+            <li class="previous">
+                <a href="/archive/page{{paginator.previous_page}}"><i class="fa fa-chevron-left"></i> Previous Page</a>
+            </li>
+            {% endif %}
+          {% else %}
+            <li class="previous disabled">
+                <span><i class="fa fa-chevron-left"></i> Previous Page</span>
+            </li>
+          {% endif %}
+        </ul>
+    </nav>

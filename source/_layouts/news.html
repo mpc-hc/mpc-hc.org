@@ -3,7 +3,10 @@
 <div class="full-news">
 
     <h1>{{ page.title }}
-        <a href="{{ post.url }}" title="Permalink"><i class="fa fa-link"></i></a>
+        <a href="{{ page.url }}" title="Permalink">
+            <i class="fa fa-link"></i>
+            <span class="sr-only">Permalink</span>
+        </a>
     </h1>
     <div class="post-meta">
         <span class="date">
@@ -18,18 +21,36 @@
 
 </div>
 
-<ul class="pager">
-  {% if page.previous %}
-    <li class="previous"><a href="{{ page.previous.url }}" title="{{ page.previous.title }}"><i class="fa fa-chevron-left"></i> Older</a></li>
-  {% else %}
-    <li class="previous disabled"><a><i class="fa fa-chevron-left"></i> Older</a></li>
-  {% endif %}
-    <!--<li><a href="/archive/">Archive</a></li>-->
-  {% if page.next %}
-    <li class="next"><a href="{{ page.next.url }}" title="{{ page.next.title }}">Newer <i class="fa fa-chevron-right"></i></a></li>
-  {% else %}
-    <li class="next disabled"><a>Newer <i class="fa fa-chevron-right"></i></a></li>
-  {% endif %}
-</ul>
+<nav>
+    <ul class="pager">
+      {% if page.previous %}
+        <li class="previous">
+            <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">
+                <i class="fa fa-chevron-left"></i> Older
+            </a>
+        </li>
+      {% else %}
+        <li class="previous disabled">
+            <span>
+                <i class="fa fa-chevron-left"></i> Older
+            </span>
+        </li>
+      {% endif %}
+        <!--<li><a href="/archive/">Archive</a></li>-->
+      {% if page.next %}
+        <li class="next">
+            <a href="{{ page.next.url }}" title="{{ page.next.title }}">
+                Newer <i class="fa fa-chevron-right"></i>
+            </a>
+        </li>
+      {% else %}
+        <li class="next disabled">
+            <span>
+                Newer <i class="fa fa-chevron-right"></i>
+            </span>
+        </li>
+      {% endif %}
+    </ul>
+</nav>
 
 {% include footer.html %}

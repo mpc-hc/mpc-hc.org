@@ -58,7 +58,7 @@ body > .container {
 }
 
 .post-meta {
-    color: #777777;
+    color: #767676;
     font-size: 85%;
     margin-bottom: 10px;
 }
@@ -121,6 +121,10 @@ body > .container {
 .navbar-brand:focus,
 .navbar-brand:hover {
     text-shadow: 0 0 20px #08C;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #727272;
 }
 
 .btn > .fa-download {

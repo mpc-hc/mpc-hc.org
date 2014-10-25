@@ -66,7 +66,10 @@ slug: home
 </div>
 
 <div class="latest-news">
-    <a class="rss-before" href="/rss.xml" title="RSS Feed"><i class="fa fa-rss fa-2x"></i></a>
+    <a class="rss-before" href="/rss.xml" title="RSS Feed">
+        <i class="fa fa-rss fa-2x"></i>
+        <span class="sr-only">RSS Feed</span>
+    </a>
     <h1>Latest news</h1>
 
     {% for post in site.posts limit:site.news_limit %}
