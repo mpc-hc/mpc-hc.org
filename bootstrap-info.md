@@ -1,35 +1,35 @@
-http://getbootstrap.com/customize/?id=45f12d49bc7b66f3015e
+http://getbootstrap.com/customize/?id=eec41abb7dd1efe8b974
 
 
-Enabled components in v3.2.0:
+Enabled components in v3.3.0:
 
 
 * Common CSS (all)
- * Print media styles
- * Typography
- * Code
- * Grid system
- * Tables
- * Forms
- * Buttons
- * Responsive utilities
+  * Print media styles
+  * Typography
+  * Code
+  * Grid system
+  * Tables
+  * Forms
+  * Buttons
+  * Responsive utilities
 
 * Components
- * Navs
- * Navbar
- * Pagination
- * Pager
- * Thumbnails
- * Alerts
- * Close icon
+  * Navs
+  * Navbar
+  * Pagination
+  * Pager
+  * Thumbnails
+  * Alerts
+  * Close icon
 
 * JavaScript components
- * Component animations (for JS)
+  * Component animations (for JS)
 
 * jQuery plugins
- * Alert dismissal
- * Collapse
- * Transitions
+  * Alert dismissal
+  * Collapse
+  * Transitions
 
 
 (**obsolete**) http://www.icnfnt.com/
