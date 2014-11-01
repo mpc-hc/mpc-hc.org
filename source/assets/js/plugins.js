@@ -23,16 +23,6 @@
 
 // Place any jQuery/helper plugins in here.
 
-// Add custom class to our download links
-
-(function() {
-    $('body.downloads')
-      .find('a[href^="http://sourceforge.net/projects/mpc-hc/files/"]')
-      .each(function() {
-        $(this).addClass('sourceforge_accelerator_link');
-    });
-}());
-
 
 $('.alert-dismissible').each(function() {
     var $alert = $(this);
