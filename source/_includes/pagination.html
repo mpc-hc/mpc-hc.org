@@ -21,26 +21,26 @@
         <ul class="pager">
           {% if paginator.next_page %}
             <li class="next">
-                <a href="/archive/page{{paginator.next_page}}">Next Page <i class="fa fa-chevron-right"></i></a>
+                <a href="/archive/page{{paginator.next_page}}">Next Page <span class="fa fa-chevron-right"></span></a>
             </li>
           {% else %}
             <li class="next disabled">
-                <span>Next Page <i class="fa fa-chevron-right"></i></span>
+                <span>Next Page <span class="fa fa-chevron-right"></span></span>
             </li>
           {% endif %}
           {% if paginator.previous_page %}
             {% if paginator.page == 2 %}
             <li class="previous">
-                <a href="/archive/"><i class="fa fa-chevron-left"></i> Previous Page</a>
+                <a href="/archive/"><span class="fa fa-chevron-left"></span> Previous Page</a>
             </li>
             {% else %}
             <li class="previous">
-                <a href="/archive/page{{paginator.previous_page}}"><i class="fa fa-chevron-left"></i> Previous Page</a>
+                <a href="/archive/page{{paginator.previous_page}}"><span class="fa fa-chevron-left"></span> Previous Page</a>
             </li>
             {% endif %}
           {% else %}
             <li class="previous disabled">
-                <span><i class="fa fa-chevron-left"></i> Previous Page</span>
+                <span><span class="fa fa-chevron-left"></span> Previous Page</span>
             </li>
           {% endif %}
         </ul>

@@ -9,7 +9,7 @@ FAQ
 ===
 
 <div class="alert alert-info" role="alert">
-    <h4><i class="fa fa-info-circle"></i> Note</h4>
+    <h4><span class="fa fa-info-circle"></span> Note</h4>
     <p>
         <a href="https://github.com/mpc-hc/mpc-hc.org" class="alert-link">Help us add more information to this page</a>.
    </p>

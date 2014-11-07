@@ -203,7 +203,7 @@ footer ul {
             transform: rotate(360deg);
 }
 
-.pager li > a > i {
+.pager li > a > span {
     vertical-align: middle;
 }
 

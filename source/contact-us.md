@@ -39,7 +39,7 @@ Please follow these simple rules when joining our channels.
 ## Social Networks
 
 <div class="alert alert-warning" role="alert">
-    <h4><i class="fa fa-exclamation-circle"></i> Warning</h4>
+    <h4><span class="fa fa-exclamation-circle"></span> Warning</h4>
     <p>
         Please, do not use social networks as a way to report bugs, feature requests etc.
         Use the <a href="https://trac.mpc-hc.org/wiki/How_to_Report_Issues" class="alert-link">bug tracker</a> instead.

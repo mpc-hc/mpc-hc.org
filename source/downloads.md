@@ -14,7 +14,7 @@ This is an abbreviation definition
 # Downloads
 
 <div class="alert alert-info" role="alert">
-    <h4><i class="fa fa-info-circle"></i> Note</h4>
+    <h4><span class="fa fa-info-circle"></span> Note</h4>
     <ul>
         <li>
             <strong>Supported Operating Systems:</strong>
@@ -76,7 +76,7 @@ You can find an archive of our releases via [HTTP](http://sourceforge.net/projec
 ## Nightly builds
 
 <div class="alert alert-warning" role="alert">
-    <h4><i class="fa fa-exclamation-circle"></i> Warning</h4>
+    <h4><span class="fa fa-exclamation-circle"></span> Warning</h4>
     <p>
         Nightly builds are considered as unstable builds. They may contain untested extra functionality.
         <strong>Use at your own risk</strong>.
@@ -84,5 +84,5 @@ You can find an archive of our releases via [HTTP](http://sourceforge.net/projec
 </div>
 
 <a href="http://nightly.mpc-hc.org/" class="btn btn-danger btn-lg">
-    <i class="fa fa-download pull-left"></i>Get nightly builds
+    <span class="fa fa-download pull-left"></span>Get nightly builds
 </a>

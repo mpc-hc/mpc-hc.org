@@ -8,7 +8,7 @@ slug: changelog
 # Changelog
 
 <div class="alert alert-info" role="alert">
-    <h4><i class="fa fa-info-circle"></i> Note</h4>
+    <h4><span class="fa fa-info-circle"></span> Note</h4>
     <p>
         This changelog only applies to current stable build.
         For complete logs check the <a href="#all-changelogs" class="alert-link">links below</a>.
