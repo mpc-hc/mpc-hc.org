@@ -69,7 +69,7 @@ slug: changelog
       * Ticket {% trac 4783 %}, LAV Video: Experimental support for hardware (CUVID and DXVA2) assisted decoding of HEVC streams (disabled by default)
       * Ticket {% trac 4879 %}, LAV Audio and LAV Splitter: Fix TrueHD streams with a Dolby Atmos sub-stream
 
-    The full changelog can be found at <https://raw.githubusercontent.com/Nevcairiel/LAVFilters/0.63/CHANGELOG.txt>
+    The full changelog can be found at [here](https://raw.githubusercontent.com/Nevcairiel/LAVFilters/0.63/CHANGELOG.txt).
   * Updated Armenian, Basque, Belarusian, Bengali, British English, Catalan, Chinese (Simplified and Traditional),
     Croatian, Czech, Dutch, French, Galician, German, Greek, Hebrew, Hungarian, Italian, Japanese, Korean, Malay,
     Polish, Portuguese (Brazil), Romanian, Russian, Slovak, Slovenian, Spanish, Swedish, Tatar, Turkish, Ukrainian
