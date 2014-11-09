@@ -77,10 +77,11 @@ module.exports = function(grunt) {
                     ".navbar-collapse",
                     ".navbar-collapse.in",
                     ".collapsing",
-                    // needed for the <noscript> warning; remove when fixed in uncss
+                    // needed for the `<noscript>` warning; remove them when fixed in uncss
                     ".alert-danger",
                     ".visible-xs",
-                    ".noscript-warning"
+                    ".noscript-warning",
+                    ".alert-dismissible" // currently only in a IE conditional so uncss doesn't see it
                 ],
                 htmlroot: "<%= dirs.dest %>",
                 ignoreSheets: [/fonts.googleapis/]
