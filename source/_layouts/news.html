@@ -7,13 +7,13 @@
           {% if page.previous %}
             <li class="previous">
                 <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">
-                    <span class="fa fa-chevron-left"></span> Older
+                    <span class="fa fa-chevron-left" aria-hidden="true"></span> Older
                 </a>
             </li>
           {% else %}
             <li class="previous disabled">
                 <span>
-                    <span class="fa fa-chevron-left"></span> Older
+                    <span class="fa fa-chevron-left" aria-hidden="true"></span> Older
                 </span>
             </li>
           {% endif %}
@@ -21,13 +21,13 @@
           {% if page.next %}
             <li class="next">
                 <a href="{{ page.next.url }}" title="{{ page.next.title }}">
-                    Newer <span class="fa fa-chevron-right"></span>
+                    Newer <span class="fa fa-chevron-right" aria-hidden="true"></span>
                 </a>
             </li>
           {% else %}
             <li class="next disabled">
                 <span>
-                    Newer <span class="fa fa-chevron-right"></span>
+                    Newer <span class="fa fa-chevron-right" aria-hidden="true"></span>
                 </span>
             </li>
           {% endif %}
@@ -36,16 +36,16 @@
 
     <h1>{{ page.title }}
         <a href="{{ page.url }}" title="Permalink">
-            <span class="fa fa-link"></span>
+            <span class="fa fa-link" aria-hidden="true"></span>
             <span class="sr-only">Permalink</span>
         </a>
     </h1>
     <div class="post-meta">
         <span class="date">
-            <span class="fa fa-calendar"></span> {{ page.date | date: "%B %d, %Y" }}
+            <span class="fa fa-calendar" aria-hidden="true"></span> {{ page.date | date: "%B %d, %Y" }}
         </span>
         <span class="user">
-            <span class="fa fa-user"></span> {{ page.author }}
+            <span class="fa fa-user" aria-hidden="true"></span> {{ page.author }}
         </span>
     </div>
 
