@@ -81,7 +81,9 @@ module.exports = function(grunt) {
                     ".alert-danger",
                     ".visible-xs",
                     ".noscript-warning",
-                    ".alert-dismissible" // currently only in a IE conditional so uncss doesn't see it
+                    // currently only in a IE conditional so uncss doesn't see it
+                    ".close",
+                    ".alert-dismissible"
                 ],
                 htmlroot: "<%= dirs.dest %>",
                 ignoreSheets: [/fonts.googleapis/]
