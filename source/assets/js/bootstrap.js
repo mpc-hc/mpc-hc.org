@@ -1,12 +1,12 @@
 /*!
- * Bootstrap v3.3.0 (http://getbootstrap.com)
+ * Bootstrap v3.3.1 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=eec41abb7dd1efe8b974)
- * Config saved to config.json and https://gist.github.com/eec41abb7dd1efe8b974
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=736e78ba669d71c9067b)
+ * Config saved to config.json and https://gist.github.com/736e78ba669d71c9067b
  */
 if (typeof jQuery === 'undefined') {
   throw new Error('Bootstrap\'s JavaScript requires jQuery')
@@ -19,7 +19,7 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: alert.js v3.3.0
+ * Bootstrap: alert.js v3.3.1
  * http://getbootstrap.com/javascript/#alerts
  * ========================================================================
  * Copyright 2011-2014 Twitter, Inc.
@@ -38,7 +38,7 @@ if (typeof jQuery === 'undefined') {
     $(el).on('click', dismiss, this.close)
   }
 
-  Alert.VERSION = '3.3.0'
+  Alert.VERSION = '3.3.1'
 
   Alert.TRANSITION_DURATION = 150
 
@@ -114,7 +114,7 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: collapse.js v3.3.0
+ * Bootstrap: collapse.js v3.3.1
  * http://getbootstrap.com/javascript/#collapse
  * ========================================================================
  * Copyright 2011-2014 Twitter, Inc.
@@ -143,7 +143,7 @@ if (typeof jQuery === 'undefined') {
     if (this.options.toggle) this.toggle()
   }
 
-  Collapse.VERSION  = '3.3.0'
+  Collapse.VERSION  = '3.3.1'
 
   Collapse.TRANSITION_DURATION = 350
 
@@ -326,7 +326,7 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: transition.js v3.3.0
+ * Bootstrap: transition.js v3.3.1
  * http://getbootstrap.com/javascript/#transitions
  * ========================================================================
  * Copyright 2011-2014 Twitter, Inc.
