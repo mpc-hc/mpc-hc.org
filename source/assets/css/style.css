@@ -74,10 +74,12 @@ body > .container {
     margin-bottom: 0;
 }
 
-.marketing h2 {
+.marketing h1 {
     border-bottom: 0;
     font-size: 22px;
+    line-height: 36px;
     margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .marketing p {
