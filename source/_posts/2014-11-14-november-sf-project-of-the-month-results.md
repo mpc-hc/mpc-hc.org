@@ -1,7 +1,7 @@
 ---
 author: XhmikosR
 layout: news
-title: SourceForge Project of the Month
+title: SourceForge Project of the Month results
 ---
 
 Thanks to all of our users who voted for us, we are SourceForge's Project of the Month for November!
