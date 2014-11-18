@@ -60,19 +60,21 @@ slug: home
 </div>
 
 
+<hr>
+
 
 <div class="latest-news">
     <a class="rss-before" href="/rss.xml" title="RSS Feed">
         <span class="fa fa-rss fa-2x" aria-hidden="true"></span>
         <span class="sr-only">RSS Feed</span>
     </a>
-    <h1>Latest news</h1>
+    <h2>Latest news</h2>
 
     {% for post in site.posts limit:site.news_limit %}
     <div class="new">
-        <h2>
+        <h3>
             <a href="{{ post.url }}">{{ post.title }}</a>
-        </h2>
+        </h3>
 
         <div class="post-meta">
             <span class="date">
@@ -87,7 +89,11 @@ slug: home
     </div>
     {% endfor %}
 
-    <p><a href="/archive/"><em>Browse the archive</em></a></p>
+    <p>
+        <a href="/archive/">
+            <em>Browse the archive</em>
+        </a>
+    </p>
 
 </div>
 
