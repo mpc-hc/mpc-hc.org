@@ -28,6 +28,10 @@ $('.alert-dismissible').each(function() {
     var $alert = $(this);
     var alertNameLSProp = $alert.attr('data-alert-id');
 
+    if (!window.localStorage) {
+        return;
+    }
+
     if (localStorage.getItem(alertNameLSProp) === 'true') {
         $alert.remove();
     } else {
