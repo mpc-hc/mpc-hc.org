@@ -1,4 +1,7 @@
-<h1 id="archive">Archive</h1>
+<h1 id="archive">
+    <span class="fa fa-archive" aria-hidden="true"></span>
+    Archive
+</h1>
 
 {% for post in paginator.posts %}
   {% capture current_year %}{{ post.date | date: "%B %Y" }}{% endcapture %}
@@ -23,7 +26,7 @@
             <ul class="pagination">
               {% if paginator.previous_page %}
                 <li {% if page == paginator.page %}class="active"{% endif %}>
-                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | append: '/' }}">
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | append: '/' }}" title="Previous Page">
                         <span class="fa fa-angle-double-left" aria-hidden="true"></span>
                         <span class="sr-only">Previous Page</span>
                     </a>
@@ -40,18 +43,18 @@
               {% for page in (1..paginator.total_pages) %}
                 {% if page == 1 %}
                   <li {% if page == paginator.page %}class="active"{% endif %}>
-                    <a href="{{ '/archive/' | prepend: site.baseurl | replace: '//', '/' | append: '/' }}">{{ page }}</a>
+                    <a href="{{ '/archive/' | prepend: site.baseurl | replace: '//', '/' | append: '/' }}" title="Page 1">{{ page }}</a>
                   </li>
                 {% else %}
                   <li {% if page == paginator.page %}class="active"{% endif %}>
-                    <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page | append: '/' }}">{{ page }}</a>
+                    <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page | append: '/' }}" title="Page {{ page }}">{{ page }}</a>
                   </li>
                 {% endif %}
               {% endfor %}
 
               {% if paginator.next_page %}
                 <li {% if page == paginator.page %}class="active"{% endif %}>
-                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' | append: '/' }}">
+                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' | append: '/' }}" title="Next Page">
                         <span class="sr-only">Next Page</span>
                         <span class="fa fa-angle-double-right" aria-hidden="true"></span>
                     </a>
