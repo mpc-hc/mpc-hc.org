@@ -1,0 +1,38 @@
+# http://www.appveyor.com/docs/appveyor-yml
+
+version: "{build}"
+
+clone_depth: 10
+
+install:
+  - SET PATH=C:\Ruby%ruby_folder_version%\bin;%PATH%
+  - bundle install --retry 3
+  - ps: Install-Product node 0.12
+  - npm install -g grunt-cli
+  - npm install
+
+build: off
+
+test_script:
+  - ruby -v && gem -v && bundle -v
+  - node -v && npm -v
+  - npm test
+
+environment:
+  matrix:
+    - ruby_folder_version: "200"
+      ruby_gems_folder: "2.0.0"
+    - ruby_folder_version: "22"
+      ruby_gems_folder: "2.2.0"
+    - ruby_folder_version: "22-x64"
+      ruby_gems_folder: "2.2.0"
+
+matrix:
+  fast_finish: true
+
+cache:
+  - 'C:\Ruby%ruby_folder_version%\bin -> Gemfile,Gemfile.lock'
+  - 'C:\Ruby%ruby_folder_version%\lib\ruby\gems\%ruby_gems_folder% -> Gemfile,Gemfile.lock'
+  - '%APPDATA%\npm\node_modules -> package.json'
+  - '%APPDATA%\npm-cache -> package.json'
+  - 'node_modules -> package.json'

@@ -1,11 +1,12 @@
-[![Build Status](https://travis-ci.org/mpc-hc/mpc-hc.org.svg?branch=master)](https://travis-ci.org/mpc-hc/mpc-hc.org)
-[![devDependency Status](https://david-dm.org/mpc-hc/mpc-hc.org/dev-status.svg?style=flat)](https://david-dm.org/mpc-hc/mpc-hc.org#info=devDependencies)
+[![Linux Build Status](https://img.shields.io/travis/mpc-hc/mpc-hc.org/master.svg?style=flat&label=Linux%20build)](https://travis-ci.org/mpc-hc/mpc-hc.org)
+[![Windows Build status](https://img.shields.io/appveyor/ci/XhmikosR/mpc-hc.org/master.svg?style=flat&label=Windows%20build)](https://ci.appveyor.com/project/XhmikosR/mpc-hc-org/branch/master)
+[![devDependency Status](https://img.shields.io/david/dev/mpc-hc/mpc-hc.org.svg?style=flat)](https://david-dm.org/mpc-hc/mpc-hc.org#info=devDependencies)
 
 # Getting started
 
 * Install [Node.js](https://nodejs.org/download/)
 * Install grunt: `npm install -g grunt-cli`
 * Install the Node.js dependencies via npm: `npm install`
-* Install RailsInstaller with Ruby 1.9.3 <http://railsinstaller.org/en>
+* Install Ruby; See [this](http://jekyll-windows.juthilo.com/) guide
 * Run `gem install bundle` and then `bundle install`
 * Run `grunt build` to build the static site, `grunt` to build and watch for changes (http://localhost:8000/)
