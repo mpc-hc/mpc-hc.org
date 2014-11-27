@@ -171,7 +171,6 @@ footer ul {
 }
 
 .social-ul .fa,
-.fa-link,
 .fa-rss {
     color: lightgray;
     -webkit-transition: all 0.5s ease 0s;
@@ -181,11 +180,9 @@ footer ul {
 }
 
 .social-ul .fa:hover,
-.fa-link:hover,
 .fa-rss:hover,
 .social-ul .fa:focus,
-.fa-rss:focus,
-.fa-link:focus {
+.fa-rss:focus {
     color: gray;
     text-decoration: none;
     -webkit-transform: rotate(360deg);
