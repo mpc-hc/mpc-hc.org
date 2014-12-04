@@ -183,13 +183,28 @@ footer ul {
 .fa-rss:hover,
 .social-ul .fa:focus,
 .fa-rss:focus {
-    color: gray;
     text-decoration: none;
-    -webkit-transform: rotate(360deg);
-       -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-         -o-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: scale(1.5);
+       -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+         -o-transform: scale(1.5);
+            transform: scale(1.5);
+}
+
+.fa-facebook:hover {
+    color: #3A558E;
+}
+
+.fa-twitter:hover {
+    color: #4099FF;
+}
+
+.fa-google-plus:hover {
+    color: #D34836;
+}
+
+.fa-rss:hover {
+    color: #FE9900;
 }
 
 .paginate-container {
