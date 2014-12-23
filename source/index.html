@@ -68,7 +68,10 @@ slug: home
         <span class="fa fa-rss fa-2x" aria-hidden="true"></span>
         <span class="sr-only">RSS Feed</span>
     </a>
-    <h2>Latest news</h2>
+
+    <h2>
+        <a href="/archive/" title="Browse the archive">Latest news</a>
+    </h2>
 
     {% for post in site.posts limit:site.news_limit %}
     <div class="new">
@@ -88,12 +91,6 @@ slug: home
         {{ post.excerpt }}
     </div>
     {% endfor %}
-
-    <p>
-        <a href="/archive/">
-            <em>Browse the archive</em>
-        </a>
-    </p>
 
 </div>
 
