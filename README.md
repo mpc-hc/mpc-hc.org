@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/mpc-hc/mpc-hc.org.svg?branch=master)](https://travis-ci.org/mpc-hc/mpc-hc.org)
-[![devDependency Status](https://david-dm.org/mpc-hc/mpc-hc.org/dev-status.svg?theme=shields.io)](https://david-dm.org/mpc-hc/mpc-hc.org#info=devDependencies)
+[![devDependency Status](https://david-dm.org/mpc-hc/mpc-hc.org/dev-status.svg?style=flat)](https://david-dm.org/mpc-hc/mpc-hc.org#info=devDependencies)
 
 # Getting started
 
