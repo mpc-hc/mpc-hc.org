@@ -8,7 +8,7 @@
         {% if page.slug == "downloads" or page.slug == "home" %}
         <link rel="dns-prefetch" href="//sourceforge.net">
         {% endif %}
-        <title>{{ page.title }} &middot; MPC-HC</title>
+        <title>{% if paginator.page and paginator.page != 1 %}{{ page.title }} - Page {{paginator.page}}{% else %}{{ page.title }}{% endif%} &middot; MPC-HC</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700">
         <link rel="stylesheet" href="/assets/css/pack.css">
