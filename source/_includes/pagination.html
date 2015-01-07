@@ -1,6 +1,10 @@
 <h1 id="archive">
     <span class="fa fa-archive" aria-hidden="true"></span>
+    {% if paginator.page != 1 %}
+    <a href="{{ '/archive/' | prepend: site.baseurl | append: '/' | replace: '//', '/' }}" title="Back to Archive">Archive</a>
+    {% else %}
     Archive
+    {% endif%}
 </h1>
 
 {% for post in paginator.posts %}
