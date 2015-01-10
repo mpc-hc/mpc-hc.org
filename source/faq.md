@@ -3,10 +3,16 @@ layout: default
 title: FAQ
 permalink: /faq/
 slug: faq
+useFancybox: true
 ---
 
-FAQ
-===
+{::comment}
+This is an abbreviation definition
+{:/comment}
+
+*[EVR CP]: Enhanced Video Renderer (custom presenter)
+
+# FAQ
 
 <div class="alert alert-info" role="alert">
     <h4><span class="fa fa-info-circle" aria-hidden="true"></span> Note</h4>
@@ -19,31 +25,47 @@ FAQ
 1. **What are the requirements for MPC-HC?**
 
     In order to run MPC-HC you must have an SSE capable CPU. MPC-HC will work on
-    Windows® XP Service Pack 3, Vista, 7 and 8, both 32-bit (x86) and 64-bit (x64).
+    Windows<sup>&reg;</sup> XP Service Pack 3, Vista, 7 and 8, both 32-bit (x86) and 64-bit (x64).
 
 2. **My picture is up-side down, how do I fix it?**
 
     Try updating your video card drivers.
 
-3. **Why is there suddenly a different seekbar in fullscreen?**
+3. **How can I rotate a video?**
 
-    You have accidentally enabled D3D Fullscreen, go to Options -> Output
+    Make sure you are using a renderer that supports rotation, like EVR CP or Sync Renderer;
+    you should see a green tick for the selected renderer in **Options &rarr; Output**.
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-4">
+            <a class="thumbnail fancybox-thumb" href="/assets/img/faq/options-output.png" title="Options &rarr; Output tab">
+                <img src="/assets/img/faq/options-output-thumb.png" alt="Options &rarr; Output tab" width="300" height="227">
+            </a>
+        </div>
+    </div>
+
+    Then, use <kbd>Alt+1</kbd> to rotate left, <kbd>Alt+3</kbd> to rotate right, <kbd>5</kbd> to reset.
+    Note, that the numbers correspond to the **numpad** ones.
+
+4. **Why is there suddenly a different seekbar in fullscreen?**
+
+    You have accidentally enabled D3D Fullscreen, go to **Options &rarr; Output**
     and disable the D3D Fullscreen checkbox.
 
-4. **Why am I seeing tearing in the video?**
+5. **Why am I seeing tearing in the video?**
 
-    The video display is experiencing a synchronisation issue, try enabling V-Sync by pressing V.
+    The video display is experiencing a synchronisation issue, try enabling V-Sync by pressing <kbd>V</kbd>.
     If you have more than one monitor connected make sure you extend the screen instead of duplicating it.
 
-5. **Why am I seeing strange glitches in the video?**
+6. **Why am I seeing strange glitches in the video?**
 
     Hardware acceleration is most likely not working correctly.
-    Try going to Options -> Internal Filters, right-click the list on the right
-    and click "Disable DXVA filters" and then reload the video file.
-    If this does not solve and your video file plays correctly in other
+    Try going to **Options &rarr; Internal Filters**, right-click the list on the right
+    and click "Disable DXVA filters" and then reload the video (<kbd>Ctrl+E</kbd> or manually).
+    If this does not solve your issue, and your video plays correctly in other
     video players then please make a bug report.
 
-6. **Will MPC-HC support Windows RT or Metro?**
+7. **Will MPC-HC support Windows RT or Metro?**
 
     Supporting these new platforms require many changes and this is simply
     not possible for us in the near future, with the current manpower.
