@@ -64,77 +64,16 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/assets/js/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="/assets/js/pack.js"></script>
-        {% if page.slug == "downloads" or page.slug == "home" %}
-        <script>
-            (function() {
-                var el = document.createElement('script');
-                el.src = '//sourceforge.net/accelerator/js?partner_id=72';
-                el.defer = true;
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(el, s);
-            })();
-        </script>
-        {% endif %}
-
         {% if page.slug == "home" %}
-        <script>
-            $(document).ready(function(navigator) {
-                var arch = navigator.userAgent.match(/x86_64|Win64|WOW64/) ||
-                           navigator.cpuClass === "x64" ? "x64" : "x86";
-                var href = "http://sourceforge.net/projects/mpc-hc/files/";
-                var version = "{{ site.version.short }}";
-                var element = $("#downloadButton");
-                var buttonSubArchText = $(".button-sub span");
-                var folder;
-
-                if (arch === "x64") {
-                    folder = "MPC%20HomeCinema%20-%20x64";
-                    buttonSubArchText.text("64-bit");
-                } else {
-                    folder = "MPC%20HomeCinema%20-%20Win32";
-                    buttonSubArchText.text("32-bit");
-                }
-
-                href += folder + "/MPC-HC_v" + version + "_" + arch + "/MPC-HC." + version + "." + arch + ".exe/download";
-
-                element.attr("href", href)
-
-            }(navigator));
-        </script>
+            {% include detect-os.html %}
         {% endif %}
 
-        {% if page.slug == "home" or page.slug == "binaries-are-signed" %}
-        <script>
-            $(document).ready(function() {
-                $(".fancybox-thumb").fancybox({
-                    padding: 0,
-                    helpers: {
-                        title: { type: "float" },
-                        thumbs: { width: 100, height: 74 }
-                    },
-                    beforeLoad: function() {
-                        var el, id = $(this.element).data("title-id");
-                        if (id) {
-                            el = $("#" + id);
-                            if (el.length) this.title = el.html();
-                        }
-                    }
-                });
-            });
-        </script>
+        {% if page.useFancybox %}
+            {% include fancybox.html %}
         {% endif %}
-        {% if page.slug == "downloads" %}
-        <script>
-            // Add custom class to our download links
 
-            (function() {
-                $('body.downloads')
-                  .find('a[href^="http://sourceforge.net/projects/mpc-hc/files/"]')
-                  .each(function() {
-                    $(this).addClass('sourceforge_accelerator_link');
-                });
-            }());
-        </script>
+        {% if page.slug == "downloads" or page.slug == "home" %}
+            {% include sf-accel.html %}
         {% endif %}
     </body>
 </html>

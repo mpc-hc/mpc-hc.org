@@ -1,0 +1,22 @@
+<script>
+    (function() {
+        var el = document.createElement('script');
+        el.src = '//sourceforge.net/accelerator/js?partner_id=72';
+        el.defer = true;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(el, s);
+    })();
+
+{% if page.slug == "downloads" %}
+    // Add custom class to our download links
+
+    (function() {
+        $('body.downloads')
+          .find('a[href^="http://sourceforge.net/projects/mpc-hc/files/"]')
+          .each(function() {
+            $(this).addClass('sourceforge_accelerator_link');
+        });
+    }());
+{% endif %}
+
+</script>
