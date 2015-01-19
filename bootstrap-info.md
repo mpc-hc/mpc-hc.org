@@ -1,7 +1,7 @@
-http://getbootstrap.com/customize/?id=3a34d8e07946028619bc
+http://getbootstrap.com/customize/?id=eae2a16625134aa829d7
 
 
-Enabled components in v3.3.1:
+Enabled components in v3.3.2:
 
 
 * Common CSS (all)
