@@ -57,7 +57,6 @@ module.exports = function(grunt) {
                 src: ["<%= dirs.src %>/assets/css/bootstrap.css",
                       "<%= dirs.src %>/assets/css/font-awesome.css",
                       "<%= dirs.src %>/assets/css/jquery.fancybox.css",
-                      "<%= dirs.src %>/assets/css/jquery.fancybox-thumbs.css",
                       "<%= dirs.src %>/assets/css/style.css"],
                 dest: "<%= dirs.dest %>/assets/css/pack.css"
             },
@@ -65,8 +64,7 @@ module.exports = function(grunt) {
                 src: ["<%= dirs.src %>/assets/js/plugins.js",
                       "<%= dirs.src %>/assets/js/bootstrap.js",
                       "<%= dirs.src %>/assets/js/jquery.mousewheel.js",
-                      "<%= dirs.src %>/assets/js/jquery.fancybox.js",
-                      "<%= dirs.src %>/assets/js/jquery.fancybox-thumbs.js"],
+                      "<%= dirs.src %>/assets/js/jquery.fancybox.js"],
                 dest: "<%= dirs.dest %>/assets/js/pack.js"
             },
             jsIE: {
