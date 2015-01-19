@@ -231,6 +231,11 @@ footer ul {
                 box-shadow: none;
     }
 
+    .fancybox-thumb {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
     .noscript-warning {
         bottom: 0;
         position: fixed;
@@ -296,12 +301,6 @@ footer ul {
         border-right: 1px solid #D2D2D2;
     }
 }
-
-/*@media (min-width: 992px) {
-    .home .thumbnail {
-        min-height: 217px;
-    }
-}*/
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2.0),
  only screen and (min--moz-device-pixel-ratio: 2.0),

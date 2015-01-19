@@ -23,7 +23,7 @@ compiled by us since it's not signed, and thus you downloaded a custom build
 or a potential *scam* file.
 
 <div class="row">
-    <div class="col-xs-12 col-sm-4">
+    <div class="col-xs-12 col-sm-4 text-center">
         <a class="thumbnail fancybox-thumb" data-fancybox-group="gallery" href="/assets/img/news/properties-signature.png" title="Explorer Properties Signature tab">
             <img src="/assets/img/news/properties-signature-thumb.png" alt="Properties Signature" width="300" height="241">
         </a>
@@ -35,7 +35,7 @@ If the prompt dialog does not say that the signature is valid, cancel the
 installation and download the file again from our [*downloads*](/downloads/).
 
 <div class="row">
-    <div class="col-xs-12 col-sm-4">
+    <div class="col-xs-12 col-sm-4 text-center">
         <a class="thumbnail fancybox-thumb" data-fancybox-group="gallery" href="/assets/img/news/install-uac.png" title="Install UAC prompt">
             <img src="/assets/img/news/install-uac-thumb.png" alt="Install UAC prompt" width="300" height="183">
         </a>

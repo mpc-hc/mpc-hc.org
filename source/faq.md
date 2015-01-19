@@ -45,7 +45,7 @@ Make sure you are using a renderer that supports rotation, like EVR CP or Sync R
 you should see a green tick for the selected renderer in **Options &rarr; Output**.
 
 <div class="row">
-    <div class="col-xs-12 col-sm-4">
+    <div class="col-xs-12 col-sm-4 text-center">
         <a class="thumbnail fancybox-thumb" href="/assets/img/faq/options-output.png" title="Options &rarr; Output tab">
             <img src="/assets/img/faq/options-output-thumb.png" alt="Options &rarr; Output tab" width="300" height="227">
         </a>
