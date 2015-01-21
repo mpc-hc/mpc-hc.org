@@ -192,6 +192,21 @@ footer ul {
     cursor: help;
 }
 
+#markdown-toc > li:first-child,
+#markdown-toc > li:last-child {
+    display: none;
+}
+
+/* Sort of hack so that the anchors aren't hidden due to fixed nav */
+.faq h3[id]:before {
+    content: " ";
+    display: block;
+    height: 60px;
+    margin-top: -60px;
+    visibility: hidden;
+}
+
+
 ::-moz-selection {
     background-color: #B3D4FC;
     text-shadow: none;
@@ -210,7 +225,7 @@ footer ul {
     }
 
     .main-container {
-        padding: 10px 25px 0 25px;
+        padding: 0 25px;
         -webkit-box-shadow: none;
            -moz-box-shadow: none;
                 box-shadow: none;

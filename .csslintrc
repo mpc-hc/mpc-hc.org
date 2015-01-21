@@ -1,4 +1,5 @@
 {
+    "ids": false,
     "qualified-headings": false,
     "regex-selectors": false,
     "unique-headings": false
