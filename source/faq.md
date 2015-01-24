@@ -12,7 +12,8 @@ This is an abbreviation definition
 
 *[EVR CP]: Enhanced Video Renderer (custom presenter)
 
-<h1 id="faq">FAQ</h1>
+# FAQ
+{:.no_toc}
 
 <div class="alert alert-info" role="alert">
     <h4><span class="fa fa-info-circle" aria-hidden="true"></span> Note</h4>
@@ -24,6 +25,7 @@ This is an abbreviation definition
 ---
 
 ### Contents
+{:.no_toc}
 
 * Comment to trigger ToC generation
 {:toc}

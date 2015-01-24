@@ -192,10 +192,6 @@ footer ul {
     cursor: help;
 }
 
-#markdown-toc > li:first-child,
-#markdown-toc > li:last-child {
-    display: none;
-}
 
 /* Sort of hack so that the anchors aren't hidden due to fixed nav */
 .faq h3[id]:before {
