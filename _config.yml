@@ -1,5 +1,7 @@
 markdown:           kramdown
 highlighter:        false
+gems:
+  - jekyll-sitemap
 
 exclude:
 # we generate those files ourselves

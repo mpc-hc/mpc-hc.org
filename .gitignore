@@ -1,5 +1,6 @@
 # gedit backup files
 *.*~
+/.bundle
 /.tmp
 /_site
 /node_modules
