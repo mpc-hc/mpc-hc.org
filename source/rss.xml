@@ -11,23 +11,23 @@
   xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
   >
   <channel>
-    <title xml:lang="en">{{ site.name}}</title>
+    <title xml:lang="en">{{ site.rss.name}}</title>
     <atom:link type="application/atom+xml" href="{{ site.url }}/rss.xml" rel="self"/>
     <link>{{ site.url }}/</link>
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <language>en-US</language>
     <generator>Jekyll v{{ jekyll.version }}</generator>
-    <description>{{ site.feed_description }}</description>
+    <description>{{ site.rss.feed_description }}</description>
     <image>
-      <description>>{{ site.feed_description }}</description>
+      <description>>{{ site.rss.feed_description }}</description>
       <url>{{ site.url }}/assets/img/logo-144x144.png</url>
-      <title>{{ site.name}}</title>
+      <title>{{ site.rss.name}}</title>
       <link>{{ site.url }}/</link>
       <width>144</width>
       <height>144</height>
     </image>
-    {% for post in site.posts limit:site.rss_limit %}
+    {% for post in site.posts limit:site.rss.rss_limit %}
     <item>
       <title>{{ post.title | xml_escape }}</title>
       <link>{{ site.url }}{{ post.url }}</link>
