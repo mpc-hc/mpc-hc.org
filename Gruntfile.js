@@ -195,10 +195,16 @@ module.exports = function(grunt) {
         },
 
         watch: {
-            files: ["<%= dirs.src %>/**", ".jshintrc", "_config.yml", "Gruntfile.js"],
-            tasks: "dev",
             options: {
                 livereload: "<%= connect.options.livereload %>"
+            },
+            dev: {
+                files: ["<%= dirs.src %>/**", ".jshintrc", "_config.yml", "Gruntfile.js"],
+                tasks: "dev"
+            },
+            build: {
+                files: ["<%= dirs.src %>/**", ".jshintrc", "_config.yml", "Gruntfile.js"],
+                tasks: "build"
             }
         },
 
@@ -279,10 +285,16 @@ module.exports = function(grunt) {
         "usemin"
     ]);
 
+    grunt.registerTask("server", [
+        "build",
+        "connect",
+        "watch:build"
+    ]);
+
     grunt.registerTask("default", [
         "dev",
         "connect",
-        "watch"
+        "watch:dev"
     ]);
 
 };
