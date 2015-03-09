@@ -82,29 +82,21 @@ module.exports = function(grunt) {
             options: {
                 ignore: [
                     /(#|\.)fancybox(\-[a-zA-Z]+)?/,
-                    // needed for Bootstrap's transitions
+                    // Bootstrap selectors added via JS
+                    /\w\.in/,
                     ".fade",
-                    ".fade.in",
-                    ".navbar-collapse.in",
                     ".collapse",
-                    ".collapse.in",
-                    ".navbar-collapse",
-                    ".navbar-collapse.in",
                     ".collapsing",
                     /(#|\.)navbar(\-[a-zA-Z]+)?/,
                     /(#|\.)dropdown(\-[a-zA-Z]+)?/,
-                    ".open > .dropdown-menu",
-                    ".open > a",
-                    // needed for the `<noscript>` warning; remove them when fixed in uncss
-                    ".alert-danger",
-                    ".visible-xs",
-                    ".noscript-warning",
-                    // currently only in a IE conditional so uncss doesn't see it
+                    /(#|\.)(open)/,
+                    // currently only in a IE conditional, so uncss doesn't see it
                     ".close",
                     ".alert-dismissible"
                 ],
                 htmlroot: "<%= dirs.dest %>",
-                ignoreSheets: [/fonts.googleapis/]
+                ignoreSheets: [/fonts.googleapis/],
+                stylesheets: ["/assets/css/pack.css"]
             },
             dist: {
                 src: "<%= dirs.dest %>/**/*.html",
