@@ -1,7 +1,7 @@
-http://getbootstrap.com/customize/?id=eae2a16625134aa829d7
+http://getbootstrap.com/customize/?id=24b00ac7ddf9c8ac35a7
 
 
-Enabled components in v3.3.2:
+Enabled components in v3.3.4:
 
 
 * Common CSS (all)
@@ -32,14 +32,3 @@ Enabled components in v3.3.2:
   * Dropdowns
   * Collapse
   * Transitions
-
-
-(**obsolete**) http://www.icnfnt.com/
-
-* `.icon-calendar`
-* `.icon-download-alt`
-* `.icon-facebook`
-* `.icon-google-plus`
-* `.icon-rss`
-* `.icon-twitter`
-* `.icon-user`
