@@ -223,16 +223,8 @@ module.exports = function(grunt) {
             }
         },
 
-        validation: {
-            options: {
-                charset: "utf-8",
-                doctype: "HTML5",
-                failHard: true,
-                reset: true
-            },
-            files: {
-                src: "<%= dirs.dest %>/**/*.html"
-            }
+        htmllint: {
+            src: "<%= dirs.dest %>/**/*.html"
         },
 
         clean: {
@@ -265,7 +257,7 @@ module.exports = function(grunt) {
         "csslint",
         "bootlint",
         "jshint",
-        "validation"
+        "htmllint"
     ]);
 
     grunt.registerTask("dev", [
