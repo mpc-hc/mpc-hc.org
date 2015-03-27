@@ -3,7 +3,7 @@
 
 # Getting started
 
-* Install [Node.js](http://nodejs.org/download/)
+* Install [Node.js](https://nodejs.org/download/)
 * Install grunt: `npm install -g grunt-cli`
 * Install the Node.js dependencies via npm: `npm install`
 * Install RailsInstaller with Ruby 1.9.3 <http://railsinstaller.org/en>

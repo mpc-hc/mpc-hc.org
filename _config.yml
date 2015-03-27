@@ -20,7 +20,7 @@ permalink:          pretty
 source:             source
 destination:        _site
 port:               8000
-url:                http://mpc-hc.org
+url:                https://mpc-hc.org
 encoding:           UTF-8
 
 # custom variables

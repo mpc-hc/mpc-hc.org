@@ -12,7 +12,7 @@
   >
   <channel>
     <title xml:lang="en">{{ site.rss.name}}</title>
-    <atom:link type="application/atom+xml" href="{{ site.url }}/rss.xml" rel="self"/>
+    <atom:link type="application/atom+xml" href="{{ site.url | replace: "https://", "http://" }}/rss.xml" rel="self"/>
     <link>{{ site.url }}/</link>
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>

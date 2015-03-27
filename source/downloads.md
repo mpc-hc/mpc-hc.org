@@ -83,6 +83,6 @@ You can find an archive of our releases via [HTTP](http://sourceforge.net/projec
    </p>
 </div>
 
-<a href="http://nightly.mpc-hc.org/" class="btn btn-danger btn-lg" role="button">
+<a href="https://nightly.mpc-hc.org/" class="btn btn-danger btn-lg" role="button">
     <span class="fa fa-download" aria-hidden="true"></span> Get nightly builds
 </a>

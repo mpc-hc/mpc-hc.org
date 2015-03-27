@@ -17,9 +17,9 @@ We would like to thank the following projects:
 * [Cppcheck](http://cppcheck.sourceforge.net/)
 * [Font Awesome](http://fontawesome.io/) by Dave Gandy
 * [GCC](http://gcc.gnu.org/)
-* [HTML5 Boilerplate](http://html5boilerplate.com/)
+* [HTML5 Boilerplate](https://html5boilerplate.com/)
 * [Inno Setup](http://www.jrsoftware.org/isinfo.php)
 * [MinGW](http://www.mingw.org/)
 * [MinGW-w64](http://mingw-w64.sourceforge.net/)
 * [mplayer2](http://www.mplayer2.org/) for the initial website template
-* [Node.js](http://nodejs.org/)
+* [Node.js](https://nodejs.org/)
