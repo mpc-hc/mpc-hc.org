@@ -9,7 +9,7 @@ GEM
     coffee-script (2.4.1)
       coffee-script-source
       execjs
-    coffee-script-source (1.9.1)
+    coffee-script-source (1.9.1.1)
     colorator (0.1)
     execjs (2.5.2)
     fast-stemmer (1.0.2)
