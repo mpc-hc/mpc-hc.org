@@ -45,17 +45,6 @@ module.exports = function(grunt) {
             }
         },
 
-        xmlmin: {
-            dist: {
-                expand: true,
-                cwd: "<%= dirs.dest %>",
-                dest: "<%= dirs.dest %>",
-                src: [
-                    "**/*.xml"
-                ]
-            }
-        },
-
         concat: {
             css: {
                 src: ["<%= dirs.src %>/assets/css/bootstrap.css",
@@ -248,8 +237,7 @@ module.exports = function(grunt) {
         "uglify",
         "filerev",
         "usemin",
-        "htmlmin",
-        "xmlmin"
+        "htmlmin"
     ]);
 
     grunt.registerTask("test", [
