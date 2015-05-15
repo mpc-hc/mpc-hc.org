@@ -47,7 +47,7 @@
               {% for page in (1..paginator.total_pages) %}
                 {% if page == 1 %}
                   <li {% if page == paginator.page %}class="active"{% endif %}>
-                    <a href="'/archive/'" title="Page 1">{{ page }}</a>
+                    <a href="/archive/" title="Page 1">{{ page }}</a>
                   </li>
                 {% else %}
                   <li {% if page == paginator.page %}class="active"{% endif %}>
