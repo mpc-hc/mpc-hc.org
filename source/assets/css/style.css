@@ -298,6 +298,12 @@ footer ul {
     }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-left {
+        margin-left: 2em;
+    }
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2.0),
  only screen and (min--moz-device-pixel-ratio: 2.0),
  only screen and (-o-min-device-pixel-ratio: 200/100),
