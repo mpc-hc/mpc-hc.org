@@ -34,8 +34,8 @@
     "grunt-jekyll": "~0.4.2",
     "grunt-uncss": "~0.4.2",
     "grunt-usemin": "~3.0.0",
-    "load-grunt-tasks": "~3.1.0",
-    "time-grunt": "~1.2.0"
+    "load-grunt-tasks": "~3.2.0",
+    "time-grunt": "~1.2.1"
   },
   "engines": {
     "node": ">=0.10.1"

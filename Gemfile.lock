@@ -52,12 +52,12 @@ GEM
     pygments.rb (0.6.3)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.2.0)
-    rb-fsevent (0.9.4)
+    rb-fsevent (0.9.5)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     redcarpet (3.2.3)
     safe_yaml (1.0.4)
-    sass (3.4.13)
+    sass (3.4.14)
     timers (4.0.1)
       hitimes
     toml (0.1.2)
@@ -70,3 +70,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 2.5.3)
   jekyll-sitemap (~> 0.8.1)
+
+BUNDLED WITH
+   1.10.1
