@@ -17,17 +17,24 @@
         <meta name="generator" content="Jekyll v{{ jekyll.version }}">
         <meta name="msapplication-TileColor" content="#D83434">
         <meta name="msapplication-TileImage" content="/assets/img/TileImage.png">
+        <meta property="fb:page_id" content="290224384411331">
         <meta property="og:title" content="{{ page.title }} &middot; MPC-HC">
+        <meta property="og:type" content="website">
         <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}MPC-HC, the free, open source media player{% endif %}">
         {% if page.slug == "home" %}
         <meta property="og:url" content="{{ site.url }}/">
         {% else %}
         <meta property="og:url" content="{{ site.url }}{{ page.url }}">
         {% endif %}
-        <meta property="og:image" content="{{ site.url }}/assets/img/logo-256x256.png">
+        <meta property="og:image" content="{{ site.url | replace: 'https://', 'http://' }}/assets/img/logo-256x256.png">
+        <meta property="og:image:secure_url" content="{{ site.url }}/assets/img/logo-256x256.png">
         <meta property="og:image:type" content="image/png">
-        <meta property="og:image:width" content="128">
-        <meta property="og:image:height" content="128">
+        <meta property="og:image:width" content="256">
+        <meta property="og:image:height" content="256">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:creator" content="@mpc_hc">
+        <meta name="twitter:site" content="{{ page.title }} &middot; MPC-HC">
+        <meta name="twitter:title" content="@mpc_hc">
         <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS 2.0">
         <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}MPC-HC, the free, open source media player{% endif %}">
         <meta name="keywords" content="MPC, MPC-HC, Media Player Classic, Media Player Classic - Home Cinema, open source media player, video, audio, mkv, avi, xvid, x264, matroska">
