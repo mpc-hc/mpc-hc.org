@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
+<html lang="en" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/Article">
     <head>
         <meta charset="utf-8">
         <link rel="dns-prefetch" href="//ajax.googleapis.com">
@@ -35,6 +35,10 @@
         <meta name="twitter:creator" content="@mpc_hc">
         <meta name="twitter:site" content="@mpc_hc">
         <meta name="twitter:title" content="{{ page.title }} &middot; MPC-HC">
+        <meta itemprop="name" content="MPC-HC">
+        <meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}MPC-HC, the free, open source media player{% endif %}">
+        <meta itemprop="image" content="{{ site.url }}/assets/img/logo-256x256.png">
+        <link rel="publisher" href="https://plus.google.com/109957971189557916726">
         {% if paginator.page and paginator.page == 1 %}
         <link rel="next" href="{{ paginator.next_page_path | append: '/' | replace: '//', '/' }}">
         {% else if paginator.page and paginator.page > 1 %}
