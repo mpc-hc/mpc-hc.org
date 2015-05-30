@@ -35,6 +35,16 @@
         <meta name="twitter:creator" content="@mpc_hc">
         <meta name="twitter:site" content="@mpc_hc">
         <meta name="twitter:title" content="{{ page.title }} &middot; MPC-HC">
+        {% if paginator.page and paginator.page == 1 %}
+        <link rel="next" href="{{ paginator.next_page_path | append: '/' | replace: '//', '/' }}">
+        {% else if paginator.page and paginator.page > 1 %}
+        <link rel="prev" href="{{ paginator.previous_page_path | append: '/' | replace: '//', '/' }}">
+        {% if paginator.next_page %}
+        <link rel="next" href="{{ paginator.next_page_path | append: '/' | replace: '//', '/' }}">
+        {% endif %}
+        {% else %}
+        <link rel="prev" href="{{ paginator.previous_page_path | append: '/' | replace: '//', '/' }}">
+        {% endif %}
         <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS 2.0">
         <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}MPC-HC, the free, open source media player{% endif %}">
         <meta name="keywords" content="MPC, MPC-HC, Media Player Classic, Media Player Classic - Home Cinema, open source media player, video, audio, mkv, avi, xvid, x264, matroska">
