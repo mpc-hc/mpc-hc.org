@@ -10,97 +10,82 @@ slug: changelog
 <div class="alert alert-info" role="alert">
     <h4><span class="fa fa-info-circle" aria-hidden="true"></span> Note</h4>
     <p>
-        This changelog only applies to current stable build.
-        For complete logs check the <a href="#all-changelogs" class="alert-link">links below</a>.
+        This changelog only applies to the current stable build.
+        For the full changelog check the <a href="#all-changelogs" class="alert-link">links below</a>.
    </p>
 </div>
 
 
 ## {{ site.version.short }} - {{ site.version.date }}
 * New:
-  * DVB: Show current event time in the status bar
-  * DVB: Add context menu to the navigation dialog
-  * Add Finnish and Serbian translations
-  * Ticket {% trac 907 %}, Enable "Properties" dialog for DVD and DVB playback modes
-  * Ticket {% trac 1091 %}, Support MediaInfo analyse for DVD
-  * Ticket {% trac 1494 %}, Add tooltip in the "Organize Favorites" dialog with path of the item
-  * Ticket {% trac 2438 %}, Keep history of recently opened DVD directories
-  * Ticket {% trac 3647 %}, Internal LAV Video Decoder: Support Cinepack and QPEG in low-merit mode
-  * Ticket {% trac 4941 %}, Support embedded cover-art
+  * Internal Subtitle Renderer: Convert colorspace of subtitles to match video.
+  * Append files to the playlist on drag&drop while holding "Control" key
+  * Enable Press and Hold gesture to make easier access to context menu on touch devices
+  * Add Danish translation
+  * Add ability to disable every time after playback event for current session by selecting "Do nothing" event in context menu.
+  * Ticket {% trac 3051 %}, Support DTS Music Disc
+  * Ticket {% trac 5147 %}, Add /randomize command-line switch for playlist randomization
+  * Ticket {% trac 5334 %}, Allow to enable high precision timer also when Subresync bar is hidden. Right click on timer shows menu with options.
+  * Ticket {% trac 5356 %}, DVB: Support HEVC broadcasts
+  * Ticket {% trac 5386 %}, OSD: Add the ability to display the file name using a menu item and a hotkey (<kbd>N</kbd> by default)
 * Changed:
-  * DVB: Improve channel switching speed
-  * The "Properties" dialog should open faster being that the MediaInfo analysis is now done asynchronously
-  * Make double-click tolerance consistent with system settings
-  * Ticket {% trac 4978 %}, Execute "once" after playback event when playlist ends, regardless of the loop count
-  * Ticket {% trac 4991 %}, Text subtitles: "opaque box" outlines will now always be drawn even if the border width is set to 0.
-    The size of the text is independent of the border width so there is no reason not to draw that part
-  * Ticket {% trac 5056 %}, Position the text subtitles relative to the video frame by default
+  * Subtitle renderer: Better compatibility with ASS/SSA subtitle files that are slightly violating the specs
+  * Rename "Display Stats" and "Reset Display Stats" features to "OSD: Display Renderer Statistics" and "OSD: Reset Renderer Statistics" so that their meaning is clearer in the "Keys" option panel. Also rename "Display Stats" to "Display Statistics" in the "Renderer Settings" menu
+  * Ticket {% trac 5294 %}, Use internal LAV Splitter for demuxing WTV files
+  * Ticket {% trac 5336 %}/{% trac 5380 %}, Replace the minidump creation by Doctor Dump, a more advanced crash reporter. The new crash reporter is able to send the report automatically after the user's approval and can warn the user if the problem has already been fixed in a newer version. It should also be generally more reliable than the old method
+  * Ticket {% trac 5416 %}, Rename "Remaining Time" feature to "Display Current Time" in the "Renderer Settings" menu and to "OSD: Display Current Time" in the "Keys" option panel so that it describes the feature accurately
 * Updated:
-  * MediaInfoLib to v0.7.71
-  * ZenLib to v0.4.29 r498
-  * SoundTouch to v1.8.0 r201
-  * Little CMS to v2.7 (git 8174681)
-  * Unrar to v5.2.3
-  * LAV Filters to v0.63.0.52:
-      * LAV Video Decoder: Fix a crash when the video height is not a multiple of 2
-      * Ticket {% trac 3144 %}, LAV Splitter: Support librtmp parameters for RTMP streams
-      * Ticket {% trac 4407 %}, LAV Video Decoder: Fix a rare crash when checking the compatibility with hardware decoding
-      * Ticket {% trac 5030 %}, LAV Video Decoder: The video timestamps could be wrong in some cases when using H264 DXVA decoding.
-        This could lead to synchronization issue with the audio
-      * Ticket {% trac 5047 %}, LAV Splitter: Fix missing tracks in (m2)ts files
-      * Ticket {% trac 5116 %}, LAV Video Decoder: Fix aspect ratio for some MPEG2 streams
-  * Arabic, Armenian, Basque, Belarusian, Bengali, British English, Catalan, Chinese (Simplified and Traditional),
-    Croatian, Czech, Dutch, French, Galician, German, Greek, Hebrew, Hungarian, Italian, Japanese, Korean, Malay,
-    Polish, Portuguese (Brazil), Romanian, Russian, Slovak, Slovenian, Spanish, Swedish, Tatar, Thai, Turkish,
-    Ukrainian and Vietnamese translations
+  * Little CMS to v2.7 (git 6e33faa)
+  * Unrar to v5.2.7
+  * MediaInfoLib to v0.7.73
+  * ZenLib to v0.4.31
+  * SoundTouch to v1.9.0
+  * LAV Filters to v0.65.0.9:
+      * LAV Video Decoder: Faster DXVA decoding in copy-back mode (direct output mode)
+      * LAV Video Decoder: Support for HEVC Main10 DXVA2 decoding in copy-back mode
+      * LAV Audio Decoder: Support for native DTS-HD decoding using libdcadec
+      * Ticket {% trac 5299 %}, LAV Video Decoder: Fix corrupted decoding of some HEVC files
+      * Ticket {% trac 5330 %}, LAV Video Decoder: Improve DVD subtitles timeout in some cases
+      * Ticket {% trac 5333 %}, LAV Splitter: Fix handling of some Blu-Ray playlist
+  * Basque, British English, Catalan, Chinese (Simplified), Croatian, Czech, Dutch, Finnish, French,
+    Galician, German, Greek, Hungarian, Italian, Japanese, Korean, Malay, Polish, Portuguese (Brazil), Romanian,
+    Russian, Serbian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian and Vietnamese translations
 * Fixed:
-  * XySubFilter: Always preserve subtitle frame aspect ratio
-  * Properties dialog: The creation time did not account for the local timezone
-  * Properties dialog: More consistent UI for the "Resources" tab
-  * PGSSub: Subtitles could have opaque background instead of transparent one
-  * Audio CDROMs with extra content could not be played
-  * Ticket {% trac 2420 %}, Improve the reliability of the DirectShow hooks
-  * Ticket {% trac 2626 %}, Fix some rare crashes when another application prevents MPC-HC from rendering the video
-  * Ticket {% trac 2953 %}, DVB: Fix crash when closing window right after switching channel
-  * Ticket {% trac 3324 %}, Some applications could interfere with Skype API and prevent MPC-HC from running
-    when "Display "Now Playing" information in Skype's mood message" was enabled
-  * Ticket {% trac 3666 %}, DVB: Don't clear the channel list on saving new scan result
-  * Ticket {% trac 3742 %}, Sync Renderer: Fix rare crashes when using Sync Renderer with "synchronize video to display" option enabled
-  * Ticket {% trac 3864 %}, Video renderers: Fix a possible crash caused by a race condition
-  * Ticket {% trac 3991 %}, Video renderers: Fix a possible crash when the D3D device cannot be created
-  * Ticket {% trac 4029 %}, Fix a rare crash when right-clicking on the playlist panel
-  * Ticket {% trac 4436 %}, DVB: Improve compatibility with certain tuners
-  * Ticket {% trac 4551 %}, Fix a possible crash when saving the current frame
-  * Ticket {% trac 4721 %}, Audio CD playback could hang and stutter with some drives
-  * Ticket {% trac 4933 %}, ASS/SSA subtitles: Fix a crash for elements with no horizontal border but a vertical one
-  * Ticket {% trac 4937 %}, Prevent showing black bars when window size after scale exceed current work area
-  * Ticket {% trac 4938 %}, Fix resetting the settings from the "Options" dialog: some settings were (randomly) not
-    restored to their default value
-  * Ticket {% trac 4954 %}, Open dialog: Support quoted paths
-  * Ticket {% trac 4956 %}, Improve Play/Pause mouse click responsiveness
-  * Ticket {% trac 4957 %}/{% trac 4982 %}, Do not adjust window width in audio mode if no cover-art/logo is loaded or its size
-    is limited to zero
-  * Ticket {% trac 4969 %}, DVD playback could fail with an error related to copy protection on some systems
-  * Ticket {% trac 4971 %}, Bring back "Play next file in the folder" event in single time events menu
-  * Ticket {% trac 4975 %}, Unrelated images could be loaded as cover-art when no author information was available
-    in the audio file
-  * Ticket {% trac 4991 %}, Text subtitles: "opaque box" outlines were scaled twice
-  * Ticket {% trac 4992 %}, DVB: Enabling the "Information" panel using the "Info" button on the "Navigation" dialog
-     would reduce the size of the main window when hiding the panel from the "View" menu
-  * Ticket {% trac 4993 %}, DVB: The content of the "Information" panel was lost when changing the UI language
-  * Ticket {% trac 4994 %}, The "Channels" sub-menu was not translated
-  * Ticket {% trac 4995 %}, Some context menus weren't properly positioned when opened by App key
-  * Ticket {% trac 5010 %}, Text subtitles: Fix a crash in case of memory allocation failure
-  * Ticket {% trac 5055 %}, True/False strings were not translated in value column on advanced page
-  * Ticket {% trac 5067 %}/{% trac 5203 %}, Fix RealText subtitle parsing: the parser did not work at all and could even crash
-  * Ticket {% trac 5127 %}, Improve the behavior of MPC-HC when doing the MediaInfo analysis when playing from
-    an optical drive. Playback will now be paused during the analysis to avoid concurrent accesses to
-    the disk that might hang playback
-  * Ticket {% trac 5130 %}, Lock the player when the scan dialog is opened. Double-clicking on a media file will
-    always open a new instance of MPC-HC in this case. This avoids interrupting the scan accidentally
-    and fixes the issues which used to arise when doing that
-  * Ticket {% trac 5130 %}, Remove the information corresponding to the previously playing channel during the DVB scan
-  * Ticket {% trac 5131 %}, DVD playback could stutter on some systems
+  * EVR-CP/Sync renderers could produce wrong colors
+  * Do not mirror the status bar and the time indicator when using an RTL layout
+  * DVBSub: Fix a possible infinite loop when rendering corrupted subtitles
+  * Subfolders were sometimes parsed multiple times when drag-and-dropping a folder
+  * Haali Renderer: Fix XySubFilter support
+  * Cover image were sometimes incorrectly displayed
+  * Logitech LCD: MPC-HC crashed when the media duration was unknown
+  * PGS subtitles: MPC-HC could crash when rendering broken subtitles
+  * Playlist: Fix and improve the shuffle mode:
+      * Ticket {% trac 80 %}, Playback stopped after playing the last playlist item even if not all tracks had been played
+      * Ticket {% trac 3028 %}, If the playlist was cleared and then the items readded, pressing next caused a crash
+      * Ticket {% trac 3128 %}, The first item to play was always the first one in the playlist
+      * Ticket {% trac 4442 %}, Going to the previous file used the playlist order instead of the shuffled order
+      * Ticket {% trac 4616 %}, No tracks will be repeated unless all tracks have been played at least once
+  * Ticket {% trac 2167 %}, Prevent the task bar buttons from being RTLed when Windows is configured to use RTL layout
+  * Ticket {% trac 2516 %}, VSFilter: Fix PGS/DVB subtitles with different size than video frame
+  * Ticket {% trac 5028 %}, Display OSD message for every time after playback event if once event is disabled
+  * Ticket {% trac 5183 %}, Fix a rare crash when processing after playback event
+  * Ticket {% trac 5239 %}, Fix a crash when specifying a non-existent monitor in the command line (`/monitor`)
+  * Ticket {% trac 5241 %}, Improve the handling of RTL layout for dockable bars (Playlist, Subresync, etc.)
+  * Ticket {% trac 5247 %}, "Information" panel was not showing new lines until window resize
+  * Ticket {% trac 5259 %}, The auto fit factor could not be modified unless auto fit was used as auto-zoom
+  * Ticket {% trac 5262 %}, The "Go to next/previous subtitle" feature did not work for some subtitles
+  * Ticket {% trac 5274 %}, Dockable bars: Improve reloading of saved state
+  * Ticket {% trac 5280 %}, The `/nofocus` command line option did nothing when starting MPC-HC
+  * Ticket {% trac 5314 %}, If an explicit start time was set (for example from the command line or a favorite), the saved position wrongly overwrote the position of the previously opened file
+  * Ticket {% trac 5324 %}, Use more common "kb/s" instead of "Kb/s" as bitrate unit
+  * Ticket {% trac 5326 %}, Prevent the main window from stealing the mouse focus from the D3D fullscreen window when using always on top. It could cause unintentional mouse clicks in the hidden main window and prevented the mouse pointer from being correctly hidden
+  * Ticket {% trac 5345 %}, Fix opening of shortcuts pointing on directories
+  * Ticket {% trac 5348 %}, VobSub: The latest subtitle entry was sometimes not rendered
+  * Ticket {% trac 5360 %}, Fix: The "Turn off monitor" after playback event did not work
+  * Ticket {% trac 5378 %}, Fix the "DVD Menu Activate" hotkey
+  * Ticket {% trac 5392 %}, the Internal Subtitle Renderer did not work properly when the maximum texture resolution was set to "Video" and the renderer was madVR
+  * Ticket {% trac 5401 %}, Remote commands (WinLIRC, uICE) were incorrectly bounded to actions
+  * Ticket {% trac 5418 %}, Fast seek (to key-frame) did not work when an external audio track was loaded
 
 
 ## All changelogs

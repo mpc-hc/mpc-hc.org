@@ -25,10 +25,10 @@ encoding:           UTF-8
 
 # custom variables
 version:
-  short:            1.7.8
-  long:             1.7.8.0
-  hash:             "6fcba1b"
-  date:             "25 January 2015"
+  short:            1.7.9
+  long:             1.7.9.0
+  hash:             "846eff0"
+  date:             "01 June 2015"
 
 rss:
   name:             MPC-HC
