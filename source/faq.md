@@ -37,6 +37,14 @@ This is an abbreviation definition
 In order to run MPC-HC you must have an SSE capable CPU. MPC-HC will work on
 Windows<sup>&reg;</sup> XP Service Pack 3, Vista, 7, 8 and 8.1, both 32-bit (x86) and 64-bit (x64).
 
+### How can I check the validity of the binaries?
+
+See the relevant [news post](/2013/02/25/binaries-are-signed/).
+
+### MPC-HC just crashed, what can I do?
+
+See our [Crash Reporter](/crash-reporter/) page for more information.
+
 ### My picture is up-side down, how do I fix it?
 
 Try updating your video card drivers.
