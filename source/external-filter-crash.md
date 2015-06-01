@@ -33,7 +33,7 @@ However here are some possible solutions:
 
 If you need more assistance, you can open a ticket on our [bug tracker](https://trac.mpc-hc.org/).
 {% raw %}<?php
-if (!empty($dumpID)) {
+if (is_numeric($dumpID)) {
   echo 'Please include the following crash ID: <strong>' . $dumpID . '</strong> in the description of your ticket.';
 }
 ?>{% endraw %}
