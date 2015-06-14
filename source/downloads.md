@@ -27,6 +27,11 @@ This is an abbreviation definition
    </ul>
 </div>
 
+<div class="alert alert-success" role="alert">
+    <h4><span class="fa fa-info-circle" aria-hidden="true"></span> Info</h4>
+    <p>Binaries hosting powered by <span class="fa fa-maxcdn" aria-hidden="true"></span> <a class="alert-link" href="https://www.maxcdn.com/">MaxCDN</a>.</p>
+</div>
+
 
 ## Binaries
 
@@ -36,10 +41,10 @@ Currently, the latest stable build is v{{ site.version.short }} which was compil
 <div markdown="1" class="table-responsive">
 
 {: .table .table-hover .table-striped }
-| MPC-HC 32-bit (x86) | [installer](http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v{{ site.version.short }}_x86/MPC-HC.{{ site.version.short }}.x86.exe/download) | [zip](http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v{{ site.version.short }}_x86/MPC-HC.{{ site.version.short }}.x86.zip/download) | [7z](http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v{{ site.version.short }}_x86/MPC-HC.{{ site.version.short }}.x86.7z/download) |
-| MPC-HC 64-bit (x64) | [installer](http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20x64/MPC-HC_v{{ site.version.short }}_x64/MPC-HC.{{ site.version.short }}.x64.exe/download) | [zip](http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20x64/MPC-HC_v{{ site.version.short }}_x64/MPC-HC.{{ site.version.short }}.x64.zip/download) | [7z](http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20x64/MPC-HC_v{{ site.version.short }}_x64/MPC-HC.{{ site.version.short }}.x64.7z/download) |
-| Standalone filters 32-bit (x86) | — | [zip](http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20Win32/Filters_v{{ site.version.short }}_x86/MPC-HC_standalone_filters.{{ site.version.short }}.x86.zip/download) | [7z](http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20Win32/Filters_v{{ site.version.short }}_x86/MPC-HC_standalone_filters.{{ site.version.short }}.x86.7z/download) |
-| Standalone filters 64-bit (x64) | — | [zip](http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20x64/Filters_v{{ site.version.short }}_x64/MPC-HC_standalone_filters.{{ site.version.short }}.x64.zip/download) | [7z](http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20x64/Filters_v{{ site.version.short }}_x64/MPC-HC_standalone_filters.{{ site.version.short }}.x64.7z/download) |
+| MPC-HC 32-bit (x86) | [installer](https://binaries.mpc-hc.org/MPC%20HomeCinema%20-%20Win32/MPC-HC_v{{ site.version.short }}_x86/MPC-HC.{{ site.version.short }}.x86.exe) | [zip](https://binaries.mpc-hc.org/MPC%20HomeCinema%20-%20Win32/MPC-HC_v{{ site.version.short }}_x86/MPC-HC.{{ site.version.short }}.x86.zip) | [7z](https://binaries.mpc-hc.org/MPC%20HomeCinema%20-%20Win32/MPC-HC_v{{ site.version.short }}_x86/MPC-HC.{{ site.version.short }}.x86.7z) |
+| MPC-HC 64-bit (x64) | [installer](https://binaries.mpc-hc.org/MPC%20HomeCinema%20-%20x64/MPC-HC_v{{ site.version.short }}_x64/MPC-HC.{{ site.version.short }}.x64.exe) | [zip](https://binaries.mpc-hc.org/MPC%20HomeCinema%20-%20x64/MPC-HC_v{{ site.version.short }}_x64/MPC-HC.{{ site.version.short }}.x64.zip) | [7z](https://binaries.mpc-hc.org/MPC%20HomeCinema%20-%20x64/MPC-HC_v{{ site.version.short }}_x64/MPC-HC.{{ site.version.short }}.x64.7z) |
+| Standalone filters 32-bit (x86) | — | [zip](https://binaries.mpc-hc.org/Standalone%20Filters%20-%20Win32/Filters_v{{ site.version.short }}_x86/MPC-HC_standalone_filters.{{ site.version.short }}.x86.zip) | [7z](https://binaries.mpc-hc.org/Standalone%20Filters%20-%20Win32/Filters_v{{ site.version.short }}_x86/MPC-HC_standalone_filters.{{ site.version.short }}.x86.7z) |
+| Standalone filters 64-bit (x64) | — | [zip](https://binaries.mpc-hc.org/Standalone%20Filters%20-%20x64/Filters_v{{ site.version.short }}_x64/MPC-HC_standalone_filters.{{ site.version.short }}.x64.zip) | [7z](https://binaries.mpc-hc.org/Standalone%20Filters%20-%20x64/Filters_v{{ site.version.short }}_x64/MPC-HC_standalone_filters.{{ site.version.short }}.x64.7z) |
 
 </div>
 
@@ -61,16 +66,16 @@ Program Database files, which contain the debug symbols, needed to debug the bui
 <div markdown="1" class="table-responsive">
 
 {: .table .table-hover .table-striped }
-| MPC-HC 32-bit (x86) | [7z](http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20Win32/MPC-HC_v{{ site.version.short }}_x86/MPC-HC.{{ site.version.short }}.x86.pdb.7z/download) |
-| MPC-HC 64-bit (x64) | [7z](http://sourceforge.net/projects/mpc-hc/files/MPC%20HomeCinema%20-%20x64/MPC-HC_v{{ site.version.short }}_x64/MPC-HC.{{ site.version.short }}.x64.pdb.7z/download) |
-| Standalone filters 32-bit (x86) | [7z](http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20Win32/Filters_v{{ site.version.short }}_x86/MPC-HC_standalone_filters.{{ site.version.short }}.x86.pdb.7z/download) |
-| Standalone filters 64-bit (x64) | [7z](http://sourceforge.net/projects/mpc-hc/files/Standalone%20Filters%20-%20x64/Filters_v{{ site.version.short }}_x64/MPC-HC_standalone_filters.{{ site.version.short }}.x64.pdb.7z/download) |
+| MPC-HC 32-bit (x86) | [7z](https://binaries.mpc-hc.org/MPC%20HomeCinema%20-%20Win32/MPC-HC_v{{ site.version.short }}_x86/MPC-HC.{{ site.version.short }}.x86.pdb.7z) |
+| MPC-HC 64-bit (x64) | [7z](https://binaries.mpc-hc.org/MPC%20HomeCinema%20-%20x64/MPC-HC_v{{ site.version.short }}_x64/MPC-HC.{{ site.version.short }}.x64.pdb.7z) |
+| Standalone filters 32-bit (x86) | [7z](https://binaries.mpc-hc.org/Standalone%20Filters%20-%20Win32/Filters_v{{ site.version.short }}_x86/MPC-HC_standalone_filters.{{ site.version.short }}.x86.pdb.7z) |
+| Standalone filters 64-bit (x64) | [7z](https://binaries.mpc-hc.org/Standalone%20Filters%20-%20x64/Filters_v{{ site.version.short }}_x64/MPC-HC_standalone_filters.{{ site.version.short }}.x64.pdb.7z) |
 
 </div>
 
 ## Previous releases
 
-You can find an archive of our releases via [HTTP](http://sourceforge.net/projects/mpc-hc/files).
+You can find an archive of our releases in <https://stable.mpc-hc.org/>.
 
 
 ## Nightly builds

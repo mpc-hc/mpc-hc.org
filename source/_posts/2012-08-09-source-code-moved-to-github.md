@@ -8,7 +8,7 @@ After a lot of discussion, all the people involved with the development decided
 to move to [Git](http://git-scm.com/) and to [GitHub](https://github.com/mpc-hc/mpc-hc)
 for hosting the source.
 
-The SourceForge svn repository isn't updated anymore, but this might change
+The SourceForge SVN repository isn't updated anymore, but this might change
 in the future and we might sync it.
 
 Things are easier now for people who want to contribute.
