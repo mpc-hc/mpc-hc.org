@@ -84,10 +84,10 @@
                         <li{% if page.slug == "faq" %} class="active"{% endif %}><a href="/faq/"><span class="fa fa-info fa-fw" aria-hidden="true"></span> FAQ</a></li>
                         <li{% if page.slug == "about" %} class="active"{% endif %}><a href="/about/"><span class="fa fa-users fa-fw" aria-hidden="true"></span> About</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <a id="dLabel" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 <span class="fa fa-question fa-fw" aria-hidden="true"></span> Help <span class="fa fa-caret-down" aria-hidden="true"></span>
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" aria-labelledby="dLabel">
                                 <li {% if page.slug == "contact-us" %} class="active"{% endif %}><a href="/contact-us/">Contact us</a></li>
                                 <li class="divider"></li>
                                 <li><a href="https://trac.mpc-hc.org/wiki/How_to_Report_Issues">Bug reports</a></li>
