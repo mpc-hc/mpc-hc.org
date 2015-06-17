@@ -162,6 +162,20 @@ module.exports = function(grunt) {
             }
         },
 
+        cdnify: {
+            build: {
+                options: {
+                    base: "https://assets.mpc-hc.org/"
+                },
+                files: [{
+                  expand: true,
+                  cwd: "<%= dirs.dest %>/",
+                  src: "**/*.{html,php}",
+                  dest: "<%= dirs.dest %>/"
+                }]
+            }
+        },
+
         connect: {
             options: {
                 hostname: "localhost",
@@ -238,6 +252,7 @@ module.exports = function(grunt) {
         "uglify",
         "filerev",
         "usemin",
+        "cdnify",
         "htmlmin"
     ]);
 

@@ -27,11 +27,6 @@ This is an abbreviation definition
    </ul>
 </div>
 
-<div class="alert alert-success" role="alert">
-    <h4><span class="fa fa-info-circle" aria-hidden="true"></span> Info</h4>
-    <p>Binaries hosting powered by <span class="fa fa-maxcdn" aria-hidden="true"></span> <a class="alert-link" href="https://www.maxcdn.com/">MaxCDN</a>.</p>
-</div>
-
 
 ## Binaries
 
