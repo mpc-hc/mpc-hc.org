@@ -71,6 +71,18 @@
         {% if page.slug == "home" %}
             {% include detect-os.html %}
         {% endif %}
+        {% if page.slug == "downloads" %}
+        <script>
+            // Find any element with the `.toggleLink` class,
+            // and any `span` with `fa-chevron-` class and change its class
+            $(document).ready(function() {
+                $(".toggleLink").on("click", function() {
+                    $(this).find("span[class*='fa-chevron-']")
+                       .toggleClass("fa-chevron-down fa-chevron-up");
+                });
+            });
+        </script>
+        {% endif %}
 
         {% if page.useFancybox %}
             {% include fancybox.html %}

@@ -68,6 +68,24 @@ body {
     text-align: center;
 }
 
+.downloads .well {
+    padding-top: 3%;
+}
+
+.downloads .well > h3,
+.downloads .well > h4 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.downloads .panel-title {
+    font-size: 20px;
+}
+
+.downloads .panel-title a {
+    display: block;
+}
+
 .navbar-brand-logo {
     background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAENUlEQVR4AZ2UDyycZxzHr7ejCJZGSkQqA1e2zmaJwDIBAyHRUjWSdVmSCSlb28julqajJum6IbZL9Ohk3bqoRhYlTFc7cEWdQ4sdnAFFq9ozuOO+d89+75uSa9Im237JJ3mfJ7/n8z7/fo+AMfa/SU1Nfc3Hx+eEQCAQ7/b9J0FMTMxhR0fHj1xcXK42NTVNM4q5uTnm7u4u+1dCCk/ig7i4uMqxsbEJvV7PSktLmVAoZJmZmevd3d23rl27JomKinr7hcLExMRDbm5uKUVFRTKtVju8sLDAgoODmYODA6utrTX09/e3y+XyL+kn4YTjCyfh5OTknZaW9m15eXlvTk7OprW1NQsPD2c0o53BwcF26jtHg0MI4UtWYe3h4XHw6NGjQr5tZ2cXlZ+fz5KSkhh9Mxsbm5ZnM3AmXiFsJRKJR0pKSmRlZeXHzc3N5ylX7uXl1ahQKPqWl5dnZDLZUysrKzEv3L9/vxuFkTYbzs7O8Pf3H6eTu9Ha2qpaXV19UFNTo+eWLJVKGRdms5nZ2try+6jRaFhfXx+Lj4/npvoeL6RwiIiI2CA4GTw9Pble1tHRwZRKJaOrwbfT09NNxcXFyMvLQ0JCAnJzc1FSUoKKigoEBASAco7vCveJRCK1vb09QkNDkZycDNoClJWVoaqqCg0NDfhzdASz01rMz81Cp9OBZvkc16/XcMLP9k6Zgn7+1fOJFsC4g6lFHfRbm3t9Jr0JZ37NwbxuFp1tnZzwkqXwVMVlOWDYgra2FJqCVIzXfU8DTegenkdssQpB0h4kXRrE0qM1PP17BR/WH4egXADVbC+mNH9xwl8shcek585ja2UBt06+gx7pMahDBHiobkXb8BIKf+xCj3oYHmeGcFv1EOrpdrx1UQzH70S4OVqHjZVN0Jb9YSkMzcjI4Jeysq7HxO0b6I0WYVLVubfEjvuLEJ++i5GJGezsbEO3uAb3CnuU3bkI844ZdBdHLIXeYWFhO9zA9Y1NKE4egTpKhLGmn3mZ0bCOpG/u4/SVfmobCTMvOfLDIXz62yd8OzAwcIm75LvCA35+fo8NBgPIigcwY+BsNIYy3Pjkmz2z8Dx7D5frVain7ye6dZhNZoRUv4Hoq8F8Dl0lPXkO7gqFrq6uE/OPVjFYnAmNJA734qxxt+AE1rZNiC3swpufDyD0izsIy2/G1MwCL2kZaEJzfyP/nZ2dbSLP4b2apJJTjo5PYqxOhu7c99EnL8TmNr88DGuX6HRXn10bEGYT48LI2JZui6t7FhkZybiatyzyxjaFgk/cJJ4YwCa1U0zZ1cVamhtZ9ZVKdqGwgGVlZfF1HxQUZKQSfcytjN4AJY2vJhwshRfEYjGLjY1lvr6+G/QKzVO9DlH/78RPxNdEHpFKvEt4EweIfZavj6XwdUJCnCKSiXAikPAl3AlX4lXClhC97FH+B4mNvaik9vKpAAAAAElFTkSuQmCC");
     background-repeat: no-repeat;
@@ -222,7 +240,12 @@ footer ul {
 
 
 /* Sort of hack so that the anchors aren't hidden due to fixed nav */
-.faq h3[id]:before {
+h1[id]:before,
+h2[id]:before,
+h3[id]:before,
+h4[id]:before,
+h5[id]:before,
+h6[id]:before {
     content: " ";
     display: block;
     height: 60px;

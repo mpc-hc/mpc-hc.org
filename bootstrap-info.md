@@ -1,4 +1,4 @@
-http://getbootstrap.com/customize/?id=0cfdff97e95ce6ac8539
+http://getbootstrap.com/customize/?id=a24719025b280353314d
 
 
 Enabled components in v3.3.5:
@@ -21,6 +21,8 @@ Enabled components in v3.3.5:
   * Pager
   * Thumbnails
   * Alerts
+  * Panels
+  * Wells
   * Close icon
 
 * JavaScript components
