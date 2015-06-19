@@ -26,7 +26,7 @@
 
     <nav>
         {% if paginator.total_pages > 1 %}
-        <div class="paginate-container text-center">
+        <div class="paginate-container">
             <ul class="pagination">
               {% if paginator.previous_page %}
                 <li {% if page == paginator.page %}class="active"{% endif %}>

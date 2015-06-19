@@ -30,8 +30,8 @@ This is an abbreviation definition
 
 ## Binaries
 
-{: .text-center .downloads-version }
-Currently, the latest stable build of is v{{ site.version.short }} which was compiled from [{{ site.version.hash }}](https://github.com/mpc-hc/mpc-hc/commit/{{ site.version.hash }})
+{: .downloads-version }
+Currently, the latest stable build is v{{ site.version.short }} which was compiled from [{{ site.version.hash }}](https://github.com/mpc-hc/mpc-hc/commit/{{ site.version.hash }})
 
 <div markdown="1" class="table-responsive">
 

@@ -17,6 +17,10 @@ body {
             box-shadow: 0 0 4px rgba(0, 0, 0, 0.25), inset 0 0 0 rgba(0, 0, 0, 0.1);
 }
 
+.button-wrapper {
+    text-align: center;
+}
+
 .button-sub {
     margin-top: 0.5em;
 }
@@ -61,6 +65,7 @@ body {
 .downloads-version {
     font-weight: bold;
     padding-bottom: 8px;
+    text-align: center;
 }
 
 .navbar-brand-logo {
@@ -181,6 +186,7 @@ footer ul {
 
 .paginate-container {
     margin: 20px auto;
+    text-align: center;
 }
 
 .pager li span {
