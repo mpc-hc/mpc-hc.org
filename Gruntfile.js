@@ -29,11 +29,26 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     collapseWhitespace: true,
+                    collapseBooleanAttributes: true,
                     ignoreCustomComments: [/^\s*google(off|on):\s/],
-                    minifyCSS: true,
+                    minifyCSS: {
+                        //advanced: false,
+                        compatibility: "ie8",
+                        keepSpecialComments: 0
+                    },
                     minifyJS: true,
+                    minifyURLs: false,
+                    //minifyURLs: {
+                    //    site: "https://mpc-hc.org/",
+                    //    schemeRelative: false
+                    //},
                     removeAttributeQuotes: true,
-                    removeComments: true
+                    removeComments: true,
+                    removeOptionalAttributes: true,
+                    removeOptionalTags: true,
+                    removeRedundantAttributes: true,
+                    removeScriptTypeAttributes: true,
+                    removeStyleLinkTypeAttributes: true
                 },
                 expand: true,
                 cwd: "<%= dirs.dest %>",
