@@ -31,7 +31,7 @@ Media Player Classic - Home Cinema is an extremely light-weight media player for
 
 {: .table .table-hover .table-striped }
 | Name | Email | Role |
-|:-|:-|:-|
+|----+----|
 | alexmarsev | alexmarsev ~AT~ users.sourceforge ~dot~ net | Code |
 | Armada | armada651 ~AT~ users.sourceforge ~dot~ net | Code |
 | Goran (vBm) Džaferi | thevbm ~AT~ users.sourceforge ~dot~ net | New website, Trac moderator, IRC |
@@ -49,7 +49,7 @@ Media Player Classic - Home Cinema is an extremely light-weight media player for
 
 {: .table .table-hover .table-striped }
 | Name | Email | Role |
-|:-|:-|:-|
+|----+----|
 | _xxl | drevil_xxl ~AT~ users.sourceforge ~dot~ net | FFmpeg |
 | Alexander Wild | alexwild ~AT~ users.sourceforge ~dot~ net | Code, German |
 | Arto Jarvinen | ar-jar ~AT~ users.sourceforge ~dot~ net | Code |
@@ -86,7 +86,7 @@ An up-to-date list of translators involved for each language can be found on <ht
 
 {: .table .table-hover .table-striped }
 | Language | Translator | Email |
-|:-|:-|:-|
+|----+----|
 | Armenian | hrant77 | hrant77 ~AT~ users.sourceforge ~dot~ net |
 | Basque | Xabier Aramendi | azpidatziak ~AT~ users.sourceforge ~dot~ net |
 | Belarusian | Mister-sh | mister-sh ~AT~ users.sourceforge ~dot~ net |
@@ -142,7 +142,7 @@ MPC-HC is based on the original MPC version © 2002-2006 by Gabest (e-mail unkno
 
 {: .table .table-hover .table-striped }
 | Project | License | Website |
-|:-|:-|:-|
+|----+----|
 | CSizingControlBar | - | <http://www.datamekanix.com/sizecbar/> |
 | LAV Filters | GPLv2+ | <https://code.google.com/p/lavfilters/> |
 | libdivide | zlib License | <http://libdivide.com/> |

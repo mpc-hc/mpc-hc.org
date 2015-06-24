@@ -50,6 +50,7 @@ Currently, the latest stable build is v{{ site.version.short }} which was compil
 
 {: .table .table-hover }
 | Clone URL | Browse URL | Description |
+|----+----|
 | https://github.com/mpc-hc/mpc-hc.git | <https://github.com/mpc-hc/mpc-hc> | Official Git repository |
 
 </div>

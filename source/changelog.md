@@ -94,7 +94,7 @@ slug: changelog
 
 {: .table .table-hover .table-striped }
 | Link | Description |
-|:-|:-|
+|----+----|
 | [Complete changelog](https://trac.mpc-hc.org/wiki/Changelog) | Complete changelog for each and every stable build. |
 | [Git log](https://github.com/mpc-hc/mpc-hc/commits/master/) | Absolutely unmodified logs on every commit that got committed into the master branch. |
 
