@@ -248,7 +248,7 @@ footer ul {
     }
 
     .fancybox-thumb {
-        display: inline-block;
+        display: block;
         margin-bottom: 0;
     }
 
