@@ -3,16 +3,15 @@
         "use strict";
 
         // Global variables
-        var collapsedItemsCount = $(".toggleLink.collapsed").length;
+        var collapsedToggleLinkCount = $(".toggleLink.collapsed").length;
         var totalToggleLinkCount = $(".toggleLink").length;
-        var selector = ".toggleLink > span[class*='fa-chevron-']";
 
-        function checkButtonState () {
-            if (collapsedItemsCount === 0) {
+        function checkButtonState() {
+            if (collapsedToggleLinkCount === 0) {
                 // All elements are expanded
                 $(".closeAll").prop("disabled", false);
                 $(".expandAll").prop("disabled", true);
-            } else if (collapsedItemsCount === totalToggleLinkCount) {
+            } else if (collapsedToggleLinkCount === totalToggleLinkCount) {
                 // All elements are collapsed
                 $(".closeAll").prop("disabled", true);
                 $(".expandAll").prop("disabled", false);
@@ -22,53 +21,27 @@
             }
         }
 
-        // Find any element with the `.toggleLink` class,
-        // and any `span` with `fa-chevron-` class and change its class
         $(".toggleLink").on("click", function() {
-            $(this).find("span[class*='fa-chevron-']")
-                .toggleClass("fa-chevron-down fa-chevron-up");
-
             // If the .toggleLink element has the `.collapsed` class,
-            // decrease or increase the collapsedItemsCount
+            // decrease or increase the collapsedToggleLinkCount
             if ($(this).hasClass("collapsed")) {
-                collapsedItemsCount--;
+                collapsedToggleLinkCount--;
             } else {
-                collapsedItemsCount++;
+                collapsedToggleLinkCount++;
             }
 
-            // Check the button state after each `.toggleLink` click
             checkButtonState();
         });
 
         $(".closeAll").click(function() {
-
-            $(selector).each(function() {
-                var element = $(this).parent()[0];              // the parent element that has the selector we are looking for
-                if (!$(element).hasClass("collapsed")) {        // if the parent element doesn't have the `collapsed` class
-                    $(document).find($(selector))               // check the whole document for `selector`
-                        .removeClass("fa-chevron-up")
-                        .addClass("fa-chevron-down");
-                }
-            });
-
             $(".panel-collapse.in").collapse("hide");           // hide any `panel`s
-            collapsedItemsCount = totalToggleLinkCount;         // reset the global count
+            collapsedToggleLinkCount = totalToggleLinkCount;    // reset the global count
             checkButtonState();
         });
 
         $(".expandAll").click(function() {
-
-            $(selector).each(function() {
-                var element = $(this).parent()[0];              // the parent element that has the selector we are looking for
-                if ($(element).hasClass("collapsed")) {         // if the parent element has the `collapsed` class
-                    $(document).find($(selector))               // check the whole document for `selector`
-                        .removeClass("fa-chevron-down")
-                        .addClass("fa-chevron-up");
-                }
-            });
-
             $(".panel-collapse:not('.in')").collapse("show");   // show any `panel`s
-            collapsedItemsCount = 0;                            // reset the global count
+            collapsedToggleLinkCount = 0;                       // reset the global count
             checkButtonState();
         });
 

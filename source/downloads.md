@@ -41,7 +41,7 @@ slug: downloads
     <div class="panel-heading">
         <h2 class="panel-title" id="binaries">
             <a class="toggleLink" role="button" data-toggle="collapse" href="#binaries-main" aria-expanded="true" aria-controls="binaries-main">
-                <span class="fa fa-desktop" aria-hidden="true"></span> Binaries <span class="fa fa-chevron-up pull-right" aria-hidden="true"></span>
+                <span class="fa fa-desktop" aria-hidden="true"></span> Binaries
             </a>
         </h2>
     </div>
@@ -85,7 +85,7 @@ slug: downloads
     <div class="panel-heading">
         <h2 class="panel-title" id="standalone-filters">
             <a class="collapsed toggleLink" role="button" data-toggle="collapse" href="#standalone-filters-main" aria-expanded="false" aria-controls="standalone-filters-main">
-              Standalone filters <span class="fa fa-chevron-down pull-right" aria-hidden="true"></span>
+              Standalone Filters
             </a>
         </h2>
     </div>
@@ -158,7 +158,7 @@ slug: downloads
     <div class="panel-heading">
         <h2 class="panel-title" id="pdb-files">
             <a class="collapsed toggleLink" role="button" data-toggle="collapse" href="#pdb-files-main" aria-expanded="false" aria-controls="pdb-files-main">
-            PDB Files <span class="fa fa-chevron-down pull-right" aria-hidden="true"></span>
+            PDB Files
             </a>
         </h2>
     </div>
@@ -200,7 +200,7 @@ slug: downloads
 
 <h2 id="previous-releases">Previous releases</h2>
 
-<p>You can find an archive of our releases in <https://stable.mpc-hc.org/>.</p>
+<p>You can find an archive of our releases in <a href="https://stable.mpc-hc.org/">https://stable.mpc-hc.org/</a>.</p>
 
 <hr>
 
