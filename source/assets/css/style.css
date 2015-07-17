@@ -213,6 +213,13 @@ footer ul {
     cursor: help;
 }
 
+.noscript-warning {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
 
 /* Sort of hack so that the anchors aren't hidden due to fixed nav */
 .faq h3[id]:before {
@@ -251,13 +258,6 @@ footer ul {
     .fancybox-thumb {
         display: block;
         margin-bottom: 0;
-    }
-
-    .noscript-warning {
-        bottom: 0;
-        position: fixed;
-        width: 100%;
-        z-index: 100;
     }
 
     footer {
