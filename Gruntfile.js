@@ -1,6 +1,8 @@
 "use strict";
 
 module.exports = function(grunt) {
+    var configYaml = grunt.file.readYAML("_config.yml");
+    var mpcVersionShort = configYaml.version.short;
 
     grunt.initConfig({
         dirs: {
@@ -186,6 +188,25 @@ module.exports = function(grunt) {
             }
         },
 
+        staticinline: {
+            dist: {
+                options: {
+                    basepath: "<%= dirs.src %>/",
+                    prefix: "@{",
+                    suffix: "}@",
+                    vars: {
+                        "mpcVersionShort": mpcVersionShort
+                    }
+                },
+                files: [{
+                    expand: true,
+                    cwd: "<%= dirs.dest %>/",
+                    src: "**/*.{html,php}",
+                    dest: "<%= dirs.dest %>/"
+                }]
+            }
+        },
+
         connect: {
             options: {
                 hostname: "localhost",
@@ -272,6 +293,7 @@ module.exports = function(grunt) {
         "jekyll",
         "useminPrepare",
         "copy",
+        "staticinline",
         "concat",
         "uncss",
         "cssmin",
@@ -295,6 +317,7 @@ module.exports = function(grunt) {
         "jekyll",
         "useminPrepare",
         "copy",
+        "staticinline",
         "concat",
         "filerev",
         "usemin"

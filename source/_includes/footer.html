@@ -78,15 +78,15 @@
 
         <script src="/assets/js/pack.js"></script>
         {% if page.slug == "home" %}
-            {% include detect-os.html %}
+            <script src="/assets/js/detect-os.js" inline="true"></script>
         {% endif %}
 
         {% if page.slug == "downloads" %}
-            {% include downloads.html %}
+            <script src="/assets/js/downloads.js" inline="true"></script>
         {% endif %}
 
         {% if page.useFancybox %}
-            {% include fancybox.html %}
+            <script src="/assets/js/fancybox.js" inline="true"></script>
         {% endif %}
 
         <script>

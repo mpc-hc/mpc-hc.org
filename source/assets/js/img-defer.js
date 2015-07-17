@@ -1,6 +1,6 @@
 // Original source: https://varvy.com/pagespeed/defer-images.html
 
-/* jshint browser: true */
+/* jshint browser:true */
 
 (function() {
     "use strict";
