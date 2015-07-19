@@ -95,6 +95,9 @@ module.exports = function(grunt) {
                     /(#|\.)navbar(\-[a-zA-Z]+)?/,
                     /(#|\.)dropdown(\-[a-zA-Z]+)?/,
                     /(#|\.)(open)/,
+                    // injected via JS
+                    /disabled/,
+                    /fa-chevron-up/,
                     // currently only in a IE conditional, so uncss doesn't see it
                     ".close",
                     ".alert-dismissible"
