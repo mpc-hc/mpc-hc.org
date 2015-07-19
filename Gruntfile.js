@@ -183,7 +183,15 @@ module.exports = function(grunt) {
         cdnify: {
             build: {
                 options: {
-                    base: "https://assets.mpc-hc.org/"
+                    base: "https://assets.mpc-hc.org/",
+                    html: {
+                        'link[rel=icon]': 'href',
+                        'link[rel=\'shortcut icon\']': 'href',
+                        'link[rel=apple-touch-icon]': 'href',
+                        'meta[name=\'msapplication-TileImage\']': 'content',
+                        'meta[itemprop=\'image\']': 'content',
+                        'meta[property=\'og:image:secure_url\']': 'content'
+                    }
                 },
                 files: [{
                   expand: true,

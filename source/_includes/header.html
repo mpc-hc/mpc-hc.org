@@ -35,7 +35,7 @@
         <meta name="twitter:title" content="{{ page.title }} &middot; MPC-HC">
         <meta itemprop="name" content="MPC-HC">
         <meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}MPC-HC, the free, open source media player{% endif %}">
-        <meta itemprop="image" content="{{ site.url }}/assets/img/logo-256x256.png">
+        <meta itemprop="image" content="/assets/img/logo-256x256.png">
         <link rel="publisher" href="https://plus.google.com/109957971189557916726">
         {% if paginator.total_pages > 1 %}
         {% if paginator.page == 1 %}
@@ -53,7 +53,7 @@
         <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}MPC-HC, the free, open source media player{% endif %}">
         <meta name="keywords" content="MPC, MPC-HC, Media Player Classic, Media Player Classic - Home Cinema, open source media player, video, audio, mkv, avi, xvid, x264, matroska">
         <!--[if lt IE 9]>
-        <script src="/assets/js/html5shiv-respond.min.js"></script>
+        <script src="https://assets.mpc-hc.org/assets/js/html5shiv-respond.min.js"></script>
         <![endif]-->
     </head>
     <body{% if page.slug %} class="{{ page.slug }}"{% endif %}>
