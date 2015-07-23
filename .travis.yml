@@ -5,11 +5,22 @@ language: node_js
 node_js:
   - "0.12"
 
-rvm:
-  - 2.0
-  - 2.1
+env:
+  matrix:
+    - RUBY_VERSION=2.0
+    - RUBY_VERSION=2.2
+
+before_install:
+  - rvm install $RUBY_VERSION
+  - rvm use $RUBY_VERSION --fuzzy
+  - export GEMDIR=$(rvm gemdir)
 
 install:
   - travis_retry npm install -g grunt-cli
   - travis_retry npm install
-  - travis_retry bundle install
+  - travis_retry bundle install --without development --deployment --jobs=3
+
+cache:
+  directories:
+    - vendor/bundle
+    - node_modules
