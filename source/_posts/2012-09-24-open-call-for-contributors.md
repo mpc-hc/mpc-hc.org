@@ -12,5 +12,5 @@ We are mostly looking for:
 * designers to create logos for the player or images for the file associations
 * web developers to maintain the main website
 
-If you want to help, please join our [IRC channel](/contact-us) and talk to us.
+If you want to help, please join our [IRC channel](/contact-us/) and talk to us.
 Any help is always appreciated so don't hesitate.
