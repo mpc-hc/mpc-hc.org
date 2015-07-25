@@ -12,7 +12,7 @@ module.exports = function(grunt) {
         copy: {
             dist: {
                 files: [
-                    {dest: "<%= dirs.dest %>/", src: "assets/js/jquery*.min.js", expand: true, cwd: "<%= dirs.src %>/"},
+                    {dest: "<%= dirs.dest %>/", src: "assets/js/vendor/jquery*.min.js", expand: true, cwd: "<%= dirs.src %>/"},
                 ]
             }
         },
@@ -63,22 +63,24 @@ module.exports = function(grunt) {
 
         concat: {
             css: {
-                src: ["<%= dirs.src %>/assets/css/bootstrap.css",
-                      "<%= dirs.src %>/assets/css/font-awesome.css",
-                      "<%= dirs.src %>/assets/css/jquery.fancybox.css",
+                src: ["<%= dirs.src %>/assets/css/vendor/bootstrap.css",
+                      "<%= dirs.src %>/assets/css/vendor/font-awesome.css",
+                      "<%= dirs.src %>/assets/css/vendor/jquery.fancybox.css",
                       "<%= dirs.src %>/assets/css/style.css"],
                 dest: "<%= dirs.dest %>/assets/css/pack.css"
             },
             js: {
-                src: ["<%= dirs.src %>/assets/js/plugins.js",
-                      "<%= dirs.src %>/assets/js/bootstrap.js",
-                      "<%= dirs.src %>/assets/js/jquery.mousewheel.js",
-                      "<%= dirs.src %>/assets/js/jquery.fancybox.js"],
+                src: ["<%= dirs.src %>/assets/js/vendor/plugins.js",
+                      "<%= dirs.src %>/assets/js/vendor/bootstrap.js",
+                      "<%= dirs.src %>/assets/js/vendor/jquery.mousewheel.js",
+                      "<%= dirs.src %>/assets/js/vendor/jquery.fancybox.js",
+                      "<%= dirs.src %>/assets/js/alert-dismissible.js",
+                      "<%= dirs.src %>/assets/js/google-analytics.js"],
                 dest: "<%= dirs.dest %>/assets/js/pack.js"
             },
             jsIE: {
-                src: ["<%= dirs.src %>/assets/js/html5shiv.js",
-                      "<%= dirs.src %>/assets/js/respond.js"],
+                src: ["<%= dirs.src %>/assets/js/vendor/html5shiv.js",
+                      "<%= dirs.src %>/assets/js/vendor/respond.js"],
                 dest: "<%= dirs.dest %>/assets/js/html5shiv-respond.min.js"
             }
         },
@@ -152,7 +154,7 @@ module.exports = function(grunt) {
             js: {
                 src: [
                     "<%= dirs.dest %>/assets/js/**/{,*/}*.js",
-                    "!<%= dirs.dest %>/assets/js/jquery*.min.js"
+                    "!<%= dirs.dest %>/assets/js/vendor/jquery*.min.js"
                 ]
             },
             images: {
@@ -250,7 +252,7 @@ module.exports = function(grunt) {
                 jshintrc: ".jshintrc"
             },
             files: {
-                src: "Gruntfile.js"
+                src: ["Gruntfile.js", "<%= dirs.src %>/assets/js/*.js", "!<%= dirs.src %>/assets/js/google-analytics.js"]
             }
         },
 
