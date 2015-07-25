@@ -60,7 +60,7 @@ body {
 }
 
 .features h1 {
-    border-bottom: 0;
+    border-bottom: none;
     font-size: 22px;
     font-weight: normal;
     line-height: 36px;
@@ -159,7 +159,7 @@ footer {
 }
 
 footer h3 {
-    border-bottom: 0;
+    border-bottom: none;
     margin: 0 0 10px 0;
 }
 
@@ -243,7 +243,7 @@ footer ul {
 }
 
 .last-updated {
-    border-bottom: 1px dotted;
+    border-bottom: 1px dotted black;
     cursor: help;
 }
 
@@ -366,6 +366,20 @@ h6[id]:before {
 @media (min-width: 768px) and (max-width: 991px) {
     .navbar-left {
         margin-left: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    ul {
+        padding-left: 20px;
     }
 }
 
