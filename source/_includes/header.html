@@ -2,24 +2,35 @@
 <html lang="en" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/Article">
     <head>
         <meta charset="utf-8">
+
         <link rel="dns-prefetch" href="//ajax.googleapis.com">
         <link rel="dns-prefetch" href="//fonts.googleapis.com">
         <link rel="dns-prefetch" href="//fonts.gstatic.com">
         {% if page.slug == "home" or page.slug == "downloads" %}
         <link rel="dns-prefetch" href="//binaries.mpc-hc.org">
         {% endif %}
-        <title>{% if paginator.page and paginator.page != 1 %}{{ page.title }} - Page {{ paginator.page }}{% else %}{{ page.title }}{% endif%} &middot; MPC-HC</title>
+
+        {% capture title %}{% if paginator.page and paginator.page != 1 %}{{ page.title }} - Page {{ paginator.page }}{% else %}{{ page.title }}{% endif%} &middot; MPC-HC{% endcapture %}
+        <title>{{ title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        {% capture meta_description %}{% if page.description %}{{ page.description }}{% if paginator.page and paginator.page != 1 %} - Page {{ paginator.page }}{% endif%}{% elsif page.excerpt %}{{ page.excerpt | newline_to_br | replace: '<br />', ' ' | strip_html | strip_newlines | replace: '  ', '' | truncate: 155 }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+        <meta name="description" content="{{ meta_description }}">
+        <meta name="keywords" content="MPC, MPC-HC, Media Player Classic, Media Player Classic - Home Cinema, open source media player, video, audio, mkv, avi, xvid, x264, matroska">
+        <meta name="generator" content="Jekyll v{{ jekyll.version }}">
+
         <link rel="stylesheet" href="/assets/css/pack.css">
+
         <link rel="icon" href="/favicon.ico">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-        <meta name="generator" content="Jekyll v{{ jekyll.version }}">
+
         <meta name="msapplication-TileColor" content="#D83434">
         <meta name="msapplication-TileImage" content="/assets/img/TileImage.png">
+
         <meta property="fb:page_id" content="290224384411331">
-        <meta property="og:title" content="{{ page.title }} &middot; MPC-HC">
+        <meta property="og:title" content="{{ title }}">
         <meta property="og:type" content="website">
-        <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}MPC-HC, the free, open source media player{% endif %}">
+        <meta property="og:description" content="{{ meta_description }}">
         {% if page.slug == "home" %}
         <meta property="og:url" content="{{ site.url }}/">
         {% else %}
@@ -30,14 +41,17 @@
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="256">
         <meta property="og:image:height" content="256">
+
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:creator" content="@mpc_hc">
         <meta name="twitter:site" content="@mpc_hc">
-        <meta name="twitter:title" content="{{ page.title }} &middot; MPC-HC">
+        <meta name="twitter:title" content="{{ title }}">
+
         <meta itemprop="name" content="MPC-HC">
-        <meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}MPC-HC, the free, open source media player{% endif %}">
+        <meta itemprop="description" content="{{ meta_description }}">
         <meta itemprop="image" content="/assets/img/logo-256x256.png">
         <link rel="publisher" href="https://plus.google.com/109957971189557916726">
+
         {% if paginator.total_pages > 1 %}
         {% if paginator.page == 1 %}
         <link rel="next" href="{{ paginator.next_page_path | append: '/' | replace: '//', '/' }}">
@@ -50,12 +64,13 @@
         <link rel="prev" href="{{ paginator.previous_page_path | append: '/' | replace: '//', '/' }}">
         {% endif %}
         {% endif %}
+
         <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS 2.0">
-        <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}MPC-HC, the free, open source media player{% endif %}">
-        <meta name="keywords" content="MPC, MPC-HC, Media Player Classic, Media Player Classic - Home Cinema, open source media player, video, audio, mkv, avi, xvid, x264, matroska">
+
         <!--[if lt IE 9]>
         <script src="https://assets.mpc-hc.org/assets/js/html5shiv-respond.min.js"></script>
         <![endif]-->
+
         <script>
             var WebFontConfig = {
                 google: {

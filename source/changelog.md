@@ -3,6 +3,7 @@ layout: default
 title: Changelog
 permalink: /changelog/
 slug: changelog
+description: Changelog of the latest MPC-HC stable build
 ---
 
 # Changelog

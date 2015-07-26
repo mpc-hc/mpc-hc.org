@@ -3,6 +3,7 @@ layout: default
 title: Downloads
 permalink: /downloads/
 slug: downloads
+description: Download our binaries, source code, etc.
 ---
 
 <h1 id="downloads">Downloads</h1>

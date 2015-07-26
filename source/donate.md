@@ -3,6 +3,7 @@ layout: default
 title: Donations
 permalink: /donate/
 slug: donate
+description: Donate to our project
 ---
 
 Donations

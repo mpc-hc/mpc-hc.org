@@ -36,3 +36,5 @@ rss:
   limit:            10
 
 news_limit:         5
+
+description:        MPC-HC, the free, open source media player for Windows

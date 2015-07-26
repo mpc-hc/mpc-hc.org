@@ -3,6 +3,7 @@ layout: default
 title: Crash Reporter
 permalink: /crash-reporter/
 slug: crash-reporter
+description: Info about our Crash Reporter dialog
 ---
 
 # MPC-HC Crash Reporter

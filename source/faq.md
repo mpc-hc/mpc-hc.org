@@ -4,6 +4,7 @@ title: FAQ
 permalink: /faq/
 slug: faq
 useFancybox: true
+description: Frequently Asked Questions
 ---
 
 {::comment}

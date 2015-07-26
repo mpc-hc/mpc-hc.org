@@ -3,6 +3,7 @@ layout: default
 title: About
 permalink: /about/
 slug: about
+description: About MPC-HC / Contributors / 3rd-party Libraries used
 ---
 
 # About MPC-HC

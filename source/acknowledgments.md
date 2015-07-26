@@ -3,6 +3,7 @@ layout: default
 title: Acknowledgments
 permalink: /acknowledgments/
 slug: acknowledgments
+description: Acknowledgments
 ---
 
 # Acknowledgments
