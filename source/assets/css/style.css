@@ -274,6 +274,10 @@ h6[id]:before {
     text-shadow: none;
 }
 
+.no-js .defer {
+    display: none;
+}
+
 
 /* -- media queries -- */
 @media (max-width: 767px) {

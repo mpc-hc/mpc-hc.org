@@ -75,6 +75,8 @@ module.exports = function(grunt) {
                       "<%= dirs.src %>/assets/js/vendor/jquery.mousewheel.js",
                       "<%= dirs.src %>/assets/js/vendor/jquery.fancybox.js",
                       "<%= dirs.src %>/assets/js/alert-dismissible.js",
+                      "<%= dirs.src %>/assets/js/img-defer.js",
+                      "<%= dirs.src %>/assets/js/no-js-class.js",
                       "<%= dirs.src %>/assets/js/google-analytics.js"],
                 dest: "<%= dirs.dest %>/assets/js/pack.js"
             },
