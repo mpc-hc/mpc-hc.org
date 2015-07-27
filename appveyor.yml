@@ -34,5 +34,4 @@ cache:
   - 'C:\Ruby%ruby_folder_version%\bin -> Gemfile,Gemfile.lock'
   - 'C:\Ruby%ruby_folder_version%\lib\ruby\gems\%ruby_gems_folder% -> Gemfile,Gemfile.lock'
   - '%APPDATA%\npm\node_modules -> package.json'
-  - '%APPDATA%\npm-cache -> package.json'
   - 'node_modules -> package.json'
