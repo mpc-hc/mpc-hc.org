@@ -88,8 +88,7 @@ module.exports = function(grunt) {
         uncss: {
             options: {
                 ignore: [
-                    /(#|\.)fancybox(\-[a-zA-Z]+)?/, // for jQuery Fancybox
-                    /(\.wf(\-[a-zA-Z]+)?)/,         // for webfontloader
+                    /(#|\.)fancybox(\-[a-zA-Z]+)?/,
                     // Bootstrap selectors added via JS
                     /\w\.in/,
                     ".fade",

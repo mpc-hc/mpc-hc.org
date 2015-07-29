@@ -19,6 +19,7 @@
         <meta name="keywords" content="MPC, MPC-HC, Media Player Classic, Media Player Classic - Home Cinema, open source media player, video, audio, mkv, avi, xvid, x264, matroska">
         <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700">
         <link rel="stylesheet" href="/assets/css/pack.css">
 
         <link rel="icon" href="/favicon.ico">
@@ -70,22 +71,6 @@
         <!--[if lt IE 9]>
         <script src="https://assets.mpc-hc.org/assets/js/html5shiv-respond.min.js"></script>
         <![endif]-->
-
-        <script>
-            var WebFontConfig = {
-                google: {
-                    families: ['Open+Sans:400,400italic,700']
-                },
-                timeout: 2000
-            };
-
-            (function () {
-                var wf = document.createElement("script");
-                wf.src = '//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-                wf.async = 'true';
-                document.head.appendChild(wf);
-            })();
-        </script>
     </head>
     <body{% if page.slug %} class="{{ page.slug }}"{% endif %}>
         <!--[if lt IE 8]>
