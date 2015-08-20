@@ -20,6 +20,9 @@ install:
   - travis_retry npm install
   - travis_retry bundle install --without development --deployment --jobs=3
 
+matrix:
+  fast_finish: true
+
 cache:
   directories:
     - vendor/bundle
