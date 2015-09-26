@@ -7,7 +7,7 @@
   "homepage": "https://mpc-hc.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mpc-hc/mpc-hc.org.git"
+    "url": "git+https://github.com/mpc-hc/mpc-hc.org.git"
   },
   "bugs": {
     "url": "https://github.com/mpc-hc/mpc-hc.org/issues"
@@ -19,7 +19,7 @@
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-bootlint": "~0.9.1",
-    "grunt-cdnify": "mpc-hc/grunt-cdnify#custom",
+    "grunt-cdnify": "github:mpc-hc/grunt-cdnify#custom",
     "grunt-contrib-clean": "~0.6.0",
     "grunt-contrib-concat": "~0.5.1",
     "grunt-contrib-connect": "~0.11.2",
