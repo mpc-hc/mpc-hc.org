@@ -58,7 +58,8 @@ you should see a green tick for the selected renderer in **Options &rarr; Output
 <div class="row">
     <div class="col-xs-12 col-sm-4 text-center">
         <a class="thumbnail fancybox-thumb" href="/assets/img/faq/options-output.png" title="Options &rarr; Output tab">
-            <img src="/assets/img/faq/options-output-thumb.png" alt="Options &rarr; Output tab" width="300" height="227">
+            <img class="defer" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/assets/img/faq/options-output-thumb.png" width="300" height="227" alt="Options &rarr; Output tab">
+            <noscript><img src="/assets/img/faq/options-output-thumb.png" width="300" height="227" alt="Options &rarr; Output tab"></noscript>
         </a>
     </div>
 </div>
