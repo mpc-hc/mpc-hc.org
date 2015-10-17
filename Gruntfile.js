@@ -189,9 +189,6 @@ module.exports = function(grunt) {
                 options: {
                     base: "https://assets.mpc-hc.org/",
                     html: {
-                        "link[rel=icon]": "href",
-                        "link[rel='shortcut icon']": "href",
-                        "link[rel=apple-touch-icon]": "href",
                         "meta[name='msapplication-TileImage']": "content",
                         "meta[itemprop='image']": "content",
                         "meta[property='og:image:secure_url']": "content"
