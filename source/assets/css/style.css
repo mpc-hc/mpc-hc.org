@@ -292,11 +292,6 @@ h6[id]:before {
                 box-shadow: none;
     }
 
-    .fancybox-thumb {
-        display: block;
-        margin-bottom: 0;
-    }
-
     footer {
         margin: 10px;
     }
