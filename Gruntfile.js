@@ -102,6 +102,7 @@ module.exports = function(grunt) {
                     // injected via JS
                     /disabled/,
                     /fa-chevron-up/,
+                    /\.no\-js/,
                     // currently only in a IE conditional, so uncss doesn't see it
                     ".close",
                     ".alert-dismissible"
