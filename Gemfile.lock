@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     blankslate (2.1.2.4)
-    classifier-reborn (2.0.3)
+    classifier-reborn (2.0.4)
       fast-stemmer (~> 1.0)
     coffee-script (2.4.1)
       coffee-script-source
