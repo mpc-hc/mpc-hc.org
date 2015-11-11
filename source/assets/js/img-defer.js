@@ -1,19 +1,26 @@
-// Source: https://www.feedthebot.com/pagespeed/defer-images.html
+// Original source: https://varvy.com/pagespeed/defer-images.html
 
 /* jshint browser: true */
 
 (function() {
     "use strict";
 
-    function imgInit() {
-        var imgDefer = document.getElementsByTagName("img");
+    function imgDefer() {
+        var imgElement = document.getElementsByTagName("img");
 
-        for (var i = 0; i < imgDefer.length; i++) {
-            if (imgDefer[i].getAttribute("data-src")) {
-                imgDefer[i].setAttribute("src", imgDefer[i].getAttribute("data-src"));
+        for (var i = 0; i < imgElement.length; i++) {
+            if (imgElement[i].hasAttribute("data-src")) {
+                imgElement[i].setAttribute("src", imgElement[i].getAttribute("data-src"));
+                imgElement[i].removeAttribute("data-src");
             }
         }
     }
 
-    window.onload = imgInit;
+    if (window.addEventListener) {
+        window.addEventListener('load', imgDefer, false);
+    } else if (window.attachEvent) {
+        window.attachEvent('onload', imgDefer);
+    } else {
+        window.onload = imgDefer;
+    }
 }());
