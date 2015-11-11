@@ -20,8 +20,6 @@ test_script:
 
 environment:
   matrix:
-    - ruby_folder_version: "200"
-      ruby_gems_folder: "2.0.0"
     - ruby_folder_version: "22"
       ruby_gems_folder: "2.2.0"
     - ruby_folder_version: "22-x64"
