@@ -17,9 +17,9 @@
     }
 
     if (window.addEventListener) {
-        window.addEventListener('load', imgDefer, false);
+        window.addEventListener("load", imgDefer, false);
     } else if (window.attachEvent) {
-        window.attachEvent('onload', imgDefer);
+        window.attachEvent("onload", imgDefer);
     } else {
         window.onload = imgDefer;
     }
