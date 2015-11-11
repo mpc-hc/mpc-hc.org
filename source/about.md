@@ -145,7 +145,7 @@ MPC-HC is based on the original MPC version © 2002-2006 by Gabest (e-mail unkno
 | Project | License | Website |
 |----+----|
 | CSizingControlBar | - | <http://www.datamekanix.com/sizecbar/> |
-| LAV Filters | GPLv2+ | <https://code.google.com/p/lavfilters/> |
+| LAV Filters | GPLv2+ | <https://github.com/Nevcairiel/LAVFilters> |
 | libdivide | zlib License | <http://libdivide.com/> |
 | Little CMS | MIT License | <http://www.littlecms.com/> |
 | Logitech SDK | - | - |
