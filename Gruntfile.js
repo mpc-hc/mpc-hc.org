@@ -79,11 +79,6 @@ module.exports = function(grunt) {
                       "<%= dirs.src %>/assets/js/no-js-class.js",
                       "<%= dirs.src %>/assets/js/google-analytics.js"],
                 dest: "<%= dirs.dest %>/assets/js/pack.js"
-            },
-            jsIE: {
-                src: ["<%= dirs.src %>/assets/js/vendor/html5shiv.js",
-                      "<%= dirs.src %>/assets/js/vendor/respond.js"],
-                dest: "<%= dirs.dest %>/assets/js/html5shiv-respond.min.js"
             }
         },
 
@@ -140,11 +135,6 @@ module.exports = function(grunt) {
             minify: {
                 files: {
                     "<%= concat.js.dest %>": "<%= concat.js.dest %>"
-                }
-            },
-            minifyIE: {
-                files: {
-                    "<%= concat.jsIE.dest %>": "<%= concat.jsIE.dest %>"
                 }
             }
         },
