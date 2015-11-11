@@ -32,16 +32,11 @@ module.exports = function(grunt) {
                     collapseBooleanAttributes: true,
                     ignoreCustomComments: [/^\s*google(off|on):\s/],
                     minifyCSS: {
-                        //advanced: false,
-                        compatibility: "ie8",
+                        compatibility: "ie9",
                         keepSpecialComments: 0
                     },
                     minifyJS: true,
                     minifyURLs: false,
-                    //minifyURLs: {
-                    //    site: "https://mpc-hc.org/",
-                    //    schemeRelative: false
-                    //},
                     removeAttributeQuotes: true,
                     removeComments: true,
                     removeOptionalAttributes: true,
@@ -116,7 +111,7 @@ module.exports = function(grunt) {
             minify: {
                 options: {
                     keepSpecialComments: 0,
-                    compatibility: "ie8"
+                    compatibility: "ie9"
                 },
                 files: {
                     "<%= uncss.dist.dest %>": "<%= concat.css.dest %>"
