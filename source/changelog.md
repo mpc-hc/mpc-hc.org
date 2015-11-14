@@ -19,74 +19,54 @@ description: Changelog of the latest MPC-HC stable build
 
 ## {{ site.version.short }} - {{ site.version.date }}
 * New:
-  * Internal Subtitle Renderer: Convert colorspace of subtitles to match video.
-  * Append files to the playlist on drag&drop while holding "Control" key
-  * Enable Press and Hold gesture to make easier access to context menu on touch devices
-  * Add Danish translation
-  * Add ability to disable every time after playback event for current session by selecting "Do nothing" event in context menu.
-  * Ticket {% trac 3051 %}, Support DTS Music Disc
-  * Ticket {% trac 5147 %}, Add /randomize command-line switch for playlist randomization
-  * Ticket {% trac 5334 %}, Allow to enable high precision timer also when Subresync bar is hidden. Right click on timer shows menu with options.
-  * Ticket {% trac 5356 %}, DVB: Support HEVC broadcasts
-  * Ticket {% trac 5386 %}, OSD: Add the ability to display the file name using a menu item and a hotkey (<kbd>N</kbd> by default)
+  * Add Indonesian, Lithuanian and Punjabi translations
+  * Ticket {% trac 5411 %}, Add an option to disable the preview in the web interface. This option is
+    disabled by default since it must be used only on a properly secured private network
 * Changed:
-  * Subtitle renderer: Better compatibility with ASS/SSA subtitle files that are slightly violating the specs
-  * Rename "Display Stats" and "Reset Display Stats" features to "OSD: Display Renderer Statistics" and "OSD: Reset Renderer Statistics" so that their meaning is clearer in the "Keys" option panel. Also rename "Display Stats" to "Display Statistics" in the "Renderer Settings" menu
-  * Ticket {% trac 5294 %}, Use internal LAV Splitter for demuxing WTV files
-  * Ticket {% trac 5336 %}/{% trac 5380 %}, Replace the minidump creation by Doctor Dump, a more advanced crash reporter. The new crash reporter is able to send the report automatically after the user's approval and can warn the user if the problem has already been fixed in a newer version. It should also be generally more reliable than the old method
-  * Ticket {% trac 5416 %}, Rename "Remaining Time" feature to "Display Current Time" in the "Renderer Settings" menu and to "OSD: Display Current Time" in the "Keys" option panel so that it describes the feature accurately
+  * Completely new Internal Audio Renderer:
+      * Uses sanear project as backend
+      * Requires Windows Vista or newer
+      * Outputs sound through WASAPI (shared or exclusive)
+      * Employs automatic channel downmixing
+      * Provides stereo crossfeed processing option (for headphones)
+      * Tries to preserve signal pitch when playing at custom rate (time stretching)
+      * Supports bitstreaming
+      * Fixes tickets {% trac 203 %}, {% trac 1961 %}, {% trac 2731 %}, {% trac 3653 %}, {% trac 4047 %}, {% trac 5267 %}
+  * Ticket {% trac 3356 %}, Initial support for per-monitor DPI scaling
+  * Use internal audio decoder by default for Opus decoding
+  * Ticket {% trac 5450 %}/{% trac 5479 %}, Improved crash reporting dialog for better stability and user experience
+  * Ticket {% trac 5472 %}, Make it easier to input value to the "Audio time shift" field in options
+  * OGM stream switching hotkeys were unified with generic ones
 * Updated:
-  * Little CMS to v2.7 (git 6e33faa)
-  * Unrar to v5.2.7
-  * MediaInfoLib to v0.7.73
-  * ZenLib to v0.4.31
-  * SoundTouch to v1.9.0
-  * LAV Filters to v0.65.0.9:
-      * LAV Video Decoder: Faster DXVA decoding in copy-back mode (direct output mode)
-      * LAV Video Decoder: Support for HEVC Main10 DXVA2 decoding in copy-back mode
-      * LAV Audio Decoder: Support for native DTS-HD decoding using libdcadec
-      * Ticket {% trac 5299 %}, LAV Video Decoder: Fix corrupted decoding of some HEVC files
-      * Ticket {% trac 5330 %}, LAV Video Decoder: Improve DVD subtitles timeout in some cases
-      * Ticket {% trac 5333 %}, LAV Splitter: Fix handling of some Blu-Ray playlist
-  * Basque, British English, Catalan, Chinese (Simplified), Croatian, Czech, Dutch, Finnish, French,
-    Galician, German, Greek, Hungarian, Italian, Japanese, Korean, Malay, Polish, Portuguese (Brazil), Romanian,
-    Russian, Serbian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian and Vietnamese translations
+    * MediaInfoLib to v0.7.75
+    * Little CMS to v2.7 (git 07da965)
+    * LAV Filters to stable version 0.66.0:
+        - LAV Splitter: New ASF/WMV demuxer
+        - Ticket {% trac 5548 %}, LAV Splitter: Fix some rare deadlocks at startup
+        - LAV Video Decoder: Allow hardware decoding of UHD video with AMD cards
+    * Arabic, Armenian, Basque, Bengali, British English, Catalan, Chinese (Simplified and Traditional),
+      Croatian, Czech, Danish, Dutch, French, Galician, German, Greek, Hungarian, Japanese, Korean, Malay,
+      Polish, Portuguese (Brazil), Romanian, Russian, Slovenian, Slovak, Spanish, Swedish, Thai, Turkish,
+      Ukrainian and Vietnamese translations
 * Fixed:
-  * EVR-CP/Sync renderers could produce wrong colors
-  * Do not mirror the status bar and the time indicator when using an RTL layout
-  * DVBSub: Fix a possible infinite loop when rendering corrupted subtitles
-  * Subfolders were sometimes parsed multiple times when drag-and-dropping a folder
-  * Haali Renderer: Fix XySubFilter support
-  * Cover image were sometimes incorrectly displayed
-  * Logitech LCD: MPC-HC crashed when the media duration was unknown
-  * PGS subtitles: MPC-HC could crash when rendering broken subtitles
-  * Playlist: Fix and improve the shuffle mode:
-      * Ticket {% trac 80 %}, Playback stopped after playing the last playlist item even if not all tracks had been played
-      * Ticket {% trac 3028 %}, If the playlist was cleared and then the items readded, pressing next caused a crash
-      * Ticket {% trac 3128 %}, The first item to play was always the first one in the playlist
-      * Ticket {% trac 4442 %}, Going to the previous file used the playlist order instead of the shuffled order
-      * Ticket {% trac 4616 %}, No tracks will be repeated unless all tracks have been played at least once
-  * Ticket {% trac 2167 %}, Prevent the task bar buttons from being RTLed when Windows is configured to use RTL layout
-  * Ticket {% trac 2516 %}, VSFilter: Fix PGS/DVB subtitles with different size than video frame
-  * Ticket {% trac 5028 %}, Display OSD message for every time after playback event if once event is disabled
-  * Ticket {% trac 5183 %}, Fix a rare crash when processing after playback event
-  * Ticket {% trac 5239 %}, Fix a crash when specifying a non-existent monitor in the command line (`/monitor`)
-  * Ticket {% trac 5241 %}, Improve the handling of RTL layout for dockable bars (Playlist, Subresync, etc.)
-  * Ticket {% trac 5247 %}, "Information" panel was not showing new lines until window resize
-  * Ticket {% trac 5259 %}, The auto fit factor could not be modified unless auto fit was used as auto-zoom
-  * Ticket {% trac 5262 %}, The "Go to next/previous subtitle" feature did not work for some subtitles
-  * Ticket {% trac 5274 %}, Dockable bars: Improve reloading of saved state
-  * Ticket {% trac 5280 %}, The `/nofocus` command line option did nothing when starting MPC-HC
-  * Ticket {% trac 5314 %}, If an explicit start time was set (for example from the command line or a favorite), the saved position wrongly overwrote the position of the previously opened file
-  * Ticket {% trac 5324 %}, Use more common "kb/s" instead of "Kb/s" as bitrate unit
-  * Ticket {% trac 5326 %}, Prevent the main window from stealing the mouse focus from the D3D fullscreen window when using always on top. It could cause unintentional mouse clicks in the hidden main window and prevented the mouse pointer from being correctly hidden
-  * Ticket {% trac 5345 %}, Fix opening of shortcuts pointing on directories
-  * Ticket {% trac 5348 %}, VobSub: The latest subtitle entry was sometimes not rendered
-  * Ticket {% trac 5360 %}, Fix: The "Turn off monitor" after playback event did not work
-  * Ticket {% trac 5378 %}, Fix the "DVD Menu Activate" hotkey
-  * Ticket {% trac 5392 %}, the Internal Subtitle Renderer did not work properly when the maximum texture resolution was set to "Video" and the renderer was madVR
-  * Ticket {% trac 5401 %}, Remote commands (WinLIRC, uICE) were incorrectly bounded to actions
-  * Ticket {% trac 5418 %}, Fast seek (to key-frame) did not work when an external audio track was loaded
+  * Fix a rare crash when exiting DVB mode
+  * QuickTime: Fix a crash when using system default renderer
+  * Fix "snap to desktop edge" and "autofit zoom" on Windows 10
+  * Fix reliability and stability of the D3D Fullscreen mode
+  * Ticket {% trac 4086 %}, Logitech LCD: Correctly initialize the volume at start-up
+  * Ticket {% trac 5248 %}, Adjust mouse behavior for Windows 10
+  * Ticket {% trac 5454 %}, Deleting an item from the playlist sometimes did not work when shuffle mode was enabled
+  * Ticket {% trac 5464 %}, If the main window was minimized while the D3D Fullscreen window was displayed on another screen,
+    it was impossible to use the mouse buttons to play, pause, exit fullscreen, etc.
+  * Ticket {% trac 5488 %}, Suggested filename was wrong when saving subtitles in specific cases
+  * Ticket {% trac 5496 %}, Subtitle downloader dialog: the preferred languages were sometimes not displayed first
+  * Ticket {% trac 5515 %}, Blu-ray (PGS) subtitles were sometimes not displayed
+  * Ticket {% trac 5519 %}, SRT subtitles: Support parsing files with negative timecodes
+  * Ticket {% trac 5573 %}, `/monitor` command line was ignored when remember window position was enabled
+  * Ticket {% trac 5573 %}, The window could return to the wrong monitor when started fullscreen using the command line
+    `/monitor N /fullscreen` if "remember window size" was enabled and "remember window position" was disabled
+  * Ticket {% trac 5643 %}, Stream selection did not work when using external audio file in specific cases
+  * Ticket {% trac 5647 %}, Drag&Drop was not starting playback if source folder was read only
 
 
 ## All changelogs

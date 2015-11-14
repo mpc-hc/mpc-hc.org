@@ -26,10 +26,10 @@ encoding:           UTF-8
 
 # custom variables
 version:
-  short:            1.7.9
-  long:             1.7.9.0
-  hash:             "846eff0"
-  date:             "01 June 2015"
+  short:            1.7.10
+  long:             1.7.10.0
+  hash:             "d911f14"
+  date:             "14 November 2015"
 
 feed:
   name:             MPC-HC

@@ -13,7 +13,7 @@ description: Download our binaries, source code, etc.
     <ul>
         <li>
             <strong>Supported Operating Systems:</strong>
-            <p>Windows® XP SP3, Vista, 7, 8, 8.1 both 32-bit and 64-bit</p>
+            <p>Windows® XP SP3, Vista, 7, 8, 8.1, 10 both 32-bit and 64-bit</p>
         </li>
         <li>
             <strong>System Requirements:</strong>
