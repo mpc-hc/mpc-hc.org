@@ -1,6 +1,7 @@
 markdown:           kramdown
 highlighter:        false
 gems:
+  - jekyll-feed
   - jekyll-sitemap
 
 exclude:
@@ -30,10 +31,11 @@ version:
   hash:             "846eff0"
   date:             "01 June 2015"
 
-rss:
+feed:
   name:             MPC-HC
   description:      Latest information about the MPC-HC project.
-  limit:            10
+  path:             rss.xml
+  url:              https://mpc-hc.org
 
 news_limit:         5
 
