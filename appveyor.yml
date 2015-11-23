@@ -7,7 +7,7 @@ clone_depth: 10
 install:
   - SET PATH=C:\Ruby%ruby_folder_version%\bin;%PATH%
   - bundle install --retry 3
-  - ps: Install-Product node "4"
+  - ps: Install-Product node "5"
   - npm install -g grunt-cli
   - npm install
 
