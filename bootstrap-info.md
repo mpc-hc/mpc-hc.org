@@ -1,7 +1,7 @@
-http://getbootstrap.com/customize/?id=a24719025b280353314d
+http://getbootstrap.com/customize/?id=e64480a4eab9b0a3ec0c
 
 
-Enabled components in v3.3.5:
+Enabled components in v3.3.6:
 
 
 * Common CSS (all)
@@ -15,6 +15,7 @@ Enabled components in v3.3.5:
   * Responsive utilities
 
 * Components
+  * Button groups
   * Navs
   * Navbar
   * Pagination
@@ -26,7 +27,7 @@ Enabled components in v3.3.5:
   * Close icon
 
 * JavaScript components
-  * Component animations (for JS)
+  * Component animations (for JS) (includes Collapse) 
   * Dropdowns
 
 * jQuery plugins
