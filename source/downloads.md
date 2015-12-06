@@ -176,7 +176,7 @@ description: Download our binaries, source code, etc.
                         <h3>For <strong>32-bit</strong> (x86) Windows</h3>
                         <div class="btn-group-vertical btn-group-lg btn-block" role="group" aria-label="32-bit PDB">
                             <a class="btn btn-default" href="https://binaries.mpc-hc.org/MPC%20HomeCinema%20-%20Win32/MPC-HC_v{{ site.version.short }}_x86/MPC-HC.{{ site.version.short }}.x86.pdb.7z"><span class="fa fa-cloud-download"></span> MPC-HC</a>
-                            <a class="btn btn-default" href="https://binaries.mpc-hc.org/Standalone%20Filters%20-%20x64/Filters_v{{ site.version.short }}_x64/MPC-HC_standalone_filters.{{ site.version.short }}.x86.pdb.7z"><span class="fa fa-cloud-download"></span> Standalone filters</a>
+                            <a class="btn btn-default" href="https://binaries.mpc-hc.org/Standalone%20Filters%20-%20Win32/Filters_v{{ site.version.short }}_x64/MPC-HC_standalone_filters.{{ site.version.short }}.x86.pdb.7z"><span class="fa fa-cloud-download"></span> Standalone filters</a>
                         </div>
                     </div>
                 </div>
