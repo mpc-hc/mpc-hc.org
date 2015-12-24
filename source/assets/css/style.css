@@ -167,8 +167,8 @@ footer ul {
     margin-bottom: 8px;
 }
 
-.social-ul li {
-    margin: 0 20px 0 0;
+.social-ul li:not(:last-of-type) {
+    margin-right: 16px;
 }
 
 .rss-before {
@@ -300,6 +300,10 @@ h6[id]:before {
     .footer-center,
     .footer-right {
         border-right: none;
+    }
+
+    .social-ul li:not(:last-of-type) {
+        margin-right: 10px;
     }
 
     .social-ul > li:first-child {
