@@ -22,7 +22,7 @@ install:
 matrix:
   fast_finish: true
 
-cache:
-  directories:
-    - vendor/bundle
-    - node_modules
+#cache:
+#  directories:
+#    - vendor/bundle
+#    - node_modules
