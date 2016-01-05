@@ -69,7 +69,6 @@ module.exports = function(grunt) {
                       "<%= dirs.src %>/assets/js/vendor/bootstrap.js",
                       "<%= dirs.src %>/assets/js/vendor/jquery.mousewheel.js",
                       "<%= dirs.src %>/assets/js/vendor/jquery.fancybox.js",
-                      "<%= dirs.src %>/assets/js/alert-dismissible.js",
                       "<%= dirs.src %>/assets/js/img-defer.js",
                       "<%= dirs.src %>/assets/js/no-js-class.js",
                       "<%= dirs.src %>/assets/js/google-analytics.js"],
@@ -92,10 +91,7 @@ module.exports = function(grunt) {
                     // injected via JS
                     /disabled/,
                     /fa-chevron-up/,
-                    /\.no\-js/,
-                    // currently only in a IE conditional, so uncss doesn't see it
-                    ".close",
-                    ".alert-dismissible"
+                    /\.no\-js/
                 ],
                 htmlroot: "<%= dirs.dest %>",
                 ignoreSheets: [/fonts.googleapis/],

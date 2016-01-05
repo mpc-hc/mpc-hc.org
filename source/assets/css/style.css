@@ -278,6 +278,10 @@ h6[id]:before {
     display: none;
 }
 
+.browserPrompt {
+    text-align: center;
+}
+
 
 /* -- media queries -- */
 @media (max-width: 767px) {
