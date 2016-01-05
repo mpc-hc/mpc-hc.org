@@ -1,5 +1,9 @@
+name:               MPC-HC
+description:        MPC-HC, the free, open source media player for Windows
+
 markdown:           kramdown
 highlighter:        false
+
 gems:
   - jekyll-feed
   - jekyll-sitemap
@@ -32,11 +36,8 @@ version:
   date:             "14 November 2015"
 
 feed:
-  name:             MPC-HC
   description:      Latest information about the MPC-HC project.
   path:             rss.xml
   url:              https://mpc-hc.org
 
 news_limit:         5
-
-description:        MPC-HC, the free, open source media player for Windows
