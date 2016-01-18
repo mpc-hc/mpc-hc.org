@@ -209,6 +209,10 @@ footer ul {
     color: #D34836;
 }
 
+.fa-github:hover {
+    color: #333333;
+}
+
 .fa-rss:hover {
     color: #FE9900;
 }
