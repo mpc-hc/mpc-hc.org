@@ -20,7 +20,8 @@ module.exports = function(grunt) {
         jekyll: {
             site: {
                 options: {
-                    bundleExec: true
+                    bundleExec: true,
+                    incremental: false
                 }
             }
         },

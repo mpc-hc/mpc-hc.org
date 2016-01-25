@@ -6,6 +6,7 @@ highlighter:        false
 
 gems:
   - jekyll-feed
+  - jekyll-paginate
   - jekyll-sitemap
 
 exclude:
