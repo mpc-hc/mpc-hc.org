@@ -241,11 +241,6 @@ module.exports = function(grunt) {
         },
 
         htmllint: {
-            options: {
-                ignore: [
-                    "Attribute “integrity” not allowed on element “script” at this point."
-                ]
-            },
             src: "<%= dirs.dest %>/**/*.html"
         },
 
