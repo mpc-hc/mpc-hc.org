@@ -12,6 +12,8 @@ env:
     - RUBY_VERSION=2.2
 
 before_install:
+  # Remove ./node_modules/.bin from PATH so node-which doesn't replace Unix which and cause RVM to barf. See https://github.com/travis-ci/travis-ci/issues/5092
+  - export PATH=$(python -c 'from sys import argv;from collections import OrderedDict as od;print(":".join(od((p,None) for p in argv[1].split(":") if p.startswith("/")).keys()))' "$PATH")
   - rvm install $RUBY_VERSION
   - rvm use $RUBY_VERSION --fuzzy
   - export GEMDIR=$(rvm gemdir)
@@ -24,7 +26,7 @@ install:
 matrix:
   fast_finish: true
 
-#cache:
-#  directories:
-#    - vendor/bundle
-#    - node_modules
+cache:
+  directories:
+    - node_modules
+    - vendor/bundle
