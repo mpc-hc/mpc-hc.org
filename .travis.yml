@@ -6,6 +6,8 @@ node_js:
   - "5"
 
 env:
+  global:
+    - NPM_CONFIG_PROGRESS="false"
   matrix:
     - RUBY_VERSION=2.2
 
