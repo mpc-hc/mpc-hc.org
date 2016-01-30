@@ -13,14 +13,13 @@ in any way, by verifying its signature. The stable version 1.6.5 isn't signed
 since I got the certificate at a later time. So for stable builds, version
 1.6.6 will be the first one signed.
 
-
 After downloading the files, right-click on the installer or the exe/dll files
 after you extract the archive and choose *"Properties"* from the explorer's
 context menu. In the properties dialog, go to the *"Signatures"* tab and verify
-that the file is signed by *"Fotis Zafiropoulos"* and that the signature
-is valid. If you don't see the *"Signatures"* tab, then the file isn't
-compiled by us since it's not signed, and thus you downloaded a custom build
-or a potential *scam* file.
+that the file is signed by <!--googleoff: all-->*"Fotis Zafiropoulos"*<!--googleon: all-->
+and that the signature is valid. If you don't see the *"Signatures"* tab,
+then the file isn't compiled by us since it's not signed, and thus you downloaded
+a custom build or a potential *scam* file.
 
 <div class="row">
     <div class="col-xs-12 col-sm-4 text-center">
