@@ -2,7 +2,6 @@
 author: XhmikosR
 layout: news
 title: Binaries are signed
-useBaguetteBox: true
 ---
 
 Thanks to **[Certum](http://www.certum.eu/certum/cert,eindex_en.xml)** binaries will be digitally signed!

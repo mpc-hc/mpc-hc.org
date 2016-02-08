@@ -1,3 +1,5 @@
+/* jshint browser:false, node:true */
+
 "use strict";
 
 module.exports = function(grunt) {
@@ -74,6 +76,9 @@ module.exports = function(grunt) {
                 src: ["<%= dirs.src %>/assets/js/vendor/plugins.js",
                       "<%= dirs.src %>/assets/js/vendor/baguetteBox.js",
                       "<%= dirs.src %>/assets/js/vendor/bootstrap.js",
+                      "<%= dirs.src %>/assets/js/baguetteBox-init.js",
+                      "<%= dirs.src %>/assets/js/detect-os.js",
+                      "<%= dirs.src %>/assets/js/downloads.js",
                       "<%= dirs.src %>/assets/js/img-defer.js",
                       "<%= dirs.src %>/assets/js/no-js-class.js",
                       "<%= dirs.src %>/assets/js/google-analytics.js"],
@@ -179,20 +184,6 @@ module.exports = function(grunt) {
                         "meta[property='og:image:secure_url']": "content",
                         "input[type='image']": "src"
                     }
-                },
-                files: [{
-                    expand: true,
-                    cwd: "<%= dirs.dest %>/",
-                    src: "**/*.{html,php}",
-                    dest: "<%= dirs.dest %>/"
-                }]
-            }
-        },
-
-        staticinline: {
-            dist: {
-                options: {
-                    basepath: "<%= dirs.src %>/"
                 },
                 files: [{
                     expand: true,
@@ -340,7 +331,6 @@ module.exports = function(grunt) {
         "jekyll",
         "useminPrepare",
         "copy",
-        "staticinline",
         "concat",
         "uncss",
         "cssmin",
@@ -366,7 +356,6 @@ module.exports = function(grunt) {
         "jekyll",
         "useminPrepare",
         "copy",
-        "staticinline",
         "concat",
         "filerev",
         "usemin",

@@ -3,7 +3,6 @@ layout: default
 title: FAQ
 permalink: /faq/
 slug: faq
-useBaguetteBox: true
 description: Frequently Asked Questions
 ---
 

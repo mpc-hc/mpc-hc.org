@@ -35,7 +35,6 @@
     "grunt-html": "^7.0.0",
     "grunt-include-replace": "^4.0.1",
     "grunt-jekyll": "^0.4.2",
-    "grunt-static-inline": "^0.1.9",
     "grunt-uncss": "^0.4.3",
     "grunt-usemin": "^3.1.1",
     "load-grunt-tasks": "^3.4.0",

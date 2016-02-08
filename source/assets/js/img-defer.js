@@ -1,7 +1,5 @@
 // Original source: https://varvy.com/pagespeed/defer-images.html
 
-/* jshint browser:true */
-
 (function() {
     "use strict";
 
@@ -21,4 +19,5 @@
 
         window.addEventListener("load", imgDefer, false);
     }
-}());
+
+})();

@@ -82,17 +82,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js" integrity="sha384-mXQoED/lFIuocc//nss8aJOIrz7X7XruhR6bO+sGceiSyMELoVdZkN7F0oYwcFH+" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="{{ site.cdn_url }}/assets/js/vendor/jquery-2.2.2.min.js"><\/script>')</script>
 
-        <script src="/assets/js/pack.js" integrity="@@packJsIntegrity" crossorigin="anonymous"></script>
-        {% if page.slug == "home" %}
-            <script src="/assets/js/detect-os.js" inline="true"></script>
-        {% endif %}
+        <script src="/assets/js/pack.js" integrity="@@packJsIntegrity" crossorigin="anonymous" defer></script>
 
-        {% if page.slug == "downloads" %}
-            <script src="/assets/js/downloads.js" inline="true"></script>
-        {% endif %}
 
-        {% if page.useBaguetteBox %}
-            <script src="/assets/js/baguetteBox-init.js" inline="true"></script>
-        {% endif %}
     </body>
 </html>
