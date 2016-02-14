@@ -1,51 +1,53 @@
 {% include header.html %}
 
-<div class="full-news">
+<div class="container main-container">
+    <div class="full-news">
 
-    <nav>
-        <ul class="pager">
-          {% if page.previous %}
-            <li class="previous">
-                <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">
-                    <span class="fa fa-chevron-left" aria-hidden="true"></span> Older
-                </a>
-            </li>
-          {% else %}
-            <li class="previous disabled">
-                <span>
-                    <span class="fa fa-chevron-left" aria-hidden="true"></span> Older
-                </span>
-            </li>
-          {% endif %}
-            <!--<li><a href="/archive/">Archive</a></li>-->
-          {% if page.next %}
-            <li class="next">
-                <a href="{{ page.next.url }}" title="{{ page.next.title }}">
-                    Newer <span class="fa fa-chevron-right" aria-hidden="true"></span>
-                </a>
-            </li>
-          {% else %}
-            <li class="next disabled">
-                <span>
-                    Newer <span class="fa fa-chevron-right" aria-hidden="true"></span>
-                </span>
-            </li>
-          {% endif %}
-        </ul>
-    </nav>
+        <nav>
+            <ul class="pager">
+              {% if page.previous %}
+                <li class="previous">
+                    <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">
+                        <span class="fa fa-chevron-left" aria-hidden="true"></span> Older
+                    </a>
+                </li>
+              {% else %}
+                <li class="previous disabled">
+                    <span>
+                        <span class="fa fa-chevron-left" aria-hidden="true"></span> Older
+                    </span>
+                </li>
+              {% endif %}
+                <!--<li><a href="/archive/">Archive</a></li>-->
+              {% if page.next %}
+                <li class="next">
+                    <a href="{{ page.next.url }}" title="{{ page.next.title }}">
+                        Newer <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                    </a>
+                </li>
+              {% else %}
+                <li class="next disabled">
+                    <span>
+                        Newer <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                    </span>
+                </li>
+              {% endif %}
+            </ul>
+        </nav>
 
-    <h1>{{ page.title }}</h1>
-    <div class="post-meta">
-        <span class="date">
-            <span class="fa fa-calendar" aria-hidden="true"></span> {{ page.date | date: "%B %d, %Y" }}
-        </span>
-        <span class="user">
-            <span class="fa fa-user" aria-hidden="true"></span> {{ page.author }}
-        </span>
+        <h1>{{ page.title }}</h1>
+        <div class="post-meta">
+            <span class="date">
+                <span class="fa fa-calendar" aria-hidden="true"></span> {{ page.date | date: "%B %d, %Y" }}
+            </span>
+            <span class="user">
+                <span class="fa fa-user" aria-hidden="true"></span> {{ page.author }}
+            </span>
+        </div>
+
+        {{ content }}
+
     </div>
-
-    {{ content }}
-
 </div>
 
 {% include footer.html %}

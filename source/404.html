@@ -1,64 +1,30 @@
 ---
+layout: error_page
+title: Error 404 - Page Not Found
 sitemap: false
+slug: four-oh-four
 permalink: /404.html
 ---
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Page Not Found</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
 
-        * {
-            line-height: 1.2;
-            margin: 0;
-        }
+<div class="container">
+    <div class="jumbotron">
+        <h1><span class="fa fa-frown-o text-danger"></span> {{ page.title }}</h1>
+        <p>We couldn't find what you're looking for on <em>{{ site.url }}</em>.</p>
+        <p><a href="/" class="btn btn-default btn-lg btn-success">Take Me To The Homepage</a></p>
+    </div>
+</div>
 
-        html {
-            color: #888;
-            display: table;
-            font-family: sans-serif;
-            height: 100%;
-            text-align: center;
-            width: 100%;
-        }
-
-        body {
-            display: table-cell;
-            vertical-align: middle;
-            margin: 2em auto;
-        }
-
-        h1 {
-            color: #555;
-            font-size: 2em;
-            font-weight: 400;
-        }
-
-        p {
-            margin: 0 auto;
-            width: 280px;
-        }
-
-        @media only screen and (max-width: 280px) {
-
-            body, p {
-                width: 95%;
-            }
-
-            h1 {
-                font-size: 1.5em;
-                margin: 0 0 0.3em;
-            }
-
-        }
-
-    </style>
-</head>
-<body>
-    <h1>Page Not Found</h1>
-    <p>Sorry, but the page you were trying to view does not exist.</p>
-</body>
-</html>
-<!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->
+<div class="container">
+    <div class="body-content">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>What happened?</h2>
+                <p class="lead">A 404 error implies that the file or page that you're looking for could not be found.</p>
+            </div>
+            <div class="col-md-6">
+                <h2>What can I do?</h2>
+                <p class="lead">Please use your browser's back button and check that you're in the right place. If you need immediate assistance, please send us an email instead.</p>
+           </div>
+        </div>
+    </div>
+</div>
