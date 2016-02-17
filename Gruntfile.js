@@ -71,8 +71,7 @@ module.exports = function(grunt) {
                       "<%= dirs.src %>/assets/js/vendor/jquery.mousewheel.js",
                       "<%= dirs.src %>/assets/js/vendor/jquery.fancybox.js",
                       "<%= dirs.src %>/assets/js/img-defer.js",
-                      "<%= dirs.src %>/assets/js/no-js-class.js",
-                      "<%= dirs.src %>/assets/js/google-analytics.js"],
+                      "<%= dirs.src %>/assets/js/no-js-class.js"],
                 dest: "<%= dirs.dest %>/assets/js/pack.js"
             }
         },
@@ -236,7 +235,7 @@ module.exports = function(grunt) {
                 jshintrc: ".jshintrc"
             },
             files: {
-                src: ["Gruntfile.js", "<%= dirs.src %>/assets/js/*.js", "!<%= dirs.src %>/assets/js/google-analytics.js"]
+                src: ["Gruntfile.js", "<%= dirs.src %>/assets/js/*.js"]
             }
         },
 
