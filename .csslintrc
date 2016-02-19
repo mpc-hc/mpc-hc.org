@@ -1,6 +1,6 @@
 {
     "adjoining-classes": false,
-    "ids": false,
+    "font-sizes": false,
     "qualified-headings": false,
     "regex-selectors": false,
     "unique-headings": false
