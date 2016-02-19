@@ -51,8 +51,7 @@ module.exports = function(grunt) {
                 dest: "<%= dirs.dest %>",
                 src: [
                     "**/*.html",
-                    "**/*.php",
-                    "!404.html"
+                    "**/*.php"
                 ]
             }
         },
@@ -227,7 +226,7 @@ module.exports = function(grunt) {
             options: {
                 relaxerror: ["W002"]
             },
-            files: ["<%= dirs.dest %>/**/*.html", "!<%= dirs.dest %>/404.html"]
+            files: "<%= dirs.dest %>/**/*.html"
         },
 
         jshint: {
