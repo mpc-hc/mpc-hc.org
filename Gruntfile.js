@@ -224,7 +224,7 @@ module.exports = function(grunt) {
 
         bootlint: {
             options: {
-                relaxerror: ["W002"]
+                relaxerror: ["W001", "W002", "W003"]
             },
             files: "<%= dirs.dest %>/**/*.html"
         },
