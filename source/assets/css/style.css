@@ -62,37 +62,37 @@ body {
     padding-bottom: 0;
 }
 
-.downloads-version {
+.page-downloads-version {
     font-weight: bold;
     padding-bottom: 8px;
     text-align: center;
 }
 
-.downloads .well {
+.page-downloads .well {
     padding-top: 3%;
 }
 
-.downloads .well > h3,
-.downloads .well > h4 {
+.page-downloads .well > h3,
+.page-downloads .well > h4 {
     margin-top: 0;
     text-align: center;
 }
 
-.downloads .panel-title {
+.page-downloads .panel-title {
     font-size: 20px;
 }
 
-.downloads .panel-title a {
+.page-downloads .panel-title a {
     display: block;
 }
 
-.downloads .panel-title > .toggleLink:after {
+.page-downloads .panel-title > .toggleLink:after {
     font-family: "FontAwesome";
     content: "\f077";   /* fa-chevron-up */
     float: right;
 }
 
-.downloads .panel-title > .toggleLink.collapsed:after {
+.page-downloads .panel-title > .toggleLink.collapsed:after {
     content: "\f078";   /* fa-chevron-down */
 }
 
