@@ -83,21 +83,21 @@ body {
     text-align: center;
 }
 
-.page-downloads .panel-title {
+.panel-title {
     font-size: 20px;
 }
 
-.page-downloads .panel-title a {
+.panel-title a {
     display: block;
 }
 
-.page-downloads .panel-title > .toggleLink:after {
+.panel-title > .toggleLink:after {
     font-family: "FontAwesome";
     content: "\f077";   /* fa-chevron-up */
     float: right;
 }
 
-.page-downloads .panel-title > .toggleLink.collapsed:after {
+.panel-title > .toggleLink.collapsed:after {
     content: "\f078";   /* fa-chevron-down */
 }
 
@@ -168,6 +168,9 @@ body {
     color: #767676;
 }
 
+.list-group-item {
+    padding: 15px;
+}
 
 
 /* footer */
@@ -323,6 +326,33 @@ h6[id]:before {
 }
 
 
+.mpc-team .team-member a {
+    color: #555;
+    line-height: 2rem;
+    vertical-align: middle;
+}
+
+.mpc-team .team-member a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.mpc-team .github-btn iframe {
+    border: none;
+    margin-top: 0.25rem;
+    width: 180px;
+    height: 30px;
+}
+
+.mpc-team img {
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    border-radius: 0.25rem;
+    float: left;
+    margin-right: 0.5rem;
+}
+
+
 /* -- media queries -- */
 @media (max-width: 767px) {
     body {
@@ -402,6 +432,13 @@ h6[id]:before {
     .footer-left,
     .footer-center {
         border-right: 1px solid #D2D2D2;
+    }
+
+    .mpc-team .github-btn,
+    .mpc-team .team-member-role,
+    .mpc-team .team-member-lang,
+    .mpc-team .team-member-email {
+        text-align: center;
     }
 }
 

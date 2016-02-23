@@ -26,100 +26,154 @@ Media Player Classic - Home Cinema is an extremely light-weight media player for
 </div>
 
 
-### Active (sorted by name):
+<hr/>
 
-<div markdown="1" class="table-responsive">
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h2 class="panel-title" id="active">
+            <a class="toggleLink" role="button" data-toggle="collapse" href="#active-people-main" aria-expanded="true" aria-controls="active-people-main">
+                <span class="fa fa-users" aria-hidden="true"></span> Active People
+            </a>
+        </h2>
+    </div>
 
-{: .table .table-hover .table-striped }
-| Name | Email | Role |
-|----+----|
-| alexmarsev | alexmarsev ~AT~ users.sourceforge ~dot~ net | Code |
-| Armada | armada651 ~AT~ users.sourceforge ~dot~ net | Code |
-| Goran (vBm) Džaferi | thevbm ~AT~ users.sourceforge ~dot~ net | New website, Trac moderator, IRC |
-| JellyFrog | — | Server and Trac admin, Swedish |
-| kasper93 | kasper93 ~AT~ users.sourceforge ~dot~ net | Trac moderator, Polish, Code |
-| nevcairiel | nevcairiel ~AT~ users.sourceforge ~dot~ net | Code, LAVFilters maintainer |
-| Underground78 | underground78 ~AT~ users.sourceforge ~dot~ net | Code, French, Project manager |
-| XhmikosR | xhmikosr ~AT~ users.sourceforge ~dot~ net | Various stuff, Project manager |
+    <div id="active-people-main" class="panel-collapse collapse in" aria-labelledby="active">
+        <div class="panel-body">
 
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="list-group mpc-team">
+                      {% for member in site.data.team.active %}
+                        {% assign user = member.user %}
+                        <div class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-4 team-member">
+                                    <a href="https://github.com/{{ user }}">
+                                        {% avatar user=user size=32 %}
+                                        <strong>{{ member.name }}</strong> <small>@{{ user }}</small>
+                                    </a>
+                                </div>
+
+                                <div class="col-md-4 team-member-role">
+                                    <span>{{ member.role }}</span>
+                                </div>
+
+                                <div class="col-md-4 github-btn">
+                                    <iframe src="https://ghbtns.com/github-btn.html?user={{ user }}&amp;type=follow" title="Follow {{ user }} on GitHub"></iframe>
+                                </div>
+                            </div>  <!-- .row -->
+                        </div>  <!-- .list-group-item -->
+                      {% endfor %}
+                    </div>  <!-- .list-group -->
+
+                </div>  <!-- .col-md-12 -->
+            </div>  <!-- .row -->
+
+        </div>  <!-- .panel-body -->
+    </div>  <!-- .panel-collapse -->
 </div>
 
-### Inactive
 
-<div markdown="1" class="table-responsive">
 
-{: .table .table-hover .table-striped }
-| Name | Email | Role |
-|----+----|
-| _xxl | drevil_xxl ~AT~ users.sourceforge ~dot~ net | FFmpeg |
-| Alexander Wild | alexwild ~AT~ users.sourceforge ~dot~ net | Code, German |
-| Arto Jarvinen | ar-jar ~AT~ users.sourceforge ~dot~ net | Code |
-| Attila T. Afra | attila.afra ~AT~ gmail ~dot~ com | Code |
-| Beliyaal | beliyaal ~AT~ users.sourceforge ~dot~ net | Code |
-| bobdynlan | bobdynlan ~AT~ users.sourceforge ~dot~ net | Code |
-| Casimir666 | casimir666 ~AT~ users.sourceforge ~dot~ net | Project founder, Code, French |
-| clsid | clsid2 ~AT~ users.sourceforge ~dot~ net | Code |
-| demi_alucard | alysson87 ~AT~ gmail ~dot~ com | Code, Portuguese (Brazil) |
-| Di Luo | sansnom05 ~AT~ users.sourceforge ~dot~ net | Code |
-| janwillem32 | janwillem32 ~AT~ users.sourceforge ~dot~ net | Code |
-| jonasno | jonasno ~AT~ users.sourceforge ~dot~ net | Code, Swedish |
-| KindDragon | kinddragon ~AT~ users.sourceforge ~dot~ net | Code |
-| Martin Panayotov | mvpsoft ~AT~ users.sourceforge ~dot~ net | Old website |
-| MatMaul | matmaul ~AT~ users.sourceforge ~dot~ net | Code |
-| namaiki | namaiki ~AT~ users.sourceforge ~dot~ net | Trac moderator |
-| spec-chum | spec-chum ~AT~ users.sourceforge ~dot~ net | Code |
-| tetsuo55 | tetsuo55 ~AT~ users.sourceforge ~dot~ net | Project manager, Admin |
-| Tomas Sen | tomasen ~AT~ users.sourceforge ~dot~ net | Code |
-| v0lt | v0lt ~AT~ users.sourceforge ~dot~ net | Code, Russian |
-| Vodyannikov Aleksandr | aleksoid ~AT~ users.sourceforge ~dot~ net | Code, Russian |
-| xpc1000 | xpc1000 ~AT~ users.sourceforge ~dot~ net | Code |
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2 class="panel-title" id="inactive">
+            <a class="collapsed toggleLink" role="button" data-toggle="collapse" href="#inactive-people-main" aria-expanded="false" aria-controls="inactive-people-main">
+                <span class="fa fa-user-times" aria-hidden="true"></span> Inactive People
+            </a>
+        </h2>
+    </div>
 
+    <div id="inactive-people-main" class="panel-collapse collapse" aria-labelledby="inactive">
+        <div class="panel-body">
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="list-group mpc-team">
+                      {% for member in site.data.team.inactive %}
+                        {% assign user = member.user %}
+                        <div class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-4 team-member">
+                                    {% if user %}
+                                    <a class="team-member" href="https://github.com/{{ user }}">
+                                        {% avatar user=user size=32 %}
+                                        <strong>{{ member.name }}</strong> <small>@{{ user }}</small>
+                                    </a>
+                                    {% else %}
+                                        <strong>{{ member.name }}</strong>
+                                    {% endif %}
+                                </div>
+                                <div class="col-md-4 team-member-role">
+                                    <span>{{ member.role }}</span>
+                                </div>
+                                <div class="col-md-4 team-member-email">
+                                    <a href="mailto:{{ member.email | encode_email }}">{{ member.email }}</a>
+                                </div>
+                            </div>  <!-- .row -->
+                        </div>  <!-- .list-group-item -->
+                      {% endfor %}
+                    </div>  <!-- .list-group -->
+
+                </div>  <!-- .col-md-12 -->
+            </div>  <!-- .row -->
+
+        </div>  <!-- .panel-body -->
+    </div>  <!-- .panel-collapse -->
 </div>
 
-### Translators:
+<hr />
+
+### Translators
+
 Translations are now handled using [Transifex](https://www.transifex.com), a web-based translation platform.
 An up-to-date list of translators involved for each language can be found on <https://www.transifex.com/mpc-hc/mpc-hc/>.
 
 
-### Translators (pre-Transifex era)
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2 class="panel-title" id="translators-pre-transifex-era">
+            <a class="collapsed toggleLink" role="button" data-toggle="collapse" href="#translators-main" aria-expanded="false" aria-controls="translators-main">
+                <span class="fa fa-user-times" aria-hidden="true"></span> Translators (pre-Transifex era)
+            </a>
+        </h2>
+    </div>
 
-<div markdown="1" class="table-responsive">
+    <div id="translators-main" class="panel-collapse collapse" aria-labelledby="translators-pre-transifex-era">
+        <div class="panel-body">
 
-{: .table .table-hover .table-striped }
-| Language | Translator | Email |
-|----+----|
-| Armenian | hrant77 | hrant77 ~AT~ users.sourceforge ~dot~ net |
-| Basque | Xabier Aramendi | azpidatziak ~AT~ users.sourceforge ~dot~ net |
-| Belarusian | Mister-sh | mister-sh ~AT~ users.sourceforge ~dot~ net |
-| Catalan | xiulet | xiulet ~AT~ users.sourceforge ~dot~ net |
-| Chinese Simplified | Bonami | bonami ~AT~ users.sourceforge ~dot~ net |
-| Chinese Traditional | Kene Lin | kenelin ~AT~ users.sourceforge ~dot~ net |
-| Czech | khagaroth | khagaroth ~AT~ users.sourceforge ~dot~ net |
-| Dutch | Paul Tjepkema | pietpuk123 ~AT~ users.sourceforge ~dot~ net |
-| English (British) | Boris Kotov | doctor.z01db3rg ~AT~ gmail ~dot~ com |
-| French | Sebastiii | sebastiii ~AT~ users.sourceforge ~dot~ net |
-| German | Markus Gaugg | markusgaugg ~AT~ users.sourceforge ~dot~ net |
-| German | Luan | luanmail ~AT~ users.sourceforge ~dot~ net |
-| Greek | geogeo.gr | geogeo64 ~AT~ users.sourceforge ~dot~ net |
-| Greek | Zouloumis | zouloumis ~AT~ users.sourceforge ~dot~ net |
-| Hebrew | Superb | superbsubs ~AT~ users.sourceforge ~dot~ net |
-| Hungarian | Tamas Kleiber | klei ~AT~ users.sourceforge ~dot~ net |
-| Italian | SigiTM | sigitm ~AT~ users.sourceforge.net |
-| Japanese, Chinese Simplified/Traditional | roytam | roytam1 ~AT~ users.sourceforge ~dot~ net |
-| Korean | XNeo | xneokr ~AT~ users.sourceforge ~dot~ net |
-| Polish | arch__stanton | arch__stanton ~AT~ users.sourceforge ~dot~ net |
-| Polish | Haix | haix ~AT~ users.sourceforge ~dot~ net |
-| Portuguese (Brazil) | Roger Felipe | rfrfrfrf ~AT~ users.sourceforge ~dot~ net |
-| Romanian | Daniel Alămiță | — |
-| Romanian | lordkag | lordkag ~AT~ users.sourceforge ~dot~ net |
-| Russian | YDY | ydy ~AT~ users.sourceforge ~dot~ net |
-| Slovak | Marian Hikanik | mhikanik ~AT~ users.sourceforge ~dot~ net |
-| Slovenian | shvala | simon.hvala ~AT~ hotmail ~dot~ com |
-| Spanish | SquallMX | squallmx ~AT~ users.sourceforge ~dot~ net |
-| Turkish | Bosluk | bosluk ~AT~ users.sourceforge ~dot~ net |
-| Ukrainian | arestarh | arestarh1986 ~AT~ users.sourceforge ~dot~ net |
-| Ukrainian | Ihor Bobalo | ibobalo ~AT~ users.sourceforge ~dot~ net (http://www.eleks.com) |
+            <div class="row">
+                <div class="col-md-12">
 
+                    <div class="list-group mpc-team">
+                      {% for member in site.data.translators %}
+                        <div class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-4 team-member">
+                                    <strong>{{ member.name }}</strong>
+                                </div>
+                                <div class="col-md-4 team-member-lang">
+                                    <span>{{ member.lang }}</span>
+                                </div>
+                                <div class="col-md-4 team-member-email">
+                                    {% if member.email %}
+                                    <a href="mailto:{{ member.email | encode_email }}">{{ member.email }}</a>
+                                    {% else %}
+                                    -
+                                    {% endif %}
+                                </div>
+                            </div>  <!-- .row -->
+                        </div>  <!-- .list-group-item -->
+                      {% endfor %}
+                    </div>  <!-- .list-group -->
+
+                </div>  <!-- .col-md-12 -->
+            </div>  <!-- .row -->
+
+        </div>  <!-- .panel-body -->
+    </div>  <!-- .panel-collapse -->
 </div>
 
 

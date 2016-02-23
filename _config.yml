@@ -6,6 +6,8 @@ markdown:           kramdown
 highlighter:        false
 
 gems:
+  - jekyll-avatar
+  - jekyll-email-protect
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap

@@ -1,0 +1,151 @@
+active:
+    - name: Kacper Michajłow
+      user: kasper93
+      email: kasper93@gmail.com
+      role: Code, Polish
+
+    - name: XhmikosR
+      user: XhmikosR
+      email: xhmikosr@gmail.com
+      role: Various stuff, Project manager
+
+    - name: Goran Džaferi
+      user: vBm
+      email: the.vbm@gmail.com
+      role: New website, Trac moderator, IRC
+
+    - name: JellyFrog
+      user: JellyFrog
+      email:
+      role: Server and Trac admin, Swedish
+
+inactive:
+    - name: Alex Marsev
+      user: alexmarsev
+      email: alex.marsev@gmail.com
+      role: Code
+
+    - name: Jules Blok
+      user: armada651
+      email: jules.blok@gmail.com
+      role: Code
+
+    - name: Hendrik Leppkes
+      user: nevcairiel
+      email: nevcairiel@gmail.com
+      role: Code, LAVFilters maintainer
+
+    - name: Underground78
+      user: underground78
+      email: underground78@gmail.com
+      role: Code, French, Project manager
+
+    - name: _xxl
+      user:
+      email: drevil_xxl@users.sourceforge.net
+      role: FFmpeg
+
+    - name: Alexander Wild
+      user:
+      email: alexwild@users.sourceforge.net
+      role: Code, German
+
+    - name: Arto Jarvinen
+      user:
+      email: ar-jar@users.sourceforge.net
+      role: Code
+
+    - name: Attila T. Afra
+      user:
+      email: attila.afra@gmail.com
+      role: Code
+
+    - name: Beliyaal
+      user:
+      email: beliyaal@users.sourceforge.net
+      role: Code
+
+    - name: bobdynlan
+      user:
+      email: bobdynlan@users.sourceforge.net
+      role: Code
+
+    - name: Casimir666
+      user:
+      email: casimir666@users.sourceforge.net
+      role: Project founder, Code, French
+
+    - name: clsid
+      user:
+      email: clsid2@users.sourceforge.net
+      role: Code
+
+    - name: demi_alucard
+      user:
+      email: alysson87@gmail.com
+      role: Code, Portuguese (Brazil)
+
+    - name: Di Luo
+      user:
+      email: sansnom05@users.sourceforge.net
+      role: Code
+
+    - name: janwillem32
+      user:
+      email: janwillem32@users.sourceforge.net
+      role: Code
+
+    - name: jonasno
+      user:
+      email: jonasno@users.sourceforge.net
+      role: Code, Swedish
+
+    - name: KindDragon
+      user:
+      email: kindDragon@users.sourceforge.net
+      role: Code
+
+    - name: Martin Panayotov
+      user:
+      email: mvpsoft@users.sourceforge.net
+      role: Old website (pre-2012)
+
+    - name: MatMaul
+      user:
+      email: matmaul@users.sourceforge.net
+      role: Code
+
+    - name: namaiki
+      user:
+      email: namaiki@users.sourceforge.net
+      role: Trac moderator
+
+    - name: spec-chum
+      user:
+      email: spec-chum@users.sourceforge.net
+      role: Code
+
+    - name: tetsuo55
+      user:
+      email: tetsuo55@users.sourceforge.net
+      role: Project manager, Admin
+
+    - name: Tomas Sen
+      user:
+      email: tomasen@users.sourceforge.net
+      role: Code
+
+    - name: v0lt
+      user:
+      email: v0lt@users.sourceforge.net
+      role: Code, Russian
+
+    - name: Vodyannikov Aleksandr
+      user:
+      email: aleksoid@users.sourceforge.net
+      role: Code, Russian
+
+    - name: xpc1000
+      user:
+      email: xpc1000@users.sourceforge.net
+      role: Code
