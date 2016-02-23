@@ -145,6 +145,24 @@ body {
     margin-bottom: 0;
 }
 
+.btn-danger {
+    background-color: #ce4844;
+}
+
+.btn-success {
+    background-color: #2c882c;
+}
+
+.table-striped a {
+    color: #276499;
+}
+
+.pager .disabled > span,
+.pagination > .disabled > span {
+    color: #767676;
+}
+
+
 
 /* footer */
 footer {
