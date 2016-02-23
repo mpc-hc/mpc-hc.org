@@ -4,11 +4,20 @@ version: "{build}"
 
 clone_depth: 10
 
+environment:
+  matrix:
+    - ruby_folder_version: "22"
+      ruby_gems_folder: "2.2.0"
+      platform: "x86"
+    - ruby_folder_version: "22-x64"
+      ruby_gems_folder: "2.2.0"
+      platform: "x64"
+
 install:
-  - SET PATH=C:\Ruby%ruby_folder_version%\bin;%PATH%
+  - SET "PATH=C:\Ruby%ruby_folder_version%\bin;%PATH%"
   - bundle install --retry 3
   - SET NPM_CONFIG_PROGRESS="false"
-  - ps: Install-Product node "5"
+  - ps: Install-Product node "5" $env:platform
   - npm install -g grunt-cli
   - npm install
 
@@ -18,13 +27,6 @@ test_script:
   - ruby -v && gem -v && bundle -v
   - node -v && npm -v
   - npm test
-
-environment:
-  matrix:
-    - ruby_folder_version: "22"
-      ruby_gems_folder: "2.2.0"
-    - ruby_folder_version: "22-x64"
-      ruby_gems_folder: "2.2.0"
 
 matrix:
   fast_finish: true
