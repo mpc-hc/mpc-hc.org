@@ -89,7 +89,6 @@ module.exports = function(grunt) {
                     /(#|\.)(open)/,
                     // injected via JS
                     /disabled/,
-                    /fa-chevron-up/,
                     /\.no\-js/
                 ],
                 htmlroot: "<%= dirs.dest %>",
