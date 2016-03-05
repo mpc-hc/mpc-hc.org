@@ -62,7 +62,7 @@ body {
     padding-bottom: 0;
 }
 
-.page-downloads-version {
+.page-downloads .downloads-version {
     font-weight: bold;
     padding-bottom: 8px;
     text-align: center;
