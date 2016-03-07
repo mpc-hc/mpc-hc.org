@@ -16,9 +16,8 @@ environment:
 install:
   - SET "PATH=C:\Ruby%ruby_folder_version%\bin;%PATH%"
   - bundle install --retry 3
-  - SET NPM_CONFIG_PROGRESS="false"
   - ps: Install-Product node "5" $env:platform
-  - npm install -g grunt-cli
+  - SET NPM_CONFIG_PROGRESS="false"
   - npm install
 
 build: off
@@ -34,5 +33,4 @@ matrix:
 cache:
   - 'C:\Ruby%ruby_folder_version%\bin -> Gemfile,Gemfile.lock'
   - 'C:\Ruby%ruby_folder_version%\lib\ruby\gems\%ruby_gems_folder% -> Gemfile,Gemfile.lock'
-  - '%APPDATA%\npm\node_modules -> package.json'
   - 'node_modules -> package.json'

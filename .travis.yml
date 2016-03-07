@@ -18,12 +18,10 @@ before_install:
   - export PATH=$(python -c 'from sys import argv;from collections import OrderedDict as od;print(":".join(od((p,None) for p in argv[1].split(":") if p.startswith("/")).keys()))' "$PATH")
   - rvm install $RUBY_VERSION
   - rvm use $RUBY_VERSION --fuzzy
-  - export GEMDIR=$(rvm gemdir)
 
 install:
-  - travis_retry npm install -g grunt-cli
-  - travis_retry npm install
-  - travis_retry bundle install --without development --deployment --jobs=3
+  - npm install
+  - bundle install --without development --deployment --jobs=3
 
 matrix:
   fast_finish: true
