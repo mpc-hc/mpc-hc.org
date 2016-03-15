@@ -13,9 +13,12 @@ module.exports = function(grunt) {
         // Copy files that don't need compilation to dist/
         copy: {
             dist: {
-                files: [
-                    {dest: "<%= dirs.dest %>/", src: "assets/js/vendor/jquery*.min.js", expand: true, cwd: "<%= dirs.src %>/"},
-                ]
+                files: [{
+                    dest: "<%= dirs.dest %>/",
+                    src: "assets/js/vendor/jquery*.min.js",
+                    expand: true,
+                    cwd: "<%= dirs.src %>/"
+                }]
             }
         },
 
@@ -51,10 +54,7 @@ module.exports = function(grunt) {
                 expand: true,
                 cwd: "<%= dirs.dest %>",
                 dest: "<%= dirs.dest %>",
-                src: [
-                    "**/*.html",
-                    "**/*.php"
-                ]
+                src: ["**/*.html", "**/*.php"]
             }
         },
 
@@ -106,8 +106,8 @@ module.exports = function(grunt) {
         cssmin: {
             minify: {
                 options: {
-                    keepSpecialComments: 0,
-                    compatibility: "ie9"
+                    compatibility: "ie9",
+                    keepSpecialComments: 0
                 },
                 files: {
                     "<%= uncss.dist.dest %>": "<%= concat.css.dest %>"
@@ -132,17 +132,17 @@ module.exports = function(grunt) {
 
         filerev: {
             css: {
-                src: "<%= dirs.dest %>/assets/css/**/{,*/}*.css"
+                src: "<%= dirs.dest %>/assets/css/**/*.css"
              },
             js: {
                 src: [
-                    "<%= dirs.dest %>/assets/js/**/{,*/}*.js",
+                    "<%= dirs.dest %>/assets/js/**/*.js",
                     "!<%= dirs.dest %>/assets/js/vendor/jquery*.min.js"
                 ]
             },
             images: {
                 src: [
-                    "<%= dirs.dest %>/assets/img/**/*.{jpg,jpeg,gif,png}",
+                    "<%= dirs.dest %>/assets/img/**/*.{jpg,jpeg,gif,png,svg}",
                     "!<%= dirs.dest %>/assets/img/logo-256x256.png",
                     "!<%= dirs.dest %>/assets/img/tiles/*.png"
                 ]
@@ -269,9 +269,7 @@ module.exports = function(grunt) {
                     notice: false,
                     warning: false,
                     error: true
-                },
-                //reportLocation: "reports",
-                //reportType: "txt"
+                }
             },
             test: {
                 src: "<%= dirs.dest %>/**/*.html"
@@ -285,7 +283,7 @@ module.exports = function(grunt) {
     });
 
     // Load any grunt plugins found in package.json.
-    require("load-grunt-tasks")(grunt, {scope: "devDependencies"});
+    require("load-grunt-tasks")(grunt, { scope: "devDependencies" });
     require("time-grunt")(grunt);
 
     grunt.registerTask("build", [
