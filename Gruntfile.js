@@ -34,8 +34,9 @@ module.exports = function(grunt) {
         htmlmin: {
             dist: {
                 options: {
-                    collapseWhitespace: true,
                     collapseBooleanAttributes: true,
+                    collapseWhitespace: true,
+                    conservativeCollapse: false,
                     ignoreCustomComments: [/^\s*google(off|on):\s/],
                     minifyCSS: {
                         compatibility: "ie9",
@@ -49,7 +50,8 @@ module.exports = function(grunt) {
                     removeOptionalTags: true,
                     removeRedundantAttributes: true,
                     removeScriptTypeAttributes: true,
-                    removeStyleLinkTypeAttributes: true
+                    removeStyleLinkTypeAttributes: true,
+                    removeTagWhitespace: false
                 },
                 expand: true,
                 cwd: "<%= dirs.dest %>",
