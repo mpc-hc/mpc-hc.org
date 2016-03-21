@@ -1,5 +1,6 @@
 name:               MPC-HC
 description:        MPC-HC, the free, open source media player for Windows
+lang:               en
 
 markdown:           kramdown
 highlighter:        false
