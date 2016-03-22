@@ -2,6 +2,7 @@
 layout: default
 title: Sitemap
 slug: sitemap
+sitemap: false
 ---
 
 <h1 id="sitemap">
@@ -10,7 +11,6 @@ slug: sitemap
 </h1>
 
 <h2 id="pages">Pages (sorted by title)</h2>
-<ul>
 
 {% comment %}
 This doesn't work yet; see https://github.com/Shopify/liquid/pull/429/
@@ -20,24 +20,29 @@ assign sorted_pages = site.html_pages | concat: site.posts | sort: 'title'
 {% assign sorted_pages = site.html_pages | sort: 'title' %}
 
 {% for page in sorted_pages %}
-    {% if page.sitemap == false %}
-        {% continue %}
+    {% if forloop.first %}
+    <ul>
     {% endif %}
+    {% unless page.sitemap == false %}
     <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+    {% endunless %}
     {% if forloop.last %}
     </ul>
     {% endif %}
 {% endfor %}
 
+
 <h2 id="posts">Posts (sorted by date, newer to older)</h2>
-<ul>
 
 {% assign sorted_posts = site.posts | sort: 'url' | reverse %}
+
 {% for post in sorted_posts %}
-    {% if post.sitemap == false %}
-        {% continue %}
+    {% if forloop.first %}
+    <ul>
     {% endif %}
+    {% unless post.sitemap == false %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endunless %}
     {% if forloop.last %}
     </ul>
     {% endif %}
