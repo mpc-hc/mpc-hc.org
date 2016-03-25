@@ -1,16 +1,16 @@
 /*!
- * Bootstrap v3.3.5 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=e64480a4eab9b0a3ec0c)
- * Config saved to config.json and https://gist.github.com/e64480a4eab9b0a3ec0c
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=1c3c2755841ebe04e282)
+ * Config saved to config.json and https://gist.github.com/1c3c2755841ebe04e282
  */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
+ * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -3799,6 +3799,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   background-color: #ffffff;
   border-color: #dddddd;
   cursor: not-allowed;
+  pointer-events: none;
 }
 .pagination-lg > li > a,
 .pagination-lg > li > span {
@@ -3869,6 +3870,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #777777;
   background-color: #ffffff;
   cursor: not-allowed;
+  pointer-events: none;
 }
 .thumbnail {
   display: block;
