@@ -12,6 +12,7 @@
             if (imgElement[i].hasAttribute("data-src")) {
                 imgElement[i].setAttribute("src", imgElement[i].getAttribute("data-src"));
                 imgElement[i].removeAttribute("data-src");
+                imgElement[i].className += " loaded";
             }
         }
     }
