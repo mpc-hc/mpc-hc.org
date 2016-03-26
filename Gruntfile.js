@@ -44,6 +44,7 @@ module.exports = function(grunt) {
                     },
                     minifyJS: true,
                     minifyURLs: false,
+                    processConditionalComments: true,
                     removeAttributeQuotes: true,
                     removeComments: true,
                     removeOptionalAttributes: true,
