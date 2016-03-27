@@ -94,7 +94,8 @@ module.exports = function(grunt) {
                     /(#|\.)(open)/,
                     // injected via JS
                     /disabled/,
-                    /\.no\-js/
+                    /\.no\-js/,
+                    /\.defer/
                 ],
                 htmlroot: "<%= dirs.dest %>",
                 ignoreSheets: [/fonts.googleapis/],
