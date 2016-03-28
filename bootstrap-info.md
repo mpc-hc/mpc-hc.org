@@ -1,4 +1,4 @@
-http://getbootstrap.com/customize/?id=1c3c2755841ebe04e282
+http://getbootstrap.com/customize/?id=d0c978913b2b41f60de9
 
 
 Enabled components in v3.3.6:
@@ -31,7 +31,6 @@ Enabled components in v3.3.6:
   * Dropdowns
 
 * jQuery plugins
-  * Alert dismissal
   * Dropdowns
   * Collapse
   * Transitions
