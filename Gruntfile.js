@@ -1,8 +1,6 @@
 "use strict";
 
 module.exports = function(grunt) {
-    var configYaml = grunt.file.readYAML("_config.yml");
-    var mpcVersionShort = configYaml.version.short;
 
     grunt.initConfig({
         dirs: {
@@ -195,12 +193,7 @@ module.exports = function(grunt) {
         staticinline: {
             dist: {
                 options: {
-                    basepath: "<%= dirs.src %>/",
-                    prefix: "@{",
-                    suffix: "}@",
-                    vars: {
-                        "mpcVersionShort": mpcVersionShort
-                    }
+                    basepath: "<%= dirs.src %>/"
                 },
                 files: [{
                     expand: true,

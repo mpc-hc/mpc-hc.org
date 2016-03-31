@@ -5,11 +5,11 @@
     var arch = navigator.userAgent.match(/x86_64|Win64|WOW64/) ||
                navigator.cpuClass === "x64" ? "x64" : "x86";
     var href = "https://binaries.mpc-hc.org/";
-    var version = "@{mpcVersionShort}@";
     var element = document.getElementById("downloadButton");
 
     // getElementById returns null if it has no matches
     if (element) {
+        var version = element.getAttribute("data-version");
         // querySelector is enough here since we only need the first match
         var buttonSubArchText = document.querySelector(".button-sub span");
         var folder;
