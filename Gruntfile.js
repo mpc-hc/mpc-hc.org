@@ -178,7 +178,8 @@ module.exports = function(grunt) {
                         "meta[name='msapplication-wide310x150logo']": "content",
                         "meta[name='msapplication-square310x310logo']": "content",
                         "meta[itemprop='image']": "content",
-                        "meta[property='og:image:secure_url']": "content"
+                        "meta[property='og:image:secure_url']": "content",
+                        "input[type='image']": "src"
                     }
                 },
                 files: [{
