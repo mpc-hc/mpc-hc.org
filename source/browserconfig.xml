@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square70x70logo src="https://assets.mpc-hc.org/assets/img/tiles/tiny.png" />
+            <square150x150logo src="https://assets.mpc-hc.org/assets/img/tiles/square.png" />
+            <wide310x150logo src="https://assets.mpc-hc.org/assets/img/tiles/wide.png" />
+            <square310x310logo src="https://assets.mpc-hc.org/assets/img/tiles/large.png" />
+            <TileColor>#6BBA70</TileColor>
+        </tile>
+        <notification>
+            <polling-uri src="http://notifications.buildmypinnedsite.com/?feed=https://mpc-hc.org/rss.xml&amp;id=1" />
+            <polling-uri2 src="http://notifications.buildmypinnedsite.com/?feed=https://mpc-hc.org/rss.xml&amp;id=2" />
+            <polling-uri3 src="http://notifications.buildmypinnedsite.com/?feed=https://mpc-hc.org/rss.xml&amp;id=3" />
+            <polling-uri4 src="http://notifications.buildmypinnedsite.com/?feed=https://mpc-hc.org/rss.xml&amp;id=4" />
+            <polling-uri5 src="http://notifications.buildmypinnedsite.com/?feed=https://mpc-hc.org/rss.xml&amp;id=5" />
+            <frequency>30</frequency>
+            <cycle>1</cycle>
+        </notification>
+    </msapplication>
+</browserconfig>

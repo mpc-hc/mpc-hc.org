@@ -172,11 +172,6 @@ module.exports = function(grunt) {
                 options: {
                     base: "https://assets.mpc-hc.org/",
                     html: {
-                        "meta[name='msapplication-TileImage']": "content",
-                        "meta[name='msapplication-square70x70logo']": "content",
-                        "meta[name='msapplication-square150x150logo']": "content",
-                        "meta[name='msapplication-wide310x150logo']": "content",
-                        "meta[name='msapplication-square310x310logo']": "content",
                         "meta[itemprop='image']": "content",
                         "meta[property='og:image:secure_url']": "content",
                         "input[type='image']": "src"
