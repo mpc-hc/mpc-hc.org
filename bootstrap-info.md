@@ -1,4 +1,4 @@
-http://getbootstrap.com/customize/?id=d0c978913b2b41f60de9
+http://getbootstrap.com/customize/?id=11809cb32818a99053475475c1ea7f74
 
 
 Enabled components in v3.3.6:
@@ -27,7 +27,7 @@ Enabled components in v3.3.6:
   * Close icon
 
 * JavaScript components
-  * Component animations (for JS) (includes Collapse) 
+  * Component animations (for JS) (includes Collapse)
   * Dropdowns
 
 * jQuery plugins
