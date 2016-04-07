@@ -8,7 +8,7 @@
     function imgDefer() {
         var imgElement = document.getElementsByTagName("img");
 
-        for (var i = 0; i < imgElement.length; i++) {
+        for (var i = 0, len = imgElement.length; i < len; i++) {
             if (imgElement[i].hasAttribute("data-src")) {
                 imgElement[i].setAttribute("src", imgElement[i].getAttribute("data-src"));
                 imgElement[i].removeAttribute("data-src");
