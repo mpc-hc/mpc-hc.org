@@ -78,7 +78,7 @@ Media Player Classic - Home Cinema is an extremely light-weight media player for
 
 ### Translators:
 Translations are now handled using [Transifex](https://www.transifex.com), a web-based translation platform.
-An up-to-date list of translators involved for each language can be found on <https://www.transifex.com/projects/p/mpc-hc/>.
+An up-to-date list of translators involved for each language can be found on <https://www.transifex.com/mpc-hc/mpc-hc/>.
 
 
 ### Translators (pre-Transifex era)

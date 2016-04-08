@@ -11,7 +11,7 @@ However, despite our efforts, translating MPC-HC was never easy and our somewhat
 complex translation system probably scared away a number of translators willing to work with us.
 
 We are happy to announce that we finally switched our translation system to use [Transifex](https://www.transifex.com),
-a web-based translation platform. You can already find [our project page](https://www.transifex.com/projects/p/mpc-hc)
+a web-based translation platform. You can already find [our project page](https://www.transifex.com/mpc-hc/mpc-hc/)
 on Transifex.com with some ongoing new translations.
 
 If you want to contribute to a translation (either new or existing), all you have to do is sign up on Transifex, request
