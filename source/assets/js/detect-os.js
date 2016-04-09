@@ -14,6 +14,10 @@
         var buttonSubArchText = document.querySelector(".button-sub span");
         var folder;
 
+        if (!version || !buttonSubArchText) {
+            return;
+        }
+
         if (arch === "x64") {
             folder = "MPC%20HomeCinema%20-%20x64";
             buttonSubArchText.textContent = "64-bit";
