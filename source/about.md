@@ -156,7 +156,7 @@ MPC-HC is based on the original MPC version © 2002-2006 by Gabest (e-mail unkno
 | QuickTime SDK | - | <http://developer.apple.com/quicktime/> |
 | RARFileSource | GPLv2+ | <http://www.v12pwr.com/RARFileSource/> |
 | RealMedia SDK | - | - |
-| ResizableLib | Artistic License | <http://sourceforge.net/projects/resizablelib/> |
+| ResizableLib | Artistic License | <https://sourceforge.net/projects/resizablelib/> |
 | sanear | LGPLv2.1 | <https://github.com/alexmarsev/sanear> |
 | Silk Icons | CC Attribution 2.5 | <http://www.famfamfam.com/lab/icons/silk/> |
 | SoundTouch | LGPLv2.1 | <http://www.surina.net/soundtouch/> |
@@ -164,7 +164,7 @@ MPC-HC is based on the original MPC version © 2002-2006 by Gabest (e-mail unkno
 | TreePropSheet | - | <http://www.codeproject.com/Articles/3709/> |
 | UnRAR | freeware | <http://www.rarlab.com/rar_add.htm> |
 | VirtualDub | GPLv2+ | <http://www.virtualdub.org/> |
-| ZenLib | zlib License | <http://sourceforge.net/projects/zenlib/> |
+| ZenLib | zlib License | <https://sourceforge.net/projects/zenlib/> |
 | zita-resampler | GPLv3 | <http://kokkinizita.linuxaudio.org/linuxaudio/> |
 | zlib | zlib License | <http://zlib.net/> |
 
