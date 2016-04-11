@@ -103,7 +103,8 @@
         {% feed_meta %}
 
     </head>
-    {% capture body_class %}{% if page.body_class %}page-{{ page.body_class }}{% elsif page.slug %}page-{{ page.slug | slugify }}{% endif %}{% endcapture %}
+
+    {% capture body_class %}{{ page.layout }}{% if page.body_class %} page-{{ page.body_class }}{% elsif page.slug %} page-{{ page.slug | slugify }}{% endif %}{% endcapture %}
     <body class="{{ body_class }}">
         <!--[if lt IE 9]>
             <div class="browserPrompt alert alert-warning" role="alert"><h4><span class="fa fa-exclamation-circle" aria-hidden="true"></span> Warning</h4><p>You are using an <strong>outdated</strong> browser. Please <a class="alert-link" href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p></div>
