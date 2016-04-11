@@ -80,8 +80,8 @@ If you have more than one monitor connected make sure you extend the screen inst
 ### Why am I seeing strange glitches in the video?
 
 Hardware acceleration is most likely not working correctly.
-Try going to **Options &rarr; Internal Filters**, right-click the list on the right
-and click "Disable DXVA filters" and then reload the video (<kbd>Ctrl+E</kbd> or manually).
+Try going to **Options &rarr; Internal Filters**, click **Video decoder**,
+set "Hardware decoder to use:" to "None" and then reload the video (<kbd>Ctrl+E</kbd> or manually).
 If this does not solve your issue, and your video plays correctly in other
 video players then please make a bug report.
 
