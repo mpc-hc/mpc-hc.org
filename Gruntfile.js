@@ -35,6 +35,7 @@ module.exports = function(grunt) {
                     collapseBooleanAttributes: true,
                     collapseWhitespace: true,
                     conservativeCollapse: false,
+                    decodeEntities: true,
                     ignoreCustomComments: [/^\s*google(off|on):\s/],
                     minifyCSS: {
                         compatibility: "ie9",
@@ -50,7 +51,9 @@ module.exports = function(grunt) {
                     removeRedundantAttributes: true,
                     removeScriptTypeAttributes: true,
                     removeStyleLinkTypeAttributes: true,
-                    removeTagWhitespace: false
+                    removeTagWhitespace: false,
+                    sortAttributes: true,
+                    sortClassName: true
                 },
                 expand: true,
                 cwd: "<%= dirs.dest %>",
