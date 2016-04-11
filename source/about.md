@@ -144,6 +144,7 @@ MPC-HC is based on the original MPC version © 2002-2006 by Gabest (e-mail unkno
 {: .table .table-hover .table-striped }
 | Project | License | Website |
 |----+----|
+| bs2b | MIT License | <http://bs2b.sourceforge.net> |
 | CSizingControlBar | - | <http://www.datamekanix.com/sizecbar/> |
 | LAV Filters | GPLv2+ | <https://github.com/Nevcairiel/LAVFilters> |
 | libdivide | zlib License | <http://libdivide.com/> |
@@ -156,12 +157,15 @@ MPC-HC is based on the original MPC version © 2002-2006 by Gabest (e-mail unkno
 | RARFileSource | GPLv2+ | <http://www.v12pwr.com/RARFileSource/> |
 | RealMedia SDK | - | - |
 | ResizableLib | Artistic License | <http://sourceforge.net/projects/resizablelib/> |
+| sanear | LGPLv2.1 | <https://github.com/alexmarsev/sanear> |
 | Silk Icons | CC Attribution 2.5 | <http://www.famfamfam.com/lab/icons/silk/> |
 | SoundTouch | LGPLv2.1 | <http://www.surina.net/soundtouch/> |
+| soxr | LGPLv2.1+ | <https://sourceforge.net/projects/soxr/> |
 | TreePropSheet | - | <http://www.codeproject.com/Articles/3709/> |
 | UnRAR | freeware | <http://www.rarlab.com/rar_add.htm> |
 | VirtualDub | GPLv2+ | <http://www.virtualdub.org/> |
 | ZenLib | zlib License | <http://sourceforge.net/projects/zenlib/> |
+| zita-resampler | GPLv3 | <http://kokkinizita.linuxaudio.org/linuxaudio/> |
 | zlib | zlib License | <http://zlib.net/> |
 
 </div>
