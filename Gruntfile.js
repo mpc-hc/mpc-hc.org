@@ -72,13 +72,16 @@ module.exports = function(grunt) {
                       "<%= dirs.src %>/assets/css/style.css"],
                 dest: "<%= dirs.dest %>/assets/css/pack.css"
             },
+            jqueryJS : {
+                src: ["<%= dirs.src %>/assets/js/vendor/bootstrap.js",
+                      "<%= dirs.src %>/assets/js/downloads.js"],
+                dest: "<%= dirs.dest %>/assets/js/jquery-pack.js"
+            },
             js: {
                 src: ["<%= dirs.src %>/assets/js/vendor/plugins.js",
                       "<%= dirs.src %>/assets/js/vendor/baguetteBox.js",
-                      "<%= dirs.src %>/assets/js/vendor/bootstrap.js",
                       "<%= dirs.src %>/assets/js/baguetteBox-init.js",
                       "<%= dirs.src %>/assets/js/detect-os.js",
-                      "<%= dirs.src %>/assets/js/downloads.js",
                       "<%= dirs.src %>/assets/js/img-defer.js",
                       "<%= dirs.src %>/assets/js/no-js-class.js",
                       "<%= dirs.src %>/assets/js/google-analytics.js"],
@@ -135,7 +138,8 @@ module.exports = function(grunt) {
             },
             minify: {
                 files: {
-                    "<%= concat.js.dest %>": "<%= concat.js.dest %>"
+                    "<%= concat.js.dest %>": "<%= concat.js.dest %>",
+                    "<%= concat.jqueryJS.dest %>": "<%= concat.jqueryJS.dest %>"
                 }
             }
         },
@@ -306,13 +310,15 @@ module.exports = function(grunt) {
 
         var packCssIntegrity = sriDigest("_site/assets/css/pack.*.css");
         var packJsIntegrity = sriDigest("_site/assets/js/pack.*.js");
+        var jqueryPackJsIntegrity = sriDigest("_site/assets/js/jquery-pack.*.js");
 
         grunt.config("includereplace", {
             dist: {
                 options: {
                     globals: {
                         packCssIntegrity: packCssIntegrity,
-                        packJsIntegrity: packJsIntegrity
+                        packJsIntegrity: packJsIntegrity,
+                        jqueryPackJsIntegrity: jqueryPackJsIntegrity
                     }
                 },
                 files: [{
