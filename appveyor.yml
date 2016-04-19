@@ -17,7 +17,7 @@ install:
   - SET "PATH=C:\Ruby%ruby_folder_version%\bin;%PATH%"
   - bundle install --retry 3
   - ps: Install-Product node "5" $env:platform
-  - SET NPM_CONFIG_PROGRESS="false"
+  - npm config set spin false
   - npm install
 
 build: off
