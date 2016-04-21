@@ -75,7 +75,8 @@ module.exports = function(grunt) {
                       "<%= dirs.src %>/assets/js/vendor/bootstrap.js",
                       "<%= dirs.src %>/assets/js/vendor/baguetteBox.js",
                       "<%= dirs.src %>/assets/js/img-defer.js",
-                      "<%= dirs.src %>/assets/js/no-js-class.js"],
+                      "<%= dirs.src %>/assets/js/no-js-class.js",
+                      "<%= dirs.src %>/assets/js/google-analytics.js"],
                 dest: "<%= dirs.dest %>/assets/js/pack.js"
             }
         },
@@ -249,7 +250,7 @@ module.exports = function(grunt) {
                 jshintrc: ".jshintrc"
             },
             files: {
-                src: ["Gruntfile.js", "<%= dirs.src %>/assets/js/*.js"]
+                src: ["Gruntfile.js", "<%= dirs.src %>/assets/js/*.js", "!<%= dirs.src %>/assets/js/google-analytics.js"]
             }
         },
 
