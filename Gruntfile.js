@@ -64,16 +64,16 @@ module.exports = function(grunt) {
 
         concat: {
             css: {
-                src: ["<%= dirs.src %>/assets/css/vendor/bootstrap.css",
-                      "<%= dirs.src %>/assets/css/vendor/font-awesome.css",
+                src: ["<%= dirs.src %>/assets/css/vendor/font-awesome.css",
+                      "<%= dirs.src %>/assets/css/vendor/bootstrap.css",
                       "<%= dirs.src %>/assets/css/vendor/baguetteBox.css",
                       "<%= dirs.src %>/assets/css/style.css"],
                 dest: "<%= dirs.dest %>/assets/css/pack.css"
             },
             js: {
                 src: ["<%= dirs.src %>/assets/js/vendor/plugins.js",
-                      "<%= dirs.src %>/assets/js/vendor/bootstrap.js",
                       "<%= dirs.src %>/assets/js/vendor/baguetteBox.js",
+                      "<%= dirs.src %>/assets/js/vendor/bootstrap.js",
                       "<%= dirs.src %>/assets/js/img-defer.js",
                       "<%= dirs.src %>/assets/js/no-js-class.js",
                       "<%= dirs.src %>/assets/js/google-analytics.js"],
