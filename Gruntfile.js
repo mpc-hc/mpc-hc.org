@@ -173,7 +173,7 @@ module.exports = function(grunt) {
         cdnify: {
             build: {
                 options: {
-                    base: "https://assets.mpc-hc.org/",
+                    base: "https://cdn.mpc-hc.org/",
                     html: {
                         "meta[itemprop='image']": "content",
                         "meta[property='og:image:secure_url']": "content",

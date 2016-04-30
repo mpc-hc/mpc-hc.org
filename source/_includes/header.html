@@ -6,9 +6,7 @@
         <link rel="dns-prefetch" href="https://ajax.googleapis.com">
         <link rel="dns-prefetch" href="https://fonts.googleapis.com">
         <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-        {% if page.slug == "home" or page.slug == "downloads" %}
-        <link rel="dns-prefetch" href="https://binaries.mpc-hc.org">
-        {% endif %}
+        <link rel="dns-prefetch" href="{{ site.cdn_url }}">
 
         {% capture title %}{% if paginator.page and paginator.page != 1 %}{{ page.title }} - Page {{ paginator.page }}{% else %}{{ page.title }}{% endif%} &middot; MPC-HC{% endcapture %}
         <title>{{ title }}</title>
