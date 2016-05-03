@@ -19,9 +19,9 @@ GEM
     jekyll-sitemap (0.10.0)
     jekyll-watch (1.4.0)
       listen (~> 3.0, < 3.1)
-    kramdown (1.10.0)
+    kramdown (1.11.1)
     liquid (3.0.6)
-    listen (3.0.6)
+    listen (3.0.7)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9.7)
     mercenary (0.3.6)
@@ -42,4 +42,4 @@ DEPENDENCIES
   jekyll-sitemap (~> 0.10.0)
 
 BUNDLED WITH
-   1.11.2
+   1.12.1
