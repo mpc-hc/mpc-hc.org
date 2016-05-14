@@ -332,7 +332,7 @@ module.exports = function(grunt) {
 
     });
 
-    grunt.registerTask("build", [
+    var buildTasks = [
         "clean",
         "jekyll",
         "useminPrepare",
@@ -347,7 +347,13 @@ module.exports = function(grunt) {
         "includereplace",
         "cdnify",
         "htmlmin"
-    ]);
+    ];
+
+    // If we are on CI, skip the cdnify task
+    if (process.env.CI && process.env.CI.toLowerCase() === "true") {
+        buildTasks.splice(12, 1);
+    }
+    grunt.registerTask("build", buildTasks);
 
     grunt.registerTask("test", [
         "build",
