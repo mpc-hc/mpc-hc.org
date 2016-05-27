@@ -56,6 +56,7 @@ module.exports = function(grunt) {
                     '<%= dirs.src %>/assets/css/vendor/font-awesome.css',
                     '<%= dirs.src %>/assets/css/vendor/bootstrap.css',
                     '<%= dirs.src %>/assets/css/vendor/baguetteBox.css',
+                    '<%= dirs.src %>/assets/css/fonts.css',
                     '<%= dirs.src %>/assets/css/style.css'
                 ],
                 dest: '<%= dirs.dest %>/assets/css/pack.css'
