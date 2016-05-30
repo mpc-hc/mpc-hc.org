@@ -5,7 +5,7 @@ dist: trusty
 language: node_js
 
 node_js:
-  - "5"
+  - "6"
 
 env:
   matrix:
@@ -19,7 +19,7 @@ before_install:
 
 install:
   - npm install
-  - bundle install --without development --deployment --jobs=3
+  - bundle install --without development --deployment
 
 matrix:
   fast_finish: true
