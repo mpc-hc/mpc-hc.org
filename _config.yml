@@ -16,7 +16,6 @@ exclude:
 # we generate those files ourselves
 - "*.css"
 - "*.js"
-- "_old"
 
 # paginate
 paginate:           10
