@@ -8,18 +8,6 @@ module.exports = function(grunt) {
             src: 'source'
         },
 
-        // Copy files that don't need compilation to dist/
-        copy: {
-            dist: {
-                files: [{
-                    dest: '<%= dirs.dest %>/',
-                    src: 'assets/js/vendor/jquery*.min.js',
-                    expand: true,
-                    cwd: '<%= dirs.src %>/'
-                }]
-            }
-        },
-
         jekyll: {
             site: {
                 options: {
@@ -74,6 +62,7 @@ module.exports = function(grunt) {
             },
             jqueryJS: {
                 src: [
+                    '<%= dirs.src %>/assets/js/vendor/jquery.min.js',
                     '<%= dirs.src %>/assets/js/vendor/bootstrap.js',
                     '<%= dirs.src %>/assets/js/downloads.js'
                 ],
@@ -346,7 +335,6 @@ module.exports = function(grunt) {
         'clean',
         'jekyll',
         'useminPrepare',
-        'copy',
         'concat',
         'uncss',
         'cssmin',
@@ -361,7 +349,7 @@ module.exports = function(grunt) {
 
     // If we are on CI, skip the cdnify task
     if (process.env.CI && process.env.CI.toLowerCase() === 'true') {
-        buildTasks.splice(12, 1);
+        buildTasks.splice(11, 1);
     }
     grunt.registerTask('build', buildTasks);
 
@@ -377,7 +365,6 @@ module.exports = function(grunt) {
     grunt.registerTask('dev', [
         'jekyll',
         'useminPrepare',
-        'copy',
         'concat',
         'filerev',
         'usemin',
