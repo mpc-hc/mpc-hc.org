@@ -1,8 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.4.0)
     colorator (0.1)
-    ffi (1.9.10-x64-mingw32)
+    ffi (1.9.13-x64-mingw32)
     jekyll (3.1.6)
       colorator (~> 0.1)
       jekyll-sass-converter (~> 1.0)
@@ -12,14 +13,15 @@ GEM
       mercenary (~> 0.3.3)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-avatar (0.4.0)
+    jekyll-avatar (0.4.1)
       jekyll (~> 3.0)
     jekyll-email-protect (1.0.3)
-    jekyll-feed (0.5.1)
+    jekyll-feed (0.6.0)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
-    jekyll-sitemap (0.10.0)
+    jekyll-sitemap (0.11.0)
+      addressable (~> 2.4.0)
     jekyll-watch (1.4.0)
       listen (~> 3.0, < 3.1)
     kramdown (1.11.1)
@@ -31,7 +33,7 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
-    rouge (1.11.0)
+    rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.22)
 
@@ -40,11 +42,11 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 3.1.2)
-  jekyll-avatar (~> 0.4.0)
+  jekyll-avatar (~> 0.4.1)
   jekyll-email-protect (~> 1.0.3)
-  jekyll-feed (~> 0.5.0)
+  jekyll-feed (~> 0.6.0)
   jekyll-paginate (~> 1.1.0)
-  jekyll-sitemap (~> 0.10.0)
+  jekyll-sitemap (~> 0.11.0)
 
 BUNDLED WITH
    1.12.5
