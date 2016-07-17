@@ -83,14 +83,6 @@ body {
     text-align: center;
 }
 
-.panel-title {
-    font-size: 20px;
-}
-
-.panel-title a {
-    display: block;
-}
-
 .panel-title > .toggleLink:after {
     font-family: "FontAwesome";
     content: "\f077";   /* fa-chevron-up */
@@ -166,6 +158,14 @@ body {
 .pager .disabled > span,
 .pagination > .disabled > span {
     color: #767676;
+}
+
+.panel-title {
+    font-size: 20px;
+}
+
+.panel-title > a {
+    display: block;
 }
 
 .list-group-item {
