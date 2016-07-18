@@ -1,4 +1,4 @@
-# http://www.appveyor.com/docs/appveyor-yml
+# https://www.appveyor.com/docs/appveyor-yml
 
 version: "{build}"
 
@@ -6,11 +6,11 @@ clone_depth: 10
 
 environment:
   matrix:
-    - ruby_folder_version: "22"
-      ruby_gems_folder: "2.2.0"
+    - ruby_folder_version: "23"
+      ruby_gems_folder: "2.3.0"
       platform: "x86"
-    - ruby_folder_version: "22-x64"
-      ruby_gems_folder: "2.2.0"
+    - ruby_folder_version: "23-x64"
+      ruby_gems_folder: "2.3.0"
       platform: "x64"
 
 install:
@@ -23,8 +23,12 @@ install:
 build: off
 
 test_script:
-  - ruby -v && gem -v && bundle -v
-  - node -v && npm -v
+  - ruby -v
+  - gem -v
+  - bundle -v
+  - node -v
+  - npm -v
+  - java -version
   - npm test
 
 matrix:
