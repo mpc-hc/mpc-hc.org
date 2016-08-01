@@ -9,14 +9,14 @@ environment:
     - ruby_folder_version: "23"
       ruby_gems_folder: "2.3.0"
       platform: "x86"
-    - ruby_folder_version: "23-x64"
-      ruby_gems_folder: "2.3.0"
-      platform: "x64"
+    #- ruby_folder_version: "23-x64"
+    #  ruby_gems_folder: "2.3.0"
+    #  platform: "x64"
 
 install:
   - SET "PATH=C:\Ruby%ruby_folder_version%\bin;%PATH%"
   - bundle install --retry 3
-  - ps: Install-Product node "6" $env:platform
+  - ps: Install-Product node "4" $env:platform
   - npm config set spin false
   - npm install
 
