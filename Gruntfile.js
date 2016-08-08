@@ -1,23 +1,21 @@
-/* jshint browser:false, node:true */
-
-"use strict";
+'use strict';
 
 module.exports = function(grunt) {
 
     grunt.initConfig({
         dirs: {
-            dest: "_site",
-            src: "source"
+            dest: '_site',
+            src: 'source'
         },
 
         // Copy files that don't need compilation to dist/
         copy: {
             dist: {
                 files: [{
-                    dest: "<%= dirs.dest %>/",
-                    src: "assets/js/vendor/jquery*.min.js",
+                    dest: '<%= dirs.dest %>/',
+                    src: 'assets/js/vendor/jquery*.min.js',
                     expand: true,
-                    cwd: "<%= dirs.src %>/"
+                    cwd: '<%= dirs.src %>/'
                 }]
             }
         },
@@ -40,7 +38,7 @@ module.exports = function(grunt) {
                     decodeEntities: true,
                     ignoreCustomComments: [/^\s*google(off|on):\s/],
                     minifyCSS: {
-                        compatibility: "ie9",
+                        compatibility: 'ie9',
                         keepSpecialComments: 0
                     },
                     minifyJS: true,
@@ -58,34 +56,40 @@ module.exports = function(grunt) {
                     sortClassName: true
                 },
                 expand: true,
-                cwd: "<%= dirs.dest %>",
-                dest: "<%= dirs.dest %>",
-                src: ["**/*.html", "**/*.php"]
+                cwd: '<%= dirs.dest %>',
+                dest: '<%= dirs.dest %>',
+                src: ['**/*.html', '**/*.php']
             }
         },
 
         concat: {
             css: {
-                src: ["<%= dirs.src %>/assets/css/vendor/font-awesome.css",
-                      "<%= dirs.src %>/assets/css/vendor/bootstrap.css",
-                      "<%= dirs.src %>/assets/css/vendor/baguetteBox.css",
-                      "<%= dirs.src %>/assets/css/style.css"],
-                dest: "<%= dirs.dest %>/assets/css/pack.css"
+                src: [
+                    '<%= dirs.src %>/assets/css/vendor/font-awesome.css',
+                    '<%= dirs.src %>/assets/css/vendor/bootstrap.css',
+                    '<%= dirs.src %>/assets/css/vendor/baguetteBox.css',
+                    '<%= dirs.src %>/assets/css/style.css'
+                ],
+                dest: '<%= dirs.dest %>/assets/css/pack.css'
             },
-            jqueryJS : {
-                src: ["<%= dirs.src %>/assets/js/vendor/bootstrap.js",
-                      "<%= dirs.src %>/assets/js/downloads.js"],
-                dest: "<%= dirs.dest %>/assets/js/jquery-pack.js"
+            jqueryJS: {
+                src: [
+                    '<%= dirs.src %>/assets/js/vendor/bootstrap.js',
+                    '<%= dirs.src %>/assets/js/downloads.js'
+                ],
+                dest: '<%= dirs.dest %>/assets/js/jquery-pack.js'
             },
             js: {
-                src: ["<%= dirs.src %>/assets/js/vendor/plugins.js",
-                      "<%= dirs.src %>/assets/js/vendor/baguetteBox.js",
-                      "<%= dirs.src %>/assets/js/baguetteBox-init.js",
-                      "<%= dirs.src %>/assets/js/detect-os.js",
-                      "<%= dirs.src %>/assets/js/img-defer.js",
-                      "<%= dirs.src %>/assets/js/no-js-class.js",
-                      "<%= dirs.src %>/assets/js/google-analytics.js"],
-                dest: "<%= dirs.dest %>/assets/js/pack.js"
+                src: [
+                    '<%= dirs.src %>/assets/js/vendor/plugins.js',
+                    '<%= dirs.src %>/assets/js/vendor/baguetteBox.js',
+                    '<%= dirs.src %>/assets/js/baguetteBox-init.js',
+                    '<%= dirs.src %>/assets/js/detect-os.js',
+                    '<%= dirs.src %>/assets/js/img-defer.js',
+                    '<%= dirs.src %>/assets/js/no-js-class.js',
+                    '<%= dirs.src %>/assets/js/google-analytics.js'
+                ],
+                dest: '<%= dirs.dest %>/assets/js/pack.js'
             }
         },
 
@@ -95,9 +99,9 @@ module.exports = function(grunt) {
                     /(#|\.)baguetteBox(\-[a-zA-Z]+)?/,
                     // Bootstrap selectors added via JS
                     /\w\.in/,
-                    ".fade",
-                    ".collapse",
-                    ".collapsing",
+                    '.fade',
+                    '.collapse',
+                    '.collapsing',
                     /(#|\.)navbar(\-[a-zA-Z]+)?/,
                     /(#|\.)dropdown(\-[a-zA-Z]+)?/,
                     /(#|\.)(open)/,
@@ -106,24 +110,24 @@ module.exports = function(grunt) {
                     /\.no\-js/,
                     /\.defer/
                 ],
-                htmlroot: "<%= dirs.dest %>",
+                htmlroot: '<%= dirs.dest %>',
                 ignoreSheets: [/fonts.googleapis/],
-                stylesheets: ["/assets/css/pack.css"]
+                stylesheets: ['/assets/css/pack.css']
             },
             dist: {
-                src: "<%= dirs.dest %>/**/*.html",
-                dest: "<%= concat.css.dest %>"
+                src: '<%= dirs.dest %>/**/*.html',
+                dest: '<%= concat.css.dest %>'
             }
         },
 
         cssmin: {
             minify: {
                 options: {
-                    compatibility: "ie9",
+                    compatibility: 'ie9',
                     keepSpecialComments: 0
                 },
                 files: {
-                    "<%= uncss.dist.dest %>": "<%= concat.css.dest %>"
+                    '<%= uncss.dist.dest %>': '<%= concat.css.dest %>'
                 }
             }
         },
@@ -138,75 +142,75 @@ module.exports = function(grunt) {
             },
             minify: {
                 files: {
-                    "<%= concat.js.dest %>": "<%= concat.js.dest %>",
-                    "<%= concat.jqueryJS.dest %>": "<%= concat.jqueryJS.dest %>"
+                    '<%= concat.js.dest %>': '<%= concat.js.dest %>',
+                    '<%= concat.jqueryJS.dest %>': '<%= concat.jqueryJS.dest %>'
                 }
             }
         },
 
         filerev: {
             css: {
-                src: "<%= dirs.dest %>/assets/css/**/*.css"
+                src: '<%= dirs.dest %>/assets/css/**/*.css'
             },
             js: {
                 src: [
-                    "<%= dirs.dest %>/assets/js/**/*.js",
-                    "!<%= dirs.dest %>/assets/js/vendor/jquery*.min.js"
+                    '<%= dirs.dest %>/assets/js/**/*.js',
+                    '!<%= dirs.dest %>/assets/js/vendor/jquery*.min.js'
                 ]
             },
             images: {
                 src: [
-                    "<%= dirs.dest %>/assets/img/**/*.{jpg,jpeg,gif,png,svg}",
-                    "!<%= dirs.dest %>/assets/img/logo-256x256.png",
-                    "!<%= dirs.dest %>/assets/img/tiles/*.png"
+                    '<%= dirs.dest %>/assets/img/**/*.{jpg,jpeg,gif,png,svg}',
+                    '!<%= dirs.dest %>/assets/img/logo-256x256.png',
+                    '!<%= dirs.dest %>/assets/img/tiles/*.png'
                 ]
             }
         },
 
         useminPrepare: {
-            html: "<%= dirs.dest %>/index.html",
+            html: '<%= dirs.dest %>/index.html',
             options: {
-                dest: "<%= dirs.dest %>",
-                root: "<%= dirs.dest %>"
+                dest: '<%= dirs.dest %>',
+                root: '<%= dirs.dest %>'
             }
         },
 
         usemin: {
-            css: "<%= dirs.dest %>/assets/css/pack*.css",
-            html: ["<%= dirs.dest %>/**/*.html", "<%= dirs.dest %>/**/*.php"],
+            css: '<%= dirs.dest %>/assets/css/pack*.css',
+            html: ['<%= dirs.dest %>/**/*.html', '<%= dirs.dest %>/**/*.php'],
             options: {
-                assetsDirs: ["<%= dirs.dest %>/", "<%= dirs.dest %>/assets/img/"]
+                assetsDirs: ['<%= dirs.dest %>/', '<%= dirs.dest %>/assets/img/']
             }
         },
 
         cdnify: {
             build: {
                 options: {
-                    base: "https://cdn.mpc-hc.org/",
+                    base: 'https://cdn.mpc-hc.org/',
                     html: {
-                        "meta[itemprop='image']": "content",
-                        "meta[property='og:image:secure_url']": "content",
-                        "input[type='image']": "src"
+                        'meta[itemprop="image"]': 'content',
+                        'meta[property="og:image:secure_url"]': 'content',
+                        'input[type="image"]': 'src'
                     }
                 },
                 files: [{
                     expand: true,
-                    cwd: "<%= dirs.dest %>/",
-                    src: "**/*.{html,php}",
-                    dest: "<%= dirs.dest %>/"
+                    cwd: '<%= dirs.dest %>/',
+                    src: '**/*.{html,php}',
+                    dest: '<%= dirs.dest %>/'
                 }]
             }
         },
 
         connect: {
             options: {
-                hostname: "localhost",
+                hostname: 'localhost',
                 livereload: 35729,
                 port: 8000
             },
             livereload: {
                 options: {
-                    base: "<%= dirs.dest %>/",
+                    base: '<%= dirs.dest %>/',
                     open: true  // Automatically open the webpage in the default browser
                 }
             }
@@ -214,50 +218,56 @@ module.exports = function(grunt) {
 
         watch: {
             options: {
-                livereload: "<%= connect.options.livereload %>"
+                livereload: '<%= connect.options.livereload %>'
             },
             dev: {
-                files: ["<%= dirs.src %>/**", ".jshintrc", "_config.yml", "Gruntfile.js"],
-                tasks: "dev"
+                files: ['<%= dirs.src %>/**', '.eslintrc', '_config.yml', 'Gruntfile.js'],
+                tasks: 'dev'
             },
             build: {
-                files: ["<%= dirs.src %>/**", ".jshintrc", "_config.yml", "Gruntfile.js"],
-                tasks: "build"
+                files: ['<%= dirs.src %>/**', '.eslintrc', '_config.yml', 'Gruntfile.js'],
+                tasks: 'build'
             }
         },
 
         csslint: {
             options: {
-                csslintrc: ".csslintrc"
+                csslintrc: '.csslintrc'
             },
-            src: "<%= dirs.src %>/assets/css/style.css"
+            src: '<%= dirs.src %>/assets/css/style.css'
         },
 
         bootlint: {
             options: {
-                relaxerror: ["W001", "W002", "W003"]
+                relaxerror: ['W001', 'W002', 'W003']
             },
-            files: "<%= dirs.dest %>/**/*.html"
+            files: '<%= dirs.dest %>/**/*.html'
         },
 
-        jshint: {
+        eslint: {
             options: {
-                jshintrc: ".jshintrc"
+                config: '.eslintrc'
             },
-            files: {
-                src: ["Gruntfile.js", "<%= dirs.src %>/assets/js/*.js", "!<%= dirs.src %>/assets/js/google-analytics.js"]
+            gruntfile: {
+                src: 'Gruntfile.js'
+            },
+            src: {
+                src: [
+                    '<%= dirs.src %>/assets/js/*.js',
+                    '!<%= dirs.src %>/assets/js/google-analytics.js'
+                ]
             }
         },
 
         htmllint: {
-            src: "<%= dirs.dest %>/**/*.html"
+            src: '<%= dirs.dest %>/**/*.html'
         },
 
         accessibility: {
             options: {
-                accessibilityLevel: "WCAG2AA",
+                accessibilityLevel: 'WCAG2AA',
                 ignore: [
-                    "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Button.Name"
+                    'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Button.Name'
                 ],
                 reportLevels: {
                     notice: false,
@@ -266,53 +276,53 @@ module.exports = function(grunt) {
                 }
             },
             test: {
-                src: "<%= dirs.dest %>/**/*.html"
+                src: '<%= dirs.dest %>/**/*.html'
             }
         },
 
         clean: {
-            dist: "<%= dirs.dest %>/"
+            dist: '<%= dirs.dest %>/'
         }
 
     });
 
     // Load any grunt plugins found in package.json.
-    require("load-grunt-tasks")(grunt, { scope: "devDependencies" });
-    require("time-grunt")(grunt);
+    require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
+    require('time-grunt')(grunt);
 
-    grunt.registerTask("generate-sri", "Generate SRI hashes for our assets.", function () {
+    grunt.registerTask('generate-sri', 'Generate SRI hashes for our assets.', function () {
 
         function sriDigest(filePattern) {
-            var sriToolbox = require("sri-toolbox");
-            var matches = grunt.file.expand({ filter: "isFile" }, filePattern);
+            var sriToolbox = require('sri-toolbox');
+            var matches = grunt.file.expand({ filter: 'isFile' }, filePattern);
             var match = matches[0];     // `grunt.file.expand` returns an array
             var matchCount = matches.length;
-            var integrity = "";
+            var integrity = '';
 
             if (matchCount === 0) {
-                grunt.fail.fatal("Generating SRI failed; didn't find any matches!");
+                grunt.fail.fatal('Generating SRI failed; didn\'t find any matches!');
             } else if (matchCount > 1) {
-                // shouldn't really happen since we clean the "_site" directory
-                grunt.fail.fatal("Generating SRI failed; Found more than one matches!");
+                // shouldn't really happen since we clean the '_site' directory
+                grunt.fail.fatal('Generating SRI failed; Found more than one matches!');
             }
 
             try {
-                integrity = sriToolbox.generate({ algorithms: ["sha384"] }, grunt.file.read(match));
+                integrity = sriToolbox.generate({ algorithms: ['sha384'] }, grunt.file.read(match));
             } catch (err) {
                 grunt.log.error(err);
-                grunt.fail.fatal("Generating SRI hash failed.");
+                grunt.fail.fatal('Generating SRI hash failed.');
             }
 
-            grunt.log.ok("Generated SRI hash for " + match.cyan + ".");
+            grunt.log.ok('Generated SRI hash for ' + match.cyan + '.');
             return integrity;
 
         }
 
-        var packCssIntegrity = sriDigest("_site/assets/css/pack.*.css");
-        var packJsIntegrity = sriDigest("_site/assets/js/pack.*.js");
-        var jqueryPackJsIntegrity = sriDigest("_site/assets/js/jquery-pack.*.js");
+        var packCssIntegrity = sriDigest('_site/assets/css/pack.*.css');
+        var packJsIntegrity = sriDigest('_site/assets/js/pack.*.js');
+        var jqueryPackJsIntegrity = sriDigest('_site/assets/js/jquery-pack.*.js');
 
-        grunt.config("includereplace", {
+        grunt.config('includereplace', {
             dist: {
                 options: {
                     globals: {
@@ -322,10 +332,10 @@ module.exports = function(grunt) {
                     }
                 },
                 files: [{
-                    src: ["**/*.html", "**/*.php"],
-                    dest: "<%= dirs.dest %>/",
+                    src: ['**/*.html', '**/*.php'],
+                    dest: '<%= dirs.dest %>/',
                     expand: true,
-                    cwd: "<%= dirs.dest %>/"
+                    cwd: '<%= dirs.dest %>/'
                 }]
             }
         });
@@ -333,58 +343,58 @@ module.exports = function(grunt) {
     });
 
     var buildTasks = [
-        "clean",
-        "jekyll",
-        "useminPrepare",
-        "copy",
-        "concat",
-        "uncss",
-        "cssmin",
-        "uglify",
-        "filerev",
-        "usemin",
-        "generate-sri",
-        "includereplace",
-        "cdnify",
-        "htmlmin"
+        'clean',
+        'jekyll',
+        'useminPrepare',
+        'copy',
+        'concat',
+        'uncss',
+        'cssmin',
+        'uglify',
+        'filerev',
+        'usemin',
+        'generate-sri',
+        'includereplace',
+        'cdnify',
+        'htmlmin'
     ];
 
     // If we are on CI, skip the cdnify task
-    if (process.env.CI && process.env.CI.toLowerCase() === "true") {
+    if (process.env.CI && process.env.CI.toLowerCase() === 'true') {
         buildTasks.splice(12, 1);
     }
-    grunt.registerTask("build", buildTasks);
+    grunt.registerTask('build', buildTasks);
 
-    grunt.registerTask("test", [
-        "build",
-        "csslint",
-        "bootlint",
-        "jshint",
-        "htmllint",
-        "accessibility"
+    grunt.registerTask('test', [
+        'build',
+        'csslint',
+        'bootlint',
+        'eslint',
+        'htmllint',
+        'accessibility'
     ]);
 
-    grunt.registerTask("dev", [
-        "jekyll",
-        "useminPrepare",
-        "copy",
-        "concat",
-        "filerev",
-        "usemin",
-        "generate-sri",
-        "includereplace"
+    grunt.registerTask('dev', [
+        'jekyll',
+        'useminPrepare',
+        'copy',
+        'concat',
+        'filerev',
+        'usemin',
+        'generate-sri',
+        'includereplace'
     ]);
 
-    grunt.registerTask("server", [
-        "build",
-        "connect",
-        "watch:build"
+    grunt.registerTask('server', [
+        'build',
+        'connect',
+        'watch:build'
     ]);
 
-    grunt.registerTask("default", [
-        "dev",
-        "connect",
-        "watch:dev"
+    grunt.registerTask('default', [
+        'dev',
+        'connect',
+        'watch:dev'
     ]);
 
 };

@@ -1,33 +1,33 @@
-/* jshint jquery:true */
+/* eslint-env jquery */
 
 $(function() {
-    "use strict";
+    'use strict';
 
-    var $el = $(".toggleLink");
+    var $el = $('.toggleLink');
 
     if ($el.length) {
-        var collapsedToggleLinkCount = $(".toggleLink.collapsed").length;
+        var collapsedToggleLinkCount = $('.toggleLink.collapsed').length;
         var totalToggleLinkCount = $el.length;
 
         var checkButtonState = function() {
             if (collapsedToggleLinkCount === 0) {
                 // All elements are expanded
-                $(".closeAll").prop("disabled", false);
-                $(".expandAll").prop("disabled", true);
+                $('.closeAll').prop('disabled', false);
+                $('.expandAll').prop('disabled', true);
             } else if (collapsedToggleLinkCount === totalToggleLinkCount) {
                 // All elements are collapsed
-                $(".closeAll").prop("disabled", true);
-                $(".expandAll").prop("disabled", false);
+                $('.closeAll').prop('disabled', true);
+                $('.expandAll').prop('disabled', false);
             } else {
-                $(".closeAll").prop("disabled", false);
-                $(".expandAll").prop("disabled", false);
+                $('.closeAll').prop('disabled', false);
+                $('.expandAll').prop('disabled', false);
             }
         };
 
-        $el.on("click", function() {
+        $el.on('click', function() {
             // If the .toggleLink element has the `.collapsed` class,
             // decrease or increase the collapsedToggleLinkCount
-            if ($(this).hasClass("collapsed")) {
+            if ($(this).hasClass('collapsed')) {
                 collapsedToggleLinkCount--;
             } else {
                 collapsedToggleLinkCount++;
@@ -36,14 +36,14 @@ $(function() {
             checkButtonState();
         });
 
-        $(".closeAll").click(function() {
-            $(".panel-collapse.in").collapse("hide");           // hide any `panel`s
+        $('.closeAll').click(function() {
+            $('.panel-collapse.in').collapse('hide');           // hide any `panel`s
             collapsedToggleLinkCount = totalToggleLinkCount;    // reset the global count
             checkButtonState();
         });
 
-        $(".expandAll").click(function() {
-            $(".panel-collapse:not('.in')").collapse("show");   // show any `panel`s
+        $('.expandAll').click(function() {
+            $('.panel-collapse:not(".in")').collapse('show');   // show any `panel`s
             collapsedToggleLinkCount = 0;                       // reset the global count
             checkButtonState();
         });
