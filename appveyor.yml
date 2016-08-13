@@ -15,7 +15,10 @@ environment:
 
 install:
   - SET "PATH=C:\Ruby%ruby_folder_version%\bin;%PATH%"
-  - bundle install --retry 3
+  # Bundler downgrade should be removed when the issue is fixed upstream
+  - gem uninstall bundler -x
+  - gem install bundler -v "=1.10.6" --no-document
+  - bundle install --retry 3 --jobs=%NUMBER_OF_PROCESSORS% --clean --deployment
   - ps: Install-Product node "4" $env:platform
   - npm config set spin false
   - npm install
@@ -35,6 +38,5 @@ matrix:
   fast_finish: true
 
 cache:
-  - 'C:\Ruby%ruby_folder_version%\bin -> Gemfile,Gemfile.lock'
-  - 'C:\Ruby%ruby_folder_version%\lib\ruby\gems\%ruby_gems_folder% -> Gemfile,Gemfile.lock'
-  - 'node_modules -> package.json'
+  - 'node_modules -> appveyor.yml,package.json'
+  - 'vendor\bundle -> appveyor.yml,Gemfile,Gemfile.lock'
