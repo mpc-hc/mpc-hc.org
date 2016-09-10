@@ -19,10 +19,7 @@ before_install:
 
 install:
   - npm install
-  # Bundler downgrade should be removed when the issue is fixed upstream
-  - gem uninstall bundler -x
-  - gem install bundler -v "=1.10.6" --no-document
-  - bundle install --retry 3 --clean --deployment
+  - bundle install --retry 3 --clean --path vendor/bundle
 
 matrix:
   fast_finish: true
