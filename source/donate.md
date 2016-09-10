@@ -18,7 +18,7 @@ description: Donate to our project
 You can donate money to the project through our PayPal account.
 There is no minimal amount for your donation, but keep in mind that PayPal
 charges us a fee for each donation.
-See <a href="https://www.paypal.com/webapps/mpp/paypal-fees" target="_blank">https://www.paypal.com/webapps/mpp/paypal-fees</a>
+See <a href="https://www.paypal.com/webapps/mpp/paypal-fees" target="_blank">Fee Structure</a>
 for more information about this.
 
 If you click on one of the buttons below, you will be taken to the secure PayPal Web site.

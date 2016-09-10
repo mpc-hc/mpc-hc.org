@@ -16,8 +16,8 @@ description: Changelog of the latest MPC-HC stable build
    </p>
 </div>
 
-
 ## {{ site.version.short }} - {{ site.version.date }}
+
 * New:
   * Add Indonesian, Lithuanian and Punjabi translations
   * Ticket {% trac 5411 %}, Add an option to disable the preview in the web interface. This option is
@@ -41,9 +41,9 @@ description: Changelog of the latest MPC-HC stable build
     * MediaInfoLib to v0.7.75
     * Little CMS to v2.7 (git 07da965)
     * LAV Filters to stable version 0.66.0:
-        - LAV Splitter: New ASF/WMV demuxer
-        - Ticket {% trac 5548 %}, LAV Splitter: Fix some rare deadlocks at startup
-        - LAV Video Decoder: Allow hardware decoding of UHD video with AMD cards
+        * LAV Splitter: New ASF/WMV demuxer
+        * Ticket {% trac 5548 %}, LAV Splitter: Fix some rare deadlocks at startup
+        * LAV Video Decoder: Allow hardware decoding of UHD video with AMD cards
     * Arabic, Armenian, Basque, Bengali, British English, Catalan, Chinese (Simplified and Traditional),
       Croatian, Czech, Danish, Dutch, French, Galician, German, Greek, Hungarian, Japanese, Korean, Malay,
       Polish, Portuguese (Brazil), Romanian, Russian, Slovenian, Slovak, Spanish, Swedish, Thai, Turkish,

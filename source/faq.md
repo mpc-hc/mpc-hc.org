@@ -24,7 +24,7 @@ This is an abbreviation definition
 
 ---
 
-### Contents
+## Contents
 {:.no_toc}
 
 * Comment to trigger ToC generation
