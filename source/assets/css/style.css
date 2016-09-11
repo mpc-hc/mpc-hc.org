@@ -353,6 +353,35 @@ h6[id]:before {
 }
 
 
+.page-four-oh-four .jumbotron {
+    color: inherit;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 2.1428571435;
+    padding: 10px 0;
+}
+
+.page-four-oh-four .body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page-four-oh-four .jumbotron {
+    background-color: transparent;
+    text-align: center;
+}
+
+.page-four-oh-four .jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.page-four-oh-four footer {
+    border-top: 1px solid lightgray;
+    padding-top: 20px;
+}
+
+
 /* -- media queries -- */
 @media (max-width: 767px) {
     body {
