@@ -173,6 +173,48 @@ body {
 }
 
 
+/*
+animated navbar button
+*/
+.navbar-default .navbar-toggle {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    transition: all 0.2s;
+    width: 22px;
+}
+
+.navbar-default .navbar-toggle .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-default .navbar-toggle .middle-bar {
+    opacity: 0;
+}
+
+.navbar-default .navbar-toggle .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-default .navbar-toggle.collapsed .top-bar,
+.navbar-default .navbar-toggle.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+
+.navbar-default .navbar-toggle.collapsed .middle-bar {
+    opacity: 1;
+}
+
+
 /* footer */
 footer {
     font-size: 90%;

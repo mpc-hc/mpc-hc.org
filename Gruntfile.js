@@ -108,6 +108,7 @@ module.exports = function(grunt) {
                     /\w\.in/,
                     '.fade',
                     '.collapse',
+                    '.collapsed',
                     '.collapsing',
                     /(#|\.)navbar(\-[a-zA-Z]+)?/,
                     /(#|\.)dropdown(\-[a-zA-Z]+)?/,
