@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "MPC-HC Team (https://github.com/mpc-hc/mpc-hc.org)",
   "description": "The mpc-hc.org source code",
-  "homepage": "https://mpc-hc.org",
+  "homepage": "https://mpc-hc.org/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mpc-hc/mpc-hc.org.git"
@@ -19,6 +19,7 @@
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-accessibility": "^4.1.0",
+    "grunt-autoprefixer": "^3.0.4",
     "grunt-bootlint": "^0.10.0",
     "grunt-cdnify": "^1.0.2",
     "grunt-contrib-clean": "^1.0.0",
