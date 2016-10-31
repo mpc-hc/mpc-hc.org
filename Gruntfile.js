@@ -103,19 +103,19 @@ module.exports = function(grunt) {
         uncss: {
             options: {
                 ignore: [
-                    /(#|\.)baguetteBox(\-[a-zA-Z]+)?/,
+                    /(#|\.)baguetteBox(-[a-zA-Z]+)?/,
                     // Bootstrap selectors added via JS
                     /\w\.in/,
                     '.fade',
                     '.collapse',
                     '.collapsed',
                     '.collapsing',
-                    /(#|\.)navbar(\-[a-zA-Z]+)?/,
-                    /(#|\.)dropdown(\-[a-zA-Z]+)?/,
+                    /(#|\.)navbar(-[a-zA-Z]+)?/,
+                    /(#|\.)dropdown(-[a-zA-Z]+)?/,
                     /(#|\.)(open)/,
                     // injected via JS
                     /disabled/,
-                    /\.no\-js/,
+                    /\.no-js/,
                     /\.defer/
                 ],
                 htmlroot: '<%= dirs.dest %>',
