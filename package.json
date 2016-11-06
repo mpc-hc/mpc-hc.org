@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-accessibility": "^4.1.0",
+    "grunt-accessibility": "^5.0.0",
     "grunt-autoprefixer": "^3.0.4",
     "grunt-bootlint": "^0.10.0",
     "grunt-cdnify": "^1.0.2",
