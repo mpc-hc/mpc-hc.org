@@ -229,11 +229,11 @@ module.exports = function(grunt) {
                 livereload: '<%= connect.options.livereload %>'
             },
             dev: {
-                files: ['<%= dirs.src %>/**', '.eslintrc', '_config.yml', 'Gruntfile.js'],
+                files: ['<%= dirs.src %>/**', '_config.yml', 'Gruntfile.js'],
                 tasks: 'dev'
             },
             build: {
-                files: ['<%= dirs.src %>/**', '.eslintrc', '_config.yml', 'Gruntfile.js'],
+                files: ['<%= dirs.src %>/**', '_config.yml', 'Gruntfile.js'],
                 tasks: 'build'
             }
         },
@@ -254,7 +254,7 @@ module.exports = function(grunt) {
 
         eslint: {
             options: {
-                config: '.eslintrc'
+                config: '.eslintrc.json'
             },
             gruntfile: {
                 src: 'Gruntfile.js'
