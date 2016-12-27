@@ -275,9 +275,6 @@ module.exports = function(grunt) {
             options: {
                 accessibilityLevel: 'WCAG2AA',
                 browser: true,
-                ignore: [
-                    'WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Button.Name'
-                ],
                 reportLevels: {
                     notice: false,
                     warning: false,
