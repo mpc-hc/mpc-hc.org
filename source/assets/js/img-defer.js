@@ -1,23 +1,23 @@
-// Original source: https://varvy.com/pagespeed/defer-images.html
-
-(function() {
+(function loadImgDefer () {
     'use strict';
 
-    var imgElement = document.getElementsByTagName('img');
+    var images = document.getElementsByTagName('img');
+    var imagesNumber = images.length;
 
-    if (imgElement) {
-
-        var imgDefer = function () {
-            for (var i = 0, len = imgElement.length; i < len; i++) {
-                if (imgElement[i].hasAttribute('data-src')) {
-                    imgElement[i].setAttribute('src', imgElement[i].getAttribute('data-src'));
-                    imgElement[i].removeAttribute('data-src');
-                    imgElement[i].className += ' loaded';
-                }
-            }
-        };
-
-        window.addEventListener('load', imgDefer, false);
+    if (imagesNumber === 0) {
+        return;
     }
+
+    function imgDefer () {
+        for (var i = 0; i < imagesNumber; i++) {
+            if (images[i].hasAttribute('data-src')) {
+                images[i].setAttribute('src', images[i].getAttribute('data-src'));
+                images[i].removeAttribute('data-src');
+                images[i].classList.add('loaded');
+            }
+        }
+    }
+
+    window.addEventListener('load', imgDefer, false);
 
 })();

@@ -1,17 +1,12 @@
 /* global baguetteBox */
 
-(function() {
+(function initBaguetteBox () {
     'use strict';
 
-    var selector = '.gallery';
-    var el = document.querySelectorAll(selector);
-
-    if (el.length) {
-        baguetteBox.run(selector, {
-            async: false,
-            buttons: 'auto',
-            noScrollbars: true
-        });
-    }
+    baguetteBox.run('.gallery', {
+        async: true,
+        buttons: true,
+        noScrollbars: true
+    });
 
 })();

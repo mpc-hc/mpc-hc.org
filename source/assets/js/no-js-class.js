@@ -1,4 +1,4 @@
-(function() {
+(function nojs () {
     'use strict';
 
     var docEl = document.documentElement;
