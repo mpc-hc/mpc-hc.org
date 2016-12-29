@@ -204,13 +204,13 @@ MPC-HC is based on the original MPC version © 2002-2006 by Gabest (e-mail unkno
 | libdivide | zlib License | <http://libdivide.com/> |
 | Little CMS | MIT License | <http://www.littlecms.com/> |
 | Logitech SDK | - | - |
-| MediaInfoLib | Simplified BSD License | <http://mediaarea.net/MediaInfo> |
+| MediaInfoLib | Simplified BSD License | <https://mediaarea.net/MediaInfo> |
 | Mhook | MIT License | <https://github.com/martona/mhook> |
 | MultiMon | CPOL | <http://www.codeproject.com/KB/GDI/multimon.aspx> |
 | QuickTime SDK | - | <http://developer.apple.com/quicktime/> |
 | RARFileSource | GPLv2+ | <http://www.v12pwr.com/RARFileSource/> |
 | RealMedia SDK | - | - |
-| ResizableLib | Artistic License | <https://sourceforge.net/projects/resizablelib/> |
+| ResizableLib | Artistic License | <https://github.com/ppescher/resizablelib> |
 | sanear | LGPLv2.1 | <https://github.com/alexmarsev/sanear> |
 | Silk Icons | CC Attribution 2.5 | <http://www.famfamfam.com/lab/icons/silk/> |
 | SoundTouch | LGPLv2.1 | <http://www.surina.net/soundtouch/> |
@@ -218,7 +218,7 @@ MPC-HC is based on the original MPC version © 2002-2006 by Gabest (e-mail unkno
 | TreePropSheet | - | <http://www.codeproject.com/Articles/3709/> |
 | UnRAR | freeware | <http://www.rarlab.com/rar_add.htm> |
 | VirtualDub | GPLv2+ | <http://www.virtualdub.org/> |
-| ZenLib | zlib License | <https://sourceforge.net/projects/zenlib/> |
+| ZenLib | zlib License | <https://github.com/MediaArea/ZenLib> |
 | zita-resampler | GPLv3 | <http://kokkinizita.linuxaudio.org/linuxaudio/> |
 | zlib | zlib License | <http://zlib.net/> |
 
