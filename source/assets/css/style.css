@@ -9,12 +9,8 @@ body {
     background-color: white;
     margin-bottom: 30px;
     padding: 30px 65px 60px 65px;
-    -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
-    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.25), inset 0 0 0 rgba(0, 0, 0, 0.1);
-       -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.25), inset 0 0 0 rgba(0, 0, 0, 0.1);
-            box-shadow: 0 0 4px rgba(0, 0, 0, 0.25), inset 0 0 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25), inset 0 0 0 rgba(0, 0, 0, 0.1);
 }
 
 .button-wrapper {
@@ -248,10 +244,7 @@ footer ul {
 .social-ul .fa,
 .fa-rss {
     color: lightgray;
-    -webkit-transition: all 0.5s ease 0s;
-       -moz-transition: all 0.5s ease 0s;
-         -o-transition: all 0.5s ease 0s;
-            transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 
 .social-ul .fa:hover,
@@ -259,11 +252,7 @@ footer ul {
 .social-ul .fa:focus,
 .fa-rss:focus {
     text-decoration: none;
-    -webkit-transform: scale(1.5);
-       -moz-transform: scale(1.5);
-        -ms-transform: scale(1.5);
-         -o-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 .fa-facebook-f:hover {
@@ -357,10 +346,7 @@ h6[id]:before {
 
 .defer.loaded {
     opacity: 1;
-    -webkit-transition: opacity 0.3s ease 0s;
-       -moz-transition: opacity 0.3s ease 0s;
-         -o-transition: opacity 0.3s ease 0s;
-            transition: opacity 0.3s ease 0s;
+    transition: opacity 0.3s ease 0s;
 }
 
 .browserPrompt {
@@ -387,8 +373,6 @@ h6[id]:before {
 }
 
 .mpc-team img {
-    -webkit-border-radius: 0.25rem;
-    -moz-border-radius: 0.25rem;
     border-radius: 0.25rem;
     float: left;
     margin-right: 0.5rem;
@@ -399,11 +383,7 @@ h6[id]:before {
     background-color: transparent;
     margin-bottom: 30px;
     padding: 0 0 60px 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
     border-radius: 0;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
     box-shadow: none;
 }
 
@@ -444,9 +424,7 @@ h6[id]:before {
 
     .main-container {
         padding: 0 25px;
-        -webkit-box-shadow: none;
-           -moz-box-shadow: none;
-                box-shadow: none;
+        box-shadow: none;
     }
 
     footer {
