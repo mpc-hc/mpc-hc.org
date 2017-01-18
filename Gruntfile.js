@@ -169,8 +169,8 @@ module.exports = function(grunt) {
             images: {
                 src: [
                     '<%= dirs.dest %>/assets/img/**/*.{jpg,jpeg,gif,png,svg}',
-                    '!<%= dirs.dest %>/assets/img/logo-256x256.png',
-                    '!<%= dirs.dest %>/assets/img/tiles/*.png'
+                    '!<%= dirs.dest %>/assets/img/favicons/*.{jpg,jpeg,gif,png,svg}',
+                    '!<%= dirs.dest %>/assets/img/logo-256x256.png'
                 ]
             }
         },
