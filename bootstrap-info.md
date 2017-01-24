@@ -1,8 +1,6 @@
-http://getbootstrap.com/customize/?id=331b5a4727fb4e1026d828ca0f98e57e
-
+http://getbootstrap.com/customize/?id=508cd7951ce52220b977fe8d61b5fdde
 
 Enabled components in v3.3.7:
-
 
 * Common CSS (all)
   * Print media styles
