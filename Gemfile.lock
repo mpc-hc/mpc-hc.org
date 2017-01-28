@@ -7,7 +7,7 @@ GEM
     ffi (1.9.17)
     ffi (1.9.17-x64-mingw32)
     forwardable-extended (2.6.0)
-    jekyll (3.3.1)
+    jekyll (3.4.0)
       addressable (~> 2.4)
       colorator (~> 1.0)
       jekyll-sass-converter (~> 1.0)
@@ -40,7 +40,7 @@ GEM
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
     rb-fsevent (0.9.8)
-    rb-inotify (0.9.7)
+    rb-inotify (0.9.8)
       ffi (>= 0.5.0)
     rouge (1.11.1)
     safe_yaml (1.0.4)
@@ -51,7 +51,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  jekyll (~> 3.3.0)
+  jekyll (~> 3.4.0)
   jekyll-avatar (~> 0.4.1)
   jekyll-email-protect (~> 1.0.3)
   jekyll-feed (~> 0.8.0)
