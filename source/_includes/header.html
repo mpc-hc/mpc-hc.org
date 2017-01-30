@@ -11,7 +11,6 @@
 
         {% capture meta_description %}{% if page.description %}{{ page.description }}{% if paginator.page and paginator.page != 1 %} - Page {{ paginator.page }}{% endif%}{% elsif page.excerpt %}{{ page.excerpt | newline_to_br | replace: '<br />', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | rstrip | truncate: 155 }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
         <meta name="description" content="{{ meta_description }}">
-        <meta name="keywords" content="MPC, MPC-HC, Media Player Classic, Media Player Classic - Home Cinema, open source media player, video, audio, mkv, avi, xvid, x264, matroska">
         <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 
         <link rel="stylesheet" href="/assets/css/pack.css" integrity="@@packCssIntegrity" crossorigin="anonymous">
