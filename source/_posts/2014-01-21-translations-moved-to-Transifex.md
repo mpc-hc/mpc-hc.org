@@ -1,6 +1,5 @@
 ---
 author: Underground78
-layout: news
 title: Translations moved to Transifex
 ---
 

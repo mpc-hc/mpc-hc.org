@@ -1,6 +1,5 @@
 ---
 author: vBm
-layout: news
 title: Welcome to the new website
 ---
 

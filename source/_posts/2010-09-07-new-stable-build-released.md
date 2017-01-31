@@ -1,6 +1,5 @@
 ---
 author: tetsuo55
-layout: news
 title: New stable build released
 ---
 

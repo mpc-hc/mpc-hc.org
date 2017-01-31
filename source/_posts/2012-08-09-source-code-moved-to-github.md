@@ -1,6 +1,5 @@
 ---
 author: XhmikosR
-layout: news
 title: Source code moved to GitHub
 ---
 

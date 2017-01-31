@@ -1,5 +1,4 @@
 ---
-layout: default
 title: A driver just crashed
 permalink: /driver-crash.php
 slug: driver-crash

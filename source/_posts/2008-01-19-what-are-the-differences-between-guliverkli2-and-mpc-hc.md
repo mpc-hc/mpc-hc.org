@@ -1,6 +1,5 @@
 ---
 author: casimir666
-layout: news
 title: What are the differences between Guliverkli2 and MPC-HC?
 ---
 

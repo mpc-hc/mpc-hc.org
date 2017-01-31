@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Downloads
 permalink: /downloads/
 slug: downloads

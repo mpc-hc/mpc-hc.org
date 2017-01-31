@@ -1,5 +1,4 @@
 ---
-layout: default
 title: An external filter just crashed
 permalink: /external-filter-crash.php
 slug: external-filter-crash

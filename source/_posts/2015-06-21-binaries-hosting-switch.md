@@ -1,6 +1,5 @@
 ---
 author: XhmikosR
-layout: news
 title: Binaries moved to MaxCDN
 ---
 

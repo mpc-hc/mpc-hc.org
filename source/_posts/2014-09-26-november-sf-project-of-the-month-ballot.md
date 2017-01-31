@@ -1,6 +1,5 @@
 ---
 author: XhmikosR
-layout: news
 title: SourceForge Project of the Month
 ---
 

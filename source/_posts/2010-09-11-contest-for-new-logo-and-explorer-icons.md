@@ -1,6 +1,5 @@
 ---
 author: tetsuo55
-layout: news
 title: Contest for new Logo and Explorer Icons
 ---
 

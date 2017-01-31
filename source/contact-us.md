@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Contact us
 permalink: /contact-us/
 slug: contact-us

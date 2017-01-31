@@ -1,6 +1,5 @@
 ---
 author: casimir666
-layout: news
 title: MPC-HC will support DXVA for Intel G45
 ---
 

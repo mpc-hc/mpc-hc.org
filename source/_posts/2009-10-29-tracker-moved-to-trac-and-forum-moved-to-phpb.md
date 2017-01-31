@@ -1,6 +1,5 @@
 ---
 author: tetsuo55
-layout: news
 title: Tracker moved to Trac and forum moved to phpBB
 ---
 

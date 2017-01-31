@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Donations
 permalink: /donate/
 slug: donate

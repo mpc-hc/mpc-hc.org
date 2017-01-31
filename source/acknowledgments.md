@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Acknowledgments
 permalink: /acknowledgments/
 slug: acknowledgments

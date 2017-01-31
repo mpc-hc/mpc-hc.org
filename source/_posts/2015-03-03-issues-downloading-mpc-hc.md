@@ -1,6 +1,5 @@
 ---
 author: XhmikosR
-layout: news
 title: Issues downloading MPC-HC
 ---
 

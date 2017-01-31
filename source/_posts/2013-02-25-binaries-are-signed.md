@@ -1,6 +1,5 @@
 ---
 author: XhmikosR
-layout: news
 title: Binaries are signed
 ---
 

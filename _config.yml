@@ -13,9 +13,24 @@ gems:
   - jekyll-sitemap
 
 exclude:
-# we generate those files ourselves
-- "*.css"
-- "*.js"
+  # we generate those files ourselves
+  - "*.css"
+  - "*.js"
+
+# https://jekyllrb.com/docs/configuration/#front-matter-defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "news"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
 
 # paginate
 paginate:           10

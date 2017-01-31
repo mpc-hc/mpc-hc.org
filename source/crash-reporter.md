@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Crash Reporter
 permalink: /crash-reporter/
 slug: crash-reporter

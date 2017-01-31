@@ -1,5 +1,4 @@
 ---
-layout: default
 title: About
 permalink: /about/
 slug: about
