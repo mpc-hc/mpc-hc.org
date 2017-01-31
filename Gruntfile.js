@@ -366,9 +366,12 @@ module.exports = function(grunt) {
     ];
 
     // If we are on CI, skip the cdnify task
-    if (process.env.CI && process.env.CI.toLowerCase() === 'true') {
+    var envCI = process.env.CI || process.env.ci;
+
+    if (envCI && envCI.toLowerCase() === 'true') {
         buildTasks.splice(12, 1);
     }
+
     grunt.registerTask('build', buildTasks);
 
     grunt.registerTask('test', [
