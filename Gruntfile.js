@@ -26,6 +26,7 @@ module.exports = function(grunt) {
                     decodeEntities: true,
                     ignoreCustomComments: [/^\s*google(off|on):\s/],
                     minifyCSS: {
+                        aggressiveMerging: false,
                         compatibility: 'ie9',
                         keepSpecialComments: 0
                     },
@@ -131,6 +132,7 @@ module.exports = function(grunt) {
         cssmin: {
             minify: {
                 options: {
+                    aggressiveMerging: false,
                     compatibility: 'ie9',
                     keepSpecialComments: 0
                 },
