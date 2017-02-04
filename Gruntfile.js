@@ -78,9 +78,16 @@ module.exports = function(grunt) {
                     '<%= dirs.src %>/assets/js/detect-os.js',
                     '<%= dirs.src %>/assets/js/img-defer.js',
                     '<%= dirs.src %>/assets/js/no-js-class.js',
+                    '<%= dirs.src %>/assets/js/pwa.js',
                     '<%= dirs.src %>/assets/js/google-analytics.js'
                 ],
                 dest: '<%= dirs.dest %>/assets/js/pack.js'
+            },
+            sw: {
+                src: [
+                    '<%= dirs.src %>/assets/js/sw.js'
+                ],
+                dest: '<%= dirs.dest %>/sw.min.js'
             }
         },
 
@@ -153,7 +160,8 @@ module.exports = function(grunt) {
             minify: {
                 files: {
                     '<%= concat.js.dest %>': '<%= concat.js.dest %>',
-                    '<%= concat.jqueryJS.dest %>': '<%= concat.jqueryJS.dest %>'
+                    '<%= concat.jqueryJS.dest %>': '<%= concat.jqueryJS.dest %>',
+                    '<%= concat.sw.dest %>': '<%= concat.sw.dest %>'
                 }
             }
         },
@@ -165,7 +173,8 @@ module.exports = function(grunt) {
             js: {
                 src: [
                     '<%= dirs.dest %>/assets/js/**/*.js',
-                    '!<%= dirs.dest %>/assets/js/vendor/jquery*.min.js'
+                    '!<%= dirs.dest %>/assets/js/vendor/jquery*.min.js',
+                    '<%= dirs.dest %>/sw.min.js'
                 ]
             },
             images: {
@@ -178,7 +187,9 @@ module.exports = function(grunt) {
         },
 
         useminPrepare: {
-            html: '<%= dirs.dest %>/index.html',
+            html: [
+                '<%= dirs.dest %>/index.html'
+            ],
             options: {
                 dest: '<%= dirs.dest %>',
                 root: '<%= dirs.dest %>'
@@ -186,11 +197,23 @@ module.exports = function(grunt) {
         },
 
         usemin: {
-            css: '<%= dirs.dest %>/assets/css/pack*.css',
-            html: ['<%= dirs.dest %>/**/*.html', '<%= dirs.dest %>/**/*.php'],
             options: {
-                assetsDirs: ['<%= dirs.dest %>/', '<%= dirs.dest %>/assets/img/']
-            }
+                assetsDirs: [
+                    '<%= dirs.dest %>/',
+                    '<%= dirs.dest %>/assets/img/'
+                ],
+                patterns: {
+                    js: [
+                        [/navigator\.serviceWorker\.register\(["'](\/sw\.min\.js)["']/gm, 'Replacing reference to sw.min.js']
+                    ]
+                }
+            },
+            css: '<%= dirs.dest %>/assets/css/pack*.css',
+            js: '<%= dirs.dest %>/assets/js/pack*.js',
+            html: [
+                '<%= dirs.dest %>/**/*.html',
+                '<%= dirs.dest %>/**/*.php'
+            ]
         },
 
         cdnify: {
