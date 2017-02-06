@@ -1,8 +1,8 @@
 (function detectOS () {
     'use strict';
 
-    var arch = navigator.userAgent.match(/x86_64|Win64|WOW64/) ||
-               navigator.cpuClass === 'x64' ? 'x64' : 'x86';
+    var arch = window.navigator.userAgent.match(/x86_64|Win64|WOW64/) ||
+               window.navigator.cpuClass === 'x64' ? 'x64' : 'x86';
     var href = 'https://binaries.mpc-hc.org/';
     var element = document.getElementById('downloadButton');
 
