@@ -21,7 +21,7 @@ GEM
     jekyll-avatar (0.4.2)
       jekyll (~> 3.0)
     jekyll-email-protect (1.0.3)
-    jekyll-feed (0.8.0)
+    jekyll-feed (0.9.1)
       jekyll (~> 3.3)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.0)
@@ -54,7 +54,7 @@ DEPENDENCIES
   jekyll (~> 3.4.0)
   jekyll-avatar (~> 0.4.1)
   jekyll-email-protect (~> 1.0.3)
-  jekyll-feed (~> 0.8.0)
+  jekyll-feed (~> 0.9.1)
   jekyll-paginate (~> 1.1.0)
   jekyll-sitemap (~> 1.0.0)
 
