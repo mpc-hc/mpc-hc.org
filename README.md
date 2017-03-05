@@ -1,8 +1,8 @@
 # The source code of <https://mpc-hc.org/>
 
 [![Linux Build Status](https://img.shields.io/travis/mpc-hc/mpc-hc.org/master.svg?label=Linux%20build)](https://travis-ci.org/mpc-hc/mpc-hc.org)
-[![Windows Build status](https://img.shields.io/appveyor/ci/XhmikosR/mpc-hc-org/master.svg?label=Windows%20build)](https://ci.appveyor.com/project/XhmikosR/mpc-hc-org/branch/master)
-[![devDependency Status](https://img.shields.io/david/dev/mpc-hc/mpc-hc.org.svg)](https://david-dm.org/mpc-hc/mpc-hc.org#info=devDependencies)
+[![Windows Build Status](https://img.shields.io/appveyor/ci/XhmikosR/mpc-hc-org/master.svg?label=Windows%20build)](https://ci.appveyor.com/project/XhmikosR/mpc-hc-org/branch/master)
+[![dependencies Status](https://img.shields.io/david/mpc-hc/mpc-hc.org.svg)](https://david-dm.org/mpc-hc/mpc-hc.org)
 
 ## Getting started
 
