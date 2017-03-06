@@ -11,7 +11,7 @@ Media Player Classic - Home Cinema is an extremely light-weight media player for
 
 * It is written in C++.
 * Supports GPU assisted decoding.
-* Translated in [41 languages](https://www.transifex.com/mpc-hc/mpc-hc/).
+* Translated in [42 languages](https://www.transifex.com/mpc-hc/mpc-hc/).
 
 
 ## MPC-HC Team

@@ -50,10 +50,10 @@ encoding:           UTF-8
 cdn_url:            https://cdn.mpc-hc.org
 
 version:
-  short:            1.7.10
-  long:             1.7.10.0
-  hash:             "d911f14"
-  date:             "14 November 2015"
+  short:            1.7.11
+  long:             1.7.11.0
+  hash:             "b989276ec"
+  date:             "06 March 2017"
 
 feed:
   description:      Latest information about the MPC-HC project.
