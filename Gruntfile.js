@@ -297,6 +297,11 @@ module.exports = function(grunt) {
         },
 
         htmllint: {
+            options: {
+                ignore: [
+                    'Attribute "color" not allowed on element "link" at this point.'
+                ]
+            },
             src: '<%= dirs.dest %>/**/*.html'
         },
 
