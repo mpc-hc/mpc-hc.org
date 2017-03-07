@@ -34,7 +34,7 @@ description: Changelog of the latest MPC-HC stable build
     * PnS Rotate Z- now rotates 90 degrees (counter-clockwise)
     * The postive rotate functions still do 1 degree rotation around their axis
   * Hide the infobar in normal view preset. This makes it equal to default view
-  * Ticket {% trac 2022 %}/{% trac 4779 %}: Rewrite subtitles downloading framework
+  * Ticket {% trac 2022 %}/{% trac 4779 %}: Rewrite subtitle downloading framework
     * Support for multiple subtitle providers including the default OpenSubtitles as well as
       podnapisi, titlovi, SubDB, ysubs and Napisy24 which can be enabled in Options (Subtitles → Misc)
     * Ticket {% trac 5193 %}, Ability to upload subtitles to OpenSubtitles and SubDB
