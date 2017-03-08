@@ -206,7 +206,9 @@ MPC-HC is based on the original MPC version © 2002-2006 by Gabest (e-mail unkno
 | MediaInfoLib | Simplified BSD License | <https://mediaarea.net/MediaInfo> |
 | Mhook | MIT License | <https://github.com/martona/mhook> |
 | MultiMon | CPOL | <http://www.codeproject.com/KB/GDI/multimon.aspx> |
+| NanoSVG | zlib License | <https://github.com/memononen/nanosvg> |
 | QuickTime SDK | - | <http://developer.apple.com/quicktime/> |
+| RapidJSON | MIT License | <https://github.com/miloyip/rapidjson> |
 | RARFileSource | GPLv2+ | <http://www.v12pwr.com/RARFileSource/> |
 | RealMedia SDK | - | - |
 | ResizableLib | Artistic License | <https://github.com/ppescher/resizablelib> |
@@ -214,9 +216,11 @@ MPC-HC is based on the original MPC version © 2002-2006 by Gabest (e-mail unkno
 | Silk Icons | CC Attribution 2.5 | <http://www.famfamfam.com/lab/icons/silk/> |
 | SoundTouch | LGPLv2.1 | <http://www.surina.net/soundtouch/> |
 | soxr | LGPLv2.1+ | <https://sourceforge.net/projects/soxr/> |
+| tinyxml2 | zlib License | <http://www.grinninglizard.com/tinyxml2/> |
 | TreePropSheet | - | <http://www.codeproject.com/Articles/3709/> |
 | UnRAR | freeware | <http://www.rarlab.com/rar_add.htm> |
 | VirtualDub | GPLv2+ | <http://www.virtualdub.org/> |
+| XmlRpc4Win | MIT License | <https://github.com/drtimcooper/XmlRpc4Win> |
 | ZenLib | zlib License | <https://github.com/MediaArea/ZenLib> |
 | zita-resampler | GPLv3 | <http://kokkinizita.linuxaudio.org/linuxaudio/> |
 | zlib | zlib License | <http://zlib.net/> |
