@@ -1,3 +1,5 @@
+/* eslint no-console:off */
+
 (function setupSW () {
     'use strict';
 
