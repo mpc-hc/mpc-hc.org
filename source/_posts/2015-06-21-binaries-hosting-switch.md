@@ -10,7 +10,7 @@ But many things have changed since then, and we needed to adapt to that.
 
 First, [we moved our source code to GitHub](/2012/08/09/source-code-moved-to-github/).
 Then we managed to [move to our own server and domain](/2013/02/24/website-was-moved/),
-the server was kindly provided by [CloudVPS](http://www.cloudvps.com/).
+the server was kindly provided by [CloudVPS](https://www.cloudvps.com/).
 
 Now the time has come to move the last thing away from SourceForge, which is our binaries.
 We are happy to be provided with a CDN by [MaxCDN](https://www.maxcdn.com/).

@@ -17,9 +17,9 @@ for more information.
 MPC-HC has two official channels on the freenode IRC network. Developers with
 commit rights have operator status, contributors have voice in the channels.
 
-* [#mpc-hc @ freenode](irc://irc.freenode.net/mpc-hc/) is for user support and general questions.  [Webchat](http://webchat.freenode.net/?channels=#mpc-hc)
+* [#mpc-hc @ freenode](irc://irc.freenode.net/mpc-hc/) is for user support and general questions.  [Webchat](https://webchat.freenode.net/?channels=#mpc-hc)
 * [#mpc-hc-dev @ freenode](irc://irc.freenode.net/mpc-hc-dev/) is strictly
-  dedicated to MPC-HC development. This means development of MPC-HC itself. [Webchat](http://webchat.freenode.net/?channels=#mpc-hc-dev)
+  dedicated to MPC-HC development. This means development of MPC-HC itself. [Webchat](https://webchat.freenode.net/?channels=#mpc-hc-dev)
 
 ### Rules
 

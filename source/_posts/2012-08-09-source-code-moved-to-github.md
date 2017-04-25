@@ -4,7 +4,7 @@ title: Source code moved to GitHub
 ---
 
 After a lot of discussion, all the people involved with the development decided
-to move to [Git](http://git-scm.com/) and to [GitHub](https://github.com/mpc-hc/mpc-hc)
+to move to [Git](https://git-scm.com/) and to [GitHub](https://github.com/mpc-hc/mpc-hc)
 for hosting the source.
 
 The SourceForge SVN repository isn't updated anymore, but this might change

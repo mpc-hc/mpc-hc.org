@@ -10,7 +10,7 @@ all kinds of issues; it was slow, unmaintainable, custom query was broken for
 at least 4 years now. We had reported all this to SourceForge, but they didn't
 do anything; especially after their "new" platform launch, all our hopes were lost.
 
-I'd like to thank **[CloudVPS](http://www.cloudvps.com/)**
+I'd like to thank **[CloudVPS](https://www.cloudvps.com/)**
 for sponsoring us with a server, **Armada** for making the sponsors
 research and negotiations, and last, but definitely not least, **JellyFrog**
 for setting up the new Trac.
