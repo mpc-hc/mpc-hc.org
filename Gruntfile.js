@@ -66,7 +66,7 @@ module.exports = function(grunt) {
             },
             jqueryJS: {
                 src: [
-                    '<%= dirs.src %>/assets/js/vendor/jquery.min.js',
+                    '<%= dirs.src %>/assets/js/vendor/jquery.slim.min.js',
                     '<%= dirs.src %>/assets/js/vendor/bootstrap.js',
                     '<%= dirs.src %>/assets/js/downloads.js'
                 ],
