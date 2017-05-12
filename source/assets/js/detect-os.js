@@ -5,6 +5,12 @@
                window.navigator.cpuClass === 'x64' ? 'x64' : 'x86';
     var href = 'https://binaries.mpc-hc.org/';
     var downloadButton = document.getElementById('downloadButton');
+
+    // getElementById returns null if it has no matches
+    if (!downloadButton) {
+        return;
+    }
+
     var version = downloadButton.getAttribute('data-version');
     // querySelector is enough here since we only need the first match
     var buttonSubArchText = document.querySelector('.button-sub span');
@@ -20,8 +26,7 @@
         }
     };
 
-    // getElementById returns null if it has no matches
-    if (!downloadButton || !version || !buttonSubArchText) {
+    if (!version || !buttonSubArchText) {
         return;
     }
 
