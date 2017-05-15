@@ -47,8 +47,6 @@ url:                https://mpc-hc.org
 encoding:           UTF-8
 
 # custom variables
-cdn_url:            https://cdn.mpc-hc.org
-
 version:
   short:            1.7.11
   long:             1.7.11.0

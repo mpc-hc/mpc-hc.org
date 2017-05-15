@@ -220,25 +220,6 @@ module.exports = function(grunt) {
             ]
         },
 
-        cdnify: {
-            build: {
-                options: {
-                    base: 'https://cdn.mpc-hc.org/',
-                    html: {
-                        'meta[itemprop="image"]': 'content',
-                        'meta[property="og:image:secure_url"]': 'content',
-                        'input[type="image"]': 'src'
-                    }
-                },
-                files: [{
-                    expand: true,
-                    cwd: '<%= dirs.dest %>/',
-                    src: '**/*.{html,php}',
-                    dest: '<%= dirs.dest %>/'
-                }]
-            }
-        },
-
         connect: {
             options: {
                 hostname: 'localhost',
@@ -390,16 +371,8 @@ module.exports = function(grunt) {
         'usemin',
         'generate-sri',
         'includereplace',
-        'cdnify',
         'htmlmin'
     ];
-
-    // If we are on CI, skip the cdnify task
-    var envCI = process.env.CI || process.env.ci;
-
-    if (envCI && envCI.toLowerCase() === 'true') {
-        buildTasks.splice(12, 1);
-    }
 
     grunt.registerTask('build', buildTasks);
 

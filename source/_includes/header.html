@@ -3,8 +3,6 @@
     <head>
         <meta charset="utf-8">
 
-        <link rel="dns-prefetch" href="{{ site.cdn_url }}">
-
         {% capture title %}{% if paginator.page and paginator.page != 1 %}{{ page.title }} - Page {{ paginator.page }}{% else %}{{ page.title }}{% endif%} &middot; MPC-HC{% endcapture %}
         <title>{{ title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,8 +32,8 @@
         {% else %}
         <meta property="og:url" content="{{ site.url }}{{ page.url }}">
         {% endif %}
-        <meta property="og:image" content="{{ site.cdn_url | replace: 'https://', 'http://' }}/assets/img/logo-256x256.png">
-        <meta property="og:image:secure_url" content="{{ site.cdn_url }}/assets/img/logo-256x256.png">
+        <meta property="og:image" content="{{ site.url | replace: 'https://', 'http://' }}/assets/img/logo-256x256.png">
+        <meta property="og:image:secure_url" content="{{ site.url }}/assets/img/logo-256x256.png">
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="256">
         <meta property="og:image:height" content="256">
