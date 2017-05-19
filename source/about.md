@@ -226,3 +226,20 @@ MPC-HC is based on the original MPC version © 2002-2006 by Gabest (e-mail unkno
 | zlib | zlib License | <http://zlib.net/> |
 
 </div>
+
+
+## Subtitle Database API
+
+<div markdown="1" class="table-responsive">
+
+{: .table .table-hover .table-striped }
+| Database | Website |
+|----+----|
+| Napisy24 | <http://napisy24.pl/> |
+| OpenSubtitles | <https://www.opensubtitles.org/> |
+| Podnapisi | <https://www.podnapisi.net/> |
+| SubDB | <http://thesubdb.com/> |
+| Titlovi | <http://titlovi.com/> |
+| ysubs | <http://www.yifysubtitles.com/> |
+
+</div>
