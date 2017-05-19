@@ -117,13 +117,13 @@ abbr[title] {
     text-decoration: underline dotted;
 }
 
-.navbar-brand {
+.navbar-default .navbar-brand {
     font-size: 21px;
     font-weight: bold;
 }
 
-.navbar-brand:focus,
-.navbar-brand:hover {
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
     text-shadow: 0 0 20px #08C;
 }
 
@@ -222,6 +222,10 @@ animated navbar button
 footer {
     font-size: 90%;
     margin: 50px 0 30px 0;
+}
+
+footer a {
+    color: #2071b8;
 }
 
 footer h3 {
