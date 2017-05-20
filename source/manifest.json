@@ -1,5 +1,6 @@
 {
     "name": "MPC-HC",
+    "short_name": "MPC-HC",
     "icons": [
         {
             "src": "/assets/img/favicons/android-chrome-192x192.png",
@@ -12,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": "/index.html",
+    "start_url": "/",
     "theme_color": "#6bba70",
     "background_color": "#6bba70",
     "display": "standalone"
