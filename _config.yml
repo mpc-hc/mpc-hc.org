@@ -5,7 +5,7 @@ lang:               en
 markdown:           kramdown
 highlighter:        false
 
-gems:
+plugins:
   - jekyll-avatar
   - jekyll-email-protect
   - jekyll-feed

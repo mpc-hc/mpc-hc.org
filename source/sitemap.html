@@ -11,10 +11,6 @@ sitemap: false
 
 <h2 id="pages">Pages (sorted by title)</h2>
 
-{% comment %}
-This doesn't work yet; see https://github.com/Shopify/liquid/pull/429/
-assign sorted_pages = site.html_pages | concat: site.posts | sort: 'title'
-{% endcomment %}
 
 {% assign sorted_pages = site.html_pages | sort: 'title' %}
 
