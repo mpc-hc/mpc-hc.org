@@ -177,8 +177,7 @@ module.exports = function(grunt) {
             js: {
                 src: [
                     '<%= dirs.dest %>/assets/js/**/*.js',
-                    '!<%= dirs.dest %>/assets/js/vendor/jquery*.min.js',
-                    '<%= dirs.dest %>/sw.min.js'
+                    '!<%= dirs.dest %>/assets/js/vendor/jquery*.min.js'
                 ]
             },
             images: {
@@ -205,12 +204,7 @@ module.exports = function(grunt) {
                 assetsDirs: [
                     '<%= dirs.dest %>/',
                     '<%= dirs.dest %>/assets/img/'
-                ],
-                patterns: {
-                    js: [
-                        [/navigator\.serviceWorker\.register\(["'](\/sw\.min\.js)["']/gm, 'Replacing reference to sw.min.js']
-                    ]
-                }
+                ]
             },
             css: '<%= dirs.dest %>/assets/css/pack*.css',
             js: '<%= dirs.dest %>/assets/js/pack*.js',
