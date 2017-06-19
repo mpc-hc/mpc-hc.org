@@ -2,10 +2,10 @@
 <html lang="en" class="no-js" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/WebPage">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         {% capture title %}{% if paginator.page and paginator.page != 1 %}{{ page.title }} - Page {{ paginator.page }}{% else %}{{ page.title }}{% endif%} &middot; MPC-HC{% endcapture %}
         <title>{{ title }}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         {% capture meta_description %}{% if page.description %}{{ page.description }}{% if paginator.page and paginator.page != 1 %} - Page {{ paginator.page }}{% endif%}{% elsif page.excerpt %}{{ page.excerpt | newline_to_br | replace: '<br />', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | rstrip | truncate: 155 }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
         <meta name="description" content="{{ meta_description }}">
