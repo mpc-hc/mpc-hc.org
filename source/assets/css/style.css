@@ -185,7 +185,7 @@ animated navbar button
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    transition: all 0.2s;
+    transition: transform 0.35s ease, opacity 0.35s ease;
     width: 22px;
 }
 
@@ -250,7 +250,7 @@ footer ul {
 .social-ul .fa,
 .fa-rss {
     color: lightgray;
-    transition: all 0.5s ease 0s;
+    transition: all 0.5s ease;
 }
 
 .social-ul .fa:hover,
@@ -352,7 +352,7 @@ h6[id]:before {
 
 .defer.loaded {
     opacity: 1;
-    transition: opacity 0.3s ease 0s;
+    transition: opacity 0.3s ease;
 }
 
 .browserPrompt {
@@ -444,7 +444,7 @@ h6[id]:before {
         margin-top: 10px;
     }
 
-    .social-ul li:not(:last-of-type) {
+    .social-ul li:not(:last-child) {
         margin-right: 10px;
     }
 
@@ -455,6 +455,20 @@ h6[id]:before {
     .social-ul > li > a {
         display: inline-block;
         padding: 0.5em;
+    }
+
+    .thumbnail {
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+
+    .features h1 {
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+
+    .features p {
+        margin-bottom: 40px;
     }
 }
 
