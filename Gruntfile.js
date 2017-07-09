@@ -93,20 +93,17 @@ module.exports = function(grunt) {
             }
         },
 
-        autoprefixer: {
+        postcss: {
             options: {
-                browsers: [
-                    'last 2 version',
-                    '> 1%',
-                    'Edge >= 12',
-                    'Explorer >= 9',
-                    'Firefox ESR',
-                    'Opera 12.1'
+                processors: [
+                    require('css-mqpacker')(), // combine media queries
+                    require('postcss-zindex')(), // reduce z-index values
+                    require('postcss-combine-duplicated-selectors')({ removeDuplicatedProperties: true }), // combine duplicate selectors
+                    require('autoprefixer')() // add vendor prefixes
                 ]
             },
-            pack: {
-                src: '<%= concat.css.dest %>',
-                dest: '<%= concat.css.dest %>'
+            dist: {
+                src: '<%= concat.css.dest %>'
             }
         },
 
@@ -357,8 +354,8 @@ module.exports = function(grunt) {
         'jekyll',
         'useminPrepare',
         'concat',
-        'autoprefixer',
         'uncss',
+        'postcss',
         'cssmin',
         'uglify',
         'filerev',
@@ -383,7 +380,7 @@ module.exports = function(grunt) {
         'jekyll',
         'useminPrepare',
         'concat',
-        'autoprefixer',
+        'postcss',
         'filerev',
         'usemin',
         'generate-sri',
