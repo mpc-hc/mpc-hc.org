@@ -74,44 +74,54 @@
         <![endif]-->
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
+                <div class="row">
 
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="/">MPC-HC</a>
-                    <button type="button" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar top-bar"></span>
-                        <span class="icon-bar middle-bar"></span>
-                        <span class="icon-bar bottom-bar"></span>
-                    </button>
-                </div>
-
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-left">
-                        <li{% if page.slug == "downloads" %} class="active"{% endif %}><a href="/downloads/"><span class="fa fa-download fa-fw" aria-hidden="true"></span> Downloads</a></li>
-                        <li{% if page.slug == "changelog" %} class="active"{% endif %}><a href="/changelog/"><span class="fa fa-file-text fa-fw" aria-hidden="true"></span> Changelog</a></li>
-                        <li{% if page.slug == "faq" %} class="active"{% endif %}><a href="/faq/"><span class="fa fa-info fa-fw" aria-hidden="true"></span> FAQ</a></li>
-                        <li{% if page.slug == "about" %} class="active"{% endif %}><a href="/about/"><span class="fa fa-users fa-fw" aria-hidden="true"></span> About</a></li>
-                        <li class="dropdown">
-                            <a id="dLabel" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="fa fa-question fa-fw" aria-hidden="true"></span> Help <span class="fa fa-caret-down" aria-hidden="true"></span>
+                    <div class="col-md-3">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="/">
+                                <img src="/assets/img/navbar-logo@2x.png" alt="Logo" width="20" height="20">
+                                MPC-HC
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                <li {% if page.slug == "contact-us" %} class="active"{% endif %}><a href="/contact-us/">Contact us</a></li>
-                                <li class="divider"></li>
-                                <li><a href="https://trac.mpc-hc.org/wiki/How_to_Report_Issues">Bug reports</a></li>
-                                <li><a href="https://trac.mpc-hc.org/">Wiki</a></li>
+
+                            <button type="button" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar top-bar"></span>
+                                <span class="icon-bar middle-bar"></span>
+                                <span class="icon-bar bottom-bar"></span>
+                            </button>
+                        </div>
+                    </div> <!-- .col-md-3 -->
+
+                    <div class="col-md-9">
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li{% if page.slug == "downloads" %} class="active"{% endif %}><a href="/downloads/"><span class="fa fa-download fa-fw" aria-hidden="true"></span> Downloads</a></li>
+                                <li{% if page.slug == "changelog" %} class="active"{% endif %}><a href="/changelog/"><span class="fa fa-file-text fa-fw" aria-hidden="true"></span> Changelog</a></li>
+                                <li{% if page.slug == "faq" %} class="active"{% endif %}><a href="/faq/"><span class="fa fa-info fa-fw" aria-hidden="true"></span> FAQ</a></li>
+                                <li{% if page.slug == "about" %} class="active"{% endif %}><a href="/about/"><span class="fa fa-users fa-fw" aria-hidden="true"></span> About</a></li>
+                                <li class="dropdown">
+                                    <a id="dLabel" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <span class="fa fa-question fa-fw" aria-hidden="true"></span> Help <span class="fa fa-caret-down" aria-hidden="true"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                        <li {% if page.slug == "contact-us" %} class="active"{% endif %}><a href="/contact-us/">Contact us</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="https://trac.mpc-hc.org/wiki/How_to_Report_Issues">Bug reports</a></li>
+                                        <li><a href="https://trac.mpc-hc.org/">Wiki</a></li>
+                                    </ul>
+                                </li>
                             </ul>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li {% if page.slug == "donate" %} class="active"{% endif %}>
-                            <a href="/donate/" title="Donate">
-                                <span class="fa fa-cc-paypal fa-2x" aria-hidden="true"></span>
-                                <span class="sr-only">Donate</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div> <!-- .navbar-collapse -->
+                            <ul class="nav navbar-nav navbar-right">
+                                <li {% if page.slug == "donate" %} class="active"{% endif %}>
+                                    <a href="/donate/" title="Donate">
+                                        <span class="fa fa-cc-paypal fa-2x" aria-hidden="true"></span>
+                                        <span class="sr-only">Donate</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> <!-- .navbar-collapse -->
+                    </div> <!-- .col-md-9 -->
+                </div> <!-- .row -->
 
             </div> <!-- .container -->
         </nav>

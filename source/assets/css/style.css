@@ -19,7 +19,7 @@ body {
 }
 
 .button-sub {
-    margin-top: 0.5em;
+    margin-top: 1em;
 }
 
 .page-home .lead {
@@ -89,15 +89,10 @@ body {
     content: "\f078";   /* fa-chevron-down */
 }
 
-.navbar-brand::before {
-    background: url("../img/navbar-logo@2x.png") no-repeat;
-    background-size: 20px 20px;
-    content: "";
+.navbar-brand img {
     display: inline-block;
-    margin-right: 8px;
+    margin-right: 2px;
     vertical-align: middle;
-    width: 20px;
-    height: 20px;
 }
 
 .full-news a[href*="//"]:not([href^="mpc-hc.org"]):not([href*="trac.mpc-hc.org"]):after,
@@ -464,10 +459,6 @@ h6[id]:before {
 }
 
 @media (min-width: 768px) {
-    .navbar-left {
-        margin-left: 4em;
-    }
-
     .navbar-right > li:last-of-type > a {
         padding-bottom: 10px;
         padding-top: 11px;
@@ -515,12 +506,8 @@ h6[id]:before {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .navbar-left {
-        margin-left: 2em;
-    }
-
     .nav > li > a {
-        font-size: 0.90em;
+        font-size: 0.9em;
     }
 
 }
