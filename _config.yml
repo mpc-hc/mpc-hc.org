@@ -48,10 +48,10 @@ encoding:           UTF-8
 
 # custom variables
 version:
-  short:            1.7.11
-  long:             1.7.11.0
-  hash:             "b989276ec"
-  date:             "06 March 2017"
+  short:            1.7.13
+  long:             1.7.13.0
+  hash:             "e37826845"
+  date:             "16 July 2017"
 
 feed:
   description:      Latest information about the MPC-HC project.
