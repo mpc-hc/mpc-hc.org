@@ -204,10 +204,10 @@ MPC-HC is based on the original MPC version © 2002-2006 by Gabest (e-mail unkno
 | Little CMS | MIT License | <http://www.littlecms.com/> |
 | Logitech SDK | - | - |
 | MediaInfoLib | Simplified BSD License | <https://mediaarea.net/MediaInfo> |
-| Mhook | MIT License | <https://github.com/martona/mhook> |
-| MultiMon | CPOL | <https://www.codeproject.com/KB/GDI/multimon.aspx> |
+| MinHook | Simplified BSD License | <https://github.com/TsudaKageyu/minhook> |
+| MultiMon | CPOL | <https://www.codeproject.com/Articles/3690/> |
 | NanoSVG | zlib License | <https://github.com/memononen/nanosvg> |
-| QuickTime SDK | - | <http://developer.apple.com/quicktime/> |
+| QuickTime SDK | - | <https://developer.apple.com/quicktime/> |
 | RapidJSON | MIT License | <https://github.com/miloyip/rapidjson> |
 | RARFileSource | GPLv2+ | <http://www.v12pwr.com/RARFileSource/> |
 | RealMedia SDK | - | - |
@@ -239,7 +239,5 @@ MPC-HC is based on the original MPC version © 2002-2006 by Gabest (e-mail unkno
 | OpenSubtitles | <https://www.opensubtitles.org/> |
 | Podnapisi | <https://www.podnapisi.net/> |
 | SubDB | <http://thesubdb.com/> |
-| Titlovi | <http://titlovi.com/> |
-| ysubs | <http://www.yifysubtitles.com/> |
 
 </div>
