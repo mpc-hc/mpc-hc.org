@@ -12,11 +12,11 @@ description: Download our binaries, source code, etc.
     <ul>
         <li>
             <strong>Supported Operating Systems:</strong>
-            <p>Windows<sup>&reg;</sup> XP SP3, Vista, 7, 8, 8.1, 10 both 32-bit and 64-bit</p>
+            <p>Windows<sup>&reg;</sup> XP SP3, Vista, 7, 8, 8.1 or 10; both 32-bit and 64-bit</p>
         </li>
         <li>
             <strong>System Requirements:</strong>
-            <p>An SSE capable CPU</p>
+            <p>An SSE2-capable CPU</p>
         </li>
    </ul>
 </div>
