@@ -97,7 +97,6 @@ module.exports = function(grunt) {
             options: {
                 processors: [
                     require('css-mqpacker')(), // combine media queries
-                    require('postcss-zindex')(), // reduce z-index values
                     require('postcss-combine-duplicated-selectors')({ removeDuplicatedProperties: true }), // combine duplicate selectors
                     require('autoprefixer')() // add vendor prefixes
                 ]
