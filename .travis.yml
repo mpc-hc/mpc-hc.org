@@ -9,13 +9,10 @@ node_js:
 
 env:
   matrix:
-    - RUBY_VERSION=2.2
+    - RUBY_VERSION=2.4
 
 before_install:
-  # Remove ./node_modules/.bin from PATH so node-which doesn't replace Unix which and cause RVM to barf. See https://github.com/travis-ci/travis-ci/issues/5092
-  - export PATH=$(python -c 'from sys import argv;from collections import OrderedDict as od;print(":".join(od((p,None) for p in argv[1].split(":") if p.startswith("/")).keys()))' "$PATH")
-  - rvm install $RUBY_VERSION
-  - rvm use $RUBY_VERSION --fuzzy
+  - rvm use $RUBY_VERSION --install --binary --fuzzy
 
 install:
   - npm install

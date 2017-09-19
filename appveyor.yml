@@ -6,11 +6,9 @@ clone_depth: 10
 
 environment:
   matrix:
-    - ruby_folder_version: "23"
-      ruby_gems_folder: "2.3.0"
+    - ruby_folder_version: "24"
       platform: "x86"
-    #- ruby_folder_version: "23-x64"
-    #  ruby_gems_folder: "2.3.0"
+    #- ruby_folder_version: "24-x64"
     #  platform: "x64"
 
 install:
