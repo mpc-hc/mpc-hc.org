@@ -218,7 +218,7 @@ MPC-HC is based on the original MPC version © 2002-2006 by Gabest (e-mail unkno
 | soxr | LGPLv2.1+ | <https://sourceforge.net/projects/soxr/> |
 | tinyxml2 | zlib License | <http://www.grinninglizard.com/tinyxml2/> |
 | TreePropSheet | - | <https://www.codeproject.com/Articles/3709/> |
-| UnRAR | freeware | <http://www.rarlab.com/rar_add.htm> |
+| UnRAR | freeware | <https://www.rarlab.com/rar_add.htm> |
 | VirtualDub | GPLv2+ | <http://www.virtualdub.org/> |
 | XmlRpc4Win | MIT License | <https://github.com/drtimcooper/XmlRpc4Win> |
 | ZenLib | zlib License | <https://github.com/MediaArea/ZenLib> |

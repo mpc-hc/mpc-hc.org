@@ -21,5 +21,4 @@ We would like to thank the following projects:
 * [Inno Setup](http://www.jrsoftware.org/isinfo.php)
 * [MinGW](http://www.mingw.org/)
 * [MinGW-w64](http://mingw-w64.org/doku.php)
-* [mplayer2](http://www.mplayer2.org/) for the initial website template
 * [Node.js](https://nodejs.org/)

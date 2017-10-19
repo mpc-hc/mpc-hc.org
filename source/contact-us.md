@@ -48,4 +48,4 @@ Please follow these simple rules when joining our channels.
 
 * [Facebook](https://www.facebook.com/MediaPlayerClassicHomeCinema)
 * [Google+](https://plus.google.com/+Mpc-hcOrg/) (not updated at the moment since there's no automated way to use RSS feeds)
-* [Twitter](https://twitter.com/mpc_hc/)
+* [Twitter](https://twitter.com/mpc_hc)
