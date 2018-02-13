@@ -107,13 +107,6 @@ body {
 
 
 /* -- Bootstrap overrides -- */
-abbr[title] {
-    border-bottom: none;
-    cursor: help;
-    text-decoration: underline;
-    text-decoration: underline dotted;
-}
-
 .navbar-default .navbar-brand {
     font-size: 21px;
     font-weight: 700;
