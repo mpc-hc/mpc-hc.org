@@ -14,7 +14,7 @@ environment:
 install:
   - SET "PATH=C:\Ruby%ruby_folder_version%\bin;%PATH%"
   - bundle install --retry 3 --jobs=%NUMBER_OF_PROCESSORS% --clean --path vendor\bundle
-  - ps: Install-Product node "8" $env:platform
+  - ps: Install-Product node "10" $env:platform
   - npm install
 
 build: off
