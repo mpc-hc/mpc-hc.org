@@ -9,13 +9,6 @@
 * Install [Node.js](https://nodejs.org/)
 * Install grunt: `npm install -g grunt-cli`
 * Install the Node.js dependencies via npm: `cd mpc-hc.org` and then `npm install`
-* Install Ruby and Ruby DevKit; make sure you select "Add Ruby to `PATH`", and then run:
-
-  ```shell
-  cd C:\RubyDevKit
-  ruby dk.rb init
-  ruby dk.rb install
-  ```
-
+* Install [Ruby with DevKit](https://rubyinstaller.org/)
 * Run `gem install bundle` and then `bundle install`
 * Run `grunt build` to build the static site, `grunt` to build and watch for changes (`http://localhost:8000/`). Run `grunt --help` to see all the available tasks.
