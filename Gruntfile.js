@@ -106,31 +106,17 @@ module.exports = function(grunt) {
             }
         },
 
-        uncss: {
-            options: {
-                ignore: [
-                    /(#|\.)baguetteBox(-[a-zA-Z]+)?/,
-                    // Bootstrap selectors added via JS
-                    /\w\.in/,
-                    '.fade',
-                    '.collapse',
-                    '.collapsed',
-                    '.collapsing',
-                    /(#|\.)navbar(-[a-zA-Z]+)?/,
-                    /(#|\.)dropdown(-[a-zA-Z]+)?/,
-                    /(#|\.)(open)/,
-                    // injected via JS
-                    /disabled/,
-                    /\.no-js/,
-                    /\.defer/
-                ],
-                htmlroot: '<%= dirs.dest %>',
-                ignoreSheets: [/fonts.googleapis/],
-                stylesheets: ['/assets/css/pack.css']
-            },
+        purgecss: {
             dist: {
-                src: '<%= dirs.dest %>/**/*.html',
-                dest: '<%= concat.css.dest %>'
+                options: {
+                    content: [
+                        '<%= dirs.dest %>/**/*.html',
+                        '<%= dirs.dest %>/assets/js/**/*.js'
+                    ]
+                },
+                files: {
+                    '<%= concat.css.dest %>': ['<%= concat.css.dest %>']
+                }
             }
         },
 
@@ -144,7 +130,7 @@ module.exports = function(grunt) {
                     }
                 },
                 files: {
-                    '<%= uncss.dist.dest %>': '<%= concat.css.dest %>'
+                    '<%= concat.css.dest %>': '<%= concat.css.dest %>'
                 }
             }
         },
@@ -353,7 +339,7 @@ module.exports = function(grunt) {
         'jekyll',
         'useminPrepare',
         'concat',
-        'uncss',
+        'purgecss',
         'postcss',
         'cssmin',
         'uglify',
