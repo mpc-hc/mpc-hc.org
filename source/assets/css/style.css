@@ -281,17 +281,8 @@ footer ul {
     color: #fe9900;
 }
 
-.fa-maxcdn {
-    color: #ff5b02;
-}
-
-.fa-maxcdn:hover,
-.fa-maxcdn:focus {
-    opacity: 0.9;
-}
-
 .cloudvps a,
-.maxcdn a {
+.stackpath a {
     display: inline-block;
 }
 
@@ -482,9 +473,8 @@ h6[id]:before {
         text-align: justify;
     }
 
-    .maxcdn .fa-maxcdn {
-        vertical-align: middle;
-        line-height: normal;
+    .stackpath p {
+        margin-bottom: 30px;
     }
 
     .footer-left,
