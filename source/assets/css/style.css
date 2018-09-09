@@ -6,7 +6,7 @@ body {
 }
 
 .main-container {
-    background-color: white;
+    background-color: #fff;
     margin-bottom: 30px;
     padding: 30px 65px 60px 65px;
     border-radius: 4px;
@@ -57,14 +57,14 @@ body {
 .features h1 {
     border-bottom: none;
     font-size: 22px;
-    font-weight: normal;
+    font-weight: 400;
     line-height: 36px;
     margin-bottom: 2%;
     padding-bottom: 0;
 }
 
 .page-downloads .downloads-version {
-    font-weight: bold;
+    font-weight: 700;
     padding-bottom: 8px;
     text-align: center;
 }
@@ -79,14 +79,16 @@ body {
     text-align: center;
 }
 
-.panel-title > .toggleLink:after {
-    font-family: "FontAwesome";
-    content: "\f077";   /* fa-chevron-up */
+.panel-title > .toggleLink::after {
+    content: "\f077"; /* fa-chevron-up */
     float: right;
+    font-family: FontAwesome;
+    /*transition: transform 0.35s ease;*/
 }
 
-.panel-title > .toggleLink.collapsed:after {
-    content: "\f078";   /* fa-chevron-down */
+.panel-title > .toggleLink.collapsed::after {
+    content: "\f078"; /* fa-chevron-down */
+    /*transform: rotate(180deg);*/
 }
 
 .navbar-brand img {
@@ -95,9 +97,9 @@ body {
     vertical-align: middle;
 }
 
-.full-news a[href*="//"]:not([href^="mpc-hc.org"]):not([href*="trac.mpc-hc.org"]):after,
-.new a[href*="//"]:not([href^="mpc-hc.org"]):not([href*="trac.mpc-hc.org"]):after {
-    content: "\f08e";   /* fa-external-link */
+.full-news a[href*="//"]:not([href^="mpc-hc.org"]):not([href*="trac.mpc-hc.org"])::after,
+.new a[href*="//"]:not([href^="mpc-hc.org"]):not([href*="trac.mpc-hc.org"])::after {
+    content: "\f08e"; /* fa-external-link */
     display: inline-block;
     font-family: FontAwesome;
     margin-left: 0.3em;
@@ -114,12 +116,12 @@ abbr[title] {
 
 .navbar-default .navbar-brand {
     font-size: 21px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:hover {
-    text-shadow: 0 0 20px #08C;
+    text-shadow: 0 0 20px #08c;
 }
 
 .navbar-default .navbar-nav > li > a,
@@ -132,7 +134,7 @@ abbr[title] {
 }
 
 .alert h4 {
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 5px;
     margin-top: 0;
 }
@@ -249,8 +251,8 @@ footer ul {
 
 .social-ul .fa,
 .fa-rss {
-    color: lightgray;
-    transition: all 0.5s ease;
+    color: #d3d3d3;
+    transition: color 0.5s ease, transform 0.5s ease;
 }
 
 .social-ul .fa:hover,
@@ -274,7 +276,7 @@ footer ul {
 }
 
 .fa-github:hover {
-    color: #333333;
+    color: #333;
 }
 
 .fa-rss:hover {
@@ -296,7 +298,7 @@ footer ul {
 }
 
 .last-updated {
-    border-bottom: 1px dotted black;
+    border-bottom: 1px dotted #000;
     cursor: help;
 }
 
@@ -309,12 +311,12 @@ footer ul {
 
 
 /* Sort of hack so that the anchors aren't hidden due to fixed nav */
-h1[id]:before,
-h2[id]:before,
-h3[id]:before,
-h4[id]:before,
-h5[id]:before,
-h6[id]:before {
+h1[id]::before,
+h2[id]::before,
+h3[id]::before,
+h4[id]::before,
+h5[id]::before,
+h6[id]::before {
     content: " ";
     display: block;
     height: 60px;
@@ -322,23 +324,17 @@ h6[id]:before {
     visibility: hidden;
 }
 
-
-::-moz-selection {
-    background-color: #b3d4fc;
-    text-shadow: none;
-}
-
 ::selection {
     background-color: #b3d4fc;
     text-shadow: none;
 }
 
-.no-js .defer {
-    display: none;
-}
-
 .defer {
     opacity: 0;
+}
+
+.no-js .defer {
+    display: none;
 }
 
 .defer.loaded {
@@ -385,21 +381,18 @@ h6[id]:before {
 }
 
 .page-four-oh-four .jumbotron {
+    background-color: transparent;
     color: inherit;
     font-size: 21px;
     font-weight: 300;
     line-height: 2.1428571435;
     padding: 10px 0;
+    text-align: center;
 }
 
 .page-four-oh-four .body-content {
     padding-left: 15px;
     padding-right: 15px;
-}
-
-.page-four-oh-four .jumbotron {
-    background-color: transparent;
-    text-align: center;
 }
 
 .page-four-oh-four .jumbotron .btn {
@@ -408,7 +401,7 @@ h6[id]:before {
 }
 
 .page-four-oh-four footer {
-    border-top: 1px solid lightgray;
+    border-top: 1px solid #d3d3d3;
     padding-top: 20px;
 }
 
