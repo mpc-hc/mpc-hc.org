@@ -3,7 +3,7 @@ author: XhmikosR
 title: Binaries are signed
 ---
 
-Thanks to **[Certum](http://www.certum.eu/certum/cert,eindex_en.xml)** binaries will be digitally signed!
+Thanks to **[Certum](https://www.certum.eu/en/)** binaries will be digitally signed!
 
 Starting from nightly build 1.6.6.6735 (fceef5c) the binaries are digitally
 signed. You can easily verify that the file you downloaded hasn't been modified

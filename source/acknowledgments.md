@@ -11,7 +11,7 @@ description: Acknowledgments
 
 We would like to thank the following projects:
 
-* [7-Zip](http://www.7-zip.org/)
+* [7-Zip](https://www.7-zip.org/)
 * [Bootstrap](https://getbootstrap.com/)
 * [Coverity Scan](https://scan.coverity.com/)
 * [Cppcheck](http://cppcheck.sourceforge.net/)

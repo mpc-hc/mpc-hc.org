@@ -1,4 +1,4 @@
-http://getbootstrap.com/customize/?id=508cd7951ce52220b977fe8d61b5fdde
+https://getbootstrap.com/customize/?id=508cd7951ce52220b977fe8d61b5fdde
 
 Enabled components in v3.3.7:
 
