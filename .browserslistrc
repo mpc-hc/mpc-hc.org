@@ -1,8 +1,13 @@
-# https://github.com/ai/browserslist#browserslist
+# https://github.com/browserslist/browserslist#readme
 
-last 2 major versions
-> 1%
+>= 1%
+last 1 major version
 not dead
+Chrome >= 45
+Firefox >= 38
 Edge >= 12
 Explorer >= 9
-Firefox ESR
+iOS >= 9
+Safari >= 9
+Android >= 4.4
+Opera >= 30
