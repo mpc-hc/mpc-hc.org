@@ -194,6 +194,30 @@ module.exports = function(grunt) {
             ]
         },
 
+        sri_hash: {
+            dist: {
+                options: {
+                    algorithm: 'sha384',
+                    assetsDir: '<%= dirs.dest %>'
+                },
+                expand: true,
+                cwd: '<%= dirs.dest %>',
+                dest: '<%= dirs.dest %>',
+                src: ['**/*.html', '**/*.php']
+            }
+        },
+
+        // This is because grunt-sri-hash is using cheerio which
+        // makes `doctype` uppercase...
+        doctype: {
+            dist: {
+                expand: true,
+                cwd: '<%= dirs.dest %>',
+                dest: '<%= dirs.dest %>',
+                src: ['**/*.html', '**/*.php']
+            }
+        },
+
         connect: {
             options: {
                 hostname: 'localhost',
@@ -280,58 +304,6 @@ module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt, { scope: 'dependencies' });
     require('time-grunt')(grunt);
 
-    grunt.registerTask('generate-sri', 'Generate SRI hashes for our assets.', function () {
-
-        function sriDigest(filePattern) {
-            var sriToolbox = require('sri-toolbox');
-            var matches = grunt.file.expand({ filter: 'isFile' }, filePattern);
-            var match = matches[0];     // `grunt.file.expand` returns an array
-            var matchCount = matches.length;
-            var integrity = '';
-
-            if (matchCount === 0) {
-                grunt.fail.fatal('Generating SRI failed; didn\'t find any matches!');
-            } else if (matchCount > 1) {
-                // shouldn't really happen since we clean the '_site' directory
-                grunt.fail.fatal('Generating SRI failed; Found more than one matches!');
-            }
-
-            try {
-                integrity = sriToolbox.generate({ algorithms: ['sha384'] }, grunt.file.read(match));
-            } catch (err) {
-                grunt.log.error(err);
-                grunt.fail.fatal('Generating SRI hash failed.');
-            }
-
-            grunt.log.ok('Generated SRI hash for ' + match.cyan + '.');
-            return integrity;
-
-        }
-
-        var packCssIntegrity = sriDigest('_site/assets/css/pack.*.css');
-        var packJsIntegrity = sriDigest('_site/assets/js/pack.*.js');
-        var jqueryPackJsIntegrity = sriDigest('_site/assets/js/jquery-pack.*.js');
-
-        grunt.config('includereplace', {
-            dist: {
-                options: {
-                    globals: {
-                        packCssIntegrity: packCssIntegrity,
-                        packJsIntegrity: packJsIntegrity,
-                        jqueryPackJsIntegrity: jqueryPackJsIntegrity
-                    }
-                },
-                files: [{
-                    src: ['**/*.html', '**/*.php'],
-                    dest: '<%= dirs.dest %>/',
-                    expand: true,
-                    cwd: '<%= dirs.dest %>/'
-                }]
-            }
-        });
-
-    });
-
     var buildTasks = [
         'clean',
         'jekyll',
@@ -343,8 +315,8 @@ module.exports = function(grunt) {
         'uglify',
         'filerev',
         'usemin',
-        'generate-sri',
-        'includereplace',
+        'sri_hash',
+        'doctype',
         'htmlmin'
     ];
 
@@ -366,8 +338,7 @@ module.exports = function(grunt) {
         'postcss',
         'filerev',
         'usemin',
-        'generate-sri',
-        'includereplace'
+        'sri_hash'
     ]);
 
     grunt.registerTask('server', [
