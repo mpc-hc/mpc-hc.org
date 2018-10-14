@@ -1,6 +1,5 @@
-sudo: required
-
-dist: trusty
+git:
+  depth: 5
 
 language: node_js
 
@@ -8,20 +7,23 @@ node_js:
   - "10"
 
 env:
-  matrix:
+  global:
     - RUBY_VERSION=2.4
 
 before_install:
   - rvm use $RUBY_VERSION --install --binary --fuzzy
 
 install:
-  - npm install
-  - bundle install --retry 3 --clean --path vendor/bundle
+  - npm ci
+  - bundle install --deployment --retry=3 --clean
 
 matrix:
   fast_finish: true
 
 cache:
   directories:
-    - node_modules
+    - "$HOME/.npm"
     - vendor/bundle
+
+notifications:
+  email: false

@@ -1,0 +1,31 @@
+version: "{build}"
+
+clone_depth: 5
+
+environment:
+  RUBY_FOLDER_VERSION: "24-x64"
+  PLATFORM: "x64"
+
+install:
+  - SET "PATH=C:\Ruby%RUBY_FOLDER_VERSION%\bin;%PATH%"
+  - bundle install --deployment --retry=3 --clean --jobs=%NUMBER_OF_PROCESSORS%
+  - ps: Install-Product node "10" $env:PLATFORM
+  - npm ci
+
+build: off
+
+test_script:
+  - ruby -v
+  - gem -v
+  - bundle -v
+  - node -v
+  - npm -v
+  - java -version
+  - npm test
+
+matrix:
+  fast_finish: true
+
+cache:
+  - '%APPDATA%\npm-cache\ -> .appveyor.yml,package.json,package-lock.json'
+  - 'vendor\bundle -> .appveyor.yml,Gemfile,Gemfile.lock'
