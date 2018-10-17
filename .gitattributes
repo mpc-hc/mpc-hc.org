@@ -1,5 +1,2 @@
-icomoon-selection.json                          eol=lf
-source/assets/css/vendor/bootstrap.css          eol=lf
-source/assets/css/vendor/font-awesome.css       eol=lf
-source/assets/fonts/fontawesome-*.svg           eol=lf
-source/assets/js/vendor/bootstrap.js            eol=lf
+# Enforce Unix newlines
+* text=auto eol=lf
