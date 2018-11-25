@@ -13,6 +13,7 @@
 
         <link rel="stylesheet" href="/assets/css/pack.css">
 
+        <link rel="canonical" href="{{ site.url }}{{ page.url }}">
         <link rel="apple-touch-icon" href="/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
         <link rel="icon" href="/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
         <link rel="icon" href="/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
@@ -27,11 +28,7 @@
         <meta property="og:title" content="{{ title }}">
         <meta property="og:type" content="website">
         <meta property="og:description" content="{{ meta_description }}">
-        {% if page.slug == "home" %}
-        <meta property="og:url" content="{{ site.url }}/">
-        {% else %}
         <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-        {% endif %}
         <meta property="og:image" content="{{ site.url | replace: 'https://', 'http://' }}/assets/img/logo-256x256.png">
         <meta property="og:image:secure_url" content="{{ site.url }}/assets/img/logo-256x256.png">
         <meta property="og:image:type" content="image/png">
