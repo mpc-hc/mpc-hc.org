@@ -5,7 +5,7 @@ $(function() {
 
     var $el = $('.toggleLink');
 
-    if (!$el.length) {
+    if ($el.length === 0) {
         return;
     }
 
@@ -40,15 +40,14 @@ $(function() {
     });
 
     $('.closeAll').click(function() {
-        $('.panel-collapse.in').collapse('hide');           // hide any `panel`s
-        collapsedToggleLinkCount = totalToggleLinkCount;    // reset the global count
+        $('.panel-collapse.in').collapse('hide'); // hide any `panel`s
+        collapsedToggleLinkCount = totalToggleLinkCount; // reset the global count
         checkButtonState();
     });
 
     $('.expandAll').click(function() {
-        $('.panel-collapse:not(".in")').collapse('show');   // show any `panel`s
-        collapsedToggleLinkCount = 0;                       // reset the global count
+        $('.panel-collapse:not(".in")').collapse('show'); // show any `panel`s
+        collapsedToggleLinkCount = 0; // reset the global count
         checkButtonState();
     });
-
 });

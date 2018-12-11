@@ -1,4 +1,4 @@
-(function detectOS () {
+(function() {
     'use strict';
 
     var arch = window.navigator.userAgent.match(/x86_64|Win64|WOW64/) ||
@@ -36,5 +36,4 @@
     href += arches[arch].folder + '/MPC-HC_v' + version + '_' + arch + '/MPC-HC.' + version + '.' + arch + '.exe';
 
     downloadButton.setAttribute('href', encodeURI(href));
-
 })();

@@ -1,6 +1,6 @@
 /* global baguetteBox */
 
-(function initBaguetteBox () {
+(function() {
     'use strict';
 
     baguetteBox.run('.gallery', {
@@ -8,5 +8,4 @@
         buttons: true,
         noScrollbars: true
     });
-
 })();

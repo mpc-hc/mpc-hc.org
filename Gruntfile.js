@@ -1,5 +1,6 @@
-module.exports = function(grunt) {
+'use strict';
 
+module.exports = function(grunt) {
     grunt.initConfig({
         dirs: {
             dest: '_site',
@@ -227,7 +228,7 @@ module.exports = function(grunt) {
             livereload: {
                 options: {
                     base: '<%= dirs.dest %>/',
-                    open: true  // Automatically open the webpage in the default browser
+                    open: true // Automatically open the webpage in the default browser
                 }
             }
         },
@@ -352,5 +353,4 @@ module.exports = function(grunt) {
         'connect',
         'watch:dev'
     ]);
-
 };
