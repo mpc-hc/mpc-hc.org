@@ -25,7 +25,7 @@
         "code": 61447
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 0
     },
     {
@@ -52,7 +52,7 @@
         "code": 61465
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 1
     },
     {
@@ -79,7 +79,7 @@
         "code": 61523
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 2
     },
     {
@@ -106,7 +106,7 @@
         "code": 61524
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 3
     },
     {
@@ -133,7 +133,7 @@
         "code": 61530
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 4
     },
     {
@@ -160,7 +160,7 @@
         "code": 61546
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 5
     },
     {
@@ -187,7 +187,7 @@
         "code": 61555
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 6
     },
     {
@@ -214,7 +214,7 @@
         "code": 61559
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 7
     },
     {
@@ -241,7 +241,7 @@
         "code": 61560
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 8
     },
     {
@@ -269,7 +269,7 @@
         "code": 61573
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 9
     },
     {
@@ -296,7 +296,7 @@
         "code": 61582
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 10
     },
     {
@@ -323,7 +323,7 @@
         "code": 61593
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 11
     },
     {
@@ -351,7 +351,7 @@
         "code": 61594
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 12
     },
     {
@@ -378,7 +378,7 @@
         "code": 61595
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 13
     },
     {
@@ -406,7 +406,7 @@
         "code": 61598
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 14
     },
     {
@@ -434,35 +434,8 @@
         "code": 61632
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 15
-    },
-    {
-      "icon": {
-        "paths": [
-          "M821.143 521.714q0 118.857-49.714 211.714t-141.714 145.143-210.857 52.286q-85.143 0-162.857-33.143t-133.714-89.143-89.143-133.714-33.143-162.857 33.143-162.857 89.143-133.714 133.714-89.143 162.857-33.143q163.429 0 280.571 109.714l-113.714 109.143q-66.857-64.571-166.857-64.571-70.286 0-130 35.429t-94.571 96.286-34.857 132.857 34.857 132.857 94.571 96.286 130 35.429q47.429 0 87.143-13.143t65.429-32.857 44.857-44.857 28-47.429 12.286-42.286h-237.714v-144h395.429q6.857 36 6.857 69.714zM1316.571 452v120h-119.429v119.429h-120v-119.429h-119.429v-120h119.429v-119.429h120v119.429h119.429z"
-        ],
-        "width": 1316.5720977783203,
-        "attrs": [],
-        "isMulticolor": false,
-        "isMulticolor2": false,
-        "tags": [
-          "google-plus"
-        ],
-        "defaultCode": 61653,
-        "grid": 14
-      },
-      "attrs": [],
-      "properties": {
-        "name": "google-plus",
-        "id": 16,
-        "order": 4,
-        "prevSize": 32,
-        "code": 61653
-      },
-      "setIdx": 0,
-      "setId": 3,
-      "iconIdx": 16
     },
     {
       "icon": {
@@ -488,7 +461,7 @@
         "code": 61655
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 17
     },
     {
@@ -515,7 +488,7 @@
         "code": 61672
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 18
     },
     {
@@ -542,7 +515,7 @@
         "code": 61677
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 19
     },
     {
@@ -569,7 +542,7 @@
         "code": 61696
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 20
     },
     {
@@ -596,7 +569,7 @@
         "code": 61697
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 21
     },
     {
@@ -623,7 +596,7 @@
         "code": 61704
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 22
     },
     {
@@ -650,7 +623,7 @@
         "code": 61721
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 23
     },
     {
@@ -677,7 +650,7 @@
         "code": 61729
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 24
     },
     {
@@ -704,7 +677,7 @@
         "code": 61736
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 25
     },
     {
@@ -731,7 +704,7 @@
         "code": 61737
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 1,
       "iconIdx": 26
     },
     {
@@ -758,8 +731,8 @@
         "code": 61788
       },
       "setIdx": 0,
-      "setId": 3,
-      "iconIdx": 28
+      "setId": 1,
+      "iconIdx": 27
     },
     {
       "icon": {
@@ -785,8 +758,8 @@
         "code": 61831
       },
       "setIdx": 0,
-      "setId": 3,
-      "iconIdx": 29
+      "setId": 1,
+      "iconIdx": 28
     },
     {
       "icon": {
@@ -813,8 +786,8 @@
         "code": 61894
       },
       "setIdx": 0,
-      "setId": 3,
-      "iconIdx": 30
+      "setId": 1,
+      "iconIdx": 29
     },
     {
       "icon": {
@@ -840,8 +813,8 @@
         "code": 61933
       },
       "setIdx": 0,
-      "setId": 3,
-      "iconIdx": 31
+      "setId": 1,
+      "iconIdx": 30
     },
     {
       "icon": {
@@ -867,8 +840,8 @@
         "code": 61940
       },
       "setIdx": 0,
-      "setId": 3,
-      "iconIdx": 32
+      "setId": 1,
+      "iconIdx": 31
     },
     {
       "icon": {
@@ -894,8 +867,8 @@
         "code": 62005
       },
       "setIdx": 0,
-      "setId": 3,
-      "iconIdx": 33
+      "setId": 1,
+      "iconIdx": 32
     }
   ],
   "height": 1024,
@@ -924,7 +897,7 @@
       "noie8": true,
       "ie7": false,
       "includeMetadata": false,
-      "showVersion": false,
+      "showVersion": true,
       "showMetadata": false,
       "showSelector": false,
       "selector": "class",
