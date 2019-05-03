@@ -8,7 +8,7 @@ node_js:
 
 env:
   global:
-    - RUBY_VERSION=2.4
+    - RUBY_VERSION=2.5
 
 before_install:
   - rvm use $RUBY_VERSION --install --binary --fuzzy

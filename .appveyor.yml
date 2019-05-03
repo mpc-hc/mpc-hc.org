@@ -3,7 +3,7 @@ version: "{build}"
 clone_depth: 5
 
 environment:
-  RUBY_FOLDER_VERSION: "24-x64"
+  RUBY_FOLDER_VERSION: "25-x64"
   PLATFORM: "x64"
 
 install:
