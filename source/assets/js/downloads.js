@@ -3,21 +3,21 @@
 $(function() {
     'use strict';
 
-    var $el = $('.toggleLink');
+    var $toggleLink = $('.toggleLink');
+    var $totalToggleLinkCount = $('.toggleLink').length;
 
-    if ($el.length === 0) {
+    if ($totalToggleLinkCount === 0) {
         return;
     }
 
-    var collapsedToggleLinkCount = $('.toggleLink.collapsed').length;
-    var totalToggleLinkCount = $el.length;
+    var $collapsedToggleLinkCount = $('.toggleLink.collapsed').length;
 
-    function checkButtonState() {
-        if (collapsedToggleLinkCount === 0) {
+    function setButtonState() {
+        if ($collapsedToggleLinkCount === 0) {
             // All elements are expanded
             $('.closeAll').prop('disabled', false);
             $('.expandAll').prop('disabled', true);
-        } else if (collapsedToggleLinkCount === totalToggleLinkCount) {
+        } else if ($collapsedToggleLinkCount === $totalToggleLinkCount) {
             // All elements are collapsed
             $('.closeAll').prop('disabled', true);
             $('.expandAll').prop('disabled', false);
@@ -27,27 +27,27 @@ $(function() {
         }
     }
 
-    $el.on('click', function() {
+    $toggleLink.on('click', function() {
         // If the .toggleLink element has the `.collapsed` class,
-        // decrease or increase the collapsedToggleLinkCount
+        // decrease or increase the $collapsedToggleLinkCount
         if ($(this).hasClass('collapsed')) {
-            collapsedToggleLinkCount--;
+            $collapsedToggleLinkCount--;
         } else {
-            collapsedToggleLinkCount++;
+            $collapsedToggleLinkCount++;
         }
 
-        checkButtonState();
+        setButtonState();
     });
 
     $('.closeAll').click(function() {
         $('.panel-collapse.in').collapse('hide'); // hide any `panel`s
-        collapsedToggleLinkCount = totalToggleLinkCount; // reset the global count
-        checkButtonState();
+        $collapsedToggleLinkCount = $totalToggleLinkCount; // reset the global count
+        setButtonState();
     });
 
     $('.expandAll').click(function() {
         $('.panel-collapse:not(".in")').collapse('show'); // show any `panel`s
-        collapsedToggleLinkCount = 0; // reset the global count
-        checkButtonState();
+        $collapsedToggleLinkCount = 0; // reset the global count
+        setButtonState();
     });
 });
