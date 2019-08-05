@@ -79,7 +79,6 @@ module.exports = function(grunt) {
                     '<%= dirs.src %>/assets/js/detect-os.js',
                     '<%= dirs.src %>/assets/js/img-defer.js',
                     '<%= dirs.src %>/assets/js/no-js-class.js',
-                    '<%= dirs.src %>/assets/js/pwa.js',
                     '<%= dirs.src %>/assets/js/google-analytics.js'
                 ],
                 dest: '<%= dirs.dest %>/assets/js/pack.js'
@@ -145,8 +144,7 @@ module.exports = function(grunt) {
             minify: {
                 files: {
                     '<%= concat.js.dest %>': '<%= concat.js.dest %>',
-                    '<%= concat.jqueryJS.dest %>': '<%= concat.jqueryJS.dest %>',
-                    '<%= concat.sw.dest %>': '<%= concat.sw.dest %>'
+                    '<%= concat.jqueryJS.dest %>': '<%= concat.jqueryJS.dest %>'
                 }
             }
         },

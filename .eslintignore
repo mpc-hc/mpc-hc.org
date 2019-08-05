@@ -3,3 +3,4 @@
 /node_modules/
 /source/assets/js/vendor/
 /source/assets/js/google-analytics.js
+/source/assets/js/sw.js
