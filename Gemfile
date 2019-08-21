@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 3.8.6'
+gem 'jekyll', '~> 4.0.0'
 gem 'jekyll-avatar', '~> 0.7.0'
 gem 'jekyll-email-protect', '~> 1.0.3'
 gem 'jekyll-feed', '~> 0.13.0'
