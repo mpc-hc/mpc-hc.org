@@ -1,6 +1,10 @@
 'use strict';
 
 module.exports = function(grunt) {
+    // Load any grunt plugins found in package.json.
+    require('load-grunt-tasks')(grunt);
+    require('time-grunt')(grunt);
+
     grunt.initConfig({
         dirs: {
             dest: '_site',
@@ -94,7 +98,6 @@ module.exports = function(grunt) {
         postcss: {
             options: {
                 processors: [
-                    require('css-mqpacker')(), // combine media queries
                     require('postcss-combine-duplicated-selectors')({ removeDuplicatedProperties: true }), // combine duplicate selectors
                     require('autoprefixer')() // add vendor prefixes
                 ]
@@ -298,10 +301,6 @@ module.exports = function(grunt) {
         }
 
     });
-
-    // Load any grunt plugins found in package.json.
-    require('load-grunt-tasks')(grunt, { scope: 'dependencies' });
-    require('time-grunt')(grunt);
 
     var buildTasks = [
         'clean',
