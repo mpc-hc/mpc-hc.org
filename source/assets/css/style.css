@@ -235,6 +235,10 @@ footer ul {
     margin-bottom: 8px;
 }
 
+.social-ul a{
+    text-decoration: none;
+}
+
 .social-ul li:not(:last-of-type) {
     margin-right: 16px;
 }
