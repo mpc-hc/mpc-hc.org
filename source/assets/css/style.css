@@ -99,8 +99,8 @@ body {
     vertical-align: middle;
 }
 
-.full-news a[href*="//"]:not([href^="mpc-hc.org"]):not([href*="trac.mpc-hc.org"])::after,
-.new a[href*="//"]:not([href^="mpc-hc.org"]):not([href*="trac.mpc-hc.org"])::after {
+.full-news a:not([href^="/"]):not([href*="mpc-hc.org"])::after,
+.new a:not([href^="/"]):not([href*="mpc-hc.org"])::after {
     content: "\f08e"; /* fa-external-link */
     display: inline-block;
     font-family: FontAwesome;
