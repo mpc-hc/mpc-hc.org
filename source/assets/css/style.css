@@ -229,6 +229,10 @@ footer ul {
     margin: 0;
 }
 
+footer .list-unstyled li {
+    margin: 10px 0;
+}
+
 
 /* -- social networks -- */
 .social-ul {
