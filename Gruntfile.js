@@ -272,11 +272,9 @@ module.exports = function(grunt) {
             options: {
                 config: '.eslintrc.json'
             },
-            gruntfile: {
-                src: 'Gruntfile.js'
-            },
-            src: {
+            dist: {
                 src: [
+                    'Gruntfile.js',
                     '<%= dirs.src %>/assets/js/*.js',
                     '!<%= dirs.src %>/assets/js/google-analytics.js'
                 ]
@@ -290,7 +288,7 @@ module.exports = function(grunt) {
         accessibility: {
             options: {
                 accessibilityLevel: 'WCAG2AA',
-                browser: true,
+                browser: false,
                 reportLevels: {
                     notice: false,
                     warning: false,
@@ -308,7 +306,7 @@ module.exports = function(grunt) {
 
     });
 
-    var buildTasks = [
+    grunt.registerTask('build', [
         'clean',
         'jekyll',
         'useminPrepare',
@@ -322,9 +320,7 @@ module.exports = function(grunt) {
         'sri_hash',
         'doctype',
         'htmlmin'
-    ];
-
-    grunt.registerTask('build', buildTasks);
+    ]);
 
     grunt.registerTask('test', [
         'build',
