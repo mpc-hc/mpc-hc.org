@@ -31,7 +31,14 @@ module.exports = function(grunt) {
                     minifyCSS: {
                         level: {
                             1: {
-                                specialComments: 0
+                                specialComments: 0,
+                                roundingPrecision: 6
+                            },
+                            2: {
+                                all: false,
+                                mergeMedia: true,
+                                removeDuplicateMediaBlocks: true,
+                                removeEmpty: true
                             }
                         }
                     },
@@ -130,7 +137,14 @@ module.exports = function(grunt) {
                 options: {
                     level: {
                         1: {
-                            specialComments: 0
+                            specialComments: 0,
+                            roundingPrecision: 6
+                        },
+                        2: {
+                            all: false,
+                            mergeMedia: true,
+                            removeDuplicateMediaBlocks: true,
+                            removeEmpty: true
                         }
                     }
                 },
