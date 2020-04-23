@@ -10,7 +10,11 @@ plugins:
   - jekyll-email-protect
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-redirect-from
   - jekyll-sitemap
+
+redirect_from:
+  json: false
 
 exclude:
   # we generate those files ourselves

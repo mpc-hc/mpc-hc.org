@@ -401,11 +401,9 @@
     "panels.less",
     "wells.less",
     "close.less",
-    "component-animations.less",
-    "dropdowns.less"
+    "component-animations.less"
   ],
   "js": [
-    "dropdown.js",
     "collapse.js",
     "transition.js"
   ]

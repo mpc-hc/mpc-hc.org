@@ -279,7 +279,10 @@ module.exports = function(grunt) {
             options: {
                 relaxerror: ['W001', 'W002', 'W003']
             },
-            files: '<%= dirs.dest %>/**/*.html'
+            files: [
+                '<%= dirs.dest %>/**/*.html',
+                '!<%= dirs.dest %>/contact-us/index.html'
+            ]
         },
 
         eslint: {

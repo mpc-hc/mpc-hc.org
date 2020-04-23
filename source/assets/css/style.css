@@ -119,11 +119,6 @@ body {
     text-shadow: 0 0 20px #08c;
 }
 
-.navbar-default .navbar-nav > li > a,
-.dropdown-menu > li > a {
-    color: #727272;
-}
-
 .thumbnail {
     border: none;
 }
