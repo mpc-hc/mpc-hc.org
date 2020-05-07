@@ -327,6 +327,11 @@ h6[id]::before {
     text-align: center;
 }
 
+.main-alert {
+    float: none;
+    margin-bottom: 30px;
+}
+
 
 .mpc-team .team-member a {
     color: #555;
