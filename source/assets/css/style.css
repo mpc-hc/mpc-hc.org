@@ -65,22 +65,6 @@ body {
     padding-bottom: 0;
 }
 
-.page-downloads .downloads-version {
-    font-weight: 700;
-    padding-bottom: 8px;
-    text-align: center;
-}
-
-.page-downloads .well {
-    padding-top: 3%;
-}
-
-.page-downloads .well > h3,
-.page-downloads .well > h4 {
-    margin-top: 0;
-    text-align: center;
-}
-
 .panel-title > .toggleLink::after {
     content: "\f077"; /* fa-chevron-up */
     float: right;
@@ -277,8 +261,7 @@ footer .list-unstyled li {
     color: #fe9900;
 }
 
-.cloudvps a,
-.stackpath a {
+.cloudvps a {
     display: inline-block;
 }
 
@@ -450,10 +433,6 @@ h6[id]::before {
 
     .page-home .lead {
         text-align: justify;
-    }
-
-    .stackpath p {
-        margin-bottom: 30px;
     }
 
     .footer-left,

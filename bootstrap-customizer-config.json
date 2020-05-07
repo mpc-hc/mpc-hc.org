@@ -399,8 +399,6 @@
     "alerts.less",
     "list-group.less",
     "panels.less",
-    "wells.less",
-    "close.less",
     "component-animations.less"
   ],
   "js": [

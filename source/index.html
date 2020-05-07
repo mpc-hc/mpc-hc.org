@@ -4,6 +4,9 @@ permalink: /
 slug: home
 redirect_from:
   - /contact-us/
+  - /downloads/
+  - /driver-crash.php
+  - /external-filter-crash.php
 ---
 
 {% if paginator.page > 1 %}
@@ -18,11 +21,10 @@ redirect_from:
 </p>
 
 <div class="button-wrapper">
-    <a href="https://binaries.mpc-hc.org/MPC%20HomeCinema%20-%20Win32/MPC-HC_v{{ site.version.short }}_x86/MPC-HC.{{ site.version.short }}.x86.exe"
-        id="downloadButton" class="btn btn-default btn-lg" data-version="{{ site.version.short }}">
-        <span class="fa fa-download" aria-hidden="true"></span> MPC-HC - Download now!
+    <a href="https://github.com/mpc-hc/mpc-hc" class="btn btn-default btn-lg">
+        <span class="fa fa-download" aria-hidden="true"></span> Source Repository
     </a>
-    <p class="button-sub">{{ site.version.short }} <span>32-bit</span> - <a href="/downloads/">Other systems &amp; versions</a></p>
+    <p class="button-sub">v{{ site.version.short }} <del><span>32-bit</span> - Other systems &amp; versions</del></p>
 </div>
 
 <hr>

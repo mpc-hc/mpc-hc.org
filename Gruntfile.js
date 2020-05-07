@@ -77,8 +77,7 @@ module.exports = function(grunt) {
             jqueryJS: {
                 src: [
                     '<%= dirs.src %>/assets/js/vendor/jquery.slim.min.js',
-                    '<%= dirs.src %>/assets/js/vendor/bootstrap.js',
-                    '<%= dirs.src %>/assets/js/downloads.js'
+                    '<%= dirs.src %>/assets/js/vendor/bootstrap.js'
                 ],
                 dest: '<%= dirs.dest %>/assets/js/jquery-pack.js'
             },
@@ -87,7 +86,6 @@ module.exports = function(grunt) {
                     '<%= dirs.src %>/assets/js/vendor/plugins.js',
                     '<%= dirs.src %>/assets/js/vendor/baguetteBox.js',
                     '<%= dirs.src %>/assets/js/baguetteBox-init.js',
-                    '<%= dirs.src %>/assets/js/detect-os.js',
                     '<%= dirs.src %>/assets/js/img-defer.js',
                     '<%= dirs.src %>/assets/js/no-js-class.js',
                     '<%= dirs.src %>/assets/js/google-analytics.js'
@@ -281,7 +279,8 @@ module.exports = function(grunt) {
             },
             files: [
                 '<%= dirs.dest %>/**/*.html',
-                '!<%= dirs.dest %>/contact-us/index.html'
+                '!<%= dirs.dest %>/contact-us/index.html',
+                '!<%= dirs.dest %>/downloads/index.html'
             ]
         },
 

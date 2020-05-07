@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-custom-4.6.3.2.woff') format('woff'), url('../fonts/fontawesome-custom-4.6.3.2.ttf') format('truetype'), url('../fonts/fontawesome-custom-4.6.3.2.svg#fontawesomeregular') format('svg');
+  src: url('../fonts/fontawesome-custom-4.6.3.3.woff') format('woff'), url('../fonts/fontawesome-custom-4.6.3.3.ttf') format('truetype'), url('../fonts/fontawesome-custom-4.6.3.3.svg#fontawesomeregular') format('svg');
   font-display: block;
   font-weight: normal;
   font-style: normal;
@@ -206,12 +206,6 @@
 .fa-chevron-down:before {
   content: "\f078";
 }
-.fa-cogs:before {
-  content: "\f085";
-}
-.fa-gears:before {
-  content: "\f085";
-}
 .fa-external-link:before {
   content: "\f08e";
 }
@@ -245,26 +239,14 @@
 .fa-sitemap:before {
   content: "\f0e8";
 }
-.fa-cloud-download:before {
-  content: "\f0ed";
-}
 .fa-angle-double-left:before {
   content: "\f100";
 }
 .fa-angle-double-right:before {
   content: "\f101";
 }
-.fa-desktop:before {
-  content: "\f108";
-}
 .fa-frown-o:before {
   content: "\f119";
-}
-.fa-code:before {
-  content: "\f121";
-}
-.fa-question:before {
-  content: "\f128";
 }
 .fa-info:before {
   content: "\f129";
@@ -274,18 +256,6 @@
 }
 .fa-archive:before {
   content: "\f187";
-}
-.fa-file-archive-o:before {
-  content: "\f1c6";
-}
-.fa-file-zip-o:before {
-  content: "\f1c6";
-}
-.fa-paypal:before {
-  content: "\f1ed";
-}
-.fa-cc-paypal:before {
-  content: "\f1f4";
 }
 .fa-user-times:before {
   content: "\f235";
