@@ -34,20 +34,22 @@ jobs:
         run: 'echo "gem: --no-document" > ~/.gemrc'
 
       - name: Set up Ruby cache
-        uses: actions/cache@v1
+        uses: actions/cache@v2
         with:
           path: vendor/bundle
-          key: ${{ runner.os }}-ruby-v${{ env.RUBY }}-${{ hashFiles('Gemfile') }}-${{ hashFiles('Gemfile.lock') }}-${{ hashFiles('.github/workflows/ci.yml') }}
+          key: ${{ runner.os }}-ruby-v${{ env.RUBY }}-${{ hashFiles('Gemfile') }}-${{ hashFiles('Gemfile.lock') }}
           restore-keys: |
-            ${{ runner.os }}-ruby-v${{ env.RUBY }}-${{ hashFiles('Gemfile') }}-${{ hashFiles('Gemfile.lock') }}-${{ hashFiles('.github/workflows/ci.yml') }}
+            ${{ runner.os }}-ruby-v${{ env.RUBY }}-${{ hashFiles('Gemfile') }}-${{ hashFiles('Gemfile.lock') }}
+            ${{ runner.os }}-ruby-v${{ env.RUBY }}-
 
       - name: Set up npm cache
-        uses: actions/cache@v1
+        uses: actions/cache@v2
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-v${{ env.NODE }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}-${{ hashFiles('.github/workflows/ci.yml') }}
+          key: ${{ runner.os }}-node-v${{ env.NODE }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
           restore-keys: |
-            ${{ runner.OS }}-node-v${{ env.NODE }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}-${{ hashFiles('.github/workflows/ci.yml') }}
+            ${{ runner.OS }}-node-v${{ env.NODE }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
+            ${{ runner.OS }}-node-v${{ env.NODE }}-
 
       - name: Set up Bundler
         run: gem install bundler -v "~> 1.17"
